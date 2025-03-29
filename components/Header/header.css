@@ -1,0 +1,41 @@
+@keyframes underline-animation {
+    0% {
+      width: 0;
+      border-radius: 50px;
+    }
+    50% {
+      width: 50%;
+      border-radius: 50px;
+    }
+    100% {
+      width: 100%;
+      border-radius: 50px;
+    }
+  }
+  
+  .underline-curve {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    border-radius: 50px;
+    transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+  }
+  
+  .group:hover .underline-curve {
+    animation: underline-animation 0.5s ease-in-out forwards;
+  }
+
+
+.dropdown-menu {
+    width: 100%;    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black; 
+    z-index: 9999;
+    padding: 30px;
+    border-radius: 30px;
+}

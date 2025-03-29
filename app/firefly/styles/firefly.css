@@ -1,0 +1,24 @@
+.fireflyUnleashed{
+    background-image: url('/assets/Firefly/Firefly-Unleashed.webp');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  .fireflyIllumination{
+    background-image: url('/assets/Firefly/firefly-illumination.webp');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 768px){
+
+
+    .fireflyUnleashed{
+        background-position: bottom left;
+        background-size: cover;
+        background-image: none;
+    }
+
+  }

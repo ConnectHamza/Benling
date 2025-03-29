@@ -1,0 +1,58 @@
+@keyframes colorSlide {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-colorSlide {
+    background: linear-gradient(to right, white 50%, red 50%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorSlide 5s linear forwards;
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+  
+  .show {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+
+  .paragraph{
+    display: flex;
+    font-size: 50px;
+    line-height: 1;        
+    flex-wrap: wrap;
+  
+     
+      }
+
+      .word{
+        position: relative;
+        margin-right: 12px;
+        margin-top: 12px;
+    }
+
+    .shadow{
+      position: absolute;
+      opacity: 20%;
+    
+  }
+
+  @media screen and (max-width: 768px){
+    .paragraph{
+      
+      font-size: 24px;                  
+      flex-wrap: wrap;
+    
+       
+        }
+
+  }

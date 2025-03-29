@@ -1,0 +1,38 @@
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-color: #0C0B09;
+  }
+  
+  
+  .heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white; 
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: white; 
+  }
+
+
+  @media screen and (max-width: 768px){
+    .sliderContainer {
+        position: relative;
+        width: 100%;
+        height: 100% 
+      }
+  }
