@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from './Banner'
-import StickyBar from '@/components/StickyBar/stickyBar'
+import StickyBar from '@/components/StickyBar/sticky-bar'
 import Tabs from './Tabs'
 import Performance from './Performance'
 import Blaze from './Blaze'
@@ -9,9 +9,9 @@ import './styles/firefly.css'
 import Benefits from './Benefits'
 import {aboutSpecificationsData, aboutSpecificationsData2, faqsData} from './data'
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
-import Faqs from '@/components/Faqs/Faqs'
+import Faqs from '@/components/Faqs/faqs'
 import FireflyLoopIMG from '../../public/assets/Firefly/Firefly-Loop-IMG.webp'
-import LoopMain from '@/components/LoopCarousel/LoopMain'
+import LoopMain from '@/components/LoopCarousel/loop-main'
 
 
 const Firefly = () => {

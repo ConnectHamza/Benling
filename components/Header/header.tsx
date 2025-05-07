@@ -23,20 +23,20 @@ const Header = () => {
                         Ezee
                         <span className="underline-curve"></span>
                     </Link>
-                    <Link href="/firefly" className="relative group hover:text-red-100">
-                        Firefly
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/services" className="relative group hover:text-red-100">
-                        Spark
-                        <span className="underline-curve"></span>
-                    </Link>
                     <Link href="/knight-rider" className="relative group hover:text-red-100">
                         Knight Rider
                         <span className="underline-curve"></span>
                     </Link>
                     <Link href="/roshni" className="relative group hover:text-red-100">
                         Roshni
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/firefly" className="relative group hover:text-red-100">
+                        Firefly
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/services" className="relative group hover:text-red-100">
+                        Spark
                         <span className="underline-curve"></span>
                     </Link>
                     <Link href="/mini-classic-scooty" className="relative group hover:text-red-100">
@@ -92,20 +92,20 @@ const Header = () => {
                         Ezee
                         <span className="underline-curve"></span>
                     </Link>
-                    <Link href="/firefly" className="relative group hover:text-red-100 w-full text-center">
-                        Firefly
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/services" className="relative group hover:text-red-100 w-full text-center">
-                        Spark
-                        <span className="underline-curve"></span>
-                    </Link>
                     <Link href="/knight-rider" className="relative group hover:text-red-100 w-full text-center">
                         Knight Rider
                         <span className="underline-curve"></span>
                     </Link>
                     <Link href="/roshni" className="relative group hover:text-red-100 w-full text-center">
                         Roshni
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/firefly" className="relative group hover:text-red-100 w-full text-center">
+                        Firefly
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/services" className="relative group hover:text-red-100 w-full text-center">
+                        Spark
                         <span className="underline-curve"></span>
                     </Link>
                     <Link href="/mini-classic-scooty" className="relative group hover:text-red-100 w-full text-center">

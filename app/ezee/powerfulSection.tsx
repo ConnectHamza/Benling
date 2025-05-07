@@ -1,5 +1,5 @@
 "use client"
-import IconBox from '@/components/IconBox/iconBox';
+import IconBox from '@/components/IconBox/icon-box';
 import React from 'react';
 import speedIcon from '../../public/assets/Ezee/icons/speed 3.svg'
 import chargeIcon from '../../public/assets/Ezee/icons/Charging 3.svg';
@@ -7,7 +7,7 @@ import angleIcon from '../../public/assets/Ezee/icons/Angle 3.svg';
 import chargingIcon from '../../public/assets/Ezee/icons/Charging Time 3.svg';
 import Image from 'next/image';
 import PowerfulImg from '../../public/assets/Ezee/Powerful-performance.webp';
-import GradientText from '@/components/GradientText/gradientHeading';
+import GradientText from '@/components/GradientText/gradient-heading';
 import VibrationImg from '../../public/assets/Ezee/No-Vibrations.webp';
 import Ezeebg from '../../public/assets/Ezee/Ezee-bg.webp';
 import GraphineImg from '../../public/assets/Ezee/Graphene-Battery.webp';

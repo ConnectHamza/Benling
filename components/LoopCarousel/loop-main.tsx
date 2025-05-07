@@ -1,6 +1,6 @@
 import React from 'react';
-import LoopCarousel from './LoopCarousel';
-import GradientText from '../GradientText/gradientHeading';
+import LoopCarousel from './loop-carousel';
+import GradientText from '../GradientText/gradient-heading';
 import { motion } from 'framer-motion';
 
 const textVariants = {
@@ -25,14 +25,14 @@ const LoopMain: React.FC<LoopMainProps> = ({ imageSrc, heading, colors }) => {
   return (
     <div className="w-full flex flex-col md:justify-center md:py-[100px] px-5 py-10 text-center">
       {/* Motion Div for Animated Heading */}
-      <motion.div
+      {/* <motion.div
         variants={textVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
-      >
+      > */}
         <GradientText heading={heading} colors={colors} />
-      </motion.div>
+      {/* </motion.div> */}
       
       {/* Carousel Component */}
       <LoopCarousel images={[imageSrc]} />

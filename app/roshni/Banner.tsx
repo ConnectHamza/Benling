@@ -1,6 +1,6 @@
 import React from 'react'
 import RoshniBanner from '../../public/assets/Roshni/Roshni-Banner.webp'
-import Button from '@/components/Button/Button'
+import Button from '@/components/Button/button'
 
 const Banner = () => {
     return (

@@ -3,8 +3,8 @@ import Image, { StaticImageData } from "next/image";
 import "./loop.css";
 
 interface LoopCarouselProps {
-  images: (string | StaticImageData)[]; // Accept multiple images
-  alt?: string; // Optional alt text
+  images: (string | StaticImageData)[]; 
+  alt?: string; 
 }
 
 const LoopCarousel: React.FC<LoopCarouselProps> = ({ images, alt = "Carousel Image" }) => {
@@ -18,9 +18,9 @@ const LoopCarousel: React.FC<LoopCarouselProps> = ({ images, alt = "Carousel Ima
           >
             <Image
               src={image}
-              alt={`${alt} ${index + 1}`} // Alt text with index
+              alt={`${alt} ${index + 1}`} 
               fill
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "cover" }}
               quality={100}
             />
           </div>
