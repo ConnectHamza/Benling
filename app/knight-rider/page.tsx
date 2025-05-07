@@ -13,6 +13,7 @@ import Faqs from '@/components/Faqs/faqs'
 import Slider from '@/components/Slider/slider'
 
 
+
 export const heading = 'Knight Rider Own The Night';
 export const colors = [
   { color: '#121212', percentage: 50 },
