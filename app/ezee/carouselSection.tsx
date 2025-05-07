@@ -6,7 +6,7 @@ import EzeeBlack from '../../public/assets/Ezee/Ezee-black.webp';
 import EzeeWhite from '../../public/assets/Ezee/Ezee-white.webp';
 import EzeeRed from '../../public/assets/Ezee/Ezee-red.webp';
 // import GradientText from '..//GradientText/gradient-heading';
-import GradientText from '@/components/GradientText/gradient-heading';
+import GradientText from '@/app/components/GradientText/gradient-heading';
 
 interface Color {
   color: string;

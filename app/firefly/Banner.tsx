@@ -1,6 +1,6 @@
 import React from 'react'
 import FireflyIMG from '../../public/assets/Firefly/Firefly-Banner.webp'
-import Button from '@/components/Button/button'
+import Button from '@/app/components/Button/button'
 const Banner = () => {
     return (
         <div className='w-full md:h-[90vh]  items-center flex justify-center px-5 py-10'
