@@ -1,6 +1,6 @@
 import React from 'react'
 import FireflyIMG from '../../public/assets/Firefly/Firefly-Banner.webp'
-import Button from '@/components/Button/button'
+import Button from '../../components/Button/button'
 
 const Banner = () => {
     return (

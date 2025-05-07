@@ -1,5 +1,5 @@
 "use client"
-import GradientText from '@/components/GradientText/gradient-heading'
+import GradientText from '../../../components/GradientText/gradient-heading';
 import { motion } from 'framer-motion';
 import React from 'react'
 
