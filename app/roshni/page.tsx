@@ -1,21 +1,19 @@
 "use client"
 import React, { useEffect } from 'react'
 import Banner from './Banner'
-// import StickyBar from '@/components/StickyBar/sticky-bar'
-import StickyBar from '../../components/StickyBar/sticky-bar'
-
+import StickyBar from '@/components/StickyBar/sticky-bar'
 import Featured from './Featured'
 import Intelligent from './Intelligent'
 import SmartFeature from './SmartFeature/Main'
-import FeaturesSection from '../../components/Features/features'
+import FeaturesSection from '@/components/Features/features'
 import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import Tabs from './Tabs'
+import LoopMain from '@/components/LoopCarousel/loop-main'
 import RoshniLoopIMG from '../../public/assets/Roshni/RoshniLoopIMG.webp'
-import Specifications from '../../components/TechnicalSpecifications/Specifications'
-import Faqs from '../../components/Faqs/faqs'
+import Specifications from '@/components/TechnicalSpecifications/Specifications'
+import Faqs from '@/components/Faqs/faqs'
 import PerfectTabs from './PerfectTabs/PerfectTabs'
 import { initFixOverflow } from '../fixOverflow'
-
 
 const heading = 'Explore Roshni Electric Ride';
 const colors = [

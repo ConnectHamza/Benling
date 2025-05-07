@@ -7,9 +7,9 @@ import Flawless from './flawlessSection';
 import PowerfulSection from './powerfulSection';
 import './ezeeModule.css';
 import InnovationMain from './InnovationSection/Main';
-import Specifications from '../../components/TechnicalSpecifications/Specifications';
-import Faqs from '../../components/Faqs/faqs';
-import LoopMain from '../../components/LoopCarousel/loop-main';
+import Specifications from '@/components/TechnicalSpecifications/Specifications';
+import Faqs from '@/components/Faqs/faqs';
+import LoopMain from '@/components/LoopCarousel/loop-main';
 import EzeeLoopIMG from '../..//public/assets/Ezee/Ezee-LoopIMG.webp'
 import { faqsData, aboutSpecificationsData, aboutSpecificationsData2 } from './data';
 

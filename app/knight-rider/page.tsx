@@ -1,16 +1,16 @@
 import React from 'react'
 import KnightRiderBanner from '../../public/assets/Knight-Rider/Knight-Rider-Banner.webp'
-import StickyBar from '../../components/StickyBar/sticky-bar'
+import StickyBar from '@/components/StickyBar/sticky-bar'
 import DesignedSection from './designedSection'
 import LedSection from './ledSection'
 import WaterResistanceSection from './waterResistanceSection'
-import FeaturesSection from '../../components/Features/features'
-import LoopMain from '../../components/LoopCarousel/loop-main'
+import FeaturesSection from '@/components/Features/features'
+import LoopMain from '@/components/LoopCarousel/loop-main'
 import KnightLoopIMG from '../../public/assets/Knight-Rider/Knight-Loop-IMG.webp'
-import Specifications from '../../components/TechnicalSpecifications/Specifications'
+import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import {aboutSpecificationsData, aboutSpecificationsData2, faqsData, featuresData, featureHeader} from './data'
-import Faqs from '../../components/Faqs/faqs'
-import Slider from '../../components/Slider/slider'
+import Faqs from '@/components/Faqs/faqs'
+import Slider from '@/components/Slider/slider'
 
 
 
