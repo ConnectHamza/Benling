@@ -5,20 +5,12 @@ import DesignedSection from './designedSection'
 import LedSection from './ledSection'
 import WaterResistanceSection from './waterResistanceSection'
 import FeaturesSection from '@/components/Features/Features'
-import LoopMain from '@/components/LoopCarousel/LoopMain'
+import LoopMain from '@/components/LoopCarousel/loop-main'
 import KnightLoopIMG from '../../public/assets/Knight-Rider/Knight-Loop-IMG.webp'
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
-import {aboutSpecificationsData, aboutSpecificationsData2, faqsData, featuresData, featureHeader} from './data'
+import {aboutSpecificationsData, aboutSpecificationsData2, faqsData, featuresData, featureHeader, heading, colors} from './data'
 import Faqs from '@/components/Faqs/Faqs'
 import Slider from '@/components/Slider/Slider'
-
-
-export const heading = 'Knight Rider Own The Night';
-export const colors = [
-  { color: '#121212', percentage: 50 },
-  { color: '#121212', percentage: 80 },
-  { color: '#121212', percentage: 100 },
-];
 
 
 const KnightRider = () => {
@@ -45,7 +37,7 @@ const KnightRider = () => {
             <WaterResistanceSection />
             <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
         
-            {/* <LoopMain imageSrc={KnightLoopIMG} heading={heading} colors={colors} /> */}
+            <LoopMain imageSrc={KnightLoopIMG} heading={heading} colors={colors} />
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
             <Faqs data={faqsData}/>
         </main>

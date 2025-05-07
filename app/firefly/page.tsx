@@ -11,7 +11,7 @@ import {aboutSpecificationsData, aboutSpecificationsData2, faqsData} from './dat
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import FireflyLoopIMG from '../../public/assets/Firefly/Firefly-Loop-IMG.webp'
-import LoopMain from '@/components/LoopCarousel/LoopMain'
+import LoopMain from '@/components/LoopCarousel/loop-main'
 
 
 const Firefly = () => {

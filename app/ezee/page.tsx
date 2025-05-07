@@ -8,9 +8,9 @@ import './ezeeModule.css';
 import InnovationMain from './InnovationSection/Main';
 import Specifications from '@/components/TechnicalSpecifications/Specifications';
 import Faqs from '@/components/Faqs/Faqs';
-import LoopMain from '@/components/LoopCarousel/LoopMain';
 import EzeeLoopIMG from '../..//public/assets/Ezee/Ezee-LoopIMG.webp'
 import { faqsData, aboutSpecificationsData, aboutSpecificationsData2 } from './data';
+import LoopMain from '@/components/LoopCarousel/loop-main';
 
 
 
@@ -22,6 +22,7 @@ export default function Ezee() {
       { color: '#c51f26', percentage: 80 },
       { color: '#121212', percentage: 100 },
     ];
+    
    
     return (
         <main>
@@ -45,7 +46,7 @@ export default function Ezee() {
             <Flawless />
             <PowerfulSection />
             <InnovationMain />
-            {/* <LoopMain imageSrc={EzeeLoopIMG} heading={heading} colors={colors} /> */}
+            <LoopMain imageSrc={EzeeLoopIMG} heading={heading} colors={colors} />
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
             <Faqs data={faqsData}/>
         </main>

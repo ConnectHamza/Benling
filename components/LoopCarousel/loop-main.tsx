@@ -1,9 +1,8 @@
 // @ts-nocheck
 import React from 'react';
-import LoopCarousel from './LoopCarousel';
 import GradientText from '../GradientText/gradientHeading';
-import { motion } from 'framer-motion';
-
+import { motion } from 'framer-motion'; // Uncommented this import
+import LoopCarousel from './loop-carousel';
 
 const textVariants = {
   hidden: { opacity: 0, y: -100 },
@@ -24,14 +23,14 @@ interface LoopMainProps {
 const LoopMain: React.FC<LoopMainProps> = ({ imageSrc, heading, colors }) => {
   return (
     <div className='w-full flex flex-col md:justify-center md:py-[100px] px-5 py-10 text-center'>
-      <motion.div
+      {/* <motion.div
        variants={textVariants}
        initial="hidden"
        whileInView="visible"
        viewport={{ once: false, amount: 0.2 }}
-      >
-      <GradientText heading={heading} colors={colors} />
-      </motion.div>
+      > */}
+        <GradientText heading={heading} colors={colors} />
+      {/* </motion.div> */}
       <LoopCarousel src={imageSrc} />
     </div>
   );

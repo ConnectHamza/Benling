@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import "./loop.css";
