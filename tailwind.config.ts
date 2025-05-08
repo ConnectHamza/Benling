@@ -6,6 +6,10 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      inter: ['Inter', 'sans-serif'], // Add your custom font here
+      jakarta: ['Jakarta', 'sans-serif'], // Add your custom font here
+    },
     extend: {
       keyframes: {
         scrollImage: {

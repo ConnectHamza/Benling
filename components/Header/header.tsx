@@ -1,130 +1,213 @@
-"use client"
-import Image from 'next/image';
-import React, { useState } from 'react';
-import logo from '../../public/assets/Header-Footer/Benling-Logo.svg';
-import Link from 'next/link';
-import './header.css';
+"use client";
+import Image from "next/image";
+import React, { useState, useEffect } from "react";
+import logo from "../../public/assets/Header-Footer/Benling-Logo.svg";
+import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isModelsOpen, setIsModelsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
-    const handleMenuToggle = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+    const toggleModelsMenu = () => setIsModelsOpen((prev) => !prev);
+
+    const navLink =
+        "relative font-jakarta pb-[6px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
+
+    const modelsSubLinks = [
+        { href: "/ezee", label: "Ezee" },
+        { href: "/roshni", label: "Roshni" },
+        { href: "/knight-rider", label: "Knight Rider" },
+        { href: "/mini-classic-scooty", label: "Mini Classic Scooty" },
+        { href: "/firefly", label: "Firefly" },
+        { href: "/services", label: "Spark" },
+    ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <div className="relative flex justify-center bg-black-70 z-99999">
-            <div className="w-lg flex flex-row justify-between text-center items-center px-6 py-5">
-                <div>
-                    <Image src={logo} alt="Benling Logo" />
-                </div>
-                <div className="hidden md:flex flex-row space-x-8 text-[15px] text-white">
-                    <Link href="/ezee" className="relative group hover:text-red-100">
-                        Ezee
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/roshni" className="relative group hover:text-red-100">
-                        Roshni
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/knight-rider" className="relative group hover:text-red-100">
-                        Knight Rider
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/mini-classic-scooty" className="relative group hover:text-red-100">
-                        Mini Classic Scooty
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/firefly" className="relative group hover:text-red-100">
-                        Firefly
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/services" className="relative group hover:text-red-100">
-                        Spark
-                        <span className="underline-curve"></span>
-                    </Link>
+        <header
+            className={`w-full z-50 fixed top-0 transition-all duration-200 ease-linear ${isScrolled ? "bg-black-30 text-white" : "bg-transparent text-white"
+                }`}
+        >
+            <div className="max-w-[1300px] mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+                {/* Left nav */}
+                <nav className="hidden md:flex items-center gap-6 text-sm">
+                    {/* <div className="relative group">
+                        <span className="cursor-pointer font-inter relative z-10 px-2 py-2 block">
+                            Models ▾
+                            <span className="absolute inset-0 z-0"></span>
+                        </span>
+                        <div className="absolute left-0 w-[300px] bg-black-30 top-full hidden group-hover:flex flex-col bg-black shadow-md mt-2 rounded p-4 transition-all duration-200 ease-linear transform scale-95 group-hover:scale-100 pointer-events-auto group-hover:pointer-events-auto group-hover:visible">
+                            {modelsSubLinks.map(({ href, label }) => (
+                                <Link key={href} href={href} className={`${navLink} py-2 px-6 text-white`}>
+                                    {label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div> */}
+                    {/* <div className="relative group">
+    <span className="cursor-pointer font-inter relative z-10 px-2 py-2 block pb-[6px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+        Models ▾
+    </span>
+    <div className="absolute left-0 w-[300px] bg-black-30 top-full hidden group-hover:flex flex-col bg-black shadow-md mt-2 rounded p-4 z-50">
+        {modelsSubLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className={`${navLink} py-2 px-6 text-white`}>
+                {label}
+            </Link>
+        ))}
+    </div>
+</div> */}
+                    {/* <div className="relative group">
+    <span className="cursor-pointer font-inter inline-block pb-[6px] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+        Models ▾
+    </span>
+    <div className="absolute left-0 w-[300px] bg-black-30 top-full hidden group-hover:flex flex-col bg-black shadow-md mt-2 rounded p-4 z-50">
+        {modelsSubLinks.map(({ href, label }) => (
+            <Link
+                key={href}
+                href={href}
+                className="relative inline-block text-white font-jakarta pb-[6px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300 mb-2"
+            >
+                {label}
+            </Link>
+        ))}
+    </div>
+</div> */}
+                    {/* <div className="relative group">
+    <div className="cursor-pointer font-inter inline-block pb-[6px] relative z-10">
+        <span className="after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] after:transition-all after:duration-300 group-hover:after:w-full">
+            Models ▾
+        </span>
+    </div>
 
-                </div>
-                <div className="hidden md:flex flex-row space-x-8 text-[15px] text-white">
-                    <Link href="/contact" className="relative group hover:text-red-100">
-                        Contact Us
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/distributor" className="relative group hover:text-red-100">
-                        Become a Distributor
-                        <span className="underline-curve"></span>
-                    </Link>
+    <div className="absolute left-0 top-full mt-[2px] bg-black z-50 w-[300px] rounded p-4 shadow-md hidden group-hover:flex flex-col transition-all duration-150 bg-black-30">
+        {modelsSubLinks.map(({ href, label }) => (
+            <Link
+                key={href}
+                href={href}
+                className="relative inline-block text-white font-jakarta pb-[6px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] after:transition-all after:duration-300"
+            >
+                {label}
+            </Link>
+        ))}
+    </div>
+</div> */}
+                    <div className="relative group">
+                        <span className="cursor-pointer font-inter inline-block relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+                            Models ▾
+                        </span>
+
+                        <div className="absolute top-full left-0 mt-1 bg-black-30 text-white w-[300px] z-50 rounded p-4 shadow-md flex-col hidden group-hover:flex">
+                            {modelsSubLinks.map(({ href, label }) => (
+                                <Link
+                                    key={href}
+                                    href={href}
+                                    className="relative inline-block font-jakarta text-white pb-1 mb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300"
+                                >
+                                    {label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    <Link href="/about" className={navLink}>About Us</Link>
+                    <Link href="/news" className={navLink}>News</Link>
+                    <Link href="/dealer-locator" className={navLink}>Find a Dealer</Link>
+                </nav>
+
+                {/* Logo */}
+                <div className="flex-shrink-0">
+                    <Image src={logo} alt="Crown Logo" width={120} priority />
                 </div>
 
-                <div className="sm:flex md:hidden flex items-center">
-                    <button
-                        className="text-white focus:outline-none"
-                        onClick={handleMenuToggle}
+                {/* Right nav */}
+                <nav className="hidden md:flex items-center gap-6 text-sm">
+                    <Link href="/distributor" className={navLink}>Become a Dealer</Link>
+                    <Link href="/contact" className={navLink}>Contact Us</Link>
+                    <Link href="/dealer-locator">
+                        <button className="border border-[#F15C2A] px-4 py-1 rounded hover:bg-[#F15C2A] hover:text-black transition-all duration-200 ease-linear">
+                            Find a Dealer
+                        </button>
+                    </Link>
+                </nav>
+
+                {/* Mobile burger */}
+                <button
+                    className="md:hidden text-white focus:outline-none"
+                    onClick={toggleMobileMenu}
+                >
+                    <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                     >
-                        <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            {isMenuOpen ? (
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            ) : (
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"
-                                />
-                            )}
-                        </svg>
-                    </button>
-                </div>
+                        {isMobileMenuOpen ? (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                        ) : (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        )}
+                    </svg>
+                </button>
             </div>
-            {isMenuOpen && (
-                <div className="dropdown-menu sm:flex md:hidden flex flex-col items-center space-y-4 mt-4 text-white">
-                    <Link href="/ezee" className="relative group hover:text-red-100 w-full text-center">
-                        Ezee
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/roshni" className="relative group hover:text-red-100 w-full text-center">
-                        Roshni
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/knight-rider" className="relative group hover:text-red-100 w-full text-center">
-                        Knight Rider
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/mini-classic-scooty" className="relative group hover:text-red-100 w-full text-center">
-                        Mini Classic Scooty
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/firefly" className="relative group hover:text-red-100 w-full text-center">
-                        Firefly
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/services" className="relative group hover:text-red-100 w-full text-center">
-                        Spark
-                        <span className="underline-curve"></span>
-                    </Link>
 
-                    <Link href="/contact" className="relative group hover:text-red-100 w-full text-center">
-                        Contact Us
-                        <span className="underline-curve"></span>
-                    </Link>
-                    <Link href="/distributor" className="relative group hover:text-red-100 w-full text-center">
-                        Become a Distributor
-                        <span className="underline-curve"></span>
-                    </Link>
-                </div>
-            )}
-        </div>
+            {/* Mobile menu */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ height: 0 }}
+                        animate={{ height: "auto" }}
+                        exit={{ height: 0 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                        className="md:hidden overflow-hidden bg-black text-white px-6 py-4"
+                    >
+                        <div className="flex flex-col gap-4 text-sm">
+                            <button onClick={toggleModelsMenu} className="flex justify-between items-center">
+                                <span>Models</span>
+                                <span>{isModelsOpen ? "▲" : "▼"}</span>
+                            </button>
+                            <AnimatePresence>
+                                {isModelsOpen && (
+                                    <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: "auto" }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.2, ease: "easeOut" }}
+                                        className="ml-4 flex flex-col gap-2"
+                                    >
+                                        {modelsSubLinks.map(({ href, label }) => (
+                                            <Link key={href} href={href} className={navLink}>
+                                                {label}
+                                            </Link>
+                                        ))}
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                            <Link href="/about" className={navLink}>About Us</Link>
+                            <Link href="/news" className={navLink}>News</Link>
+                            <Link href="/dealer-locator" className={navLink}>Find a Dealer</Link>
+                            <Link href="/distributor" className={navLink}>Become a Dealer</Link>
+                            <Link href="/contact" className={navLink}>Contact Us</Link>
+                            <Link href="/dealer-locator">
+                                <button className="w-full border border-[#F15C2A] px-4 py-2 mt-2 rounded hover:bg-[#F15C2A] hover:text-black transition-all duration-200 ease-linear">
+                                    Find a Dealer
+                                </button>
+                            </Link>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </header>
     );
 };
 
