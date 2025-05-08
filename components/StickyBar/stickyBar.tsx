@@ -10,6 +10,7 @@ interface StickyBarProps {
   gradient1: string;
   gradient2: string;
   textColor: string;
+  isSticky?: boolean;
 }
 
 const StickyBar: React.FC<StickyBarProps> = ({
@@ -18,6 +19,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
   gradient1,
   gradient2,
   textColor,
+  isSticky = true
 }) => {
   const container = useRef(null);
 
@@ -41,7 +43,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
   return (
     <>
-      <div className="w-full bg-black-30 flex justify-center px-5 py-5 border-b border-gray-90 sticky top-0 z-50">
+      <div className={`w-full bg-black-30 flex justify-center px-5 py-5 border-b border-gray-90 sticky top-0 ${isSticky ? "z-50" : "z-0"}`} >
         <div className="w-lg text-white">
           <h3 className="font-bold md:text-[28px] text-[20px]">{title}</h3>
         </div>

@@ -5,9 +5,7 @@ import Ezee from './ezee/page';
 export default function Home() {
     return (
         <div>
-           
-           <Ezee />
-           
+            <Ezee />
         </div>
     );
 }

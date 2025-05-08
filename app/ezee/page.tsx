@@ -40,6 +40,7 @@ export default function Ezee() {
                 gradient1="#410D09"
                 gradient2="#121212"
                 textColor="text-red-300"
+                isSticky={false}
             />
             
             <Carousel />
