@@ -8,10 +8,10 @@ import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
 import CarouselImage from '../../public/assets/Home/Carousel/carousel1.png';
 import CarouselImage2 from '../../public/assets/Home/Carousel/carousel2.png';
 import CarouselImage3 from '../../public/assets/Home/Carousel/carousel3.png';
-
 import FlashTitle from "../../public/assets/Home/Carousel/Logo.png"
 import MotorcycleCarousel from '@/components/LoopCarousel/home-carousel';
 import FeaturesSection from './FeatureSection';
+import BrandingSection from "./BrandingSection"
 export default function Home() {
   const bikes = [
     {
@@ -70,6 +70,9 @@ export default function Home() {
             </div>
             <div>
             <FeaturesSection />
+            </div>
+            <div>
+              <BrandingSection />
             </div>
         </>
 

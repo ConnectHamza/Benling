@@ -10,10 +10,11 @@ const FeatureCard = ({
     return (
         <div className="mb-5">
             <div
-                className="rounded-xl overflow-hidden relative flex flex-col justify-center min-h-[180px] md:min-h-[50vh] p-4 item-center overflow-hidden"
+                className="rounded-xl overflow-hidden relative flex flex-col justify-center min-h-[180px] md:min-h-[55vh] p-4 item-center overflow-hidden sm:min-h-[35vh]"
                 style={{
-                    background: `url(${backgroundImage}) no-repeat center center`,
+                    background: `url(${backgroundImage}) no-repeat cover cover`,
                     backgroundSize: "cover",
+                    backgroundPosition:"center"
                 }}
             >
                 {isTextBlock && (
@@ -29,8 +30,8 @@ const FeatureCard = ({
                 )}
             </div>
             <div className="mt-2">
-                <h4 className="text-white text-base md:text-lg font-semibold">{heading}</h4>
-                <p className="text-gray-200 text-xs md:text-sm">{description}</p>
+                <h4 className="text-white font-magistral font-semi-bold  text-base md:text-lg">{heading}</h4>
+                <p className="text-white font-medium font-jakarta text-xs md:text-sm">{description}</p>
             </div>
         </div>
 

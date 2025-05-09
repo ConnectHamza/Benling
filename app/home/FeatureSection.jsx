@@ -42,8 +42,8 @@ const features = [
 const FeatureSection = () => (
   <section className="w-full bg-[#13102A] py-10 px-2 md:px-0">
     <div className="max-w-[1300px] mx-auto p-10">
-      <h2 className="text-white text-2xl md:text-3xl font-bold mb-2">Explore Our Smart Features</h2>
-      <p className="text-gray-300 mb-6 text-sm md:text-base">
+      <h2 className="text-white text-2xl md:text-3xl font-magistral font-semi-bold mb-2">Explore Our Smart Features</h2>
+      <p className="mb-6 text-white font-medium font-jakarta text-sm">
         Experience the convenience and tech that power every Crown Benling scooter, engineered for performance, safety, and sustainability.
       </p>
       <div
