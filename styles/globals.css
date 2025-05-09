@@ -11,12 +11,12 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
 
-.overflow-x-Hide{
+.overflow-x-Hide {
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
@@ -24,26 +24,26 @@ html{
 body {
   font-family: Inter;
   overflow: hidden !important;
-  
+
 }
 
-p{
+p {
   font-size: 16px;
 }
 
-.heading2{
+.heading2 {
   font-size: 50px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
-.heading3{
+.heading3 {
   font-size: 46px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
-.heading4{
+.heading4 {
   font-size: 40px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .smooth-transition {
@@ -56,8 +56,8 @@ p{
   bottom: 0;
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.5); 
-  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +73,7 @@ p{
 
 .swiper-button-next.custom-swiper-button {
   left: 90%;
-  transform: translateX(60px); 
+  transform: translateX(60px);
 }
 
 .custom-swiper-button:hover {
@@ -81,15 +81,15 @@ p{
 }
 
 .swiper-button-prev {
-    
+
   background-color: #776D57;
   color: #fff;
   padding: 30px;
-  
+
 }
 
-.swiper-button-next{
-    
+.swiper-button-next {
+
   background-color: #776D57;
   color: #fff;
   padding: 30px;
@@ -101,6 +101,7 @@ p{
     opacity: 0;
     clip-path: inset(100% 0 100% 0);
   }
+
   to {
     opacity: 1;
     clip-path: inset(0 0 0 0);
@@ -114,41 +115,41 @@ p{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
 
-body{
-  overflow-x: hidden !important;
-}
+  body {
+    overflow-x: hidden !important;
+  }
 
 
 
-  p{
+  p {
     font-size: 13px;
   }
 
-  .heading2{
+  .heading2 {
     font-size: 30px;
     line-height: 34px;
   }
-  
-  .heading3{
+
+  .heading3 {
     font-size: 24px;
     line-height: 28px;
   }
 
-  .heading4{
+  .heading4 {
     font-size: 20px;
-    line-height: 24px;  
+    line-height: 24px;
   }
 
   .swiper-button-prev {
-    
+
     display: none;
-    
+
   }
-  
-  .swiper-button-next{
+
+  .swiper-button-next {
     display: none;
   }
 }
@@ -157,22 +158,26 @@ body{
 
 
 @layer utilities {
-  .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90
   }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+
+  .btn_green {
+    @apply border-green-50 bg-green-50 px-8 py-5 text-white
   }
-  .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+
+  .btn_dark_green {
+    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
   }
-  .btn_dark_green_outline  { 
+
+  .btn_dark_green_outline {
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
   }
-  
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
@@ -278,12 +283,12 @@ body{
 
   /* Feature */
   .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex 3xl:left-20;
   }
 
   /* Get App */
   .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+    @apply max-container relative flex w-full flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
   }
 }
 
@@ -294,6 +299,88 @@ body{
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-BookItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('/fonts/Magistral-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
 }

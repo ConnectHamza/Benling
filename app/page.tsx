@@ -1,11 +1,10 @@
 // app/page.tsx
-import Ezee from './ezee/page';
-
+import HomePage from "./home/Home"
 
 export default function Home() {
     return (
         <div>
-            <Ezee />
+            <HomePage />
         </div>
     );
 }

@@ -9,8 +9,11 @@ module.exports = {
     fontFamily: {
       inter: ['Inter', 'sans-serif'], // Add your custom font here
       jakarta: ['Jakarta', 'sans-serif'], // Add your custom font here
+      magistral: ['Magistral', 'sans-serif'],
+
     },
     extend: {
+
       keyframes: {
         scrollImage: {
           '0%': { transform: 'translateX(0)' },
@@ -19,6 +22,8 @@ module.exports = {
       },
       
       colors: {
+        crownOrange: '#F15C2A',
+
         black: {
           100: '#000',
           200: '#0c0b09',
