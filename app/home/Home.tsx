@@ -5,6 +5,7 @@ import HeroImage from '../../public/assets/Home/Header/heroimage.png';
 import StickyBar from '@/components/StickyBar/stickyBar';
 import HeroSubSection from '@/components/Herocontainer/HeroSub';
 import VideoSection from './VideoSection';
+import ShopSection from "./ShopSectoin"
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
 import CarouselImage from '../../public/assets/Home/Carousel/carousel1.png';
 import CarouselImage2 from '../../public/assets/Home/Carousel/carousel2.png';
@@ -109,6 +110,9 @@ export default function Home() {
         </section>
         <div>
           <VideoSection />
+        </div>
+        <div>
+          <ShopSection />
         </div>
       </div>
     </>
