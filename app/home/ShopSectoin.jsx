@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const shops = [
     {
         id: 1,
-        name: 'Bering Awami Markaz',
+        name: 'Benling Awami Markaz',
         address:
             'Plot # ST1/A2 Shop # LG 06 & 07 City Centre Mall Near Awami Markaz Oppo Lal Qila Main Shara-e-Faisla Karachi',
         phone: ['0321-2721818', '0321-2721818'],
