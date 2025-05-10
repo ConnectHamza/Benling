@@ -7,10 +7,13 @@ import HeroSubSection from '@/components/Herocontainer/HeroSub';
 import VideoSection from './VideoSection';
 import ShopSection from "./ShopSectoin"
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
-import CarouselImage from '../../public/assets/Home/Carousel/carousel1.png';
-import CarouselImage2 from '../../public/assets/Home/Carousel/carousel2.png';
-import CarouselImage3 from '../../public/assets/Home/Carousel/carousel3.png';
-import CarouselLogo from "../../public/assets/Home/Carousel/Logo.png"
+import Logo_Ezze from "../../public/assets/Home/Carousel/Logo_Ezze.svg"
+import Logo_Flash from "../../public/assets/Home/Carousel/Logo_Flash.svg"
+import Logo_Knight_Rider from "../../public/assets/Home/Carousel/Logo_Knight_Rider.svg"
+import Logo_Mini_Scooty from "../../public/assets/Home/Carousel/Logo_Mini_Scooty.svg"
+import Logo_Roshni from "../../public/assets/Home/Carousel/Logo_Roshni.svg"
+import Logo_Roshnix from "../../public/assets/Home/Carousel/Logo_Roshnix.svg"
+import Logo_Spark from "../../public/assets/Home/Carousel/Logo_Spark.svg"
 import MotorcycleCarousel from '@/components/LoopCarousel/home-carousel';
 import FeaturesSection from './FeatureSection';
 import BrandingSection from "./BrandingSection";

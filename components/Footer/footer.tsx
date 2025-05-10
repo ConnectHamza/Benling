@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
                 <div className='flex md:flex-row flex-col justify-between md:w-[82%] md:mt-[-5vh] mt-10 md:py-5 gap-3'>
                     <div>
-                    <p>© {currentYear} Benling Pakistan</p>
+                    <p>© {currentYear} Crown Benling Electric Mobility Pakistan</p>
                     </div>   
                     <div className='text-[13px] md:text-[15px] flex gap-4'>
                     <a href="">Privacy Policy</a>
