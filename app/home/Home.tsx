@@ -14,6 +14,15 @@ import Logo_Mini_Scooty from "../../public/assets/Home/Carousel/Logo_Mini_Scooty
 import Logo_Roshni from "../../public/assets/Home/Carousel/Logo_Roshni.svg"
 import Logo_Roshnix from "../../public/assets/Home/Carousel/Logo_Roshnix.svg"
 import Logo_Spark from "../../public/assets/Home/Carousel/Logo_Spark.svg"
+import Logo_Firefly from "../../public/assets/Home/Carousel/Logo_firefly.svg"
+import Image_Ezee from "../../public/assets/Home/Carousel/Image_Ezee.svg";
+import Image_Firefly from "../../public/assets/Home/Carousel/Image_Firefly.svg";
+import Image_Flash from "../../public/assets/Home/Carousel/Image_Flash.svg";
+import Image_KnightRider from "../../public/assets/Home/Carousel/Image_KnightRider.svg";
+import Image_Miniscooter from "../../public/assets/Home/Carousel/Image_Miniscooter.svg";
+import Image_Roshni from "../../public/assets/Home/Carousel/Image_Roshni.svg";
+import Image_Roshnix from "../../public/assets/Home/Carousel/Image_Roshnix.svg";
+import Image_Spark from "../../public/assets/Home/Carousel/Image_Spark.svg";
 import MotorcycleCarousel from '@/components/LoopCarousel/home-carousel';
 import FeaturesSection from './FeatureSection';
 import BrandingSection from "./BrandingSection";
@@ -25,80 +34,80 @@ export default function Home() {
   const bikes = [
     {
       name: "Bike 1",
-      image: CarouselImage.src,
+      image: Image_Flash.src,
       range: 150,
       maxSpeed: 70,
       motorPower: 1500,
       brochureLink: "",
       exploreLink: "/flash",
-      logo: CarouselLogo.src
+      logo: Logo_Flash.src
     },
     {
       name: "Bike 2",
-      image: CarouselImage2.src,
+      image: Image_KnightRider.src,
       range: 100,
       maxSpeed: 60,
       motorPower: 1500,
       brochureLink: "",
       exploreLink: "/knight-rider",
-      logo: CarouselLogo.src
+      logo: Logo_Knight_Rider.src
 
     },
     {
       name: "Bike 3",
-      image: CarouselImage3.src,
+      image: Image_Roshnix.src,
       range: 110,
       maxSpeed: 60,
       motorPower: 1500,
       brochureLink: "",
       exploreLink: "/roshnix",
-      logo: CarouselLogo.src
+      logo: Logo_Roshnix.src
     },
     {
       name: "Bike 3",
-      image: CarouselImage3.src,
+      image: Image_Ezee.src,
       range: 55,
       maxSpeed: 40,
       motorPower: 650,
       brochureLink: "",
       exploreLink: "/ezee",
-      logo: CarouselLogo.src
+      logo: Logo_Ezze.src
     }, {
       name: "Bike 3",
-      image: CarouselImage3.src,
+      image: Image_Roshni.src,
       range: 120,
       maxSpeed: 60,
       motorPower: 1200,
       brochureLink: "",
       exploreLink: "/roshni",
-      logo: CarouselLogo.src
+      logo: Logo_Roshni.src
     }, {
       name: "Bike 3",
-      image: CarouselImage3.src,
+      image: Image_Firefly.src,
       range: 100,
       maxSpeed: 60,
       motorPower: 1200,
       brochureLink: "",
       exploreLink: "/firefly",
-      logo: CarouselLogo.src
+      logo: Logo_Firefly.src
     }, {
       name: "Bike 3",
-      image: CarouselImage3.src,
+      image: Image_Spark.src,
       range: 40,
       maxSpeed: 40,
       motorPower: 600,
       brochureLink: "",
       exploreLink: "/spark",
-      logo: CarouselLogo.src
+      logo: Logo_Spark.src
     }, {
       name: "Bike 3",
-      image: CarouselImage3.src,
+      image: Image_Miniscooter.src,
       range: 35,
       maxSpeed: 35,
       motorPower: 450,
       brochureLink: "",
       exploreLink: "/mini-scooty",
-      logo: CarouselLogo.src
+      logo: Logo_Mini_Scooty.src
     }
   ];
   return (
