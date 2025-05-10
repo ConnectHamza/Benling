@@ -135,7 +135,7 @@ export default function ShopSlider() {
                                         </div>
                                     </div>
                                 </div>
-                                <button className=" text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black hover:text-white border border-black transition">
+                                <button className=" text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
                                     Get Direction
                                 </button>
                             </div>
