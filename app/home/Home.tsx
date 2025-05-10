@@ -10,7 +10,7 @@ import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
 import CarouselImage from '../../public/assets/Home/Carousel/carousel1.png';
 import CarouselImage2 from '../../public/assets/Home/Carousel/carousel2.png';
 import CarouselImage3 from '../../public/assets/Home/Carousel/carousel3.png';
-import FlashTitle from "../../public/assets/Home/Carousel/Logo.png"
+import CarouselLogo from "../../public/assets/Home/Carousel/Logo.png"
 import MotorcycleCarousel from '@/components/LoopCarousel/home-carousel';
 import FeaturesSection from './FeatureSection';
 import BrandingSection from "./BrandingSection";
@@ -25,33 +25,78 @@ export default function Home() {
       image: CarouselImage.src,
       range: 150,
       maxSpeed: 70,
-      motorPower: 2000,
+      motorPower: 1500,
       brochureLink: "",
-      exploreLink: "/bike1",
-      logo: FlashTitle.src
+      exploreLink: "/flash",
+      logo: CarouselLogo.src
     },
     {
       name: "Bike 2",
       image: CarouselImage2.src,
-      range: 120,
+      range: 100,
       maxSpeed: 60,
-      motorPower: 1800,
+      motorPower: 1500,
       brochureLink: "",
-      exploreLink: "/bike2",
-      logo: FlashTitle.src
+      exploreLink: "/knight-rider",
+      logo: CarouselLogo.src
 
     },
     {
       name: "Bike 3",
       image: CarouselImage3.src,
-      range: 100,
-      maxSpeed: 50,
+      range: 110,
+      maxSpeed: 60,
       motorPower: 1500,
       brochureLink: "",
-      exploreLink: "/bike3",
-      logo: FlashTitle.src
-
+      exploreLink: "/roshnix",
+      logo: CarouselLogo.src
     },
+    {
+      name: "Bike 3",
+      image: CarouselImage3.src,
+      range: 55,
+      maxSpeed: 40,
+      motorPower: 650,
+      brochureLink: "",
+      exploreLink: "/ezee",
+      logo: CarouselLogo.src
+    }, {
+      name: "Bike 3",
+      image: CarouselImage3.src,
+      range: 120,
+      maxSpeed: 60,
+      motorPower: 1200,
+      brochureLink: "",
+      exploreLink: "/roshni",
+      logo: CarouselLogo.src
+    }, {
+      name: "Bike 3",
+      image: CarouselImage3.src,
+      range: 100,
+      maxSpeed: 60,
+      motorPower: 1200,
+      brochureLink: "",
+      exploreLink: "/firefly",
+      logo: CarouselLogo.src
+    }, {
+      name: "Bike 3",
+      image: CarouselImage3.src,
+      range: 40,
+      maxSpeed: 40,
+      motorPower: 600,
+      brochureLink: "",
+      exploreLink: "/spark",
+      logo: CarouselLogo.src
+    }, {
+      name: "Bike 3",
+      image: CarouselImage3.src,
+      range: 35,
+      maxSpeed: 35,
+      motorPower: 450,
+      brochureLink: "",
+      exploreLink: "/mini-scooty",
+      logo: CarouselLogo.src
+    }
   ];
   return (
     <>
@@ -59,9 +104,8 @@ export default function Home() {
         title="Benling Redefining Electric Mobility"
         subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
         buttonText="Explore More"
-        imageSrc={HeroImage.src} // Ensure you place the image in the public/images directory
+        imageSrc={HeroImage.src}
         onButtonClick={() => console.log('Button Clicked')}
-
       />
       <HeroSubSection
         title="Crown Benling Electric Mobility, proudly operated by"

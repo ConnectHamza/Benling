@@ -47,10 +47,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 mb-10'>
                <Image src={FooterLogo} alt='Benling-Pakistan'/>
                 </div>
-                <div className='flex md:flex-row flex-col justify-between md:w-[82%] md:mt-[-7vh] mt-10 md:py-5 gap-3'>
+                <div className='flex md:flex-row flex-col justify-between md:w-[82%] md:mt-[-5vh] mt-10 md:py-5 gap-3'>
                     <div>
                     <p>© {currentYear} Benling Pakistan</p>
                     </div>   
