@@ -30,7 +30,8 @@ import BrandingSection from "./BrandingSection";
 import CrownLogo from '../../public/assets/Home/Branding/crownlogo.png';
 import Pak from '../../public/assets/Home/Branding/pakistanmap.png';
 import Image from 'next/image';
-
+import Faqs from '@/components/Faqs/Faqs';
+import { faqsData } from './data';
 export default function Home() {
   const bikes = [
     {
@@ -174,6 +175,8 @@ export default function Home() {
         <div>
           <BlogSection />
         </div>
+        <Faqs data={faqsData} />
+
       </div>
     </>
 
