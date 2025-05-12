@@ -11,6 +11,7 @@ import Faqs from '@/components/Faqs/Faqs';
 import EzeeLoopIMG from '../..//public/assets/Ezee/Ezee-LoopIMG.webp'
 import { faqsData, aboutSpecificationsData, aboutSpecificationsData2 } from './data';
 import LoopMain from '@/components/LoopCarousel/loop-main';
+import Banner from './Banner';
 
 
 
@@ -26,14 +27,8 @@ export default function Ezee() {
    
     return (
         <main>
-            <div className='w-full md:h-[90vh] h-[50vh]' 
-            style={{
-                backgroundImage: `url(${EzeeBanner.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            }}
-            >                
-            </div>
+                   
+            <Banner />
             <StickyBar
                 title="Benling Ezee"
                 description="Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level."

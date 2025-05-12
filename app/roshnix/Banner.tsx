@@ -1,5 +1,5 @@
 import React from 'react'
-import RoshniBanner from '../../public/assets/Roshni/Roshni-Banner.webp'
+import RoshniBanner from '../../public/assets/Roshnix/Roshni-Banner.png'
 import Button from '@/components/Button/Button'
 
 const Banner = () => {
@@ -12,26 +12,11 @@ const Banner = () => {
             }}
         >
             <div className="w-lg">
-                <div className="md:w-[50%] w-[65%] text-white">
+                <div className="md:w-[50%] w-[65%] text-black">
                     <h2 className='heading2 font-magistral leading-[1.2]'>
-                        Ride the Future
-                        Today with Firefly
+                    Benling Redefining Electric Mobility
                     </h2>
-                    <p className='font-jakarta font-normal'>Discover cutting-edge electric vehicles designed for performance, sustainability, and style.
-                        </p>
-                        <div className='mt-5'>
-                        <Button 
-                         iconName="chevron-right"
-                         iconColor="black"
-                         buttonText="Explore more"
-                         bgColor="#ff7700"
-                         hoverBgColor="#ff7700"
-                         textColor="black"
-                         order='order-last'
-                         link='#'
-                        />
-                        </div>
-                        
+                    <p className='font-jakarta text-black font-normal'>Discover cutting-edge electric vehicles designed for performance, sustainability, and style.</p>                       
                 </div>
             </div>
         </div>

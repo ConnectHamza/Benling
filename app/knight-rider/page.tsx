@@ -11,19 +11,13 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import {aboutSpecificationsData, aboutSpecificationsData2, faqsData, featuresData, featureHeader, heading, colors} from './data'
 import Faqs from '@/components/Faqs/Faqs'
 import Slider from '@/components/Slider/Slider'
+import Banner from '../ezee/Banner'
 
 
 const KnightRider = () => {
     return (
         <main>
-            <div className='w-full md:h-[90vh] h-[50vh]'
-                style={{
-                    backgroundImage: `url(${KnightRiderBanner.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                }}
-            >
-            </div>
+           <Banner />
             <StickyBar
                 title="Benling Knight Rider"
                 description="Discover the Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge Graphene Battery Technology and a robust 1200W Brushless Motor, Knight Rider ensures your rides are smooth, powerful, and sustainable."
