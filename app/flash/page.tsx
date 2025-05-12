@@ -8,15 +8,18 @@ import SmartFeature from './SmartFeature/Main'
 import FeaturesSection from '@/components/Features/Features'
 import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import Tabs from './Tabs'
+import ColorShowcase from "./ColorShowcase"
 import LoopMain from '@/components/LoopCarousel/loop-main'
-import RoshniLoopIMG from '../../public/assets/Roshni/RoshniLoopIMG.webp'
+import RoshniLoopIMG from '../../public/assets/RoshniX/GridLoop.png'
+import Complimentary from '../../public/assets/RoshniX/Complimentary.png'
+
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import PerfectTabs from './PerfectTabs/PerfectTabs'
 import { initFixOverflow } from '../fixOverflow'
 
 
-const heading = 'Explore Roshni Electric Ride';
+const heading = 'Explore Roshni X - Feel Alive';
 const colors = [
   { color: '#121212', percentage: 50 },
   { color: '#121212', percentage: 80 },
@@ -33,20 +36,18 @@ const page = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Benling Roshni"
-        description="Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor, Roshni promises smooth, efficient, and sustainable mobility tailored for every journey."
+        title="Benling Roshni X"
+        description="Experience next-gen mobility with the Roshni X.Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers,
+Roshni X offers efficiency, style, and zero emissions in one sleek package."
         gradient1="#fff"
         gradient2="#fff"
         textColor="#fff"
       />
       <Featured />
-      <Tabs />
-      <Intelligent />
-      <SmartFeature />
+      <ColorShowcase />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
-      {/* <LoopMain imageSrc={RoshniLoopIMG} heading={heading} colors={colors} /> */}
-      <PerfectTabs />
-      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <LoopMain imageSrc={RoshniLoopIMG} heading={heading} colors={colors} />
+      <Specifications bottomImageTag={Complimentary} data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
       <Faqs data={faqsData} />
     </div>
   )

@@ -38,7 +38,7 @@ const Firefly = () => {
       <Performance />
       <Illumination />
       <Benefits />
-      {/* <LoopMain imageSrc={FireflyLoopIMG} heading={heading} colors={colors} /> */}
+      <LoopMain imageSrc={FireflyLoopIMG} heading={heading} colors={colors} />
       <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
       <Faqs data={faqsData}/>
     </>
