@@ -3,7 +3,7 @@ import Bikesilver from "../../public/assets/RoshniX/ColorSection/silver.png";
 import BikeArmygreen from "../../public/assets/RoshniX/ColorSection/armygreen.png";
 import BikeMattblack from "../../public/assets/RoshniX/ColorSection/mattblack.png";
 import BikeRed from "../../public/assets/RoshniX/ColorSection/red.png";
-import BikeColorCard from "@/Components/Cards/BikeColorCard";
+import BikeColorCard from "@/components/Cards/BikeColorCard";
 export default function RoshniColorShowcase() {
     const bikes = [
         {
