@@ -44,8 +44,8 @@ const page = () => {
       <Intelligent />
       <SmartFeature />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
-      {/* <LoopMain imageSrc={RoshniLoopIMG} heading={heading} colors={colors} /> */}
-      <PerfectTabs />
+      <LoopMain imageSrc={RoshniLoopIMG} heading={heading} colors={colors} />
+      {/* <PerfectTabs /> */}
       <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
       <Faqs data={faqsData} />
     </div>

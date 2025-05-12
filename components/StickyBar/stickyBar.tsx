@@ -49,16 +49,6 @@ const StickyBar = ({
         }}
       >
         <div className="w-lg">
-          {/* <motion.h2
-            className={`heading3 ${textColor}`}
-            style={{
-              // opacity: scrollYProgress, 
-              // color: textColorTransform,
-              
-            }}
-          >
-            {description}
-          </motion.h2> */}
           <Paragraph paragraph={description} color={textColor}/>
         </div>
       </div>

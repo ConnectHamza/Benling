@@ -13,27 +13,24 @@ const Banner = () => {
         >
             <div className="w-lg">
                 <div className="md:w-[50%] w-[65%] text-white">
-                    <h2 className='heading2'>
-                        Ride the Future
-                        Today with Firefly
+                    <h2 className='heading2 font-magistral leading-[1]'>
+                        Roshni Brighten Every Journey
                     </h2>
-                    <p>Experience the future of urban mobility with the Firefly electric scooter.
-                        Sleek, powerful, and eco-friendly, it’s designed for effortless rides and
-                        standout style.
-                        </p>
-                        <div className='mt-5'>
-                        <Button 
-                         iconName="chevron-right"
-                         iconColor="black"
-                         buttonText="Shop Now"
-                         bgColor="#ff7700"
-                         hoverBgColor="#ff7700"
-                         textColor="black"
-                         order='order-last'
-                         link='#'
+                    <p className='font-jakarta font-normal'>Experience the future of urban mobility with the Roshni electric scooter. Stylish, efficient, and eco-friendly, it’s crafted for smooth rides and a distinctive, modern look.
+                    </p>
+                    <div className='mt-5'>
+                        <Button
+                            iconName="chevron-right"
+                            iconColor="black"
+                            buttonText="Shop Now"
+                            bgColor="#ff7700"
+                            hoverBgColor="#ff7700"
+                            textColor="black"
+                            order='order-last'
+                            link='#'
                         />
-                        </div>
-                        
+                    </div>
+
                 </div>
             </div>
         </div>

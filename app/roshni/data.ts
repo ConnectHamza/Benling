@@ -36,28 +36,28 @@ export const aboutSpecificationsData2 = [
 export const featuresData = [
     {
         img: Feature1IMG,
-        alt: 'Disc Brakes (Front & Rear)',
-        title: 'Disc Brakes (Front & Rear)',
-        description: 'Safety at its finest with efficient stopping power.',
+        alt: 'Dual Braking System',
+        title: 'Dual Braking System',
+        description: 'Front disc and rear drum brakes ensure precise and reliable stopping power.',
         
     },
     {
         img: Feature2IMG,
-        alt: 'Four Speed Modes',
-        title: 'Four Speed Modes',
-        description: 'Customize your riding experience based on terrain, battery use, or speed requirements.'
+        alt: 'Intuitive Digital Dashboard',
+        title: 'Intuitive Digital Dashboard',
+        description: 'Real-time updates on speed, battery status, and more at a glance.'
     },
     {
         img: Feature3IMG,
-        alt: 'LED Headlights',
-        title: 'LED Headlights',
-        description: 'Bright, energy-efficient lighting for enhanced visibility.'
+        alt: 'Swingarm Cover',
+        title: 'Swingarm Cover',
+        description: 'Durable protection against debris, impacts, and corrosion for a clean, finished look.'
     },
     {
         img: Feature4IMG,
-        alt: 'Robust Frame Technology',
-        title: 'Robust Frame Technology',
-        description: `The Knight Rider's strong, light frame provides a smooth, comfortable ride.`
+        alt: 'Spacious Storage',
+        title: 'Spacious Storage',
+        description: `Carry everything you need with ease and convenience.`
     },
 
 ];

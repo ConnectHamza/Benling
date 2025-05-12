@@ -15,7 +15,7 @@ const LoopCarousel: React.FC<LoopCarouselProps> = ({ src }) => {
             src={src} 
             alt="Loop IMG" 
             fill 
-            style={{ objectFit: "contain" }} 
+            style={{ objectFit: "cover" }} 
             quality={100} 
           />
         </div>
@@ -24,7 +24,7 @@ const LoopCarousel: React.FC<LoopCarouselProps> = ({ src }) => {
             src={src} 
             alt="Loop IMG" 
             fill 
-            style={{ objectFit: "contain" }} 
+            style={{ objectFit: "cover" }} 
             quality={100} 
           />
         </div>
