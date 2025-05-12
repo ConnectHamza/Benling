@@ -5,7 +5,8 @@ import HeroImage from '../../public/assets/Home/Header/heroimage.png';
 import StickyBar from '@/components/StickyBar/stickyBar';
 import HeroSubSection from '@/components/Herocontainer/HeroSub';
 import VideoSection from './VideoSection';
-import ShopSection from "./ShopSectoin"
+import ShopSection from "./ShopSectoin";
+import BlogSection from './BlogSection';
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
 import Logo_Ezze from "../../public/assets/Home/Carousel/Logo_Ezze.svg"
 import Logo_Flash from "../../public/assets/Home/Carousel/Logo_Flash.svg"
@@ -164,11 +165,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div>
+        <div className='mb-20'>
           <VideoSection />
         </div>
         <div>
           <ShopSection />
+        </div>
+        <div>
+          <BlogSection />
         </div>
       </div>
     </>
