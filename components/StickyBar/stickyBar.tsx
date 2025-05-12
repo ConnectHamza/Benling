@@ -38,7 +38,7 @@ const StickyBar = ({
     <>
       <div className={`w-full bg-black-30 flex justify-center px-2 py-3 sticky top-0 ${isSticky ? "z-50" : "z-0"}`} >
         <div className="w-lg text-white">
-          <h3 className="font-bold md:text-[28px] text-[20px]">{title}</h3>
+          <h3 className="md:text-[28px] font-jakarta font-[700px] text-[20px]">{title}</h3>
         </div>
       </div>
       <div

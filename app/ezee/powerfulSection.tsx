@@ -44,9 +44,8 @@ const PowerfulSection = () => {
     <div className='w-full px-4 py-20 bg-gray-10 flex justify-center md:py-[150px]'>
       <div className="w-lg flex flex-col">
         <div className='md:flex'>
-        <div className="md:w-[20%] w-[100%] md:flex hidden md:gap-10 gap-2 flex-col md:mt-20">
+        <div className="md:w-[25%] w-[100%] h-[3%] md:flex hidden md:gap-10 gap-2 flex-col md:mt-20">
         <motion.div 
-          
           variants={cardVariants}
           initial="hiddenLeft"
           whileInView="visible"
@@ -55,7 +54,7 @@ const PowerfulSection = () => {
 
         <IconBox icon={speedIcon} title='35-40km/h' text='Top Speed'/>
         </motion.div>
-        <motion.div 
+        <motion.div
           
           variants={cardVariants}
           initial="hiddenLeft"
@@ -77,7 +76,7 @@ const PowerfulSection = () => {
           <Image alt='Powerful Performance' className='z-2' src={PowerfulImg}/>
           </motion.div>
         </div>
-        <div className="md:w-[20%] w-[100%] md:flex hidden md:gap-10 gap-2 flex-col md:mt-20">
+        <div className="md:w-[25%] w-[100%] md:flex hidden md:gap-10 gap-2 flex-col md:mt-20">
         <motion.div 
           
           variants={cardVariants}
@@ -125,7 +124,7 @@ const PowerfulSection = () => {
           viewport={{ once: true, amount: 0.2 }}
          >
         <GradientText heading={heading1} colors={colors1}/>
-        <p className=' md:mt-3'>The 650W brushless motor provides consistent power, enabling smooth rides even
+        <p className='md:mt-3 font-jakarta font-normal'>The 650W brushless motor provides consistent power, enabling smooth rides even
         on inclines up to 15°.</p>
         </motion.div> 
 
@@ -136,7 +135,7 @@ const PowerfulSection = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         className=" w-[50%] bg-white shadow-md rounded-30 md:py-20 py-10 px-5 text-center mt-5 items-center flex justify-center">
-        <h3 className='heading3 text-black-70'>No Vibrations</h3>    
+        <h3 className='heading3 text-black-70 font-magistral font-bold'>No Vibrations</h3>    
         </motion.div>
 
         <motion.div
@@ -167,8 +166,8 @@ const PowerfulSection = () => {
           viewport={{ once: true, amount: 0.2 }}
       >
         <div className="w-[50%]">
-          <h3 className='heading3 text-black-70'>
-            No Exhause <br></br> No <span>Heat</span>
+          <h3 className='heading3 text-black-70 font-magistral font-bold'>
+            No Exhause <br></br> No <span className='text-[#F31C09]'>Heat</span>
           </h3>
         </div>
         </motion.div> 

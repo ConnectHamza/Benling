@@ -13,30 +13,30 @@ const DesignedSection = () => {
             <div className="w-lg">
             <div className='md:w-[45%] animation-scroll'>
                 <div>
-                    <h3 className='text-white heading3'>Designed for Power
+                    <h3 className='text-white heading3 font-magistral'>Designed for Power
                         and Performance</h3>
                 </div>
                 <div className='flex md:gap-10 md:mt-10 mt-5'>
                     <div className='w-[50%]'>
-                        <h4 className='text-white md:text-[20px] text-[16px]'>
-                            Top Speed <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold'>60km/h</span>
+                        <h4 className='text-white md:text-[20px] text-[16px] font-jakarta font-normal'>
+                            Top Speed <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta'>60km/h</span>
                         </h4>
                     </div>
                     <div className='w-[50%]'>
-                        <h4 className='text-white md:text-[20px] text-[16px]'>
-                        Graphene Battery <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold'>72V / 35Ah/h</span>
+                        <h4 className='text-white md:text-[20px] text-[16px] font-jakarta font-normal'>
+                        Graphene Battery <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta'>72V / 35Ah/h</span>
                         </h4>
                     </div>
                 </div>
                 <div className='flex md:gap-10 md:mt-5 mt-3'>
                     <div className='w-[50%]'>
-                        <h4 className='text-white md:text-[20px] text-[16px]'>
-                        Full Charge Range <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold'>Up to 105KM</span>
+                        <h4 className='text-white md:text-[20px] text-[16px] font-jakarta font-normal'>
+                        Full Charge Range <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta'>Up to 105KM</span>
                         </h4>
                     </div>
                     <div className='w-[50%]'>
-                        <h4 className='text-white md:text-[20px] text-[16px]'>
-                        Brushless Motor <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold'>1200W </span>
+                        <h4 className='text-white md:text-[20px] text-[16px] font-jakarta font-normal'>
+                        Brushless Motor <br></br> <span className='text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta'>1200W </span>
                         </h4>
                     </div>
                 </div>

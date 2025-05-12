@@ -25,14 +25,14 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
     return (
         <div className={`w-full ${bgColor} ${textColor} md:py-[150px] py-10 px-5 flex justify-center`}>
             <div className='w-lg'>
-                <h2 className='heading2 text-center'>{featureTitle}</h2>
-                <p className='text-center'>{featureText}</p>
+                <h2 className='heading2 text-center font-magistral'>{featureTitle}</h2>
+                <p className='text-center font-jakarta'>{featureText}</p>
                 <div className='flex gap-5 flex-wrap mt-5'>
                     {featureItems.map((feature, index) => (
                         <div key={index} className='md:w-[48%] reveal-block'>
                             <Image src={feature.img} alt={feature.alt} />
-                            <h4 className='heading4 mt-3'>{feature.title}</h4>
-                            <p >{feature.description}</p>
+                            <h4 className='heading4 mt-3 font-magistral'>{feature.title}</h4>
+                            <p className='font-jakarta'>{feature.description}</p>
                         </div>
                     ))}
                 </div>

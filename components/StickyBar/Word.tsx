@@ -19,7 +19,7 @@ export default function Paragraph({ paragraph, color }: ParagraphProps) {
   return (
     <h2 
       ref={container}         
-      className={`paragraph font-semibold ${color}`} 
+      className={`text-5xl font-[700] font-jakarta ${color}`} 
     >
       {words.map((word, i) => {
         const start = i / words.length;

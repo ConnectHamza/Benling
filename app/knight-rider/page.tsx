@@ -32,8 +32,9 @@ const KnightRider = () => {
                 textColor="text-white"
             />
             <DesignedSection />
-            <Slider />
             <LedSection />
+
+            <Slider />
             <WaterResistanceSection />
             <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
         

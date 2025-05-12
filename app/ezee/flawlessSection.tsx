@@ -18,30 +18,33 @@ const imageVariants = {
 
 const Flawless = () => {
   return (
-    <div className='w-full md:px-20 px-5 flex justify-center' 
+    <div className='w-full md:px-20 px-5 flex justify-center'
       style={{ background: 'linear-gradient(to right, #AB1609 10%, #F31C09 100%)' }}>
-      
+
       <div className='w-full flex md:flex-row flex-col'>
         {/* Text Animation (Slide from Left) */}
-        <motion.div 
-          className='md:w-[30%] text-white md:pt-[150px] pt-20 flex flex-col justify-center'
+        <motion.div
+          className='md:w-[35%] text-white md:pt-[150px] pt-20 flex flex-col'
           variants={textVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h3 className='md:text-[24px] text-[20px]'>
-            Fearless Rides.<br />
-            <span className='heading3'>Flawless Design.</span>
+          <h3 className='md:text-[24px] text-[20px] self-start'>
+            <span className='font-magistral font-thin'>
+              Fearless Rides.
+            </span>
+            <br />
+            <span className='heading3 font-magistral'>Flawless Design.</span>
           </h3>
-          <p>
-            With dimensions of 1800mm x 690mm x 1250mm and lightweight construction (116 kg), 
+          <p className='font-jakarta font-thin'>
+            With dimensions of 1800mm x 690mm x 1250mm and lightweight construction (116 kg),
             the Ezee is perfect for urban commutes.
           </p>
         </motion.div>
-        
+
         {/* Image Animation (Slide from Right) */}
-        <motion.div 
+        <motion.div
           className='md:w-[70%]'
           variants={imageVariants}
           initial="hidden"

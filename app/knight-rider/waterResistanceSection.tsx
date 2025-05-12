@@ -7,10 +7,10 @@ const WaterResistanceSection = () => {
     <div className='w-full md:min-h-[100vh] flex flex-col justify-center md:pt-[150px] pt-20'
     >
         <div className=" text-center justify-center px-5" style={{zIndex: '10'}}>
-            <h2 className='text-black-70 heading2 z-100'>
+            <h2 className='text-black-70 heading2 z-100 font-magistral'>
             Reliable Water Resistance
             </h2>
-            <p className='text-black-70'>
+            <p className='text-black-70 font-jakarta font-normal'>
             Ride with confidence in rain water with splash proof protection and up to 30 cm of water submersion.
             </p>
         </div>

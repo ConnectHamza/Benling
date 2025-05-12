@@ -35,8 +35,8 @@ export interface FAQ {
 }
 
 export const featureHeader: FeatureHeader = {
-  featureTitle: 'Designed for Your Comfort and Control',
-  featureText: `Experience a blend of thoughtful design and advanced technology. Roshni's features are tailored to enhance your safety, convenience, and riding pleasure.`,
+  featureTitle: 'Advanced Features for a Superior Ride',
+  featureText: `Enhance every journey with cutting-edge features designed for safety, comfort, and performance. From smart security to smooth suspensions, ride with confidence on any terrain.`,
   bgColor: 'bg-black-30',
   textColor: 'text-white',
 };
