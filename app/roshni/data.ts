@@ -64,23 +64,23 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What color options are available for the Benling Roshni?",
+        answer: "The Benling Roshni is available in red, blue, white, silver and black colors , allowing customers to choose the one that suits their style best."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "What is the range of the Benling Roshni on a single charge?",
+        answer: "The Benling Roshni offers an impressive range on a single charge, ensuring long-distance travel without the need for frequent recharging. The range depends on the battery size. Roshni Pro comes with 72V 35Ah which gives 125km on single charge, Roshni Plus comes with 60V 35Ah which gives 105kmand Roshni Standard comes with 72V 23Ah battery which gives 70km on a single charge."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "How powerful is the motor ofthe Benling Roshni?",
+        answer: "The Benling Roshni is equipped with a powerful 1200W motor that delivers smooth acceleration and reliable performance, making it ideal for urban commuting and leisure rides alike."
     },
     {
-        question: "WWhat colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What type of battery does the Benling Roshni use?",
+        answer: "Firefly is available in four stylish colors: Emerald Green, Mint Green, Ivory White, and Charcoal Grey."
     },
     {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "Are spare parts readily available for the Benling Roshni, and what is the warranty coverage?",
+        answer: "The Firefly is equipped with LED lighting, a high-beam headlight for visibility, front and rear disc brakes, and durable tubeless tyres, ensuring safety in all conditions."
     },
 ];

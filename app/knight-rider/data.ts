@@ -107,23 +107,23 @@ export const featuresData: Feature[] = [
 export const faqsData: FAQ[] = [
   {
     question: 'What color options are available for the Benling Knight Rider?',
-    answer: 'You can return any item within 30 days of purchase. The item must be in its original condition and packaging.',
+    answer: 'The Benling Knight Rider is offered in a stylish black color, allowing riders to express their personality on the road.',
   },
   {
     question: 'What is the range of the Benling Knight Rider on a single charge?',
-    answer: 'Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary.',
+    answer: 'The Benling Knight Rider delivers an impressive range of 105km on a single charge, ensuring extended rides without worrying about battery life.',
   },
   {
     question: 'How powerful is the motor of the Benling Knight Rider?',
-    answer: 'Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat.',
+    answer: 'The Benling Knight Rider boasts a robust 1200W motor that delivers exceptional performance, offering smooth acceleration and responsive handling on various terrains.',
   },
   {
     question: 'What type of battery powers the Benling Knight Rider?',
-    answer: 'Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat.',
+    answer: 'The Benling Knight Rider is equipped with a high-quality Graphene battery that provides long-lasting power and reliability, ensuring a seamless riding experience for users.',
   },
   {
     question: 'Are spare parts readily available for the Benling Knight Rider, and what warranty does it come with?',
-    answer: 'Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat.',
+    answer: 'Benling ensures the availability of spare parts for the Knight Rider through its authorized service centers, accompanied by a comprehensive warranty to cover any potential issues.',
   },
 ];
 

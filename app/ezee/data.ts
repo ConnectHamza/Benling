@@ -23,23 +23,23 @@ export const aboutSpecificationsData2 = [
 
 export const faqsData = [
     {
-        question: "What color options are available for the Benling Knight Rider?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What is the maximum range of Ezee on a single charge?",
+        answer: "Ezee offers a range of 35–40 km per charge, ensuring reliable travel for daily commutes and errands."
     },
     {
-        question: "What is the range of the Benling Knight Rider on a single charge?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "Does Ezee have storage options for personal belongings?",
+        answer: "Yes, Ezee provides multiple storage options. It features a spacious inside storage compartment with a cup holder for your personal items and beverages. Additionally, it includes a large external storage box, perfect for carrying groceries, luggage, or other bulky items securely and conveniently. These storage solutions make Ezee practical for all kinds of trips."
     },
     {
-        question: "How powerful is the motor of the Benling Knight Rider?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What makes Ezee eco-friendly?",
+        answer: "Ezee is powered by a graphene battery and operates on clean electric energy, producing zero emissions and promoting sustainability."
     },
     {
-        question: "What type of battery powers the Benling Knight Rider?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "How much weight can Ezee carry?",
+        answer: "Ezee has a loading capacity of up to 140 kg, making it ideal for carrying groceries, luggage, or other essentials."
     },
     {
-        question: "Are spare parts readily available for the Benling Knight Rider, and what warranty does it come with?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What safety features does Ezee include?",
+        answer: "Ezee is equipped with advanced alloy disc brakes and a stable design to ensure a secure and confident ride on urban roads."
     },
 ];
