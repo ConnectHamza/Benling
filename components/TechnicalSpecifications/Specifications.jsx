@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
-const Specifications = ({ data, data2, bottomImageTag = false }) => {
+const Specifications = ({ data, data2, bottomImageTag = '' }) => {
 
   // const half = Math.ceil(data.length / 2);
   const firstColumn = data;

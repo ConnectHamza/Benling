@@ -1,5 +1,5 @@
 import React from 'react'
-import RoshniBanner from '../../public/assets/Roshnix/Roshni-Banner.png'
+import RoshniBanner from '../../public/assets/RoshniX/Roshni-Banner.png'
 import Button from '@/components/Button/Button'
 
 const Banner = () => {

@@ -3,7 +3,7 @@ import Bikesilver from "../../public/assets/flash/ColorSection/color2.png";
 import BikeArmygreen from "../../public/assets/flash/ColorSection/color3.png";
 import BikeMattblack from "../../public/assets/flash/ColorSection/color4.png";
 import BikeRed from "../../public/assets/flash/ColorSection/color5.png";
-import BikeColorCard from "@/Components/Cards/BikeColorCard";
+import BikeColorCard from "@/components/Cards/BikeColorCard";
 
 
 
