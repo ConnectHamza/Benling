@@ -1,12 +1,12 @@
 import React from 'react'
-import RoshniBanner from '../../public/assets/Roshni/Roshni-Banner.webp'
+import FlashBanner from '../../public/assets/flash/main.png'
 import Button from '@/components/Button/Button'
 
 const Banner = () => {
     return (
         <div className='w-full md:h-[90vh]  items-center flex justify-center px-5 py-10'
             style={{
-                backgroundImage: `url(${RoshniBanner.src})`,
+                backgroundImage: `url(${FlashBanner.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center'
             }}
@@ -20,16 +20,7 @@ const Banner = () => {
                     <p className='font-jakarta font-normal'>Discover cutting-edge electric vehicles designed for performance, sustainability, and style.
                         </p>
                         <div className='mt-5'>
-                        <Button 
-                         iconName="chevron-right"
-                         iconColor="black"
-                         buttonText="Explore more"
-                         bgColor="#ff7700"
-                         hoverBgColor="#ff7700"
-                         textColor="black"
-                         order='order-last'
-                         link='#'
-                        />
+              
                         </div>
                         
                 </div>

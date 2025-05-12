@@ -10,8 +10,8 @@ import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificatio
 import Tabs from './Tabs'
 import ColorShowcase from "./ColorShowcase"
 import LoopMain from '@/components/LoopCarousel/loop-main'
-import RoshniLoopIMG from '../../public/assets/RoshniX/GridLoop.png'
-import Complimentary from '../../public/assets/RoshniX/Complimentary.png'
+import RoshniLoopIMG from '../../public/assets/flash/GridLoop.png'
+import Complimentary from '../../public/assets/flash/Complimentary.png'
 
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
@@ -19,7 +19,7 @@ import PerfectTabs from './PerfectTabs/PerfectTabs'
 import { initFixOverflow } from '../fixOverflow'
 
 
-const heading = 'Explore Roshni X - Feel Alive';
+const heading = 'Explore Flash – Ride Bold';
 const colors = [
   { color: '#121212', percentage: 50 },
   { color: '#121212', percentage: 80 },
@@ -36,9 +36,8 @@ const page = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Benling Roshni X"
-        description="Experience next-gen mobility with the Roshni X.Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers,
-Roshni X offers efficiency, style, and zero emissions in one sleek package."
+        title="Crown Benling Flash"
+        description="Designed for those who go the distance, Flash combines a robust 1500W Brushless Motor with a long-range 72V 47AH battery. It delivers smooth, powerful, and eco-friendly rides, perfect for daily commutes or spontaneous adventures. Flash is all about performance, reliability, and clean mobility."
         gradient1="#fff"
         gradient2="#fff"
         textColor="#fff"
