@@ -9,7 +9,6 @@ const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isModelsOpen, setIsModelsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-
     const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
     const toggleModelsMenu = () => setIsModelsOpen((prev) => !prev);
 
@@ -34,7 +33,11 @@ const Header = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
+    const handlePage = (href: string) => {
+        toggleModelsMenu()
+        toggleMobileMenu();  // Toggle menu before navigation
+        window.location.href = href   // Navigate programmatically
+    };
     return (
         <header
             className={`w-full z-50 fixed top-0 transition-all duration-200 ease-linear ${isScrolled ? "bg-black-30 text-white" : "bg-transparent text-white"
@@ -110,13 +113,13 @@ const Header = () => {
 
                         <div className="absolute top-full left-0 mt-1 bg-black-30 text-white w-[300px] z-50 rounded p-4 shadow-md flex-col hidden group-hover:flex">
                             {modelsSubLinks.map(({ href, label }) => (
-                                <Link
+                                <button
                                     key={href}
-                                    href={href}
+                                    onClick={() => handlePage(href)}
                                     className="relative inline-block font-jakarta text-white pb-1 mb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300"
                                 >
                                     {label}
-                                </Link>
+                                </button>
                             ))}
                         </div>
                     </div>
@@ -187,7 +190,7 @@ const Header = () => {
                                         className="ml-4 flex flex-col gap-2"
                                     >
                                         {modelsSubLinks.map(({ href, label }) => (
-                                            <Link key={href} href={href} className={navLink}>
+                                            <Link onClick={toggleMobileMenu} key={href} href={href} className={navLink}>
                                                 {label}
                                             </Link>
                                         ))}
