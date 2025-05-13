@@ -1,5 +1,5 @@
 import React from 'react'
-import MiniBanner from '../../public/assets/spark/main.png'
+import MiniBanner from '../../public/assets/Spark/main.png'
 import HeroSection from '@/components/Herocontainer/Herocontainer'
 
 const Banner = () => {
