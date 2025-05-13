@@ -1,41 +1,14 @@
 import React from 'react'
 import FireflyIMG from '../../public/assets/Firefly/Firefly-Banner.webp'
-import Button from '@/components/Button/Button'
-
+import HeroSection from '@/components/Herocontainer/Herocontainer'
 const Banner = () => {
     return (
-        <div className='w-full md:h-[90vh]  items-center flex justify-center px-5 py-10'
-            style={{
-                backgroundImage: `url(${FireflyIMG.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            }}
-        >
-            <div className="w-lg">
-                <div className="md:w-[50%] w-[65%] text-white">
-                    <h2 className='heading2 font-magistral font-bold leading-[1.2]'>
-                        Ride the Future
-                        Today with Firefly
-                    </h2>
-                    <p className='font-jakarta font-normal'>Experience the future of urban mobility with the Firefly electric scooter.
-                        Sleek, powerful, and eco-friendly, it’s designed for effortless rides and
-                        standout style.
-                    </p>
-                    <div className='mt-5'>
-                        <Button
-                            iconName="chevron-right"
-                            iconColor="black"
-                            buttonText="Shop Now"
-                            bgColor="#ff7700"
-                            hoverBgColor="#ff7700"
-                            textColor="black"
-                            order='order-last'
-                            link='#'
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
+        <HeroSection
+            title="Ride the Future Today with Firefly"
+            subtitle="Experience the future of urban mobility with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style."
+            buttonText="Explore More"
+            imageSrc={FireflyIMG.src}
+        />
     )
 }
 

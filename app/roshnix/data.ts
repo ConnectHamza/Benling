@@ -15,23 +15,29 @@ export const featureHeader = {
 
 
   export const aboutSpecificationsData = [
-    { title: "Motor", value: "1200W Brushless" },
-    { title: "Battery", value: "60V.35Ah" },
+    { title: "Motor", value: "1500W Brushless" },
+    { title: "Top Speed", value: "60 km/h" },
+    { title: "Range", value: "100-110 km" },
+    { title: "Battery", value: "72V.36Ah" },
     { title: "Battery Type", value: "Graphene" },
-    { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "60V.6A" },
-    { title: "Charger Time", value: "6hrs" },
-    { title: "Dimensions", value: "1830 x 695 x 1075mm" },
+    { title: "Speed Mode", value: "4 Mode" },
+    { title: "Charger", value: "72V5A" },
+    { title: "Charging Time", value: "6 to 8 hrs" },
+    { title: "Dimension", value: "1800 x 690 x 1250mm" },
+
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "108KG" },
-    { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "55-65km/h" },
-    { title2: "Wheelbase", value2: "1315mm" },
-    { title2: "Ground Clearance", value2: "120mm" },
-    { title2: "Loading Capacity", value2: "200kg" },
-    { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
+    { title2: "Net Weight (Without Battery)", value2: "124Kg" },
+    { title2: "Angle", value2: "≤20°" },
+    { title2: "Wheelbase", value2: "1300mm" },
+    { title2: "Ground Clearance", value2: "220mm" },
+    { title2: "Tubeless Tyre Size", value2: "Fr: 90/80-12 Rr:90/80-12" },
+    { title2: "Breaking System (F/R)", value2: "Disc" },
+    { title2: "USB Port", value2: "Mobile Charging" },
+    { title2: "Loading Capacity", value2: "200KG" },
+    { title2: "Sensor", value2: "Side Stand Sensor" },
+
 ];
 
 
@@ -78,23 +84,20 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What is the range on a single charge?",
+        answer: "You can expect a range of 100 to 110 km on a full charge, depending on usage and terrain."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "Can it climb inclines?",
+        answer: "Yes, it can climb angles of up to 20°, making it suitable for hilly areas."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What are its dimensions?",
+        answer: "The dimensions are 1800 x 690 x 1250 mm with a wheelbase of 1300 mm and ground clearance of 220 mm."
     },
     {
-        question: "WWhat colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What is the motor capacity of the Roshni X?",
+        answer: "It is powered by a 1500W motor, offering smooth and reliable performance."
     },
-    {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
-    },
+    
 ];

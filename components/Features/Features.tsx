@@ -23,7 +23,7 @@ type FeatureHeader = {
 const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, FeatureHeader}) => {
     const {featureTitle, featureText, bgColor, textColor} = FeatureHeader;
     return (
-        <div className={`w-full ${bgColor} ${textColor} md:pt-[150px] px-5 flex justify-center`}>
+        <div className={`w-full ${bgColor} ${textColor} md:pt-[50px] pt-[50px] px-5 flex justify-center`}>
             <div className='w-lg'>
                 <h2 className='heading2 text-center font-magistral font-[500px]'>{featureTitle}</h2>
                 <p className='text-center font-jakarta'>{featureText}</p>

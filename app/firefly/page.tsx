@@ -16,7 +16,7 @@ import LoopMain from '@/components/LoopCarousel/loop-main'
 
 const Firefly = () => {
 
-  const heading = 'Knight Rider Own The Night';
+  const heading = 'Light Up Your Journey with Firefly';
   const colors = [
     { color: '#121212', percentage: 50 },
     { color: '#121212', percentage: 80 },
@@ -27,7 +27,7 @@ const Firefly = () => {
     <>
       <Banner />
       <StickyBar
-        title="Benling Firefly"
+        title="Crown Benling Firefly"
         description="Experience the Firefly, a modern marvel combining sleek design with eco-friendly technology. Equipped with advanced Graphene Battery Technology and a powerful 1200W Brushless Motor, Firefly ensures unmatched performance, efficiency, and sustainable mobility for every journey."
         gradient1="#fff"
         gradient2="#fff"

@@ -38,10 +38,11 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
         {/* Previous Button */}
         <button
           onClick={prev}
-          className="absolute left-[15%] bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10"
+          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-1"
         >
           <ArrowLeftCircle size={30} />
         </button>
+
 
         {/* Current Bike */}
         <div className="w-[70%] mx-auto">
@@ -65,7 +66,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
         {/* Next Button */}
         <button
           onClick={next}
-          className="absolute right-[15%] bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10"
+          className="absolute right-[15%] [@media(max-width:640px)]:right-[5%] bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10 "
         >
           <ArrowRightCircle size={30} />
         </button>
@@ -109,19 +110,19 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       </div>
 
       {/* Buttons */}
-      <div className="mt-8 flex justify-center gap-4 flex-wrap">
+      <div className="mt-8 flex justify-center gap-4 flex-wrap px-4">
         <a
           href={items[current]?.brochureLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="border-2 border-crownOrange text-crownOrange hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition"
+          className="border-2 border-crownOrange text-crownOrange hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition text-sm sm:text-base sm:px-6 sm:py-3 px-4 py-2"
         >
           Download Brochure
         </a>
 
         <a
           href={items[current]?.exploreLink}
-          className="bg-white border-2 border-crownOrange text-black hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition"
+          className="bg-white border-2 border-crownOrange text-black hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition text-sm sm:text-base sm:px-6 sm:py-3 px-4 py-2"
         >
           Explore More
         </a>

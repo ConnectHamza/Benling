@@ -30,7 +30,7 @@ export default function Ezee() {
                    
             <Banner />
             <StickyBar
-                title="Benling Ezee"
+                title="Crown Benling Ezee"
                 description="Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level."
                 gradient1="#410D09"
                 gradient2="#121212"

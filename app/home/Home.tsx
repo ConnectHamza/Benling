@@ -119,7 +119,6 @@ export default function Home() {
         subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
         buttonText="Explore More"
         imageSrc={HeroImage.src}
-        onButtonClick={() => console.log('Button Clicked')}
       />
       <HeroSubSection
         title="Crown Benling Electric Mobility, proudly operated by"
@@ -144,7 +143,6 @@ export default function Home() {
             {/* Left: Text Block */}
             <div className="text-white flex flex-col space-y-6">
               <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} />
-
               <p className="text-4xl md:text-5xl font-semi-bold leading-tight font-magistral">
                 Pakistan Largest EV Scooter Growing Network
               </p>

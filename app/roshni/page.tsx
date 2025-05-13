@@ -33,7 +33,7 @@ const page = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Benling Roshni"
+        title="Crown Benling Roshni"
         description="Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor, Roshni promises smooth, efficient, and sustainable mobility tailored for every journey."
         gradient1="#fff"
         gradient2="#fff"
@@ -45,7 +45,6 @@ const page = () => {
       <SmartFeature />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
       <LoopMain imageSrc={RoshniLoopIMG} heading={heading} colors={colors} />
-      {/* <PerfectTabs /> */}
       <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
       <Faqs data={faqsData} />
     </div>

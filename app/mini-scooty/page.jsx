@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect } from 'react'
-import Banner from './Banner'
 import StickyBar from '@/components/StickyBar/stickyBar'
 import Featured from './Featured'
 import FeaturesSection from '@/components/Features/Features'
@@ -11,7 +10,7 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Tabs from './Tabs'
-
+import Banner from './Banner'
 
 const heading = 'Explore Flash – Ride Bold';
 const colors = [

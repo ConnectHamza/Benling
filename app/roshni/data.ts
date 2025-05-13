@@ -14,22 +14,22 @@ export const featureHeader = {
 
   export const aboutSpecificationsData = [
     { title: "Motor", value: "1200W Brushless" },
-    { title: "Battery", value: "60V.35Ah" },
-    { title: "Battery Type", value: "Graphene" },
-    { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "60V.6A" },
-    { title: "Charger Time", value: "6hrs" },
-    { title: "Dimensions", value: "1830 x 695 x 1075mm" },
+    { title: "Maximum Speed", value: "55-60 Km/h" },
+    { title: "Charging Time", value: "6 to 8 hrs" },
+    { title: "USB Port", value: "Mobile Charging" },
+    { title: "Dimensions", value: "1810 x 650 x 1100mm" },
+    { title: "Speed Mode", value: "4 Modes" },
+    { title: "Security", value: "Remote Alarm System" },
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "108KG" },
-    { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "55-65km/h" },
-    { title2: "Wheelbase", value2: "1315mm" },
-    { title2: "Ground Clearance", value2: "120mm" },
-    { title2: "Loading Capacity", value2: "200kg" },
-    { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
+    { title2: "Wheelbase", value2: "1330mm" },
+    { title2: "Ground Clearance", value2: "220mm" },
+    { title2: "Loading Capacity", value2: "160 Kgs" },
+    { title2: "Climbing Angle", value2: "≤20°" },
+    { title2: "Braking System", value2: "Fr.Disc / Re.Drum" },
+    { title2: "Tubeless Tyre Size", value2: "F & R 90/80/12" },
+    { title2: "Available Colors", value2: "Blue, Black, Silver, Red & White" },
 ];
 
 

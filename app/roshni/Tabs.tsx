@@ -8,7 +8,7 @@ import RoshniSilver from '../../public/assets/Roshni/Tabs/Roshni-Silver.webp';
 import RoshniRed from '../../public/assets/Roshni/Tabs/Roshni-Red.webp';
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState('Roshni Black');
+  const [activeTab, setActiveTab] = useState('1');
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
@@ -20,31 +20,31 @@ const Tabs = () => {
           <h2 className="text-[30px] font-semibold font-magistral">Express Yourself in Every Shade</h2>
           <div className="mt-5 md:block flex flex-wrap">
             <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta  ${activeTab === '1' ? 'text-[#16514C]  inline-block' : 'text-gray-20'}`}
+              className={`md:heading2 heading4  cursor-pointer font-jakarta  ${activeTab === '1' ? 'text-[#292826]  inline-block' : 'text-gray-20'}`}
               onClick={() => handleTabClick('1')}
             >
               Black
             </h3>
             <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '2' ? 'text-[#16514C] inline-block ' : 'text-gray-20'}`}
+              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '2' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
               onClick={() => handleTabClick('2')}
             >
               White
             </h3>
             <h3
-              className={`md:heading2 heading4  cursor-pointer  font-jakarta ${activeTab === '3' ? 'text-[#16514C] inline-block ' : 'text-gray-20'}`}
+              className={`md:heading2 heading4  cursor-pointer  font-jakarta ${activeTab === '3' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
               onClick={() => handleTabClick('3')}
             >
               Blue
             </h3>
             <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '4' ? 'text-[#16514C] inline-block ' : 'text-gray-20'}`}
+              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '4' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
               onClick={() => handleTabClick('4')}
             >
               Silver
             </h3>
             <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '5' ? 'text-[#16514C] inline-block ' : 'text-gray-20'}`}
+              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '5' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
               onClick={() => handleTabClick('5')}
             >
               Red

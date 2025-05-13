@@ -38,10 +38,10 @@ const HeroSection = ({
         backgroundSize: "stretch",
       }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container px-4 sm:px-8 lg:px-8">
         <div className="max-w-4xl text-left">
           <motion.h1
-            className="text-xl sm:text-2xl fs-47 md:text-3xl lg:text-5xl jakarta font-bold text-[47px] leading-[1.2]  font-bold leading-snug break-words whitespace-normal"
+            className="text-xl sm:text-2xl fs-47 md:text-3xl lg:text-5xl jakarta text-[47px] font-bold leading-snug break-words whitespace-normal"
             variants={fadeInUp}
             initial="hidden"
             animate={controls}
