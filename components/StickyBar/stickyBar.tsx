@@ -1,59 +1,33 @@
 "use client";
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import "./StickyBar.css";
-import Paragraph from "./Word";
+import React from "react";
 
 
 const StickyBar = ({
   title,
-  description,
-  gradient1,
-  gradient2,
-  textColor,
   isSticky = true,
-  useBackgroundImage = false
+  headingPartOne = "Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling ,",
+  headingPartTwo = "the Ezee takes your journey to the next level.",
+  colorOne = '#FFFFFF',
+  colorTwo = '#F15822',
+  gradients = 'bg-gradient-to-br from-[#410D09] to-[#121212]'
 }) => {
-  const container = useRef(null);
-
-  // const { scrollYProgress } = useScroll({
-  //   target: container,
-  //   offset: ["start 0.9", "start 0.25"], 
-  // });
-
-
-  // const background = useTransform(
-  //   scrollYProgress,
-  //   [0, 1],
-  //   [`linear-gradient(to right, ${gradient1} 10%, ${gradient2} 50%)`, `linear-gradient(to right, ${gradient2} 10%, ${gradient1} 50%)`]
-  // );
-
-  // const textColorTransform = useTransform(
-  //   scrollYProgress,
-  //   [0, 1],
-  //   ["#000000", "#FFFFFF"]
-  // );
-
   return (
     <>
-      <div className={`w-full bg-black-30 flex justify-center px-2 py-3 sticky top-0 ${isSticky ? "z-50" : "z-0"}`} >
-        <div className="w-lg text-white">
-          <h3 className="md:text-[28px] font-jakarta font-[700px] text-[20px]">{title}</h3>
+      <div className={`w-full bg-black-30 flex justify-center py-4 sticky top-0 ${isSticky ? "z-50" : "z-0"}`} >
+        <div className={`w-full text-white px-4 md:px-12 text-center md:text-start `}>
+          <h3 style={{fontWeight:700}} className="md:text-[28px] font-jakarta text-[20px]">{title}</h3>
         </div>
       </div>
-      <div
-        ref={container} // Attach the ref to the 
-        className="w-full px-5 py-20 flex justify-center"
-        style={{
-          background: `linear-gradient(to right, ${gradient1} 10%, ${gradient2} 50%)`,
-        }}
-      >
-        <div className="w-lg">
-          <Paragraph paragraph={description} color={textColor}/>
-        </div>
+      <div className={`w-full py-12 px-4 md:px-12 ${gradients}`}>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-[500] font-jakarta leading-[1.2]">
+          <span style={{ color: colorOne }}>{headingPartOne}</span>
+          <span style={{ color: colorTwo }}>{headingPartTwo}</span>
+        </h1>
       </div>
     </>
   );
 };
 
 export default StickyBar;
+
+

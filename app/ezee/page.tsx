@@ -19,32 +19,30 @@ export default function Ezee() {
 
     const heading = 'Ezee is Everywhere';
     const colors = [
-      { color: '#121212', percentage: 50 },
-      { color: '#c51f26', percentage: 80 },
-      { color: '#121212', percentage: 100 },
+        { color: '#121212', percentage: 50 },
+        { color: '#c51f26', percentage: 80 },
+        { color: '#121212', percentage: 100 },
     ];
-    
-   
+
+
     return (
         <main>
-                   
             <Banner />
             <StickyBar
                 title="Crown Benling Ezee"
-                description="Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level."
-                gradient1="#410D09"
-                gradient2="#121212"
-                textColor="text-red-300"
-                isSticky={false}
+                headingPartOne="Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, "
+                headingPartTwo="the Ezee takes your journey to the next level"
+                colorOne="#fff"
+                colorTwo="#f15822"
+                gradients={"bg-gradient-to-br from-[#410D09] to-[#121212]"}
             />
-            
             <Carousel />
             <Flawless />
             <PowerfulSection />
             <InnovationMain />
             <LoopMain imageSrc={EzeeLoopIMG} heading={heading} colors={colors} />
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
-            <Faqs data={faqsData}/>
+            <Faqs data={faqsData} />
         </main>
     );
 }

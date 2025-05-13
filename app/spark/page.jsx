@@ -31,10 +31,11 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling Spark"
-        description="Lightweight and practical, Spark is powered by a 650W Motor and a 48V 30AH battery, offering a smooth and economical ride. With its sleek design and eco-friendly performance, Spark is the perfect choice for effortless city mobility."
-        gradient1="#fff"
-        gradient2="#fff"
-        textColor="#fff"
+        headingPartOne="Lightweight and practical, Spark is powered by a 650W Motor and a 48V 30AH battery, offering a smooth and economical ride. "
+        headingPartTwo="With its sleek design and eco-friendly performance, Spark is the perfect choice for effortless city mobility."
+        colorOne="#fff"
+        colorTwo="#297CA0"
+        gradients={"bg-gradient-to-br from-[#C7E4F0] to-[#5EB3D2]"}
       />
       <Featured />
       <Tabs />

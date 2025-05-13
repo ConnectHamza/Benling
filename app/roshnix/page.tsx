@@ -36,12 +36,12 @@ const page = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Crown Benling Roshni X"
-        description="Experience next-gen mobility with the Roshni X.Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers,
-Roshni X offers efficiency, style, and zero emissions in one sleek package."
-        gradient1="#fff"
-        gradient2="#fff"
-        textColor="#fff"
+        title="Crown Benling RoshiX"
+        headingPartOne="Experience next-gen mobility with the Roshni X.Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. "
+        headingPartTwo="Designed for urban explorers, Roshni X offers efficiency, style, and zero emissions in one sleek package."
+        colorOne="#fff"
+        colorTwo="#FDCF0A"
+        gradients={"bg-gradient-to-br from-[#534C2A] to-[#0F0C02]"}
       />
       <Featured />
       <ColorShowcase />

@@ -29,11 +29,12 @@ const page = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Crown Benling Roshni"
-        description="Perfect for short city rides, the Mini Scooty features a 450W Motor and a reliable 48V 23AH battery. Its lightweight design, easy handling, and zero-emission drive make it ideal for everyday convenience with a touch of timeless charm."
-        gradient1="#fff"
-        gradient2="#fff"
-        textColor="#fff"
+        title="Crown Benling Mini Scooty"
+        headingPartOne="Perfect for short city rides, the Mini Scooty features a 450W Motor and a reliable 48V 23AH battery. "
+        headingPartTwo="Its lightweight design, easy handling, and zero-emission drive make it ideal for everyday convenience with a touch of timeless charm"
+        colorOne="#fff"
+        colorTwo="#07BFD5"
+        gradients={"bg-gradient-to-br from-[#1DADB5] to-[#05080C]"}
       />
       <Featured />
       <Tabs />

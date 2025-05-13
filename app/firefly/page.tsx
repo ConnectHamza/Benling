@@ -7,7 +7,7 @@ import Blaze from './Blaze'
 import Illumination from './Illumination'
 import './styles/firefly.css'
 import Benefits from './Benefits'
-import {aboutSpecificationsData, aboutSpecificationsData2, faqsData} from './data'
+import { aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import FireflyLoopIMG from '../../public/assets/Firefly/Firefly-Loop-IMG.webp'
@@ -27,11 +27,12 @@ const Firefly = () => {
     <>
       <Banner />
       <StickyBar
-        title="Crown Benling Firefly"
-        description="Experience the Firefly, a modern marvel combining sleek design with eco-friendly technology. Equipped with advanced Graphene Battery Technology and a powerful 1200W Brushless Motor, Firefly ensures unmatched performance, efficiency, and sustainable mobility for every journey."
-        gradient1="#fff"
-        gradient2="#fff"
-        textColor="000"
+        title="Crown Benling Fire fly"
+        headingPartOne="Experience the Firefly, a modern marvel combining sleek design with eco-friendly technology. Equipped with advanced Graphene Battery Technology and a powerful 1200W Brushless Motor, "
+        headingPartTwo="Firefly ensures unmatched performance, efficiency, and sustainable mobility for every journey."
+        colorOne="#052E2C"
+        colorTwo="#19B39F"
+        gradients={"bg-gradient-to-br from-[#9CF3E1] to-[#F0FDFA]"}
       />
       <Blaze />
       <Tabs />
@@ -40,7 +41,7 @@ const Firefly = () => {
       <Benefits />
       <LoopMain imageSrc={FireflyLoopIMG} heading={heading} colors={colors} />
       <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
-      <Faqs data={faqsData}/>
+      <Faqs data={faqsData} />
     </>
   )
 }
