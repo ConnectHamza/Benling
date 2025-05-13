@@ -1,6 +1,7 @@
-"use client"
+'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
+
 import RoshniBlack from '../../public/assets/Roshni/Tabs/Roshni-Black.webp';
 import RoshniWhite from '../../public/assets/Roshni/Tabs/Roshni-White.webp';
 import RoshniBlue from '../../public/assets/Roshni/Tabs/Roshni-Blue.webp';
@@ -13,50 +14,49 @@ const Tabs = () => {
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
   };
+
+  const colorOptions = [
+    { id: '1', label: 'Black', image: RoshniBlack, alt: 'Firefly Roshni Black' },
+    { id: '2', label: 'White', image: RoshniWhite, alt: 'Firefly Roshni White' },
+    { id: '3', label: 'Blue', image: RoshniBlue, alt: 'Firefly Roshni Blue' },
+    { id: '4', label: 'Silver', image: RoshniSilver, alt: 'Firefly Roshni Silver' },
+    { id: '5', label: 'Red', image: RoshniRed, alt: 'Firefly Roshni Red' },
+  ];
+
   return (
     <div className="w-full flex justify-center md:px-10 px-5 py-10 bg-gray-50 md:h-[100vh]">
-      <div className="w-full md:flex justify-between items-center md:ml-20">
-        <div className="md:w-[40%]">
-          <h2 className="text-[30px] font-semibold font-magistral">Express Yourself in Every Shade</h2>
-          <div className="mt-5 md:block flex flex-wrap">
-            <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta  ${activeTab === '1' ? 'text-[#292826]  inline-block' : 'text-gray-20'}`}
-              onClick={() => handleTabClick('1')}
-            >
-              Black
-            </h3>
-            <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '2' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
-              onClick={() => handleTabClick('2')}
-            >
-              White
-            </h3>
-            <h3
-              className={`md:heading2 heading4  cursor-pointer  font-jakarta ${activeTab === '3' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
-              onClick={() => handleTabClick('3')}
-            >
-              Blue
-            </h3>
-            <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '4' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
-              onClick={() => handleTabClick('4')}
-            >
-              Silver
-            </h3>
-            <h3
-              className={`md:heading2 heading4  cursor-pointer font-jakarta ${activeTab === '5' ? 'text-[#292826] inline-block ' : 'text-gray-20'}`}
-              onClick={() => handleTabClick('5')}
-            >
-              Red
-            </h3>
+      <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center md:ml-20 gap-8">
+        
+        {/* Text and Tab Section */}
+        <div className="md:w-[40%] w-full">
+          <h2 className="text-[24px] md:text-[30px] font-semibold font-magistral mb-4 text-center md:text-left">
+            Express Yourself in Every Shade
+          </h2>
+          <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-x-4 gap-y-2">
+            {colorOptions.map((option) => (
+              <h3
+                key={option.id}
+                onClick={() => handleTabClick(option.id)}
+                className={`
+                  heading4 cursor-pointer font-jakarta 
+                  text-center md:text-left 
+                  w-[30%] md:w-full whitespace-nowrap
+                  ${activeTab === option.id ? 'text-[#292826]' : 'text-gray-400'}
+                `}
+              >
+                {option.label}
+              </h3>
+            ))}
           </div>
         </div>
-        <div className="md:w-[60%]">
-          {activeTab === '1' && <Image src={RoshniBlack} alt="Firefly Roshni Black" />}
-          {activeTab === '2' && <Image src={RoshniWhite} alt="Firefly Roshni White" />}
-          {activeTab === '3' && <Image src={RoshniBlue} alt="Firefly Roshni Blue" />}
-          {activeTab === '4' && <Image src={RoshniSilver} alt="Firefly Roshni Silver" />}
-          {activeTab === '5' && <Image src={RoshniRed} alt="Firefly Roshni Red" />}
+
+        {/* Image Section */}
+        <div className="md:w-[60%] w-full flex justify-center">
+          <Image
+            src={colorOptions.find((opt) => opt.id === activeTab)?.image!}
+            alt={colorOptions.find((opt) => opt.id === activeTab)?.alt || 'Color Variant'}
+            className="w-full h-auto object-contain"
+          />
         </div>
       </div>
     </div>
