@@ -113,8 +113,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       <div className="mt-8 flex justify-center gap-4 flex-wrap px-4">
         <a
           href={items[current]?.brochureLink}
-          target="_blank"
-          rel="noopener noreferrer"
+          download
           className="border-2 border-crownOrange text-crownOrange hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition text-sm sm:text-base sm:px-6 sm:py-3 px-4 py-2"
         >
           Download Brochure

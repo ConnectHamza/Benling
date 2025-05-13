@@ -30,7 +30,11 @@ import BrandingSection from "./BrandingSection";
 import CrownLogo from '../../public/assets/Home/Branding/crownlogo.png';
 import Pak from '../../public/assets/Home/Branding/pakistanmap.png';
 import Image from 'next/image';
-import Faqs from '@/components/Faqs/Faqs';
+import Faqs from '@/components/Faqs/Faqs'
+
+import MiniScootyBroucher from "../../public/assets/Brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf";
+import RoshniXBroucher from "../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf";
+
 import { faqsData } from './data';
 export default function Home() {
   const bikes = [
@@ -40,7 +44,7 @@ export default function Home() {
       range: 150,
       maxSpeed: 70,
       motorPower: 1500,
-      brochureLink: "",
+      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
       exploreLink: "/flash",
       logo: Logo_Flash.src
     },
@@ -50,7 +54,7 @@ export default function Home() {
       range: 100,
       maxSpeed: 60,
       motorPower: 1500,
-      brochureLink: "",
+      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
       exploreLink: "/knight-rider",
       logo: Logo_Knight_Rider.src
 
@@ -61,7 +65,7 @@ export default function Home() {
       range: 110,
       maxSpeed: 60,
       motorPower: 1500,
-      brochureLink: "",
+      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
       exploreLink: "/roshnix",
       logo: Logo_Roshnix.src
     },
@@ -71,7 +75,7 @@ export default function Home() {
       range: 55,
       maxSpeed: 40,
       motorPower: 650,
-      brochureLink: "",
+      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
       exploreLink: "/ezee",
       logo: Logo_Ezze.src
     }, {
@@ -80,7 +84,7 @@ export default function Home() {
       range: 120,
       maxSpeed: 60,
       motorPower: 1200,
-      brochureLink: "",
+      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
       exploreLink: "/roshni",
       logo: Logo_Roshni.src
     }, {
@@ -89,7 +93,7 @@ export default function Home() {
       range: 100,
       maxSpeed: 60,
       motorPower: 1200,
-      brochureLink: "",
+      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Firefly_Brochure.pdf',
       exploreLink: "/firefly",
       logo: Logo_Firefly.src
     }, {
@@ -98,7 +102,7 @@ export default function Home() {
       range: 40,
       maxSpeed: 40,
       motorPower: 600,
-      brochureLink: "",
+      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Spark_Brochure.pdf',
       exploreLink: "/spark",
       logo: Logo_Spark.src
     }, {
@@ -107,7 +111,7 @@ export default function Home() {
       range: 35,
       maxSpeed: 35,
       motorPower: 450,
-      brochureLink: "",
+      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
       exploreLink: "/mini-scooty",
       logo: Logo_Mini_Scooty.src
     }
