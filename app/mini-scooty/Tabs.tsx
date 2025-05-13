@@ -1,6 +1,12 @@
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
+import Green from '../../public/assets/mini-scooty/Variants/green.png';
+
+import Yellow from '../../public/assets/mini-scooty/Variants/yellow.png';
+
+import Red from '../../public/assets/mini-scooty/Variants/red.png';
+
 import Shadowjet from '../../public/assets/mini-scooty/Variants/shadowjet.png';
 
 
@@ -47,9 +53,9 @@ const Tabs = () => {
         {/* Right Section (Image) */}
         <div className="md:w-[60%] w-full flex justify-center">
           {activeTab === '1' && <Image src={Shadowjet} alt="Mini Scooty Shadow Jet" className="w-full h-auto object-contain" />}
-          {activeTab === '2' && <Image src={Shadowjet} alt="Mini Scooty Bubble Blue" className="w-full h-auto object-contain" />}
-          {activeTab === '3' && <Image src={Shadowjet} alt="Mini Scooty Cherry Zoom" className="w-full h-auto object-contain" />}
-          {activeTab === '4' && <Image src={Shadowjet} alt="Mini Scooty Vanilla Pop" className="w-full h-auto object-contain" />}
+          {activeTab === '2' && <Image src={Green} alt="Mini Scooty Bubble Blue" className="w-full h-auto object-contain" />}
+          {activeTab === '3' && <Image src={Red} alt="Mini Scooty Cherry Zoom" className="w-full h-auto object-contain" />}
+          {activeTab === '4' && <Image src={Yellow} alt="Mini Scooty Vanilla Pop" className="w-full h-auto object-contain" />}
         </div>
       </div>
     </div>
