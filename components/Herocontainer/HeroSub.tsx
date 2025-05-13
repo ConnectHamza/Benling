@@ -55,16 +55,13 @@ const HeroSection = ({
           </motion.h1>
 
           {buttonLabel && (
-            <motion.button
-              variants={fadeInUp}
-              initial="hidden"
-              animate={controls}
-              onClick={onButtonClick}
+            <a
               
+              href="https://crowngroup.com.pk/" target="_blank"
               className="mt-8 inline-block border border-white text-white px-6 py-2 rounded hover:border-crownOrange hover:bg-crownOrange transition duration-300"
             >
               {buttonLabel}
-            </motion.button>
+            </a>
           )}
         </div>
       </div>

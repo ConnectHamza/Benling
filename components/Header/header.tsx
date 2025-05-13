@@ -127,9 +127,9 @@ const Header = () => {
                 </nav>
 
                 {/* Logo */}
-                <div className="flex-shrink-0">
+                <a href="http://localhost:3000/">
                     <Image src={logo} alt="Crown Logo" width={120} priority />
-                </div>
+                </a>
 
                 {/* Right nav */}
                 <nav className="hidden md:flex items-center gap-6 text-sm">
