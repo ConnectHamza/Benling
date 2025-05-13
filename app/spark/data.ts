@@ -1,18 +1,20 @@
-import Feature1IMG from '../../public/assets/Roshni/FeaturesIMG/Feature1.webp';
-import Feature2IMG from '../../public/assets/Roshni/FeaturesIMG/Feature2.webp';
-import Feature3IMG from '../../public/assets/Roshni/FeaturesIMG/Feature3.webp';
-import Feature4IMG from '../../public/assets/Roshni/FeaturesIMG/Feature4.webp';
+import Feature1IMG from '../../public/assets/Spark/Features/Feature1.png';
+import Feature2IMG from '../../public/assets/Spark/Features/Feature2.png';
+import Feature3IMG from '../../public/assets/Spark/Features/Feature3.png';
+import Feature4IMG from '../../public/assets/Spark/Features/Feature4.png';
+import Feature5IMG from '../../public/assets/Spark/Features/Feature5.png';
+import Feature6IMG from '../../public/assets/Spark/Features/Feature6.png';
 
 
 export const featureHeader = {
-    featureTitle: 'Designed for Your Comfort and Control',
-    featureText: `Experience a blend of thoughtful design and advanced technology. Roshni's features are tailored to enhance your safety, convenience, and riding pleasure.`,
+    featureTitle: 'Splash the Streets with Spark',
+    featureText: `Choose from bold and vibrant shades—Charcoal Grey, Oasis Blue, or Crimson Red. The Spark combines everyday practicality with head-turning style, letting your personality shine with every ride.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
-  };
+};
 
 
-  export const aboutSpecificationsData = [
+export const aboutSpecificationsData = [
     { title: "Motor", value: "1200W Brushless" },
     { title: "Battery", value: "60V.35Ah" },
     { title: "Battery Type", value: "Graphene" },
@@ -36,28 +38,40 @@ export const aboutSpecificationsData2 = [
 export const featuresData = [
     {
         img: Feature1IMG,
-        alt: 'Disc Brakes (Front & Rear)',
-        title: 'Disc Brakes (Front & Rear)',
-        description: 'Safety at its finest with efficient stopping power.',
-        
+        alt: 'Illuminator LED Headlight',
+        title: 'Illuminator LED Headlight',
+        description: 'The Benling Spark features a high-performance LED headlight that provides brilliant illumination, ensuring optimal visibility for safer rides during nighttime or in low-light conditions. The sleek design enhances the overall aesthetic while offering reliable performance to light your way.',
+
     },
     {
         img: Feature2IMG,
-        alt: 'Four Speed Modes',
-        title: 'Four Speed Modes',
-        description: 'Customize your riding experience based on terrain, battery use, or speed requirements.'
+        alt: '4-Speed Modes',
+        title: '4-Speed Modes',
+        description: 'The Benling Spark offers four distinct speed modes, allowing riders to customize their experience based on the journey’s demands. Whether you prefer energy-efficient cruising or a more dynamic ride, the Spark adapts effortlessly to your needs, providing versatility for every situation.'
     },
     {
         img: Feature3IMG,
-        alt: 'LED Headlights',
-        title: 'LED Headlights',
-        description: 'Bright, energy-efficient lighting for enhanced visibility.'
+        alt: 'Rear Drum Braking System',
+        title: 'Rear Drum Braking System',
+        description: 'Equipped with a durable rear drum braking system, the Spark provides reliable and consistent braking performance. Ideal for city traffic and everyday riding, it ensures smooth deceleration and added safety across all journeys.'
     },
     {
         img: Feature4IMG,
-        alt: 'Robust Frame Technology',
-        title: 'Robust Frame Technology',
-        description: `The Knight Rider's strong, light frame provides a smooth, comfortable ride.`
+        alt: 'Spacious Utility Compartment',
+        title: 'Spacious Utility Compartment',
+        description: `This scooter is equipped with a generously sized utility compartment, making it ideal for carrying everyday essentials, groceries, or even a helmet. Designed for convenience and security, it ensures you’re ready for any commute or errand.`
+    },
+    {
+        img: Feature5IMG,
+        alt: 'Sleek Side Design',
+        title: 'Sleek Side Design',
+        description: `The Spark’s side design showcases flowing body lines, integrated footrests, and a compact silhouette that emphasizes agility and urban style. Every curve is crafted to deliver a modern look that stands out in motion or at rest.`
+    },
+    {
+        img: Feature6IMG,
+        alt: 'Front Disc Braking System',
+        title: 'Front Disc Braking System',
+        description: 'Equipped with a responsive front disc braking system, the Spark ensures stable and precise stopping power. This feature enhances safety during quick stops and daily rides, offering riders greater control and confidence in every situation.'
     },
 
 ];
