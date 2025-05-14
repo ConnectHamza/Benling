@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import shopIcon from '../../public/assets/Home/shops/Store.png';
 import crownImage from '../../public/assets/Home/shops/crownshop.png';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight ,ArrowUpRight} from 'lucide-react';
 
 const shops = [
   {
@@ -85,12 +85,19 @@ export default function ShopSlider() {
                 Explore Our Nationwide Network
                 <span className="text-orange-500"> Karachi</span>
               </h2>
-              <p className="mt-2 text-sm sm:text-base text-gray-800 font-jakarta">
+              <p className="mt-2 text-sm sm:text-base text-black-200 font-jakarta">
                 Find your Crown partners — a trusted dealer network offering electric mobility near you.
               </p>
               <div className="mt-4 font-jakarta">
-                <p>Learn More About Crown Benling Dealer</p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1 text-black hover:underline transition"
+                >
+                  Learn More About Crown Benling Dealer
+                  <ArrowUpRight size={14} />
+                </a>
               </div>
+
             </div>
           </div>
         </div>

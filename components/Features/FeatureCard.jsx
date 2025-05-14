@@ -14,7 +14,7 @@ const FeatureCard = ({
     return (
         <div className="mb-5">
             <div
-                className="rounded-xl overflow-hidden relative flex flex-col justify-center min-h-[180px] md:min-h-[55vh] p-4 item-center overflow-hidden sm:min-h-[35vh]"
+                className="rounded-xl relative flex flex-col justify-center min-h-[180px] md:min-h-[55vh] p-4 item-center overflow-hidden sm:min-h-[35vh]"
                 style={{
                     background: `url(${backgroundImage})`,
                     backgroundRepeat: "no-repeat",
@@ -35,7 +35,7 @@ const FeatureCard = ({
                 )}
             </div>
             <div className="mt-2">
-                <h4 className="text-white font-magistral font-semi-bold  text-base md:text-lg">{heading}</h4>
+                <h4 className="text-white font-magistral font-semi-bold text-2xl">{heading}</h4>
                 <p className="text-white font-medium font-jakarta text-xs md:text-sm">{description}</p>
             </div>
         </div>
