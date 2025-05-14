@@ -61,12 +61,12 @@ function MobileModelsPanel({ onBack }) {
                         className="flex flex-col items-center group hover:scale-105 transition"
                     >
                         {/* Image Container with fixed height */}
-                        <div className="flex items-center justify-center h-[160px] w-full">
+                        <div className="flex items-center justify-center h-[120px] w-full">
                             <Image
                                 src={model.img}
                                 alt={model.href}
-                                width={1200}
-                                height={1000}
+                                width={220}
+                                height={300}
                                 className="object-contain max-h-full"
                             />
                         </div>
@@ -101,7 +101,7 @@ const Header = () => {
 
     // Desktop Mega Menu
     const DesktopModelsMegaMenu = () => (
-        <div className="fixed left-0 top-[75px] w-full h-[50vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
+        <div className="fixed left-0 top-[75px] w-full h-[70vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
             <div className="max-w-[1300px] mx-auto px-10 py-8 h-full flex flex-col">
                 {/* Heading */}
                 <div className="font-regular text-lg mb-6 text-black-200 font-magistral">
@@ -118,22 +118,23 @@ const Header = () => {
                                 className="flex flex-col items-center group hover:scale-105 transition"
                             >
                                 {/* Image */}
-                                <div className="flex items-center justify-center h-[160px] w-full">
+                                <div className="flex items-center justify-center h-[120px] w-full">
                                     <Image
                                         src={model.img}
                                         alt={model.href}
-                                        width={1200}
-                                        height={1000}
+                                        width={220}
+                                        height={300}
                                         className="object-contain max-h-full"
                                     />
                                 </div>
 
+
                                 {/* Logo */}
-                                <div className="mt-6 h-[40px] flex items-center justify-center">
+                                <div className="mt-6 h-[20px] flex items-center justify-center">
                                     <Image
                                         src={model.logo}
                                         alt={model.href}
-                                        width={150}
+                                        width={100}
                                         height={20}
                                         className="mx-auto"
                                     />
