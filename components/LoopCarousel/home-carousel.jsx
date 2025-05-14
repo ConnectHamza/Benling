@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
-
+import { ArrowLeftCircle, ArrowRightCircle, Download, ArrowUpRight } from "lucide-react";
 const HomeCarousel = ({ items = [], autoplay = false }) => {
   const [current, setCurrent] = useState(0);
 
@@ -111,21 +110,26 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
 
       {/* Buttons */}
       <div className="mt-8 flex justify-center gap-4 flex-wrap px-4">
+        {/* Download Brochure Button */}
         <a
           href={items[current]?.brochureLink}
           download
-          className="border-2 border-crownOrange text-crownOrange hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition text-sm sm:text-base sm:px-6 sm:py-3 px-4 py-2"
+          className="flex items-center gap-2 border-2 border-black hover:border-crownOrange text-black-200 hover:bg-crownOrange hover:text-white px-5 py-2.5 rounded font-medium text-sm sm:text-base transition"
         >
+          <Download size={16} />
           Download Brochure
         </a>
 
+        {/* Explore More Button */}
         <a
           href={items[current]?.exploreLink}
-          className="bg-white border-2 border-crownOrange text-black hover:bg-crownOrange hover:text-white px-6 py-3 rounded transition text-sm sm:text-base sm:px-6 sm:py-3 px-4 py-2"
+          className="flex items-center gap-2 bg-crownOrange text-white hover:bg-[#e6531f] px-5 py-2.5 rounded font-medium text-sm sm:text-base transition"
         >
           Explore More
+          <ArrowUpRight size={16} />
         </a>
       </div>
+
     </div>
   );
 };

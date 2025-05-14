@@ -13,10 +13,11 @@ const sizeClasses = {
 
 const variantClasses = {
     solid: "bg-orange-500 text-white hover:bg-orange-600",
-    outline: "border border-white text-black hover:bg-gray-100",
-    labeled: "text-black",
+    outline:
+      "border border-black text-black hover:bg-white hover:text-black dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black",
+    labeled: "text-black dark:text-white",
     footer: "bg-black text-white px-4 py-2 text-sm",
-};
+  };
 
 const Button = ({
     size = "medium",
@@ -25,8 +26,8 @@ const Button = ({
     iconName = null,
     iconPosition = "right",
     className = "",
-    onClick = () => { },
-    href = null, // if present, render as a Link
+    onClick = () => {},
+    href = null,
     target = "_self",
 }) => {
     const sizeClass = sizeClasses[size];
@@ -46,8 +47,8 @@ const Button = ({
     // Render as <Link> if href exists
     if (href) {
         return (
-            <Link href={href} target={target} passHref legacyBehavior>
-                <a className={combinedClass}>{content}</a>
+            <Link href={href} target={target} className={combinedClass}>
+                {content}
             </Link>
         );
     }

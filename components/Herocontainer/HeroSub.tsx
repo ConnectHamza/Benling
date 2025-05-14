@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
+import { ChevronRight } from "lucide-react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -61,9 +62,10 @@ const HeroSection = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onButtonClick}
-                className="inline-block border border-white text-white px-6 py-2 rounded hover:border-crownOrange hover:bg-crownOrange transition duration-300"
+                className="inline-flex items-center gap-2 border border-white text-white text-sm px-6 py-2 rounded hover:border-crownOrange hover:bg-crownOrange transition duration-300"
               >
                 {buttonLabel}
+                <ChevronRight size={16} />
               </a>
             </div>
           )}
