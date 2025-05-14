@@ -27,45 +27,59 @@ const HeroSection = ({
   }, [isInView, controls]);
 
   return (
-    <section
-      ref={ref}
-      className={
-        "relative w-full min-h-[80vh] flex items-center bg-center bg-no-repeat text-white" +
-        className
-      }
-      style={{
-        backgroundImage: `linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url(${backgroundImage})`,
-        backgroundSize: "stretch",
-      }}
+  <section
+  ref={ref}
+  className={
+    "relative w-full flex items-center text-white py-16 sm:py-20 lg:py-28 px-10" +
+    className
+  }
+  style={{
+    backgroundImage: `linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="container  sm:px-6 lg:px-8">
+    <div
+      className="
+        text-left 
+        max-w-4xl 
+        mx-auto
+        sm:mx-0      
+      "
     >
-      <div className="container px-4 sm:px-8 lg:px-8">
-        <div className="max-w-4xl text-left">
-          <motion.h1
-            className="text-xl sm:text-2xl fs-47 md:text-3xl lg:text-5xl jakarta text-[47px] font-bold leading-snug break-words whitespace-normal"
-            variants={fadeInUp}
-            initial="hidden"
-            animate={controls}
-          >
-            <span>{title}</span>
-            <br />
-            <span className="bg-gradient-to-r from-[#FBB78C] to-[#F15C2A] bg-clip-text text-transparent">
-              {highlightText}
-            </span>
-            <span>, {description}</span>
-          </motion.h1>
+      <motion.h1
+        className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-bold leading-tight sm:leading-snug break-words whitespace-normal"
+        variants={fadeInUp}
+        initial="hidden"
+        animate={controls}
+      >
+        <span>{title}</span>
+        <br />
+        <span className="bg-gradient-to-r from-[#FBB78C] to-[#F15C2A] bg-clip-text text-transparent">
+          {highlightText}
+        </span>
+        <span>, {description}</span>
+      </motion.h1>
 
-          {buttonLabel && (
-            <a
-              
-              href="https://crowngroup.com.pk/" target="_blank"
-              className="mt-8 inline-block border border-white text-white px-6 py-2 rounded hover:border-crownOrange hover:bg-crownOrange transition duration-300"
-            >
-              {buttonLabel}
-            </a>
-          )}
+      {buttonLabel && (
+        <div className="mt-6 sm:mt-8">
+          <a
+            href="https://crowngroup.com.pk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-white text-white px-6 py-2 rounded hover:border-crownOrange hover:bg-crownOrange transition duration-300"
+          >
+            {buttonLabel}
+          </a>
         </div>
-      </div>
-    </section>
+      )}
+    </div>
+  </div>
+</section>
+
+  
+
   );
 };
 
