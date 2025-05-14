@@ -3,13 +3,15 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import BlogImage1 from "../../public/assets/Home/Blogs/Blog1.png"
 import BlogImage2 from "../../public/assets/Home/Blogs/Blog2.png"
 import BlogImage3 from "../../public/assets/Home/Blogs/Blog3.png"
+import BlogImage4 from "../../public/assets/Home/Blogs/Blog4.png"
+
 import Image from "next/image";
 
 const blogs = [
   {
     id: 1,
     image: BlogImage1.src,
-    date: "May 12, 2025",
+    date: "News • May 12, 2025",
     title: "Why Electric Scooters Are Changing Urban Travel",
     subheading:
       "Discover how EV scooters are making city commutes cleaner, cheaper, and more efficient than ever before.",
@@ -17,7 +19,7 @@ const blogs = [
   {
     id: 2,
     image: BlogImage2.src,
-    date: "May 12, 2025",
+    date: "News • May 12, 2025",
     title: "Inside Pakistan’s Growing EV Network",
     subheading:
       "From major cities to towns, see how Beeling is accelerating the adoption of electric mobility nationwide.",
@@ -25,10 +27,18 @@ const blogs = [
   {
     id: 3,
     image: BlogImage3.src,
-    date: "May 12, 2025",
+    date: "News • May 12, 2025",
     title: "5 Reasons to Switch to an EV Scooter Today",
     subheading:
       "Lower fuel costs, zero emissions, and a smoother ride—here’s why you need to ride electric today.",
+  },
+  {
+    id: 3,
+    image: BlogImage4.src,
+    date: "News • May 12, 2025",
+    title: "Behind the Design: The Tech Inside Knight Rider",
+    subheading:
+      "A closer look at the powerful components and smart engineering that make Knight Rider one of our most advanced EVs.",
   },
 ];
 

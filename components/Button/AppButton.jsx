@@ -13,7 +13,7 @@ const sizeClasses = {
 
 const variantClasses = {
     solid: "bg-orange-500 text-white hover:bg-orange-600",
-    outline: "border border-black text-black hover:bg-gray-100",
+    outline: "border border-white text-black hover:bg-gray-100",
     labeled: "text-black",
     footer: "bg-black text-white px-4 py-2 text-sm",
 };

@@ -24,13 +24,13 @@ import AppButton from '@/components/Button/AppButton';
 // --- Model Data ---
 const modelsData = [
     { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/flash" },
-    { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "150km Range", speed: "70km/h Top Speed", href: "/knight-rider" },
-    { logo: Logo_Roshnix, img: Image_Roshnix, range: "150km Range", speed: "70km/h Top Speed", href: "/roshnix" },
-    { logo: Logo_Firefly, img: Image_Firefly, range: "150km Range", speed: "70km/h Top Speed", href: "/firefly" },
-    { logo: Logo_Roshni, img: Image_Roshni, range: "150km Range", speed: "70km/h Top Speed", href: "/roshni" },
-    { logo: Logo_Spark, img: Image_Spark, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
-    { logo: Logo_Ezze, img: Image_Ezee, range: "150km Range", speed: "70km/h Top Speed", href: "/ezee" },
-    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "150km Range", speed: "70km/h Top Speed", href: "/mini-scooty" }
+    { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "100km Range", speed: "60km/h Top Speed", href: "/knight-rider" },
+    { logo: Logo_Roshnix, img: Image_Roshnix, range: "110km Range", speed: "60km/h Top Speed", href: "/roshnix" },
+    { logo: Logo_Firefly, img: Image_Firefly, range: "100km Range", speed: "60km/h Top Speed", href: "/firefly" },
+    { logo: Logo_Roshni, img: Image_Roshni, range: "120km Range", speed: "60km/h Top Speed", href: "/roshni" },
+    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/spark" },
+    { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/ezee" },
+    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/mini-scooty" }
 ];
 // --- Mobile Models Panel (define ONCE only) ---
 function MobileModelsPanel({ onBack }) {
@@ -107,7 +107,6 @@ const Header = () => {
                 <div className="font-regular text-lg mb-6 text-black-200 font-magistral">
                     Explore Our Models
                 </div>
-
                 {/* Scrollable content */}
                 <div className="overflow-y-auto pr-2">
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
@@ -127,9 +126,6 @@ const Header = () => {
                                         className="object-contain max-h-full"
                                     />
                                 </div>
-
-
-                                {/* Logo */}
                                 <div className="mt-6 h-[20px] flex items-center justify-center">
                                     <Image
                                         src={model.logo}
@@ -139,8 +135,6 @@ const Header = () => {
                                         className="mx-auto"
                                     />
                                 </div>
-
-                                {/* Specs */}
                                 <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta">
                                     {model.range} | {model.speed}
                                 </div>
