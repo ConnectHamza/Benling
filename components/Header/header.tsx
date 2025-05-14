@@ -2,18 +2,33 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import FlashImage from "../../public/assets/Home/Carousel/Image_Flash.svg"
+import Logo_Ezze from "../../public/assets/Home/Carousel/Ezee_Logo.webp"
+import Logo_Flash from "../../public/assets/Home/Carousel/Flash_Logo.webp"
+import Logo_Knight_Rider from "../../public/assets/Home/Carousel/Knightrider_Logo.webp"
+import Logo_Mini_Scooty from "../../public/assets/Home/Carousel/Miniscooter_Logo.webp"
+import Logo_Roshni from "../../public/assets/Home/Carousel/Roshni_Logo.webp"
+import Logo_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Logo.webp"
+import Logo_Spark from "../../public/assets/Home/Carousel/Spark_Logo.webp"
+import Logo_Firefly from "../../public/assets/Home/Carousel/Firefly_Logo.webp"
+import Image_Ezee from "../../public/assets/Home/Carousel/Ezee_Image.webp";
+import Image_Firefly from "../../public/assets/Home/Carousel/Firefly_Image.webp";
+import Image_Flash from "../../public/assets/Home/Carousel/Flash_Image.webp";
+import Image_KnightRider from "../../public/assets/Home/Carousel/Knightrider_Image.webp";
+import Image_Miniscooter from "../../public/assets/Home/Carousel/Miniscooter_Image.webp";
+import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.webp";
+import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.webp";
+import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.webp";
 // --- Model Data ---
 const modelsData = [
-    { name: "FLASH", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/flash" },
-    { name: "KNIGHT RIDER", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/knight-rider" },
-    { name: "ROSHNI", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/roshni" },
-    { name: "SPARK", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
-    { name: "MINI SCOOTY", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/mini-scooty" },
-    { name: "FIREFLY", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/firefly" },
-    { name: "Ezee", img: FlashImage, range: "150km Range", speed: "70km/h Top Speed", href: "/ezee" }
+    { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/flash" },
+    { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "150km Range", speed: "70km/h Top Speed", href: "/knight-rider" },
+    { logo: Logo_Roshni, img: Image_Roshni, range: "150km Range", speed: "70km/h Top Speed", href: "/roshni" },
+    { logo: Logo_Roshnix, img: Image_Roshnix, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
+    { logo: Logo_Spark, img: Image_Spark, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
+    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "150km Range", speed: "70km/h Top Speed", href: "/mini-scooty" },
+    { logo: Logo_Firefly, img: Image_Firefly, range: "150km Range", speed: "70km/h Top Speed", href: "/firefly" },
+    { logo: Logo_Ezze, img: Image_Ezee, range: "150km Range", speed: "70km/h Top Speed", href: "/ezee" }
 ];
-
 // --- Mobile Models Panel (define ONCE only) ---
 function MobileModelsPanel({ onBack }) {
     return (
@@ -39,25 +54,37 @@ function MobileModelsPanel({ onBack }) {
                 {modelsData.map((model) => (
                     <a
                         href={model.href}
-                        key={model.name}
+                        key={model.href}
                         className="flex flex-col items-center group hover:scale-105 transition"
                     >
-                        <div className=" flex items-center justify-center">
+                        {/* Image Container with fixed height */}
+                        <div className="flex items-center justify-center h-[160px] w-full">
                             <Image
                                 src={model.img}
-                                alt={model.name}
+                                alt={model.href}
                                 width={1200}
                                 height={1000}
-                                className="object-contain"
+                                className="object-contain max-h-full"
                             />
                         </div>
-                        <div className="font-bold text-center mt-2 text-base text-black group-hover:text-orange-500">
-                            {model.name}
+
+                        {/* Logo Container with fixed height */}
+                        <div className="mt-6 h-[40px] flex items-center justify-center">
+                            <Image
+                                src={model.logo}
+                                alt={model.href}
+                                width={150}
+                                height={20}
+                                className="mx-auto"
+                            />
                         </div>
-                        <div className="text-xs text-gray-600 text-center">
+
+                        {/* Text Info with fixed height */}
+                        <div className="text-xs text-gray-600 text-center mt-2 h-[20px]">
                             {model.range} | {model.speed}
                         </div>
                     </a>
+
                 ))}
             </div>
         </div>
@@ -78,24 +105,37 @@ const Header = () => {
                     {modelsData.map((model) => (
                         <a
                             href={model.href}
-                            key={model.name}
+                            key={model.href}
                             className="flex flex-col items-center group hover:scale-105 transition"
                         >
-                            <div className="flex items-center justify-center">
+                            {/* Image Container with fixed height */}
+                            <div className="flex items-center justify-center h-[160px] w-full">
                                 <Image
                                     src={model.img}
-                                    alt={model.name}
+                                    alt={model.href}
                                     width={1200}
                                     height={1000}
+                                    className="object-contain max-h-full"
                                 />
                             </div>
-                            <div className="font-bold text-center mt-2 text-base group-hover:text-orange-500">
-                                {model.name}
+
+                            {/* Logo Container with fixed height */}
+                            <div className="mt-6 h-[40px] flex items-center justify-center">
+                                <Image
+                                    src={model.logo}
+                                    alt={model.href}
+                                    width={150}
+                                    height={20}
+                                    className="mx-auto"
+                                />
                             </div>
-                            <div className="text-xs text-gray-600 text-center">
+
+                            {/* Text Info with fixed height */}
+                            <div className="text-xs text-gray-600 text-center mt-2 h-[20px]">
                                 {model.range} | {model.speed}
                             </div>
                         </a>
+
                     ))}
                 </div>
             </div>
@@ -115,14 +155,14 @@ const Header = () => {
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
                         onMouseLeave={() => setIsMegaMenuOpen(false)}
                     >
-                        <span className=" flex items-center h-full cursor-pointer font-inter relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+                        <span className=" flex text[16px] items-center h-full cursor-pointer font-jakarta relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
                             Models ▾
                         </span>
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
                     </div>
-                    <Link href="/about" className={`${navLink} flex items-center h-full`}>About Us</Link>
-                    <Link href="/news" className={`${navLink} flex items-center h-full`}>News</Link>
-                    <Link href="/dealer-locator" className={`${navLink} flex items-center h-full`}>Find a Dealer</Link>
+                    <Link href="/about" className={`${navLink} flex items-center h-full font-jakarta`}>About Us</Link>
+                    <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link>
+                    <Link href="/dealer-locator" className={`${navLink} flex items-center h-full font-jakarta`}>Find a Dealer</Link>
                 </nav>
 
                 {/* Logo with black background */}
