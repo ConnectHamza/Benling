@@ -33,6 +33,9 @@ function MobileModelsPanel({ onBack }) {
                 <div className="w-8" /> {/* empty space to center logo */}
             </div>
             <div className="flex flex-col px-6 py-6 gap-6">
+                <div className="text-lg mb-6 font-magistral font-regular text-black-200 text-center">
+                    View our Models
+                </div>
                 {modelsData.map((model) => (
                     <a
                         href={model.href}
@@ -70,7 +73,7 @@ const Header = () => {
     const DesktopModelsMegaMenu = () => (
         <div className="fixed left-0 top-[64px] w-full bg-white text-black z-40 border-b shadow-lg">
             <div className="max-w-[1300px] mx-auto px-10 py-8">
-                <div className="font-semibold text-lg mb-6">Explore Our Models</div>
+                <div className="font-regular text-lg mb-6 text-black-200 font-magistral">Explore Our Models</div>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
                     {modelsData.map((model) => (
                         <a
