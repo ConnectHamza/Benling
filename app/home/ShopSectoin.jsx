@@ -10,8 +10,7 @@ const shops = [
   {
     id: 1,
     name: 'Benling Awami Markaz',
-    address:
-      'Plot # ST1/A2 Shop # LG 06 & 07 City Centre Mall Near Awami Markaz Oppo Lal Qila Main Shara-e-Faisla Karachi',
+    address: 'Plot # ST1/A2 Shop # LG 06 & 07 City Centre Mall Near Awami Markaz Oppo Lal Qila Main Shara-e-Faisla Karachi',
     phone: ['0321-2721818', '0321-2721818'],
   },
   {
@@ -44,7 +43,6 @@ export default function ShopSlider() {
   const scrollRef = useRef(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
-
   const scrollAmount = 320;
 
   const handleScroll = (direction) => {
@@ -73,91 +71,91 @@ export default function ShopSlider() {
   return (
     <section className="w-full bg-white">
       <div
-        className="relative w-full bg-no-repeat bg-top bg-cover pt-10 pb-20 px-4 sm:px-0"
+        className="relative w-full bg-no-repeat bg-top bg-cover pt-10 pb-20"
         style={{ backgroundImage: `url(${crownImage.src})` }}
       >
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0 pointer-events-none" />
 
-        {/* Heading */}
-        <div className="relative z-10 mx-auto mb-10 px-0 sm:px-20">
-          <div className="font-magistral max-w-full md:max-w-[50%]">
-            <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
-              Explore Our Nationwide Network
-              <span className="text-orange-500"> Karachi</span>
-            </h2>
-            <p className="mt-2 text-sm sm:text-base text-gray-800 font-jakarta">
-              Find your Crown partners — a trusted dealer network offering electric mobility near you.
-            </p>
-            <div className="mt-4 font-jakarta">
-              <p>Learn More About Crown Benling Dealer</p>
+        {/* Containerized Heading and Buttons */}
+        <div className="relative z-10 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-10">
+            <div className="font-magistral max-w-full md:max-w-[50%]">
+              <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+                Explore Our Nationwide Network
+                <span className="text-orange-500"> Karachi</span>
+              </h2>
+              <p className="mt-2 text-sm sm:text-base text-gray-800 font-jakarta">
+                Find your Crown partners — a trusted dealer network offering electric mobility near you.
+              </p>
+              <div className="mt-4 font-jakarta">
+                <p>Learn More About Crown Benling Dealer</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Scrollable Cards */}
-        <div ref={scrollRef} className="relative z-10 overflow-x-auto scroll-smooth scrollbar-hide px-4 sm:px-20">
-          <div className="flex gap-4 items-stretch snap-x snap-mandatory">
-            {/* Spacer before first card */}
-            <div className="shrink-0" />
-            {shops.map((shop) => (
-              <div
-                key={shop.id}
-                className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] h-[275px] bg-[#f5f5f5] rounded-lg shadow p-4 flex flex-col justify-between snap-start"
-              >
-                <div>
-                  <div className="mb-3">
-                    <Image
-                      src={shopIcon.src}
-                      alt="Shop Icon"
-                      width={28}
-                      height={28}
-                      className="mb-2"
-                    />
-                    <h3 className="text-black mb-1 font-normal font-magistral text-[20px] sm:text-[23px]">
-                      {shop.name}
-                    </h3>
-                    <p className="text-[14px] text-gray-700 mb-2 font-jakarta h-[75px] overflow-hidden text-ellipsis">
-                      {shop.address}
-                    </p>
-                    <div className="text-sm text-gray-600 flex flex-wrap">
-                      {shop.phone.map((number, index) => (
-                        <span key={index} className="text-[#575BFF] text-[12px] mr-2">
-                          {number}
-                          {index !== shop.phone.length - 1 && (
-                            <span className="mx-2 text-gray-400">—</span>
-                          )}
-                        </span>
-                      ))}
+        {/* Scrollable Cards - full width */}
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+          <div ref={scrollRef} className="overflow-x-auto scroll-smooth no-scrollbar">
+            <div className="flex gap-4 items-stretch snap-x snap-mandatory">
+              <div className="shrink-0" />
+              {shops.map((shop) => (
+                <div
+                  key={shop.id}
+                  className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] h-[275px] bg-[#f5f5f5] rounded-lg shadow p-4 flex flex-col justify-between snap-start"
+                >
+                  <div>
+                    <div className="mb-3">
+                      <Image
+                        src={shopIcon.src}
+                        alt="Shop Icon"
+                        width={28}
+                        height={28}
+                        className="mb-2"
+                      />
+                      <h3 className="text-black mb-1 font-normal font-magistral text-[20px] sm:text-[23px]">
+                        {shop.name}
+                      </h3>
+                      <p className="text-[14px] text-gray-700 mb-2 font-jakarta h-[75px] overflow-hidden text-ellipsis">
+                        {shop.address}
+                      </p>
+                      <div className="text-sm text-gray-600 flex flex-wrap">
+                        {shop.phone.map((number, index) => (
+                          <span key={index} className="text-[#575BFF] text-[12px] mr-2">
+                            {number}
+                            {index !== shop.phone.length - 1 && (
+                              <span className="mx-2 text-gray-400">—</span>
+                            )}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
+                  <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
+                    Get Direction
+                  </button>
                 </div>
-                <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
-                  Get Direction
-                </button>
-              </div>
-            ))}
-            {/* Spacer after last card */}
-            <div className="shrink-0 w-4" />
+              ))}
+              <div className="shrink-0 w-4" />
+            </div>
           </div>
-        </div>
 
-        {/* Prev/Next Buttons */}
-        <div className="absolute bottom-6 left-1/2 sm:left-20 transform -translate-x-1/2 sm:translate-x-0 z-20 flex gap-2">
-          <button
-            onClick={() => handleScroll('prev')}
-            className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
-            disabled={atStart}
-          >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={() => handleScroll('next')}
-            className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
-            disabled={atEnd}
-          >
-            <ChevronRight size={20} />
-          </button>
+          {/* Prev/Next Buttons */}
+          <div className="mt-6 flex gap-2">
+            <button
+              onClick={() => handleScroll('prev')}
+              className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button
+              onClick={() => handleScroll('next')}
+              className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
         </div>
       </div>
     </section>

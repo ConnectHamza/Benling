@@ -22,12 +22,12 @@ import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.webp";
 const modelsData = [
     { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/flash" },
     { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "150km Range", speed: "70km/h Top Speed", href: "/knight-rider" },
-    { logo: Logo_Roshni, img: Image_Roshni, range: "150km Range", speed: "70km/h Top Speed", href: "/roshni" },
-    { logo: Logo_Roshnix, img: Image_Roshnix, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
-    { logo: Logo_Spark, img: Image_Spark, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
-    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "150km Range", speed: "70km/h Top Speed", href: "/mini-scooty" },
+    { logo: Logo_Roshnix, img: Image_Roshnix, range: "150km Range", speed: "70km/h Top Speed", href: "/roshnix" },
     { logo: Logo_Firefly, img: Image_Firefly, range: "150km Range", speed: "70km/h Top Speed", href: "/firefly" },
-    { logo: Logo_Ezze, img: Image_Ezee, range: "150km Range", speed: "70km/h Top Speed", href: "/ezee" }
+    { logo: Logo_Roshni, img: Image_Roshni, range: "150km Range", speed: "70km/h Top Speed", href: "/roshni" },
+    { logo: Logo_Spark, img: Image_Spark, range: "150km Range", speed: "70km/h Top Speed", href: "/spark" },
+    { logo: Logo_Ezze, img: Image_Ezee, range: "150km Range", speed: "70km/h Top Speed", href: "/ezee" },
+    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "150km Range", speed: "70km/h Top Speed", href: "/mini-scooty" }
 ];
 // --- Mobile Models Panel (define ONCE only) ---
 function MobileModelsPanel({ onBack }) {
@@ -80,7 +80,7 @@ function MobileModelsPanel({ onBack }) {
                         </div>
 
                         {/* Text Info with fixed height */}
-                        <div className="text-xs text-gray-600 text-center mt-2 h-[20px]">
+                        <div className="text-xs text-gray-600 text-center mt-2 h-[20px] font-jakarta">
                             {model.range} | {model.speed}
                         </div>
                     </a>
@@ -131,7 +131,7 @@ const Header = () => {
                             </div>
 
                             {/* Text Info with fixed height */}
-                            <div className="text-xs text-gray-600 text-center mt-2 h-[20px]">
+                            <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta">
                                 {model.range} | {model.speed}
                             </div>
                         </a>
@@ -149,7 +149,7 @@ const Header = () => {
         <header className="w-full z-50 fixed top-0 left-0 bg-black-200 text-white h-[64px] flex items-center">
             <div className="max-w-[1300px] mx-auto flex items-center justify-between w-full px-4 h-[64px]">
                 {/* Left nav - vertically centered */}
-                <nav className="hidden md:flex items-center gap-6 text-sm h-full">
+                <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
                     <div
                         className="relative group h-full flex items-center"
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
@@ -169,10 +169,9 @@ const Header = () => {
                 {!isMobileMenuOpen && <a href="/" className="flex items-center justify-center bg-black px-4 py-1 rounded">
                     <Image src="/assets/Header-Footer/Benling-Logo.svg" alt="Logo" width={100} height={40} priority />
                 </a>}
-
                 {/* Right nav - vertically centered */}
-                <nav className="hidden md:flex items-center gap-6 text-sm h-full">
-                    <Link href="/distributor" className={`${navLink} flex items-center h-full`}>Become a Dealer</Link>
+                <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
+                    <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link>
                     <Link href="/contact" className={`${navLink} flex items-center h-full`}>Contact Us</Link>
                     <Link href="/dealer-locator">
                         <button className="border border-[#F15C2A] px-4 py-1 rounded hover:bg-[#F15C2A] hover:text-black transition-all duration-200 ease-linear">
@@ -220,7 +219,7 @@ const Header = () => {
                             <div className="w-8" /> {/* empty space to center logo */}
                         </div>
 
-                        <div className="flex flex-col gap-2 px-6 py-6 text-white bg-white min-h-[calc(100vh-64px)]">
+                        <div className="flex flex-col gap-2 px-6 py-6 text-white bg-white min-h-[calc(100vh-64px)] font-jakarta">
                             <button
                                 onClick={() => setIsModelsOpen(true)}
                                 className="flex justify-between items-center w-full text-lg py-4 border-b text-black-200 border-gray-700"

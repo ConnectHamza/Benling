@@ -142,32 +142,34 @@ export default function Home() {
         <BrandingSection />
       </div>
       <div>
-        <section className="bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] py-12 px-8 mx-10 mb-20 mt-10 rounded-xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-            {/* Left: Text Block */}
-            <div className="text-white flex flex-col space-y-6">
-              <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} />
-              <p className="text-4xl md:text-5xl font-semi-bold leading-tight font-magistral">
-                Pakistan Largest EV Scooter Growing Network
-              </p>
+      <section className="py-12 px-3 mb-20 mt-10 flex justify-center">
+  <div className="w-full max-w-[1300px] rounded-xl bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] px-4 md:px-6 py-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      {/* Left: Text Block */}
+      <div className="text-white flex flex-col space-y-6">
+        <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} />
+        <p className="text-4xl md:text-5xl font-semi-bold leading-tight font-magistral">
+          Pakistan Largest EV Scooter Growing Network
+        </p>
+        <p className="text-base md:text-lg font-light font-jakarta">
+          Crown Benling is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
+        </p>
+      </div>
 
-              <p className="text-base md:text-lg font-light font-jakarta">
-                Crown Benling is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
-              </p>
-            </div>
+      {/* Right: Map */}
+      <div className="flex justify-center items-start">
+        <Image
+          src={Pak.src}
+          alt="Map of Pakistan"
+          width={500}
+          height={500}
+          className="h-auto w-full max-w-sm md:max-w-md lg:max-w-full"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
-            {/* Right: Map */}
-            <div className="flex justify-center items-start">
-              <Image
-                src={Pak.src}
-                alt="Map of Pakistan"
-                width={500}
-                height={500}
-                className="h-auto w-full max-w-sm md:max-w-md lg:max-w-full"
-              />
-            </div>
-          </div>
-        </section>
         <div className='mb-20'>
           <VideoSection />
         </div>
