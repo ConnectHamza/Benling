@@ -167,7 +167,7 @@ const Header = () => {
                     </div>
                     <Link href="/about" className={`${navLink} flex items-center h-full font-jakarta`}>About Us</Link>
                     <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link>
-                    <Link href="/dealer-locator" className={`${navLink} flex items-center h-full font-jakarta`}>Find a Dealer</Link>
+                    <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>Find a Dealer</Link>
                 </nav>
 
                 {/* Logo with black background */}
@@ -245,10 +245,10 @@ const Header = () => {
                             </button>
                             <Link href="/about" className="py-4 border-b text-black-200 border-gray-700 text-lg">About Us</Link>
                             <Link href="/news" className="py-4 border-b text-black-200 border-gray-700 text-lg">News</Link>
-                            <Link href="/dealer-locator" className="py-4 text-black-200 border-b border-gray-700 text-lg">Find a Dealer</Link>
+                            <Link href="/find-a-dealer" className="py-4 text-black-200 border-b border-gray-700 text-lg">Find a Dealer</Link>
                             <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link>
                             <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700 text-lg">Contact Us</Link>
-                            <Link href="/dealer-locator">
+                            <Link href="/find-a-dealer">
                                 <AppButton
                                     size="medium"
                                     variant="solid"

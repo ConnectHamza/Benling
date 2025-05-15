@@ -39,9 +39,9 @@ const HeroSection = ({
       }}
     >
       <div className="w-full">
-        <div className="text-left w-full max-w-[800px]">
+        <div className="text-left w-full">
           <motion.h1
-            className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-bold leading-tight sm:leading-snug break-words text-balance"
+            className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-bold leading-tight sm:leading-snug break-words text-balance font-jakarta"
             variants={fadeInUp}
             initial="hidden"
             animate={controls}

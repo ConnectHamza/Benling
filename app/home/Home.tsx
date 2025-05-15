@@ -124,7 +124,7 @@ export default function Home() {
       />
       <HeroSubSection
         title="Crown Benling Electric Mobility, proudly operated by"
-        highlightText="Crown Group of Companies"
+        highlightText="Crown Group"
         description="leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
         buttonLabel="Read More About Crown"
         onButtonClick={() => { console.log("Button") }}
@@ -142,7 +142,7 @@ export default function Home() {
       <div>
         <section className="py-12 px-4 mb-20 mt-10 flex justify-center">
           <div className="w-full max-w-[1250px] rounded-xl bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] px-4 md:px-6 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start p-4">
               {/* Left: Text Block */}
               <div className="text-white flex flex-col space-y-6">
                 <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} />

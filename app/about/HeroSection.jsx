@@ -27,7 +27,7 @@ export default function Herosection() {
             <div className="w-full max-w-[1300px] mx-auto px-4 mt-8 md:text-left">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 font-jakarta">
                     Crown Benling Electric Mobility, proudly operated by the
-                    <span className="text-crownOrange"> Crown Group of Companies</span>, is transforming the future of transportation in Pakistan. Born from a powerful joint venture with Benling China, our mission is to redefine how Pakistan moves cleaner, smarter, and more sustainably.
+                    <span className="text-crownOrange"> Crown Group</span>, is transforming the future of transportation in Pakistan. Born from a powerful joint venture with Benling China, our mission is to redefine how Pakistan moves cleaner, smarter, and more sustainably.
                 </h2>
 
                 <p className="mt-4 text-sm sm:font-lg font-jakarta font-[400] text-[#0A0A0A]">

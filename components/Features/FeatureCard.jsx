@@ -34,9 +34,9 @@ const FeatureCard = ({
                     </div>
                 )}
             </div>
-            <div className="mt-2">
-                <h4 className="text-white font-magistral font-semi-bold text-2xl">{heading}</h4>
-                <p className="text-white font-medium font-jakarta text-xs md:text-sm">{description}</p>
+            <div className="mt-5">
+                <h4 className="text-white font-magistral font-semi-bold text-3xl">{heading}</h4>
+                <p className="text-white font-medium font-jakarta text-sm md:text-1xl">{description}</p>
             </div>
         </div>
 
