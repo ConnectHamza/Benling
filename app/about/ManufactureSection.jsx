@@ -7,12 +7,12 @@ export default function ManufacturerDetails() {
     <div className="w-full bg-white py-10">
       <div className="w-full max-w-[1300px] mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-bold font-jakarta mb-2 text-center md:text-left">
+        <h2 className="text-2xl md:text-3xl font-semibold font-magistral mb-2 text-center md:text-left">
           Manufacturer Details
         </h2>
 
         {/* Subheading */}
-        <p className="text-gray-700 text-base md:text-lg mb-8 text-center md:text-left max-w-4xl">
+        <p className="text-gray-700 text-base md:text-lg mb-8 text-center md:text-left font-jakarta font-normal">
           All Crown Benling EVs are proudly manufactured at our advanced Port Qasim production facility in Pakistan. Our locally assembled scooters are built with graphene battery technology, undergo rigorous safety and performance testing, and are crafted by a skilled Pakistani workforce.
         </p>
 

@@ -26,10 +26,10 @@ export default function Subsection() {
 
                     {/* Right Text Content */}
                     <div className="flex flex-col justify-start text-left w-full lg:w-1/2 min-w-0">
-                        <h2 className="text-2xl md:text-3xl font-bold font-jakarta mb-4">
+                        <h2 className="text-2xl md:text-3xl font-semibold font-magistral mb-4">
                             About Crown Group
                         </h2>
-                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                        <p className="text-base md:text-lg text-gray-700 mb-6 font-jakarta">
                             Crown Group stands as a beacon of excellence in Pakistan’s industrial landscape, boasting over 23 years of unwavering commitment to quality, innovation, and customer satisfaction. With a diverse portfolio spanning automotive parts, electric vehicles, solar energy, software development, and more, Crown Group has cemented its position as a multifaceted conglomerate dedicated to shaping a sustainable future.
                         </p>
                         <div>

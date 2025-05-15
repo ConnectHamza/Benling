@@ -30,7 +30,7 @@ export default function Herosection() {
                     <span className="text-crownOrange"> Crown Group</span>, is transforming the future of transportation in Pakistan. Born from a powerful joint venture with Benling China, our mission is to redefine how Pakistan moves cleaner, smarter, and more sustainably.
                 </h2>
 
-                <p className="mt-4 text-sm sm:font-lg font-jakarta font-[400] text-[#0A0A0A]">
+                <p className="mt-4 text-lg sm:font-lg font-jakarta font-[400] text-[#0A0A0A]">
                     Launched in 2023, Crown Benling brings together decades of local industry leadership and global EV innovation. With a strong focus on cutting-edge technology, urban mobility, and eco-conscious design, our range of electric scooters is designed for riders who demand performance, reliability, and style.
                 </p>
             </div>

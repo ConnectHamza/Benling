@@ -27,9 +27,9 @@ export default function MissionVisionCards() {
                 <span className="mr-2 w-6 h-6 relative">
                   <Image src={Target} alt="Mission Icon" fill className="object-contain" />
                 </span>
-                <h3 className="text-2xl font-bold font-jakarta">Our Mission</h3>
+                <h3 className="text-2xl font-semibold font-magistral">Our Mission</h3>
               </div>
-              <p className="text-gray-700 text-base md:text-lg flex-grow">
+              <p className="text-gray-700 text-base md:text-lg flex-grow font-jakarta font-normal">
                 To drive Pakistan’s shift toward electric mobility through innovative, reliable, and eco-conscious transportation solutions. We empower riders with high-performance electric scooters built for today’s roads and tomorrow’s sustainability.
               </p>
             </div>
@@ -54,9 +54,9 @@ export default function MissionVisionCards() {
                 <span className="mr-2 w-6 h-6 relative">
                   <Image src={Visibility} alt="Vision Icon" fill className="object-contain" />
                 </span>
-                <h3 className="text-2xl font-bold font-jakarta">Our Vision</h3>
+                <h3 className="text-2xl font-semibold font-magistral">Our Vision</h3>
               </div>
-              <p className="text-gray-700 text-base md:text-lg flex-grow">
+              <p className="text-gray-700 text-base md:text-lg flex-grow font-jakarta font-normal">
                 To become Pakistan’s most trusted electric mobility brand, leading a future of clean energy, smart infrastructure, and sustainable transport-redefining urban mobility for generations to come.
               </p>
             </div>
