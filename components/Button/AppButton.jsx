@@ -1,64 +1,75 @@
-import React from "react";
-import Link from "next/link";
-import * as Icons from "lucide-react";
+'use client';
 
-const baseStyles =
-    "font-jakarta font-regular inline-flex items-center justify-center gap-2 transition duration-200 rounded-sm";
-
-const sizeClasses = {
-    large: "text-base px-6 py-3",
-    medium: "text-sm px-5 py-2.5",
-    small: "text-sm px-4 py-2",
-};
+import React from 'react';
+import Link from 'next/link';
+import * as Icons from 'lucide-react';
 
 const variantClasses = {
-    solid: "bg-orange-500 text-white hover:bg-orange-600",
-    outline:
-      "border border-black text-black hover:bg-white hover:text-black dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black",
-    labeled: "text-black dark:text-white",
-    footer: "bg-black text-white px-4 py-2 text-sm",
-  };
+  solid: 'bg-orange-500 text-white hover:bg-orange-600',
+  outline: `
+    border border-black text-black 
+    hover:bg-white hover:text-black 
+    dark:border-white dark:text-white 
+    dark:hover:bg-white dark:hover:text-black
+  `,
+  labeled: 'text-black dark:text-white',
+  footer: 'bg-black text-white text-sm',
+};
 
 const Button = ({
-    size = "medium",
-    variant = "solid",
-    label,
-    iconName = null,
-    iconPosition = "right",
-    className = "",
-    onClick = () => {},
-    href = null,
-    target = "_self",
+  variant = 'solid',
+  label,
+  iconName = null,
+  iconPosition = 'right',
+  className = '',
+  onClick = () => { },
+  href = null,
+  target = '_self',
+  textColor = '', // Optional text/icon color override
 }) => {
-    const sizeClass = sizeClasses[size];
-    const variantClass = variantClasses[variant];
-    const IconComponent = iconName && Icons[iconName] ? Icons[iconName] : null;
+  const IconComponent = iconName && Icons[iconName] ? Icons[iconName] : null;
 
-    const content = (
-        <>
-            {iconPosition === "left" && IconComponent && <IconComponent size={16} />}
-            <span>{label}</span>
-            {iconPosition === "right" && IconComponent && <IconComponent size={16} />}
-        </>
-    );
+  const content = (
+    <div className="inline-flex items-center gap-2">
+      {iconPosition === 'left' && IconComponent && (
+        <IconComponent size={20} className={textColor || ''} />
+      )}
+      <span
+        className={`text-[16px] leading-[20px] font-medium whitespace-nowrap ${textColor || ''
+          }`}
+      >
+        {label}
+      </span>
+      {iconPosition === 'right' && IconComponent && (
+        <IconComponent size={20} className={textColor || ''} />
+      )}
+    </div>
+  );
 
-    const combinedClass = `${baseStyles} ${sizeClass} ${variantClass} ${className}`;
+  const combinedClass = `
+    inline-flex items-center justify-center
+    h-[48px] px-[24px] py-[18px]
+    gap-2
+    rounded-[8px]
+    transition duration-200
+    font-jakarta
+    ${variantClasses[variant]}
+    ${className}
+  `;
 
-    // Render as <Link> if href exists
-    if (href) {
-        return (
-            <Link href={href} target={target} className={combinedClass}>
-                {content}
-            </Link>
-        );
-    }
-
-    // Otherwise, render as a <button>
+  if (href) {
     return (
-        <button onClick={onClick} className={combinedClass}>
-            {content}
-        </button>
+      <Link href={href} target={target} className={combinedClass}>
+        {content}
+      </Link>
     );
+  }
+
+  return (
+    <button onClick={onClick} className={combinedClass}>
+      {content}
+    </button>
+  );
 };
 
 export default Button;

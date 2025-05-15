@@ -184,14 +184,16 @@ const Header = () => {
                             Book Now
                         </button>
                     </Link> */}
+
                     <AppButton
-                        label="Book now"
-                        href="/booking"
                         size="medium"
                         variant="solid"
+                        label="Book now"
                         iconName="ArrowUpRight"
+                        iconPosition="right"
+                        href={"/booking"}
+                        textColor='text-[#000]'
                     />
-
                 </nav>
 
                 {/* Hamburger - black background, hidden when menu open */}
@@ -248,12 +250,13 @@ const Header = () => {
                             <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700 text-lg">Contact Us</Link>
                             <Link href="/dealer-locator">
                                 <AppButton
-                                    label="Book now"
-                                    href="/booking"
                                     size="medium"
                                     variant="solid"
+                                    label="Book now"
                                     iconName="ArrowUpRight"
-                                    className={"w-full"}
+                                    iconPosition="right"
+                                    href={"/booking"}
+                                    textColor='text-[#000]'
                                 />
                             </Link>
                         </div>

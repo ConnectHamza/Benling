@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import shopIcon from '../../public/assets/Home/shops/Store.png';
 import crownImage from '../../public/assets/Home/shops/crownshop.png';
-import { ChevronLeft, ChevronRight ,ArrowUpRight} from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
 const shops = [
   {
@@ -16,25 +16,25 @@ const shops = [
   {
     id: 2,
     name: 'Star Electronics',
-    address: `Shop #B/7, B/8, KDA Flats Phase 2, Shadman Town No. 1, North Karachi`,
+    address: 'Shop #B/7, B/8, KDA Flats Phase 2, Shadman Town No. 1, North Karachi',
     phone: ['0316-3331332'],
   },
   {
     id: 3,
     name: 'ST Traders',
-    address: `Shop # 01 B-142 Midway Commercial, Bahria Town Karachi`,
+    address: 'Shop # 01 B-142 Midway Commercial, Bahria Town Karachi',
     phone: ['0339-8888991', '0321-8777941'],
   },
   {
     id: 4,
     name: 'Unique House',
-    address: `Showroom No. 4, Ghulam Nabi Trust, Building AM-20, Frere Road, Saddar.`,
+    address: 'Showroom No. 4, Ghulam Nabi Trust, Building AM-20, Frere Road, Saddar.',
     phone: ['021-32727261', '0333-4224409'],
   },
   {
     id: 5,
     name: 'SR Motors',
-    address: `Shop # 01 B-142 Midway Commercial, Bahria Town Karachi`,
+    address: 'Shop # 01 B-142 Midway Commercial, Bahria Town Karachi',
     phone: ['021-32743280', '0300-2167593'],
   },
 ];
@@ -74,10 +74,10 @@ export default function ShopSlider() {
         className="relative w-full bg-no-repeat bg-top bg-cover pt-10 pb-20"
         style={{ backgroundImage: `url(${crownImage.src})` }}
       >
-        {/* Gradient overlay */}
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0 pointer-events-none" />
 
-        {/* Containerized Heading and Buttons */}
+        {/* Heading Section */}
         <div className="relative z-10 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <div className="font-magistral max-w-full md:max-w-[50%]">
@@ -97,16 +97,21 @@ export default function ShopSlider() {
                   <ArrowUpRight size={14} />
                 </a>
               </div>
-
             </div>
           </div>
         </div>
 
-        {/* Scrollable Cards - full width */}
-        <div className="relative z-10 px-4 sm:px-6 lg:px-8">
-          <div ref={scrollRef} className="overflow-x-auto scroll-smooth no-scrollbar">
-            <div className="flex gap-4 items-stretch snap-x snap-mandatory">
-              <div className="shrink-0" />
+        {/* Shop Cards */}
+        <div className="relative z-10">
+          <div ref={scrollRef} className="overflow-x-auto no-scrollbar scroll-smooth">
+            <div
+              className={`
+                flex items-stretch gap-4 snap-x snap-mandatory w-max
+                pl-4 sm:pl-6 md:pl-8
+                pr-4 sm:pr-6 lg:pr-8
+                xl:pl-[calc((100vw-1300px)/2+1rem)]
+              `}
+            >
               {shops.map((shop) => (
                 <div
                   key={shop.id}
@@ -144,24 +149,25 @@ export default function ShopSlider() {
                   </button>
                 </div>
               ))}
-              <div className="shrink-0 w-4" />
             </div>
           </div>
 
-          {/* Prev/Next Buttons */}
-          <div className="mt-6 flex gap-2">
-            <button
-              onClick={() => handleScroll('prev')}
-              className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            <button
-              onClick={() => handleScroll('next')}
-              className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
-            >
-              <ChevronRight size={20} />
-            </button>
+          {/* Scroll Buttons (Bottom of Cards) */}
+          <div className="mt-6 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex gap-2">
+              <button
+                onClick={() => handleScroll('prev')}
+                className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={() => handleScroll('next')}
+                className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
