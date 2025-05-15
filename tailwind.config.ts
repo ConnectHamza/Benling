@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter', 'sans-serif'], // Add your custom font here
-      jakarta: ['Jakarta', 'sans-serif'], // Add your custom font here
+      jakarta: ["Plus Jakarta Sans", 'sans-serif'],
       magistral: ['Magistral', 'sans-serif'],
 
     },

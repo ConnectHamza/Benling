@@ -1,3 +1,4 @@
+'use client'
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import BlogImage1 from "../../public/assets/Home/Blogs/Blog1.png"

@@ -22,10 +22,11 @@ const Button = ({
   iconName = null,
   iconPosition = 'right',
   className = '',
-  onClick = () => { },
+  onClick = () => {},
   href = null,
   target = '_self',
   textColor = '', // Optional text/icon color override
+  fullWidth = false, // <-- New Prop
 }) => {
   const IconComponent = iconName && Icons[iconName] ? Icons[iconName] : null;
 
@@ -35,8 +36,7 @@ const Button = ({
         <IconComponent size={20} className={textColor || ''} />
       )}
       <span
-        className={`text-[16px] leading-[20px] font-medium whitespace-nowrap ${textColor || ''
-          }`}
+        className={`text-[16px] leading-[20px] font-medium whitespace-nowrap ${textColor || ''}`}
       >
         {label}
       </span>
@@ -54,6 +54,7 @@ const Button = ({
     transition duration-200
     font-jakarta
     ${variantClasses[variant]}
+    ${fullWidth ? 'w-full' : ''}
     ${className}
   `;
 
