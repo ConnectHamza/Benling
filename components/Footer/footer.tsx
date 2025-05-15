@@ -47,19 +47,36 @@ const Footer = () => {
                     <div className='w-full md:w-1/6'>
                         <h3 className='font-bold text-xl mb-2'>Quick Links</h3>
                         <ul className='md:text-[15px] text-[13px]'>
-                            <li className="mb-2">About Us</li>
-                            <li className="mb-2">Contact Us</li>
-                            <li className="mb-2">FAQs</li>
-                            <li className="mb-2">Blogs</li>
+                            <li className="mb-2">
+                                <Link href="/about">About Us</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/contact-us">Contact Us</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/faqs">FAQs</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/blogs">Blogs</Link>
+                            </li>
                         </ul>
                     </div>
+
                     <div className='w-full md:w-1/6'>
                         <h3 className='font-bold text-xl mb-2'>More</h3>
                         <ul className='md:text-[15px] text-[13px]'>
-                            <li className="mb-2">Media Center</li>
-                            <li className="mb-2">Dealership</li>
-                            <li className="mb-2">Become a Distributor</li>
-                            <li className="mb-2">Store Locator</li>
+                            <li className="mb-2">
+                                <Link href="/media-center">Media Center</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/dealership">Dealership</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/become-a-distributor">Become a Distributor</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/find-a-dealer">Store Locator</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className='w-full md:w-2/6'>
