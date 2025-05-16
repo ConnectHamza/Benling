@@ -53,27 +53,27 @@ const Footer = () => {
                             <li className="mb-2">
                                 <Link href="/contact">Contact Us</Link>
                             </li>
-                            <li className="mb-2">
+                            {/* <li className="mb-2">
                                 <Link href="/faqs">FAQs</Link>
-                            </li>
-                            <li className="mb-2">
+                            </li> */}
+                            {/* <li className="mb-2">
                                 <Link href="/blogs">Blogs</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 
                     <div className='w-full md:w-1/6'>
                         <h3 className='font-bold text-xl mb-2'>More</h3>
                         <ul className='md:text-[15px] text-[13px]'>
-                            <li className="mb-2">
+                            {/* <li className="mb-2">
                                 <Link href="/media-center">Media Center</Link>
-                            </li>
-                            <li className="mb-2">
-                                <Link href="/dealership">Dealership</Link>
-                            </li>
-                            <li className="mb-2">
+                            </li> */}
+                            {/* <li className="mb-2">
+                                <Link href="/find-a-dealer">Dealership</Link>
+                            </li> */}
+                            {/* <li className="mb-2">
                                 <Link href="/become-a-distributor">Become a Distributor</Link>
-                            </li>
+                            </li> */}
                             <li className="mb-2">
                                 <Link href="/find-a-dealer">Store Locator</Link>
                             </li>
@@ -103,10 +103,10 @@ const Footer = () => {
                     <div>
                         <p>© {currentYear} Crown Benling Electric Mobility Pakistan</p>
                     </div>
-                    <div className='text-[13px] md:text-[15px] flex gap-4'>
+                    {/* <div className='text-[13px] md:text-[15px] flex gap-4'>
                         <a href="">Privacy Policy</a>
                         <a href="">Terms and Conditions</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

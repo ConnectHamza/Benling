@@ -128,8 +128,8 @@ export default function About() {
                                         <h3 className="font-semibold mb-1">Email</h3>
                                         <div className="text-sm flex items-center gap-2">
                                             <Image src={Mail} alt="Mail Icon" width={20} height={20} />
-                                            <a href="mailto:info@sterling.pk" className="text-blue-500" target="_blank" rel="noopener noreferrer">
-                                                info@sterling.pk
+                                            <a href="mailto:info@benling.pk" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+                                                info@benling.pk
                                             </a>
                                         </div>
                                     </div>

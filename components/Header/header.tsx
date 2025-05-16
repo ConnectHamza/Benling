@@ -166,7 +166,7 @@ const Header = () => {
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
                     </div>
                     <Link href="/about" className={`${navLink} flex items-center h-full font-jakarta`}>About Us</Link>
-                    <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link>
+                    {/* <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link> */}
                     <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>Find a Dealer</Link>
                 </nav>
 
@@ -177,7 +177,7 @@ const Header = () => {
                 </a>}
                 {/* Right nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
-                    <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link>
+                    {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
                     <Link href="/contact" className={`${navLink} flex items-center h-full`}>Contact Us</Link>
                     {/* <Link href="/dealer-locator">
                         <button className="border border-[#F15C2A] px-4 py-1 rounded hover:bg-[#F15C2A] hover:text-black transition-all duration-200 ease-linear">
@@ -244,9 +244,9 @@ const Header = () => {
                                 <span><ChevronRight /></span>
                             </button>
                             <Link href="/about" className="py-4 border-b text-black-200 border-gray-700 text-lg">About Us</Link>
-                            <Link href="/news" className="py-4 border-b text-black-200 border-gray-700 text-lg">News</Link>
+                            {/* <Link href="/news" className="py-4 border-b text-black-200 border-gray-700 text-lg">News</Link> */}
                             <Link href="/find-a-dealer" className="py-4 text-black-200 border-b border-gray-700 text-lg">Find a Dealer</Link>
-                            <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link>
+                            {/* <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link> */}
                             <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700 text-lg">Contact Us</Link>
                             <Link href="/find-a-dealer">
                                 <AppButton

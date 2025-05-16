@@ -9,11 +9,11 @@ export default function SalesAfterSalesSection() {
         <section className="w-full px-4 py-20 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Heading */}
-                <div className="mb-10 text-left md:text-left text-center w-full">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                <div className="mb-10 md:text-left text-center w-full">
+                    <h2 className="text-2xl md:text-4xl font-magistral font-medium text-black mb-2">
                         Sales & After-Sales Service
                     </h2>
-                    <p className="text-gray-600 text-base md:mx-0 mx-auto">
+                    <p className="text-gray-700 leading-relaxed font-jakarta text-base md:mx-0 mx-auto">
                         We’re With You Every Step of the Ride At Crown Benling, our commitment doesn’t end after purchase—it begins there.
                     </p>
                 </div>
@@ -31,10 +31,10 @@ export default function SalesAfterSalesSection() {
                                 className="rounded-xl"
                             />
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                        <h3 className="text-2xl md:text-4xl font-magistral font-medium text-black mb-2">
                             Sales Support
                         </h3>
-                        <ul className="list-disc list-inside text-gray-700 space-y-1">
+                        <ul className="list-disc list-inside text-gray-700 leading-relaxed font-jakarta space-y-1">
                             <li>On-spot vehicle demos and test rides</li>
                             <li>Personalized recommendations based on your needs</li>
                             <li>Easy financing and registration support</li>
@@ -53,10 +53,10 @@ export default function SalesAfterSalesSection() {
                                 className="rounded-xl"
                             />
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                        <h3 className="text-2xl md:text-4xl font-magistral font-medium text-black mb-2">
                             After-Sales Service
                         </h3>
-                        <ul className="list-disc list-inside text-gray-700 space-y-1">
+                        <ul className="list-disc list-inside text-gray-700 leading-relaxed font-jakarta space-y-1">
                             <li>Regular service checkups and tune-ups</li>
                             <li>Spare parts and repair assistance</li>
                             <li>Warranty support and claim guidance</li>
@@ -66,7 +66,7 @@ export default function SalesAfterSalesSection() {
                 </div>
 
                 {/* Bottom Text */}
-                <p className="text-xl font-bold text-gray-900 leading-relaxed w-full md:text-left text-center md:mx-0 mx-auto">
+                <p className="text-xl font-bold text-gray-900 leading-relaxed font-jakarta w-full md:text-left text-center md:mx-0 mx-auto">
                     Crown Benling is committed to making your electric journey smooth, reliable,
                     and empowering from day one and every day after.
                 </p>

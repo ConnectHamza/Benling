@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowLeftCircle, ArrowRightCircle, Download, ArrowUpRight } from "lucide-react";
+import Button from "../Button/AppButton";
+import { ArrowLeftCircle, ArrowRightCircle, BookDown } from "lucide-react";
 const HomeCarousel = ({ items = [], autoplay = false }) => {
   const [current, setCurrent] = useState(0);
 
@@ -111,23 +112,28 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       {/* Buttons */}
       <div className="mt-8 flex justify-center gap-4 flex-wrap px-4">
         {/* Download Brochure Button */}
-        <a
+        <Button
+          variant="outline"
+          label="Download Brochure"
+          iconName="BookDown"
+          iconPosition="left"
           href={items[current]?.brochureLink}
-          download
-          className="flex items-center gap-2 border-2 border-black hover:border-crownOrange text-black-200 hover:bg-crownOrange hover:text-white px-5 py-2.5 rounded font-medium text-sm sm:text-base transition"
-        >
-          <Download size={16} />
-          Download Brochure
-        </a>
+          className="border-2 border-black text-black-200 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black"
+          target="_blank"
+          download={true}
+        // Add download attribute using the `passHref` workaround below if needed
+        />
 
-        {/* Explore More Button */}
-        <a
+        <Button
+          variant="solid"
+          label="Explore More"
+          iconName="ArrowUpRight"
+          iconPosition="right"
           href={items[current]?.exploreLink}
-          className="flex items-center gap-2 bg-crownOrange text-white hover:bg-[#e6531f] px-5 py-2.5 rounded font-medium text-sm sm:text-base transition"
-        >
-          Explore More
-          <ArrowUpRight size={16} />
-        </a>
+          textColor='text-[#000]'
+          className="bg-crownOrange text-[#000] hover:bg-[#e6531f] px-5 py-2 rounded font-medium text-sm sm:text-base transition"
+          target="_blank"
+        />
       </div>
 
     </div>

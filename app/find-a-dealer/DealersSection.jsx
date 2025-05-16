@@ -52,7 +52,7 @@ export default function AuthorizedDealersSection() {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-1 font-jakarta">Real-Time Availability</h3>
+                <h3 className="text-2xl md:text-4xl font-magistral font-medium text-black">Real-Time Availability</h3>
                 <p className="text-sm text-gray-700 font-jakarta">
                   Check latest updates on vehicle availability at your nearest dealership —
                   no more guesswork.
@@ -71,7 +71,7 @@ export default function AuthorizedDealersSection() {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-1 font-jakarta">After-Sales Support</h3>
+                <h3 className="text-2xl md:text-4xl font-magistral font-medium text-black">After-Sales Support</h3>
                 <p className="text-sm text-gray-700 font-jakarta">
                   Access trusted service centers for maintenance, repairs, and warranty
                   support—ensuring peace of mind after your purchase. Our

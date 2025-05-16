@@ -27,7 +27,9 @@ const Button = ({
   target = '_self',
   textColor = '', // Optional text/icon color override
   fullWidth = false,
-  type = ''
+  type = '',
+  download = false
+
 }) => {
   const IconComponent = iconName && Icons[iconName] ? Icons[iconName] : null;
 
@@ -60,11 +62,25 @@ const Button = ({
   `;
 
   if (href) {
+    if (download) {
+      // Render regular anchor with download attribute
+      return (
+        <a
+          href={href}
+          download
+          target={target}
+          className={combinedClass}
+          rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+        >
+          {content}
+        </a>
+      );
+    }
     return (
-      <Link href={href} target={target} className={combinedClass}>
+            <Link href={href} target={target} className={combinedClass}>
         {content}
       </Link>
-    );
+    )
   }
 
   return (
@@ -74,4 +90,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default Button
