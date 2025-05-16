@@ -191,7 +191,7 @@ const Header = () => {
                         label="Book now"
                         iconName="ArrowUpRight"
                         iconPosition="right"
-                        href={"/booking"}
+                        href={"/book-now"}
                         textColor='text-[#000]'
                     />
                 </nav>
