@@ -3,6 +3,7 @@ import { useState } from "react"
 import Image from "next/image";
 import Herosection from "./HeroSection";
 import FormField from "../../components/Input/FormField";
+import AppButton from "../../components/Button/AppButton";
 import { validateField } from "../../utils/helper";
 import Apartment from "../../public/assets/Contact/apartment.svg";
 import Call from "../../public/assets/Contact/call.svg";
@@ -242,12 +243,16 @@ export default function About() {
                                         required
                                     /> */}
 
-                                    <button
+                                    <AppButton
+                                        size="medium"
+                                        variant="solid"
+                                        label="Send Message"
+                                        iconName="ArrowUpRight"
+                                        iconPosition="right"
+                                        className="w-full"
+                                        textColor='text-[#000]'
                                         type="submit"
-                                        className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-md"
-                                    >
-                                        Send Message
-                                    </button>
+                                    />
                                 </form>
                             </div>
                         </div>
