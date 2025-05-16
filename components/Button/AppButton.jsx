@@ -22,11 +22,12 @@ const Button = ({
   iconName = null,
   iconPosition = 'right',
   className = '',
-  onClick = () => {},
+  onClick = () => { },
   href = null,
   target = '_self',
   textColor = '', // Optional text/icon color override
-  fullWidth = false, // <-- New Prop
+  fullWidth = false,
+  type = ''
 }) => {
   const IconComponent = iconName && Icons[iconName] ? Icons[iconName] : null;
 
@@ -67,7 +68,7 @@ const Button = ({
   }
 
   return (
-    <button onClick={onClick} className={combinedClass}>
+    <button type={type} onClick={onClick} className={combinedClass}>
       {content}
     </button>
   );

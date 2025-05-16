@@ -200,7 +200,7 @@ export default function About() {
                                         required
                                     />
 
-                                    <FormField
+                                    {/* <FormField
                                         type="select"
                                         label="Country"
                                         name="country"
@@ -214,9 +214,9 @@ export default function About() {
                                             { name: "UK", value: "UK" },
                                         ]}
                                         required
-                                    />
+                                    /> */}
 
-                                    <FormField
+                                    {/* <FormField
                                         type="radio"
                                         label="Gender"
                                         name="gender"
@@ -229,9 +229,9 @@ export default function About() {
                                             { name: "Female", value: "female" },
                                         ]}
                                         required
-                                    />
+                                    /> */}
 
-                                    <FormField
+                                    {/* <FormField
                                         type="checkbox"
                                         label="I agree to the terms"
                                         name="agree"
@@ -240,7 +240,7 @@ export default function About() {
                                         onBlur={handleBlur}
                                         error={errors.agree}
                                         required
-                                    />
+                                    /> */}
 
                                     <button
                                         type="submit"
