@@ -90,7 +90,7 @@ export const faqsData = [
         answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
     },
     {
-        question: "WWhat colors are available for the Firefly?",
+        question: "What colors are available for the Firefly?",
         answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
     },
     {

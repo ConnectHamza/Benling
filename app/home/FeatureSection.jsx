@@ -44,11 +44,11 @@ const FeatureSection = () => (
   <section className="w-full bg-[#13102A] py-10 px-2 md:px-0">
     <div className="max-w-[1300px] mx-auto p-10">
       <div className="mb-2">
-        <Typography color='text-white' variant='h1-medium-magistral'>
+        <Typography color='text-white' variant='h3-medium-magistral'>
           Explore Our Smart Features
         </Typography>
       </div>
-      <Typography variant='body-regular-jakarta' className="mb-6 text-white">
+      <Typography variant='subtext-regular-jakarta' className="mb-6 text-white">
         Experience the convenience and tech that power every Crown Benling scooter, engineered for performance, safety, and sustainability.
       </Typography>
       <div

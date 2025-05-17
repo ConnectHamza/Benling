@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import FlawlessImg from '../../public/assets/Ezee/Flawless-Design.webp';
+import Typography from '@/components/GradientText/Typography';
 
 
 const textVariants = {
@@ -30,17 +31,17 @@ const Flawless = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h3 className='md:text-[24px] text-[20px] self-start'>
-            <span className='font-magistral font-thin'>
+          <Typography className='leading-3'>
+            <Typography variant='h5-regular-magistral'  >
               Fearless Rides.
-            </span>
+            </Typography>
             <br />
-            <span className='heading3 font-magistral'>Flawless Design.</span>
-          </h3>
-          <p className='font-jakarta font-thin'>
+            <Typography variant='h2-bold-magistral'>Flawless Design.</Typography>
+          </Typography>
+          <Typography variant='body-regular-jakarta'>
             With dimensions of 1800mm x 690mm x 1250mm and lightweight construction (116 kg),
             the Ezee is perfect for urban commutes.
-          </p>
+          </Typography>
         </motion.div>
 
         {/* Image Animation (Slide from Right) */}

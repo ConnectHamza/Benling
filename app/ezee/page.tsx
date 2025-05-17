@@ -32,7 +32,7 @@ export default function Ezee() {
                 title="Crown Benling Ezee"
                 headingPartOne="Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, "
                 headingPartTwo="the Ezee takes your journey to the next level"
-                colorOne="#fff"
+                colorOne="#ffffff"
                 colorTwo="#f15822"
                 gradients={"bg-gradient-to-br from-[#410D09] to-[#121212]"}
             />

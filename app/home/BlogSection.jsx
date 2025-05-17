@@ -57,7 +57,7 @@ export default function RecentBlogsCarousel() {
     <section className="bg-white text-black py-10">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <Typography variant="h2-medium-magistral">
+        <Typography variant="h3-medium-magistral">
           Recent Blog/News
         </Typography>
 
@@ -81,19 +81,19 @@ export default function RecentBlogsCarousel() {
                       className="object-cover"
                     />
                   </div>
-                  <Typography variant="subtext-regular-jakarta" className="text-[#989898] mb-4">
+                  <Typography variant="extra-subtext-regular-jakarta" className="text-[#989898] mb-4">
                     {blog.date}
                   </Typography>
-                  <Typography variant="h5-medium-jakarta" className="mb-2 leading-tight">
+                  <Typography variant="h6-medium-jakarta" className="mb-2 leading-tight">
                     {blog.title}
                   </Typography>
-                  <Typography variant="body-regular-jakarta" className=" text-[#000] leading-snug">
+                  <Typography variant="subtext-regular-jakarta" className=" text-[#000] leading-snug">
                     {blog.subheading}
                   </Typography>
                 </div>
                 <div className="mt-4">
                   <button className="text-[#000] hover:underline text-sm font-semibold font-jakarta flex flex-row items-center">
-                    <Typography variant="subtext-bold-jakarta">
+                    <Typography variant="extra-subset-bold-jakarta">
                       Read More
                     </Typography>
                     <div className="mx-3">
@@ -109,7 +109,7 @@ export default function RecentBlogsCarousel() {
           <div className="mt-6 flex justify-between items-center flex-wrap gap-4">
             <button className="text-[14px] h-[35px] text-black px-4 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition flex flex-row items-center">
               
-              <Typography variant="subtext-regular-jakarta">
+              <Typography variant="extra-subset-regular-jakarta">
               View All Blog/News
 
               </Typography>

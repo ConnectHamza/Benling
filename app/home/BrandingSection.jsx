@@ -34,10 +34,10 @@ const BrandingSection = () => {
         <section className="bg-white rounded-xl py-6 md:py-10">
             <div className="max-w-[1300px] mx-auto px-4 md:px-6 text-center">
                 {/* Heading */}
-                <Typography variant='h1-medium-magistral' className="mb-2">
+                <Typography variant='h2-medium-magistral' className="mb-2">
                     Inspiring a Greener Tomorrow
                 </Typography>
-                <Typography variant='body-regular-jakarta' className='text-[#0A0A0A]'>
+                <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A]'>
                     Crown Bending Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
                 </Typography>
     

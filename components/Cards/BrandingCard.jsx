@@ -15,8 +15,8 @@ const Card = ({ imageSrc, title, description }) => {
 
             {/* Title on top, description below */}
             <div className="flex flex-col text-gray-800">
-                <Typography variant='h3-medium-magistral' className="self-start text-[#0A0A0A]">{title}</Typography>
-                <Typography variant='body-regular-jakarta' className="text-[#0A0A0A]">{description}</Typography>
+                <Typography variant='h4-medium-magistral' className="self-start text-[#0A0A0A]">{title}</Typography>
+                <Typography variant='subtext-regular-jakarta' className="text-[#0A0A0A]">{description}</Typography>
             </div>
         </div>
     );

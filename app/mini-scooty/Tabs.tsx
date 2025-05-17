@@ -30,7 +30,7 @@ const Tabs = () => {
     { id: '1', label: 'Shadow Jet' },
     { id: '2', label: 'Bubble Blue' },
     { id: '3', label: 'Cherry Zoom' },
-    { id: '4', label: 'Vanila Pop' },
+    { id: '4', label: 'Vanilla Pop' },
   ].map((tab) => (
     <h3
       key={tab.id}

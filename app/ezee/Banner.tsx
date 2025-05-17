@@ -5,8 +5,8 @@ import HeroSection from '@/components/Herocontainer/Herocontainer';
 const Banner = () => {
   return (
     <HeroSection
-      title="Benling Redefining Electric Mobility"
-      subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
+      title="Ezee – Your Everyday Electric Companion"
+      subtitle="Designed for comfort and practicality, Ezee is the perfect electric scooter for daily rides. Enjoy easy handling, long range, and zero emissions across Pakistan."
       buttonText="Explore More"
       imageSrc={FireflyIMG.src}
     />

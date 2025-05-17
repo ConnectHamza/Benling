@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Typography from "../GradientText/Typography";
 
 
 const StickyBar = ({
@@ -15,14 +16,22 @@ const StickyBar = ({
     <>
       <div className={`w-full bg-black-30 flex justify-center py-4 sticky top-0 ${isSticky ? "z-50" : "z-0"}`} >
         <div className={`w-full text-white px-4 md:px-12 text-center md:text-start `}>
-          <h3 style={{fontWeight:700}} className="md:text-[28px] font-jakarta text-[20px]">{title}</h3>
+          <div className="md:text-[28px] font-jakarta text-[20px]">
+            <Typography variant="h5-bold-jakarta">
+              {title}
+            </Typography>
+          </div>
         </div>
       </div>
       <div className={`w-full py-12 px-4 md:px-12 ${gradients}`}>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-[500] font-jakarta leading-[1.2]">
-          <span style={{ color: colorOne }}>{headingPartOne}</span>
-          <span style={{ color: colorTwo }}>{headingPartTwo}</span>
-        </h1>
+        <div>
+          <Typography as="span" style={{ color: colorOne }} variant="h3-bold-jakarta">
+            {headingPartOne}
+          </Typography>
+          <Typography as="span" style={{ color: colorTwo }} variant="h3-bold-jakarta">
+            {headingPartTwo}
+          </Typography>
+        </div>
       </div>
     </>
   );

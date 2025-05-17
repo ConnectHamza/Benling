@@ -43,14 +43,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         transition={{ duration: 0.7 }}
       >
         <div className="mb-4">
-          <Typography variant='h1-medium-magistral'>
+          <Typography variant='h2-medium-magistral'>
           {title}
 
           </Typography>
           
           </div>
         <div className=" mb-6 jakarta font-[400]">
-          <Typography variant='h6-regular-jakarta'>
+          <Typography variant='body-regular-jakarta'>
             {subtitle}
           </Typography>
         </div>

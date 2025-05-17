@@ -8,7 +8,7 @@ import Feature6IMG from '../../public/assets/RoshniX/Features/Feature6.png';
 
 export const featureHeader = {
     featureTitle: 'Designed for Your Comfort and Control',
-    featureText: `Experience a blend of thoughtful design and advanced technology. Roshni's features are tailored to enhance your safety, convenience, and riding pleasure.`,
+    featureText: `Experience a blend of thoughtful design and advanced technology. RoshniX's features are tailored to enhance your safety, convenience, and riding pleasure.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
   };
@@ -33,7 +33,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Wheelbase", value2: "1300mm" },
     { title2: "Ground Clearance", value2: "220mm" },
     { title2: "Tubeless Tyre Size", value2: "Fr: 90/80-12 Rr:90/80-12" },
-    { title2: "Breaking System (F/R)", value2: "Disc" },
+    { title2: "Braking System (F/R)", value2: "Disc" },
     { title2: "USB Port", value2: "Mobile Charging" },
     { title2: "Loading Capacity", value2: "200KG" },
     { title2: "Sensor", value2: "Side Stand Sensor" },
@@ -65,7 +65,7 @@ export const featuresData = [
         img: Feature4IMG,
         alt: 'Spacious Under-Seat Storage',
         title: 'Spacious Under-Seat Storage',
-        description: `Carry more without compromise. The generously sized under seat storage ensures you have room for your essentials, whether it’s your bag, helmet, or daily grocerie.`
+        description: `Carry more without compromise. The generously sized under seat storage ensures you have room for your essentials, whether it’s your bag, helmet, or daily groceries.`
     },
     {
         img: Feature5IMG,

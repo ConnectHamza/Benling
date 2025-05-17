@@ -149,7 +149,7 @@ export default function Home() {
                 <Typography variant='h3-medium-magistral' >
                   Pakistan Largest EV Scooter Growing Network
                 </Typography>
-                <Typography variant="body-regular-jakarta">
+                <Typography variant="subtext-regular-jakarta">
                   Crown Benling is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
                 </Typography>
               </div>

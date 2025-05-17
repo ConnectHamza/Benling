@@ -326,12 +326,12 @@ export default function ShopSlider() {
           <div className="mb-10">
             <div className="font-magistral max-w-full md:max-w-[50%]">
               <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
-                <Typography as="span" variant='h2-medium-magistral' className='text-[#0A0A0A]'>
+                <Typography as="span" variant='h3-medium-magistral' className='text-[#0A0A0A]'>
                   Explore Our Nationwide Network{" "}
-                </Typography>
+                </Typography> <br />
                 <Typography
                   as='span'
-                  variant='h2-medium-magistral'
+                  variant='h3-medium-magistral'
                   onClick={() => setIsModalOpen(true)}
                   className="text-orange-500 inline-flex items-center cursor-pointer"
                 >
@@ -339,7 +339,7 @@ export default function ShopSlider() {
                   {isModalOpen ? <ChevronUp className="ml-2 w-[1em] h-[1em] text-orange-500" /> : <ChevronDown className="ml-2 w-[1em] h-[1em] text-orange-500" />}</Typography>
               </h2>
 
-              <Typography variant='subtext-regular-jakarta' className="mt-2">
+              <Typography variant='extra-subtext-regular-jakarta' className="mt-2">
                 From big cities to growing towns, our expanding dealer network brings electric mobility closer to you.
               </Typography>
               <div className="mt-4">
@@ -347,7 +347,7 @@ export default function ShopSlider() {
                   href="#"
                   className="inline-flex items-center gap-1 text-black hover:underline transition"
                 >
-                  <Typography variant='subtext-regular-jakarta'>
+                  <Typography variant='extra-subtext-regular-jakarta'>
                     Learn More About Crown Benling Dealer
                   </Typography>
                   <ArrowUpRight size={14} />

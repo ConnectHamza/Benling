@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "./Typography";
 
 interface ColorStop {
   color: string;
@@ -22,7 +23,7 @@ const GradientText: React.FC<GradientTextProps> = ({ heading, colors }) => {
     display: "inline-block",
   };
 
-  return <h2 className="heading2 font-magistral font-[700]" style={gradientStyle}>{heading}</h2>;
+  return <Typography variant="h3-bold-magistral" style={gradientStyle}>{heading}</Typography>;
 };
 
 export default GradientText;

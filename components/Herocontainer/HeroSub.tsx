@@ -45,11 +45,11 @@ const HeroSection = ({
         <div className="text-left w-full">
           <div
           >
-            <Typography variant='h2-bold-jakarta' as="span">
+            <Typography variant='h3-medium-jakarta' as="span">
               {title}
             </Typography>
-            <Typography variant='h2-bold-jakarta' as="span">
-              <Typography variant='h2-bold-jakarta' as="span" className="bg-gradient-to-r from-[#FBB78C] to-[#F15C2A] bg-clip-text text-transparent inline">
+            <Typography variant='h3-medium-jakarta' as="span">
+              <Typography variant='h3-medium-jakarta' as="span" className="bg-gradient-to-r from-[#FBB78C] to-[#F15C2A] bg-clip-text text-transparent inline">
                 {" " + highlightText}
               </Typography>
               {`, ${description}`}
@@ -65,7 +65,7 @@ const HeroSection = ({
                 onClick={onButtonClick}
                 className="inline-flex items-center gap-2 border border-white text-white text-sm px-6 py-2 rounded hover:border-crownOrange hover:bg-crownOrange transition duration-300"
               >
-                <Typography variant='body-semibold-jakarta'>
+                <Typography variant='subtext-medium-jakarta'>
                 {buttonLabel}
                 </Typography>
                 <ChevronRight size={16} />
