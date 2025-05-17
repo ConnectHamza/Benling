@@ -161,19 +161,19 @@ const Header = () => {
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
                         onMouseLeave={() => setIsMegaMenuOpen(false)}
                     >
-                        <Typography variant="body-regular-jakarta" as="span" className=" flex items-center h-full cursor-pointer relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+                        <Typography variant="subtext-regular-jakarta" as="span" className=" flex items-center h-full cursor-pointer relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
                             Models {isMegaMenuOpen ? <ChevronUp /> : <ChevronDown />}
                         </Typography>
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
                     </div>
                     <Link href="/about" className={`${navLink} flex items-center h-full`}>
-                        <Typography variant="body-regular-jakarta">
+                        <Typography variant="subtext-regular-jakarta">
                             About Us
                         </Typography>
                     </Link>
                     {/* <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link> */}
                     <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
-                        <Typography variant="body-regular-jakarta">
+                        <Typography variant="subtext-regular-jakarta">
                             Find a Dealer
                         </Typography>
                     </Link>
@@ -188,7 +188,7 @@ const Header = () => {
                 <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
                     <Link href="/contact" className={`${navLink} flex items-center h-full`}>
-                        <Typography variant="body-regular-jakarta">
+                        <Typography variant="subtext-regular-jakarta">
                             Contact Us
                         </Typography>
                     </Link>
@@ -253,26 +253,26 @@ const Header = () => {
                                 onClick={() => setIsModelsOpen(true)}
                                 className="flex justify-between items-center w-full text-lg py-4 border-b text-black-200 border-gray-700"
                             >
-                                <Typography as="span" variant="body-regular-jakarta">
+                                <Typography as="span" variant="subtext-regular-jakarta">
                                     Models
                                 </Typography>
                                 <span><ChevronRight /></span>
                             </button>
                             <Link href="/about" className="py-4 border-b text-black-200 border-gray-700 text-lg">
 
-                                <Typography variant="body-regular-jakarta">
+                                <Typography variant="subtext-regular-jakarta">
                                     About Us
                                 </Typography>
                                 </Link>
                             {/* <Link href="/news" className="py-4 border-b text-black-200 border-gray-700 text-lg">News</Link> */}
                             <Link href="/find-a-dealer" className="py-4 text-black-200 border-b border-gray-700 text-lg">
-                                <Typography variant="body-regular-jakarta">
+                                <Typography variant="subtext-regular-jakarta">
                                     Find a Dealer
                                 </Typography>
                             </Link>
                             {/* <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link> */}
                             <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700">
-                                <Typography variant="body-regular-jakarta">
+                                <Typography variant="subtext-regular-jakarta">
                                     Contact Us
                                 </Typography>
                             </Link>
