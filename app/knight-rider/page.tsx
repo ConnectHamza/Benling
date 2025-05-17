@@ -11,7 +11,7 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import {aboutSpecificationsData, aboutSpecificationsData2, faqsData, featuresData, featureHeader, heading, colors} from './data'
 import Faqs from '@/components/Faqs/Faqs'
 import Slider from '@/components/Slider/Slider'
-import Banner from '../ezee/Banner'
+import Banner from './Banner'
 
 
 const KnightRider = () => {

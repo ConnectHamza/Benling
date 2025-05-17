@@ -26,7 +26,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
           </div>
           <div className='md:w-[40%] flex flex-col gap-5 mt-5 md:mt-0'>
             {secondColumn.map((item, index) => (
-           <div key={index} className='flex items-center gap-5'>
+              <div key={index} className='flex items-center gap-5'>
                 <Typography as='span' variant='body-bold-jakarta' className='text-nowrap'>{item.title2}</Typography>
                 <hr className='border-black-70 w-[100%] ' />
                 <Typography variant='body-bold-regular' as='span' className='text-nowrap'>{item.value2}</Typography>
@@ -36,12 +36,13 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
 
         </div>
         {bottomImageTag && (
-          <div className="mt-5 w-full relative h-[50px]"> {/* Adjust height as needed */}
+          <div className="mt-5 w-full">
             <Image
               src={bottomImageTag?.src}
               alt="Complimentary Banner"
-              fill
-              className="object-cover rounded-10"
+              width={800} // adjust to your actual image width
+              height={100} // adjust to your actual image height
+              className="object-cover rounded-10 w-full h-auto"
             />
           </div>
         )}
