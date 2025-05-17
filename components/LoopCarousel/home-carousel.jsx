@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../Button/AppButton";
 import { ArrowLeftCircle, ArrowRightCircle, BookDown } from "lucide-react";
+import Typography from "../GradientText/Typography";
 const HomeCarousel = ({ items = [], autoplay = false }) => {
   const [current, setCurrent] = useState(0);
 
@@ -97,15 +98,15 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       {/* Motorcycle Details */}
       <div className="mt-4 text-center">
         <div className="flex justify-center gap-8 text-sm md:text-base text-gray-600 font-magistral font-normal">
-          <p >
-            Range: <span className="font-medium">{items[current]?.range} km</span>
-          </p>
-          <p>
-            Max Speed: <span className="font-medium">{items[current]?.maxSpeed} km/h</span>
-          </p>
-          <p>
-            Motor Power: <span className="font-medium">{items[current]?.motorPower} W</span>
-          </p>
+          <Typography variant="h6-regular-magistral" >
+            Range: <Typography as="span" variant="h6-regular-magistral">{items[current]?.range} km</Typography>
+          </Typography>
+          <Typography variant="h6-regular-magistral">
+            Max Speed: <Typography variant="h6-regular-magistral" as="span" className="font-medium">{items[current]?.maxSpeed} km/h</Typography>
+          </Typography>
+          <Typography variant="h6-regular-magistral">
+            Motor Power: <Typography variant="h6-regular-magistral" as="span" className="font-medium">{items[current]?.motorPower} W</Typography>
+          </Typography>
         </div>
       </div>
 

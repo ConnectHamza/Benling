@@ -1,5 +1,6 @@
 // components/Card.tsx
 import Image from 'next/image';
+import Typography from '../GradientText/Typography';
 
 const Card = ({ imageSrc, title, description }) => {
     return (
@@ -14,8 +15,8 @@ const Card = ({ imageSrc, title, description }) => {
 
             {/* Title on top, description below */}
             <div className="flex flex-col text-gray-800">
-                <h3 className="text-2xl font-normal font-magistral self-start">{title}</h3>
-                <p className="text-sm text-gray-600 mt-1 font-jakarta font-normal">{description}</p>
+                <Typography variant='h3-medium-magistral' className="self-start text-[#0A0A0A]">{title}</Typography>
+                <Typography variant='body-regular-jakarta' className="text-[#0A0A0A]">{description}</Typography>
             </div>
         </div>
     );

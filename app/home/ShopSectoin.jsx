@@ -5,6 +5,7 @@ import Image from 'next/image';
 import shopIcon from '../../public/assets/Home/shops/Store.png';
 import crownImage from '../../public/assets/Home/shops/crownshop.png';
 import { ChevronLeft, ChevronRight, ArrowUpRight, X, ChevronDown, ChevronUp } from 'lucide-react';
+import Typography from '@/components/GradientText/Typography';
 
 const cities =
 {
@@ -299,15 +300,17 @@ export default function ShopSlider() {
               </button>
 
               <div className="p-6 overflow-y-auto mt-2">
-                <h2 className="text-xl font-semibold mb-4 text-center font-magistral">Select a City</h2>
+                <Typography variant='h3-medium-magistral' className="mb-4 text-center">Select a City</Typography>
                 <ul className="space-y-3">
                   {Object.keys(cities).map((city) => (
                     <li
                       key={city}
                       onClick={() => handleCitySelect(city)}
-                      className="cursor-pointer text-[#000000] hover:underline text-center font-jakarta"
+                      className="cursor-pointer hover:underline text-center"
                     >
-                      {city}
+                      <Typography variant='body-regular-jakarta' className='text-[#000000] '>
+                        {city}
+                      </Typography>
                     </li>
                   ))}
                 </ul>
@@ -323,24 +326,30 @@ export default function ShopSlider() {
           <div className="mb-10">
             <div className="font-magistral max-w-full md:max-w-[50%]">
               <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
-                Explore Our Nationwide Network{" "}
-                <span
+                <Typography as="span" variant='h2-medium-magistral' className='text-[#0A0A0A]'>
+                  Explore Our Nationwide Network{" "}
+                </Typography>
+                <Typography
+                  as='span'
+                  variant='h2-medium-magistral'
                   onClick={() => setIsModalOpen(true)}
                   className="text-orange-500 inline-flex items-center cursor-pointer"
                 >
                   {selectedCity}
-                  {isModalOpen ? <ChevronUp className="ml-2 w-[1em] h-[1em] text-orange-500" /> : <ChevronDown className="ml-2 w-[1em] h-[1em] text-orange-500" />}</span>
+                  {isModalOpen ? <ChevronUp className="ml-2 w-[1em] h-[1em] text-orange-500" /> : <ChevronDown className="ml-2 w-[1em] h-[1em] text-orange-500" />}</Typography>
               </h2>
 
-              <p className="mt-2 text-sm sm:text-base text-black-200 font-jakarta">
+              <Typography variant='subtext-regular-jakarta' className="mt-2">
                 From big cities to growing towns, our expanding dealer network brings electric mobility closer to you.
-              </p>
-              <div className="mt-4 font-jakarta">
+              </Typography>
+              <div className="mt-4">
                 <a
                   href="#"
                   className="inline-flex items-center gap-1 text-black hover:underline transition"
                 >
-                  Learn More About Crown Benling Dealer
+                  <Typography variant='subtext-regular-jakarta'>
+                    Learn More About Crown Benling Dealer
+                  </Typography>
                   <ArrowUpRight size={14} />
                 </a>
               </div>
@@ -362,7 +371,7 @@ export default function ShopSlider() {
               {cities[selectedCity].data.map((shop) => (
                 <div
                   key={shop.id}
-                  className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] h-[275px] bg-[#f5f5f5] rounded-lg shadow p-4 flex flex-col justify-between snap-start"
+                  className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] h-[300px] bg-[#f5f5f5] rounded-lg shadow p-4 flex flex-col justify-between snap-start"
                 >
                   <div>
                     <div className="mb-3">
@@ -373,20 +382,20 @@ export default function ShopSlider() {
                         height={28}
                         className="mb-2"
                       />
-                      <h3 className="text-black mb-1 font-normal font-magistral text-[20px] sm:text-[23px]">
+                      <Typography variant='h5-medium-magistral' className="mb-1 text-[#0A0A0A]">
                         {shop.name}
-                      </h3>
-                      <p className="text-[14px] text-gray-700 mb-2 font-jakarta h-[75px] overflow-hidden text-ellipsis">
+                      </Typography>
+                      <Typography variant='extra-subtext-regular-jakarta' className=" text-gray-700 mb-2 h-[100px]">
                         {shop.address}
-                      </p>
-                      <div className="text-sm text-gray-600 flex flex-wrap">
+                      </Typography>
+                      <div className="text-gray-600 flex flex-wrap">
                         {shop.phone.map((number, index) => (
-                          <span key={index} className="text-[#575BFF] text-[12px] mr-2">
+                          <Typography variant='extra-subtext-regular-jakarta' as="span" key={index} className="text-[#575BFF] text-[12px] mr-2">
                             {number}
                             {index !== shop.phone.length - 1 && (
-                              <span className="mx-2 text-gray-400">—</span>
+                              <Typography variant='extra-subtext-regular-jakarta'  as="span" className="mx-2 text-gray-400">—</Typography>
                             )}
-                          </span>
+                          </Typography>
                         ))}
                       </div>
                     </div>

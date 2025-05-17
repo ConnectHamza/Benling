@@ -20,6 +20,7 @@ import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.png";
 import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.png";
 import { ArrowRight, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import AppButton from '@/components/Button/AppButton';
+import Typography from '@/components/GradientText/Typography';
 
 // --- Model Data ---
 const modelsData = [
@@ -160,14 +161,22 @@ const Header = () => {
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
                         onMouseLeave={() => setIsMegaMenuOpen(false)}
                     >
-                        <span className=" flex text[16px] items-center h-full cursor-pointer font-jakarta relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+                        <Typography variant="body-regular-jakarta" as="span" className=" flex items-center h-full cursor-pointer relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
                             Models {isMegaMenuOpen ? <ChevronUp /> : <ChevronDown />}
-                        </span>
+                        </Typography>
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
                     </div>
-                    <Link href="/about" className={`${navLink} flex items-center h-full font-jakarta`}>About Us</Link>
+                    <Link href="/about" className={`${navLink} flex items-center h-full`}>
+                        <Typography variant="body-regular-jakarta">
+                            About Us
+                        </Typography>
+                    </Link>
                     {/* <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link> */}
-                    <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>Find a Dealer</Link>
+                    <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                        <Typography variant="body-regular-jakarta">
+                            Find a Dealer
+                        </Typography>
+                    </Link>
                 </nav>
 
                 {/* Logo with black background */}
@@ -178,7 +187,11 @@ const Header = () => {
                 {/* Right nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
-                    <Link href="/contact" className={`${navLink} flex items-center h-full`}>Contact Us</Link>
+                    <Link href="/contact" className={`${navLink} flex items-center h-full`}>
+                        <Typography variant="body-regular-jakarta">
+                            Contact Us
+                        </Typography>
+                    </Link>
                     {/* <Link href="/dealer-locator">
                         <button className="border border-[#F15C2A] px-4 py-1 rounded hover:bg-[#F15C2A] hover:text-black transition-all duration-200 ease-linear">
                             Book Now
@@ -240,14 +253,29 @@ const Header = () => {
                                 onClick={() => setIsModelsOpen(true)}
                                 className="flex justify-between items-center w-full text-lg py-4 border-b text-black-200 border-gray-700"
                             >
-                                <span className="text-black-200">Models</span>
+                                <Typography as="span" variant="body-regular-jakarta">
+                                    Models
+                                </Typography>
                                 <span><ChevronRight /></span>
                             </button>
-                            <Link href="/about" className="py-4 border-b text-black-200 border-gray-700 text-lg">About Us</Link>
+                            <Link href="/about" className="py-4 border-b text-black-200 border-gray-700 text-lg">
+
+                                <Typography variant="body-regular-jakarta">
+                                    About Us
+                                </Typography>
+                                </Link>
                             {/* <Link href="/news" className="py-4 border-b text-black-200 border-gray-700 text-lg">News</Link> */}
-                            <Link href="/find-a-dealer" className="py-4 text-black-200 border-b border-gray-700 text-lg">Find a Dealer</Link>
+                            <Link href="/find-a-dealer" className="py-4 text-black-200 border-b border-gray-700 text-lg">
+                                <Typography variant="body-regular-jakarta">
+                                    Find a Dealer
+                                </Typography>
+                            </Link>
                             {/* <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link> */}
-                            <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700 text-lg">Contact Us</Link>
+                            <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700">
+                                <Typography variant="body-regular-jakarta">
+                                    Contact Us
+                                </Typography>
+                            </Link>
                             <Link href="/find-a-dealer">
                                 <AppButton
                                     size="medium"

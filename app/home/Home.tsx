@@ -2,7 +2,6 @@
 
 import HeroSection from '@/components/Herocontainer/Herocontainer';
 import HeroImage from '../../public/assets/Home/Header/heroimage.png';
-import StickyBar from '@/components/StickyBar/stickyBar';
 import HeroSubSection from '@/components/Herocontainer/HeroSub';
 import VideoSection from './VideoSection';
 import ShopSection from "./ShopSectoin";
@@ -34,6 +33,7 @@ import Faqs from '@/components/Faqs/Faqs'
 
 
 import { faqsData } from './data';
+import Typography from '@/components/GradientText/Typography';
 export default function Home() {
   const bikes = [
     {
@@ -146,12 +146,12 @@ export default function Home() {
               {/* Left: Text Block */}
               <div className="text-white flex flex-col space-y-6">
                 <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} />
-                <p className="text-4xl md:text-5xl font-semi-bold leading-tight font-magistral">
+                <Typography variant='h3-medium-magistral' >
                   Pakistan Largest EV Scooter Growing Network
-                </p>
-                <p className="text-base md:text-lg font-light font-jakarta">
+                </Typography>
+                <Typography variant="body-regular-jakarta">
                   Crown Benling is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
-                </p>
+                </Typography>
               </div>
 
               {/* Right: Map */}

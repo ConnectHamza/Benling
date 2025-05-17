@@ -4,6 +4,7 @@ import Nfclock from '../../public/assets/Home/Feature/nfclock.png';
 import RemoteAlarm from '../../public/assets/Home/Feature/remotealarm.png';
 import Motor from '../../public/assets/Home/Feature/motor.png';
 import FeatureCard from '@/components/Features/FeatureCard';
+import Typography from '@/components/GradientText/Typography';
 
 const features = [
   {
@@ -42,10 +43,14 @@ const features = [
 const FeatureSection = () => (
   <section className="w-full bg-[#13102A] py-10 px-2 md:px-0">
     <div className="max-w-[1300px] mx-auto p-10">
-      <h2 className="text-white text-3xl md:text-3xl font-magistral font-semi-bold mb-2">Explore Our Smart Features</h2>
-      <p className="mb-6 text-white font-regular font-jakarta text-sm">
+      <div className="mb-2">
+        <Typography color='text-white' variant='h1-medium-magistral'>
+          Explore Our Smart Features
+        </Typography>
+      </div>
+      <Typography variant='body-regular-jakarta' className="mb-6 text-white">
         Experience the convenience and tech that power every Crown Benling scooter, engineered for performance, safety, and sustainability.
-      </p>
+      </Typography>
       <div
         className="
           grid grid-cols-1 gap-4

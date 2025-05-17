@@ -7,6 +7,7 @@ import BlogImage3 from "../../public/assets/Home/Blogs/Blog3.png"
 import BlogImage4 from "../../public/assets/Home/Blogs/Blog4.png"
 
 import Image from "next/image";
+import Typography from "@/components/GradientText/Typography";
 
 const blogs = [
   {
@@ -56,10 +57,10 @@ export default function RecentBlogsCarousel() {
     <section className="bg-white text-black py-10">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl mb-6 font-magistral font-weight[500]">
+        <Typography variant="h2-medium-magistral">
           Recent Blog/News
-        </h2>
-  
+        </Typography>
+
         {/* Scrollable Blog Cards */}
         <div className="relative">
           <div
@@ -80,19 +81,21 @@ export default function RecentBlogsCarousel() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-sm text-[#989898] mb-4 font-jakarta font-normal">
-                    News • {blog.date}
-                  </p>
-                  <h3 className="font-semibold text-lg mb-2 leading-tight font-jakarta">
+                  <Typography variant="subtext-regular-jakarta" className="text-[#989898] mb-4">
+                    {blog.date}
+                  </Typography>
+                  <Typography variant="h5-medium-jakarta" className="mb-2 leading-tight">
                     {blog.title}
-                  </h3>
-                  <p className="text-sm text-[#000] leading-snug font-jakarta">
+                  </Typography>
+                  <Typography variant="body-regular-jakarta" className=" text-[#000] leading-snug">
                     {blog.subheading}
-                  </p>
+                  </Typography>
                 </div>
                 <div className="mt-4">
                   <button className="text-[#000] hover:underline text-sm font-semibold font-jakarta flex flex-row items-center">
-                    Read More
+                    <Typography variant="subtext-bold-jakarta">
+                      Read More
+                    </Typography>
                     <div className="mx-3">
                       <ChevronRight size={14} />
                     </div>
@@ -101,16 +104,20 @@ export default function RecentBlogsCarousel() {
               </div>
             ))}
           </div>
-  
+
           {/* Controls */}
           <div className="mt-6 flex justify-between items-center flex-wrap gap-4">
-            <button className="text-[14px] h-[35px] text-black px-4 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition font-jakarta flex flex-row items-center">
+            <button className="text-[14px] h-[35px] text-black px-4 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition flex flex-row items-center">
+              
+              <Typography variant="subtext-regular-jakarta">
               View All Blog/News
+
+              </Typography>
               <div className="mx-3">
                 <ArrowUpRight size={14} />
               </div>
             </button>
-  
+
             <div className="flex gap-3 ml-auto">
               <button
                 onClick={() => scroll('left')}
@@ -130,5 +137,5 @@ export default function RecentBlogsCarousel() {
       </div>
     </section>
   );
-  
+
 }

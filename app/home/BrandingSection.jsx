@@ -4,6 +4,7 @@ import World from '../../public/assets/Home/Branding/world.png';
 import ElectricBike from '../../public/assets/Home/Branding/electric_bike.png';
 import Carbon from '../../public/assets/Home/Branding/carbon.png';
 import Forest from '../../public/assets/Home/Branding/forest.png';
+import Typography from '@/components/GradientText/Typography';
 
 const cardData = [
     {
@@ -33,12 +34,12 @@ const BrandingSection = () => {
         <section className="bg-white rounded-xl py-6 md:py-10">
             <div className="max-w-[1300px] mx-auto px-4 md:px-6 text-center">
                 {/* Heading */}
-                <h2 className="text-2xl md:text-3xl font-bold font-magistral text-black-800 mb-2">
+                <Typography variant='h1-medium-magistral' className="mb-2">
                     Inspiring a Greener Tomorrow
-                </h2>
-                <p className="text-sm md:text-base text-gray-500 mb-8 max-w-3xl mx-auto font-jakarta font-normal">
+                </Typography>
+                <Typography variant='body-regular-jakarta' className='text-[#0A0A0A]'>
                     Crown Bending Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
-                </p>
+                </Typography>
     
                 {/* Card Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">

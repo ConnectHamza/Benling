@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Typography from '../GradientText/Typography';
 
 interface HeroSectionProps {
   title: string;
@@ -41,8 +42,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className="text-4xl md:text-5xl font-magistral font-bold mb-4">{title}</h1>
-        <p className="text-lg mb-6 jakarta font-[400]">{subtitle}</p>
+        <div className="mb-4">
+          <Typography variant='h1-medium-magistral'>
+          {title}
+
+          </Typography>
+          
+          </div>
+        <div className=" mb-6 jakarta font-[400]">
+          <Typography variant='h6-regular-jakarta'>
+            {subtitle}
+          </Typography>
+        </div>
         {onButtonClick && <button
           onClick={onButtonClick}
           className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition"

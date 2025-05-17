@@ -1,3 +1,4 @@
+import Typography from "../GradientText/Typography";
 
 const FeatureCard = ({
     backgroundImage,
@@ -10,7 +11,7 @@ const FeatureCard = ({
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: center;
-  
+
     return (
         <div className="mb-5">
             <div
@@ -35,8 +36,8 @@ const FeatureCard = ({
                 )}
             </div>
             <div className="mt-5">
-                <h4 className="text-white font-magistral font-semi-bold text-3xl">{heading}</h4>
-                <p className="text-white font-medium font-jakarta text-sm md:text-1xl">{description}</p>
+                <Typography variant="h4-medium-magistral" className="text-white">{heading}</Typography>
+                <Typography variant="subtext-regular-jakarta" className="text-white">{description}</Typography>
             </div>
         </div>
 
