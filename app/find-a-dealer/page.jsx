@@ -102,24 +102,24 @@ export default function Page() {
       logo: Logo_Mini_Scooty.src
     }
   ];
-    return (
-        <>
-            <div>
-                <ShopSection />
-            </div>
-            <div>
-                <DealersSection />
+  return (
+    <>
+      <div>
+        <ShopSection />
+      </div>
+      <div>
+        <DealersSection />
 
-            </div>
-            <div>
-                <SaleSection />
-            </div>
-            <div>
-                        <MotorcycleCarousel items={bikes} autoplay={true} />
-                
-            </div>
-            <Faqs data={faqsData} />
-        </>
+      </div>
+      <div>
+        <SaleSection />
+      </div>
+      <div>
+        <MotorcycleCarousel items={bikes} autoplay={true} />
 
-    );
+      </div>
+      <Faqs data={faqsData} />
+    </>
+
+  );
 }
