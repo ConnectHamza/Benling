@@ -7,7 +7,7 @@ import FeaturesSection from '@/components/Features/Features'
 import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import ColorShowcase from "./ColorShowcase"
 import LoopMain from '@/components/LoopCarousel/loop-main'
-import RoshniLoopIMG from '../../public/assets/flash/GridLoop.png'
+import RoshniLoopIMG from '../../public/assets/flash/GridLoop.webp'
 import Complimentary from '../../public/assets/flash/Complimentary.png'
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'

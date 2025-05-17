@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Typography from "../GradientText/Typography";
 
 const BikeColorCard = ({ imageSrc, gradient, title }) => {
   return (
@@ -25,8 +26,11 @@ const BikeColorCard = ({ imageSrc, gradient, title }) => {
       </div>
 
       {/* Title */}
-      <h4 className="mt-6 text-white font-jakarta font-semibold text-lg text-center">
+      <h4 className="mt-6 text-center">
+        <Typography variant="h4-medium-magistral">
         {title}
+
+        </Typography>
       </h4>
     </div>
   );
