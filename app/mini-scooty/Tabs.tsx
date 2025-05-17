@@ -22,9 +22,9 @@ const Tabs = () => {
 
         {/* Left Section (Text + Tabs) */}
         <div className="md:w-[40%] w-full">
-          <h2 className="text-[24px] md:text-[30px] font-semibold font-magistral mb-4 text-center md:text-left">
+          <div className="text-[24px] md:text-[30px] font-semibold font-magistral mb-4 text-center md:text-left">
             Express Yourself in Every Shade
-          </h2>
+          </div>
           <div className="mt-5 flex flex-wrap md:flex-col justify-center md:justify-start gap-x-4 gap-y-2">
   {[
     { id: '1', label: 'Shadow Jet' },
