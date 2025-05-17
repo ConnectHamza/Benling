@@ -1,3 +1,4 @@
+import Typography from '@/components/GradientText/Typography'
 import React from 'react'
 
 
@@ -6,36 +7,40 @@ const Performance = () => {
         <div className=" w-full flex justify-end md:px-10 px-5 py-10 md:h-[90vh]  items-center fireflyUnleashed">
 
             <div className="md:w-[45%]">
-                <h2 className='heading3 font-magistral'>Performance <br></br>Unleashed</h2>
+                <Typography variant='h2-bold-magistral'>
+                    Performance
+                </Typography>
+                <br />
+                <Typography variant={"h2-bold-magistral"} className='leading-10'>Unleashed</Typography>
                 <div className='flex flex-wrap md:justify-between mt-5 gap-5 '>
                     <div className='bg-gray-10 md:py-5 py-3 md:px-8 px-5 rounded-10 md:w-[60%] hover:shadow-md'>
-                        <h4 className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><span className='md:text-[20px] text-[13px] font-[500] text-gray-300'>Top Speed</span><br></br>
-                            <span className='font-semibold font-jakarta'>
+                        <div className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><Typography variant='body-regular-jakarta' style={{ color: "#32CFB8" }}>Top Speed</Typography><br></br>
+                            <Typography style={{ color: "#052E2C" }} as="span" variant='h5-semibold-jakarta'>
                                 70 to 80 km/h
-                            </span>
-                        </h4>
+                            </Typography>
+                        </div>
                     </div>
                     <div className='bg-gray-10 md:py-5 py-3 md:px-8 px-5 rounded-10 md:w-[35%] hover:shadow-md'>
-                        <h4 className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><span className='md:text-[20px] text-[13px] font-[500] text-gray-300'>Climbing Angle</span><br></br>
-                            <span className='font-semibold font-jakarta'>
-                                ≤15°
-                            </span>
 
-                        </h4>
+                        <div className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><Typography variant='body-regular-jakarta' style={{ color: "#32CFB8" }}>Climbing Angle</Typography><br></br>
+                            <Typography style={{ color: "#052E2C" }} as="span" variant='h5-semibold-jakarta'>
+                                ≤15°
+                            </Typography>
+                        </div>
                     </div>
                     <div className='bg-gray-10 md:py-5 py-3 md:px-8 px-5 rounded-10 md:w-[50%] hover:shadow-md'>
-                        <h4 className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><span className='md:text-[20px] text-[13px] font-[500] text-gray-300'>Full Charge Range</span><br></br>
-                            <span className='font-semibold font-jakarta'>
+                         <div className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><Typography variant='body-regular-jakarta' style={{ color: "#32CFB8" }}>Full Charge Range</Typography><br></br>
+                            <Typography style={{ color: "#052E2C" }} as="span" variant='h5-semibold-jakarta'>
                                 Up to 105KM
-                            </span>
-                        </h4>
+                            </Typography>
+                        </div>
                     </div>
                     <div className='bg-gray-10 md:py-5 py-3 md:px-8 px-5 rounded-10 md:w-[45%] hover:shadow-md'>
-                        <h4 className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><span className='md:text-[20px] text-[13px] font-[500] text-gray-300'>Charger Time</span><br></br>
-                            <span className='font-semibold font-jakarta'>
+                           <div className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><Typography variant='body-regular-jakarta' style={{ color: "#32CFB8" }}>Charger Time</Typography><br></br>
+                            <Typography style={{ color: "#052E2C" }} as="span" variant='h5-semibold-jakarta'>
                                 2-3 hours
-                            </span>
-                        </h4>
+                            </Typography>
+                        </div>
                     </div>
                 </div>
 

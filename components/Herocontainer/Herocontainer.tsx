@@ -45,7 +45,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="mb-4">
           <Typography variant='h2-medium-magistral'>
           {title}
-
           </Typography>
           
           </div>

@@ -6,6 +6,7 @@ import FireflyGreen from '../../public/assets/Firefly/Tabs/Firefly-Emerald-Green
 import FireflyCharcoal from '../../public/assets/Firefly/Tabs/Firefly-Charoal-Grey.webp';
 import FireflyWhite from '../../public/assets/Firefly/Tabs/Firefly-White.webp';
 import FireflyMint from '../../public/assets/Firefly/Tabs/Firefly-Mint-Green.webp';
+import Typography from '@/components/GradientText/Typography';
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState('Emerald Green');
@@ -32,7 +33,7 @@ const Tabs = () => {
           </h2>
           <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-3">
             {tabItems.map((item) => (
-              <h3
+              <div
                 key={item.label}
                 onClick={() => handleTabClick(item.label)}
                 className={`
@@ -42,8 +43,10 @@ const Tabs = () => {
                   ${activeTab === item.label ? 'text-white bg-[#16514C]' : 'text-gray-400 bg-transparent'}
                 `}
               >
-                {item.label}
-              </h3>
+                <Typography variant='h5-regular-magistral'>
+                  {item.label}
+                </Typography>
+              </div>
             ))}
           </div>
         </div>

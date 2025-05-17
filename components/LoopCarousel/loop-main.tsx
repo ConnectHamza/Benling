@@ -3,6 +3,7 @@ import React from 'react';
 import GradientText from '../GradientText/gradientHeading';
 import { motion } from 'framer-motion'; // Uncommented this import
 import LoopCarousel from './loop-carousel';
+import Typography from '../GradientText/Typography';
 
 const textVariants = {
   hidden: { opacity: 0, y: -100 },

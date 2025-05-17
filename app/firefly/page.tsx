@@ -27,7 +27,7 @@ const Firefly = () => {
     <>
       <Banner />
       <StickyBar
-        title="Crown Benling Fire fly"
+        title="Crown Benling Firefly"
         headingPartOne="Experience the Firefly, a modern marvel combining sleek design with eco-friendly technology. Equipped with advanced Graphene Battery Technology and a powerful 1200W Brushless Motor, "
         headingPartTwo="Firefly ensures unmatched performance, efficiency, and sustainable mobility for every journey."
         colorOne="#052E2C"
