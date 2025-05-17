@@ -1,5 +1,6 @@
 import React from 'react'
 import KnightRiderLedIMG from '../../public/assets/Knight-Rider/Knight-Rider-LED.webp'
+import Typography from '@/components/GradientText/Typography'
 
 const LedSection = () => {
     return (
@@ -13,11 +14,18 @@ const LedSection = () => {
             <div className="w-lg justify-end flex">
                 <div className='md:w-[45%]'>
                     <div>
-                        <h3 className='text-black-200 heading3 font-magistral leading-[1.2]'>Powerful LED <br />
-                            Back Light</h3>
-                        <p className='font-jakarta font-normal'>The bright and durable LED back light enhances visibility and ensures safer rides, day or night.</p>
+                        <Typography as='span' variant='h2-medium-magistral' color='text-black' >
+                            Powerful LED
+                        </Typography>
+                        <br />
+                         <Typography as='span' variant='h2-medium-magistral' color='text-black' >
+                            Back Light
+                        </Typography>
+                        <br />
+                        <Typography variant='body-regular-jakarta' >
+                            The bright and durable LED back light enhances visibility and ensures safer rides, day or night
+                        </Typography>
                     </div>
-
                 </div>
             </div>
         </div>

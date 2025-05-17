@@ -28,11 +28,9 @@ const KnightRider = () => {
             />
             <DesignedSection />
             <LedSection />
-
-            <Slider />
+            {/* <Slider /> */}
             <WaterResistanceSection />
             <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
-        
             <LoopMain imageSrc={KnightLoopIMG} heading={heading} colors={colors} />
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
             <Faqs data={faqsData}/>

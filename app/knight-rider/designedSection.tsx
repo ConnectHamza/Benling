@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import KnightRiderDesignIMG from '../../public/assets/Knight-Rider/Knight-Rider-Design.webp'
+import Typography from '@/components/GradientText/Typography'
 
 const DesignedSection = () => {
   return (
@@ -21,44 +22,49 @@ const DesignedSection = () => {
         <div className="w-lg">
           <div className="md:w-[45%] animation-scroll">
             <div>
-              <h3 className="text-white heading3 font-magistral">
+              <Typography className='text-[#FFF]' variant='h2-medium-magistral'>
                 Designed for Power and Performance
-              </h3>
+              </Typography>
             </div>
             <div className="flex md:gap-10 md:mt-10 mt-5">
               <div className="w-[50%]">
-                <h4 className="text-white md:text-[20px] text-[16px] font-jakarta font-normal">
-                  Top Speed <br />
-                  <span className="text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta">
-                    60km/h
-                  </span>
-                </h4>
+                <Typography as='span' className='text-white' variant='body-regular-jakarta'>
+                  Top Speed
+                </Typography>
+                <br />
+                <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
+                  60km/h
+                </Typography>
               </div>
               <div className="w-[50%]">
-                <h4 className="text-white md:text-[20px] text-[16px] font-jakarta font-normal">
-                  Graphene Battery <br />
-                  <span className="text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta">
-                    72V / 35Ah/h
-                  </span>
-                </h4>
+                <Typography as='span' className='text-white' variant='body-regular-jakarta'>
+                  Graphene Battery
+                </Typography>
+                <br />
+                <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
+                  72V / 35Ah/h
+                </Typography>
               </div>
             </div>
             <div className="flex md:gap-10 md:mt-5 mt-3">
               <div className="w-[50%]">
-                <h4 className="text-white md:text-[20px] text-[16px] font-jakarta font-normal">
-                  Full Charge Range <br />
-                  <span className="text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta">
-                    Up to 105KM
-                  </span>
-                </h4>
+                <Typography as='span' className='text-white' variant='body-regular-jakarta'>
+                  Full Charge Range
+                </Typography>
+                <br />
+                <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
+                  Up to 105KM
+                </Typography>
+               
               </div>
               <div className="w-[50%]">
-                <h4 className="text-white md:text-[20px] text-[16px] font-jakarta font-normal">
-                  Brushless Motor <br />
-                  <span className="text-gray-200 md:text-[32px] text-[20px] font-bold font-jakarta">
-                    1200W
-                  </span>
-                </h4>
+                   <Typography as='span' className='text-white' variant='body-regular-jakarta'>
+                  Brushless Motor
+                </Typography>
+                <br />
+                <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
+                 1200W
+                </Typography>
               </div>
             </div>
           </div>
