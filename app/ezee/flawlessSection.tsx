@@ -32,7 +32,7 @@ const Flawless = () => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <Typography className='leading-3'>
-            <Typography variant='h5-regular-magistral'  >
+            <Typography as='p' variant='h5-regular-magistral'  >
               Fearless Rides.
             </Typography>
             <br />

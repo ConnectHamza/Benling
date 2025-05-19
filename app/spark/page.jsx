@@ -10,9 +10,8 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Tabs from './Tabs'
-import MiniFeatuedIMG from '../../public/assets/RoshniX/featured-section.png'
+import MiniFeatuedIMG from '../../public/assets/Spark/featured-section.png'
 import Featured from '@/components/Features/HeroFeature'
-
 
 const heading = 'Explore Flash – Ride Bold';
 const colors = [

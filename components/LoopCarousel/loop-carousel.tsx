@@ -1,51 +1,27 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import styles from "./loop.module.css"; // adjust path as needed
 
-interface LoopCarouselProps {
-  src: StaticImageData | string;
-}
-
-const LoopCarousel: React.FC<LoopCarouselProps> = ({ src }) => {
-  const gapPx = 0;
-  const paddingTopPercent = 16.95; // calculated from your image
+const LoopCarousel = ({ src }) => {
+  const paddingTopPercent = 16.95;
 
   return (
-    <div className="relative overflow-hidden w-full mt-10">
+    <div className={styles.container}>
       <div
-        className="relative w-full"
+        className={styles.wrapper}
         style={{
           paddingTop: `${paddingTopPercent}%`,
         }}
       >
-        <div
-          className="flex animate-scroll-loop absolute top-0 left-0 w-[calc(200%+20px)] h-full"
-          style={{
-            willChange: "transform",
-            animationTimingFunction: "linear",
-            animationIterationCount: "infinite",
-            animationName: "scroll-loop",
-            animationDuration: "25s",
-          }}
-        >
-          <div className="relative flex-shrink-0 w-full h-full">
+        <div className={styles.scrollLoop}>
+          <div className={styles.imageContainer}>
             <Image src={src} alt="Loop IMG" fill style={{ objectFit: "contain" }} />
           </div>
-          <div className="relative flex-shrink-0 w-full h-full">
+          <div className={styles.imageContainer}>
             <Image src={src} alt="Loop IMG" fill style={{ objectFit: "contain" }} />
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll-loop {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(calc(-100% - 20px));
-          }
-        }
-      `}</style>
     </div>
   );
 };
