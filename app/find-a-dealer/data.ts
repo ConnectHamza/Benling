@@ -78,23 +78,23 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What services do Benling dealers offer?",
+        answer: "You can use our city dropdown menu to search for authorized Benling dealers in your area. The map and contact details will help you connect easily."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "Can I book a test ride through a dealer?",
+        answer: "Yes, many of our dealers offer test ride bookings. Please contact your nearest dealer directly or visit their showroom."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "Do Benling dealers offer financing or installment plans?",
+        answer: "Benling dealers do not directly provide financing options. However, you can independently apply for installment plans through our trusted partners like Alfa Mall (online), Meezan Bank, and MCB (offline). Once approved, you can complete your purchase through the nearest authorized dealer."
     },
     {
         question: "What colors are available for the Firefly?",
         answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
     },
     {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "Are all listed dealers authorized by Crown Benling Pakistan?",
+        answer: "Yes, every dealer listed on our website is officially authorized and trained by Benling Pakistan to ensure quality service and genuine products."
     },
 ];

@@ -1,9 +1,5 @@
 export const faqsData = [
     {
-        question: "How far can I travel on a single charge?",
-        answer: "Our scooters offer a range of up to 100–105 km on a full charge, depending on the model and riding conditions."
-    },
-    {
         question: "How long does it take to fully charge the battery?",
         answer: "Charging typically takes 2 to 6 hours, based on battery capacity and charger type."
     },

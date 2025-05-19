@@ -64,23 +64,23 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What color options are available for the Benling Roshni?",
-        answer: "The Benling Roshni is available in red, blue, white, silver and black colors , allowing customers to choose the one that suits their style best."
+        question: "What type of motor powers the Crown Benling Roshni?",
+        answer: "The Crown Benling Roshni is equipped with a 1200W brushless motor for efficient and powerful performance."
     },
     {
-        question: "What is the range of the Benling Roshni on a single charge?",
-        answer: "The Benling Roshni offers an impressive range on a single charge, ensuring long-distance travel without the need for frequent recharging. The range depends on the battery size. Roshni Pro comes with 72V 35Ah which gives 125km on single charge, Roshni Plus comes with 60V 35Ah which gives 105kmand Roshni Standard comes with 72V 23Ah battery which gives 70km on a single charge."
+        question: "How long does it take to fully charge the Roshni?",
+        answer: "The battery charges fully in 6 to 8 hours using a 72V 5A charger."
     },
     {
-        question: "How powerful is the motor ofthe Benling Roshni?",
-        answer: "The Benling Roshni is equipped with a powerful 1200W motor that delivers smooth acceleration and reliable performance, making it ideal for urban commuting and leisure rides alike."
+        question: "What is the maximum range of the Crown Benling Roshni on a single charge?",
+        answer: "The Roshni offers a range of 115-120 km on a single charge, depending on riding conditions."
     },
     {
-        question: "What type of battery does the Benling Roshni use?",
-        answer: "Firefly is available in four stylish colors: Emerald Green, Mint Green, Ivory White, and Charcoal Grey."
+        question: "What is the loading capacity of the Roshni?",
+        answer: "The Roshni has a loading capacity of up to 160 kg, suitable for a rider with additional cargo."
     },
     {
-        question: "Are spare parts readily available for the Benling Roshni, and what is the warranty coverage?",
-        answer: "The Firefly is equipped with LED lighting, a high-beam headlight for visibility, front and rear disc brakes, and durable tubeless tyres, ensuring safety in all conditions."
+        question: "What type of braking system does the Crown Benling Roshni feature?",
+        answer: "The Roshni is equipped with a front disc and rear disc braking system for enhanced safety and control."
     },
 ];

@@ -78,23 +78,23 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What type of motor does the Crown Benling Mini Scooty have?",
+        answer: "The Crown Benling Mini Scooty is equipped with a 450W brushless motor, providing efficient and reliable performance."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "How long does it take to charge the battery?",
+        answer: "The battery charges in 6 to 8 hours using a 48V 1.8A or 48V 3A charger."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What is the maximum speed of the Mini Scooty?",
+        answer: "The Mini Scooty can reach a maximum speed of 30-35 km/h, depending on the selected speed mode."
     },
     {
-        question: "What colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What are the available color options for the Mini Scooty?",
+        answer: "The Mini Scooty is available in five colors: Bubble Blue, Cherry Zoom, Shadow Jet, and Vanilla Pop."
     },
     {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What is the loading capacity of the Mini Scooty?",
+        answer: "The Mini Scooty has a loading capacity of up to 98 kg, making it suitable for a single rider with light cargo."
     },
 ];

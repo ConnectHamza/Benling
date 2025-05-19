@@ -78,23 +78,23 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What is the top speed of the Benling Spark?",
+        answer: "The Benling Spark has a top speed of 35–40 km/h, making it ideal for city commuting."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "How far can the Benling Spark go on a full charge?",
+        answer: "On a full charge, the Benling Spark can cover approximately 40 kilometers, depending on riding conditions and usage."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "How long does it take to fully charge the battery?",
+        answer: "The Spark's battery typically takes 5–6 hours to fully charge using a standard home outlet."
     },
     {
-        question: "What colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "Is the Benling Spark eco-friendly?",
+        answer: "Yes, the Spark is fully electric, producing zero emissions and operating quietly, contributing to a cleaner environment."
     },
     {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "Can I charge the Benling Spark at home?",
+        answer: "Yes! The Spark’s battery can be easily charged using a regular home socket no special setup needed."
     },
 ];

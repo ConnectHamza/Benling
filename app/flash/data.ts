@@ -78,23 +78,35 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What is the maximum speed of the Crown Benling Flash?",
+        answer: "The Crown Benling Flash can reach a top speed of 65–70 km/h, making it one of the fastest in its category—ideal for swift and smooth commutes."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "What is the riding range of the Flash on a full charge?",
+        answer: "On a full charge, the Flash can travel up to 150 km  in Eco Mode, making it perfect for both daily commutes and extended rides."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "How long does it take to fully charge the battery?",
+        answer: "The 72V 47Ah Graphene battery takes approximately 9 to 11 hours to fully charge using the provided 72V 5A charger."
     },
     {
-        question: "What colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What colors are available for the Crown Benling Flash?",
+        answer: "The Crown Benling Flash is available in five stylish color options: Arctic Blaze, Neon Volt, Midnight Storm, Crimson Charge, and Plasma Purple."
     },
     {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "Does the Crown Benling Flash have multiple riding modes?",
+        answer: "Yes, it comes with 4 speed modes, allowing riders to choose between economy, standard, and performance settings depending on their preference and route."
+    },
+        {
+        question: "What kind of safety features are included?",
+        answer: "The Flash includes a Combined Braking System (CBS), side stand sensor, anti-theft alarm, and complimentary safeguard guards provided by the company, offering enhanced rider protection and peace of mind."
+    },
+        {
+        question: "Does the Crown Benling Flash come with modern tech features?",
+        answer: "Absolutely. It includes an NFC Unlock System, USB port for mobile charging, and a digital dashboard to keep your ride smart and connected."
+    },
+        {
+        question: "What is the loading capacity of the Flash?",
+        answer: "The Flash is built strong, supporting a maximum load of up to 250 kg, suitable for both solo riders and extra cargo or passengers."
     },
 ];
