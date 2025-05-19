@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react'
 import Banner from './Banner'
 import StickyBar from '@/components/StickyBar/stickyBar'
-import Featured from './Featured'
 import Intelligent from './Intelligent'
 import SmartFeature from './SmartFeature/Main'
 import FeaturesSection from '@/components/Features/Features'
@@ -14,6 +13,9 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import PerfectTabs from './PerfectTabs/PerfectTabs'
 import { initFixOverflow } from '../fixOverflow'
+import Featured from '@/components/Features/HeroFeature'
+import RoshniFeatuedIMG from '../../public/assets/Roshni/Featured-Section.webp'
+
 
 
 const heading = 'Explore Roshni Electric Ride';
@@ -28,6 +30,12 @@ const page = () => {
   useEffect(() => {
     initFixOverflow();
   }, []);
+  const statsData = [
+    { value: "115–120 km", label: "Range Per Charge" },
+    { value: "70–80 km/h", label: "Top Speed" },
+    { value: "6–8 Hours", label: "Charging Time" },
+    { value: "≤20°", label: "Climbing Angle" },
+  ];
 
   return (
     <div>
@@ -40,7 +48,11 @@ const page = () => {
         colorTwo="#9F9A94"
         gradients={"bg-gradient-to-br from-[#B9B5B0] to-[#F8F8F8]"}
       />
-      <Featured />
+      <div>
+        
+      </div>
+      <Featured stats={statsData} imageAlt="Roshni Feature Image" imageSrc={RoshniFeatuedIMG} textColor="text-white"
+        cardBgColor="bg-black/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       <Tabs />
       <Intelligent />
       <SmartFeature />

@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react'
 import Banner from './Banner'
 import StickyBar from '@/components/StickyBar/stickyBar'
-import Featured from './Featured'
 import FeaturesSection from '@/components/Features/Features'
 import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import LoopMain from '@/components/LoopCarousel/loop-main'
@@ -11,6 +10,8 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Tabs from './Tabs'
+import MiniFeatuedIMG from '../../public/assets/RoshniX/featured-section.png'
+import Featured from '@/components/Features/HeroFeature'
 
 
 const heading = 'Explore Flash – Ride Bold';
@@ -19,7 +20,12 @@ const colors = [
   { color: '#121212', percentage: 80 },
   { color: '#121212', percentage: 100 },
 ];
-
+const statsData = [
+  { value: "600W", label: "Brushless Motor" },
+  { value: "35-40km/h", label: "Top Speed" },
+  { value: "35-40km/h", label: "Range" },
+  { value: "5-6", label: "Charging Time" },
+];
 const page = () => {
 
   useEffect(() => {
@@ -37,7 +43,8 @@ const page = () => {
         colorTwo="#297CA0"
         gradients={"bg-gradient-to-br from-[#C7E4F0] to-[#5EB3D2]"}
       />
-      <Featured />
+      <Featured stats={statsData} imageAlt={"RoshniX Featured Image"} imageSrc={MiniFeatuedIMG} textColor="text-black"
+        cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       <Tabs />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
       <LoopMain imageSrc={ScootyGrid} heading={heading} colors={colors} />

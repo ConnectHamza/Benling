@@ -521,3 +521,33 @@ p {
   font-style: italic;
   font-display: swap;
 }
+
+
+/* Smooth, modern scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F15C2A;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d14e22;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #F15C2A transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
