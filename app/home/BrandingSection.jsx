@@ -38,9 +38,8 @@ const BrandingSection = () => {
                     Inspiring a Greener Tomorrow
                 </Typography>
                 <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A]'>
-                    Crown Bending Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
+                    Crown Benling Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
                 </Typography>
-    
                 {/* Card Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
                     {cardData.map((card, idx) => (

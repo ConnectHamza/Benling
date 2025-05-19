@@ -109,14 +109,12 @@ export default function Page() {
       </div>
       <div>
         <DealersSection />
-
       </div>
       <div>
         <SaleSection />
       </div>
       <div>
         <MotorcycleCarousel items={bikes} autoplay={true} />
-
       </div>
       <Faqs data={faqsData} />
     </>

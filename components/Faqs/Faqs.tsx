@@ -23,7 +23,7 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
   return (
     <div className='w-full bg-gray-100 flex justify-center px-5 py-10 md:py-[100px]'>
       <div className="w-md">
-        <Typography variant='h3-medium-magistral' className='text-center'>FAQS</Typography>
+        <Typography variant='h3-medium-magistral' className='text-center'>FAQ'S</Typography>
         <div className='mt-5'>
           {data.map((faq, index) => (
             <div key={index} className='mb-5'>

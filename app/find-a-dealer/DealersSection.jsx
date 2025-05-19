@@ -16,7 +16,7 @@ export default function AuthorizedDealersSection() {
             <p className="text-gray-700 leading-relaxed font-jakarta">
               Get peace of mind with 100% genuine products, expert guidance,
               priority service, and exclusive offers—only from Crown
-              Being’s trusted dealer network.
+              Benling’s trusted dealer network.
             </p>
           </div>
 

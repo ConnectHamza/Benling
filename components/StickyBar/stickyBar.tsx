@@ -14,7 +14,7 @@ const StickyBar = ({
 }) => {
   return (
     <>
-      <div className={`w-full bg-black-30 flex justify-center py-4 sticky top-0 ${isSticky ? "z-50" : "z-0"}`} >
+      <div className={`w-full bg-black-30 flex justify-center py-4 sticky top-0 ${"z-100"}`} >
         <div className={`w-full text-white px-4 md:px-12 text-center md:text-start `}>
           <div className="md:text-[28px] font-jakarta text-[20px]">
             <Typography variant="h5-bold-jakarta">

@@ -37,7 +37,7 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling RoshniX"
-        headingPartOne="Experience next-gen mobility with the Roshni X.Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. "
+        headingPartOne="Experience next-gen mobility with the Roshni X. Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. "
         headingPartTwo="Designed for urban explorers, Roshni X offers efficiency, style, and zero emissions in one sleek package."
         colorOne="#fff"
         colorTwo="#FDCF0A"
