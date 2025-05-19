@@ -15,21 +15,33 @@ module.exports = {
     extend: {
 
       keyframes: {
+        "loop-scroll": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
         scrollImage: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-120vw)" }, // full viewport width
+        },
+        underline: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
         },
       },
-      
+      animation: {
+        "loop-scroll": "loop-scroll 20s linear infinite",
+        underline: "underline 0.5s ease-in-out forwards",
+      },
+
+
       colors: {
         crownOrange: '#F15C2A',
-
         black: {
           100: '#000',
           200: '#0c0b09',
           70: '#121212',
           50: '#232323',
-          30: '#0A0A0A',          
+          30: '#0A0A0A',
         },
         gray: {
           10: '#F6F6F6',
@@ -54,13 +66,10 @@ module.exports = {
           50: '#FEC601',
         },
       },
-      animation: {
-        underline: 'underline 0.5s ease-in-out forwards',
-      },
       screens: {
         'sm': '400px',
-        'md': '1024px',  
-        'lg': '1920px',       
+        'md': '1024px',
+        'lg': '1920px',
       },
       width: {
         'md': '1024px',
@@ -71,7 +80,7 @@ module.exports = {
         '5': '5px',
         '10': '10px',
         '20': '20px',
-        '30': '30px',        
+        '30': '30px',
       },
     },
   },

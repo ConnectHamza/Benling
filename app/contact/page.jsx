@@ -94,14 +94,14 @@ export default function About() {
                                         <h3 className="font-semibold mb-1">Phone Number</h3>
                                         <div className="text-sm flex items-center gap-2 mb-1">
                                             <Image src={Call} alt="Call Icon" width={20} height={20} />
-                                            <a href="tel:+9221111000348" className="text-black-100" target="_blank" rel="noopener noreferrer">
-                                                021 - 111000 348
+                                            <a href="tel:021111000348" className="text-black-100" target="_blank" rel="noopener noreferrer">
+                                                021 - 111 000 348
                                             </a>
                                         </div>
                                         <div className="text-sm flex items-center gap-2 mb-1">
                                             <Image src={Whatsapp} alt="Call Icon" width={20} height={20} />
-                                            <a href="https://wa.me/9221111000348" className="text-black-100" target="_blank" rel="noopener noreferrer">
-                                                021 - 82 30246
+                                            <a href="https://wa.me/03218230246" className="text-black-100" target="_blank" rel="noopener noreferrer">
+                                                0321 - 82 30 246
                                             </a>
                                         </div>
                                         <div className="text-sm flex items-center gap-2">
@@ -115,7 +115,7 @@ export default function About() {
                                         <div className="flex">
                                             <div className="text-sm gap-2 flex items-start">
                                                 <Image src={Apartment} alt="Apartment Icon" width={20} height={20} />
-                                                <span>P.O. Box No. 672-673, Dakh Joroi, Taluka Bin Qasim Town, Karachi, 75600</span>
+                                                <span>Plot No. 672-673, Deh Joreji Taluka, Bin Qasim Town Karachi, 75600</span>
                                             </div>
                                         </div>
 

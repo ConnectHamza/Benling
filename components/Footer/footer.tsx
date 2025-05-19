@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import FooterLogo from '../../public/assets/Header-Footer/Benling-Footer-Logo.svg'
-import Call from '../../public/assets/Header-Footer/call.png'
-import Location from '../../public/assets/Header-Footer/location_on.png'
-import Mail from '../../public/assets/Header-Footer/mail.png'
+import Call from '../../public/assets/Header-Footer/call.svg'
+import Location from '../../public/assets/Header-Footer/location.svg'
+import Mail from '../../public/assets/Header-Footer/mail.svg'
 import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import Typography from '../GradientText/Typography';
@@ -42,11 +42,11 @@ const Footer = () => {
                             </li>
                             <li className="mb-2 flex items-center">
                                 <img src={Call.src} alt="phone icon" className="mr-3 w-5 h-5" />
-                                <Typography variant='subtext-regular-jakarta'>021-12345678</ Typography>
+                                <Typography variant='subtext-regular-jakarta'>021 - 111 000 348</ Typography>
                             </li>
-                            <li className="mb-2 flex items-center">
+                            <li className="mb-2 flex items-start">
                                 <img src={Location.src} alt="location icon" className="mr-3 w-5 h-5" />
-                                <Typography variant='subtext-regular-jakarta'>Plot # 672-673, Building 4, Deh Jorej Taluka District Mall, Bin Qasim Karachi, Pakistan</ Typography>
+                                <Typography variant='subtext-regular-jakarta'>Plot No. 672-673, Deh Joreji Taluka, Bin Qasim Town Karachi, 75600</ Typography>
 
                             </li>
                         </ul>

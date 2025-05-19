@@ -15,7 +15,7 @@ const HeroSection = ({
   textColor = 'text-white',
 }) => {
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[91vh] overflow-hidden">
       {/* Desktop Image */}
       <div className="hidden md:block absolute inset-0 z-0">
         <Image
@@ -32,8 +32,7 @@ const HeroSection = ({
         <img
           src={mobileImageSrc || imageSrc}
           alt={imageAlt}
-          className="w-full h-full object-contain"
-          style={{ backgroundColor: '#000' }}
+          className="object-cover object-center h-full w-full"
         />
       </div>
 
