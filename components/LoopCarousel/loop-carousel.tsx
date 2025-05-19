@@ -6,7 +6,7 @@ interface LoopCarouselProps {
 }
 
 const LoopCarousel: React.FC<LoopCarouselProps> = ({ src }) => {
-  const gapPx = 20;
+  const gapPx = 0;
   const paddingTopPercent = 16.95; // calculated from your image
 
   return (
@@ -20,12 +20,11 @@ const LoopCarousel: React.FC<LoopCarouselProps> = ({ src }) => {
         <div
           className="flex animate-scroll-loop absolute top-0 left-0 w-[calc(200%+20px)] h-full"
           style={{
-            gap: `${gapPx}px`,
             willChange: "transform",
             animationTimingFunction: "linear",
             animationIterationCount: "infinite",
             animationName: "scroll-loop",
-            animationDuration: "20s",
+            animationDuration: "25s",
           }}
         >
           <div className="relative flex-shrink-0 w-full h-full">
