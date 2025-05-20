@@ -1,0 +1,14 @@
+services:
+  web:
+    container_name: crownone-website
+    image: registry.crowngroup.cluster/crownone/website
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_ENV: production
+    environment:
+      NODE_ENV: production
+      NODE_PORT: 3000
+    ports:
+      - '3000:3000'
