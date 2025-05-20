@@ -35,7 +35,7 @@ export default function BlogLeftSidebar({ headings = [], readTime }) {
           <span className="text-xs text-gray-500">{readTime} min read</span>
         </div>
         <nav>
-          <ul className="max-h-60 overflow-y-auto pr-2 space-y-2 scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-100">
+          <ul className="overflow-y-auto pr-2 space-y-2 scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-100">
             {headings.map(h => (
               <li key={h.id}>
                 <a
@@ -43,7 +43,7 @@ export default function BlogLeftSidebar({ headings = [], readTime }) {
                   className={`flex items-center gap-2 text-sm px-1 py-1 rounded transition-colors duration-150
                     ${h.id === activeId
                       ? "text-orange-600 font-semibold bg-orange-50"
-                      : "text-blue-700 hover:text-orange-600"
+                      : "text-gray-500 hover:text-orange-600"
                     }
                   `}
                 >

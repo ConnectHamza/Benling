@@ -39,17 +39,14 @@ export default function BlogPostPage({ params }) {
                 <hr className="border-gray-300 my-8" />
 
                 {/* Main Content Flex Layout */}
-                <div className="flex gap-8">
-                    {/* Left Sidebar */}
-                    <div className="w-1/5">
+                <div className="md:flex gap-8">
+                    <div className="md:w-1/5">
                         <LeftSidebar headings={headings} readTime={post.readTime} />
                     </div>
-                    {/* Main Blog Content */}
-                    <main className="w-2/3 prose prose-lg max-w-none">
+                    <main className="md:w-2/3 prose prose-lg max-w-none">
                         {post.renderContent()}
                     </main>
-                    {/* Right Sidebar */}
-                    <div className="w-1/6">
+                    <div className="md:w-1/6">
                         <RightSidebar recentArticles={recentArticles} />
                     </div>
                 </div>
