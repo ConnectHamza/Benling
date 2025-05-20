@@ -26,6 +26,7 @@ const HeroSection = ({
           priority
         />
       </div>
+    <div className="max-w-[1300px] mx-auto">
 
       {/* Mobile Image */}
       <div className="block md:hidden absolute inset-0 z-0">
@@ -63,6 +64,7 @@ const HeroSection = ({
           </button>
         )}
       </motion.div>
+    </div>
     </div>
   );
 };
