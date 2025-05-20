@@ -116,12 +116,15 @@ export default function Home() {
   ];
   return (
     <>
-      <HeroSection
-        title="Benling Redefining Electric Mobility"
-        subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
-        buttonText="Explore More"
-        imageSrc={HeroImage.src}
-      />
+      <div className='pt-[75px]'>
+        <HeroSection
+          title="Benling Redefining Electric Mobility"
+          subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
+          buttonText="Explore More"
+          imageSrc={HeroImage.src}
+        />
+      </div>
+
       <HeroSubSection
         title="Crown Benling Electric Mobility, proudly operated by"
         highlightText="Crown Group"
