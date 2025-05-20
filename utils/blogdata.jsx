@@ -30,7 +30,7 @@ export const blogs = [
     headings: [
       { id: "crown-group", text: "Crown Group: Driving Innovation Since Day One?" },
       { id: "expect", text: "What to Expect: A New Generation of Performance" },
-      { id: "highlight", text: "Event Highlights: A Grand Affair of Vision and Progress" },
+      { id: "highlights", text: "Event Highlights: A Grand Affair of Vision and Progress" },
       { id: "matters", text: "Why This Event Matters: A New Era Begins in Multan" },
       { id: "future", text: "Be a Part of the Future" }
 
