@@ -90,10 +90,6 @@ export const faqsData = [
         answer: "Benling dealers do not directly provide financing options. However, you can independently apply for installment plans through our trusted partners like Alfa Mall (online), Meezan Bank, and MCB (offline). Once approved, you can complete your purchase through the nearest authorized dealer."
     },
     {
-        question: "What colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
-    },
-    {
         question: "Are all listed dealers authorized by Crown Benling Pakistan?",
         answer: "Yes, every dealer listed on our website is officially authorized and trained by Benling Pakistan to ensure quality service and genuine products."
     },
