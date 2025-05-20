@@ -94,7 +94,7 @@ const PowerfulSection = () => {
               whileInView="visible"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <IconBox icon={chargingIcon} title='6 Hours' text='Charging Time' />
+              <IconBox icon={chargingIcon} title='6-8 Hours' text='Charging Time' />
             </motion.div>
           </div>
           <div className="md:w-[20%] w-[100%] md:hidden flex md:gap-10 gap-4 flex-col md:mt-20">
@@ -103,7 +103,7 @@ const PowerfulSection = () => {
                 <IconBox icon={speedIcon} title='35-40km/h' text='Top Speed' />
               </div>
               <div className='w-[100%]'>
-                <IconBox icon={chargeIcon} title='55-60km' text='One Charge ' />
+                <IconBox icon={chargeIcon} title='55-55km' text='One Charge ' />
               </div>
             </div>
             <div className='flex gap-4'>

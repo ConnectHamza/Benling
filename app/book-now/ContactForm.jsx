@@ -131,7 +131,8 @@ function ContactForm() {
                 options={[
                     { name: "Karachi", value: "karachi" },
                     { name: "Lahore", value: "lahore" },
-                    { name: "Islamabad", value: "islamabad" },
+                    { name: "Multan", value: "multan" },
+
                 ]}
                 required
             />
@@ -146,8 +147,15 @@ function ContactForm() {
                 onFocus={handleFocus}
                 error={errors.model}
                 options={[
-                    { name: "ezee", value: "ezee" },
-                    { name: "falcon", value: "falcon" },
+                    { name: "Ezee", value: "ezee" },
+                    { name: "Firefly", value: "firefly" },
+                    { name: "Flash", value: "firefly" },
+                    { name: "Knight Rider", value: "knight-rider" },
+                    { name: "Roshni", value: "roshni" },
+                    { name: "RoshniX", value: "roshnix" },
+                    { name: "Spark", value: "spark" },
+                    { name: "Mini Scooter", value: "mini-scooter" },
+
                 ]}
                 required
             />

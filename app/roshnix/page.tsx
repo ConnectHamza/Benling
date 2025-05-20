@@ -24,9 +24,9 @@ const colors = [
   { color: '#121212', percentage: 100 },
 ];
 const statsData = [
-  { value: "110 km", label: "Range" },
-  { value: "60 km/h", label: "Top Speed" },
-  { value: "6–8 Hours", label: "Charging Time" },
+  { value: "150 km", label: "Range" },
+  { value: "70 km/h", label: "Top Speed" },
+  { value: "9-11 Hours", label: "Charging Time" },
   { value: "≤20°", label: "Climbing Angle" },
 ];
 const page = () => {

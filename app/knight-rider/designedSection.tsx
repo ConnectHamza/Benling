@@ -33,7 +33,7 @@ const DesignedSection = () => {
                 </Typography>
                 <br />
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
-                  60km/h
+                  50-60km/h
                 </Typography>
               </div>
               <div className="w-[50%]">
@@ -42,7 +42,7 @@ const DesignedSection = () => {
                 </Typography>
                 <br />
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
-                  72V / 35Ah/h
+                  72V / 36Ah
                 </Typography>
               </div>
             </div>
@@ -53,7 +53,7 @@ const DesignedSection = () => {
                 </Typography>
                 <br />
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
-                  Up to 105KM
+                  Up to 100KM
                 </Typography>
                
               </div>
@@ -63,7 +63,7 @@ const DesignedSection = () => {
                 </Typography>
                 <br />
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
-                 1200W
+                 1500W
                 </Typography>
               </div>
             </div>

@@ -20,10 +20,10 @@ const colors = [
   { color: '#121212', percentage: 100 },
 ];
 const statsData = [
-  { value: "450W", label: "Brushless Motor" },
   { value: "30-35km/h", label: "Top Speed" },
   { value: "30-35km/h", label: "Range" },
-  { value: "≤20°", label: "Climbing Angle" },
+  { value: "6-8 Hours", label: "Range" },
+  { value: "≤15°", label: "Climbing Angle" },
 ];
 const page = () => {
 

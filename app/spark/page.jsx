@@ -20,10 +20,11 @@ const colors = [
   { color: '#121212', percentage: 100 },
 ];
 const statsData = [
-  { value: "600W", label: "Brushless Motor" },
   { value: "35-40km/h", label: "Top Speed" },
   { value: "35-40km/h", label: "Range" },
-  { value: "5-6", label: "Charging Time" },
+  { value: "5-6 Hours", label: "Charging Time" },
+  { value: "≤15°", label: "Climbing Angle" },
+
 ];
 const page = () => {
 

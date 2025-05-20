@@ -45,7 +45,7 @@ export const aboutSpecificationsData: Specification[] = [
   { title: 'Battery', value: 'Graphene' },
   { title: 'Motor', value: '1500W Brushless' },
   { title: 'Range', value: '95 to 100 km' },
-  { title: 'Maximum Speed', value: '50-60km/h' },
+  { title: 'Top Speed', value: '50-60km/h' },
   { title: 'Charging Time', value: '6-8hrs' },
   { title: 'Battery Type', value: '72V-36Ah' },
   { title: 'Speed Mode', value: '4 Mode' },

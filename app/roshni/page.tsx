@@ -32,7 +32,7 @@ const page = () => {
   }, []);
   const statsData = [
     { value: "115–120 km", label: "Range Per Charge" },
-    { value: "70–80 km/h", label: "Top Speed" },
+    { value: "50-60 km/h", label: "Top Speed" },
     { value: "6–8 Hours", label: "Charging Time" },
     { value: "≤20°", label: "Climbing Angle" },
   ];

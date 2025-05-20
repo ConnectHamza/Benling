@@ -35,7 +35,6 @@ export const aboutSpecificationsData2 = [
     { title2: "Wheelbase", value2: "1055mm" },
     { title2: "Ground Clearance", value2: "170mm" },
     { title2: "Tyre Size", value2: "F: 14/2.5 R:14/2.5" },
-    { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
     { title2: "Braking System (F/R)", value2: "Drum" },
     { title2: "Loading Capacity", value2: "98 Kg" },
 
