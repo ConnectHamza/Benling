@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
-import FlawlessImg from '../../public/assets/Ezee/Flawless-Design.webp';
+import FlawlessImg from '../../public/assets/Ezee/Flawless-Design.png';
 import Typography from '@/components/GradientText/Typography';
 
 

@@ -13,6 +13,7 @@ import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import RoshniFeatuedIMG from '../../public/assets/flash/Featured-Section.png'
 import Featured from '@/components/Features/HeroFeature'
+import RoshniFeatuedMbl from '../../public/assets/flash/flash-mobile.webp'
 
 
 const heading = 'Explore Flash – Ride Bold';
@@ -45,7 +46,7 @@ const page = () => {
         gradients={"bg-gradient-to-br from-[#30266C] to-[#111619]"}
         isSticky={false}
       />
-      <Featured stats={statsData} imageAlt={"Flash Feature Image"} imageSrc={RoshniFeatuedIMG} textColor="text-black"
+      <Featured stats={statsData} imageAlt={"Flash Feature Image"} mblImage={RoshniFeatuedMbl} imageSrc={RoshniFeatuedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
 
       <ColorShowcase />
