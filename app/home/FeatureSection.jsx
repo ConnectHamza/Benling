@@ -10,7 +10,6 @@ const features = [
   {
     isTextBlock: true,
     backgroundImage: SpeedBg.src,
-    textBlock: { number: "04", line1: "Speed", line2: "Modes" },
     heading: "Speed Modes",
     description: "Switch between multiple riding modes for optimized performance and battery efficiency.",
   },
