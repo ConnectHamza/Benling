@@ -3,7 +3,8 @@ import BlogHeader from "../public/assets/Blogs/BlogHeader.png";
 import GraphineBattery from "../components/Blog/BlogContent/GraphineBattery";
 import LaunchImage from "../public/assets/Blogs/Blogheader2.jpg"
 import LaunchCeremony from "../components/Blog/BlogContent/LaunchCeremony";
-
+import CrownBlog from "../components/Blog/BlogContent/CrownBlogs";
+import BlogHeaderImage from "../public/assets/Blogs/Blog3.jpeg"
 export const blogs = [
   {
     slug: "graphene-battery-future",
@@ -36,5 +37,18 @@ export const blogs = [
 
     ],
     renderContent: () => <LaunchCeremony />
+  },
+  {
+    slug: "crown-dealership-visit",
+    title: " Crown Benling Electric Mobility's Director Business Development Engages with Karachi Dealerships",
+    subtitle: `In line with Crown Benling Electric Mobility’s mission to promote accessible, sustainable transportation across Pakistan, Director – Business Development, Mr. Zohaib Farhan, recently visited Crown Benling Electric Mobility’s dealerships in Karachi. Accompanied by Regional Sales Manager Sindh, Mr. Mubashir Awam, and Area Sales Manager, Mr. Yaseen Pinjara, the visit reinforced the company’s commitment to building strong, on-ground relationships with its dealer partners.`,
+    coverImage: BlogHeaderImage.src,
+    date: "May 23rd 2025",
+    readTime: 3,
+    headings: [
+      { id: "crown-group", text: "Strengthening Market Ties" },
+      { id: "approach", text: "Customer-Centric Approach" },
+    ],
+    renderContent: () => <CrownBlog />
   },
 ];
