@@ -13,7 +13,7 @@ import Banner from './Banner'
 import Featured from '@/components/Features/HeroFeature'
 import MiniFeatuedIMG from '../../public/assets/mini-scooty/featured-section.png'
 
-const heading = 'Explore Flash – Ride Bold';
+const heading = 'Explore Mini – Small Ride, Big Freedom';
 const colors = [
   { color: '#121212', percentage: 50 },
   { color: '#121212', percentage: 80 },

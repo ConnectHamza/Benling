@@ -11,27 +11,33 @@ export const featureHeader = {
     featureText: `Experience a smart balance of performance and practicality. Flash’s features are crafted to deliver smooth rides, everyday comfort, and effortless control in every journey.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
-  };
+};
 
 
-  export const aboutSpecificationsData = [
-    { title: "Motor", value: "1200W Brushless" },
-    { title: "Battery", value: "60V.35Ah" },
-    { title: "Battery Type", value: "Graphene" },
-    { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "60V.6A" },
-    { title: "Charger Time", value: "6hrs" },
-    { title: "Dimensions", value: "1830 x 695 x 1075mm" },
+export const aboutSpecificationsData = [
+    { title: "Motor", value: "1500W Brushless" },
+    { title: "Top Speed", value: "70 km/h" },
+    { title: "Range", value: "150km" },
+    { title: "Battery", value: "Graphene" },
+    { title: "Speed Mode", value: "4 Mode" },
+    { title: "Charger", value: "72V5A" },
+    { title: "Charging Time", value: "9 to 11 hrs" },
+    { title: "Dimension", value: "1900 x 770 x 1655mm" },
+
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "108KG" },
-    { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "55-65km/h" },
-    { title2: "Wheelbase", value2: "1315mm" },
-    { title2: "Ground Clearance", value2: "120mm" },
-    { title2: "Loading Capacity", value2: "200kg" },
-    { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
+    { title2: "Net Weight (Without Battery)", value2: "76 Kg" },
+    { title2: "Angle", value2: "≤20°" },
+    { title2: "Wheelbase", value2: "1390mm" },
+    { title2: "Ground Clearance", value2: "160mm" },
+    { title2: "Tubeless Tyre Size", value2: "Fr: 90/90-12 Rr:120/70-10" },
+    { title2: "Braking System (F/R)", value2: "(CBS)" },
+    { title2: "USB Port", value2: "Mobile Charging" },
+    { title2: "Loading Capacity", value2: "250 Kg" },
+    { title2: "Sensor", value2: "Side Stand Sensor" },
+    { title2: "TNFC Unlock", value2: "Yes" },
+
 ];
 
 
@@ -41,7 +47,7 @@ export const featuresData = [
         alt: 'Powerful, Bold Front Design',
         title: 'Powerful, Bold Front Design',
         description: 'Make an impression with aerodynamic lines, a sharp LED headlamp, and sporty detailing. Flash’s front profile blends performance with striking street presence.',
-        
+
     },
     {
         img: Feature2IMG,
@@ -97,15 +103,15 @@ export const faqsData = [
         question: "Does the Crown Benling Flash have multiple riding modes?",
         answer: "Yes, it comes with 4 speed modes, allowing riders to choose between economy, standard, and performance settings depending on their preference and route."
     },
-        {
+    {
         question: "What kind of safety features are included?",
         answer: "The Flash includes a Combined Braking System (CBS), side stand sensor, anti-theft alarm, and complimentary safeguard guards provided by the company, offering enhanced rider protection and peace of mind."
     },
-        {
+    {
         question: "Does the Crown Benling Flash come with modern tech features?",
         answer: "Absolutely. It includes an NFC Unlock System, USB port for mobile charging, and a digital dashboard to keep your ride smart and connected."
     },
-        {
+    {
         question: "What is the loading capacity of the Flash?",
         answer: "The Flash is built strong, supporting a maximum load of up to 250 kg, suitable for both solo riders and extra cargo or passengers."
     },

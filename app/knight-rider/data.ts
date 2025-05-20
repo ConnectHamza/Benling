@@ -43,18 +43,17 @@ export const featureHeader: FeatureHeader = {
 
 export const aboutSpecificationsData: Specification[] = [
   { title: 'Battery', value: 'Graphene' },
-  { title: 'Motor', value: '1200W Brushless' },
-  { title: 'Range', value: '100km - 105km' },
-  { title: 'Maximum Speed', value: '60km/h' },
+  { title: 'Motor', value: '1500W Brushless' },
+  { title: 'Range', value: '95 to 100 km' },
+  { title: 'Maximum Speed', value: '50-60km/h' },
   { title: 'Charging Time', value: '6-8hrs' },
-  { title: 'Battery Type', value: '72V-35Ah' },
+  { title: 'Battery Type', value: '72V-36Ah' },
   { title: 'Speed Mode', value: '4 Mode' },
-  { title: 'Charger', value: '72V - 6A' },
+  { title: 'Charger', value: '72V - 5A' },
   { title: 'Dimensions', value: '1950 x 830 x 1110mm' },
 ];
 
 export const aboutSpecificationsData2: Specification2[] = [
-  { title2: 'Battery & Motor Warranty', value2: '18 Months' },
   { title2: 'Wheelbase', value2: '1110mm' },
   { title2: 'Ground Clearance', value2: '210mm' },
   { title2: 'Loading Capacity', value2: '200 Kg' },

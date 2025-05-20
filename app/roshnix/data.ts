@@ -16,7 +16,7 @@ export const featureHeader = {
 
   export const aboutSpecificationsData = [
     { title: "Motor", value: "1500W Brushless" },
-    { title: "Top Speed", value: "60 km/h" },
+    { title: "Top Speed", value: "55-60 km/h" },
     { title: "Range", value: "100-110 km" },
     { title: "Battery", value: "72V.36Ah" },
     { title: "Battery Type", value: "Graphene" },

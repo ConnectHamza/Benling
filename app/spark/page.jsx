@@ -13,7 +13,7 @@ import Tabs from './Tabs'
 import MiniFeatuedIMG from '../../public/assets/Spark/featured-section.png'
 import Featured from '@/components/Features/HeroFeature'
 
-const heading = 'Explore Flash – Ride Bold';
+const heading = 'Explore Spark – Charge Your Ride';
 const colors = [
   { color: '#121212', percentage: 50 },
   { color: '#121212', percentage: 80 },

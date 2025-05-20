@@ -15,23 +15,27 @@ export const featureHeader = {
 
 
 export const aboutSpecificationsData = [
-    { title: "Motor", value: "1200W Brushless" },
-    { title: "Battery", value: "60V.35Ah" },
+    { title: "Motor", value: "600W Brushless" },
+    { title: "Top Speed", value: "35-40 km/h" },
+    { title: "Range", value: "35-40 km" },
+
+    { title: "Battery", value: "48V.30Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "60V.6A" },
-    { title: "Charger Time", value: "6hrs" },
-    { title: "Dimensions", value: "1830 x 695 x 1075mm" },
+    { title: "Charger", value: "48V.4A" },
+    { title: "Charger Time", value: "5 to 6 hrs" },
+    { title: "Dimensions", value: "1650 x 640 x 1050mm" },
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "108KG" },
+    { title2: "Net Weight", value2: "68 Kg" },
+    { title2: "Pedal Type", value2: "Backgup Pedal Maneuver" },
     { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "55-65km/h" },
-    { title2: "Wheelbase", value2: "1315mm" },
-    { title2: "Ground Clearance", value2: "120mm" },
-    { title2: "Loading Capacity", value2: "200kg" },
-    { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
+    { title2: "Wheelbase", value2: "1190mm" },
+    { title2: "Ground Clearance", value2: "130mm" },
+    { title2: "Tyre Size", value2: "60.100-12 (Fr & Re)" },
+    { title2: "Braking System (Fr/Re)", value2: "Fr. Disc/Re.Drum" },
+    { title2: "Loading Capacity", value2: "150 KG" },
 ];
 
 

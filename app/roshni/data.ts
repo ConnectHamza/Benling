@@ -29,7 +29,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Climbing Angle", value2: "≤20°" },
     { title2: "Braking System", value2: "Fr.Disc / Re.Drum" },
     { title2: "Tubeless Tyre Size", value2: "F & R 90/80/12" },
-    { title2: "Available Colors", value2: "Blue, Black, Silver, Red & White" },
+    { title2: "Available Colors", value2: "Blue, Black, Gray, Red & White" },
 ];
 
 
