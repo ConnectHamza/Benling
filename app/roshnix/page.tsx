@@ -14,6 +14,7 @@ import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
 import RoshniFeatuedIMG from '../../public/assets/RoshniX/Featured-Section.png'
+import RoshniMobile from '../../public/assets/RoshniX/Feature-Mobile.webp'
 
 
 const heading = 'Explore Roshni X - Feel Alive';
@@ -45,7 +46,7 @@ const page = () => {
         colorTwo="#FDCF0A"
         gradients={"bg-gradient-to-br from-[#534C2A] to-[#0F0C02]"}
       />
-      <Featured stats={statsData} imageAlt={"RoshniX Feature Image"} imageSrc={RoshniFeatuedIMG} textColor="text-black"
+      <Featured stats={statsData} imageAlt={"RoshniX Feature Image"} mblImage={RoshniMobile} imageSrc={RoshniFeatuedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       {/* <Featured /> */}
       <ColorShowcase />

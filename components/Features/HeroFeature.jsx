@@ -29,18 +29,30 @@ const Featured = ({
   textColor,
   cardBgColor,
   titleVariant,
-  subtitleVariant
+  subtitleVariant,
+  mblImage
 }) => {
   return (
     <div className="w-full flex justify-center relative" style={{ height: '100vh' }}>
-      <Image
-        src={imageSrc}
-        alt={imageAlt}
-        className="w-full object-cover"
-        priority
-        fill
-        style={{ objectFit: 'cover' }}
-      />
+      <div>
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          className="w-full object-cover hidden md:block "
+          priority
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+        <Image
+          src={mblImage}
+          alt={imageAlt}
+          className="w-full object-cover md:hidden"
+          priority
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
+
       <div className="absolute bottom-[8vh] md:bottom-55 w-full flex justify-center px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-9 max-w-7xl w-full">
           {stats.map(({ value, label }, idx) => (

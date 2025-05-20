@@ -1,5 +1,5 @@
 import React from 'react'
-import FireflyIMG from '../../public/assets/Firefly/Firefly-Banner.webp';
+import FireflyWeb from "../../public/assets/Home/Header/web/firefly.webp"
 import FireflyIMGMobile from '../../public/assets/Firefly/Firefly-Banner-mobile.webp'
 
 import HeroSection from '@/components/Herocontainer/Herocontainer'
@@ -10,7 +10,7 @@ const Banner = () => {
                 title="Ride the Future Today with Firefly"
                 subtitle="Experience the future of urban mobility with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style."
                 buttonText="Explore More"
-                imageSrc={FireflyIMG.src}
+                imageSrc={FireflyWeb.src}
                 mobileImageSrc={FireflyIMGMobile.src}
             />
         </div>

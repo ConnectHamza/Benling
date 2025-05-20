@@ -1,5 +1,5 @@
 import React from 'react'
-import RoshniBanner from '../../public/assets/Roshni/Roshni.png'
+import RoshnixWeb from "../../public/assets/Home/Header/web/roshni.webp"
 import RoshniMobile from '../../public/assets/Roshni/Roshni-mobile.webp'
 
 import Button from '@/components/Button/Button'
@@ -11,7 +11,7 @@ const Banner = () => {
                 title="Roshni Brighten Every Journey"
                 subtitle="Experience the future of urban mobility with the Roshni electric scooter. Stylish, efficient, and eco-friendly, it’s crafted for smooth rides and a distinctive, modern look."
                 buttonText="Explore More"
-                imageSrc={RoshniBanner.src}
+                imageSrc={RoshnixWeb.src}
                 mobileImageSrc={RoshniMobile.src}
             />
         </div>

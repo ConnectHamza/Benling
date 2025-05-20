@@ -1,5 +1,5 @@
 import React from 'react'
-import FlashBanner from '../../public/assets/flash/main.png'
+import FlashWeb from "../../public/assets/Home/Header/web/flash.webp"
 import FlashBannerMobile from '../../public/assets/flash/main-mobile.webp'
 
 import HeroSection from '@/components/Herocontainer/Herocontainer'
@@ -10,7 +10,7 @@ const Banner = () => {
                 title="Ride the Future Today with Firefly"
                 subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
                 buttonText="Explore More"
-                imageSrc={FlashBanner.src}
+                imageSrc={FlashWeb.src}
                 mobileImageSrc={FlashBannerMobile.src}
             />
         </div>

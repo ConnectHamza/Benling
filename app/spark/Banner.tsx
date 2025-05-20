@@ -1,5 +1,5 @@
 import React from 'react'
-import MiniBanner from '../../public/assets/Spark/main.png'
+import SparkWeb from "../../public/assets/Home/Header/web/spark.webp"
 import HeroSection from '@/components/Herocontainer/Herocontainer'
 import BannerMobile from '../../public/assets/Spark/main-mobile.webp'
 
@@ -10,7 +10,7 @@ const Banner = () => {
                 title="Benling Redefining Electric Mobility"
                 subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
                 buttonText="Explore More"
-                imageSrc={MiniBanner.src}
+                imageSrc={SparkWeb.src}
                 mobileImageSrc={BannerMobile.src}
             />
         </div>

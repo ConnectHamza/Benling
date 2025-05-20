@@ -1,7 +1,6 @@
 'use client';
 
-import HeroSection from '@/components/Herocontainer/Herocontainer';
-import HeroImage from '../../public/assets/Home/Header/heroimage.png';
+import HeroImageSlide from '@/components/Herocontainer/HeroSlider';
 import HeroSubSection from '@/components/Herocontainer/HeroSub';
 import VideoSection from './VideoSection';
 import ShopSection from "./ShopSectoin";
@@ -32,8 +31,10 @@ import Image from 'next/image';
 import Faqs from '@/components/Faqs/Faqs'
 
 
-import { faqsData } from './data';
+import { faqsData, Slides } from './data';
 import Typography from '@/components/GradientText/Typography';
+
+
 export default function Home() {
   const bikes = [
     {
@@ -114,14 +115,12 @@ export default function Home() {
       logo: Logo_Mini_Scooty.src
     }
   ];
+
   return (
     <>
       <div className='pt-[75px]'>
-        <HeroSection
-          title="Benling Redefining Electric Mobility"
-          subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
-          buttonText="Explore More"
-          imageSrc={HeroImage.src}
+        <HeroImageSlide
+          slides={Slides}
         />
       </div>
 
