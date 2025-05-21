@@ -1,7 +1,7 @@
 services:
   web:
-    container_name: crownone-website
-    image: registry.crowngroup.cluster/crownone/website
+    container_name: benling-website
+    image: registry.crowngroup.cluster/crownelectricmobility/website
     build:
       context: .
       dockerfile: Dockerfile
