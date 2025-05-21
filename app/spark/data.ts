@@ -19,11 +19,11 @@ export const aboutSpecificationsData = [
     { title: "Top Speed", value: "35-40 km/h" },
     { title: "Range", value: "35-40 km" },
 
-    { title: "Battery", value: "48V.30Ah" },
+    { title: "Battery", value: "48V 30AH" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
     { title: "Charger", value: "48V.4A" },
-    { title: "Charging Time", value: "5 to 6 hrs" },
+    { title: "Charging Time", value: "5 to 6 Hours" },
     { title: "Dimensions", value: "1650 x 640 x 1050mm" },
 ];
 
@@ -35,7 +35,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Ground Clearance", value2: "130mm" },
     { title2: "Tyre Size", value2: "60.100-12 (Fr & Re)" },
     { title2: "Braking System (Fr/Re)", value2: "Fr. Disc/Re.Drum" },
-    { title2: "Loading Capacity", value2: "150 KG" },
+    { title2: "Loading Capacity", value2: "150 Kg" },
 ];
 
 
