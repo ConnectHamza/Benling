@@ -108,6 +108,7 @@ const Header = () => {
                 <div className="font-regular text-lg mb-6 text-black-200 font-magistral">
                     Explore Our Models
                 </div>
+<<<<<<< HEAD:components/Header/header.tsx
                 {/* Scrollable content */}
                 <div className="overflow-y-auto pr-2">
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
@@ -144,6 +145,112 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+=======
+                <div className="hidden md:flex flex-row space-x-8 text-[15px] text-white">
+                    <Link href="/ezee" className="relative group hover:text-red-100">
+                        Ezee
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/knight-rider" className="relative group hover:text-red-100">
+                        Knight Rider
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/roshni" className="relative group hover:text-red-100">
+                        Roshni
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/firefly" className="relative group hover:text-red-100">
+                        Firefly
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/services" className="relative group hover:text-red-100">
+                        Spark
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/mini-classic-scooty" className="relative group hover:text-red-100">
+                        Mini Classic Scooty
+                        <span className="underline-curve"></span>
+                    </Link>
+                </div>
+                <div className="hidden md:flex flex-row space-x-8 text-[15px] text-white">
+                    <Link href="/contact" className="relative group hover:text-red-100">
+                        Contact Us
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/distributor" className="relative group hover:text-red-100">
+                        Become a Distributor
+                        <span className="underline-curve"></span>
+                    </Link>
+                </div>
+
+                <div className="sm:flex md:hidden flex items-center">
+                    <button
+                        className="text-white focus:outline-none"
+                        onClick={handleMenuToggle}
+                    >
+                        <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            {isMenuOpen ? (
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            ) : (
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"
+                                />
+                            )}
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            {isMenuOpen && (
+                <div className="dropdown-menu sm:flex md:hidden flex flex-col items-center space-y-4 mt-4 text-white">
+                    <Link href="/ezee" className="relative group hover:text-red-100 w-full text-center">
+                        Ezee
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/knight-rider" className="relative group hover:text-red-100 w-full text-center">
+                        Knight Rider
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/roshni" className="relative group hover:text-red-100 w-full text-center">
+                        Roshni
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/firefly" className="relative group hover:text-red-100 w-full text-center">
+                        Firefly
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/services" className="relative group hover:text-red-100 w-full text-center">
+                        Spark
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/mini-classic-scooty" className="relative group hover:text-red-100 w-full text-center">
+                        Mini Classic Scooty
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/contact" className="relative group hover:text-red-100 w-full text-center">
+                        Contact Us
+                        <span className="underline-curve"></span>
+                    </Link>
+                    <Link href="/distributor" className="relative group hover:text-red-100 w-full text-center">
+                        Become a Distributor
+                        <span className="underline-curve"></span>
+                    </Link>
+                </div>
+            )}
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002:app/components/Header/header.tsx
         </div>
     );
 

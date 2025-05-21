@@ -14,7 +14,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -26,7 +26,10 @@
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "@components/*": [
+        "app/components/*"
+      ],
     },
     "plugins": [
       {
@@ -39,7 +42,11 @@
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
+<<<<<<< HEAD
 , "components/LoopCarousel/home-carousel.jsx", "app/flash/page.jsx"  ],
+=======
+, "next.config.js"  ],
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
   "exclude": [
     "node_modules"
   ]

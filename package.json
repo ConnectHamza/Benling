@@ -11,9 +11,15 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+<<<<<<< HEAD
     "framer-motion": "^12.9.7",
     "lucide-react": "^0.509.0",
     "next": "^15.3.2",
+=======
+    "@netlify/plugin-nextjs": "^5.11.1",
+    "framer-motion": "^12.4.1",
+    "next": "^15.1.4",
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.15.1",

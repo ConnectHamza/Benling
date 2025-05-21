@@ -1,13 +1,20 @@
 import React from 'react';
 import EzeeBanner from '../../public/assets/Ezee/Ezee-banner.webp'
-import StickyBar from '@/components/StickyBar/stickyBar';
+import StickyBar from '../components/StickyBar/sticky-bar';
+
 import Carousel from './carouselSection';
 import Flawless from './flawlessSection';
 import PowerfulSection from './powerfulSection';
 import './ezeeModule.css';
 import InnovationMain from './InnovationSection/Main';
+<<<<<<< HEAD
 import Specifications from '@/components/TechnicalSpecifications/Specifications';
 import Faqs from '@/components/Faqs/Faqs';
+=======
+import Specifications from '@/app/components/TechnicalSpecifications/Specifications';
+import Faqs from '@/app/components/Faqs/faqs';
+import LoopMain from '@/app/components/LoopCarousel/loop-main';
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
 import EzeeLoopIMG from '../..//public/assets/Ezee/Ezee-LoopIMG.webp'
 import { faqsData, aboutSpecificationsData, aboutSpecificationsData2 } from './data';
 import LoopMain from '@/components/LoopCarousel/loop-main';
@@ -40,7 +47,11 @@ export default function Ezee() {
             <Flawless />
             <PowerfulSection />
             <InnovationMain />
+<<<<<<< HEAD
             <LoopMain imageSrc={EzeeLoopIMG} heading={heading} colors={colors} />
+=======
+            <LoopMain imageSrc={EzeeLoopIMG.src} heading={heading} colors={colors} />
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
             <Faqs data={faqsData} />
         </main>

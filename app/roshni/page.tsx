@@ -1,21 +1,29 @@
 "use client"
 import React, { useEffect } from 'react'
 import Banner from './Banner'
+<<<<<<< HEAD
 import StickyBar from '@/components/StickyBar/stickyBar'
+=======
+import StickyBar from '@/app/components/StickyBar/sticky-bar'
+import Featured from './Featured'
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
 import Intelligent from './Intelligent'
 import SmartFeature from './SmartFeature/Main'
-import FeaturesSection from '@/components/Features/Features'
+import FeaturesSection from '@/app/components/Features/features'
 import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import Tabs from './Tabs'
+<<<<<<< HEAD
 import LoopMain from '@/components/LoopCarousel/loop-main'
+=======
+import LoopMain from '@/app/components/LoopCarousel/loop-main'
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
 import RoshniLoopIMG from '../../public/assets/Roshni/RoshniLoopIMG.webp'
-import Specifications from '@/components/TechnicalSpecifications/Specifications'
-import Faqs from '@/components/Faqs/Faqs'
+import Specifications from '@/app/components/TechnicalSpecifications/Specifications'
+import Faqs from '@/app/components/Faqs/faqs'
 import PerfectTabs from './PerfectTabs/PerfectTabs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
 import RoshniFeatuedIMG from '../../public/assets/Roshni/Featured-Section.webp'
-
 
 
 const heading = 'Explore Roshni Electric Ride';
@@ -41,6 +49,7 @@ const page = () => {
     <div>
       <Banner />
       <StickyBar
+<<<<<<< HEAD
         title="Crown Benling Roshni"
         headingPartOne="Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor. "
         headingPartTwo="Roshni promises smooth, efficient, and sustainable mobility tailored for every journey."
@@ -53,6 +62,15 @@ const page = () => {
       </div>
       <Featured stats={statsData} imageAlt="Roshni Feature Image" imageSrc={RoshniFeatuedIMG} textColor="text-white"
         cardBgColor="bg-black/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
+=======
+        title="Benling Roshni"
+        description="Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor, Roshni promises smooth, efficient, and sustainable mobility tailored for every journey."
+        gradient1="#fff"
+        gradient2="#fff"
+        textColor="#fff"
+      />      
+      <Featured />
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
       <Tabs />
       <Intelligent />
       <SmartFeature />

@@ -1,8 +1,8 @@
 "use client"
 import React from 'react';
 import '../styles/globals.css';
-import Header from '@/components/Header/header';
-import Footer from '@/components/Footer/footer';
+import Header from '@/app/components/Header/header';
+import Footer from '@/app/components/Footer/footer';
 import { motion } from "framer-motion";
 
 const pageVariants = {
