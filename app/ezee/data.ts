@@ -17,7 +17,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Speed", value2: "35-40km/h" },
     { title2: "Wheelbase", value2: "1300mm" },
     { title2: "Ground Clearance", value2: "110mm" },
-    { title2: "Loading Capacity", value2: "140KG" },
+    { title2: "Loading Capacity", value2: "140 Kg" },
     { title2: "Braking System", value2: "Front Disc/Rear Drum" }
 ];
 

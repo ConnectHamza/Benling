@@ -22,7 +22,7 @@ export const featureHeader = {
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "4 Mode" },
     { title: "Charger", value: "72V5A" },
-    { title: "Charging Time", value: "6 to 8 hrs" },
+    { title: "Charging Time", value: "6 to 8 Hours" },
     { title: "Dimension", value: "1800 x 690 x 1250mm" },
 
 ];
@@ -35,7 +35,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Tubeless Tyre Size", value2: "Fr: 90/80-12 Rr:90/80-12" },
     { title2: "Braking System (F/R)", value2: "Disc" },
     { title2: "USB Port", value2: "Mobile Charging" },
-    { title2: "Loading Capacity", value2: "200KG" },
+    { title2: "Loading Capacity", value2: "200 Kg" },
     { title2: "Sensor", value2: "Side Stand Sensor" },
 
 ];

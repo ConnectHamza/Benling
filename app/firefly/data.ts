@@ -4,7 +4,7 @@ export const aboutSpecificationsData = [
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
     { title: "Charger", value: "60V.6A" },
-    { title: "Charging Time", value: "6hrs" },
+    { title: "Charging Time", value: "6 Hours" },
     { title: "Dimensions", value: "1830 x 695 x 1075mm" },
 ];
 
@@ -14,7 +14,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Speed", value2: "55-65km/h" },
     { title2: "Wheelbase", value2: "1315mm" },
     { title2: "Ground Clearance", value2: "120mm" },
-    { title2: "Loading Capacity", value2: "200kg" },
+    { title2: "Loading Capacity", value2: "200 Kg" },
     { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
 ];
 
