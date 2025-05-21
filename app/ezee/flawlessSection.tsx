@@ -25,7 +25,7 @@ const Flawless = () => {
       <div className='w-full flex md:flex-row flex-col'>
         {/* Text Animation (Slide from Left) */}
         <motion.div
-          className='md:w-[35%] text-white md:pt-[150px] pt-20 flex flex-col'
+          className='md:w-[55%] text-white sm:pt-20 flex flex-col'
           variants={textVariants}
           initial="hidden"
           whileInView="visible"

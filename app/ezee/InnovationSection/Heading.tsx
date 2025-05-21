@@ -18,7 +18,7 @@ const colors = [
 
   return (
          
-    <div className="md:w-lg flex  justify-center">
+    <div className="w-full flex  justify-center">
       <motion.div
        variants={textVariants}
        initial="hidden"

@@ -62,13 +62,11 @@ const PowerfulSection = () => {
               whileInView="visible"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <IconBox icon={chargeIcon} title='55-60km' text='One Charge ' />
+              <IconBox icon={chargeIcon} title='50-55Km' text='One Charge ' />
             </motion.div>
-
           </div>
-          <div className='md:w-[60%] w-[100%] z-10'>
+          <div className='md:w-[60%] w-[100%] z-10 md:mb-[115px]'>
             <motion.div
-
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
@@ -103,7 +101,7 @@ const PowerfulSection = () => {
                 <IconBox icon={speedIcon} title='35-40km/h' text='Top Speed' />
               </div>
               <div className='w-[100%]'>
-                <IconBox icon={chargeIcon} title='55-55km' text='One Charge ' />
+                <IconBox icon={chargeIcon} title='50-55km' text='One Charge ' />
               </div>
             </div>
             <div className='flex gap-4'>
@@ -111,7 +109,7 @@ const PowerfulSection = () => {
                 <IconBox icon={angleIcon} title='≤15°' text='Climbing Angle' />
               </div>
               <div className='w-[100%]'>
-                <IconBox icon={chargingIcon} title='6 Hours' text='Charging Time' />
+                <IconBox icon={chargingIcon} title='6-8 Hours' text='Charging Time' />
               </div>
             </div>
           </div>

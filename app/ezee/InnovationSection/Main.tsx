@@ -17,25 +17,18 @@ const InnovationMain = () => {
     },
     {
       image: `${LedImg.src}`,
-      heading: 'Another Slide Title'
+      heading: 'Full LED Front Lights'
     },
-    {
-      image: `${GripImg.src}`,
-      heading: 'Another Slide Title'
-    },
+
     {
       image: `${StorageImg.src}`,
-      heading: 'Another Slide Title'
-    },
-    {
-      image: `${ComfortImg.src}`,
-      heading: 'Another Slide Title'
+      heading: 'Hook, Storage & Handy Cup Holder'
     },
     
   ];
 
   return (
-    <div className='w-full flex flex-col md:justify-center px-5 md:py-[100px] py-20'>
+    <div className='w-full flex flex-col md:justify-center px-5 md:py-[100px] justify-center py-20'>
        
         <InnovationSection />
         <Carousel slides={slidesData}/>

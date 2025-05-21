@@ -4,7 +4,7 @@ export const aboutSpecificationsData = [
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "3 Mode" },
     { title: "Charger", value: "60.V.4A" },
-    { title: "Charger Time", value: "6 to 8 hrs" },
+    { title: "Charging Time", value: "6 to 8 Hours" },
     { title: "Dimensions", value: "1800 x 690 x 1250mm" },
     { title: "Security", value: "Remote Alarm System" },
 

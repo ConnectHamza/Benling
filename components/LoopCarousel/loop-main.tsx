@@ -23,7 +23,7 @@ interface LoopMainProps {
 
 const LoopMain: React.FC<LoopMainProps> = ({ imageSrc, heading, colors }) => {
   return (
-    <div className='w-full flex flex-col md:justify-center md:py-[100px] px-5 py-10 text-center'>
+    <div className='w-full flex flex-col md:justify-center md:py-[100px] px-5 py-10 justify-center text-center'>
       {/* <motion.div
        variants={textVariants}
        initial="hidden"
