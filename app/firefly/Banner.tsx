@@ -7,8 +7,8 @@ const Banner = () => {
     return (
         <div className='pt-[75px]'>
             <HeroSection
-                title="Ride the Future Today with Firefly"
-                subtitle="Experience the future of urban mobility with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style."
+                title="Embrace Tomorrow Now with Firefly"
+                subtitle="Step into the era of comfort with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style."
                 buttonText="Explore More"
                 imageSrc={FireflyWeb.src}
                 mobileImageSrc={FireflyIMGMobile.src}

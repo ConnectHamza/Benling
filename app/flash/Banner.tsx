@@ -7,8 +7,8 @@ const Banner = () => {
     return (
         <div className='pt-[75px]'>
             <HeroSection
-                title="Ride the Future Today with Firefly"
-                subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
+                title="Advanced Electric Scooter with Speed"
+                subtitle="Designed for the modern commuter, Flash combines speed, safety, and smart features like digital display and dual disc brakes—making it the go-to electric scooter in Pakistan."
                 buttonText="Explore More"
                 imageSrc={FlashWeb.src}
                 mobileImageSrc={FlashBannerMobile.src}

@@ -74,7 +74,7 @@ const HeroSection = ({ slides = [] }) => {
             <div className="absolute inset-0 bg-black/40 z-10" />
 
             {/* Text Content */}
-            <div className="max-w-[1300px] mx-auto">
+            <div className="max-w-[1300px] mx-auto flex items-center">
                 <motion.div
                     key={title}
                     className={`absolute z-20 w-full px-6 sm:px-10 max-w-[800px] mx-auto

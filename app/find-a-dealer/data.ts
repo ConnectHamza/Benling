@@ -20,7 +20,7 @@ export const featureHeader = {
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
     { title: "Charger", value: "60V.6A" },
-    { title: "Charger Time", value: "6hrs" },
+    { title: "Charging Time", value: "6hrs" },
     { title: "Dimensions", value: "1830 x 695 x 1075mm" },
 ];
 

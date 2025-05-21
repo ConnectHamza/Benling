@@ -7,8 +7,8 @@ const Banner = () => {
     return (
         <div className='pt-[75px]'>
             <HeroSection
-                title="Benling Redefining Electric Mobility"
-                subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
+                title="Compact, Stylish, and Made for City Life"
+                subtitle="Turn heads with Mini Scooty, the perfect electric scooter for young and urban riders. Lightweight, efficient, and designed for effortless short-distance commutes across Pakistan."
                 buttonText="Explore More"
                 imageSrc={MiniWeb.src}
                 mobileImageSrc={MiniBannerMobile.src}

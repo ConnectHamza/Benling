@@ -7,8 +7,8 @@ const Banner = () => {
     return (
         <div className='pt-[75px]'>
             <HeroSection
-                title="Benling Redefining Electric Mobility"
-                subtitle="Discover cutting-edge electric vehicles designed for performance, sustainability, and style."
+                title="Engineered for Confidence, Designed for Style"
+                subtitle="The Spark electric scooter offers a powerful ride with modern styling. Ride confidently with advanced safety and electric performance, made for Pakistan's roads."
                 buttonText="Explore More"
                 imageSrc={SparkWeb.src}
                 mobileImageSrc={BannerMobile.src}

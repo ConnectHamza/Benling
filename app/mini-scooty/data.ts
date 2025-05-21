@@ -17,12 +17,12 @@ export const featureHeader = {
 export const aboutSpecificationsData = [
     { title: "Motor", value: "450W Brushless" },
     { title: "Top Speed", value: "30 - 35 km/h" },
-    { title: "Range", value: "30-25 km" },
-    { title: "Battery", value: "48V.23Ah" },
+    { title: "Range", value: "30-35 km" },
+    { title: "Battery", value: "48V 23Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "3 Mode" },
-    { title: "Charger", value: "48V1.8A / 48V 3A" },
-    { title: "Charging Time", value: "6 to 8 hrs" },
+    { title: "Charger", value: "48V 1.8A / 48V 3A" },
+    { title: "Charging Time", value: "6 to 8 Hours" },
     { title: "Dimension", value: "1470 x 660 x 1060mm" },
 
 ];
@@ -97,7 +97,7 @@ export const faqsData = [
     },
     {
         question: "What are the available color options for the Mini Scooty?",
-        answer: "The Mini Scooty is available in five colors: Bubble Blue, Cherry Zoom, Shadow Jet, and Vanilla Pop."
+        answer: "The Mini Scooty is available in four colors: Bubble Blue, Cherry Zoom, Shadow Jet and Vanilla Pop."
     },
     {
         question: "What is the loading capacity of the Mini Scooty?",

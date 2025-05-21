@@ -70,9 +70,12 @@ module.exports = {
         'sm': '400px',
         'md': '1024px',
         'lg': '1920px',
+        "mdt": "768px",
+
       },
       width: {
         'md': '1024px',
+        "mdt": "768px",
         'lg': '1200px',
         'full': '100%',
       },

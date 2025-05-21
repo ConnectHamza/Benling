@@ -10,7 +10,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
 
   return (
     <div className='w-full flex justify-center md:py-[150px] px-5 py-10'>
-      <div className="w-lg">
+      <div className="w-full">
         <Typography variant='h2-bold-magistral'>
           Technical Specifications
         </Typography>

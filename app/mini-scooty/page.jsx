@@ -21,8 +21,8 @@ const colors = [
 ];
 const statsData = [
   { value: "30-35km/h", label: "Top Speed" },
-  { value: "30-35km/h", label: "Range" },
-  { value: "6-8 Hours", label: "Range" },
+  { value: "30-35km", label: "Range" },
+  { value: "6-8 Hours", label: "Charging Time" },
   { value: "≤15°", label: "Climbing Angle" },
 ];
 const page = () => {
@@ -37,7 +37,7 @@ const page = () => {
       <StickyBar
         title="Crown Benling Mini Scooty"
         headingPartOne="Perfect for short city rides, the Mini Scooty features a 450W Motor and a reliable 48V 23AH battery. "
-        headingPartTwo="Its lightweight design, easy handling, and zero-emission drive make it ideal for everyday convenience with a touch of timeless charm"
+        headingPartTwo="Its lightweight design, easy handling, and zero-emission drive make it ideal for everyday convenience with a touch of timeless charm."
         colorOne="#fff"
         colorTwo="#07BFD5"
         gradients={"bg-gradient-to-br from-[#1DADB5] to-[#05080C]"}

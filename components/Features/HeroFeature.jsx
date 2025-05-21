@@ -12,9 +12,10 @@ const StatCard = ({
 }) => {
   return (
     <div
-      className={`rounded-xl gap-9 px-4 py-3 min-w-[140px] ${bgColor} ${textColor} text-center shadow-md`}
-      style={{ backdropFilter: 'blur(10px)' }}  // Add this inline style to force blur effect
+      className={`rounded-xl px-4 py-3 w-full ${bgColor} ${textColor} text-center shadow-md`}
+      style={{ backdropFilter: 'blur(10px)' }}
     >
+
       <Typography variant={titleVariant}>{value}</Typography>
       <Typography variant={subtitleVariant}>{label}</Typography>
     </div>
@@ -53,21 +54,27 @@ const Featured = ({
         />
       </div>
 
-      <div className="absolute bottom-[8vh] md:bottom-55 w-full flex justify-center px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-9 max-w-7xl w-full">
+      <div className="absolute bottom-[2vh] mdt:bottom-55 w-full flex justify-center px-4">
+        <div className="flex gap-4 w-full">
           {stats.map(({ value, label }, idx) => (
-            <StatCard
+            <div
               key={idx}
-              value={value}
-              label={label}
-              textColor={textColor}
-              bgColor={cardBgColor}
-              titleVariant={titleVariant}
-              subtitleVariant={subtitleVariant}
-            />
+              className="w-1/2 mdt:w-1/4 px-2 flex "
+            >
+              <StatCard
+                value={value}
+                label={label}
+                textColor={textColor}
+                bgColor={cardBgColor}
+                titleVariant={titleVariant}
+                subtitleVariant={subtitleVariant}
+              />
+            </div>
           ))}
         </div>
       </div>
+
+
     </div>
   );
 };
