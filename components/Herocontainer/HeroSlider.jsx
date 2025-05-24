@@ -27,7 +27,7 @@ const HeroSection = ({ slides = [] }) => {
     } = slides[currentSlide] || {};
 
     return (
-        <div className="relative w-full h-[91vh] overflow-hidden">
+        <div className="relative w-full h-[90vh] overflow-hidden">
             {/* Desktop Image */}
             <div className="hidden md:block absolute inset-0 z-0">
                 <AnimatePresence mode="wait">
@@ -74,7 +74,7 @@ const HeroSection = ({ slides = [] }) => {
             <div className="absolute inset-0 bg-black/40 z-10" />
 
             {/* Text Content */}
-            <div className="max-w-[1300px] mx-auto flex items-center">
+            <div className="max-w-[1600px] mx-auto flex items-center jus">
                 <motion.div
                     key={title}
                     className={`absolute z-20 w-full px-6 sm:px-10 max-w-[800px] mx-auto

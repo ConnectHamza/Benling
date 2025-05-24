@@ -130,7 +130,7 @@ export default function Home() {
         description="leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
         buttonLabel="Read More About Crown"
         onButtonClick={() => { console.log("Button") }}
-        backgroundImage={HeroImageSub.src} // This is key!
+        backgroundImage={HeroImageSub.src} 
       />
       <div>
         <MotorcycleCarousel items={bikes} autoplay={true} />
