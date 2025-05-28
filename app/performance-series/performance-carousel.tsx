@@ -111,15 +111,15 @@ const PerformanceCarousel = ({ items = [], autoplay = false }) => {
 
       {/* Motorcycle Details */}
       <div className="mt-4 text-center">
-        <div className="flex justify-center gap-8 text-sm md:text-base text=[#0A0A0A] font-magistral font-normal">
+        <div className="flex justify-center md:gap-8 gap-2 text-cs md:text-base text=[#0A0A0A] font-magistral font-normal">
           <Typography variant="body-regular-magistral" >
-            Range: <Typography as="span" variant="body-regular-magistral">{items[current]?.range} km</Typography>
+            <Typography as="span" variant="body-regular-magistral" className="md:border-r-2 border-black-30 md:pr-4 ">{items[current]?.range}</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Max Speed: <Typography variant="body-regular-magistral" as="span" >{items[current]?.maxSpeed} km/h</Typography>
+            <Typography variant="body-regular-magistral" as="span" className="md:border-r-2 md:border-black-30 md:pr-4" >{items[current]?.maxSpeed}</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Motor Power: <Typography variant="body-regular-magistral" as="span" >{items[current]?.motorPower} W</Typography>
+            <Typography variant="body-regular-magistral" as="span" >{items[current]?.motorPower}</Typography>
           </Typography>
         </div>
       </div>

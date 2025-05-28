@@ -8,13 +8,23 @@ import Thumbnail3 from '../../public/assets/Home/Thumbnail/thumbnail3.png';
 import Thumbnail4 from '../../public/assets/Home/Thumbnail/thumbnail4.png';
 import Typography from '@/components/GradientText/Typography';
 
+
+
+// const videos = [
+//     { img: Thumbnail1.src, url: 'https://youtube.com/watch?v=abc123' },
+//     { img: Thumbnail2.src, url: 'https://youtube.com/watch?v=def456' },
+//     { img: Thumbnail3.src, url: 'https://youtube.com/watch?v=ghi789' },
+//     { img: Thumbnail4.src, url: 'https://youtube.com/watch?v=jkl012' },
+//     { img: Thumbnail1.src, url: 'https://youtube.com/watch?v=mno345' },
+// ];
+
 const videos = [
-    { img: Thumbnail1.src, url: 'https://youtube.com/watch?v=abc123' },
-    { img: Thumbnail2.src, url: 'https://youtube.com/watch?v=def456' },
-    { img: Thumbnail3.src, url: 'https://youtube.com/watch?v=ghi789' },
-    { img: Thumbnail4.src, url: 'https://youtube.com/watch?v=jkl012' },
-    { img: Thumbnail1.src, url: 'https://youtube.com/watch?v=mno345' },
+    { video: '/Reels/Firefly-Reel.webm' },
+    { video: '/Reels/Firefly-Reel-Female.webm' },
+    { video: '/Reels/Flash-Reel-Female.webm' },
+    { video: '/Reels/Flash-Reel-Male.webm' },
 ];
+
 
 export default function VideoSection() {
     return (
@@ -27,7 +37,7 @@ export default function VideoSection() {
                     Watch real riders, influencers, and EV enthusiasts showcase Crown Benling in action across Pakistan.                </Typography>
             </div>
             <div
-                className="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar touch-pan-x px-4 mt-10"
+                className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-none touch-pan-x touch-pan-y px-4 mt-10"
                 style={{
                     height: 'calc(100vh - 220px)',
                     WebkitOverflowScrolling: 'touch',
@@ -36,44 +46,25 @@ export default function VideoSection() {
             >
                 {videos.map((video, idx) => (
                     <div
-                        key={idx}                    
-                        className="shrink-0 w-full sm:w-full md:w-[20%] aspect-[9/16] flex items-center justify-center 
-                snap-start sm:snap-start md:snap-none"
+                        key={idx}
+                        className="shrink-0 w-full sm:w-full md:w-[20%] aspect-[9/16] flex items-center justify-center snap-start sm:snap-start md:snap-none"
                     >
-                        <div className="relative w-full h-full bg-white/20 rounded-2xl">
-                            <div className="w-full h-full rounded-xl overflow-hidden relative">
-                                <Image
-                                    src={video.img}
-                                    alt={`Benling Video ${idx + 1}`}
-                                    fill
-                                    className="object-contain"
-                                    priority
-                                />
-                                <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-10">
-                                    <div className="bg-white/70 p-2 rounded-full">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="w-6 h-6 text-black"
-                                            fill="currentColor"
-                                            viewBox="0 0 16 16"
-                                        >
-                                            <path d="M10.804 8.51 6.247 11.14A.5.5 0 0 1 5.5 10.71V5.29a.5.5 0 0 1 .747-.43l4.557 2.63a.5.5 0 0 1 0 .86z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a
-                                    href={video.url}
-                                    target="_blank"
-                                    
-                                    rel="noopener noreferrer"
-                                    className="absolute inset-0 z-20"
-                                >
-                                    <span className="sr-only">Watch on YouTube</span>
-                                </a>
-                            </div>
+                        <div className="relative w-full h-full bg-white/20 rounded-2xl overflow-hidden">
+                            <video
+                                src={video.video}
+                                className="w-full h-full object-cover"
+                                autoPlay
+                                loop
+                                controls
+                                playsInline
+                                preload="metadata"
+                                style={{ borderRadius: '1rem' }}
+                            />
+
                         </div>
                     </div>
                 ))}
+
 
                 {/* Explore more button */}
                 <div className="shrink-0 w-full sm:w-full md:w-[20%] aspect-[9/16] flex items-center justify-center snap-start sm:snap-start md:snap-none">

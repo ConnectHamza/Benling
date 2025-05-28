@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <title>Benling Pakistan</title>
+        <title>Crown Benling Electric Mobility - Electrifying Dreams</title>
       </head>
       <body>
       <motion.div
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       animate="animate"
       exit="exit"
     >
-        <Header />
+        <Header />        
         {children}
         <Footer />
         </motion.div>

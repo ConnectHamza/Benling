@@ -1,5 +1,6 @@
 import React from 'react'
 import PerformanceBanner from '../../public/assets/PerformanceSeries/PerformanceBanner2.webp'
+import PerformanceBannermob from '../../public/assets/PerformanceSeries/Banner-mob.webp'
 import StickyBar from '@/components/StickyBar/stickyBar'
 import PerformanceCarousel from './performance-carousel'
 import { bikes } from './data'
@@ -13,10 +14,18 @@ import { faqsData } from '../home/data'
 const PerformanceSeries = () => {
     return (
         <div>
-            <div className='h-[100vh] bg-cover bg-center bg-no-repeat flex flex-col justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${PerformanceBanner.src})` }}>
-                <h1 className='text-black font-magistral text-5xl font-bold text-center'>Performance Series</h1>
+            {/* Desktop */}
+            <div className='h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${PerformanceBanner.src})` }}>
+                <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>
                 <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4'>
-                    <h3 className='text-white font-magistral md:text-3xl text-xl font-bold text-center'>Lithium-LiFePO4</h3>
+                    <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO4</h3>
+                </div>
+            </div>
+            {/* Mobile */}
+            <div className='h-[65vh] bg-cover bg-center bg-no-repeat flex flex-col md:hidden justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${PerformanceBannermob.src})` }}>
+                <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>
+                <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4'>
+                    <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO4</h3>
                 </div>
             </div>
             <div>

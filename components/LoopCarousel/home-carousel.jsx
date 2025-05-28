@@ -105,7 +105,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
           alt={`${items[current]?.name} Logo`}
           width={150}
           height={20}
-          className="mx-auto"
+          className="mx-auto h-10"
         />
       </div>
 

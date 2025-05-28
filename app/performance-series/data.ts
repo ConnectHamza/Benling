@@ -68,9 +68,9 @@ export const performanceData = [
     {
       name: "Bike 1",
       image: MarkhorIMG.src,
-      range: 150,
-      maxSpeed: 70,
-      motorPower: 1500,
+      range: "130 km Range",
+      maxSpeed: "90 km/h Top Speed",
+      motorPower: "3000W Motor Power",
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
       exploreLink: "/ezee",
       logo: MarkhorLogo.src
@@ -78,9 +78,9 @@ export const performanceData = [
     {
       name: "Bike 2",
       image: CherryIMG.src,
-      range: 100,
-      maxSpeed: 60,
-      motorPower: 1500,
+      range: "130 km Range ",
+      maxSpeed: "70 km/h Top Speed",
+      motorPower: "3000W Motor Power ",
       brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
       exploreLink: "/ezee",
       logo: CherryLogo.src
@@ -89,9 +89,9 @@ export const performanceData = [
     {
       name: "Bike 3",
       image: ChampionIMG.src,
-      range: 110,
-      maxSpeed: 60,
-      motorPower: 1500,
+      range: "220 km Range",
+      maxSpeed: "70 km/h Top Speed",
+      motorPower: "1200W Motor Power",
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
       exploreLink: "/ezee",
       logo: ChampionLogo.src
@@ -99,18 +99,18 @@ export const performanceData = [
     {
       name: "Bike 4",
       image: RaftaarIMG.src,
-      range: 55,
-      maxSpeed: 40,
-      motorPower: 650,
+      range: "60 km Range",
+      maxSpeed: "80 km/h Top Speed",
+      motorPower: "2000W Motor Power",
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
       exploreLink: "/ezee",
       logo: RaftaarLogo.src
     }, {
       name: "Bike 5",
       image: VictoryIMG.src,
-      range: 120,
-      maxSpeed: 60,
-      motorPower: 1200,
+      range: "120 km Range ",
+      maxSpeed: "55 km/h Top Speed",
+      motorPower: "1000W Motor Power",
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
       exploreLink: "/ezee",
       logo: VictoryLogo.src
