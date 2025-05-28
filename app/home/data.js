@@ -149,7 +149,7 @@ export const Slides = [
         mobileImageSrc: Ezee,
         href: "/ezee",
         color: "white",
-        price: "215,000"      
+        price: "230,000"      
     },
     {
         title: 'Embrace Tomorrow Now with Firefly',
@@ -159,7 +159,7 @@ export const Slides = [
         mobileImageSrc: Firefly,
         href: "/firefly",
         color: "white",
-        price: "210,000"      
+        price: "195,000"      
 
     },
     {
@@ -170,7 +170,7 @@ export const Slides = [
         mobileImageSrc: Flash,
         href: "/flash",
         color: "white",
-        price: "215,000"      
+        price: "250,000"      
 
     },
     {
@@ -181,7 +181,7 @@ export const Slides = [
         mobileImageSrc: Knight,
         href: "/knight-rider",
         color: "white",
-        price: "155,000"      
+        price: "240,000"      
 
     },
     {
@@ -192,7 +192,7 @@ export const Slides = [
         mobileImageSrc: Mini,
         href: "/mini-scooty",
         color: "white",
-        price: "215,000"      
+        price: "120,000"      
 
     },
     {
@@ -213,7 +213,7 @@ export const Slides = [
         mobileImageSrc: Roshnix,
         href: "/roshni-x",
         color: "black-200",
-        price: "215,000"      
+        price: "235,000"      
 
     },
     {
@@ -224,7 +224,7 @@ export const Slides = [
         mobileImageSrc: Spark,
         href: "/spark",
         color: "black-200",
-        price: "215,000"      
+        price: "145,000"      
 
     },
 ]
