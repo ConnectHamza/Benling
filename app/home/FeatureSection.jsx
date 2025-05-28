@@ -40,8 +40,8 @@ const features = [
 ];
 
 const FeatureSection = () => (
-  <section className="w-full bg-[#13102A] py-10 px-2 md:px-0">
-    <div className="max-w-[1300px] mx-auto p-10">
+  <section className="w-full bg-[#13102A] md:py-40 py-20 px-5">
+    <div className="max-w-[1300px] mx-auto ">
       <div className="mb-2">
         <Typography color='text-white' variant='h3-medium-magistral'>
           Explore Our Smart Features

@@ -34,7 +34,8 @@ export default function RoshniColorShowcase() {
     ];
 
     return (
-        <section className="bg-black py-12 px-4 text-white bg-black-100">
+        <section className="bg-black py-12 px-4 text-white bg-black-100 w-full flex flex-col items-center">
+            <div className="w-lg">
             <h2 className="text-center text-4xl md:text-4xl mb-10 font-magistral">
                 Explore a Range of Stunning Colors for the Roshni X
             </h2>
@@ -47,6 +48,7 @@ export default function RoshniColorShowcase() {
                         title={bike.title}
                     />
                 ))}
+                </div>
             </div>
         </section>
     );

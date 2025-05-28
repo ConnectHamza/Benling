@@ -1,9 +1,9 @@
 // components/CardGrid.tsx
 import Card from '@/components/Cards/BrandingCard';
-import World from '../../public/assets/Home/Branding/world.png';
-import ElectricBike from '../../public/assets/Home/Branding/electric_bike.png';
-import Carbon from '../../public/assets/Home/Branding/carbon.png';
-import Forest from '../../public/assets/Home/Branding/forest.png';
+import World from '../../public/assets/Home/Branding/world.svg';
+import ElectricBike from '../../public/assets/Home/Branding/electric_bike.svg';
+import Carbon from '../../public/assets/Home/Branding/carbon.svg';
+import Forest from '../../public/assets/Home/Branding/forest.svg';
 import Typography from '@/components/GradientText/Typography';
 
 const cardData = [
@@ -31,7 +31,7 @@ const cardData = [
 
 const BrandingSection = () => {
     return (
-        <section className="bg-white rounded-xl py-6 md:py-10">
+        <section className="bg-white rounded-xl py-20 md:py-40">
             <div className="max-w-[1300px] mx-auto px-4 md:px-6 text-center">
                 {/* Heading */}
                 <Typography variant='h2-medium-magistral' className="mb-2">
@@ -41,7 +41,7 @@ const BrandingSection = () => {
                     Crown Benling Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
                 </Typography>
                 {/* Card Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center mt-10">
                     {cardData.map((card, idx) => (
                         <Card
                             key={idx}

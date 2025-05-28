@@ -12,6 +12,7 @@ const Banner = () => {
                 buttonText="Explore More"
                 imageSrc={KnightWeb.src}
                 mobileImageSrc={FlashBannerMobile.src}
+                textColor='md:text-white text-black'
             />
         </div>
 

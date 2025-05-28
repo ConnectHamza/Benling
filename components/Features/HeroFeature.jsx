@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import React from 'react'
-import Typography from "../GradientText/Typography"
+import React from 'react';
+import Typography from "../GradientText/Typography";
 
 const StatCard = ({
   value,
@@ -15,52 +14,44 @@ const StatCard = ({
       className={`rounded-xl px-4 py-3 w-full ${bgColor} ${textColor} text-center shadow-md`}
       style={{ backdropFilter: 'blur(10px)' }}
     >
-
       <Typography variant={titleVariant}>{value}</Typography>
       <Typography variant={subtitleVariant}>{label}</Typography>
     </div>
   );
 };
 
-
 const Featured = ({
   stats,
-  imageSrc,
-  imageAlt,
+  imageSrc,      // desktop image object (e.g. import desktop from "../img.jpg")
+  mobileImageSrc, // mobile image object (e.g. import mobile from "../img-mobile.jpg")
   textColor,
   cardBgColor,
   titleVariant,
   subtitleVariant,
-  mblImage
 }) => {
   return (
-    <div className="w-full flex justify-center relative" style={{ height: '100vh' }}>
-      <div>
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          className="w-full object-cover hidden md:block "
-          priority
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-        <Image
-          src={mblImage}
-          alt={imageAlt}
-          className="w-full object-cover md:hidden"
-          priority
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
+    <>
+      <style jsx>{`
+        .responsive-bg {
+          background-image: url(${mobileImageSrc.src});
+        }
 
-      <div className="absolute bottom-[2vh] mdt:bottom-55 w-full flex justify-center px-4">
-        <div className="flex gap-4 w-full">
+        @media (min-width: 768px) {
+          .responsive-bg {
+            background-image: url(${imageSrc.src});                     
+          }
+        }
+      `}</style>
+
+      <div
+        className="w-full md:h-screen h-[90vh] bg-cover bg-center flex items-end justify-center px-4 md:py-10 py-5 responsive-bg"
+        style={{
+          backgroundSize: 'cover'          
+        }}
+      >
+        <div className="flex md:flex-nowrap flex-wrap gap-y-4 md:gap-4 w-full justify-center">
           {stats.map(({ value, label }, idx) => (
-            <div
-              key={idx}
-              className="w-1/2 mdt:w-1/4 px-2 flex "
-            >
+            <div key={idx} className="w-1/2 md:w-1/4 px-2">
               <StatCard
                 value={value}
                 label={label}
@@ -73,9 +64,7 @@ const Featured = ({
           ))}
         </div>
       </div>
-
-
-    </div>
+    </>
   );
 };
 

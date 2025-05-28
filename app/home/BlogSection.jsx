@@ -1,7 +1,6 @@
 'use client'
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
-
 import Link from "next/link";
 import { blogs } from "../../utils/blogdata"
 import Image from "next/image";
@@ -19,7 +18,7 @@ export default function RecentBlogsCarousel() {
     }
   };
   return (
-    <section className="bg-white text-black py-10">
+    <section className="bg-white text-black py-20">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <Typography variant="h3-medium-magistral">
@@ -72,7 +71,7 @@ export default function RecentBlogsCarousel() {
             ))}
           </div>
           {/* Controls */}
-          <div className="mt-6 flex justify-between items-center flex-wrap gap-4">
+          {/* <div className="mt-6 flex justify-between items-center flex-wrap gap-4">
             <button className="text-[14px] h-[35px] text-black px-4 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition flex flex-row items-center">
               <Typography variant="extra-subset-regular-jakarta">
                 View All Blog/News
@@ -95,7 +94,7 @@ export default function RecentBlogsCarousel() {
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

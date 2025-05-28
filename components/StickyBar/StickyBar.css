@@ -27,8 +27,8 @@
 
   .paragraph{
     display: flex;
-    font-size: 50px;
-    line-height: 1;        
+    font-size: 42px;
+    line-height: 32px;        
     flex-wrap: wrap;
   
      
@@ -49,7 +49,8 @@
   @media screen and (max-width: 768px){
     .paragraph{
       
-      font-size: 24px;                  
+      font-size: 24px;
+      line-height: 20px;;                  
       flex-wrap: wrap;
     
        

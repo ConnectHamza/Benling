@@ -30,11 +30,10 @@ export default function Ezee() {
             <Banner />
             <StickyBar
                 title="Crown Benling Ezee"
-                headingPartOne="Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, "
-                headingPartTwo="the Ezee takes your journey to the next level."
-                colorOne="#ffffff"
-                colorTwo="#f15822"
-                gradients={"bg-gradient-to-br from-[#410D09] to-[#121212]"}
+                description='Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level.'                
+                gradient1="#410D09"
+                gradient2="#121212"
+                textColor="text-red-300"
             />
             <Carousel />
             <Flawless />

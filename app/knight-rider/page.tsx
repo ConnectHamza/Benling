@@ -20,17 +20,18 @@ const KnightRider = () => {
            <Banner />
            <StickyBar
                 title="Crown Benling Knight Rider"
-                headingPartOne="Discover the Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge Graphene Battery Technology and a robust 1200W Brushless Motor, "
-                headingPartTwo="Knight Rider ensures your rides are smooth, powerful, and sustainable."
-                colorOne="#FFF"
-                colorTwo="#4C4442"
-                gradients={"bg-gradient-to-br from-[#4C4442] to-[#0A0A0A]"}
-            />
+                description='Discover the Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge Graphene Battery Technology and a robust 1200W Brushless Motor, Knight Rider ensures your rides are smooth, powerful, and sustainable.'
+                gradient1="#4C4442"
+                gradient2="#121212"
+                textColor='text-white'
+            />            
             <DesignedSection />
             <LedSection />
             <WaterResistanceSection />
             <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
+            <div className='pt-20 pb-10 md:pb-0'>
             <LoopMain imageSrc={KnightLoopIMG} heading={heading} colors={colors} />
+            </div>
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
             <Faqs data={faqsData}/>
         </main>

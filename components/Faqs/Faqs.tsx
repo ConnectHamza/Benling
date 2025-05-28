@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronRight, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Typography from '../GradientText/Typography';
 
 interface FaqItem {
@@ -31,8 +31,8 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
                 className='flex justify-between items-center font-bold md:text-[20px] text-[15px] cursor-pointer md:py-3 py-2 font-jakarta'
                 onClick={() => toggleAccordion(index)}
               >
-                <Typography as='span' variant='subtext-semibold-jakarta' className='smooth-transition'>{faq.question}</Typography>
-                <FontAwesomeIcon icon={activeIndex === index ? faChevronUp : faChevronRight} />
+                <Typography as='span' variant='subtext-semibold-jakarta' className=' transform transition-all duration-100 ease-in-out hover:-translate-y-1'>{faq.question}</Typography>
+                <FontAwesomeIcon icon={activeIndex === index ? faChevronRight : faChevronDown} />
               </div>
               <div
                 className={`overflow-hidden transition-max-height duration-500 ease-in-out ${activeIndex === index ? 'max-h-96' : 'max-h-0'}`}

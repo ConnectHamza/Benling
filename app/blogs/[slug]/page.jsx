@@ -17,7 +17,7 @@ export default function BlogPostPage({ params }) {
     const recentArticles = blogs.filter((b) => b.slug !== params.slug).slice(0, 5);
 
     return (
-        <div className="min-h-screen py-8">
+        <div className="min-h-screen py-8 relative">
             <div className="max-w-7xl mx-auto bg-white  px-4 sm:px-6 lg:px-8 pb-12">
                 {/* Header */}
                 <BlogHeader coverImage={post.coverImage} />

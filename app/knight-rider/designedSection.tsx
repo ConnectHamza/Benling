@@ -13,7 +13,7 @@ const DesignedSection = () => {
         src={KnightRiderDesignIMG}
         alt="Knight Rider Design"
         fill
-        className="object-contain object-center md:object-[top_right] z-0"
+        className="object-contain object-[top_right] z-0"
         priority
       />
 

@@ -24,7 +24,7 @@ type FeatureHeader = {
 const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, FeatureHeader }) => {
     const { featureTitle, featureText, bgColor, textColor } = FeatureHeader;
     return (
-        <div className={`w-full ${bgColor} ${textColor} md:pt-[50px] pt-[50px] px-5 flex justify-center`}>
+        <div className={`w-full ${bgColor} ${textColor} md:py-40 py-20 px-5 flex justify-center`}>
             <div className='w-lg'>
                 <div className='heading2 text-center font-magistral font-[500px]'>
                     <Typography as='p' variant='h3-medium-magistral'>
@@ -37,11 +37,11 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
                     </Typography>
                 </div>
 
-                <div className='flex gap-5 flex-wrap mt-5'>
+                <div className='flex gap-5 flex-wrap md:mt-10 mt-5'>
                     {featureItems.map((feature, index) => (
-                        <div key={index} className='md:w-[48%] reveal-block mb-10 '>
-                            <Image className='rounded-10 overflow-hidden mb-4' src={feature.img} alt={feature.alt} />
-                            <Typography as='p' variant='h3-medium-magistral'>
+                        <div key={index} className='md:w-[48%] reveal-block md:mb-10 mb-5'>
+                            <Image className='rounded-10 overflow-hidden mb-5' src={feature.img} alt={feature.alt} />
+                            <Typography as='p' variant='h3-medium-magistral' className='mb-3'>
                                 {feature.title}
                             </Typography>
                             <Typography variant='subtext-regular-jakarta'>

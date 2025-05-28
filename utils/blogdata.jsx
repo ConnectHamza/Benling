@@ -5,20 +5,36 @@ import LaunchImage from "../public/assets/Blogs/Blogheader2.jpg"
 import LaunchCeremony from "../components/Blog/BlogContent/LaunchCeremony";
 import CrownBlog from "../components/Blog/BlogContent/CrownBlogs";
 import BlogHeaderImage from "../public/assets/Blogs/Blog3.jpeg"
+import MultanBlogImage from "../public/assets/Blogs/blog4.webp";
+import MultanLaunchBlog from "@/components/Blog/BlogContent/MultanLaunchBlog";
 export const blogs = [
   {
-    slug: "graphene-battery-future",
-    title: "Graphene The Future of Battery Technology",
-    subtitle: "In a world where cutting-edge technology is transforming our daily lives, the only bottleneck seems to be the outdated rechargeable batteries that power our devices. Traditional lithium-ion batteries, while providing consistent power and acceptable lifespans, face challenges such as low capacity, extended charging times, and limited overall charging cycles. Imagine a future where your smartphone, motorcycles, and other gadgets last a week on a single charge and charge in a fraction of the time—thanks to Graphene, this future is now within reach.",
-    coverImage: BlogHeader.src,
-    date: "May 15th 2025",
-    readTime: 7,
+    slug: "crown-electric-mobility-lights-up-the-multan-launch-event",
+    title: " A Grand Debut: Crown Electric Mobility Lights Up the Multan Launch Event with the Revolutionary Performance Series",
+    subtitle: `Crown Electric Mobility unveiled its powerful new Performance Series in Multan, marking a major step toward sustainable transport in Pakistan. Discover the models, features, and the city's first Tier A EV showroom.`,
+    coverImage: MultanBlogImage.src,
+    date: "May 27th 2025",
+    readTime: 3,
     headings: [
-      { id: "what-is-graphene", text: "What is Graphene?" },
-      { id: "graphene-vs-batteries", text: "Graphene vs. Other Rechargeable Batteries" },
-      { id: "future-of-graphene", text: "The Future of Graphene in the Battery Industry" }
+      { id: "grand-debut", text: "A Grand Debut" },
+      { id: "launch-innovation", text: "Launching Innovation" },
+      { id: "showroom-debuts", text: "Showroom Debuts" },
+      { id: "community-engagement", text: "Community Engagement" },
     ],
-    renderContent: () => <GraphineBattery />
+    renderContent: () => <MultanLaunchBlog />
+  },
+  {
+    slug: "crown-dealership-visit",
+    title: " Crown Benling Electric Mobility's Director Business Development Engages with Karachi Dealerships",
+    subtitle: `In line with Crown Benling Electric Mobility’s mission to promote accessible, sustainable transportation across Pakistan, Director – Business Development, Mr. Zohaib Farhan, recently visited Crown Benling Electric Mobility’s dealerships in Karachi. Accompanied by Regional Sales Manager Sindh, Mr. Mubashir Awam, and Area Sales Manager, Mr. Yaseen Pinjara, the visit reinforced the company’s commitment to building strong, on-ground relationships with its dealer partners.`,
+    coverImage: BlogHeaderImage.src,
+    date: "May 23rd 2025",
+    readTime: 3,
+    headings: [
+      { id: "crown-group", text: "Strengthening Market Ties" },
+      { id: "approach", text: "Customer-Centric Approach" },
+    ],
+    renderContent: () => <CrownBlog />
   },
   {
     slug: "crown-grand-launch-event",
@@ -39,16 +55,20 @@ export const blogs = [
     renderContent: () => <LaunchCeremony />
   },
   {
-    slug: "crown-dealership-visit",
-    title: " Crown Benling Electric Mobility's Director Business Development Engages with Karachi Dealerships",
-    subtitle: `In line with Crown Benling Electric Mobility’s mission to promote accessible, sustainable transportation across Pakistan, Director – Business Development, Mr. Zohaib Farhan, recently visited Crown Benling Electric Mobility’s dealerships in Karachi. Accompanied by Regional Sales Manager Sindh, Mr. Mubashir Awam, and Area Sales Manager, Mr. Yaseen Pinjara, the visit reinforced the company’s commitment to building strong, on-ground relationships with its dealer partners.`,
-    coverImage: BlogHeaderImage.src,
-    date: "May 23rd 2025",
-    readTime: 3,
+    slug: "graphene-battery-future",
+    title: "Graphene The Future of Battery Technology",
+    subtitle: "In a world where cutting-edge technology is transforming our daily lives, the only bottleneck seems to be the outdated rechargeable batteries that power our devices. Traditional lithium-ion batteries, while providing consistent power and acceptable lifespans, face challenges such as low capacity, extended charging times, and limited overall charging cycles. Imagine a future where your smartphone, motorcycles, and other gadgets last a week on a single charge and charge in a fraction of the time—thanks to Graphene, this future is now within reach.",
+    coverImage: BlogHeader.src,
+    date: "May 15th 2025",
+    readTime: 7,
     headings: [
-      { id: "crown-group", text: "Strengthening Market Ties" },
-      { id: "approach", text: "Customer-Centric Approach" },
+      { id: "what-is-graphene", text: "What is Graphene?" },
+      { id: "graphene-vs-batteries", text: "Graphene vs. Other Rechargeable Batteries" },
+      { id: "future-of-graphene", text: "The Future of Graphene in the Battery Industry" }
     ],
-    renderContent: () => <CrownBlog />
+    renderContent: () => <GraphineBattery />
   },
+
+
+
 ];

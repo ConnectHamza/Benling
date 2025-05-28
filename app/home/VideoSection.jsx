@@ -18,7 +18,7 @@ const videos = [
 
 export default function VideoSection() {
     return (
-        <section className="relative w-full px-0 sm:px-4">
+        <section className="relative w-full md:py-40 py-20">
             <div className='m-w-auto text-center '>
                 <Typography variant='h2-medium-magistral' className="mb-2">
                     Benling is Everywhere
@@ -27,18 +27,16 @@ export default function VideoSection() {
                     Watch real riders, influencers, and EV enthusiasts showcase Crown Benling in action across Pakistan.                </Typography>
             </div>
             <div
-                className="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar touch-pan-x px-4"
+                className="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar touch-pan-x px-4 mt-10"
                 style={{
                     height: 'calc(100vh - 220px)',
                     WebkitOverflowScrolling: 'touch',
                     willChange: 'transform',
                 }}
             >
-
-
                 {videos.map((video, idx) => (
                     <div
-                        key={idx}
+                        key={idx}                    
                         className="shrink-0 w-full sm:w-full md:w-[20%] aspect-[9/16] flex items-center justify-center 
                 snap-start sm:snap-start md:snap-none"
                     >
@@ -66,6 +64,7 @@ export default function VideoSection() {
                                 <a
                                     href={video.url}
                                     target="_blank"
+                                    
                                     rel="noopener noreferrer"
                                     className="absolute inset-0 z-20"
                                 >
@@ -93,7 +92,6 @@ export default function VideoSection() {
                         </button>
                     </div>
                 </div>
-
             </div>
         </section>
 

@@ -9,8 +9,8 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
   const secondColumn = data2;
 
   return (
-    <div className='w-full flex justify-center md:py-[150px] px-5 py-10'>
-      <div className="w-full">
+    <div className='w-full flex justify-center md:py-40 px-5 py-10'>
+      <div className="w-lg">
         <Typography variant='h2-bold-magistral'>
           Technical Specifications
         </Typography>

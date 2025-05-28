@@ -21,8 +21,7 @@ html {
   overflow-y: auto !important;
 }
 
-body {
-  font-family: Inter;
+body {  
   overflow: hidden !important;
 
 }

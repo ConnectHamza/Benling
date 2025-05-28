@@ -76,7 +76,7 @@ module.exports = {
       width: {
         'md': '1024px',
         "mdt": "768px",
-        'lg': '1200px',
+        'lg': '1300px',
         'full': '100%',
       },
       borderRadius: {

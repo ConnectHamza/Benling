@@ -1,85 +1,14 @@
-.image-container {
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-
-  }
-  
-  .scrolling-wrapper {
-    display: flex;
-    width: calc(100% * 2); 
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: scrollImage 40s linear infinite;
-  }
-  
-  .scrolling-image {
-    flex-shrink: 0;
-    width: 100% ; 
-    height: 70vh;
-    object-fit: contain;
-  }
-  
-  @keyframes scrollImage {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100% );
-    }
-  }
-
-  @media screen and (max-width: 768px){
-    .scrolling-image{
-        height: 30vh;
-        width: 1200px;
-        
-    }
-    .image-container{
-        height: 30vh;
-        width: 100%;
-        
-    }
-
-    .scrolling-wrapper {
-        display: flex;
-        width: calc(100% * 2); 
-    }
-
-    @keyframes scrollImage {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-  }
-
-
-  @keyframes scroll-loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% - 20px));
-  }
-}
-
 .container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-top: 2.5rem; /* mt-10 */
+  margin-top: 2.5rem;
 }
 
 .wrapper {
   position: relative;
   width: 100%;
-  padding-top: 16.95%; /* aspect ratio */
+  padding-top: 16.95%;
 }
 
 .scrollLoop {
@@ -87,13 +16,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(200% + 20px);
+  width: 200%; /* or 300% if you use 3 images */
   height: 100%;
   will-change: transform;
-  animation-name: scroll-loop;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 25s;
+  animation: scroll-loop 25s linear infinite;
 }
 
 .imageContainer {
@@ -101,4 +27,13 @@
   flex-shrink: 0;
   width: 100%;
   height: 100%;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

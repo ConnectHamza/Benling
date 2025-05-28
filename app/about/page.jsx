@@ -4,13 +4,13 @@ import MissionVisionCards from "./MissionSection";
 import Subsection from "./SubSection";
 import BrandingSection from "../home/BrandingSection"
 import BlogSection from "../home/BlogSection"
+import ShopSlider from "../find-a-dealer/ShopSection";
 
 export default function About() {
     return (
         <div>
             <div>
                 <Herosection />
-
             </div>
             <div className="py-10">
                 <Subsection />

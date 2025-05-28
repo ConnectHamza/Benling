@@ -18,6 +18,7 @@ import RoshniFeatuedIMG from '../../public/assets/Roshni/Featured-Section.webp'
 
 
 
+
 const heading = 'Explore Roshni Electric Ride';
 const colors = [
   { color: '#121212', percentage: 50 },
@@ -42,16 +43,15 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling Roshni"
-        headingPartOne="Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor. "
-        headingPartTwo="Roshni promises smooth, efficient, and sustainable mobility tailored for every journey."
-        colorOne="#000"
-        colorTwo="#9F9A94"
-        gradients={"bg-gradient-to-br from-[#B9B5B0] to-[#F8F8F8]"}
+        description='Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor. Roshni promises smooth, efficient, and sustainable mobility tailored for every journey.'
+        gradient1="#B9B5B0"
+        gradient2="#F8F8F8"
+        textColor="text-black-30"
       />
       <div>
         
       </div>
-      <Featured stats={statsData} imageAlt="Roshni Feature Image" imageSrc={RoshniFeatuedIMG} textColor="text-white"
+      <Featured stats={statsData} imageAlt="Roshni Feature Image" imageSrc={RoshniFeatuedIMG} mobileImageSrc={RoshniFeatuedIMG} textColor="text-white"
         cardBgColor="bg-black/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       <Tabs />
       <Intelligent />

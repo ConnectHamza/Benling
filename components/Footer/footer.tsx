@@ -4,7 +4,7 @@ import FooterLogo from '../../public/assets/Header-Footer/Benling-Footer-Logo.sv
 import Call from '../../public/assets/Header-Footer/call.svg'
 import Location from '../../public/assets/Header-Footer/location.svg'
 import Mail from '../../public/assets/Header-Footer/mail.svg'
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MailIcon, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 import Typography from '../GradientText/Typography';
 
@@ -25,8 +25,8 @@ const Footer = () => {
 
 
     return (
-        <div className="relative flex justify-center bg-black-70 text-white md:pb-0 pb-5  pt-20">
-            <div className="w-lg px-5 md:pt-[150px]">
+        <div className="relative flex justify-center bg-black-70 text-white md:pb-0 pb-5 md:py-40 py-20">
+            <div className="w-lg px-5">
                 <div className="flex flex-col md:flex-row md:space-x-8 justify-between text-left items-start space-y-6 md:space-y-0">
                     <div className='w-full md:w-2/6'>
                         <div className='mb-2'>
@@ -36,17 +36,17 @@ const Footer = () => {
 
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
-                            <li className="mb-2 flex items-center">
-                                <img src={Mail.src} alt="email icon" className="mr-3 w-5 h-5" />
-                                <Typography variant='subtext-regular-jakarta'>info@benling.pk</ Typography>
+                            <li className="mb-2 flex items-center gap-4">                                
+                                <MailIcon size={18} className='text-red-200'/>
+                                <Link href='mailto:info@benling.pk'><Typography variant='subtext-regular-jakarta'>info@benling.pk</ Typography></Link>
                             </li>
-                            <li className="mb-2 flex items-center">
-                                <img src={Call.src} alt="phone icon" className="mr-3 w-5 h-5" />
-                                <Typography variant='subtext-regular-jakarta'>021 - 111 000 348</ Typography>
+                            <li className="mb-2 flex items-center gap-4">
+                            <Phone size={18} className='text-red-200'/>
+                            <Link href='tell:021-111000348'><Typography variant='subtext-regular-jakarta'>021-111000348</ Typography></Link>
                             </li>
-                            <li className="mb-2 flex items-start">
-                                <img src={Location.src} alt="location icon" className="mr-3 w-5 h-5" />
-                                <Typography variant='subtext-regular-jakarta'>Plot No. 672-673, Deh Joreji Taluka, Bin Qasim Town Karachi, 75600</ Typography>
+                            <li className="mb-2 flex items-start gap-4">
+                                <MapPin size={24} className='text-red-200'/>
+                                <Link href='https://maps.app.goo.gl/R1KkNJcL3yy26wdk6'><Typography variant='subtext-regular-jakarta'>Plot No. 672-673, Deh Joreji Taluka, Bin Qasim Town Karachi, 75600</ Typography></Link>
 
                             </li>
                         </ul>

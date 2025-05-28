@@ -4,7 +4,7 @@ import Typography from '@/components/GradientText/Typography'
 
 const LedSection = () => {
     return (
-        <div className='w-full bg-white flex px-5 py-10 md:py-0 md:h-[100vh] h-[50vh]  md:items-center items-start justify-center'
+        <div className='w-full bg-white flex px-5 py-10 md:py-0 md:h-[100vh] h-[65vh] md:items-center items-start justify-center'
             style={{
                 backgroundImage: `url(${KnightRiderLedIMG.src})`,
                 backgroundSize: 'contain',

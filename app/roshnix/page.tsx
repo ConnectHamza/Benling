@@ -14,7 +14,7 @@ import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
 import RoshniFeatuedIMG from '../../public/assets/RoshniX/Featured-Section.png'
-import RoshniMobile from '../../public/assets/RoshniX/Feature-Mobile.webp'
+import RoshniMobile from '../../public/assets/RoshniX/Roshni-x-feature-mobile.png'
 
 
 const heading = 'Explore Roshni X - Feel Alive';
@@ -40,13 +40,12 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling RoshniX"
-        headingPartOne="Experience next-gen mobility with the Roshni X. Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. "
-        headingPartTwo="Designed for urban explorers, Roshni X offers efficiency, style, and zero emissions in one sleek package."
-        colorOne="#fff"
-        colorTwo="#FDCF0A"
-        gradients={"bg-gradient-to-br from-[#534C2A] to-[#0F0C02]"}
+        description='Experience next-gen mobility with the Roshni X. Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers, Roshni X offers efficiency, style, and zero emissions in one sleek package.'
+        gradient1="#534C2A"
+        gradient2="#0F0C02"
+        textColor="text-[#FDCF0A]"
       />
-      <Featured stats={statsData} imageAlt={"RoshniX Feature Image"} mblImage={RoshniMobile} imageSrc={RoshniFeatuedIMG} textColor="text-black"
+      <Featured stats={statsData} imageAlt={"RoshniX Feature Image"} mobileImageSrc={RoshniMobile} imageSrc={RoshniFeatuedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       {/* <Featured /> */}
       <ColorShowcase />

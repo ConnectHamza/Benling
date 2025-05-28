@@ -21,9 +21,11 @@ import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.png";
 import { ArrowRight, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import AppButton from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
+import MobileModelsCarousel from "./mobileModelsCarousel";
+
 
 // --- Model Data ---
-const modelsData = [
+export const modelsData = [
     { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/flash" },
     { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "100km Range", speed: "60km/h Top Speed", href: "/knight-rider" },
     { logo: Logo_Roshnix, img: Image_Roshnix, range: "110km Range", speed: "60km/h Top Speed", href: "/roshnix" },
@@ -62,12 +64,10 @@ function MobileModelsPanel({ onBack }) {
                         className="flex flex-col items-center group hover:scale-105 transition"
                     >
                         {/* Image Container with fixed height */}
-                        <div className="flex items-center justify-center h-[120px] w-full">
+                        <div className="flex items-center justify-center w-full">
                             <Image
                                 src={model.img}
-                                alt={model.href}
-                                width={220}
-                                height={300}
+                                alt={model.href}                                
                                 className="object-contain max-h-full"
                             />
                         </div>
@@ -102,14 +102,14 @@ const Header = () => {
 
     // Desktop Mega Menu
     const DesktopModelsMegaMenu = () => (
-        <div className="fixed left-0 top-[75px] w-full h-[70vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
+        <div className="fixed left-0 top-[75px] w-full h-[75vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
             <div className="max-w-[1300px] mx-auto px-10 py-8 h-full flex flex-col">
                 {/* Heading */}
                 <div className="font-regular text-lg mb-6 text-black-200 font-magistral">
                     Explore Our Models
                 </div>
                 {/* Scrollable content */}
-                <div className="overflow-y-auto pr-2">
+                <div className=" pr-2">
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
                         {modelsData.map((model) => (
                             <a
@@ -131,9 +131,7 @@ const Header = () => {
                                     <Image
                                         src={model.logo}
                                         alt={model.href}
-                                        width={100}
-                                        height={20}
-                                        className="mx-auto"
+                                        className="mx-auto h-[24px] mb-4"
                                     />
                                 </div>
                                 <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta">
@@ -149,19 +147,19 @@ const Header = () => {
 
 
     const navLink =
-        "relative font-jakarta pb-[6px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
+        "relative font-jakarta py-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
 
     return (
         <header className="w-full z-50 fixed top-0 left-0 bg-black-200 text-white h-[75px] flex items-center">
-            <div className="max-w-[1300px] mx-auto flex items-center justify-between w-full px-6 h-[75px]">
+            <div className="max-w-[1300px] mx-auto flex items-center justify-between w-full px-6 py-2">
                 {/* Left nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-8 text-sm h-full font-jakarta">
                     <div
-                        className="relative group h-full flex items-center"
+                        className="relative group h-full flex items-center py-5"
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
                         onMouseLeave={() => setIsMegaMenuOpen(false)}
                     >
-                        <Typography variant="subtext-regular-jakarta" as="span" className=" flex items-center h-full cursor-pointer relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
+                        <Typography variant="subtext-regular-jakarta" as="span" className=" flex items-center h-full cursor-pointer relative  after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F15C2A] group-hover:after:w-full after:transition-all after:duration-300">
                             Models {isMegaMenuOpen ? <ChevronUp /> : <ChevronDown />}
                         </Typography>
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
@@ -171,12 +169,13 @@ const Header = () => {
                             About Us
                         </Typography>
                     </Link>
-                    {/* <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link> */}
-                    <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                    <Link href="/performance-series" className={`${navLink} flex items-center h-full`}>
                         <Typography variant="subtext-regular-jakarta">
-                            Find a Dealer
+                            Performance Series
                         </Typography>
                     </Link>
+                    {/* <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link> */}
+
                 </nav>
 
                 {/* Logo with black background */}
@@ -187,6 +186,11 @@ const Header = () => {
                 {/* Right nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
+                    <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                        <Typography variant="subtext-regular-jakarta">
+                            Find a Dealer
+                        </Typography>
+                    </Link>
                     <Link href="/contact" className={`${navLink} flex items-center h-full`}>
                         <Typography variant="subtext-regular-jakarta">
                             Contact Us
@@ -226,7 +230,7 @@ const Header = () => {
             {/* Mobile menu overlay */}
             {isMobileMenuOpen && (
                 isModelsOpen ? (
-                    <MobileModelsPanel onBack={() => setIsModelsOpen(false)} />
+                    <MobileModelsCarousel onBack={() => setIsModelsOpen(false)} />
                 ) : (
                     <div className="fixed inset-0 z-50 bg-black overflow-y-auto">
                         {/* Black header with logo centered and close button left */}

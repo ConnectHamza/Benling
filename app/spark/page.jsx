@@ -10,7 +10,7 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Tabs from './Tabs'
-import MiniFeatuedIMG from '../../public/assets/Spark/featured-section.png';
+import SparkFeaturedIMG from '../../public/assets/Spark/featured-section.png'
 import FeatureMbl from '../../public/assets/Spark/feature-mobile.webp'
 
 import Featured from '@/components/Features/HeroFeature'
@@ -39,13 +39,12 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling Spark"
-        headingPartOne="Lightweight and practical, Spark is powered by a 600W Motor and a 48V 30AH battery, offering a smooth and economical ride. "
-        headingPartTwo="With its sleek design and eco-friendly performance, Spark is the perfect choice for effortless city mobility."
-        colorOne="#fff"
-        colorTwo="#297CA0"
-        gradients={"bg-gradient-to-br from-[#C7E4F0] to-[#5EB3D2]"}
+        description="Lightweight and practical, Spark is powered by a 600W Motor and a 48V 30AH battery, offering a smooth and economical ride. With its sleek design and eco-friendly performance, Spark is the perfect choice for effortless city mobility."
+        gradient1="#C7E4F0"
+        gradient2="#5EB3D2"
+        textColor="text-[#297CA0]"
       />
-      <Featured stats={statsData} mblImage={FeatureMbl} imageAlt={"RoshniX Featured Image"} imageSrc={MiniFeatuedIMG} textColor="text-black"
+      <Featured stats={statsData} mobileImageSrc={FeatureMbl} imageAlt={"RoshniX Featured Image"} imageSrc={SparkFeaturedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       <Tabs />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />

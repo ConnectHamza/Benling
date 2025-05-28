@@ -39,14 +39,13 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling Flash"
-        headingPartOne="Designed for those who go the distance, Flash combines a robust 1500W Brushless Motor with a long-range 72V 47AH battery. It delivers smooth, powerful, and eco-friendly rides, perfect for daily commutes or spontaneous adventures. Flash is all about performance,"
-        headingPartTwo="reliability, and clean mobility."
-        colorOne="#fff"
-        colorTwo="#fff"
-        gradients={"bg-gradient-to-br from-[#30266C] to-[#111619]"}
+        description="Designed for those who go the distance, Flash combines a robust 1500W Brushless Motor with a long-range 72V 47AH battery. It delivers smooth, powerful, and eco-friendly rides, perfect for daily commutes or spontaneous adventures. Flash is all about performance, reliability and clean mobility."
+        gradient1="#30266C"
+        gradient2="#111619"
+        textColor="text-white"
         isSticky={false}
       />
-      <Featured stats={statsData} imageAlt={"Flash Feature Image"} mblImage={RoshniFeatuedMbl} imageSrc={RoshniFeatuedIMG} textColor="text-black"
+      <Featured stats={statsData} imageAlt={"Flash Feature Image"} mblImage={RoshniFeatuedMbl} imageSrc={RoshniFeatuedIMG} mobileImageSrc={RoshniFeatuedMbl} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
 
       <ColorShowcase />

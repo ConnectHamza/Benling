@@ -38,7 +38,7 @@ export default function RoshniColorShowcase() {
     ];
 
     return (
-        <section className="bg-black py-12 px-4 text-white bg-black-100">
+        <section className="bg-black md:py-40 py-20 px-4 text-white bg-black-30">
             <div className="text-center text-4xl md:text-4xl mb-10 font-magistral">
                 <Typography variant="h2-medium-magistral">
                     Color your World With Flash
@@ -50,6 +50,7 @@ export default function RoshniColorShowcase() {
                 </Typography>
             </div>
             <div className="flex flex-wrap justify-center">
+                <div className="w-lg flex flex-wrap justify-center">
                 {bikes.map((bike, index) => (
                     <BikeColorCard
                         key={index}
@@ -58,6 +59,7 @@ export default function RoshniColorShowcase() {
                         title={bike.title}
                     />
                 ))}
+                </div>
             </div>
         </section>
     );

@@ -341,7 +341,7 @@ export default function ShopSlider() {
                             {shops.map((shop) => (
                                 <div
                                     key={shop.id}
-                                    className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] h-[275px] bg-[#f5f5f5] rounded-lg shadow p-4 flex flex-col justify-between snap-start"
+                                    className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] h-[275px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
                                 >
                                     <div>
                                         <div className="mb-3">
@@ -383,14 +383,14 @@ export default function ShopSlider() {
                         <div className="flex gap-2">
                             <button
                                 onClick={() => handleScroll('prev')}
-                                className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
+                                className="w-10 h-10 rounded-full border bg-white shadow-md disabled:opacity-30 flex items-center justify-center"
                                 disabled={atStart}
                             >
                                 <ChevronLeft size={20} />
                             </button>
                             <button
                                 onClick={() => handleScroll('next')}
-                                className="w-10 h-10 rounded-full border bg-white shadow disabled:opacity-30 flex items-center justify-center"
+                                className="w-10 h-10 rounded-full border bg-white shadow-md disabled:opacity-30 flex items-center justify-center"
                                 disabled={atEnd}
                             >
                                 <ChevronRight size={20} />

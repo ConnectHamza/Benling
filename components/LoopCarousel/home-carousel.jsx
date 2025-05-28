@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../Button/AppButton";
-import { ArrowLeftCircle, ArrowRightCircle, BookDown } from "lucide-react";
+import { ArrowLeft, ArrowLeftCircle, ArrowLeftIcon, ArrowRightCircle, BookDown, ChevronLeft, ChevronRight } from "lucide-react";
 import Typography from "../GradientText/Typography";
+
 const HomeCarousel = ({ items = [], autoplay = false }) => {
   const [current, setCurrent] = useState(0);
+
 
   // Autoplay logic
   useEffect(() => {
@@ -24,9 +26,19 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
   const next = () => setCurrent((current + 1) % items.length);
 
   return (
-    <div className="w-full bg-white-500 relative overflow-hidden py-6">
+    <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">
+      <div className="w-full flex flex-col items-center justify-center mb-8">
+         <Typography variant='h2-medium-magistral' className="mb-2">
+         Choose Your Perfect Ride
+                        </Typography>
+                        <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center'>
+                        Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
+                        </Typography>
+
+      </div>
       {/* Carousel Wrapper */}
       <div className="relative flex items-center justify-center h-full">
+        
         {/* Previous Bike (Partially Visible) */}
         <div className="absolute left-[-25%] hidden md:block lg:block ">
           <Image
@@ -41,9 +53,9 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
         {/* Previous Button */}
         <button
           onClick={prev}
-          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-1"
+          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] text-black-30 rounded-full p-3 hover:scale-110 transition z-1"
         >
-          <ArrowLeftCircle size={30} />
+          <ChevronLeft size={35} />
         </button>
 
 
@@ -51,7 +63,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
         <div className="w-[70%] mx-auto">
           <motion.div
             key={current}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             className="flex items-center justify-center"
@@ -59,7 +71,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
             <Image
               src={items[current]?.image}
               alt={items[current]?.name}
-              width={600}
+              width={900}
               height={300}
               className="object-contain"
             />
@@ -69,9 +81,9 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
         {/* Next Button */}
         <button
           onClick={next}
-          className="absolute right-[15%] [@media(max-width:640px)]:right-[5%] bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10 "
+          className="absolute right-[15%] [@media(max-width:640px)]:right-[5% text-black-30 rounded-full p-3 hover:scale-110 transition z-10 "
         >
-          <ArrowRightCircle size={30} />
+          <ChevronRight size={40} />
         </button>
 
         {/* Next Bike (Partially Visible) */}
@@ -121,10 +133,9 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
           iconName="BookDown"
           iconPosition="left"
           href={items[current]?.brochureLink}
-          className="border-2 border-black text-black-200 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black"
+          className="border-2 border-black bg-black-30 hover:bg-orange-300 hover:text-black-30 hover:border-black-30 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black"
           target="_blank"
-          download={true}
-        // Add download attribute using the `passHref` workaround below if needed
+          download={true}        
         />
 
         <Button
