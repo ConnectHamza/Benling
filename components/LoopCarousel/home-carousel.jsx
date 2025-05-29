@@ -141,7 +141,7 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
             Range: <Typography as="span" variant="body-regular-magistral">{items[current]?.range} km</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Max Speed: <Typography variant="body-regular-magistral" as="span" >{items[current]?.maxSpeed} km/h</Typography>
+            Top Speed: <Typography variant="body-regular-magistral" as="span" >{items[current]?.maxSpeed} km/h</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
             Motor Power: <Typography variant="body-regular-magistral" as="span" >{items[current]?.motorPower} W</Typography>

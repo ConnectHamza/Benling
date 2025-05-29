@@ -14,7 +14,7 @@ import { faqsData } from '../home/data'
 const PerformanceSeries = () => {
     return (
         <div>
-                        <head>
+            <head>
                 <title>Crown Benling Electric Mobility - Performance Series</title>
             </head>
             {/* Desktop */}

@@ -107,7 +107,7 @@ const Header = () => {
 
     // Desktop Mega Menu
     const DesktopModelsMegaMenu = () => (
-        <div className="fixed left-0 top-[75px] w-full h-[75vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
+        <div className="fixed left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
             <div className="max-w-[1300px] mx-auto px-10 py-8 h-full flex flex-col">
                 {/* Heading */}
                 <div className="font-regular text-lg mb-6 text-black-200 font-magistral">

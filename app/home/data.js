@@ -47,7 +47,7 @@ export const faqsData = [
         question: "What warranty do you offer??",
         answer: `
         <div>
-            <h3><strong>Legacy Series:M</strong></h3>
+            <h3><strong>Legacy Series:</strong></h3>
             <ul>
                 <li>36 months / 36,000 km coverage for Controller & Motor</li>
                 <li>18 months / 20,000 km coverage for Graphene Battery</li>

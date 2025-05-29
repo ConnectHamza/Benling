@@ -527,12 +527,13 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #f7f7f7;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #FF7700; 
   border-radius: 10px; 
+  
   
 }
 
