@@ -192,7 +192,7 @@ export const Slides = [
         mobileImageSrc: Mini,
         href: "/mini-scooty",
         color: "white",
-        price: "120,000"      
+        price: "99,999"      
 
     },
     {

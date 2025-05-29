@@ -4,12 +4,14 @@ import '../styles/globals.css';
 import Header from '@/components/Header/header';
 import Footer from '@/components/Footer/footer';
 import { motion } from "framer-motion";
+import ClientWrapper from '@/utils/clientWrapper';
+import SmoothScroll from '@/utils/smoothScroll';
 
-const pageVariants = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  exit: { opacity: 0, y: -20, transition: { duration: 0.3 } }
-};
+// const pageVariants = {
+//   initial: { opacity: 0, y: 20 },
+//   animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+//   exit: { opacity: 0, y: -20, transition: { duration: 0.3 } }
+// };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -18,16 +20,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Crown Benling Electric Mobility - Electrifying Dreams</title>
       </head>
       <body>
-      <motion.div
-      variants={pageVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-    >
-        <Header />        
+        <Header />  
+        <SmoothScroll>
+        <ClientWrapper>
         {children}
-        <Footer />
-        </motion.div>
+        </ClientWrapper>      
+        </SmoothScroll>
+        <Footer />        
       </body>
     </html>
   );

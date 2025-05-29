@@ -8,7 +8,6 @@ const ClientWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   useEffect(() => {
     
     setAOSAnimation();
-
     
     AOS.init({
       duration: 1000,

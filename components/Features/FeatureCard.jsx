@@ -15,7 +15,7 @@ const FeatureCard = ({
     return (
         <div className="mb-5">
             <div
-                className="rounded-xl relative flex flex-col justify-center min-h-[180px] md:min-h-[55vh] p-4 item-center overflow-hidden sm:min-h-[35vh]"
+                className="rounded-xl relative flex flex-col justify-center min-h-[180px] md:min-h-[60vh] p-4 item-center overflow-hidden sm:min-h-[35vh]"
                 style={{
                     background: `url(${backgroundImage})`,
                     backgroundRepeat: "no-repeat",

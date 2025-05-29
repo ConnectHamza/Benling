@@ -67,7 +67,7 @@ function MobileModelsPanel({ onBack }) {
                         <div className="flex items-center justify-center w-full">
                             <Image
                                 src={model.img}
-                                alt={model.href}                                
+                                alt={model.href}
                                 className="object-contain max-h-full"
                             />
                         </div>
@@ -235,7 +235,7 @@ const Header = () => {
             {/* Mobile menu overlay */}
             {isMobileMenuOpen && (
                 isModelsOpen ? (
-                <MobileModelsCarousel onBack={() => setIsModelsOpen(false)} setIsMegaMenuOpen={setIsMegaMenuOpen} />
+                    <MobileModelsCarousel onBack={() => setIsModelsOpen(false)} setIsMegaMenuOpen={setIsMegaMenuOpen} />
 
                 ) : (
                     <div className="fixed inset-0 z-50 bg-black overflow-y-auto">
@@ -268,20 +268,39 @@ const Header = () => {
                                 </Typography>
                                 <span><ChevronRight /></span>
                             </button>
-                            <Link href="/about"  className="py-4 border-b text-black-200 border-gray-700 text-lg">
+
+                            <Link href="/about" onClick={(e) => {
+                                e.preventDefault();
+                                setIsModelsOpen(false);
+                                setTimeout(() => {
+                                    window.location.href = "/about";
+                                }, 0);
+                            }} className="py-4 border-b text-black-200 border-gray-700 text-lg">
 
                                 <Typography variant="subtext-regular-jakarta">
                                     About Us
-                                </Typography>
-                                </Link>
-                            {/* <Link href="/news" className="py-4 border-b text-black-200 border-gray-700 text-lg">News</Link> */}
-                            <Link href="/find-a-dealer" className="py-4 text-black-200 border-b border-gray-700 text-lg">
-                                <Typography variant="subtext-regular-jakarta">
+                                </Typography>                                
+                            </Link>
+
+                            
+ <Link href="/find-a-dealer" onClick={(e) => {
+                                e.preventDefault();
+                                setIsModelsOpen(false);
+                                setTimeout(() => {
+                                    window.location.href = "/find-a-dealer";
+                                }, 0);
+                            }} className="py-4 border-b text-black-200 border-gray-700 text-lg">                                <Typography variant="subtext-regular-jakarta">
                                     Find a Dealer
                                 </Typography>
                             </Link>
                             {/* <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link> */}
-                            <Link href="/contact" className="py-4 border-b text-black-200 border-gray-700">
+                            <Link href="/contact" onClick={(e) => {
+                                e.preventDefault();
+                                setIsModelsOpen(false);
+                                setTimeout(() => {
+                                    window.location.href = "/contact";
+                                }, 0);
+                            }} className="py-4 border-b text-black-200 border-gray-700 text-lg">
                                 <Typography variant="subtext-regular-jakarta">
                                     Contact Us
                                 </Typography>

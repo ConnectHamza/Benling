@@ -9,6 +9,8 @@ export function setAOSAnimation(): void {
       const isMobile: boolean = window.innerWidth <= 768;
       
       const animation: string | undefined = isMobile ? element.dataset.aosMobile : element.dataset.aosDesktop;
+      console.log('Element:', element, 'Animation:', animation);
+
   
       
       if (animation) {

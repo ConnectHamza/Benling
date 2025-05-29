@@ -12,10 +12,13 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false); // To handle transitions
 
-  const closeMegaMenu = () => {
+  const closeMegaMenuAndNavigate = (href: string) => {
     if (setIsMegaMenuOpen) {
       setIsMegaMenuOpen(false); // Close the mega menu
     }
+    setTimeout(() => {
+      window.location.href = href; // Explicitly navigate after state update
+    }, 0); // Allow state update to complete
   };
 
   const nextSlide = () => {
@@ -77,19 +80,22 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
             <div 
               key={model.href}
               className="w-full flex-shrink-0 px-2"
-              style={{ flex: "0 0 100%" }} // Ensure each slide takes up 100% width
+              style={{ flex: "0 0 100%" }} 
             >
-              <Link
+              <a
                 href={model.href}
                 className="flex flex-col items-center h-full"
-                onClick={closeMegaMenu} // Close mega menu when navigating
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default navigation
+                  closeMegaMenuAndNavigate(model.href); // Close mega menu and navigate
+                }}
               >
                 {/* Image Container */}
                 <div className="flex-1 flex items-center justify-center w-full">
                   <Image
                     src={model.img}
                     alt={model.href}
-                    width={400} // Specify width
+                    width={400}
                     height={200}
                     className="object-contain max-h-[40vh]"
                   />
@@ -110,7 +116,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                 <div className="text-xs text-gray-600 text-center mt-2 h-[20px] font-jakarta">
                   {model.range} | {model.speed}
                 </div>
-              </Link>
+              </a>
             </div>
           ))}
         </div>

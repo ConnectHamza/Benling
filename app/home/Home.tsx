@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       <div>
-      <StickyBar
+      <StickyBar      
         title="About Crown Benling Electric Mobility"
         description="Crown Benling Electric Mobility, proudly operated by Crown Group, leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
         bgImage={CrownAboutIMG.src}

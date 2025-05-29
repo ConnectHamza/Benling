@@ -1,4 +1,4 @@
-import SpeedBg from '../../public/assets/Home/Feature/speedbg.png';
+import SpeedBg from '../../public/assets/Home/Feature/Speedmode.png';
 import SafetyBg from '../../public/assets/PerformanceSeries/feature/Frame.webp';
 import RangeBg from '../../public/assets/PerformanceSeries/feature/Lethium.webp';
 import RemoteBg from '../../public/assets/PerformanceSeries/feature/Remote.webp';

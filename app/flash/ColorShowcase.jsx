@@ -50,7 +50,7 @@ export default function RoshniColorShowcase() {
                 </Typography>
             </div>
             <div className="flex flex-wrap justify-center">
-                <div className="w-lg flex flex-wrap justify-center">
+                <div className="w-lg flex flex-wrap justify-center md:gap-10">                    
                 {bikes.map((bike, index) => (
                     <BikeColorCard
                         key={index}
@@ -58,7 +58,7 @@ export default function RoshniColorShowcase() {
                         gradient={bike.gradient}
                         title={bike.title}
                     />
-                ))}
+                ))}                
                 </div>
             </div>
         </section>

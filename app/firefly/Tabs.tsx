@@ -23,27 +23,27 @@ const Tabs = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center md:px-10 px-5 py-10 bg-gray-50 md:h-[100vh]">
-      <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+    <div className="w-full flex justify-center md:px-10 px-5 py-40 bg-gray-50 ">
+      <div className="w-lg flex flex-col-reverse md:flex-row justify-between items-center gap-8">
 
         {/* Text and Tabs */}
         <div className="md:w-[40%] w-full">
           <h2 className="text-[22px] md:text-[30px] font-bold font-magistral mb-4 text-center md:text-left">
             Pick Your Ideal Tint
           </h2>
-          <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-3">
+          <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-3 mt-10">
             {tabItems.map((item) => (
               <div
                 key={item.label}
                 onClick={() => handleTabClick(item.label)}
                 className={`
-                  cursor-pointer p-3 rounded h-[75px] font-magistral 
-                  text-center md:text-left 
-                  w-[45%] md:w-full 
-                  ${activeTab === item.label ? 'text-white bg-[#16514C]' : 'text-gray-400 bg-transparent'}
+                  cursor-pointer p-3 rounded  font-magistral 
+                  text-center md:text-left flex items-center
+                  w-[45%] md:w-[80%]
+                  ${activeTab === item.label ? 'text-white bg-[#16514C] ' : 'text-gray-400 bg-transparent'}
                 `}
               >
-                <Typography variant='h5-regular-magistral'>
+                <Typography variant='h2-bold-magistral' className='font-bold text-5xl'>
                   {item.label}
                 </Typography>
               </div>

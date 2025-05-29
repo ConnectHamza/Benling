@@ -3,7 +3,7 @@ import Typography from "../GradientText/Typography";
 
 const BikeColorCard = ({ imageSrc, gradient, title }) => {
   return (
-    <div className="w-full md:w-[50%] px-2 flex flex-col items-center">
+    <div className="w-full md:w-[45%] px-2 flex flex-col items-center">
       {/* Container for Capsule and Image */}
       <div className="relative w-full h-[280px] md:h-[550px] flex justify-center items-end overflow-visible">
         
