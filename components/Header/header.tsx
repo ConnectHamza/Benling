@@ -100,6 +100,11 @@ const Header = () => {
     const [isModelsOpen, setIsModelsOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+        setIsMegaMenuOpen(false); // Ensure mega menu is closed
+    };
+
     // Desktop Mega Menu
     const DesktopModelsMegaMenu = () => (
         <div className="fixed left-0 top-[75px] w-full h-[75vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
@@ -230,7 +235,8 @@ const Header = () => {
             {/* Mobile menu overlay */}
             {isMobileMenuOpen && (
                 isModelsOpen ? (
-                    <MobileModelsCarousel onBack={() => setIsModelsOpen(false)} />
+                <MobileModelsCarousel onBack={() => setIsModelsOpen(false)} setIsMegaMenuOpen={setIsMegaMenuOpen} />
+
                 ) : (
                     <div className="fixed inset-0 z-50 bg-black overflow-y-auto">
                         {/* Black header with logo centered and close button left */}
@@ -258,11 +264,11 @@ const Header = () => {
                                 className="flex justify-between items-center w-full text-lg py-4 border-b text-black-200 border-gray-700"
                             >
                                 <Typography as="span" variant="subtext-regular-jakarta">
-                                    Models
+                                    Model
                                 </Typography>
                                 <span><ChevronRight /></span>
                             </button>
-                            <Link href="/about" className="py-4 border-b text-black-200 border-gray-700 text-lg">
+                            <Link href="/about"  className="py-4 border-b text-black-200 border-gray-700 text-lg">
 
                                 <Typography variant="subtext-regular-jakarta">
                                     About Us

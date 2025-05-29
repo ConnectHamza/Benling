@@ -8,9 +8,15 @@ import { useState, useEffect } from "react";
 // Import modelsData directly
 import { modelsData } from "./header";
 
-const MobileModelsCarousel = ({ onBack }: { onBack: () => void }) => {
+function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => void; setIsMegaMenuOpen?: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false); // To handle transitions
+
+  const closeMegaMenu = () => {
+    if (setIsMegaMenuOpen) {
+      setIsMegaMenuOpen(false); // Close the mega menu
+    }
+  };
 
   const nextSlide = () => {
     if (isTransitioning) return;
@@ -57,10 +63,9 @@ const MobileModelsCarousel = ({ onBack }: { onBack: () => void }) => {
       {/* Carousel Container */}
       <div className="relative flex flex-col items-center justify-center w-full h-[70vh] overflow-hidden px-4">
         {/* Carousel Slides */}
-
         <div className="text-lg mb-4 font-magistral font-regular text-black-200 text-center pt-4">
-        View our Models
-      </div>
+          View our Models
+        </div>
 
         <div 
           className="flex transition-transform duration-300 ease-in-out"
@@ -77,6 +82,7 @@ const MobileModelsCarousel = ({ onBack }: { onBack: () => void }) => {
               <Link
                 href={model.href}
                 className="flex flex-col items-center h-full"
+                onClick={closeMegaMenu} // Close mega menu when navigating
               >
                 {/* Image Container */}
                 <div className="flex-1 flex items-center justify-center w-full">
@@ -139,6 +145,6 @@ const MobileModelsCarousel = ({ onBack }: { onBack: () => void }) => {
       </div>
     </div>
   );
-};
+}
 
 export default MobileModelsCarousel;
