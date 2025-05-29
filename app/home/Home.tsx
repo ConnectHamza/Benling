@@ -41,7 +41,7 @@ export default function Home() {
         gradient1="transparent"
         gradient2="transparent"
         textColor="text-white"
-        href='/about'
+        href='/crown-benling-about'
         color="white"
       />
       </div>

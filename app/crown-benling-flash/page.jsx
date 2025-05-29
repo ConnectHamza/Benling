@@ -36,6 +36,9 @@ const page = () => {
 
   return (
     <div>
+      <head>
+        <title>Crown Benling Electric Mobility - Flash</title>
+      </head>
       <Banner />
       <StickyBar
         title="Crown Benling Flash"

@@ -40,6 +40,9 @@ const page = () => {
 
   return (
     <div>
+                  <head>
+                <title>Crown Benling Electric Mobility - Roshni</title>
+            </head>
       <Banner />
       <StickyBar
         title="Crown Benling Roshni"

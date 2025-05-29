@@ -38,10 +38,7 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
                 className={`overflow-hidden transition-max-height duration-500 ease-in-out ${activeIndex === index ? 'max-h-96' : 'max-h-0'}`}
               >
                 <div className=' mt-2 py-2'>
-                  <Typography variant='extra-subtext-regular-jakarta'>
-                  {faq.answer}
-
-                  </Typography>
+                <div className="extra-subtext-regular-jakarta" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </div>
               </div>
             </div>

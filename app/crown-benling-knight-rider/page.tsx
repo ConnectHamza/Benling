@@ -17,6 +17,9 @@ import Banner from './Banner'
 const KnightRider = () => {
     return (
         <main>
+                        <head>
+                <title>Crown Benling Electric Mobility - Knight Rider</title>
+            </head>
            <Banner />
            <StickyBar
                 title="Crown Benling Knight Rider"

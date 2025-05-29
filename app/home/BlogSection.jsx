@@ -19,7 +19,7 @@ export default function RecentBlogsCarousel() {
   };
   return (
     <section className="bg-white text-black py-20">
-      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-lg mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <Typography variant="h3-medium-magistral">
           Recent Blog/News

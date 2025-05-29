@@ -1,45 +1,71 @@
-'use client'
+'use client';
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../Button/AppButton";
-import { ArrowLeft, ArrowLeftCircle, ArrowLeftIcon, ArrowRightCircle, BookDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Typography from "../GradientText/Typography";
-const HomeCarousel = ({ items = [], autoplay = false }) => {
-  const [current, setCurrent] = useState(0);
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) => {
+  const [current, setCurrent] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false); // Prevent rapid clicks
+  const [direction, setDirection] = useState(""); // Track navigation direction
+
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: 'ease-in-out' });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [current]);
 
   // Autoplay logic
   useEffect(() => {
     if (!autoplay) return;
 
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % items.length);
-    }, 5000); // 5 seconds autoplay interval
+      handleNext();
+    }, autoplayInterval); // Autoplay interval (default is 5000 ms)
 
-    return () => clearInterval(interval);
-  }, [autoplay, items.length]);
+    return () => clearInterval(interval); // Clean up the interval when component unmounts
+  }, [autoplay, autoplayInterval, items.length, current]);
 
-  const prev = () => setCurrent((current - 1 + items.length) % items.length);
-  const next = () => setCurrent((current + 1) % items.length);
+  const handlePrev = () => {
+    if (isTransitioning) return; // Prevent rapid clicks
+    setIsTransitioning(true);
+    setDirection("left");
+    setCurrent((current - 1 + items.length) % items.length);
+    setTimeout(() => setIsTransitioning(false), 800); // Transition duration
+  };
+
+  const handleNext = () => {
+    if (isTransitioning) return; // Prevent rapid clicks
+    setIsTransitioning(true);
+    setDirection("right");
+    setCurrent((current + 1) % items.length);
+    setTimeout(() => setIsTransitioning(false), 800); // Transition duration
+  };
 
   return (
-    <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">
+    <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20 px-4">
       <div className="w-full flex flex-col items-center justify-center mb-8">
-         <Typography variant='h2-medium-magistral' className="mb-2" data-aos-desktop="fade-up">
+         <Typography variant='h2-medium-magistral' className="mb-2 text-center" data-aos="fade-up">
          Choose Your Perfect Ride
-                        </Typography>
-                        <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center'>
-                        Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
-                        </Typography>
-
+         </Typography>
+         <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center'>
+         Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
+         </Typography>
       </div>
+
       {/* Carousel Wrapper */}
       <div className="relative flex items-center justify-center h-full">
-        
         {/* Previous Bike (Partially Visible) */}
-        <div className="absolute left-[-25%] hidden md:block lg:block ">
+        <div
+          className="absolute left-[-25%] hidden md:block lg:block"
+          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+        >
           <Image
             src={items[(current - 1 + items.length) % items.length]?.image}
             alt="Previous Bike"
@@ -51,20 +77,17 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
 
         {/* Previous Button */}
         <button
-          onClick={prev}
-          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] text-black-30 rounded-full p-3 hover:scale-110 transition z-1"
+          onClick={handlePrev}
+          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
         >
           <ChevronLeft size={35} />
         </button>
 
-
         {/* Current Bike */}
         <div className="w-[70%] mx-auto">
-          <motion.div
+          <div
             key={current}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            data-aos={direction === "right" ? "fade-left" : "fade-right"}
             className="flex items-center justify-center"
           >
             <Image
@@ -74,19 +97,22 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
               height={300}
               className="object-contain"
             />
-          </motion.div>
+          </div>
         </div>
 
         {/* Next Button */}
         <button
-          onClick={next}
-          className="absolute right-[15%] [@media(max-width:640px)]:right-[5% text-black-30 rounded-full p-3 hover:scale-110 transition z-10 "
+          onClick={handleNext}
+          className="absolute right-[15%] [@media(max-width:640px)]:right-[5% text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
         >
           <ChevronRight size={40} />
         </button>
 
         {/* Next Bike (Partially Visible) */}
-        <div className="absolute right-[-25%] hidden md:block lg:block">
+        <div
+          className="absolute right-[-25%] hidden md:block lg:block"
+          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+        >
           <Image
             src={items[(current + 1) % items.length]?.image}
             alt="Next Bike"
@@ -98,7 +124,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       </div>
 
       {/* Flash Title (Logo) */}
-      <div className="text-center mt-8">
+      <div className="text-center mt-8" data-aos="zoom-in">
         <Image
           src={items[current]?.logo}
           alt={`${items[current]?.name} Logo`}
@@ -109,8 +135,8 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       </div>
 
       {/* Motorcycle Details */}
-      <div className="mt-4 text-center">
-        <div className="flex justify-center gap-8 text-sm md:text-base text=[#0A0A0A] font-magistral font-normal">
+      <div className="mt-4 text-center" data-aos="fade-up">
+        <div className="flex justify-center md:gap-8 gap-2 text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
           <Typography variant="body-regular-magistral" >
             Range: <Typography as="span" variant="body-regular-magistral">{items[current]?.range} km</Typography>
           </Typography>
@@ -124,8 +150,7 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
       </div>
 
       {/* Buttons */}
-      <div className="mt-8 flex justify-center gap-4 flex-wrap px-4">
-        {/* Download Brochure Button */}
+      <div className="mt-8 flex justify-center gap-4 flex-wrap px-4" data-aos="fade-up">
         <Button
           variant="outline"
           label="Download Brochure"
@@ -148,7 +173,6 @@ const HomeCarousel = ({ items = [], autoplay = false }) => {
           target="_blank"
         />
       </div>
-
     </div>
   );
 };

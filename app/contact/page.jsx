@@ -72,9 +72,12 @@ export default function About() {
     };
 
     return (
+        <>
+                    <head>
+                <title>Crown Benling Electric Mobility - Contact</title>
+            </head>
         <div>
             <Herosection />
-
             <div className="w-full bg-white">
                 <div className="w-full max-w-[1300px] mx-auto px-4">
                     <div className="w-full flex flex-col md:flex-row gap-8 py-10">
@@ -260,5 +263,6 @@ export default function About() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

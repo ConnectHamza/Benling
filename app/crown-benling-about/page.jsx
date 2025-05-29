@@ -5,10 +5,14 @@ import Subsection from "./SubSection";
 import BrandingSection from "../home/BrandingSection"
 import BlogSection from "../home/BlogSection"
 import ShopSlider from "../find-a-dealer/ShopSection";
+import Head from "next/head";
 
 export default function About() {
     return (
         <div>
+      <head>
+        <title>Crown Benling Electric Mobility - About</title>
+      </head>
             <div>
                 <Herosection />
             </div>

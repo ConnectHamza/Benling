@@ -19,9 +19,9 @@ import Typography from '@/components/GradientText/Typography';
 // ];
 
 const videos = [
-    { video: '/Reels/Firefly-Reel.webm' },
     { video: '/Reels/Firefly-Reel-Female.webm' },
     { video: '/Reels/Flash-Reel-Female.webm' },
+    { video: '/Reels/Firefly-Reel.webm' },
     { video: '/Reels/Flash-Reel-Male.webm' },
 ];
 
@@ -54,6 +54,7 @@ export default function VideoSection() {
                                 src={video.video}
                                 className="w-full h-full object-cover"
                                 autoPlay
+                                muted
                                 loop
                                 controls
                                 playsInline

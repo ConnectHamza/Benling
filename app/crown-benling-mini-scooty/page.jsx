@@ -1,32 +1,29 @@
 "use client"
 import React, { useEffect } from 'react'
-import Banner from './Banner'
 import StickyBar from '@/components/StickyBar/stickyBar'
 import FeaturesSection from '@/components/Features/Features'
 import { featuresData, featureHeader, aboutSpecificationsData, aboutSpecificationsData2, faqsData } from './data'
 import LoopMain from '@/components/LoopCarousel/loop-main'
-import ScootyGrid from '../../public/assets/Spark/SparkGrid.png'
+import ScootyGrid from '../../public/assets/mini-scooty/ScootyGrid.png'
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Tabs from './Tabs'
-import SparkFeaturedIMG from '../../public/assets/Spark/featured-section.png'
-import FeatureMbl from '../../public/assets/Spark/feature-mobile.webp'
-
+import Banner from './Banner'
 import Featured from '@/components/Features/HeroFeature'
+import MiniFeatuedIMG from '../../public/assets/mini-scooty/featured-section.png'
 
-const heading = 'Explore Spark – Charge Your Ride';
+const heading = 'Explore Mini – Small Ride, Big Freedom';
 const colors = [
   { color: '#121212', percentage: 50 },
   { color: '#121212', percentage: 80 },
   { color: '#121212', percentage: 100 },
 ];
 const statsData = [
-  { value: "35-40 km/h", label: "Top Speed" },
-  { value: "35-40 km", label: "Range" },
-  { value: "5-6 Hours", label: "Charging Time" },
+  { value: "30-35km/h", label: "Top Speed" },
+  { value: "30-35km", label: "Range" },
+  { value: "6-8 Hours", label: "Charging Time" },
   { value: "≤15°", label: "Climbing Angle" },
-
 ];
 const page = () => {
 
@@ -36,15 +33,18 @@ const page = () => {
 
   return (
     <div>
+                  <head>
+                <title>Crown Benling Electric Mobility - Mini Scooty</title>
+            </head>
       <Banner />
       <StickyBar
-        title="Crown Benling Spark"
-        description="Lightweight and practical, Spark is powered by a 600W Motor and a 48V 30AH battery, offering a smooth and economical ride. With its sleek design and eco-friendly performance, Spark is the perfect choice for effortless city mobility."
-        gradient1="#C7E4F0"
-        gradient2="#5EB3D2"
-        textColor="text-[#297CA0]"
+        title="Crown Benling Mini Scooty"
+      description="Perfect for short city rides, the Mini Scooty features a 450W Motor and a reliable 48V 23AH battery. Its lightweight design, easy handling, and zero-emission drive make it ideal for everyday convenience with a touch of timeless charm."
+      gradient1="#1DADB5"
+      gradient2="#05080C"
+      textColor="text-[#1DADB5]"
       />
-      <Featured stats={statsData} mobileImageSrc={FeatureMbl} imageAlt={"RoshniX Featured Image"} imageSrc={SparkFeaturedIMG} textColor="text-black"
+      <Featured stats={statsData} imageAlt={"Mini Scooty Feature Image"} mobileImageSrc={MiniFeatuedIMG} imageSrc={MiniFeatuedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       <Tabs />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />

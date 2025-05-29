@@ -14,6 +14,9 @@ import { faqsData } from '../home/data'
 const PerformanceSeries = () => {
     return (
         <div>
+                        <head>
+                <title>Crown Benling Electric Mobility - Performance Series</title>
+            </head>
             {/* Desktop */}
             <div className='h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${PerformanceBanner.src})` }}>
                 <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>

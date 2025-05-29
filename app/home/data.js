@@ -45,7 +45,23 @@ export const faqsData = [
     },
     {
         question: "What warranty do you offer??",
-        answer: "Crown Benling scooters come with industry-leading coverage."
+        answer: `
+        <div>
+            <h3><strong>Legacy Series:M</strong></h3>
+            <ul>
+                <li>36 months / 36,000 km coverage for Controller & Motor</li>
+                <li>18 months / 20,000 km coverage for Graphene Battery</li>
+                <li>12 months / 12,000 km coverage for Body Parts</li>
+            </ul></br>
+            <h3><b>Performance Series:</b></h3>
+            <ul>
+                <li>4 years / 48,000 km coverage for Controller & Motor</li>
+                <li>4 years / 48,000 km coverage for Lithium-LiFePO₄ Battery</li>
+                <li>12 months / 12,000 km coverage for Body Parts</li>
+            </ul>
+            <p>Enjoy your journey with the confidence of extended protection.</p>
+        </div>
+        `
     },
     {
         question: "Do I need a license to ride?",
@@ -65,7 +81,7 @@ export const faqsData = [
       maxSpeed: 70,
       motorPower: 1500,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
-      exploreLink: "/flash",
+      exploreLink: "/crown-benling-flash",
       logo: Logo_Flash.src
     },
     {
@@ -75,7 +91,7 @@ export const faqsData = [
       maxSpeed: 60,
       motorPower: 1500,
       brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-      exploreLink: "/knight-rider",
+      exploreLink: "/crown-benling-knight-rider",
       logo: Logo_Knight_Rider.src
 
     },
@@ -86,7 +102,7 @@ export const faqsData = [
       maxSpeed: 60,
       motorPower: 1500,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-      exploreLink: "/roshnix",
+      exploreLink: "/crown-benling-roshni-x",
       logo: Logo_Roshnix.src
     },
     {
@@ -96,7 +112,7 @@ export const faqsData = [
       maxSpeed: 40,
       motorPower: 650,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
-      exploreLink: "/ezee",
+      exploreLink: "/crown-benling-ezee",
       logo: Logo_Ezze.src
     }, {
       name: "Bike 3",
@@ -105,7 +121,7 @@ export const faqsData = [
       maxSpeed: 60,
       motorPower: 1200,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
-      exploreLink: "/roshni",
+      exploreLink: "/crown-benling-roshni",
       logo: Logo_Roshni.src
     }, {
       name: "Bike 3",
@@ -114,7 +130,7 @@ export const faqsData = [
       maxSpeed: 60,
       motorPower: 1200,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Firefly_Brochure.pdf',
-      exploreLink: "/firefly",
+      exploreLink: "/crown-benling-firefly",
       logo: Logo_Firefly.src
     }, {
       name: "Bike 3",
@@ -123,7 +139,7 @@ export const faqsData = [
       maxSpeed: 40,
       motorPower: 600,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Spark_Brochure.pdf',
-      exploreLink: "/spark",
+      exploreLink: "/crown-benling-spark",
       logo: Logo_Spark.src
     }, {
       name: "Bike 3",
@@ -132,7 +148,7 @@ export const faqsData = [
       maxSpeed: 35,
       motorPower: 450,
       brochureLink: "../../public/assets/Brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
-      exploreLink: "/mini-scooty",
+      exploreLink: "/crown-benling-mini-scooty",
       logo: Logo_Mini_Scooty.src
     }
   ];
@@ -147,7 +163,7 @@ export const Slides = [
         buttonText: 'Explore Now',
         imageSrc: EzeeWeb,
         mobileImageSrc: Ezee,
-        href: "/ezee",
+        href: "/crown-benling-ezee",
         color: "white",
         price: "230,000"      
     },
@@ -157,7 +173,7 @@ export const Slides = [
         buttonText: 'Learn More',
         imageSrc: FireflyWeb,
         mobileImageSrc: Firefly,
-        href: "/firefly",
+        href: "/crown-benling-firefly",
         color: "white",
         price: "195,000"      
 
@@ -168,7 +184,7 @@ export const Slides = [
         buttonText: 'Book Now',
         imageSrc: FlashWeb,
         mobileImageSrc: Flash,
-        href: "/flash",
+        href: "/crown-benling-flash",
         color: "white",
         price: "250,000"      
 
@@ -179,7 +195,7 @@ export const Slides = [
         buttonText: 'Book Now',
         imageSrc: KnightWeb,
         mobileImageSrc: Knight,
-        href: "/knight-rider",
+        href: "/crown-benling-knight-rider",
         color: "white",
         price: "240,000"      
 
@@ -190,7 +206,7 @@ export const Slides = [
         buttonText: 'Book Now',
         imageSrc: MiniWeb,
         mobileImageSrc: Mini,
-        href: "/mini-scooty",
+        href: "/crown-benling-mini-scooty",
         color: "white",
         price: "99,999"      
 
@@ -201,7 +217,7 @@ export const Slides = [
         buttonText: 'Book Now',
         imageSrc: RoshniWeb,
         mobileImageSrc: Roshni,
-        href: "/roshni",
+        href: "/crown-benling-roshni",
         color: "white",
         price: "215,000"      
     },
@@ -211,7 +227,7 @@ export const Slides = [
         buttonText: 'Book Now',
         imageSrc: RoshnixWeb,
         mobileImageSrc: Roshnix,
-        href: "/roshni-x",
+        href: "/crown-benling-roshni-x",
         color: "black-200",
         price: "235,000"      
 
@@ -222,7 +238,7 @@ export const Slides = [
         buttonText: 'Book Now',
         imageSrc: SparkWeb,
         mobileImageSrc: Spark,
-        href: "/spark",
+        href: "/crown-benling-spark",
         color: "black-200",
         price: "145,000"      
 

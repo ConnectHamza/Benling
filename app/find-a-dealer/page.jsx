@@ -31,7 +31,7 @@ export default function Page() {
       maxSpeed: 70,
       motorPower: 1500,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
-      exploreLink: "/flash",
+      exploreLink: "/crown-benling-flash",
       logo: Logo_Flash.src
     },
     {
@@ -41,7 +41,7 @@ export default function Page() {
       maxSpeed: 60,
       motorPower: 1500,
       brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-      exploreLink: "/knight-rider",
+      exploreLink: "/crown-benling-knight-rider",
       logo: Logo_Knight_Rider.src
 
     },
@@ -52,7 +52,7 @@ export default function Page() {
       maxSpeed: 60,
       motorPower: 1500,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-      exploreLink: "/roshnix",
+      exploreLink: "/crown-benling-roshni-x",
       logo: Logo_Roshnix.src
     },
     {
@@ -62,7 +62,7 @@ export default function Page() {
       maxSpeed: 40,
       motorPower: 650,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
-      exploreLink: "/ezee",
+      exploreLink: "/crown-benling-ezee",
       logo: Logo_Ezze.src
     }, {
       name: "Bike 3",
@@ -71,7 +71,7 @@ export default function Page() {
       maxSpeed: 60,
       motorPower: 1200,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
-      exploreLink: "/roshni",
+      exploreLink: "/crown-benling-roshni",
       logo: Logo_Roshni.src
     }, {
       name: "Bike 3",
@@ -80,7 +80,7 @@ export default function Page() {
       maxSpeed: 60,
       motorPower: 1200,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Firefly_Brochure.pdf',
-      exploreLink: "/firefly",
+      exploreLink: "/crown-benling-firefly",
       logo: Logo_Firefly.src
     }, {
       name: "Bike 3",
@@ -89,7 +89,7 @@ export default function Page() {
       maxSpeed: 40,
       motorPower: 600,
       brochureLink: '../../public/assets/Brouchers/Crown_Benling_Spark_Brochure.pdf',
-      exploreLink: "/spark",
+      exploreLink: "/crown-benling-spark",
       logo: Logo_Spark.src
     }, {
       name: "Bike 3",
@@ -98,12 +98,15 @@ export default function Page() {
       maxSpeed: 35,
       motorPower: 450,
       brochureLink: "../../public/assets/Brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
-      exploreLink: "/mini-scooty",
+      exploreLink: "/crown-benling-mini-scooty",
       logo: Logo_Mini_Scooty.src
     }
   ];
   return (
     <>
+                <head>
+                <title>Crown Benling Electric Mobility - Find a Dealer</title>
+            </head>
       <div>
         <ShopSection />
       </div>

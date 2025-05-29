@@ -26,23 +26,28 @@ export default function Ezee() {
 
 
     return (
-        <main>
-            <Banner />
-            <StickyBar
-                title="Crown Benling Ezee"
-                description='Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level.'                
-                gradient1="#410D09"
-                gradient2="#121212"
-                textColor="text-red-300"
-            />
-            <Carousel />
-            <Flawless />
-            <PowerfulSection />
-            <InnovationMain />
-            <LoopMain imageSrc={EzeeLoopIMG} heading={heading} colors={colors} />
-            <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
-            <Faqs data={faqsData} />
-        </main>
+        <>
+            <head>
+                <title>Crown Benling Electric Mobility - Ezee</title>
+            </head>
+            <main>
+                <Banner />
+                <StickyBar
+                    title="Crown Benling Ezee"
+                    description='Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level.'
+                    gradient1="#410D09"
+                    gradient2="#121212"
+                    textColor="text-red-300"
+                />
+                <Carousel />
+                <Flawless />
+                <PowerfulSection />
+                <InnovationMain />
+                <LoopMain imageSrc={EzeeLoopIMG} heading={heading} colors={colors} />
+                <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+                <Faqs data={faqsData} />
+            </main>
+        </>
     );
 }
 

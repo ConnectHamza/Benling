@@ -8,26 +8,34 @@ import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const HeroSection = ({ slides = [] }) => {
+const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
-        // Automatically slide every 5 seconds
-        const interval = setInterval(() => {
-            handleNextSlide();
-        }, 5000);
-
-        return () => clearInterval(interval);
-    }, [slides.length]);
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in-out',
+        });
+    }, []);
 
     useEffect(() => {
-        // Refresh AOS animations whenever the slide changes
+
         AOS.refresh();
     }, [currentSlide]);
 
+    useEffect(() => {
+        if (!autoplay) return;
+
+
+        const interval = setInterval(() => {
+            handleNextSlide();
+        }, autoplayInterval); 
+        
+        return () => clearInterval(interval);
+    }, [autoplay, autoplayInterval, currentSlide]);
+
     const handleNextSlide = () => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
-        console.log(nextSlide)
     };
 
     const handlePrevSlide = () => {
@@ -53,7 +61,7 @@ const HeroSection = ({ slides = [] }) => {
             <div className="absolute inset-0 w-full h-full">
                 {/* Desktop Background */}
                 <div
-                    data-aos-desktop="fade-right" data-aos-mobile="fade-up"
+                    data-aos="fade-right"
                     className="hidden md:block w-full h-full"
                 >
                     <Image
@@ -67,7 +75,7 @@ const HeroSection = ({ slides = [] }) => {
 
                 {/* Mobile Background */}
                 <div
-                    data-aos-desktop="fade-right" data-aos-mobile="fade-up"
+                    data-aos="fade-right"
                     className="block md:hidden w-full h-full"
                 >
                     <Image
@@ -88,15 +96,40 @@ const HeroSection = ({ slides = [] }) => {
                 <div className="container px-6 sm:px-8 mx-auto flex flex-col md:items-center items-start justify-center h-full">
                     <div className="max-w-[1400px] md:px-20">
                         <div className={`md:space-y-6 text-left w-full md:w-[40%] text-${color}`}>
-                            <div className="mb-4" data-aos="fade-right">
+                            {/* Animated Title */}
+                            <div
+                                className="mb-4"
+                                data-aos="fade-right"
+                                data-aos-delay="0" // Start immediately
+                                data-aos-duration="1000" // 1 second duration
+                                key={`title-${currentSlide}`}
+                            >
                                 <Typography variant="h2-medium-magistral">{title}</Typography>
                             </div>
-                            <div className="mb-6 jakarta font-[400]" data-aos="fade-up">
+
+                            {/* Animated Subtitle */}
+                            <div
+                                className="mb-6 jakarta font-[400]"
+                                data-aos="fade-right"
+                                data-aos-delay="500" // 500ms delay after title
+                                data-aos-duration="800" // 0.8 second duration
+                                key={`subtitle-${currentSlide}`}
+                            >
                                 <Typography variant="body-regular-jakarta">{subtitle}</Typography>
                             </div>
-                            <div className='flex items-center gap-4 font-jakarta' data-aos="fade-left">
+
+                            {/* Button and Price */}
+                            <div
+                                className="flex items-center gap-4 font-jakarta"
+                                data-aos="fade-up"
+                                data-aos-delay="1000" // 1 second delay after subtitle
+                                data-aos-duration="800" // 0.8 second duration
+                                key={`button-${currentSlide}`}
+                            >
                                 <Link href={href}>
-                                    <button className={`font-jakarta md:text-md text-sm border-2 border-${color} md:px-6 md:py-2 px-4 py-1 rounded-md flex gap-2 items-center text-${color}`}>Explore More <ArrowRight size={20} /></button>
+                                    <button className={`font-jakarta md:text-md text-sm border-2 border-${color} md:px-6 md:py-2 px-4 py-1 rounded-md flex gap-2 items-center text-${color}`}>
+                                        Explore More <ArrowRight size={20} />
+                                    </button>
                                 </Link>
                                 <div className='md:block hidden'>
                                     <p variant="body-regular-jakarta" className='md:text-sm text-xs'>Priced at</p>
@@ -110,13 +143,13 @@ const HeroSection = ({ slides = [] }) => {
 
             {/* Navigation Arrows */}
             <button
-                className="absolute left-4 md:top-1/2 top-2/3 transform -translate-y-1/2 bg-white/70 p-2 rounded-full z-50"
+                className="absolute left-4 md:top-1/2 top-2/3 transform -translate-y-1/2 bg-white/70 p-2 rounded-full z-40"
                 onClick={handlePrevSlide}
             >
                 <ArrowLeft size={24} />
             </button>
             <button
-                className="absolute right-4 md:top-1/2 top-2/3 transform -translate-y-1/2 bg-white/70 p-2 rounded-full z-50"
+                className="absolute right-4 md:top-1/2 top-2/3 transform -translate-y-1/2 bg-white/70 p-2 rounded-full z-40"
                 onClick={handleNextSlide}
             >
                 <ArrowRight size={24}/>

@@ -26,14 +26,14 @@ import MobileModelsCarousel from "./mobileModelsCarousel";
 
 // --- Model Data ---
 export const modelsData = [
-    { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/flash" },
-    { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "100km Range", speed: "60km/h Top Speed", href: "/knight-rider" },
-    { logo: Logo_Roshnix, img: Image_Roshnix, range: "110km Range", speed: "60km/h Top Speed", href: "/roshnix" },
-    { logo: Logo_Firefly, img: Image_Firefly, range: "100km Range", speed: "60km/h Top Speed", href: "/firefly" },
-    { logo: Logo_Roshni, img: Image_Roshni, range: "120km Range", speed: "60km/h Top Speed", href: "/roshni" },
-    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/spark" },
-    { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/ezee" },
-    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/mini-scooty" }
+    { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/crown-benling-flash" },
+    { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "100km Range", speed: "60km/h Top Speed", href: "/crown-benling-knight-rider" },
+    { logo: Logo_Roshnix, img: Image_Roshnix, range: "110km Range", speed: "60km/h Top Speed", href: "/crown-benling-roshni-x" },
+    { logo: Logo_Firefly, img: Image_Firefly, range: "100km Range", speed: "60km/h Top Speed", href: "/crown-benling-firefly" },
+    { logo: Logo_Roshni, img: Image_Roshni, range: "120km Range", speed: "60km/h Top Speed", href: "/crown-benling-roshni" },
+    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark" },
+    { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/crown-benling-ezee" },
+    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/crown-benling-mini-scooty" }
 ];
 // --- Mobile Models Panel (define ONCE only) ---
 function MobileModelsPanel({ onBack }) {
@@ -169,12 +169,12 @@ const Header = () => {
                         </Typography>
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
                     </div>
-                    <Link href="/about" className={`${navLink} flex items-center h-full`}>
+                    <Link href="/crown-benling-about" className={`${navLink} flex items-center h-full`}>
                         <Typography variant="subtext-regular-jakarta">
                             About Us
                         </Typography>
                     </Link>
-                    <Link href="/performance-series" className={`${navLink} flex items-center h-full`}>
+                    <Link href="/crown-benling-performance-series" className={`${navLink} flex items-center h-full`}>
                         <Typography variant="subtext-regular-jakarta">
                             Performance Series
                         </Typography>
@@ -258,7 +258,7 @@ const Header = () => {
                             <div className="w-8" /> {/* empty space to center logo */}
                         </div>
 
-                        <div className="flex flex-col gap-2 px-6 py-6 text-white bg-white min-h-[calc(100vh-64px)] font-jakarta">
+                        <div className="flex flex-col gap-2 px-6 py-6 text-white bg-white min-h-[80vh] font-jakarta z-60 scrollbar-none">
                             <button
                                 onClick={() => setIsModelsOpen(true)}
                                 className="flex justify-between items-center w-full text-lg py-4 border-b text-black-200 border-gray-700"
@@ -269,16 +269,30 @@ const Header = () => {
                                 <span><ChevronRight /></span>
                             </button>
 
-                            <Link href="/about" onClick={(e) => {
+                            <Link href="/crown-benling-about" onClick={(e) => {
                                 e.preventDefault();
                                 setIsModelsOpen(false);
                                 setTimeout(() => {
-                                    window.location.href = "/about";
+                                    window.location.href = "/crown-benling-about";
                                 }, 0);
                             }} className="py-4 border-b text-black-200 border-gray-700 text-lg">
 
                                 <Typography variant="subtext-regular-jakarta">
                                     About Us
+                                </Typography>                                
+                            </Link>
+
+
+                            <Link href="/crown-benling-performance-series" onClick={(e) => {
+                                e.preventDefault();
+                                setIsModelsOpen(false);
+                                setTimeout(() => {
+                                    window.location.href = "/crown-benling-performance-series";
+                                }, 0);
+                            }} className="py-4 border-b text-black-200 border-gray-700 text-lg">
+
+                                <Typography variant="subtext-regular-jakarta">
+                                    Performance Series
                                 </Typography>                                
                             </Link>
 

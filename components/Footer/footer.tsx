@@ -58,7 +58,7 @@ const Footer = () => {
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
                             <li className="mb-2">
-                                <Link href="/about">
+                                <Link href="/crown-benling-about">
                                     <Typography variant='subtext-regular-jakarta'>About us</ Typography>
                                 </Link>
                             </li>
