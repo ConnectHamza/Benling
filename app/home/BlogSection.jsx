@@ -21,10 +21,11 @@ export default function RecentBlogsCarousel() {
     <section className="bg-white text-black py-20">
       <div className="w-lg pl-[calc((100vw-1300px)/2+1rem)] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
+        <div data-aos="zoom-in-right" data-aos-delay="0">
         <Typography variant="h3-medium-magistral">
           Recent Blog/News
         </Typography>
-
+        </div>
         {/* Scrollable Blog Cards */}
         <div className="relative">
           <div
@@ -33,6 +34,7 @@ export default function RecentBlogsCarousel() {
           >
             {blogs.map((blog) => (
               <div
+              data-aos="fade-up"
                 key={blog.slug}
                 className="flex-shrink-0 w-[85vw] sm:w-[300px] md:w-[350px] lg:w-[400px] py-4 flex flex-col justify-between"
               >

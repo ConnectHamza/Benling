@@ -319,6 +319,13 @@ export const cities =
         "address": "Main National highway, opposite Quaid e Azam Park, Steel Town",
         "phone": ["0334-3704587"],
         "location": "https://www.google.com/maps/place/24%C2%B051'36.7%22N+67%C2%B020'02.2%22E/@24.8601894,67.3313561,17z/data=!3m1!4b1!4m4!3m3!8m2!3d24.8601894!4d67.333931?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "id": 29,
+        "name": "Akber Road Outlet",
+        "address": "Secretariat View, AM 20, Frere Road, Saddar, Akber Road, Karachi",
+        "phone": ["0321-2721818"],
+        "location": "https://www.google.com/maps?q=24.85955810546875,67.02307891845703&z=17&hl=en"
       }
     ]
   },

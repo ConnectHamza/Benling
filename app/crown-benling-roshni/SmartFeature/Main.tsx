@@ -14,11 +14,11 @@ const SmartFeature = () => {
     }}
     >        
     <div>
-    <h2 className='heading2 text-white text-center font-magistral'>Smart Features for Every Ride</h2>
+    <h2 className='heading2 text-white text-center font-magistral' data-aos="zoom-out">Smart Features for Every Ride</h2>
     </div>
    
     <div className='flex justify-center '>
-        <Image src={SmartFeatureIMG} alt='Smart Feature IMG' className='w-[70%] z-40' />
+        <Image src={SmartFeatureIMG} alt='Smart Feature IMG' className='w-[70%] z-40' data-aos="fade-up"/>
     </div>
     <FeatureBar/>
     </div>

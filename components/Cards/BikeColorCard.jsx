@@ -3,9 +3,9 @@ import Typography from "../GradientText/Typography";
 
 const BikeColorCard = ({ imageSrc, gradient, title }) => {
   return (
-    <div className="w-full md:w-[45%] px-2 flex flex-col items-center">
+    <div className="w-full md:w-[45%] px-2 flex flex-col items-center ">
       {/* Container for Capsule and Image */}
-      <div className="relative w-full h-[280px] md:h-[550px] flex justify-center items-end overflow-visible">
+      <div className="relative w-full h-[220px] md:h-[450px] flex justify-center items-end overflow-visible mt-20">
         
         {/* Capsule */}
         <div
@@ -14,7 +14,7 @@ const BikeColorCard = ({ imageSrc, gradient, title }) => {
         ></div>
 
         {/* Image Positioned Above Capsule */}
-        <div className="absolute -top-7 md:top-5 lg:top-5 z-10">
+        <div className="absolute -top-7 md:top-5 lg:top-5 z-10" data-aos="zoom-in">
           <Image
             src={imageSrc}
             alt={title}
@@ -26,7 +26,7 @@ const BikeColorCard = ({ imageSrc, gradient, title }) => {
       </div>
 
       {/* Title */}
-      <h4 className="mt-6 text-center">
+      <h4 className="mt-6 text-center" data-aos="zoom-out">
         <Typography variant="h4-medium-magistral">
         {title}
 

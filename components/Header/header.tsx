@@ -125,6 +125,8 @@ const Header = () => {
                                 {/* Image */}
                                 <div className="flex items-center justify-center h-[120px] w-full">
                                     <Image
+                                        data-aos="zoom-in"
+                                        data-aos-delay="0"
                                         src={model.img}
                                         alt={model.href}
                                         width={220}
@@ -134,12 +136,16 @@ const Header = () => {
                                 </div>
                                 <div className="mt-6 h-[20px] flex items-center justify-center">
                                     <Image
+                                    data-aos="zoom-out"
+                                    data-aos-delay="300"
                                         src={model.logo}
                                         alt={model.href}
                                         className="mx-auto h-[24px] mb-4"
                                     />
                                 </div>
-                                <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta">
+                                <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta"                                   
+                                    data-aos="fade-in"
+                                    data-aos-delay="600">
                                     {model.range} | {model.speed}
                                 </div>
                             </a>
@@ -185,7 +191,7 @@ const Header = () => {
 
                 {/* Logo with black background */}
                 {!isMobileMenuOpen && <a href="/" className="flex items-center justify-center bg-black px-4 py-1 rounded">
-                    <Image src="/assets/Header-Footer/Benling-Logo.svg" alt="Logo" width={120}
+                    <Image src="/assets/Header-Footer/Benling-Logo.svg" alt="Logo"  width={120}
                         height={80} priority />
                 </a>}
                 {/* Right nav - vertically centered */}

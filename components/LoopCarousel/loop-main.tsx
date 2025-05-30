@@ -30,7 +30,9 @@ const LoopMain: React.FC<LoopMainProps> = ({ imageSrc, heading, colors }) => {
        whileInView="visible"
        viewport={{ once: false, amount: 0.2 }}
       > */}
+      <div data-aos="zoom-in">
         <GradientText heading={heading} colors={colors} />
+        </div>
       {/* </motion.div> */}
       <LoopCarousel src={imageSrc} />
     </div>

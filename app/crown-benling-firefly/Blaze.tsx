@@ -6,8 +6,11 @@ import Image from 'next/image'
 const Blaze = () => {
   return (
     <div className="w-full bg-gray-50 flex flex-col justify-center relative items-center">
-        <Image src={BlazeIMG} alt='Blaze Logo' className='absolute text-center z-10 top-[20%] w-[70%]'/>
-        <Image src={BlazeIMG2} alt='Blaze Image' className='z-20'/>
+        <Image src={BlazeIMG} alt='Blaze Logo' className='absolute text-center z-10 top-[20%] w-[70%]' data-aos="zoom-in" data-aos-delay="600"/>
+        <Image src={BlazeIMG2} alt='Blaze Image' className='z-20' data-aos="zoom-out"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"/>
     </div>
 
   )

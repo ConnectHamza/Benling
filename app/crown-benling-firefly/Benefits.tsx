@@ -7,17 +7,22 @@ import Typography from '@/components/GradientText/Typography'
 
 const Benefits = () => {
     return (
-        <div className="w-full flex justify-center px-5 md:pt-40 pt-20 flex-col">
+        <div className="w-full flex justify-center px-5 md:py-40 py-20 flex-col">
             <div className="md:w-lg text-center self-center">
+                <div data-aos="zoom-in">
                 <Typography as="p" variant='h2-bold-magistral'>
                     Performance, Comfort & Control
                 </Typography>
+                </div>
+                <div data-aos="zoom-out">
                 <Typography variant='subtext-regular-jakarta' as='p'>
                     Experience Firefly's advanced features, including long-range battery power, a smooth motor, a digital display, and an ergonomic design for effortless rides.
                 </Typography>
+                </div>
             </div>
             <div className="md:w-lg mt-10 flex flex-col self-center gap-10">
-                <div className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5' style={{ backgroundImage: `url(${PowerfulIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                <div data-aos="slide-right"
+                 className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5' style={{ backgroundImage: `url(${PowerfulIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                     <Typography as="p" className='mb-2' variant='h2-bold-magistral'>
                         Powerful Motor
                     </Typography>
@@ -25,7 +30,8 @@ const Benefits = () => {
                         The 1200W Brushless Motor delivers smooth acceleration and powerful climbing capability.
                     </Typography>
                 </div>
-                <div className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5 self-end' style={{ backgroundImage: `url(${ComfortableIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                <div data-aos="slide-left"
+                className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5 self-end' style={{ backgroundImage: `url(${ComfortableIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                     <Typography as="p" className='mb-2' variant='h2-bold-magistral'>
                         Comfortable Build
                     </Typography>
@@ -33,7 +39,8 @@ const Benefits = () => {
                         Firefly’s ergonomic seating offers superior comfort and support, ensuring effortless and enjoyable rides every time.
                     </Typography>
                 </div>
-                <div className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5' style={{ backgroundImage: `url(${GrapheneIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                <div data-aos="slide-right"
+                 className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5' style={{ backgroundImage: `url(${GrapheneIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                     <Typography as="p" className='mb-2' variant='h2-bold-magistral'>
                         Graphene Battery
                     </Typography>
@@ -41,7 +48,8 @@ const Benefits = () => {
                         Experience superior efficiency and durability with the 60V, 35Ah graphene lithium battery, offering up to 105 km range on a single charge.
                     </Typography>
                 </div>
-                <div className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5 self-end' style={{ backgroundImage: `url(${DigitalIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                <div data-aos="slide-left"
+                className='md:w-[60%] md:h-[70vh] h-[50vh] rounded-10 text-white md:p-10 p-5 self-end' style={{ backgroundImage: `url(${DigitalIMG.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                     <Typography as="p" className='mb-2' variant='h2-bold-magistral'>
                         Digital Display
                     </Typography>

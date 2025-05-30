@@ -3,7 +3,7 @@ import SparkWeb from "../../public/assets/Home/Header/web/spark.webp"
 import HeroSection from '@/components/Herocontainer/Herocontainer'
 import BannerMobile from '../../public/assets/Spark/main-mobile.webp'
 
-const Banner = () => {
+const Banner = (textColor: string) => {
     return (
         <div className='pt-[75px]'>
             <HeroSection
@@ -11,7 +11,8 @@ const Banner = () => {
                 subtitle="The Spark electric scooter offers a powerful ride with modern styling. Ride confidently with advanced safety and electric performance, made for Pakistan's roads."
                 buttonText="Explore More"
                 imageSrc={SparkWeb.src}
-                mobileImageSrc={BannerMobile.src}
+                mobileImageSrc={BannerMobile.src}                
+
             />
         </div>
 

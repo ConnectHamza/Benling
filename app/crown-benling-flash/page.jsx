@@ -28,6 +28,7 @@ const statsData = [
   { value: "9-11 Hours", label: "Charging Time" },
   { value: "≤20°", label: "Climbing Angle" },
 ];
+
 const page = () => {
 
   useEffect(() => {

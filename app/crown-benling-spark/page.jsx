@@ -36,9 +36,9 @@ const page = () => {
 
   return (
     <div>
-                  <head>
-                <title>Crown Benling Electric Mobility - Spark</title>
-            </head>
+      <head>
+        <title>Crown Benling Electric Mobility - Spark</title>
+      </head>
       <Banner />
       <StickyBar
         title="Crown Benling Spark"
@@ -47,7 +47,7 @@ const page = () => {
         gradient2="#5EB3D2"
         textColor="text-[#297CA0]"
       />
-      <Featured stats={statsData} mobileImageSrc={FeatureMbl} imageAlt={"RoshniX Featured Image"} imageSrc={SparkFeaturedIMG} textColor="text-black"
+      <Featured stats={statsData} itemsPosition='items-start' mobileImageSrc={FeatureMbl} imageAlt={"RoshniX Featured Image"} imageSrc={SparkFeaturedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       <Tabs />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />

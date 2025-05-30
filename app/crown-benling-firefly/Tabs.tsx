@@ -28,7 +28,7 @@ const Tabs = () => {
 
         {/* Text and Tabs */}
         <div className="md:w-[40%] w-full">
-          <h2 className="text-[22px] md:text-[30px] font-bold font-magistral mb-4 text-center md:text-left">
+          <h2 className="text-[22px] md:text-[30px] font-bold font-magistral mb-4 text-center md:text-left" data-aos="zoom-in">
             Pick Your Ideal Tint
           </h2>
           <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-3 mt-10">
@@ -43,9 +43,11 @@ const Tabs = () => {
                   ${activeTab === item.label ? 'text-white bg-[#16514C] ' : 'text-gray-400 bg-transparent'}
                 `}
               >
+                <div data-aos="zoom-out">
                 <Typography variant='h2-bold-magistral' className='font-bold text-5xl'>
                   {item.label}
                 </Typography>
+                </div>
               </div>
             ))}
           </div>

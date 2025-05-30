@@ -6,6 +6,8 @@ import MotorBg from '../../public/assets/PerformanceSeries/feature/Motors.webp';
 import Motor from '../../public/assets/Home/Feature/motor.png';
 import FeatureCard from '@/components/Features/FeatureCard';
 import Typography from '@/components/GradientText/Typography';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const features = [
   {
@@ -13,6 +15,7 @@ const features = [
     backgroundImage: SpeedBg.src,
     heading: "High-Speed Performance",
     description: "Enjoy speeds up to 90-95 km/h with smooth, agile control for urban and suburban rides.",
+    
   },
   {
     imageSrc: SafetyBg.src,
@@ -44,42 +47,37 @@ const FeatureSection = () => (
   <section className="w-full bg-[#13102A] md:py-40 py-20 px-5">
     <div className="max-w-[1300px] mx-auto ">
       <div className="mb-2">
+        <div data-aos="zoom-out">
         <Typography color='text-white' variant='h3-medium-magistral'>
         Engineered for Peak Performance
         </Typography>
+        </div>
       </div>
+        <div data-aos="zoom-in">
       <Typography variant='subtext-regular-jakarta' className="mb-6 text-white">
       Crown Benling’s Performance Series offers adaptable speed modes and intelligent engineering, crafted for riders who demand precision, power, and control on every road.
       </Typography>
-      <div
-        className="
-          grid grid-cols-1 gap-4
-          md:grid-cols-5 md:grid-rows-3
-          pt-5
-        "
-        style={{ minHeight: "500px" }}
-      >
-        {/* 1st card: full width */}
-        <div className="md:col-span-5">
-          <FeatureCard {...features[0]} />
-        </div>
-        {/* 2nd card: 2 columns (40%) */}
-        <div className="md:col-span-3">
-          <FeatureCard {...features[1]} />
-        </div>
-        {/* 3rd card: 3 columns (60%) */}
-        <div className="md:col-span-2">
-          <FeatureCard {...features[2]} />
-        </div>
-        {/* 4th card: 2 columns (40%) */}
-        <div className="md:col-span-2">
-          <FeatureCard {...features[3]} />
-        </div>
-        {/* 5th card: 3 columns (60%) */}
-        <div className="md:col-span-3">
-          <FeatureCard {...features[4]} />
-        </div>
       </div>
+        <div
+          className="grid grid-cols-1 gap-4 md:grid-cols-5 md:grid-rows-3 pt-5"
+          style={{ minHeight: "500px" }}
+        >
+          <div className="md:col-span-5" data-aos="fade-up">
+            <FeatureCard {...features[0]} />
+          </div>
+          <div className="md:col-span-3" data-aos-desktop="fade-right" data-aos-mobile="fade-up" data-aos-delay="100">
+            <FeatureCard {...features[1]} />
+          </div>
+          <div className="md:col-span-2" data-aos-desktop="fade-left" data-aos-mobile="fade-up" data-aos-delay="200">
+            <FeatureCard {...features[2]} />
+          </div>
+          <div className="md:col-span-2" data-aos-desktop="fade-right" data-aos-mobile="fade-up" data-aos-delay="300">
+            <FeatureCard {...features[3]} />
+          </div>
+          <div className="md:col-span-3" data-aos-desktop="fade-left" data-aos-mobile="fade-up" data-aos-delay="400">
+            <FeatureCard {...features[4]} />
+          </div>
+        </div>
     </div>
   </section>
 );

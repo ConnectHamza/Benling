@@ -1,9 +1,9 @@
 import Typography from "@/components/GradientText/Typography";
-import Bikeblue from "../../public/assets/flash/ColorSection/color1.png";
-import Bikesilver from "../../public/assets/flash/ColorSection/color2.png";
-import BikeArmygreen from "../../public/assets/flash/ColorSection/color3.png";
-import BikeMattblack from "../../public/assets/flash/ColorSection/color4.png";
-import BikeRed from "../../public/assets/flash/ColorSection/color5.png";
+import Bikeblue from "../../public/assets/flash/ColorSection/color1.webp";
+import Bikesilver from "../../public/assets/flash/ColorSection/color2.webp";
+import BikeArmygreen from "../../public/assets/flash/ColorSection/color3.webp";
+import BikeMattblack from "../../public/assets/flash/ColorSection/color4.webp";
+import BikeRed from "../../public/assets/flash/ColorSection/color5.webp";
 import BikeColorCard from "@/components/Cards/BikeColorCard";
 
 
@@ -40,14 +40,17 @@ export default function RoshniColorShowcase() {
     return (
         <section className="bg-black md:py-40 py-20 px-4 text-white bg-black-30">
             <div className="text-center text-4xl md:text-4xl mb-10 font-magistral">
+                <div className="mb-4" data-aos="zoom-out">
                 <Typography variant="h2-medium-magistral">
                     Color your World With Flash
-
                 </Typography>
+                    </div>
+                    <div data-aos="fade-up">
                 <Typography as='div' variant="body-regular-jakarta">
                     Flash is available in a vibrant range of colors, perfectly curated to match every style. Choose from classic tones to bold hues for a
                     standout look.
                 </Typography>
+            </div>
             </div>
             <div className="flex flex-wrap justify-center">
                 <div className="w-lg flex flex-wrap justify-center md:gap-10">                    

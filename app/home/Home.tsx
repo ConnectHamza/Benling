@@ -13,8 +13,8 @@ import Pak from '../../public/assets/Home/Branding/pakistanmap.png';
 import Image from 'next/image';
 import CrownAboutIMG from '../../public/assets/Home/Header/heroimagesub.webp'
 import Faqs from '@/components/Faqs/Faqs'
-import SalesAfterSalesSection from '../find-a-dealer/SaleSection'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { faqsData, Slides, bikes } from './data';
 import Typography from '@/components/GradientText/Typography';
@@ -57,17 +57,21 @@ export default function Home() {
       </div>
       
         <section className="px-4 flex justify-center">
-          <div className="w-full max-w-[1250px] rounded-xl bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] px-4 md:px-6 py-12">
+          <div className="w-full max-w-[1250px] rounded-xl bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] px-4 md:px-6 py-12" data-aos="zoom-in" data-aos-delay="0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 items-center">
               {/* Left: Text Block */}
               <div className="text-white flex flex-col space-y-6">
-                <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} />
+                <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} data-aos="zoom-out" data-aos-delay="500" />
+                <div data-aos="fade-right" data-aos-delay="800">
                 <Typography variant='h3-medium-magistral' >
                   Pakistan Largest EV Scooter Growing Network
                 </Typography>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="1000">
                 <Typography variant="subtext-regular-jakarta">
                   Crown Benling is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
                 </Typography>
+                </div>
               </div>
 
               {/* Right: Map */}

@@ -8,6 +8,7 @@ import Yellow from '../../public/assets/mini-scooty/Variants/yellow.png';
 import Red from '../../public/assets/mini-scooty/Variants/red.png';
 
 import Shadowjet from '../../public/assets/mini-scooty/Variants/shadowjet.png';
+import { div } from 'framer-motion/client';
 
 
 const Tabs = () => {
@@ -18,11 +19,11 @@ const Tabs = () => {
   };
   return (
     <div className="w-full flex justify-center md:px-10 px-5 py-10 bg-gray-50 md:h-[100vh]">
-      <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center md:ml-20 gap-8">
+      <div className="w-lg flex flex-col-reverse md:flex-row justify-between items-center md:ml-20 gap-8">
 
         {/* Left Section (Text + Tabs) */}
         <div className="md:w-[40%] w-full">
-          <div className="text-[24px] md:text-[30px] font-semibold font-magistral mb-4 text-center md:text-left">
+          <div className="text-[24px] md:text-[30px] font-semibold font-magistral mb-4 text-center md:text-left" data-aos="zoom-in">
             Express Yourself in Every Shade
           </div>
           <div className="mt-5 flex flex-wrap md:flex-col justify-center md:justify-start gap-x-4 gap-y-2">
@@ -32,6 +33,7 @@ const Tabs = () => {
     { id: '3', label: 'Cherry Zoom' },
     { id: '4', label: 'Vanilla Pop' },
   ].map((tab) => (
+    <div data-aos="zoom-out">
     <h3
       key={tab.id}
       className={`
@@ -44,6 +46,7 @@ const Tabs = () => {
     >
       {tab.label}
     </h3>
+    </div>
   ))}
 </div>
 
@@ -52,10 +55,10 @@ const Tabs = () => {
 
         {/* Right Section (Image) */}
         <div className="md:w-[60%] w-full flex justify-center">
-          {activeTab === '1' && <Image src={Shadowjet} alt="Mini Scooty Shadow Jet" className="w-full h-auto object-contain" />}
-          {activeTab === '2' && <Image src={Green} alt="Mini Scooty Bubble Blue" className="w-full h-auto object-contain" />}
-          {activeTab === '3' && <Image src={Red} alt="Mini Scooty Cherry Zoom" className="w-full h-auto object-contain" />}
-          {activeTab === '4' && <Image src={Yellow} alt="Mini Scooty Vanilla Pop" className="w-full h-auto object-contain" />}
+          {activeTab === '1' && <Image src={Shadowjet} alt="Mini Scooty Shadow Jet" className="w-full h-auto object-contain" data-aos="slide-left"/>}
+          {activeTab === '2' && <Image src={Green} alt="Mini Scooty Bubble Blue" className="w-full h-auto object-contain"data-aos="slide-left" />}
+          {activeTab === '3' && <Image src={Red} alt="Mini Scooty Cherry Zoom" className="w-full h-auto object-contain" data-aos="slide-left"/>}
+          {activeTab === '4' && <Image src={Yellow} alt="Mini Scooty Vanilla Pop" className="w-full h-auto object-contain" data-aos="slide-left"/>}
         </div>
       </div>
     </div>

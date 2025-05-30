@@ -23,15 +23,20 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
   return (
     <div className='w-full bg-gray-100 flex justify-center px-5 py-10 md:py-[100px]'>
       <div className="w-md">
+        <div data-aos="zoom-in-up" >
         <Typography variant='h3-medium-magistral' className='text-center'>FAQ'S</Typography>
+        </div>
         <div className='mt-5'>
           {data.map((faq, index) => (
             <div key={index} className='mb-5'>
               <div
                 className='flex justify-between items-center font-bold md:text-[20px] text-[15px] cursor-pointer md:py-3 py-2 font-jakarta'
                 onClick={() => toggleAccordion(index)}
+                data-aos="zoom-out" data-aos-delay="500"
               >
+                <div>
                 <Typography as='span' variant='subtext-semibold-jakarta' className=' transform transition-all duration-100 ease-in-out hover:-translate-y-1'>{faq.question}</Typography>
+                </div>
                 <FontAwesomeIcon icon={activeIndex === index ? faChevronRight : faChevronDown} />
               </div>
               <div

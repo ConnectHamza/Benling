@@ -13,7 +13,7 @@ const LedSection = () => {
             }}>
             <div className="w-lg justify-end flex">
                 <div className='md:w-[45%]'>
-                    <div>
+                    <div data-aos="fade-up">
                         <Typography as='span' variant='h2-medium-magistral' color='text-black' >
                             Powerful LED
                         </Typography>

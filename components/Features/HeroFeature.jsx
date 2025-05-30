@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from "../GradientText/Typography";
 
+
 const StatCard = ({
   value,
   label,
@@ -11,6 +12,7 @@ const StatCard = ({
 }) => {
   return (
     <div
+    data-aos="zoom-in"
       className={`rounded-xl px-4 py-3 w-full ${bgColor} ${textColor} text-center shadow-md`}
       style={{ backdropFilter: 'blur(10px)' }}
     >
@@ -28,6 +30,7 @@ const Featured = ({
   cardBgColor,
   titleVariant,
   subtitleVariant,
+  itemsPosition,
 }) => {
   return (
     <>
@@ -44,12 +47,12 @@ const Featured = ({
       `}</style>
 
       <div
-        className="w-full md:h-screen h-[90vh] bg-cover bg-center flex items-end justify-center px-4 md:py-10 py-5 responsive-bg"
+        className={`w-full md:h-screen h-[90vh] bg-cover bg-center flex justify-center pt-10 px-4 md:py-10 py-5 responsive-bg md:items-end ${itemsPosition ? itemsPosition : 'items-end'} `}
         style={{
-          backgroundSize: 'cover'          
+          backgroundSize: 'cover'
         }}
       >
-        <div className="flex md:flex-nowrap flex-wrap gap-y-4 md:gap-4 w-full justify-center">
+        <div className="flex md:flex-nowrap flex-wrap gap-y-4 md:gap-4 w-lg justify-center">
           {stats.map(({ value, label }, idx) => (
             <div key={idx} className="w-1/2 md:w-1/4 px-2">
               <StatCard

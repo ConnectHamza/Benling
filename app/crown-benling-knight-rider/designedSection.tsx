@@ -21,50 +21,65 @@ const DesignedSection = () => {
       <div className="absolute inset-0 flex px-5 py-10 md:py-0 md:items-center items-end justify-center z-10">
         <div className="w-lg">
           <div className="md:w-[45%] animation-scroll">
-            <div>
+            <div data-aos="fade-up">
               <Typography className='text-[#FFF]' variant='h2-medium-magistral'>
                 Designed for Power and Performance
               </Typography>
             </div>
             <div className="flex md:gap-10 md:mt-10 mt-5">
               <div className="w-[50%]">
+                <div data-aos="zoom-in">
                 <Typography as='span' className='text-white' variant='body-regular-jakarta'>
                   Top Speed
-                </Typography>
+                </Typography>                
                 <br />
+                </div>
+                <div data-aos="zoom-out">
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
                   50-60km/h
                 </Typography>
+                </div>
               </div>
               <div className="w-[50%]">
+              <div data-aos="zoom-in">
                 <Typography as='span' className='text-white' variant='body-regular-jakarta'>
                   Graphene Battery
                 </Typography>
                 <br />
+                </div>
+                <div data-aos="zoom-out">
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
                   72V / 36Ah
                 </Typography>
+                </div>
               </div>
             </div>
             <div className="flex md:gap-10 md:mt-5 mt-3">
               <div className="w-[50%]">
+              <div data-aos="zoom-in">
                 <Typography as='span' className='text-white' variant='body-regular-jakarta'>
                   Full Charge Range
                 </Typography>
                 <br />
+                </div>
+                <div data-aos="zoom-out">
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
                   Up to 100KM
                 </Typography>
-               
+               </div>
               </div>
               <div className="w-[50%]">
+              <div data-aos="zoom-in">
                    <Typography as='span' className='text-white' variant='body-regular-jakarta'>
                   Brushless Motor
                 </Typography>
                 <br />
+                </div>
+                <div data-aos="zoom-out">
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
                  1500W
                 </Typography>
+                </div>
               </div>
             </div>
           </div>

@@ -95,8 +95,8 @@ export default function ShopSlider() {
         {/* Heading Section */}
         <div className="relative z-10 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 ">
-            <div className="font-magistral max-w-full md:max-w-[50%]">
-              <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+            <div className="font-magistral max-w-full md:max-w-[50%]" data-aos="fade-right">
+              <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight" >
                 <Typography as="span" variant='h3-medium-magistral' className='text-[#0A0A0A]'>
                   Explore Our Nationwide Network{" "}
                 </Typography> <br />
@@ -141,6 +141,7 @@ export default function ShopSlider() {
             >
               {cities[selectedCity].data.map((shop) => (
                 <div
+                  data-aos="fade-up"
                   key={shop.id}
                   className=" w-[85vw] sm:w-[280px] md:w-[320px] h-[300px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
                 >
@@ -182,7 +183,7 @@ export default function ShopSlider() {
           </div>
 
           {/* Scroll Buttons (Bottom of Cards) */}
-          <div className="mt-6 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mt-6 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 bg-black z-20">
             <div className="flex gap-2">
               <button
                 onClick={() => handleScroll('prev')}

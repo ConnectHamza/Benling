@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
-import FlawlessImg from '../../public/assets/Ezee/Flawless-Design.png';
+import FlawlessImg from '../../public/assets/Ezee/Flawless-Design.webp';
 import Typography from '@/components/GradientText/Typography';
 
 
@@ -19,41 +19,40 @@ const imageVariants = {
 
 const Flawless = () => {
   return (
-    <div className='w-full md:px-20 px-5 flex justify-center'
+    <div className='w-full md:px-20 px-5 pt-20 md:pt-0 flex justify-center'
       style={{ background: 'linear-gradient(to right, #AB1609 10%, #F31C09 100%)' }}>
 
       <div className='w-full flex md:flex-row flex-col'>
         {/* Text Animation (Slide from Left) */}
-        <motion.div
-          className='md:w-[55%] text-white sm:pt-20 flex flex-col'
-          variants={textVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+        <div
+          className='md:w-[55%] text-white justify-center flex flex-col '
         >
           <Typography className='leading-3'>
+            <div data-aos="zoom-in">
             <Typography as='p' variant='h5-regular-magistral'  >
               Fearless Rides.
             </Typography>
             <br />
-            <Typography variant='h2-bold-magistral'>Flawless Design.</Typography>
+            </div>
+            <div data-aos="fade-right">
+            <Typography variant='h2-bold-magistral' className='my-2'>Flawless Design.              
+            </Typography>
+            </div>
           </Typography>
+          <div data-aos="fade-right">
           <Typography variant='body-regular-jakarta'>
             With dimensions of 1800mm x 690mm x 1250mm and lightweight construction (116 kg),
             the Ezee is perfect for urban commutes.
           </Typography>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Image Animation (Slide from Right) */}
-        <motion.div
-          className='md:w-[70%]'
-          variants={imageVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+        <div
+          className='md:w-[70%] '
         >
-          <Image src={FlawlessImg} alt='Flawless Design' />
-        </motion.div>
+          <Image src={FlawlessImg} className='w-full' alt='Flawless Design' data-aos="slide-left"/>
+        </div>
       </div>
     </div>
   );

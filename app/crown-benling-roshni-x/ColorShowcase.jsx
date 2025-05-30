@@ -1,8 +1,8 @@
-import Bikeblue from "../../public/assets/RoshniX/ColorSection/blue.png";
-import Bikesilver from "../../public/assets/RoshniX/ColorSection/silver.png";
-import BikeArmygreen from "../../public/assets/RoshniX/ColorSection/armygreen.png";
-import BikeMattblack from "../../public/assets/RoshniX/ColorSection/mattblack.png";
-import BikeRed from "../../public/assets/RoshniX/ColorSection/red.png";
+import Bikeblue from "../../public/assets/RoshniX/ColorSection/blue.webp";
+import Bikesilver from "../../public/assets/RoshniX/ColorSection/silver.webp";
+import BikeArmygreen from "../../public/assets/RoshniX/ColorSection/armygreen.webp";
+import BikeMattblack from "../../public/assets/RoshniX/ColorSection/mattblack.webp";
+import BikeRed from "../../public/assets/RoshniX/ColorSection/red.webp";
 import BikeColorCard from "@/components/Cards/BikeColorCard";
 export default function RoshniColorShowcase() {
     const bikes = [
@@ -34,7 +34,7 @@ export default function RoshniColorShowcase() {
     ];
 
     return (
-        <section className="bg-black py-12 px-4 text-white bg-black-100 w-full flex flex-col items-center">
+        <section className="bg-black md:py-40 py-20 px-4 text-white bg-black-100 w-full flex flex-col items-center">
             <div className="w-lg">
             <h2 className="text-center text-4xl md:text-4xl mb-10 font-magistral">
                 Explore a Range of Stunning Colors for the Roshni X

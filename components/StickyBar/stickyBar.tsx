@@ -5,6 +5,7 @@ import "./StickyBar.css";
 import Paragraph from "./Word";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import AppButton from '@/components/Button/AppButton';
 
 interface StickyBarProps {
   title: string;
@@ -32,9 +33,20 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
   return (
     <div>
-      <div className="w-full bg-black-30 flex justify-center px-5 py-5 border-b border-gray-90">
-        <div className="w-lg text-white md:px-5">
-          <h3 className="font-semibold md:text-[28px] text-[20px]">{title}</h3>
+      <div className="w-full bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90">
+        <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
+          <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
+          <div data-aos="fade-left">
+            <AppButton
+              size="medium"
+              variant="solid"
+              label="Book now"
+              iconName="ArrowUpRight"
+              iconPosition="right"
+              href={"/book-now"}
+              textColor='text-[#000]'
+            />
+          </div>
         </div>
       </div>
       <div
@@ -50,7 +62,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
         }}
       >
         <div className="w-lg md:px-5">
-          <Paragraph paragraph={description} color={textColor}/>
+          <Paragraph paragraph={description} color={textColor} />
           {href && color && (
             <Link href={href}>
               <button

@@ -8,7 +8,6 @@ import ColorShowcase from "./ColorShowcase"
 import LoopMain from '@/components/LoopCarousel/loop-main'
 import RoshniLoopIMG from '../../public/assets/RoshniX/GridLoop.png'
 import Complimentary from '../../public/assets/RoshniX/Complimentary.png'
-
 import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
@@ -29,6 +28,8 @@ const statsData = [
   { value: "9-11 Hours", label: "Charging Time" },
   { value: "≤20°", label: "Climbing Angle" },
 ];
+
+
 const page = () => {
 
   useEffect(() => {
@@ -37,9 +38,9 @@ const page = () => {
 
   return (
     <div>
-                  <head>
-                <title>Crown Benling Electric Mobility - Roshni X</title>
-            </head>
+      <head>
+        <title>Crown Benling Electric Mobility - Roshni X</title>
+      </head>
       <Banner />
       <StickyBar
         title="Crown Benling RoshniX"

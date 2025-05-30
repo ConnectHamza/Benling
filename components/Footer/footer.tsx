@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="relative flex justify-center bg-black-70 text-white md:pb-0 pb-5 md:py-40 py-20">
             <div className="w-lg px-5">
                 <div className="flex flex-col md:flex-row md:space-x-8 justify-between text-left items-start space-y-6 md:space-y-0">
-                    <div className='w-full md:w-2/6'>
+                    <div className='w-full md:w-2/6' data-aos="fade-up">
                         <div className='mb-2'>
                             <Typography variant='body-bold-jakarta'>
                                 Contact
@@ -51,7 +51,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='w-full md:w-1/6'>
+                    <div className='w-full md:w-1/6' data-aos="fade-up">
                         <div className='mb-2'>
                             <Typography variant='body-bold-jakarta'>Quick Links</ Typography>
 
@@ -76,7 +76,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='w-full md:w-1/6'>
+                    <div className='w-full md:w-1/6' data-aos="fade-up">
                         <div className='mb-2'><Typography variant='body-bold-jakarta'>More</ Typography>
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
@@ -96,7 +96,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='w-full md:w-2/6'>
+                    <div className='w-full md:w-2/6 ' data-aos="fade-up">
                         <div className='mb-2'><Typography variant='body-bold-jakarta'>Product Links</ Typography>
                         </div>
                         <ul className='flex justify-start gap-3 flex-wrap md:text-[15px] text-[13px]'>
@@ -115,11 +115,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='mt-10 mb-10'>
-                    <Image src={FooterLogo} alt='Benling-Pakistan' />
+                    <Image src={FooterLogo} alt='Benling-Pakistan' data-aos="zoom-in"/>
                 </div>
                 <div className='flex md:flex-row flex-col justify-between md:w-[82%] md:mt-[-5vh] mt-10 md:py-5 gap-3'>
                     <div>
-                        <p>© {currentYear} Crown Benling Electric Mobility Pakistan</p>
+                        <p data-aos="fade-up">© {currentYear} Crown Benling Electric Mobility Pakistan</p>
                     </div>
                     {/* <div className='text-[13px] md:text-[15px] flex gap-4'>
                         <a href="">Privacy Policy</a>

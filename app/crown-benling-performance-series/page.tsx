@@ -19,8 +19,8 @@ const PerformanceSeries = () => {
             </head>
             {/* Desktop */}
             <div className='h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${PerformanceBanner.src})` }}>
-                <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>
-                <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4'>
+                <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center' data-aos="zoom-out">Performance Series</h1>
+                <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4' data-aos="zoom-in">
                     <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO4</h3>
                 </div>
             </div>

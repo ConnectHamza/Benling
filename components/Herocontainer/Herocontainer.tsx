@@ -3,6 +3,17 @@
 import { motion } from 'framer-motion';
 import Typography from '../GradientText/Typography';
 
+interface HeroSectionProps {
+  title: string;
+  subtitle: string;
+  buttonText: string;
+  imageSrc: string;
+  mobileImageSrc?: string;
+  imageAlt?: string;
+  onButtonClick?: () => void;
+  textColor?: string;
+}
+
 const HeroSection = ({
   title,
   subtitle,
@@ -12,7 +23,7 @@ const HeroSection = ({
   imageAlt = 'Hero Image',
   onButtonClick,
   textColor = 'text-white',
-}) => {
+}: HeroSectionProps) => {
   return (
     <div className="relative w-full h-[91vh] overflow-hidden">
       {/* Background Image Container */}
@@ -38,18 +49,16 @@ const HeroSection = ({
       {/* Text Content Container */}
       <div className="relative flex md:items-center z-20 h-full max-w-[1300px] mx-auto py-10">
           
-        <motion.div
-          className={` md:w-[50%] px-6 sm:px-10 
+        <div
+          className={` md:w-[50%] md:px-4 px-10  
             text-left ${textColor}
-            top-[8%] md:top-1/2 md:-translate-y-1/2`}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+            `}
+         
         >
-          <div className="mb-4">
+          <div className="mb-4" data-aos="fade-right" data-aos-delay="0">            
             <Typography variant="h2-medium-magistral">{title}</Typography>
           </div>
-          <div className="mb-6 jakarta font-[400]">
+          <div className="mb-6 jakarta font-[400]"data-aos="fade-up" data-aos-delay="200">
             <Typography variant="body-regular-jakarta">{subtitle}</Typography>
           </div>
           
@@ -61,7 +70,7 @@ const HeroSection = ({
               {buttonText}
             </button>
           )}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

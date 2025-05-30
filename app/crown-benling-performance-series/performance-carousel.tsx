@@ -52,12 +52,16 @@ const PerformanceCarousel = ({ items = [], autoplay = true, autoplayInterval = 5
   return (
     <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">
       <div className="w-full flex flex-col items-center justify-center mb-8">
-         <Typography variant='h2-medium-magistral' className="mb-2" data-aos="fade-up">
+        <div data-aos="zoom-in">
+         <Typography variant='h2-medium-magistral' className="mb-2" data-aos="fade-up" data-aos-delay="0">
          Choose Your Perfect Ride
          </Typography>
-         <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center' data-aos="fade-up">
+         </div>
+         <div data-aos="zoom-out">
+         <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center' data-aos="fade-up" data-aos-delay="100">
          Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
          </Typography>
+         </div>
       </div>
 
       {/* Carousel Wrapper */}

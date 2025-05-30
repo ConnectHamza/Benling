@@ -32,16 +32,15 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <motion.div 
-      className='w-full px-5 py-20 flex justify-center relative overflow-hidden'
-      initial={{ background: 'transparent' }}
-      animate={{ background: `linear-gradient(to top, transparent 0%, ${backgroundColor} 100%)` }}
-      transition={{ duration: 1 }}
+    <div 
+      className='w-full px-5 md:py-40 py-20 flex justify-center relative overflow-hidden'      
     >
       <div className="w-lg justify-center flex flex-col text-center">
+        <div  data-aos="fade-up">
         <GradientText heading={heading} colors={colors}/>
-        <div>
-          <Image alt='Carousel' src={selectedImage} className='w-[100%]' width={1000} height={1000}/>
+        </div>
+        <div  data-aos="zoom-in">
+          <Image alt='Carousel' src={selectedImage} className='w-[100%] mt-10' width={1000} height={1000}/>
         </div>
         <div className='flex md:gap-8 gap-4 justify-center'>
           <button
@@ -61,7 +60,7 @@ const Carousel: React.FC = () => {
           </button>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

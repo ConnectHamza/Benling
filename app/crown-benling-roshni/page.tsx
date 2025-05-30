@@ -40,9 +40,9 @@ const page = () => {
 
   return (
     <div>
-                  <head>
-                <title>Crown Benling Electric Mobility - Roshni</title>
-            </head>
+      <head>
+        <title>Crown Benling Electric Mobility - Roshni</title>
+      </head>
       <Banner />
       <StickyBar
         title="Crown Benling Roshni"
@@ -52,7 +52,7 @@ const page = () => {
         textColor="text-black-30"
       />
       <div>
-        
+
       </div>
       <Featured stats={statsData} imageAlt="Roshni Feature Image" imageSrc={RoshniFeatuedIMG} mobileImageSrc={RoshniFeatuedIMG} textColor="text-white"
         cardBgColor="bg-black/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />

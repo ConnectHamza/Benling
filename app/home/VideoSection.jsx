@@ -1,6 +1,8 @@
 'use client';
 import { ArrowRightCircle } from 'lucide-react';
 import Typography from '@/components/GradientText/Typography';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const videos = [
   { video: '/Reels/Firefly-Reel-Female.webm' },
@@ -13,12 +15,16 @@ export default function VideoSection() {
   return (
     <section className="relative w-full md:py-40 py-20 overflow-hidden">
       <div className="m-w-auto text-center">
+        <div data-aos="fade-up" data-aos-delay="0">
         <Typography variant="h2-medium-magistral" className="mb-2">
           Benling is Everywhere
         </Typography>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="500">
         <Typography variant="subtext-regular-jakarta" className="text-[#0A0A0A]">
           Watch real riders, influencers, and EV enthusiasts showcase Crown Benling in action across Pakistan.
         </Typography>
+        </div>
       </div>
 
       {/* Scrollable area */}

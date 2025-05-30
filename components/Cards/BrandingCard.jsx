@@ -1,10 +1,13 @@
 // components/Card.tsx
 import Image from 'next/image';
 import Typography from '../GradientText/Typography';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Card = ({ imageSrc, title, description }) => {
+const Card = ({ imageSrc, title, description, aosAnimation }) => {
     return (
         <div
+            data-aos-desktop={aosAnimation} data-aos-mobile="fade-up"
             className="flex items-center gap-4 p-8 min-h-[150px] w-full rounded-xl shadow-md "
             style={{ backgroundColor: 'rgba(238, 241, 255, 0.4)' }}
         >

@@ -27,7 +27,7 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
 
     const interval = setInterval(() => {
       handleNext();
-    }, autoplayInterval); // Autoplay interval (default is 5000 ms)
+    }, autoplayInterval);
 
     return () => clearInterval(interval); // Clean up the interval when component unmounts
   }, [autoplay, autoplayInterval, items.length, current]);
@@ -51,12 +51,14 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
   return (
     <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20 px-4">
       <div className="w-full flex flex-col items-center justify-center mb-8">
-         <Typography variant='h2-medium-magistral' className="mb-2 text-center" data-aos="fade-up">
+        <div data-aos="fade-up">
+         <Typography variant='h2-medium-magistral' className="mb-2 text-center" >
          Choose Your Perfect Ride
          </Typography>
          <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center'>
          Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
          </Typography>
+         </div>
       </div>
 
       {/* Carousel Wrapper */}
