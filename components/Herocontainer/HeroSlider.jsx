@@ -104,7 +104,7 @@ const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) 
                                 data-aos-duration="1000" // 1 second duration
                                 key={`title-${currentSlide}`}
                             >
-                                <Typography variant="h2-medium-magistral">{title}</Typography>
+                                <Typography as='h2' variant="h2-medium-magistral">{title}</Typography>                                
                             </div>
 
                             {/* Animated Subtitle */}

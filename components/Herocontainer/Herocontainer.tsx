@@ -56,7 +56,7 @@ const HeroSection = ({
          
         >
           <div className="mb-4" data-aos="fade-right" data-aos-delay="0">            
-            <Typography variant="h2-medium-magistral">{title}</Typography>
+            <Typography as='h2' variant="h2-medium-magistral">{title}</Typography>
           </div>
           <div className="mb-6 jakarta font-[400]"data-aos="fade-up" data-aos-delay="200">
             <Typography variant="body-regular-jakarta">{subtitle}</Typography>

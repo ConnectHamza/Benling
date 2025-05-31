@@ -7,8 +7,8 @@ import Feature6IMG from '../../public/assets/mini-scooty/Features/Feature6.png';
 
 
 export const featureHeader = {
-    featureTitle: 'Splash Your Streets with Color',
-    featureText: `Pick your favorite from a sleek color palette—Sky Pop, Cherry Zoom, Shadow Jet or Vanilla Pop. The Mini Classic Scooty is as stylish as it is practical, letting your ride reflect your personality.`,
+    featureTitle: 'Compact, Agile, and Effortless',
+    featureText: `Perfect for quick trips and city cruising, Crown Benling Mini Scooty is built for easy handling, efficient mobility, and everyday reliability in a compact design.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
 };

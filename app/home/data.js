@@ -6,6 +6,7 @@ import Mini from "../../public/assets/Home/Header/mobile/mini-scooty.webp"
 import Roshni from "../../public/assets/Home/Header/mobile/roshni.webp"
 import Roshnix from "../../public/assets/Home/Header/mobile/roshnix.webp"
 import Spark from "../../public/assets/Home/Header/mobile/spark.webp"
+import Fairy from "../../public/assets/Home/Header/mobile/fairy.webp"
 //website
 import EzeeWeb from "../../public/assets/Home/Header/web/ezee.webp";
 import FireflyWeb from "../../public/assets/Home/Header/web/firefly.webp"
@@ -15,6 +16,7 @@ import MiniWeb from "../../public/assets/Home/Header/web/mini-scooty.webp"
 import RoshniWeb from "../../public/assets/Home/Header/web/roshni.webp"
 import RoshnixWeb from "../../public/assets/Home/Header/web/roshnix.webp"
 import SparkWeb from "../../public/assets/Home/Header/web/spark.webp"
+import FairyWeb from "../../public/assets/Home/Header/web/fairy.webp"
 //Carousel
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
 import Logo_Ezze from "../../public/assets/Home/Carousel/Ezee_Logo.svg"
@@ -25,14 +27,17 @@ import Logo_Roshni from "../../public/assets/Home/Carousel/Roshni_Logo.svg"
 import Logo_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Logo.svg"
 import Logo_Spark from "../../public/assets/Home/Carousel/Spark_Logo.svg"
 import Logo_Firefly from "../../public/assets/Home/Carousel/Firefly_Logo.svg"
+import Logo_Fairy from "../../public/assets/Home/Carousel/Fairy_Logo.svg"
 import Image_Ezee from "../../public/assets/Home/Carousel/Ezee_Image.png";
 import Image_Firefly from "../../public/assets/Home/Carousel/Firefly_Image.png";
 import Image_Flash from "../../public/assets/Home/Carousel/Flash_Image.png";
 import Image_KnightRider from "../../public/assets/Home/Carousel/Knightrider_Image.png";
-import Image_Miniscooter from "../../public/assets/Home/Carousel/Miniscooty_Image.png";
+import Image_Miniscooter from "../../public/assets/Home/Carousel/Miniscooter_Image.webp";
 import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.png";
 import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.png";
 import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.png";
+import Image_Fairy from "../../public/assets/Home/Carousel/Fairy_Image.webp";
+
 
 export const faqsData = [
     {
@@ -150,6 +155,15 @@ export const faqsData = [
       brochureLink: "../../public/assets/Brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
       exploreLink: "/crown-benling-mini-scooty",
       logo: Logo_Mini_Scooty.src
+    },{
+      name: "Bike 3",
+      image: Image_Fairy.src,
+      range: 80,
+      maxSpeed: 55,
+      motorPower: 1000,
+      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Fairy_Brochure.pdf",
+      exploreLink: "/crown-benling-fairy",
+      logo: Logo_Fairy.src
     }
   ];
 
@@ -241,6 +255,17 @@ export const Slides = [
         href: "/crown-benling-spark",
         color: "black-200",
         price: "145,000"      
+
+    },
+        {
+        title: 'Crown Benling Fairy - Crafted for Roads, Styled for You',
+        subtitle: 'Bold performance meets sleek design. Ride confidently with advanced tech, smart safety, and effortless style.',
+        buttonText: 'Book Now',
+        imageSrc: FairyWeb,
+        mobileImageSrc: Fairy,
+        href: "/crown-benling-fairy",
+        color: "black-200",
+        price: "165,000"      
 
     },
 ]

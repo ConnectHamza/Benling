@@ -7,8 +7,8 @@ import Feature6IMG from '../../public/assets/Spark/Features/Feature6.png';
 
 
 export const featureHeader = {
-    featureTitle: 'Splash the Streets with Spark',
-    featureText: `Choose from bold and vibrant shades—Charcoal Grey, Oasis Blue, or Crimson Red. The Spark combines everyday practicality with head-turning style, letting your personality shine with every ride.`,
+    featureTitle: 'Built for Utility. Designed for Simplicity.',
+    featureText: `Whether it’s errands or short commutes, Crown Benling Spark combines basic functionality with practical design to power your daily tasks with ease.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
 };

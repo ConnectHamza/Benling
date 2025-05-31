@@ -106,14 +106,14 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                   <Image
                     src={model.logo}
                     alt={model.href}
-                    width={150}
+                    width={100}
                     height={20}
                     className="mx-auto"
                   />
                 </div>
 
                 {/* Text Info */}
-                <div className="text-xs text-gray-600 text-center mt-2 h-[20px] font-jakarta">
+                <div className="text-xs text-gray-600 text-center mt-6 h-[20px] font-jakarta">
                   {model.range} | {model.speed}
                 </div>
               </a>

@@ -3,6 +3,7 @@ import { ArrowRightCircle } from 'lucide-react';
 import Typography from '@/components/GradientText/Typography';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const videos = [
   { video: '/Reels/Firefly-Reel-Female.webm' },
@@ -37,7 +38,7 @@ export default function VideoSection() {
       >
         <div
           className={`
-            flex items-stretch gap-4 snap-x snap-mandatory w-max
+            flex items-stretch gap-4 snap-x snap-mandatory md:w-max
             pl-4 sm:pl-6 md:pl-8
             pr-4 sm:pr-6 lg:pr-8
             xl:pl-[calc((100vw-1300px)/2+1rem)]
@@ -76,9 +77,11 @@ export default function VideoSection() {
                   Check out our YouTube channel for more exciting content!
                 </p>
               </div>
-              <button className="bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10">
+              <Link href="https://www.youtube.com/@benlingpk" target='_blank'>
+              <button href className="bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10">
                 <ArrowRightCircle size={30} />
               </button>
+              </Link>
             </div>
           </div>
         </div>

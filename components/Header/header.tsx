@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Logo_Ezze from "../../public/assets/Home/Carousel/Ezee_Logo.svg"
+import Logo_Fairy from "../../public/assets/Home/Carousel/Fairy_Logo.svg"
 import Logo_Flash from "../../public/assets/Home/Carousel/Flash_Logo.svg"
 import Logo_Knight_Rider from "../../public/assets/Home/Carousel/Knightrider_Logo.svg"
 import Logo_Mini_Scooty from "../../public/assets/Home/Carousel/Miniscooty_Logo.svg"
@@ -18,6 +19,7 @@ import Image_Miniscooter from "../../public/assets/Home/Carousel/Miniscooty_Imag
 import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.png";
 import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.png";
 import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.png";
+import Image_Fairy from "../../public/assets/Home/Carousel/Fairy_Image.png";
 import { ArrowRight, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import AppButton from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
@@ -33,7 +35,8 @@ export const modelsData = [
     { logo: Logo_Roshni, img: Image_Roshni, range: "120km Range", speed: "60km/h Top Speed", href: "/crown-benling-roshni" },
     { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark" },
     { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/crown-benling-ezee" },
-    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/crown-benling-mini-scooty" }
+    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/crown-benling-mini-scooty" },
+    { logo: Logo_Fairy, img: Image_Fairy, range: "80km Range", speed: "55km/h Top Speed", href: "/crown-benling-fairy" }
 ];
 // --- Mobile Models Panel (define ONCE only) ---
 function MobileModelsPanel({ onBack }) {
@@ -140,7 +143,7 @@ const Header = () => {
                                     data-aos-delay="300"
                                         src={model.logo}
                                         alt={model.href}
-                                        className="mx-auto h-[24px] mb-4"
+                                        className="mx-auto w-full h-[24px] mb-4"
                                     />
                                 </div>
                                 <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta"                                   
@@ -166,7 +169,7 @@ const Header = () => {
                 {/* Left nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-8 text-sm h-full font-jakarta">
                     <div
-                        className="relative group h-full flex items-center py-5"
+                        className="relative group h-full flex items-center py-10"
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
                         onMouseLeave={() => setIsMegaMenuOpen(false)}
                     >
@@ -325,7 +328,7 @@ const Header = () => {
                                     Contact Us
                                 </Typography>
                             </Link>
-                            <Link href="/find-a-dealer">
+                            {/* <Link href="/find-a-dealer">
                                 <AppButton
                                     size="medium"
                                     variant="solid"
@@ -335,7 +338,7 @@ const Header = () => {
                                     href={"/booking"}
                                     textColor='text-[#000]'
                                 />
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 )

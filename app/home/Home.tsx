@@ -13,6 +13,7 @@ import Pak from '../../public/assets/Home/Branding/pakistanmap.png';
 import Image from 'next/image';
 import CrownAboutIMG from '../../public/assets/Home/Header/heroimagesub.webp'
 import Faqs from '@/components/Faqs/Faqs'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

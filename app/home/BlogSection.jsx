@@ -19,7 +19,7 @@ export default function RecentBlogsCarousel() {
   };
   return (
     <section className="bg-white text-black py-20">
-      <div className="w-lg pl-[calc((100vw-1300px)/2+1rem)] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="md:w-lg md:pl-[calc((100vw-1300px)/2+1rem)] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div data-aos="zoom-in-right" data-aos-delay="0">
         <Typography variant="h3-medium-magistral">

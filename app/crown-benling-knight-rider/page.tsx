@@ -23,7 +23,7 @@ const KnightRider = () => {
            <Banner />
            <StickyBar
                 title="Crown Benling Knight Rider"
-                description='Discover the Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge Graphene Battery Technology and a robust 1200W Brushless Motor, Knight Rider ensures your rides are smooth, powerful, and sustainable.'
+                description='Discover the Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge Graphene Battery Technology and a robust 1500W Brushless Motor, Knight Rider ensures your rides are smooth, powerful, and sustainable.'
                 gradient1="#4C4442"
                 gradient2="#121212"
                 textColor='text-white'

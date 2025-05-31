@@ -70,6 +70,13 @@ const cities =
         "name": "M.Ayaan Ev Center",
         "address": "Main National highway, opposite Quaid e Azam Park, Steel Town",
         "phone": ["0334-3704587"]
+      },
+      {
+        "id": 29,
+        "name": "Akber Road Outlet",
+        "address": "Secretariat View, AM 20, Frere Road, Saddar, Akber Road, Karachi",
+        "phone": ["0321-2721818"],
+        "location": "https://www.google.com/maps?q=24.85955810546875,67.02307891845703&z=17&hl=en"
       }
     ]
   },

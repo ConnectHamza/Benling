@@ -155,6 +155,7 @@ function ContactForm() {
                     { name: "RoshniX", value: "roshnix" },
                     { name: "Spark", value: "spark" },
                     { name: "Mini Scooter", value: "mini-scooter" },
+                    { name: "Fairy", value: "fairy" },
 
                 ]}
                 required

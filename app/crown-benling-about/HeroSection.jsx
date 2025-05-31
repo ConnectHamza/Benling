@@ -6,11 +6,12 @@ export default function Herosection() {
         <div className="w-full bg-white py-10 pt-[120px]">
             {/* Banner Section */}
             <div className="w-full max-w-[1300px] mx-auto px-4">
-                <div className="relative w-full h-64 sm:h-80 md:h-[400px] rounded-lg overflow-hidden">
+                <div className="relative w-full rounded-lg overflow-hidden">
                     <Image
                         src={Banner}
                         alt="About Us Banner"
                         priority
+                        className="md:h-[450px] object-cover bg-center"
                     />
                     {/* Vertically Centered Overlay Text */}
                     <div className="absolute inset-0 flex items-center px-4 sm:px-6">
