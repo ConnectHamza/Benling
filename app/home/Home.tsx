@@ -21,6 +21,7 @@ import { faqsData, Slides, bikes } from './data';
 import Typography from '@/components/GradientText/Typography';
 import StickyBar from '@/components/StickyBar/stickyBar';
 import ShopSlider from './ShopSectoin';
+import TabbedCarousel from './TabCarousel';
 
 
 export default function Home() {
@@ -44,11 +45,12 @@ export default function Home() {
         textColor="text-white"
         href='/crown-benling-about'
         color="white"
+        showButton={false}
       />
       </div>
 
       <div>
-        <MotorcycleCarousel items={bikes} autoplay={true} />
+        <TabbedCarousel />
       </div>
       <div>
         <FeaturesSection />
@@ -64,7 +66,7 @@ export default function Home() {
               <div className="text-white flex flex-col space-y-6">
                 <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} data-aos="zoom-out" data-aos-delay="500" />
                 <div data-aos="fade-right" data-aos-delay="800">
-                <Typography variant='h3-medium-magistral' >
+                <Typography as="h3" variant='h3-medium-magistral' >
                   Pakistan Largest EV Scooter Growing Network
                 </Typography>
                 </div>
@@ -104,6 +106,5 @@ export default function Home() {
         <Faqs data={faqsData} />        
         </div>
     </>
-
   );
 }

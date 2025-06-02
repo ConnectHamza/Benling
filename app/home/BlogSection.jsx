@@ -22,7 +22,7 @@ export default function RecentBlogsCarousel() {
       <div className="md:w-lg md:pl-[calc((100vw-1300px)/2+1rem)] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div data-aos="zoom-in-right" data-aos-delay="0">
-        <Typography variant="h3-medium-magistral">
+        <Typography as="h2" variant="h3-medium-magistral">
           Recent Blog/News
         </Typography>
         </div>
@@ -40,22 +40,29 @@ export default function RecentBlogsCarousel() {
               >
                 <div>
                   <div className="w-full h-[200px] sm:h-[250px] relative rounded-lg overflow-hidden mb-4">
+                    <Link href={`/blogs/${blog.slug}`}>
                     <Image
                       src={blog.coverImage}
                       alt={blog.title}
                       fill
                       className="object-cover w-full h-[200px] sm:h-[250px]"
                     />
+                    </Link>
                   </div>
-                  <Typography variant="extra-subtext-regular-jakarta" className="text-[#989898] mb-4">
+                  
+                  <Typography as="span" variant="extra-subtext-regular-jakarta" className="text-[#989898] mb-4">
                     {blog.date}
                   </Typography>
-                  <Typography variant="h6-medium-jakarta" className="mb-2 leading-tight line-clamp-2">
+                  <Link href={`/blogs/${blog.slug}`}>
+                  <Typography as="h6" variant="h6-medium-jakarta" className="mb-2 leading-tight line-clamp-2 blog-heading">
                     {blog.title}
-                  </Typography>
-                  <Typography variant="subtext-regular-jakarta" className=" text-[#000] leading-snug line-clamp-3">
+                  </Typography>                    
+                  </Link>
+                  <Link href={`/blogs/${blog.slug}`}>
+                  <Typography as="p" variant="subtext-regular-jakarta" className=" text-[#000] leading-snug line-clamp-3">
                     {blog.subtitle}
                   </Typography>
+                  </Link>
                 </div>
                 <div className="mt-4">
                   <Link href={`/blogs/${blog.slug}`}>

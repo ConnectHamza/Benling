@@ -26,7 +26,7 @@ const Firefly = () => {
   return (
     <>
       <head>
-        <title>Crown Benling Electric Mobility - Firefly</title>
+        <title>Crown Benling - Firefly</title>
       </head>
       <Banner />
       <StickyBar

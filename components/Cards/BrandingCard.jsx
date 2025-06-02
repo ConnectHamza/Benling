@@ -18,7 +18,7 @@ const Card = ({ imageSrc, title, description, aosAnimation }) => {
 
             {/* Title on top, description below */}
             <div className="flex flex-col text-gray-800">
-                <Typography variant='h4-medium-magistral' className="self-start text-[#0A0A0A]">{title}</Typography>
+                <Typography as="h4" variant='h4-medium-magistral' className="self-start text-[#0A0A0A]">{title}</Typography>
                 <Typography variant='subtext-regular-jakarta' className="text-[#0A0A0A] text-left">{description}</Typography>
             </div>
         </div>

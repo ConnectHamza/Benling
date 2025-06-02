@@ -18,7 +18,7 @@ const KnightRider = () => {
     return (
         <main>
                         <head>
-                <title>Crown Benling Electric Mobility - Knight Rider</title>
+                <title>Crown Benling - Knight Rider</title>
             </head>
            <Banner />
            <StickyBar

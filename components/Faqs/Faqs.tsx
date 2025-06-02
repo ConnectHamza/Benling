@@ -24,7 +24,7 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
     <div className='w-full bg-gray-100 flex justify-center px-5 py-10 md:py-20'>
       <div className="w-md">
         <div data-aos="zoom-in-up" >
-        <Typography variant='h3-medium-magistral' className='text-center'>FAQ'S</Typography>
+        <Typography as="h2" variant='h3-medium-magistral' className='text-center'>FAQ'S</Typography>
         </div>
         <div className='mt-5'>
           {data.map((faq, index) => (

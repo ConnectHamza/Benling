@@ -45,6 +45,47 @@ p {
   font-weight: bold;
 }
 
+.blog-item h6 {
+    font-weight: 400;
+    font-size: 24px;
+	line-height: 40px;
+    color: black;
+    position: relative;
+    display: inline;
+    background: linear-gradient(currentColor, currentColor);
+    background-size: 0 2px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-out;
+    padding-bottom: 4px;
+}
+
+.blog-item h6:hover {
+    background-size: 100% 2px;
+	font-weight: 600;
+}
+
+
+.blog-heading h6 {
+    font-weight: 400;
+    font-size: 24px;
+		line-height: 40px;
+    color: black;
+    position: relative;
+    display: inline;
+    background: linear-gradient(currentColor, currentColor);
+    background-size: 0 2px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-out;
+    padding-bottom: 4px;
+}
+
+.blog-heading h6:hover {
+    background-size: 100% 2px;
+	font-weight: 600;
+}
+
 .smooth-transition {
   transition: all 0.5s ease-in-out;
 }

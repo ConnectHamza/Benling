@@ -17,6 +17,7 @@ import RoshniWeb from "../../public/assets/Home/Header/web/roshni.webp"
 import RoshnixWeb from "../../public/assets/Home/Header/web/roshnix.webp"
 import SparkWeb from "../../public/assets/Home/Header/web/spark.webp"
 import FairyWeb from "../../public/assets/Home/Header/web/fairy.webp"
+import PerformanceBgWeb from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes.webp'
 //Carousel
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
 import Logo_Ezze from "../../public/assets/Home/Carousel/Ezee_Logo.svg"
@@ -37,6 +38,18 @@ import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.png";
 import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.png";
 import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.png";
 import Image_Fairy from "../../public/assets/Home/Carousel/Fairy_Image.webp";
+// Performance Carousel
+import MarkhorIMG from '../../public/assets/PerformanceSeries/Markhor.webp'
+import CherryIMG from '../../public/assets/PerformanceSeries/Cherry.webp'
+import ChampionIMG from '../../public/assets/PerformanceSeries/Champion.webp'
+import RaftaarIMG from '../../public/assets/PerformanceSeries/Raftaar.webp'
+import VictoryIMG from '../../public/assets/PerformanceSeries/Victory.webp'
+import MarkhorLogo from '../../public/assets/PerformanceSeries/logos/MarkhorLogo.svg'
+import CherryLogo from '../../public/assets/PerformanceSeries/logos/CherryLogo.svg'
+import ChampionLogo from '../../public/assets/PerformanceSeries/logos/ChampionLogo.svg'
+import RaftaarLogo from '../../public/assets/PerformanceSeries/logos/RaftaarLogo.svg'
+import VictoryLogo from '../../public/assets/PerformanceSeries/logos/VictoryLogo.svg'
+
 
 
 export const faqsData = [
@@ -85,7 +98,7 @@ export const faqsData = [
       range: 150,
       maxSpeed: 70,
       motorPower: 1500,
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
       exploreLink: "/crown-benling-flash",
       logo: Logo_Flash.src
     },
@@ -95,7 +108,7 @@ export const faqsData = [
       range: 100,
       maxSpeed: 60,
       motorPower: 1500,
-      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
+      brochureLink: "brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
       exploreLink: "/crown-benling-knight-rider",
       logo: Logo_Knight_Rider.src
 
@@ -106,7 +119,7 @@ export const faqsData = [
       range: 110,
       maxSpeed: 60,
       motorPower: 1500,
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
       exploreLink: "/crown-benling-roshni-x",
       logo: Logo_Roshnix.src
     },
@@ -116,7 +129,7 @@ export const faqsData = [
       range: 55,
       maxSpeed: 40,
       motorPower: 650,
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
       exploreLink: "/crown-benling-ezee",
       logo: Logo_Ezze.src
     }, {
@@ -125,7 +138,7 @@ export const faqsData = [
       range: 120,
       maxSpeed: 60,
       motorPower: 1200,
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
       exploreLink: "/crown-benling-roshni",
       logo: Logo_Roshni.src
     }, {
@@ -134,7 +147,7 @@ export const faqsData = [
       range: 100,
       maxSpeed: 60,
       motorPower: 1200,
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Firefly_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Firefly_Brochure.pdf',
       exploreLink: "/crown-benling-firefly",
       logo: Logo_Firefly.src
     }, {
@@ -143,7 +156,7 @@ export const faqsData = [
       range: 40,
       maxSpeed: 40,
       motorPower: 600,
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Spark_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Spark_Brochure.pdf',
       exploreLink: "/crown-benling-spark",
       logo: Logo_Spark.src
     }, {
@@ -152,7 +165,7 @@ export const faqsData = [
       range: 35,
       maxSpeed: 35,
       motorPower: 450,
-      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
+      brochureLink: "/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
       exploreLink: "/crown-benling-mini-scooty",
       logo: Logo_Mini_Scooty.src
     },{
@@ -161,16 +174,134 @@ export const faqsData = [
       range: 80,
       maxSpeed: 55,
       motorPower: 1000,
-      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Fairy_Brochure.pdf",
+      brochureLink: "/brouchers/Crown_Benling_Fairy_Brochure.pdf",
       exploreLink: "/crown-benling-fairy",
       logo: Logo_Fairy.src
     }
   ];
 
+   export const performanceBikes = [
+      {
+        name: "Bike 1",
+        image: MarkhorIMG.src,
+        range: "100 km Range",
+        maxSpeed: "100 km/h Top Speed",
+        motorPower: "3000W Motor Power",
+        brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
+        exploreLink: "/ezee",
+        logo: MarkhorLogo.src
+      },
+      {
+        name: "Bike 2",
+        image: CherryIMG.src,
+        range: "130 km Range ",
+        maxSpeed: "90 km/h Top Speed",
+        motorPower: "3000W Motor Power ",
+        brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
+        exploreLink: "/ezee",
+        logo: CherryLogo.src
+  
+      },
+      {
+        name: "Bike 3",
+        image: ChampionIMG.src,
+        range: "220 km Range",
+        maxSpeed: "90 km/h Top Speed",
+        motorPower: "1200W Motor Power",
+        brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
+        exploreLink: "/ezee",
+        logo: ChampionLogo.src
+      },
+      {
+        name: "Bike 4",
+        image: RaftaarIMG.src,
+        range: "160 km Range ",
+        maxSpeed: "95 km/h Top Speed",
+        motorPower: "2000W Motor Power",
+        brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
+        exploreLink: "/ezee",
+        logo: RaftaarLogo.src
+      }, {
+        name: "Bike 5",
+        image: VictoryIMG.src,
+        range: "120 km Range ",
+        maxSpeed: "55 km/h Top Speed",
+        motorPower: "1000W Motor Power",
+        brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
+        exploreLink: "/ezee",
+        logo: VictoryLogo.src
+      },
+    ];
 
 
 
 export const Slides = [
+          {
+        title: 'Crown Benling Fairy - Crafted for Roads, Styled for You',
+        subtitle: 'Bold performance meets sleek design. Ride confidently with advanced tech, smart safety, and effortless style.',
+        buttonText: 'Book Now',
+        imageSrc: FairyWeb,
+        mobileImageSrc: Fairy,
+        href: "/crown-benling-fairy",
+        color: "black-200",
+        price: "165,000"      
+
+    },
+        {
+        title: 'Advanced Electric Scooter with Speed',
+        subtitle: 'Designed for the modern commuter, Flash combines speed, safety, and smart features like digital display and dual disc brakes—making it the go-to electric scooter in Pakistan.',
+        buttonText: 'Book Now',
+        imageSrc: FlashWeb,
+        mobileImageSrc: Flash,
+        href: "/crown-benling-flash",
+        color: "white",
+        price: "250,000"      
+
+    },
+        {
+        title: 'Rule the Roads with Electric Power',
+        subtitle: 'Experience unmatched strength and control with Knight Rider, a rugged electric scooter built for power rides, high-speed performance, and reliable travel on Pakistan’s diverse roads.',
+        buttonText: 'Book Now',
+        imageSrc: KnightWeb,
+        mobileImageSrc: Knight,
+        href: "/crown-benling-knight-rider",
+        color: "white",
+        price: "240,000"      
+
+    },
+
+        {
+        title: 'The Era of Smart Electric Commuting',
+        subtitle: 'Upgrade to Roshni X, a next-generation electric scooter with ergonomic design, and high battery range built for tomorrow’s urban riders in Pakistan.',
+        buttonText: 'Book Now',
+        imageSrc: RoshnixWeb,
+        mobileImageSrc: Roshnix,
+        href: "/crown-benling-roshni-x",
+        color: "black-200",
+        price: "235,000"      
+
+    },
+        {
+        title: 'Embrace Tomorrow Now with Firefly',
+        subtitle: 'Step into the era of comfort with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style.',
+        buttonText: 'Learn More',
+        imageSrc: FireflyWeb,
+        mobileImageSrc: Firefly,
+        href: "/crown-benling-firefly",
+        color: "white",
+        price: "195,000"      
+
+    },
+        {
+        title: 'Roshni – Bright, Bold, and Electric',
+        subtitle: 'Discover Roshni, the stylish electric scooter made for vibrant city living. With modern design and efficient performance, it’s your perfect ride for a greener Pakistan.',
+        buttonText: 'Book Now',
+        imageSrc: RoshniWeb,
+        mobileImageSrc: Roshni,
+        href: "/crown-benling-roshni",
+        color: "white",
+        price: "215,000"      
+    },
     {
         title: 'Ezee – Your Everyday Electric Companion',
         subtitle: 'Designed for comfort and practicality, Ezee is the perfect electric scooter for daily rides. Enjoy easy handling, long range, and zero emissions across Pakistan.',
@@ -182,39 +313,6 @@ export const Slides = [
         price: "230,000"      
     },
     {
-        title: 'Embrace Tomorrow Now with Firefly',
-        subtitle: 'Step into the era of comfort with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style.',
-        buttonText: 'Learn More',
-        imageSrc: FireflyWeb,
-        mobileImageSrc: Firefly,
-        href: "/crown-benling-firefly",
-        color: "white",
-        price: "195,000"      
-
-    },
-    {
-        title: 'Advanced Electric Scooter with Speed',
-        subtitle: 'Designed for the modern commuter, Flash combines speed, safety, and smart features like digital display and dual disc brakes—making it the go-to electric scooter in Pakistan.',
-        buttonText: 'Book Now',
-        imageSrc: FlashWeb,
-        mobileImageSrc: Flash,
-        href: "/crown-benling-flash",
-        color: "white",
-        price: "250,000"      
-
-    },
-    {
-        title: 'Rule the Roads with Electric Power',
-        subtitle: 'Experience unmatched strength and control with Knight Rider, a rugged electric scooter built for power rides, high-speed performance, and reliable travel on Pakistan’s diverse roads.',
-        buttonText: 'Book Now',
-        imageSrc: KnightWeb,
-        mobileImageSrc: Knight,
-        href: "/crown-benling-knight-rider",
-        color: "white",
-        price: "240,000"      
-
-    },
-    {
         title: 'Compact, Stylish, and Made for City Life',
         subtitle: 'Turn heads with Mini Scooty, the perfect electric scooter for young and urban riders. Lightweight, efficient, and designed for effortless short-distance commutes across Pakistan.',
         buttonText: 'Book Now',
@@ -223,29 +321,8 @@ export const Slides = [
         href: "/crown-benling-mini-scooty",
         color: "white",
         price: "99,999"      
+    },
 
-    },
-    {
-        title: 'Roshni – Bright, Bold, and Electric',
-        subtitle: 'Discover Roshni, the stylish electric scooter made for vibrant city living. With modern design and efficient performance, it’s your perfect ride for a greener Pakistan.',
-        buttonText: 'Book Now',
-        imageSrc: RoshniWeb,
-        mobileImageSrc: Roshni,
-        href: "/crown-benling-roshni",
-        color: "white",
-        price: "215,000"      
-    },
-    {
-        title: 'The Era of Smart Electric Commuting',
-        subtitle: 'Upgrade to Roshni X, a next-generation electric scooter with ergonomic design, and high battery range built for tomorrow’s urban riders in Pakistan.',
-        buttonText: 'Book Now',
-        imageSrc: RoshnixWeb,
-        mobileImageSrc: Roshnix,
-        href: "/crown-benling-roshni-x",
-        color: "black-200",
-        price: "235,000"      
-
-    },
     {
         title: 'Engineered for Confidence, Designed for Style',
         subtitle: 'The Spark electric scooter offers a powerful ride with modern styling. Ride confidently with advanced safety and electric performance, made for Pakistan roads.',
@@ -255,19 +332,18 @@ export const Slides = [
         href: "/crown-benling-spark",
         color: "black-200",
         price: "145,000"      
-
     },
-        {
-        title: 'Crown Benling Fairy - Crafted for Roads, Styled for You',
-        subtitle: 'Bold performance meets sleek design. Ride confidently with advanced tech, smart safety, and effortless style.',
-        buttonText: 'Book Now',
-        imageSrc: FairyWeb,
-        mobileImageSrc: Fairy,
-        href: "/crown-benling-fairy",
-        color: "black-200",
-        price: "165,000"      
+    //     {
+    //     title: 'Performance Series',
+    //     textAlign: 'text-center',
+    //     buttonText: 'Book Now',
+    //     imageSrc: PerformanceBgWeb,
+    //     mobileImageSrc: Mini,
+    //     href: "/crown-benling-mini-performance-series",
+    //     color: "black",
+    //     conWidth: "md:w-full"
+    // },
 
-    },
 ]
 
 
@@ -277,8 +353,8 @@ export const cities =
     "data": [
       {
         "id": 1,
-        "name": "Benling Awami Markaz",
-        "address": "Address: Plot # ST1/A2 Shop # LG 06 & 07 City Centre Mall Near Awami Markaz Oppo Lal Qila Main Shahrah e Faisal Karachi",
+        "name": "CROWN AWAMI MARKAZ",
+        "address": "Plot # St 1/A2, Shop # LG 06 & 07, City Centre Mall, Near Awami Markaz, Opp. Lal Qila, Main Shahrah-e-Faisal, Karachi.",
         "phone": ["0321-2721818"],
         "location": "https://www.google.com/maps/place/24%C2%B052'15.8%22N+67%C2%B005'25.8%22E/@24.8710559,67.087915,17z/data=!3m1!4b1!4m4!3m3!8m2!3d24.8710559!4d67.0904899?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
       },
@@ -292,8 +368,8 @@ export const cities =
       {
         "id": 3,
         "name": "Al Hamd Electronics",
-        "address": "SUH 14 Sector J Askari 5 Malir cantt",
-        "phone": ["0300 2875705"],
+        "address": "Shop # A-76, 4 DOTS Market, Opposite Al Barka Bank, Malir Cantt, Karachi.",
+        "phone": ["0300-2875705"],
         "location": "https://www.google.com/maps/place/24%C2%B055'52.1%22N+67%C2%B012'07.3%22E/@24.9311274,67.1994407,17z/data=!3m1!4b1!4m4!3m3!8m2!3d24.9311274!4d67.2020156?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
       },
       {
@@ -335,7 +411,7 @@ export const cities =
         "id": 27,
         "name": "Crown Solar",
         "address": "Shop # KS-315, Crown solar energy, Karachi",
-        "phone": ["032-12721818"],
+        "phone": ["0321-2721818"],
         "location": "https://www.google.com/maps/place/24%C2%B051'38.1%22N+67%C2%B001'28.0%22E/@24.8606198,67.0235302,18.18z/data=!4m4!3m3!8m2!3d24.8605872!4d67.0244346?coh=225988&entry=tts&g_ep=EgoyMDI0MTEyNC4xIPu8ASoASAFQAw%3D%3D"
       },
       {
@@ -415,11 +491,18 @@ export const cities =
   "Rahim Yar Khan": {
     "data": [
       {
+        "id": 30,
+        "name": "Ghaznavi Traders(Main Branch)",
+        "address": "Canal Avenue Road, Near Younis Sweet Bakery, Rahim Yar Khan.",
+        "phone": ["0303-0306776"],
+        "location": "https://www.google.com/maps?q=28.430688858032227,70.30363464355469&z=17&hl=en"
+      },
+      {
         "id": 14,
-        "name": "Ghaznavi Traders(Main Branch )",
-        "address": "Bypass Road, Opposite KIA Motors Showroom, Rahim Yar Khan",
+        "name": "GHAZNAVI TRADERS RYK 2",
+        "address": "Bypass Road, Opposite Kia Motors Showroom, Rahim Yar Khan.",
         "phone": ["0302-8770666"],
-        "location": "https://www.google.com/maps/place/28%C2%B026'14.1%22N+70%C2%B017'49.6%22E/@28.4372261,70.2962525,19z/data=!4m4!3m3!8m2!3d28.43725!4d70.2971111?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+        "location": "https://www.google.com/maps/place/28%C2%B026'14.1%22N+70%C2%B017'49.6%22E/@28.4372261,70.2962525,19z/data=!4m4!3m3!8m2!3d28.43725!4d70.2971111?hl=en&entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
       }
     ]
   },

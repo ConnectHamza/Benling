@@ -99,11 +99,11 @@ export default function ShopSlider() {
           <div className="mb-10 ">
             <div className="font-magistral max-w-full md:max-w-[50%]">
               <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
-                <Typography as="span" variant='h3-medium-magistral' className='text-[#0A0A0A]'>
+                <Typography as="h2" variant='h3-medium-magistral' className='text-[#0A0A0A]'>
                   Explore Our Nationwide Network{" "}
                 </Typography> <br />
                 <Typography
-                  as='span'
+                  as='h2'
                   variant='h3-medium-magistral'
                   onClick={() => setIsModalOpen(true)}
                   className="text-orange-500 inline-flex items-center cursor-pointer"
@@ -155,7 +155,7 @@ export default function ShopSlider() {
                         height={40}
                         className="mb-2"
                       />
-                      <Typography variant='h5-medium-magistral' className="mb-1 text-[#0A0A0A]">
+                      <Typography as="h5" variant='h5-medium-magistral' className="mb-1 text-[#0A0A0A]">
                         {shop.name}
                       </Typography>
                       <Typography variant='extra-subtext-regular-jakarta' className=" text-gray-700 mb-2 h-[100px]">
@@ -296,7 +296,7 @@ export default function ShopSlider() {
               {cities[selectedCity].data.map((shop) => (
                 <div
                   key={shop.id}
-                  className=" w-[85vw] sm:w-[280px] md:w-[320px] h-[300px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
+                  className=" w-[85vw] sm:w-[280px] md:w-[320px] min-h-[300px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
                 >
                   <div>
                     <div className="mb-3">

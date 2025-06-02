@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <>
             <head>
-                <title>Crown Benling Electric Mobility - Book Now</title>
+                <title>Crown Benling - Book Now</title>
             </head>
             <div className="min-h-screen flex bg-black pt-[75px]">
                 {/* Left: Carousel (image) */}

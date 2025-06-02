@@ -102,7 +102,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                 </div>
 
                 {/* Logo Container */}
-                <div className="mt-4 h-[40px] flex items-center justify-center">
+                <div className="mt-2 flex items-center justify-center">
                   <Image
                     src={model.logo}
                     alt={model.href}
@@ -113,7 +113,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                 </div>
 
                 {/* Text Info */}
-                <div className="text-xs text-gray-600 text-center mt-6 h-[20px] font-jakarta">
+                <div className="text-xs text-gray-600 text-center mt-4 h-[20px] font-jakarta">
                   {model.range} | {model.speed}
                 </div>
               </a>
@@ -124,17 +124,17 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
         {/* Navigation Arrows */}
         <button 
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-black-30 p-2 rounded-full"
           aria-label="Previous model"
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={32} />
         </button>
         <button 
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-black-30 p-2 rounded-full"
           aria-label="Next model"
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={32} />
         </button>
         
         {/* Indicators */}

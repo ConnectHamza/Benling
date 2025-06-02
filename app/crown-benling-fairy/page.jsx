@@ -37,7 +37,7 @@ const page = () => {
   return (
     <div>
       <head>
-        <title>Crown Benling Fairy</title>
+        <title>Crown Benling - Fairy</title>
       </head>
       <Banner />
       <StickyBar

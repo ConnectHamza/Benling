@@ -34,7 +34,7 @@ const page = () => {
   return (
     <div>
       <head>
-        <title>Crown Benling Electric Mobility - Mini Scooty</title>
+        <title>Crown Benling - Mini Scooty</title>
       </head>
       <Banner />
       <StickyBar

@@ -5,7 +5,7 @@ import "./StickyBar.css";
 import Paragraph from "./Word";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import AppButton from '@/components/Button/AppButton';
+import AppButton from "@/components/Button/AppButton";
 
 interface StickyBarProps {
   title: string;
@@ -16,6 +16,7 @@ interface StickyBarProps {
   bgImage: string;
   href?: string;
   color?: string;
+  showButton?: boolean; // New prop to control button visibility
 }
 
 const StickyBar: React.FC<StickyBarProps> = ({
@@ -26,39 +27,41 @@ const StickyBar: React.FC<StickyBarProps> = ({
   textColor,
   bgImage,
   href,
-  color
+  color,
+  showButton = true // Default value is true
 }) => {
   const container = useRef(null);
-
 
   return (
     <div>
       <div className="w-full bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90">
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
-          <div data-aos="fade-left">
-            <AppButton
-              size="medium"
-              variant="solid"
-              label="Book now"
-              iconName="ArrowUpRight"
-              iconPosition="right"
-              href={"/book-now"}
-              textColor='text-[#000]'
-            />
-          </div>
+          {showButton && ( // Conditionally render the AppButton
+            <div data-aos="fade-left">
+              <AppButton
+                size="medium"
+                variant="solid"
+                label="Book now"
+                iconName="ArrowUpRight"
+                iconPosition="right"
+                href={"/book-now"}
+                textColor="text-[#000]"
+              />
+            </div>
+          )}
         </div>
       </div>
       <div
-        ref={container} // Attach the ref to the 
+        ref={container}
         className="w-full px-5 py-20 flex justify-center"
         style={{
           background: `
             linear-gradient(to right, ${gradient1} 10%, ${gradient2} 50%), 
             url(${bgImage})
           `,
-          backgroundSize: 'cover',
-          backgroundPosition: 'top center',
+          backgroundSize: "cover",
+          backgroundPosition: "top center",
         }}
       >
         <div className="w-lg md:px-5">

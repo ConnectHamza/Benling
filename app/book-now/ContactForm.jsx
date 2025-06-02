@@ -156,6 +156,7 @@ function ContactForm() {
                     { name: "Spark", value: "spark" },
                     { name: "Mini Scooter", value: "mini-scooter" },
                     { name: "Fairy", value: "fairy" },
+                    { name: "Performance Series", value: "performance-series" },
 
                 ]}
                 required

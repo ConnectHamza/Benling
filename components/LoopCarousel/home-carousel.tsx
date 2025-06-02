@@ -8,7 +8,21 @@ import Typography from "../GradientText/Typography";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) => {
+interface HomeCarouselProps {
+  items: Array<any>;
+  autoplay?: boolean;
+  autoplayInterval?: number;
+  heading?: string; 
+  subText?: string; 
+}
+
+const HomeCarousel: React.FC<HomeCarouselProps> = ({
+  items = [],
+  autoplay = true,
+  autoplayInterval = 5000,
+  heading,
+  subText
+}) => {
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false); // Prevent rapid clicks
   const [direction, setDirection] = useState(""); // Track navigation direction
@@ -29,39 +43,38 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
       handleNext();
     }, autoplayInterval);
 
-    return () => clearInterval(interval); // Clean up the interval when component unmounts
+    return () => clearInterval(interval); 
   }, [autoplay, autoplayInterval, items.length, current]);
 
   const handlePrev = () => {
-    if (isTransitioning) return; // Prevent rapid clicks
+    if (isTransitioning) return; 
     setIsTransitioning(true);
     setDirection("left");
     setCurrent((current - 1 + items.length) % items.length);
-    setTimeout(() => setIsTransitioning(false), 800); // Transition duration
+    setTimeout(() => setIsTransitioning(false), 800); 
   };
 
   const handleNext = () => {
-    if (isTransitioning) return; // Prevent rapid clicks
+    if (isTransitioning) return; 
     setIsTransitioning(true);
     setDirection("right");
     setCurrent((current + 1) % items.length);
-    setTimeout(() => setIsTransitioning(false), 800); // Transition duration
+    setTimeout(() => setIsTransitioning(false), 800); 
   };
 
   return (
-    <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20 px-4">
+    <div className="w-full h-full bg-white-500 relative overflow-hidden px-4">
       <div className="w-full flex flex-col items-center justify-center mb-8">
         <div data-aos="fade-up">
-         <Typography variant='h2-medium-magistral' className="mb-2 text-center" >
-         Choose Your Perfect Ride
-         </Typography>
-         <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center'>
-         Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
-         </Typography>
-         </div>
+          <Typography variant='h2-medium-magistral' className="mb-2 text-center">
+            {heading}
+          </Typography>
+          <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center'>
+            {subText}
+          </Typography>
+        </div>
       </div>
 
-      {/* Carousel Wrapper */}
       <div className="relative flex items-center justify-center h-full">
         {/* Previous Bike (Partially Visible) */}
         <div
@@ -105,7 +118,7 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
         {/* Next Button */}
         <button
           onClick={handleNext}
-          className="absolute right-[15%] [@media(max-width:640px)]:right-[5% text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
+          className="absolute md:right-[15%] right-[5%] [@media(max-width:640px)]:right-[6% text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
         >
           <ChevronRight size={40} />
         </button>
@@ -139,14 +152,14 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
       {/* Motorcycle Details */}
       <div className="mt-4 text-center" data-aos="fade-up">
         <div className="flex justify-center md:gap-8 gap-2 text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
-          <Typography variant="body-regular-magistral" >
+          <Typography variant="body-regular-magistral">
             Range: <Typography as="span" variant="body-regular-magistral">{items[current]?.range} km</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Top Speed: <Typography variant="body-regular-magistral" as="span" >{items[current]?.maxSpeed} km/h</Typography>
+            Top Speed: <Typography variant="body-regular-magistral" as="span">{items[current]?.maxSpeed} km/h</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Motor Power: <Typography variant="body-regular-magistral" as="span" >{items[current]?.motorPower} W</Typography>
+            Motor Power: <Typography variant="body-regular-magistral" as="span">{items[current]?.motorPower} W</Typography>
           </Typography>
         </div>
       </div>
@@ -161,7 +174,7 @@ const HomeCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) 
           href={items[current]?.brochureLink}
           className="border-2 border-black bg-black-30 hover:bg-orange-300 hover:text-black-30 hover:border-black-30 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black"
           target="_blank"
-          download={true}        
+          download={true}
         />
 
         <Button

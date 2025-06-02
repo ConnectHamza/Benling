@@ -53,6 +53,8 @@ const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) 
         onButtonClick,
         color,
         price,
+        conWidth,
+        textAlign,
     } = slides[currentSlide] || {};
 
     return (
@@ -95,7 +97,7 @@ const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) 
             <div className="relative z-10 w-full">
                 <div className="container px-6 sm:px-8 mx-auto flex flex-col md:items-center items-start justify-center h-full">
                     <div className="max-w-[1400px] md:px-20">
-                        <div className={`md:space-y-6 text-left w-full md:w-[40%] text-${color}`}>
+                        <div className={`md:space-y-6 ${textAlign ? textAlign : 'text-left'} w-full  ${conWidth ? `md:${conWidth}` : 'md:w-[40%]'} text-${color}`}>
                             {/* Animated Title */}
                             <div
                                 className="mb-4"
@@ -131,7 +133,7 @@ const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) 
                                         Explore More <ArrowRight size={20} />
                                     </button>
                                 </Link>
-                                <div className='md:block hidden'>
+                                <div className=''>
                                     <p variant="body-regular-jakarta" className='md:text-sm text-xs'>Priced at</p>
                                     <span className='md:text-xl text-lg font-bold'>PKR {price}</span>
                                 </div>

@@ -28,7 +28,7 @@ export default function Ezee() {
     return (
         <>
             <head>
-                <title>Crown Benling Electric Mobility - Ezee</title>
+                <title>Crown Benling - Ezee</title>
             </head>
             <main>
                 <Banner />

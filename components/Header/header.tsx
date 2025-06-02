@@ -24,6 +24,7 @@ import { ArrowRight, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import AppButton from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
 import MobileModelsCarousel from "./mobileModelsCarousel";
+import { useRouter } from "next/navigation"; 
 
 
 // --- Model Data ---
@@ -103,22 +104,24 @@ const Header = () => {
     const [isModelsOpen, setIsModelsOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
+    const router = useRouter();
+    
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
-        setIsMegaMenuOpen(false); // Ensure mega menu is closed
+        setIsMegaMenuOpen(false);
     };
-
+    
     // Desktop Mega Menu
     const DesktopModelsMegaMenu = () => (
-        <div className="fixed left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
-            <div className="max-w-[1300px] mx-auto px-10 py-8 h-full flex flex-col">
+        <div className="fixed w-full md:px-20 left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-40 border-b shadow-lg overflow-hidden">
+            <div className="max-w-full  mx-auto px-10 py-8 h-full flex flex-col">
                 {/* Heading */}
-                <div className="font-regular text-lg mb-6 text-black-200 font-magistral">
+                <div className="font-regular text-lg mb-2 text-black-200 font-magistral">
                     Explore Our Models
                 </div>
                 {/* Scrollable content */}
                 <div className=" pr-2">
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
                         {modelsData.map((model) => (
                             <a
                                 href={model.href}
@@ -132,12 +135,12 @@ const Header = () => {
                                         data-aos-delay="0"
                                         src={model.img}
                                         alt={model.href}
-                                        width={220}
-                                        height={300}
+                                        width={150}
+                                        height={100}
                                         className="object-contain max-h-full"
                                     />
                                 </div>
-                                <div className="mt-6 h-[20px] flex items-center justify-center">
+                                <div className="my-2 h-[20px] flex items-center justify-center">
                                     <Image
                                     data-aos="zoom-out"
                                     data-aos-delay="300"
@@ -146,7 +149,7 @@ const Header = () => {
                                         className="mx-auto w-full h-[24px] mb-4"
                                     />
                                 </div>
-                                <div className="text-[16px] text-gray-600 text-center mt-2 h-[20px] font-jakarta"                                   
+                                <div className="text-[16px] text-gray-600 text-center h-[20px] font-jakarta"                                   
                                     data-aos="fade-in"
                                     data-aos-delay="600">
                                     {model.range} | {model.speed}
@@ -163,9 +166,11 @@ const Header = () => {
     const navLink =
         "relative font-jakarta py-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
 
+        const isFixed = router.pathname === "/";
+
     return (
         <header className="w-full z-50 fixed top-0 left-0 bg-black-200 text-white h-[75px] flex items-center">
-            <div className="max-w-[1300px] mx-auto flex items-center justify-between w-full px-6 py-2">
+            <div className="max-w-full md:px-20 mx-auto flex items-center justify-between w-full px-6 py-2">
                 {/* Left nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-8 text-sm h-full font-jakarta">
                     <div

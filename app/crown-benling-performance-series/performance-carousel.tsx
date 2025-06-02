@@ -9,10 +9,24 @@ import Typography from "@/components/GradientText/Typography";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const PerformanceCarousel = ({ items = [], autoplay = true, autoplayInterval = 5000 }) => {
+interface PerformanceCarouselProps {
+  items: Array<any>;
+  autoplay?: boolean;
+  autoplayInterval?: number;
+  heading?: string;
+  subText?: string;
+}
+
+const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
+  items = [],
+  autoplay = true,
+  autoplayInterval = 5000,
+  heading,
+  subText,
+}) => {
   const [current, setCurrent] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false); // Prevent rapid clicks
-  const [direction, setDirection] = useState(""); // Track navigation direction
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [direction, setDirection] = useState(""); 
 
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out' });
@@ -21,45 +35,44 @@ const PerformanceCarousel = ({ items = [], autoplay = true, autoplayInterval = 5
   useEffect(() => {
     AOS.refresh();
   }, [current]);
-
-  // Autoplay logic
+  
   useEffect(() => {
     if (!autoplay) return;
 
     const interval = setInterval(() => {
       next();
-    }, autoplayInterval); // Autoplay interval
+    }, autoplayInterval); 
 
-    return () => clearInterval(interval); // Clean up the interval when component unmounts
+    return () => clearInterval(interval);
   }, [autoplay, autoplayInterval, items.length, current]);
 
   const prev = () => {
-    if (isTransitioning) return; // Prevent rapid clicks
+    if (isTransitioning) return; 
     setIsTransitioning(true);
     setDirection("left");
     setCurrent((current - 1 + items.length) % items.length);
-    setTimeout(() => setIsTransitioning(false), 800); // Transition duration
+    setTimeout(() => setIsTransitioning(false), 800);
   };
 
   const next = () => {
-    if (isTransitioning) return; // Prevent rapid clicks
+    if (isTransitioning) return; 
     setIsTransitioning(true);
     setDirection("right");
     setCurrent((current + 1) % items.length);
-    setTimeout(() => setIsTransitioning(false), 800); // Transition duration
+    setTimeout(() => setIsTransitioning(false), 800); 
   };
 
   return (
-    <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">
+    <div className="w-full h-full bg-white-500 relative overflow-hidden">
       <div className="w-full flex flex-col items-center justify-center mb-8">
         <div data-aos="zoom-in">
          <Typography variant='h2-medium-magistral' className="mb-2" data-aos="fade-up" data-aos-delay="0">
-         Choose Your Perfect Ride
+         {heading}
          </Typography>
          </div>
          <div data-aos="zoom-out">
          <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center' data-aos="fade-up" data-aos-delay="100">
-         Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.
+         {subText}
          </Typography>
          </div>
       </div>

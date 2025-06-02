@@ -105,7 +105,7 @@ export default function Page() {
   return (
     <>
                 <head>
-                <title>Crown Benling Electric Mobility - Find a Dealer</title>
+                <title>Crown Benling - Find a Dealer</title>
             </head>
       <div>
         <ShopSection />

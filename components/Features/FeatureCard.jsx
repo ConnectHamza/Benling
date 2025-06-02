@@ -36,7 +36,7 @@ const FeatureCard = ({
                 )}
             </div>
             <div className="mt-5">
-                <Typography variant="h3-medium-magistral" className="text-white">{heading}</Typography>
+                <Typography as="h3" variant="h3-medium-magistral" className="text-white">{heading}</Typography>
                 <Typography variant="subtext-regular-jakarta" className="text-white">{description}</Typography>
             </div>
         </div>

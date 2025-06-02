@@ -49,7 +49,7 @@ const BrandingSection = () => {
             <div className="max-w-[1300px] mx-auto px-4 md:px-6 text-center" >
                 {/* Heading */}
                 <div data-aos="fade-up">
-                <Typography variant='h2-medium-magistral' className="mb-2" >
+                <Typography as="h2" variant='h2-medium-magistral' className="mb-2" >
                     Inspiring a Greener Tomorrow
                 </Typography>
                 </div>

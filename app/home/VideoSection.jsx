@@ -17,12 +17,12 @@ export default function VideoSection() {
     <section className="relative w-full md:py-40 py-20 overflow-hidden">
       <div className="m-w-auto text-center">
         <div data-aos="fade-up" data-aos-delay="0">
-        <Typography variant="h2-medium-magistral" className="mb-2">
+        <Typography as="h2" variant="h2-medium-magistral" className="mb-2">
           Benling is Everywhere
         </Typography>
         </div>
         <div data-aos="fade-up" data-aos-delay="500">
-        <Typography variant="subtext-regular-jakarta" className="text-[#0A0A0A]">
+        <Typography as="p" variant="subtext-regular-jakarta" className="text-[#0A0A0A]">
           Watch real riders, influencers, and EV enthusiasts showcase Crown Benling in action across Pakistan.
         </Typography>
         </div>

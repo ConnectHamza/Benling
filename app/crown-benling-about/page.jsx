@@ -11,7 +11,7 @@ export default function About() {
     return (
         <div>
       <head>
-        <title>Crown Benling Electric Mobility - About</title>
+        <title>Crown Benling - About</title>
       </head>
             <div>
                 <Herosection />
