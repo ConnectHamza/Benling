@@ -172,7 +172,8 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
           iconName="BookDown"
           iconPosition="left"
           href={items[current]?.brochureLink}
-          className="border-2 border-black bg-black-30 hover:bg-orange-300 hover:text-black-30 hover:border-black-30 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black"
+          textColor='text-[#fff] hover:text-black-30'
+          className=" border-2 border-black-30 hover:border-black-30 bg-black-30  px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black-30"
           target="_blank"
           download={true}
         />

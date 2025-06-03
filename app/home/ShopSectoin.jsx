@@ -166,7 +166,7 @@ export default function ShopSlider() {
                           <Typography variant='extra-subtext-regular-jakarta' as="span" key={index} className="text-[#575BFF] text-[12px] mr-2">
                             {number}
                             {index !== shop.phone.length - 1 && (
-                              <Typography variant='extra-subtext-regular-jakarta'  as="span" className="mx-2 text-[#575BFF]">—</Typography>
+                              <Typography variant='extra-subtext-regular-jakarta'  as="span" className="mx-0 text-[#575BFF]">—</Typography>
                             )}
                           </Typography>
                         ))}
@@ -315,7 +315,7 @@ export default function ShopSlider() {
                       </Typography>
                       <div className="text-gray-600 flex flex-wrap">
                         {shop.phone.map((number, index) => (
-                          <Typography variant='extra-subtext-regular-jakarta' as="span" key={index} className="text-[#575BFF] text-[12px] mr-2">
+                          <Typography variant='extra-subtext-regular-jakarta' as="span" key={index} className="text-[#575BFF] text-[12px]">
                             {number}
                             {index !== shop.phone.length - 1 && (
                               <Typography variant='extra-subtext-regular-jakarta'  as="span" className="mx-2 text-[#575BFF]">—</Typography>

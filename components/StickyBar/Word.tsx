@@ -17,7 +17,7 @@ export default function Paragraph({ paragraph, color }: ParagraphProps) {
   const words = paragraph.split(" ");
 
   return (
-    <h2 
+    <p 
       ref={container}         
       className={`paragraph font-jakarta font-semibold ${color}`} 
     >
@@ -30,7 +30,7 @@ export default function Paragraph({ paragraph, color }: ParagraphProps) {
           </Word>
         );
       })}
-    </h2>
+    </p>
   );
 }
 
