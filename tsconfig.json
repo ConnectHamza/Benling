@@ -39,7 +39,7 @@
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-, "components/LoopCarousel/home-carousel.tsx", "app/flash/page.jsx"  ],
+, "components/LoopCarousel/home-carousel.tsx", "app/flash/page.jsx", "app/blogs/[slug]/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

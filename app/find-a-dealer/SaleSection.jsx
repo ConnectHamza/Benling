@@ -22,12 +22,12 @@ export default function SalesAfterSalesSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                     {/* Card 1 */}
                     <div className="flex flex-col">
-                        <div className="w-full h-[220px] relative mb-4 rounded-xl overflow-hidden">
+                        <div className="w-full h-[220px] md:h-[320px] relative mb-4 rounded-xl overflow-hidden">
                             <Image
                                 src={SaleSupport}
                                 alt="Sales Support"
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit="cover"                                
                                 className="rounded-xl"
                             />
                         </div>
@@ -44,7 +44,7 @@ export default function SalesAfterSalesSection() {
 
                     {/* Card 2 */}
                     <div className="flex flex-col">
-                        <div className="w-full h-[220px] relative mb-4 rounded-xl overflow-hidden">
+                        <div className="w-full h-[220px] md:h-[320px] relative mb-4 rounded-xl overflow-hidden">
                             <Image
                                 src={AfterSale}
                                 alt="After-Sales Service"

@@ -21,7 +21,7 @@ const PerformanceSeries = () => {
                 <title>Crown Benling - Performance Series</title>
             </head>
             {/* Desktop */}
-            <div className='relative h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${BikesBg.src})` }}>
+            <div className='relative h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 z-20' style={{ backgroundImage: `url(${BikesBg.src})` }}>
                 <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center' data-aos="zoom-out">Performance Series</h1>
                 <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4' data-aos="zoom-in">
                     <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO<span className='text-sm'>4</span></h3>
@@ -29,13 +29,13 @@ const PerformanceSeries = () => {
                     <Image className='absolute top-0' alt='Performance Series Bikes' src={BikesImg}/>
             </div>
             {/* Mobile */}
-            <div className='h-[65vh] bg-cover bg-center bg-no-repeat flex flex-col md:hidden justify-start items-center py-20 mt-10' style={{ backgroundImage: `url(${PerformanceBannermob.src})` }}>
+            <div className='h-[65vh] bg-cover bg-center bg-no-repeat flex flex-col md:hidden justify-start items-center py-20' style={{ backgroundImage: `url(${PerformanceBannermob.src})` }}>
                 <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>
                 <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4'>
                     <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO<span className='text-xs'>4</span></h3>
                 </div>
             </div>
-            <div>
+            <div className='relative'>
                 <StickyBar
                     title="About Performance Series"
                     description="Crown Benling Performance Series features next-gen electric scooters coming with Lithium-LiFePO₄ batteries, built for high performance, faster charging, and longer life. Designed for riders who demand strength, speed, and reliability on every ride."

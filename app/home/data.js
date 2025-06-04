@@ -95,9 +95,9 @@ export const faqsData = [
     {
       name: "Bike 1",
       image: Image_Flash.src,
-      range: 150,
-      maxSpeed: 70,
-      motorPower: 1500,
+      range: "150 km Range",
+      maxSpeed: "70 km/h Top Speed",
+      motorPower: "1500 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
       exploreLink: "/crown-benling-flash",
       logo: Logo_Flash.src
@@ -105,9 +105,9 @@ export const faqsData = [
     {
       name: "Bike 2",
       image: Image_KnightRider.src,
-      range: 100,
-      maxSpeed: 60,
-      motorPower: 1500,
+      range: "100 km Range",
+      maxSpeed: "60 km/h Top Speed",
+      motorPower: "1500 Motor Power",
       brochureLink: "brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
       exploreLink: "/crown-benling-knight-rider",
       logo: Logo_Knight_Rider.src
@@ -116,9 +116,9 @@ export const faqsData = [
     {
       name: "Bike 3",
       image: Image_Roshnix.src,
-      range: 110,
-      maxSpeed: 60,
-      motorPower: 1500,
+      range: "110 km Range",
+      maxSpeed: "60 km/h Top Speed",
+      motorPower: "1500 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
       exploreLink: "/crown-benling-roshni-x",
       logo: Logo_Roshnix.src
@@ -126,54 +126,54 @@ export const faqsData = [
     {
       name: "Bike 3",
       image: Image_Ezee.src,
-      range: 55,
-      maxSpeed: 40,
-      motorPower: 650,
+      range: "55 km Range",
+      maxSpeed: "40 km/h Top Speed",
+      motorPower: "650 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
       exploreLink: "/crown-benling-ezee",
       logo: Logo_Ezze.src
     }, {
       name: "Bike 3",
       image: Image_Roshni.src,
-      range: 120,
-      maxSpeed: 60,
-      motorPower: 1200,
+      range: "120 km Range",
+      maxSpeed: "60 km/h Top Speed",
+      motorPower: "1200 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
       exploreLink: "/crown-benling-roshni",
       logo: Logo_Roshni.src
     }, {
       name: "Bike 3",
       image: Image_Firefly.src,
-      range: 100,
-      maxSpeed: 60,
-      motorPower: 1200,
+      range: "100 km Range",
+      maxSpeed: "60 km/h Top Speed",
+      motorPower: "1200 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Firefly_Brochure.pdf',
       exploreLink: "/crown-benling-firefly",
       logo: Logo_Firefly.src
     }, {
       name: "Bike 3",
       image: Image_Spark.src,
-      range: 40,
-      maxSpeed: 40,
-      motorPower: 600,
+      range: "40 km Range",
+      maxSpeed: "40 km/h Top Speed",
+      motorPower: "600 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Spark_Brochure.pdf',
       exploreLink: "/crown-benling-spark",
       logo: Logo_Spark.src
     }, {
       name: "Bike 3",
       image: Image_Miniscooter.src,
-      range: 35,
-      maxSpeed: 35,
-      motorPower: 450,
+      range: "35 km Range",
+      maxSpeed: "35 km/h Top Speed",
+      motorPower: "450 Motor Power",
       brochureLink: "/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
       exploreLink: "/crown-benling-mini-scooty",
       logo: Logo_Mini_Scooty.src
     },{
       name: "Bike 3",
       image: Image_Fairy.src,
-      range: 80,
-      maxSpeed: 55,
-      motorPower: 1000,
+      range: "80 km Range",
+      maxSpeed: "55 km/h Top Speed",
+      motorPower: "1000 Motor Power",
       brochureLink: "/brouchers/Crown_Benling_Fairy_Brochure.pdf",
       exploreLink: "/crown-benling-fairy",
       logo: Logo_Fairy.src
@@ -442,7 +442,7 @@ export const cities =
       {
         "id": 10,
         "name": "AGRO POWER",
-        "address": "Plot # 10, Sector C-1 Block 2, Main College Road, Near Lajhna Chowk,",
+        "address": "Plot # 10, Sector C-1 Block 2, Main College Road, Near Lajhna Chowk, Lahore.",
         "phone": ["0310-0338666"],
         "location": "https://www.google.com/maps/place/31%C2%B026'53.8%22N+74%C2%B017'48.4%22E/@31.4482556,74.2969652,19z/data=!4m4!3m3!8m2!3d31.4482778!4d74.2967778?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
       }
@@ -459,7 +459,7 @@ export const cities =
       }
     ]
   },
-  "Wah cant": {
+  "Wah Cantt": {
     "data": [
       {
         "id": 12,
@@ -583,7 +583,7 @@ export const cities =
       }
     ]
   },
-  "Umerkot": {
+  "Umarkot": {
     "data": [
       {
         "id": 24,

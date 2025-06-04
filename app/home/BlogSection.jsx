@@ -40,7 +40,7 @@ export default function RecentBlogsCarousel() {
               >
                 <div>
                   <div className="w-full h-[200px] sm:h-[250px] relative rounded-lg overflow-hidden mb-4">
-                    <Link href={`/blogs/${blog.slug}`}>
+                    <Link href={`/blogs/${blog.slug}`} target="_blank">
                     <Image
                       src={blog.coverImage}
                       alt={blog.title}
@@ -53,19 +53,19 @@ export default function RecentBlogsCarousel() {
                   <Typography as="span" variant="extra-subtext-regular-jakarta" className="text-[#989898] mb-4">
                     {blog.date}
                   </Typography>
-                  <Link href={`/blogs/${blog.slug}`}>
+                  <Link href={`/blogs/${blog.slug}`} target="_blank">
                   <Typography as="h6" variant="h6-medium-jakarta" className="mb-2 leading-tight line-clamp-2 blog-heading">
                     {blog.title}
                   </Typography>                    
                   </Link>
-                  <Link href={`/blogs/${blog.slug}`}>
+                  <Link href={`/blogs/${blog.slug}`} target="_blank">
                   <Typography as="p" variant="subtext-regular-jakarta" className=" text-[#000] leading-snug line-clamp-3">
                     {blog.subtitle}
                   </Typography>
                   </Link>
                 </div>
                 <div className="mt-4">
-                  <Link href={`/blogs/${blog.slug}`}>
+                  <Link href={`/blogs/${blog.slug}`} target="_blank">
                     <div className="text-[#000] hover:underline text-sm font-semibold font-jakarta flex flex-row items-center">
                       <Typography variant="extra-subset-bold-jakarta">
                         Read More

@@ -1,8 +1,9 @@
 'use client'
 import React, { useEffect, useState } from "react";
 
-function useActiveHeading(ids) {
+function useActiveHeading(ids: string[]) {
   const [activeId, setActiveId] = useState(ids[0]);
+  
   useEffect(() => {
     function onScroll() {
       let currentId = ids[0];
@@ -20,18 +21,19 @@ function useActiveHeading(ids) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [ids]);
+  
   return activeId;
 }
 
-export default function BlogLeftSidebar({ headings = [], readTime }) {
+export default function BlogLeftSidebar({ headings = [], readTime }: { headings: { id: string; text: string }[], readTime: string }) {
   const ids = headings.map(h => h.id);
   const activeId = useActiveHeading(ids);
   
   return (
     <aside className="w-full lg:w-56 mb-8 lg:mb-0">
-      {/* This is the sticky container */}
-      <div className="sticky top-8 h-[calc(100vh-32px)] overflow-y-auto">
-        <div className="bg-white p-4">
+      {/* Sticky container */}
+      <div className="sticky top-8 h-[calc(100vh-2rem)] overflow-y-auto bg-white shadow-md rounded-md">
+        <div className="p-4">
           <div className="mb-4">
             <span className="block text-gray-700 font-semibold mb-1">In this article</span>
             <span className="text-xs text-gray-500">{readTime} min read</span>

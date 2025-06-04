@@ -3,7 +3,7 @@ import Banner from "../../public/assets/About/banner.png"
 
 export default function Herosection() {
     return (
-        <div className="w-full bg-white py-10 pt-[120px]">
+        <div className="w-full bg-white md:py-20 py-10">
             {/* Banner Section */}
             <div className="w-full max-w-[1300px] mx-auto px-4">
                 <div className="relative w-full rounded-lg overflow-hidden">

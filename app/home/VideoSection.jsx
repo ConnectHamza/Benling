@@ -6,10 +6,18 @@ import 'aos/dist/aos.css';
 import Link from 'next/link';
 
 const videos = [
-  { video: '/Reels/Firefly-Reel-Female.webm' },
-  { video: '/Reels/Flash-Reel-Female.webm' },
-  { video: '/Reels/Firefly-Reel.webm' },
-  { video: '/Reels/Flash-Reel-Male.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/Firefly-Reel-Female.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/Firefly-Reel.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0023.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/Flash-Reel-Female.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0024.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0025.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0026.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0028.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0030.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0031.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0032.webm' },
+  { video: 'https://crowngroup.com.pk/wp-content/reels/VID-20250604-WA0027.webm' },
 ];
 
 export default function VideoSection() {
@@ -48,7 +56,7 @@ export default function VideoSection() {
           {videos.map((video, idx) => (
             <div
               key={idx}
-              className="shrink-0 w-full sm:w-full md:w-[20%] aspect-[9/16] flex items-center justify-center snap-start"
+              className="shrink-0 w-full md:w-[15%] aspect-[3/12] flex items-center justify-center snap-start"
             >
               <div className="relative w-full h-full bg-white/20 rounded-2xl overflow-hidden">
                 <video

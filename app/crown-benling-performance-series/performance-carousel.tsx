@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -25,8 +24,8 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
   subText,
 }) => {
   const [current, setCurrent] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const [direction, setDirection] = useState(""); 
+  const [isTransitioning, setIsTransitioning] = useState(false); // Prevent rapid clicks
+  const [direction, setDirection] = useState(""); // Track navigation direction
 
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out' });
@@ -35,59 +34,56 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
   useEffect(() => {
     AOS.refresh();
   }, [current]);
-  
+
+  // Autoplay logic
   useEffect(() => {
     if (!autoplay) return;
 
     const interval = setInterval(() => {
-      next();
-    }, autoplayInterval); 
+      handleNext();
+    }, autoplayInterval);
 
     return () => clearInterval(interval);
   }, [autoplay, autoplayInterval, items.length, current]);
 
-  const prev = () => {
-    if (isTransitioning) return; 
+  const handlePrev = () => {
+    if (isTransitioning) return;
     setIsTransitioning(true);
     setDirection("left");
     setCurrent((current - 1 + items.length) % items.length);
     setTimeout(() => setIsTransitioning(false), 800);
   };
 
-  const next = () => {
-    if (isTransitioning) return; 
+  const handleNext = () => {
+    if (isTransitioning) return;
     setIsTransitioning(true);
     setDirection("right");
     setCurrent((current + 1) % items.length);
-    setTimeout(() => setIsTransitioning(false), 800); 
+    setTimeout(() => setIsTransitioning(false), 800);
   };
 
   return (
-    <div className="w-full h-full bg-white-500 relative overflow-hidden">
+    <div className="w-full h-full bg-white-500 relative overflow-hidden px-4">
       <div className="w-full flex flex-col items-center justify-center mb-8">
-        <div data-aos="zoom-in">
-         <Typography variant='h2-medium-magistral' className="mb-2" data-aos="fade-up" data-aos-delay="0">
-         {heading}
-         </Typography>
-         </div>
-         <div data-aos="zoom-out">
-         <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A] text-center' data-aos="fade-up" data-aos-delay="100">
-         {subText}
-         </Typography>
-         </div>
+        <div data-aos="fade-up">
+          <Typography variant="h2-medium-magistral" className="mb-2 text-center">
+            {heading}
+          </Typography>
+          <Typography variant="subtext-regular-jakarta" className="text-[#0A0A0A] text-center">
+            {subText}
+          </Typography>
+        </div>
       </div>
 
-      {/* Carousel Wrapper */}
       <div className="relative flex items-center justify-center h-full">
-        
-        {/* Previous Bike (Partially Visible) */}
+        {/* Previous Item (Partially Visible) */}
         <div
           className="absolute left-[-25%] hidden md:block lg:block"
-          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+          data-aos={direction === "right" ? "slide-right" : "slide-left"}
         >
           <Image
             src={items[(current - 1 + items.length) % items.length]?.image}
-            alt="Previous Bike"
+            alt="Previous Item"
             width={600}
             height={300}
             className="object-contain"
@@ -96,48 +92,44 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
 
         {/* Previous Button */}
         <button
-          onClick={prev}
-          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
+          onClick={handlePrev}
+          className="absolute left-[15%] [@media(max-width:640px)]:left-[0%] text-black-30 rounded-full p-0 hover:scale-110 transition z-10"
         >
           <ChevronLeft size={35} />
         </button>
 
-
-        {/* Current Bike */}
-        <div className="w-[70%] mx-auto">
-          <motion.div
+        {/* Current Item */}
+        <div className="w-[100%] mx-auto">
+          <div
             key={current}
-            initial={{ opacity: 0, x: direction === "right" ? 100 : -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            data-aos={direction === "right" ? "slide-left" : "slide-right"}
             className="flex items-center justify-center"
           >
             <Image
               src={items[current]?.image}
               alt={items[current]?.name}
-              width={900}
-              height={300}
-              className="object-contain"
+              width={1000}
+              height={600}
             />
-          </motion.div>
+          </div>
         </div>
 
         {/* Next Button */}
         <button
-          onClick={next}
-          className="absolute right-[15%] [@media(max-width:640px)]:right-[5%] text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
+          onClick={handleNext}
+          className="absolute md:right-[15%] right-[0%] [@media(max-width:640px)]:right-[0%] text-black-30 rounded-full hover:scale-110 transition z-10"
         >
           <ChevronRight size={40} />
         </button>
 
-        {/* Next Bike (Partially Visible) */}
+        {/* Next Item (Partially Visible) */}
         <div
           className="absolute right-[-25%] hidden md:block lg:block"
-          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+          data-aos={direction === "right" ? "slide-right" : "slide-left"}
         >
           <Image
             src={items[(current + 1) % items.length]?.image}
-            alt="Next Bike"
+            alt="Next Item"
             width={600}
             height={300}
             className="object-contain"
@@ -150,39 +142,44 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
         <Image
           src={items[current]?.logo}
           alt={`${items[current]?.name} Logo`}
-          width={200}
-          height={50}
-          className="mx-auto"
+          width={150}
+          height={20}
+          className="mx-auto h-10"
         />
       </div>
 
-      {/* Motorcycle Details */}
+      {/* Item Details */}
       <div className="mt-4 text-center" data-aos="fade-up">
-        <div className="flex justify-center md:gap-8 gap-2 text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
-          <Typography variant="body-regular-magistral" >
-            <Typography as="span" variant="body-regular-magistral" className="md:border-r-2 border-black-30 md:pr-4 ">{items[current]?.range}</Typography>
+        <div className="flex flex-wrap justify-center md:gap-x-8 gap-x-4 text-xs md:text-base text-[#0A0A0A] font-magistral font-normal">
+          <Typography variant="body-regular-magistral">
+            <Typography as="span" variant="body-regular-magistral">
+              {items[current]?.range}
+            </Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            <Typography variant="body-regular-magistral" as="span" className="md:border-r-2 md:border-black-30 md:pr-4" >{items[current]?.maxSpeed}</Typography>
+            <Typography as="span" variant="body-regular-magistral">
+              {items[current]?.maxSpeed}
+            </Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            <Typography variant="body-regular-magistral" as="span" >{items[current]?.motorPower}</Typography>
+            <Typography as="span" variant="body-regular-magistral">
+              {items[current]?.motorPower}
+            </Typography>
           </Typography>
         </div>
       </div>
 
       {/* Buttons */}
       <div className="mt-8 flex justify-center gap-4 flex-wrap px-4" data-aos="fade-up">
-        {/* Download Brochure Button */}
         <Button
           variant="outline"
           label="Download Brochure"
           iconName="BookDown"
           iconPosition="left"
           href={items[current]?.brochureLink}
-          className="border-2 border-black bg-black-30 hover:bg-orange-300 hover:text-black-30 hover:border-black-30 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black"
+          className="border-2 border-black-30 text-black-30 hover:bg-gray-100 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition"
           target="_blank"
-          download={true}        
+          download={true}
         />
 
         <Button
@@ -191,12 +188,11 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
           iconName="ArrowUpRight"
           iconPosition="right"
           href={items[current]?.exploreLink}
-          textColor='text-[#000]'
+          textColor="text-[#000]"
           className="bg-crownOrange text-[#000] hover:bg-[#e6531f] px-5 py-2 rounded font-medium text-sm sm:text-base transition"
           target="_blank"
         />
       </div>
-
     </div>
   );
 };

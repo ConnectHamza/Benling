@@ -294,43 +294,41 @@ export default function ShopSlider() {
               `}
             >
               {cities[selectedCity].data.map((shop) => (
-                <div
-                  key={shop.id}
-                  className=" w-[85vw] sm:w-[280px] md:w-[320px] min-h-[300px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
-                >
-                  <div>
-                    <div className="mb-3">
-                      <Image
-                        src={shopIcon.src}
-                        alt="Shop Icon"
-                        width={40}
-                        height={40}
-                        className="mb-2"
-                      />
-                      <Typography variant='h5-medium-magistral' className="mb-1 text-[#0A0A0A]">
-                        {shop.name}
-                      </Typography>
-                      <Typography variant='extra-subtext-regular-jakarta' className=" text-gray-700 mb-2 h-[100px]">
-                        {shop.address}
-                      </Typography>
-                      <div className="text-gray-600 flex flex-wrap">
-                        {shop.phone.map((number, index) => (
-                          <Typography variant='extra-subtext-regular-jakarta' as="span" key={index} className="text-[#575BFF] text-[12px]">
-                            {number}
-                            {index !== shop.phone.length - 1 && (
-                              <Typography variant='extra-subtext-regular-jakarta'  as="span" className="mx-2 text-[#575BFF]">—</Typography>
-                            )}
-                          </Typography>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <Link href={shop.location} target='_blank'>
-                  <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
-                    Get Direction
-                  </button>
-                  </Link>
-                </div>
+                                <div
+                                    key={shop.id}
+                                    className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[350px] min-h-[275px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
+                                >
+                                    <div>
+                                        <div className="mb-3">
+                                            <Image
+                                                src={shopIcon.src}
+                                                alt="Shop Icon"
+                                                width={28}
+                                                height={28}
+                                                className="mb-2"
+                                            />
+                                            <h3 className="text-black mb-1 font-normal font-magistral text-[20px] sm:text-[23px]">
+                                                {shop.name}
+                                            </h3>
+                                            <p className="text-[14px] text-gray-700 mb-2 font-jakarta h-[75px] overflow-hidden text-ellipsis">
+                                                {shop.address}
+                                            </p>
+                                        </div>
+                                    </div>
+                                            <div className="text-sm text-gray-600 flex flex-wrap">
+                                                {shop.phone.map((number, index) => (
+                                                    <span key={index} className="text-[#575BFF] text-[12px]">
+                                                        {number}
+                                                        {index !== shop.phone.length - 1 && (
+                                                            <span className="mx-2 text-gray-400">-</span>
+                                                        )}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                    <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
+                                        Get Direction
+                                    </button>
+                                </div>
               ))}
             </div>
           </div>

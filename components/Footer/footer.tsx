@@ -9,15 +9,15 @@ import Link from 'next/link';
 import Typography from '../GradientText/Typography';
 
 const items = [
-    { label: 'Ezee', href: 'crown-benling-ezee' },
-    { label: 'Firefly', href: 'crown-benling-firefly' },
+    { label: 'Fairy', href: 'crown-benling-fairy' },
     { label: 'Flash', href: 'crown-benling-flash' },
     { label: 'Knight Rider', href: 'crown-benling-knight-rider' },
-    { label: 'Mini Scooty', href: 'crown-benling-mini-scooty' },
-    { label: 'Roshni', href: 'crown-benling-roshni' },
     { label: 'Roshni X', href: 'crown-benling-roshni-x' },
+    { label: 'Firefly', href: 'crown-benling-firefly' },
+    { label: 'Roshni', href: 'crown-benling-roshni' },
+    { label: 'Ezee', href: 'crown-benling-ezee' },
+    { label: 'Mini Scooty', href: 'crown-benling-mini-scooty' },
     { label: 'Spark', href: 'crown-benling-spark' },
-    { label: 'Fairy', href: 'crown-benling-fairy' },
 
 ];
 

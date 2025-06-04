@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo_Ezze from "../../public/assets/Home/Carousel/Ezee_Logo.svg"
 import Logo_Fairy from "../../public/assets/Home/Carousel/Fairy_Logo.svg"
 import Logo_Flash from "../../public/assets/Home/Carousel/Flash_Logo.svg"
@@ -24,7 +24,7 @@ import { ArrowRight, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import AppButton from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
 import MobileModelsCarousel from "./mobileModelsCarousel";
-import { useRouter } from "next/navigation"; 
+import { useRouter, usePathname } from "next/navigation"; 
 
 
 // --- Model Data ---
@@ -40,7 +40,10 @@ export const modelsData = [
     { logo: Logo_Fairy, img: Image_Fairy, range: "80km Range", speed: "55km/h Top Speed", href: "/crown-benling-fairy" }
 ];
 // --- Mobile Models Panel (define ONCE only) ---
+
 function MobileModelsPanel({ onBack }) {
+
+    
     return (
         <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
             {/* Black header with back button and centered logo */}
@@ -103,17 +106,29 @@ const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isModelsOpen, setIsModelsOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+    const [isFixed, setIsFixed] = useState(false);
 
     const router = useRouter();
-    
+    const pathname = usePathname();
+
+    useEffect(() => {
+        if (pathname === "/" || pathname === "/find-a-dealer" || pathname === "/contact" || pathname === "/book-now") {
+            setIsFixed(true);
+        } else {
+            setIsFixed(false);
+        }
+    }, [pathname]);
+
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
         setIsMegaMenuOpen(false);
     };
     
+    
     // Desktop Mega Menu
 const DesktopModelsMegaMenu = () => (
-    <div className="fixed overflow-gray w-full md:px-20 left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg">
+    <div className={`fixed overflow-gray md:px-20 left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg`}
+    style={{zIndex: '9999'}}>
         <div className="max-w-full mx-auto px-10 py-8 h-full flex flex-col">
             {/* Heading */}
             <div className="font-regular text-lg mb-2 text-black-200 font-magistral">
@@ -170,10 +185,10 @@ const DesktopModelsMegaMenu = () => (
     const navLink =
         "relative font-jakarta py-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
 
-        const isFixed = router.pathname === "/";
+        
 
     return (
-        <header className={`w-full z-50 fixed top-0 left-0 bg-black-200 text-white h-[75px] flex items-center`}>
+        <header className={`w-full z-50 ${isFixed ? 'fixed' : 'relative'} top-0 left-0 bg-black-200 text-white h-[75px] flex items-center`}>
             <div className="max-w-full md:px-20 mx-auto flex items-center justify-between w-full px-6 py-2">
                 {/* Left nav - vertically centered */}
                 <nav className="hidden md:flex items-center gap-8 text-sm h-full font-jakarta">

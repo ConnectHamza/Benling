@@ -28,14 +28,14 @@ export default function Home() {
  
 
   return (
-    <>
-      <div className='pt-[75px]'>
+    <div className='relative'>
+      <div className='pt-[0px]'>
         <HeroImageSlide
           slides={Slides}
         />
       </div>
 
-      <div>
+      <div className='relative'>
       <StickyBar      
         title="About Crown Benling Electric Mobility"
         description="Crown Benling Electric Mobility, proudly operated by Crown Group, leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
@@ -46,6 +46,7 @@ export default function Home() {
         href='/crown-benling-about'
         color="white"
         showButton={false}
+        isFixed={false}
       />
       </div>
 
@@ -105,6 +106,6 @@ export default function Home() {
         <div>
         <Faqs data={faqsData} />        
         </div>
-    </>
+    </div>
   );
 }

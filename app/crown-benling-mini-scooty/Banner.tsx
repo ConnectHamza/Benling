@@ -5,13 +5,15 @@ import HeroSection from '@/components/Herocontainer/Herocontainer'
 
 const Banner = () => {
     return (
-        <div className='pt-[75px]'>
+        <div className='pt-[0px]'>
             <HeroSection
                 title="Compact, Stylish, and Made for City Life"
                 subtitle="Turn heads with Mini Scooty, the perfect electric scooter for young and urban riders. Lightweight, efficient, and designed for effortless short-distance commutes across Pakistan."
                 buttonText="Explore More"
                 imageSrc={MiniWeb.src}
                 mobileImageSrc={MiniBannerMobile.src}
+                price='99,000'
+                href='/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf'
             />
         </div>
 

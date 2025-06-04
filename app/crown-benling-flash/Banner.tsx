@@ -5,13 +5,14 @@ import FlashBannerMobile from '../../public/assets/flash/main-mobile.webp'
 import HeroSection from '@/components/Herocontainer/Herocontainer'
 const Banner = () => {
     return (
-        <div className='pt-[75px]'>
+        <div className='pt-[0px]'>
             <HeroSection
                 title="Advanced Electric Scooter with Speed"
                 subtitle="Designed for the modern commuter, Flash combines speed, safety, and smart features like digital display and dual disc brakes—making it the go-to electric scooter in Pakistan."
-                buttonText="Explore More"
                 imageSrc={FlashWeb.src}
                 mobileImageSrc={FlashBannerMobile.src}
+                price='250,000'
+                href='/brouchers/Crown_Benling_Flash_Brochure.pdf'
             />
         </div>
 

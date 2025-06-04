@@ -16,7 +16,8 @@ interface StickyBarProps {
   bgImage: string;
   href?: string;
   color?: string;
-  showButton?: boolean; // New prop to control button visibility
+  showButton?: boolean; 
+  isFixed?: boolean; 
 }
 
 const StickyBar: React.FC<StickyBarProps> = ({
@@ -28,13 +29,33 @@ const StickyBar: React.FC<StickyBarProps> = ({
   bgImage,
   href,
   color,
-  showButton = true // Default value is true
+  showButton = true,
+  isFixed = true 
 }) => {
   const container = useRef(null);
 
   return (
-    <div>
-      <div className="w-full bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90">
+    <div className="relative">
+      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-20 top-0 bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
+ >
+        <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
+          <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
+          {showButton && ( // Conditionally render the AppButton
+            <div data-aos="fade-left">
+              <AppButton
+                size="medium"
+                variant="solid"
+                label="Book now"
+                iconName="ArrowUpRight"
+                iconPosition="right"
+                href={"/book-now"}
+                textColor="text-[#000]"
+              />
+            </div>
+          )}
+        </div>
+      </div>
+            <div className="w-full z-40 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-gray-90" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
           {showButton && ( // Conditionally render the AppButton

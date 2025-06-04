@@ -58,7 +58,7 @@ const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) 
     } = slides[currentSlide] || {};
 
     return (
-        <section className="relative w-full h-screen md:max-h-[91vh] overflow-hidden flex md:items-center items-start py-10">
+        <section className="relative w-full h-screen md:max-h-[91vh] overflow-hidden flex md:items-center items-start py-20 mt-10">
             {/* Background Images Container */}
             <div className="absolute inset-0 w-full h-full">
                 {/* Desktop Background */}
@@ -95,7 +95,7 @@ const HeroSection = ({ slides = [], autoplay = true, autoplayInterval = 5000 }) 
 
             {/* Content Container */}
             <div className="relative z-10 w-full">
-                <div className="container px-6 sm:px-8 mx-auto flex flex-col md:items-center items-start justify-center h-full">
+                <div className="container px-6 sm:px-6 mx-auto flex flex-col md:items-center items-start justify-center h-full">
                     <div className="max-w-[1400px] md:px-20">
                         <div className={`md:space-y-6 ${textAlign ? textAlign : 'text-left'} w-full  ${conWidth ? `md:${conWidth}` : 'md:w-[40%]'} text-${color}`}>
                             {/* Animated Title */}

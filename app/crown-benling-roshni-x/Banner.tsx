@@ -6,7 +6,7 @@ import HeroSection from '@/components/Herocontainer/Herocontainer'
 
 const Banner = () => {
     return (
-        <div className='pt-[75px]'>
+        <div className='pt-[0px]'>
             <HeroSection
                 title="The Era of Smart Electric Commuting"
                 subtitle="Upgrade to Roshni X, a next-generation electric scooter with ergonomic design, and high battery range built for tomorrow’s urban riders in Pakistan."
@@ -14,6 +14,9 @@ const Banner = () => {
                 imageSrc={RoshnixWeb.src}
                 mobileImageSrc={RoshniBannerMbl.src}
                 textColor='text-black'
+                price='235,000'
+                href='/brouchers/Crown_Benling_Roshni_X_Brochure.pdf'
+                color='black'
             />
         </div>
 

@@ -79,7 +79,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
         {/* Previous Bike (Partially Visible) */}
         <div
           className="absolute left-[-25%] hidden md:block lg:block"
-          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+          data-aos={direction === "right" ? "slide-right" : "slide-left"}
         >
           <Image
             src={items[(current - 1 + items.length) % items.length]?.image}
@@ -93,24 +93,24 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
         {/* Previous Button */}
         <button
           onClick={handlePrev}
-          className="absolute left-[15%] [@media(max-width:640px)]:left-[5%] text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
+          className="absolute left-[15%] [@media(max-width:640px)]:left-[0%] text-black-30 rounded-full p-0 hover:scale-110 transition z-10"
         >
           <ChevronLeft size={35} />
         </button>
 
         {/* Current Bike */}
-        <div className="w-[70%] mx-auto">
+        <div className="w-[100%] mx-auto">
           <div
             key={current}
-            data-aos={direction === "right" ? "fade-left" : "fade-right"}
+            data-aos={direction === "right" ? "slide-left" : "slide-right"}
             className="flex items-center justify-center"
           >
             <Image
               src={items[current]?.image}
               alt={items[current]?.name}
-              width={900}
-              height={300}
-              className="object-contain"
+              width={1000}
+              height={1000}
+
             />
           </div>
         </div>
@@ -118,7 +118,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
         {/* Next Button */}
         <button
           onClick={handleNext}
-          className="absolute md:right-[15%] right-[5%] [@media(max-width:640px)]:right-[6% text-black-30 rounded-full p-3 hover:scale-110 transition z-10"
+          className="absolute md:right-[15%] right-[0%] [@media(max-width:640px)]:right-[0% text-black-30 rounded-full hover:scale-110 transition z-10"
         >
           <ChevronRight size={40} />
         </button>
@@ -126,7 +126,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
         {/* Next Bike (Partially Visible) */}
         <div
           className="absolute right-[-25%] hidden md:block lg:block"
-          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+          data-aos={direction === "right" ? "slide-right" : "slide-left"}
         >
           <Image
             src={items[(current + 1) % items.length]?.image}
@@ -151,15 +151,15 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
 
       {/* Motorcycle Details */}
       <div className="mt-4 text-center" data-aos="fade-up">
-        <div className="flex justify-center md:gap-8 gap-2 text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
+        <div className="flex flex-wrap justify-center md:gap-x-8 gap-x-4 text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
           <Typography variant="body-regular-magistral">
-            Range: <Typography as="span" variant="body-regular-magistral">{items[current]?.range} km</Typography>
+             <Typography as="span" variant="body-regular-magistral">{items[current]?.range}</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Top Speed: <Typography variant="body-regular-magistral" as="span">{items[current]?.maxSpeed} km/h</Typography>
+           <Typography variant="body-regular-magistral" as="span">{items[current]?.maxSpeed}</Typography>
           </Typography>
           <Typography variant="body-regular-magistral">
-            Motor Power: <Typography variant="body-regular-magistral" as="span">{items[current]?.motorPower} W</Typography>
+            <Typography variant="body-regular-magistral" as="span">{items[current]?.motorPower}</Typography>
           </Typography>
         </div>
       </div>
@@ -172,8 +172,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
           iconName="BookDown"
           iconPosition="left"
           href={items[current]?.brochureLink}
-          textColor='text-[#fff] hover:text-black-30'
-          className=" border-2 border-black-30 hover:border-black-30 bg-black-30  px-5 py-2.5 rounded font-medium text-sm sm:text-base transition hover:text-black-30"
+          className=" border-2 border-black-30  text-black-30 hover:bg-gray-100 px-5 py-2.5 rounded font-medium text-sm sm:text-base transition"
           target="_blank"
           download={true}
         />

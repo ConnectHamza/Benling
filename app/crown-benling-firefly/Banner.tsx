@@ -5,13 +5,15 @@ import FireflyIMGMobile from '../../public/assets/Firefly/Firefly-Banner-mobile.
 import HeroSection from '@/components/Herocontainer/Herocontainer'
 const Banner = () => {
     return (
-        <div className='pt-[75px]'>
+        <div className='pt-[0px]'>
             <HeroSection
                 title="Embrace Tomorrow Now with Firefly"
                 subtitle="Step into the era of comfort with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style."
                 buttonText="Explore More"
                 imageSrc={FireflyWeb.src}
                 mobileImageSrc={FireflyIMGMobile.src}
+                price='195,000'
+                href='/brouchers/Crown_Benling_Firefly_Brochure.pdf'
             />
         </div>
 

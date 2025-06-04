@@ -11,6 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        
         <title>Crown Benling Electric Mobility - Electrifying Dreams</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         {/* Optional: other favicon formats */}

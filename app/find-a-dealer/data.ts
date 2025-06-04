@@ -191,7 +191,7 @@ export const cities =
       {
         "id": 10,
         "name": "AGRO POWER",
-        "address": "Plot # 10, Sector C-1 Block 2, Main College Road, Near Lajhna Chowk,",
+        "address": "Plot # 10, Sector C-1 Block 2, Main College Road, Near Lajhna Chowk, Lahore.",
         "phone": ["0310-0338666"],
         "location": "https://www.google.com/maps/place/31%C2%B026'53.8%22N+74%C2%B017'48.4%22E/@31.4482556,74.2969652,19z/data=!4m4!3m3!8m2!3d31.4482778!4d74.2967778?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
       }
@@ -208,7 +208,7 @@ export const cities =
       }
     ]
   },
-  "Wah cant": {
+  "Wah Cantt": {
     "data": [
       {
         "id": 12,
@@ -332,7 +332,7 @@ export const cities =
       }
     ]
   },
-  "Umerkot": {
+  "Umarkot": {
     "data": [
       {
         "id": 24,

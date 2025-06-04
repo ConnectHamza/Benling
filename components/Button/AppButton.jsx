@@ -8,9 +8,8 @@ const variantClasses = {
   solid: 'bg-orange-500 text-white hover:bg-orange-600',
   outline: `
     border border-black text-black 
-    hover:bg-white hover:text-black 
-    dark:border-white dark:text-white 
-    dark:hover:bg-white dark:hover:text-black
+    dark:text-white 
+
   `,
   labeled: 'text-black dark:text-white',
   footer: 'bg-black text-white text-sm',
@@ -25,7 +24,7 @@ const Button = ({
   onClick = () => { },
   href = null,
   target = '_self',
-  textColor = '', // Optional text/icon color override
+  textColor = 'text-black-30',
   fullWidth = false,
   type = '',
   download = false

@@ -42,9 +42,9 @@ export default function ShopSlider() {
     }, []);
 
     return (
-        <section className="w-full bg-white pt-[75px]">
+        <section className="w-full bg-white pt-[0px]">
             <div
-                className="relative w-full bg-no-repeat bg-top bg-cover pt-10 pb-20"
+                className="relative w-full bg-no-repeat bg-top bg-cover md:py-40 py-20"
                 style={{ backgroundImage: `url(${crownImage.src})` }}
             >
                 {/* Gradient Overlay */}
@@ -105,7 +105,7 @@ export default function ShopSlider() {
                             {shops.map((shop) => (
                                 <div
                                     key={shop.id}
-                                    className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[320px] min-h-[275px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
+                                    className="flex-shrink-0 w-[85vw] sm:w-[280px] md:w-[350px] min-h-[275px] bg-[#f5f5f5] rounded-lg shadow-md p-4 flex flex-col justify-between snap-start"
                                 >
                                     <div>
                                         <div className="mb-3">
@@ -122,9 +122,11 @@ export default function ShopSlider() {
                                             <p className="text-[14px] text-gray-700 mb-2 font-jakarta h-[75px] overflow-hidden text-ellipsis">
                                                 {shop.address}
                                             </p>
+                                        </div>
+                                    </div>
                                             <div className="text-sm text-gray-600 flex flex-wrap">
                                                 {shop.phone.map((number, index) => (
-                                                    <span key={index} className="text-[#575BFF] text-[12px] mr-2">
+                                                    <span key={index} className="text-[#575BFF] text-[12px]">
                                                         {number}
                                                         {index !== shop.phone.length - 1 && (
                                                             <span className="mx-2 text-gray-400">-</span>
@@ -132,8 +134,6 @@ export default function ShopSlider() {
                                                     </span>
                                                 ))}
                                             </div>
-                                        </div>
-                                    </div>
                                     <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
                                         Get Direction
                                     </button>
