@@ -30,9 +30,9 @@ export default function BlogLeftSidebar({ headings = [], readTime }: { headings:
   const activeId = useActiveHeading(ids);
   
   return (
-    <aside className="w-full lg:w-56 mb-8 lg:mb-0">
+    <aside className="w-full lg:w-56 mb-8 lg:mb-0 hidden md:block">
       {/* Sticky container */}
-      <div className="sticky top-8 h-[calc(100vh-2rem)] overflow-y-auto bg-white shadow-md rounded-md">
+      <div className="sticky top-8 md:h-[calc(100vh-2rem)] overflow-y-auto bg-white shadow-md rounded-md">
         <div className="p-4">
           <div className="mb-4">
             <span className="block text-gray-700 font-semibold mb-1">In this article</span>

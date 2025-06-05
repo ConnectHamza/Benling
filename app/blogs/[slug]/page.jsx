@@ -18,7 +18,7 @@ export default function BlogPostPage({ params }) {
 
     return (
         <div className=" py-8 ">
-            <div className="w-lg mx-auto bg-white px-4 sm:px-6 lg:px-8 pb-12">
+            <div className="md:w-lg mx-auto bg-white px-4 sm:px-6 lg:px-8 pb-12">
                 {/* Header */}
                 <BlogHeader coverImage={post.coverImage} />
 
