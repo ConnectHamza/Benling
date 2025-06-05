@@ -16,12 +16,12 @@ export const featureHeader = {
 
 export const aboutSpecificationsData = [
     { title: "Motor", value: "450W Brushless" },
-    { title: "Top Speed", value: "30 - 35 km/h" },
+    { title: "Top Speed", value: "30-35 km/h" },
     { title: "Range", value: "30-35 km" },
-    { title: "Battery", value: "48V 23Ah" },
+    { title: "Battery", value: "48V.23Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "3 Mode" },
-    { title: "Charger", value: "48V 1.8A / 48V 3A" },
+    { title: "Charger", value: "48V-1.8A & 3A" },
     { title: "Charging Time", value: "6 to 8 Hours" },
     { title: "Dimension", value: "1470 x 660 x 1060mm" },
 

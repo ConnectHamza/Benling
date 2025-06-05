@@ -17,24 +17,25 @@ export const featureHeader = {
 export const aboutSpecificationsData = [
     { title: "Motor", value: "1500W Brushless" },
     { title: "Top Speed", value: "70 km/h" },
-    { title: "Range", value: "150km" },
-    { title: "Battery", value: "Graphene" },
+    { title: "Range", value: "150 km" },
+    { title: "Battery", value: "72V.47Ah" },
+    { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "4 Mode" },
-    { title: "Charger", value: "72V5A" },
+    { title: "Charger", value: "72V.5A" },
     { title: "Charging Time", value: "9 to 11 Hours" },
-    { title: "Dimension", value: "1900 x 770 x 1655mm" },
+    { title: "Dimension", value: "1900 x 770 x 1655 mm" },
 
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight (Without Battery)", value2: "76 Kg" },
+    { title2: "Net Weight (Without Battery)", value2: "76 kg" },
     { title2: "Angle", value2: "≤20°" },
-    { title2: "Wheelbase", value2: "1390mm" },
-    { title2: "Ground Clearance", value2: "160mm" },
+    { title2: "Wheelbase", value2: "1390 mm" },
+    { title2: "Ground Clearance", value2: "160 mm" },
     { title2: "Tubeless Tyre Size", value2: "Fr: 90/90-12 Rr:120/70-10" },
     { title2: "Braking System (F/R)", value2: "(CBS)" },
     { title2: "USB Port", value2: "Mobile Charging" },
-    { title2: "Loading Capacity", value2: "250 Kg" },
+    { title2: "Loading Capacity", value2: "250 kg" },
     { title2: "Sensor", value2: "Side Stand Sensor" },
     { title2: "TNFC Unlock", value2: "Yes" },
 

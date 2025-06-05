@@ -13,7 +13,7 @@ interface StickyBarProps {
   gradient1: string;
   gradient2: string;
   textColor: string;
-  bgImage: string;
+  bgImage?: string;
   href?: string;
   color?: string;
   showButton?: boolean; 
@@ -36,7 +36,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
   return (
     <div className="relative">
-      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-20 top-0 bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
+      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
  >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
@@ -55,7 +55,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
           )}
         </div>
       </div>
-            <div className="w-full z-40 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-gray-90" >
+            <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-gray-90" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
           {showButton && ( // Conditionally render the AppButton

@@ -33,7 +33,7 @@ const HeroSection = ({
   price,
 }: HeroSectionProps) => {
   return (
-    <div className="relative w-full h-[91vh] overflow-hidden z-30">
+    <div className="relative w-full h-[91vh] overflow-hidden z-40">
       {/* Background Image Container */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center"

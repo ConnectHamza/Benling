@@ -42,25 +42,25 @@ export const featureHeader: FeatureHeader = {
 };
 
 export const aboutSpecificationsData: Specification[] = [
-  { title: 'Battery', value: 'Graphene' },
+  { title: 'Battery Type', value: 'Graphene' },
   { title: 'Motor', value: '1500W Brushless' },
   { title: 'Range', value: '95 to 100 km' },
-  { title: 'Top Speed', value: '50-60km/h' },
+  { title: 'Top Speed', value: '55-60 km/h' },
   { title: 'Charging Time', value: '6-8 Hours' },
-  { title: 'Battery Type', value: '72V-36Ah' },
+  { title: 'Battery', value: '72V.36Ah' },
   { title: 'Speed Mode', value: '4 Mode' },
-  { title: 'Charger', value: '72V - 5A' },
-  { title: 'Dimensions', value: '1950 x 830 x 1110mm' },
+  { title: 'Charger', value: '72V.5A' },
+  { title: 'Dimensions', value: '1950 x 830 x 1110 mm' },
 ];
 
 export const aboutSpecificationsData2: Specification2[] = [
-  { title2: 'Wheelbase', value2: '1110mm' },
-  { title2: 'Ground Clearance', value2: '210mm' },
-  { title2: 'Loading Capacity', value2: '200 Kg' },
+  { title2: 'Wheelbase', value2: '1110 mm' },
+  { title2: 'Ground Clearance', value2: '210 mm' },
+  { title2: 'Loading Capacity', value2: '200 kg' },
   { title2: 'Climbing Angle', value2: '≤13°' },
   { title2: 'Braking System', value2: 'F & R: Disc' },
   { title2: 'Tubeless Tyre Size', value2: 'F & R: 90/90-12' },
-  { title2: 'Net Weight', value2: '130 kg' },
+  { title2: 'Net Weight', value2: '124 kg' },
   { title2: 'Security', value2: 'Remote Alarm System' },
 ];
 

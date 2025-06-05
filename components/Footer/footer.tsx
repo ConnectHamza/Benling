@@ -10,6 +10,7 @@ import Typography from '../GradientText/Typography';
 
 const items = [
     { label: 'Fairy', href: 'crown-benling-fairy' },
+    { label: 'Champion', href: 'crown-benling-champion' },
     { label: 'Flash', href: 'crown-benling-flash' },
     { label: 'Knight Rider', href: 'crown-benling-knight-rider' },
     { label: 'Roshni X', href: 'crown-benling-roshni-x' },

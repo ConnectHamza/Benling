@@ -10,7 +10,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
 
 interface ButtonProps {
-  iconName: IconName;
+  iconName?: any;
   iconColor: string;
   textColor: string;
   buttonText: string;
@@ -18,6 +18,9 @@ interface ButtonProps {
   hoverBgColor: string;
   order: string;
   link?: string; 
+  label?: string;
+  iconPosition?: string;
+  href?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -29,6 +32,9 @@ const Button: React.FC<ButtonProps> = ({
   hoverBgColor,
   order,
   link, 
+  href,
+  label,
+  iconPosition
 }) => {
   
   const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {

@@ -3,7 +3,7 @@ import FairyWeb from "../../public/assets/Home/Header/web/fairy.webp"
 import HeroSection from '@/components/Herocontainer/Herocontainer'
 import BannerMobile from '../../public/assets/Home/Header/mobile/fairy.webp'
 
-const Banner = (textColor: string) => {
+const Banner = (textColor?: any) => {
     return (
         <div className='pt-[0px]'>
             <HeroSection

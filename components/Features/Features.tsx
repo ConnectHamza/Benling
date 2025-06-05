@@ -12,6 +12,7 @@ type Feature = {
 type FeaturesSectionProps = {
     featureItems: Array<Feature>;
     FeatureHeader: FeatureHeader;
+
 }
 
 type FeatureHeader = {

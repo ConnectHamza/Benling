@@ -14,22 +14,23 @@ export const featureHeader = {
 
   export const aboutSpecificationsData = [
     { title: "Motor", value: "1200W Brushless" },
-    { title: "Maximum Speed", value: "55-60 Km/h" },
-    { title: "Charging Time", value: "6 to 8 Hours" },
+    { title: "Maximum Speed", value: "55-60 km/h" },
+    { title: "Battery", value: "72V.36Ah" },
     { title: "USB Port", value: "Mobile Charging" },
-    { title: "Dimensions", value: "1810 x 650 x 1100mm" },
+    { title: "Dimensions", value: "1810 x 650 x 1100 mm" },
     { title: "Speed Mode", value: "4 Modes" },
     { title: "Security", value: "Remote Alarm System" },
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Wheelbase", value2: "1330mm" },
-    { title2: "Ground Clearance", value2: "220mm" },
-    { title2: "Loading Capacity", value2: "160 Kg" },
+    { title2: "Charger", value2: "72V.5A" },
+    { title2: "Wheelbase", value2: "1330 mm" },
+    { title: "Charging Time", value: "6 to 8 Hours" },
+    { title2: "Loading Capacity", value2: "160 kg" },
     { title2: "Climbing Angle", value2: "≤20°" },
     { title2: "Braking System", value2: "Fr.Disc / Re.Drum" },
     { title2: "Tubeless Tyre Size", value2: "F & R 90/80/12" },
-    { title2: "Available Colors", value2: "Black , White , Blue , Silver & Red" },
+    { title: "Security", value: "Remote Alarm System" },
 ];
 
 

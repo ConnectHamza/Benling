@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://crownelectricmobility.com
+
+# Sitemaps
+Sitemap: https://crownelectricmobility.com/sitemap.xml

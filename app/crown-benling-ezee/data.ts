@@ -3,21 +3,21 @@ export const aboutSpecificationsData = [
     { title: "Battery", value: "60V.30Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "3 Mode" },
-    { title: "Charger", value: "60.V.4A" },
+    { title: "Charger", value: "60V.4A" },
     { title: "Charging Time", value: "6 to 8 Hours" },
-    { title: "Dimensions", value: "1800 x 690 x 1250mm" },
+    { title: "Dimensions", value: "1800 x 690 x 1250 mm" },
     { title: "Security", value: "Remote Alarm System" },
 
 ];
 
 
 export const aboutSpecificationsData2 = [   
-    { title2: "Net Weight", value2: "116KG" },
+    { title2: "Net Weight", value2: "116 kg" },
     { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "35-40km/h" },
-    { title2: "Wheelbase", value2: "1300mm" },
-    { title2: "Ground Clearance", value2: "110mm" },
-    { title2: "Loading Capacity", value2: "140 Kg" },
+    { title2: "Speed", value2: "35-40 km/h" },
+    { title2: "Wheelbase", value2: "1300 mm" },
+    { title2: "Ground Clearance", value2: "110 mm" },
+    { title2: "Loading Capacity", value2: "140 kg" },
     { title2: "Braking System", value2: "Front Disc/Rear Drum" }
 ];
 

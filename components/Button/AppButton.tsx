@@ -1,49 +1,65 @@
 'use client';
 
-import React from 'react';
+import React, { FC, MouseEventHandler } from 'react';
 import Link from 'next/link';
 import * as Icons from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
-const variantClasses = {
+type ButtonVariant = 'solid' | 'outline' | 'labeled' | 'footer';
+type IconPosition = 'left' | 'right';
+
+interface ButtonProps {
+  variant?: ButtonVariant;
+  label: string;
+  iconName?: keyof typeof Icons;
+  iconPosition?: IconPosition;
+  className?: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  href?: string;
+  size?: string;
+  target?: '_self' | '_blank';
+  textColor?: string;
+  fullWidth?: boolean;
+  type?: 'button' | 'submit' | 'reset';
+  download?: boolean;
+}
+
+const variantClasses: Record<ButtonVariant, string> = {
   solid: 'bg-orange-500 text-white hover:bg-orange-600',
-  outline: `
-    border border-black text-black 
-    dark:text-white 
-
-  `,
+  outline: 'border border-black text-black dark:text-white',
   labeled: 'text-black dark:text-white',
   footer: 'bg-black text-white text-sm',
 };
 
-const Button = ({
+const Button: FC<ButtonProps> = ({
   variant = 'solid',
   label,
-  iconName = null,
+  iconName,
   iconPosition = 'right',
   className = '',
-  onClick = () => { },
-  href = null,
+  onClick = () => {},
+  href,
+  size,
   target = '_self',
   textColor = 'text-black-30',
   fullWidth = false,
-  type = '',
-  download = false
-
+  type = 'button',
+  download = false,
 }) => {
-  const IconComponent = iconName && Icons[iconName] ? Icons[iconName] : null;
+  const IconComponent: LucideIcon | undefined = iconName ? Icons[iconName] : undefined;
 
   const content = (
     <div className="inline-flex items-center gap-2">
       {iconPosition === 'left' && IconComponent && (
-        <IconComponent size={20} className={textColor || ''} />
+        <IconComponent size={20} className={textColor} />
       )}
       <span
-        className={`text-[16px] leading-[20px] font-medium whitespace-nowrap ${textColor || ''}`}
+        className={`text-[16px] leading-[20px] font-medium whitespace-nowrap ${textColor}`}
       >
         {label}
       </span>
       {iconPosition === 'right' && IconComponent && (
-        <IconComponent size={20} className={textColor || ''} />
+        <IconComponent size={20} className={textColor} />
       )}
     </div>
   );
@@ -62,7 +78,6 @@ const Button = ({
 
   if (href) {
     if (download) {
-      // Render regular anchor with download attribute
       return (
         <a
           href={href}
@@ -75,11 +90,17 @@ const Button = ({
         </a>
       );
     }
+
     return (
-            <Link href={href} target={target} className={combinedClass}>
+      <Link
+        href={href}
+        target={target}
+        className={combinedClass}
+        rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+      >
         {content}
       </Link>
-    )
+    );
   }
 
   return (
@@ -89,4 +110,4 @@ const Button = ({
   );
 };
 
-export default Button
+export default Button;

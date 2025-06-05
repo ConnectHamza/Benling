@@ -13,7 +13,21 @@ import { faqsData, aboutSpecificationsData, aboutSpecificationsData2 } from './d
 import LoopMain from '@/components/LoopCarousel/loop-main';
 import Banner from './Banner';
 
-
+export const metadata = {
+  title: 'Crown Benling - Ezee',
+//   description: '',
+  metadataBase: new URL('https://crownelectricmobility.com'), 
+  alternates: {
+    canonical: '/crown-benling-ezee',
+  },
+  openGraph: {
+    title: 'Crown Benling - Ezee',
+    // description: '',
+    url: 'https://crownelectricmobility.com/crown-benling-ezee',
+    siteName: 'Crown Electric Mobility',
+    type: 'website',
+  },
+};
 
 export default function Ezee() {
 
@@ -24,12 +38,8 @@ export default function Ezee() {
         { color: '#121212', percentage: 100 },
     ];
 
-
     return (
         <>
-            <head>
-                <title>Crown Benling - Ezee</title>
-            </head>
             <main>
                 <Banner />
                 <StickyBar

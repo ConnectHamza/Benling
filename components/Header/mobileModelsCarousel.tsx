@@ -4,8 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
-// Import modelsData directly
 import { modelsData } from "./header";
 
 function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => void; setIsMegaMenuOpen?: React.Dispatch<React.SetStateAction<boolean>> }) {
@@ -37,11 +35,10 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
     );
   };
 
-  // Reset the transition flag after a short delay
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsTransitioning(false);
-    }, 300); // Match this duration with your CSS transition duration
+    }, 300); 
 
     return () => clearTimeout(timeout);
   }, [currentIndex]);
@@ -91,6 +88,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                 }}
               >
                 {/* Image Container */}
+                <div className="relative">
                 <div className="flex-1 flex items-center justify-center w-full">
                   <Image
                     src={model.img}
@@ -116,6 +114,10 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                 <div className="text-xs text-gray-600 text-center mt-4 h-[20px] font-jakarta">
                   {model.range} | {model.speed}
                 </div>
+                  <div className="bg-[#FFE1DE] absolute top-0 left-10 p-1 rounded-md" >
+                                <span className="text-xs text-[#8D190F] font-medium">{model.disc}</span>
+                            </div>
+                            </div>
               </a>
             </div>
           ))}

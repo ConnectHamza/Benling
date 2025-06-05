@@ -16,21 +16,21 @@ export const featureHeader = {
 
 export const aboutSpecificationsData = [
     { title: "Motor", value: "1000W Brushless" },
-    { title: "Battery", value: "72V 23Ah" },
+    { title: "Battery", value: "72V.23Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "72V4A" },
+    { title: "Charger", value: "72V.4A" },
     { title: "Charging Time", value: "5 to 6 Hours" },
-    { title: "Dimensions", value: "1650 x 640 x 1050mm" },
+    { title: "Dimensions", value: "1650 x 640 x 1050 mm" },
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "120KG" },
+    { title2: "Net Weight", value2: "120 kg" },
     { title2: "Security", value2: "NFC Unlock" },
-    { title2: "Speed", value2: "50-55km/h" },
-    { title2: "Wheelbase", value2: "1190mm" },
-    { title2: "Ground Clearance", value2: "130mm" },    
-    { title2: "Loading Capacity", value2: "150 Kg" },
+    { title2: "Speed", value2: "50-55 km/h" },
+    { title2: "Wheelbase", value2: "1190 mm" },
+    { title2: "Ground Clearance", value2: "130 mm" },    
+    { title2: "Loading Capacity", value2: "150 kg" },
     { title2: "Braking System", value2: "CBS (Fr & Rr)" },
 ];
 

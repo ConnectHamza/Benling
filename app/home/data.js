@@ -29,14 +29,14 @@ import Logo_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Logo.svg"
 import Logo_Spark from "../../public/assets/Home/Carousel/Spark_Logo.svg"
 import Logo_Firefly from "../../public/assets/Home/Carousel/Firefly_Logo.svg"
 import Logo_Fairy from "../../public/assets/Home/Carousel/Fairy_Logo.svg"
-import Image_Ezee from "../../public/assets/Home/Carousel/Ezee_Image.png";
-import Image_Firefly from "../../public/assets/Home/Carousel/Firefly_Image.png";
-import Image_Flash from "../../public/assets/Home/Carousel/Flash_Image.png";
-import Image_KnightRider from "../../public/assets/Home/Carousel/Knightrider_Image.png";
+import Image_Ezee from "../../public/assets/Home/Carousel/Ezee_Image.webp";
+import Image_Firefly from "../../public/assets/Home/Carousel/Firefly_Image.webp";
+import Image_Flash from "../../public/assets/Home/Carousel/Flash.webp";
+import Image_KnightRider from "../../public/assets/Home/Carousel/Knightrider_Image.webp";
 import Image_Miniscooter from "../../public/assets/Home/Carousel/Miniscooter_Image.webp";
-import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.png";
-import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.png";
-import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.png";
+import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.webp";
+import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.webp";
+import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.webp";
 import Image_Fairy from "../../public/assets/Home/Carousel/Fairy_Image.webp";
 // Performance Carousel
 import MarkhorIMG from '../../public/assets/PerformanceSeries/Markhor.webp'

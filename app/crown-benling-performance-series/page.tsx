@@ -21,7 +21,7 @@ const PerformanceSeries = () => {
                 <title>Crown Benling - Performance Series</title>
             </head>
             {/* Desktop */}
-            <div className='relative h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 z-20' style={{ backgroundImage: `url(${BikesBg.src})` }}>
+            <div className='relative h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 z-40' style={{ backgroundImage: `url(${BikesBg.src})` }}>
                 <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center' data-aos="zoom-out">Performance Series</h1>
                 <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4' data-aos="zoom-in">
                     <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO<span className='text-sm'>4</span></h3>
