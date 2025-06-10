@@ -13,7 +13,7 @@ import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
 import ChampionFeatuedIMG from '../../public/assets/Champion/Benling-Champion-Banner.webp'
-import RoshniMobile from '../../public/assets/RoshniX/Roshni-x-feature-mobile.png'
+import CHampionMobile from '../../public/assets/Champion/Benling-Champion-Banner-Mobile.webp'
 
 
 const heading = 'Champion Your Commute.';
@@ -39,24 +39,24 @@ const page = () => {
   return (
     <div>
       <head>
-        <title>Crown Benling - Roshni X</title>
+        <title>Crown Benling - Champion</title>
       </head>
       <Banner />
       <StickyBar
         title="Crown Benling Champion"
-        description='Experience next-gen mobility with the Roshni X. Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers, Roshni X offers efficiency, style, and zero emissions in one sleek package.'
+        description='Powered by a 1200W brushless motor and a 72V 60Ah Lithium-LiFePO₄ battery, the Crown Benling Champion offers a range of 200–220 km and speeds up to 70 km/h. Its sturdy frame and eco-friendly design make it ideal for both bold adventures and daily rides.'
         gradient1="#BC3747"
         gradient2="#081118"
         textColor="text-white"
       />
-      <Featured stats={statsData} imageAlt={"RoshniX Feature Image"} mobileImageSrc={ChampionFeatuedIMG} imageSrc={ChampionFeatuedIMG} textColor="text-black"
+      <Featured stats={statsData} imageAlt={"Champion Feature Image"} mobileImageSrc={CHampionMobile} imageSrc={ChampionFeatuedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
       {/* <Featured /> */}
       <ColorShowcase />
       <div className='bg-[#081118]'>
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
       </div>
-      <div className='bg-[#081118]'>
+      <div className='bg-[#081118] py-20'>
       <LoopMain imageSrc={ChampionLoopIMG} heading={heading} colors={colors} />
       </div>
       <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} />

@@ -7,6 +7,7 @@ import Roshni from "../../public/assets/Home/Header/mobile/roshni.webp"
 import Roshnix from "../../public/assets/Home/Header/mobile/roshnix.webp"
 import Spark from "../../public/assets/Home/Header/mobile/spark.webp"
 import Fairy from "../../public/assets/Home/Header/mobile/fairy.webp"
+import Champion from "../../public/assets/Home/Header/mobile/champion.webp"
 //website
 import EzeeWeb from "../../public/assets/Home/Header/web/ezee.webp";
 import FireflyWeb from "../../public/assets/Home/Header/web/firefly.webp"
@@ -17,6 +18,7 @@ import RoshniWeb from "../../public/assets/Home/Header/web/roshni.webp"
 import RoshnixWeb from "../../public/assets/Home/Header/web/roshnix.webp"
 import SparkWeb from "../../public/assets/Home/Header/web/spark.webp"
 import FairyWeb from "../../public/assets/Home/Header/web/fairy.webp"
+import ChampionWeb from "../../public/assets/Home/Header/web/champion.webp"
 import PerformanceBgWeb from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes.webp'
 //Carousel
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
@@ -236,6 +238,17 @@ export const faqsData = [
 
 
 export const Slides = [
+            {
+        title: 'Powerful, Stylish, and Built for the Urban Explorer',
+        subtitle: 'Turn heads with the Crown Benling Champion—built for thrill-seekers and commuters with bold style, durability, and performance for city streets and long routes.',
+        buttonText: 'Book Now',
+        imageSrc: ChampionWeb,
+        mobileImageSrc: Champion,
+        href: "/crown-benling-champion",
+        color: "white",
+        price: "325,000"      
+
+    },
           {
         title: 'Crown Benling Fairy - Crafted for Roads, Styled for You',
         subtitle: 'Bold performance meets sleek design. Ride confidently with advanced tech, smart safety, and effortless style.',

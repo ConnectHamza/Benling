@@ -50,6 +50,19 @@ export const modelsData = [
     { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark", disc: "Discontinued"}
 ];
 
+export const modelsDataMob = [
+    { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/crown-benling-flash" },
+    { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion"},
+    { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "100km Range", speed: "60km/h Top Speed", href: "/crown-benling-knight-rider" },
+    { logo: Logo_Roshnix, img: Image_Roshnix, range: "110km Range", speed: "60km/h Top Speed", href: "/crown-benling-roshni-x" },
+    { logo: Logo_Firefly, img: Image_Firefly, range: "100km Range", speed: "60km/h Top Speed", href: "/crown-benling-firefly" },
+    { logo: Logo_Roshni, img: Image_Roshni, range: "120km Range", speed: "60km/h Top Speed", href: "/crown-benling-roshni" },
+    { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/crown-benling-ezee" },
+    { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/crown-benling-mini-scooty" },
+    { logo: Logo_Fairy, img: Image_Fairy, range: "80km Range", speed: "55km/h Top Speed", href: "/crown-benling-fairy" },
+    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark", disc: "Discontinued"}    
+];
+
 export const modelsData2 = [
     { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion"},
     { logo: Logo_Markhor, img: Image_Markhor, range: "100km Range", speed: "100km/h Top Speed", href: "/", disc: "Coming Soon" },

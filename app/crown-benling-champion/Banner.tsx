@@ -1,7 +1,9 @@
 import React from 'react'
 import ChampionWeb from "../../public/assets/Home/Header/web/champion.webp"
+import ChampionMob from "../../public/assets/Home/Header/mobile/champion.webp"
 import RoshniBannerMbl from '../../public/assets/RoshniX/Roshni-Banner-Mobile.webp'
 import HeroSection from '@/components/Herocontainer/Herocontainer'
+
 
 
 const Banner = () => {
@@ -12,12 +14,11 @@ const Banner = () => {
                 subtitle="Turn heads with the Crown Benling Champion—built for thrill-seekers and commuters with bold style, durability, and performance for city streets and long routes."
                 buttonText="Explore More"
                 imageSrc={ChampionWeb.src}
-                mobileImageSrc={RoshniBannerMbl.src}                
-                // price='235,000'
-                // href='/brouchers/Crown_Benling_Roshni_X_Brochure.pdf'
+                mobileImageSrc={ChampionMob.src}                
+                price='235,000'
+                href='/brouchers/Crown_Benling_Champion_Brochure.pdf'
             />
         </div>
-
     )
 }
 

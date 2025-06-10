@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { modelsData } from "./header";
+import { modelsDataMob } from "./header";
 
 function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => void; setIsMegaMenuOpen?: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,7 +23,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
     if (isTransitioning) return;
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) =>
-      prevIndex === modelsData.length - 1 ? 0 : prevIndex + 1
+      prevIndex === modelsDataMob.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -31,7 +31,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
     if (isTransitioning) return;
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? modelsData.length - 1 : prevIndex - 1
+      prevIndex === 0 ? modelsDataMob.length - 1 : prevIndex - 1
     );
   };
 
@@ -73,7 +73,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
             transform: `translateX(-${currentIndex * 100}%)`,
           }}
         >
-          {modelsData.map((model, index) => (
+          {modelsDataMob.map((model, index) => (
             <div 
               key={model.href}
               className="w-full flex-shrink-0 px-2"
@@ -141,7 +141,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
         
         {/* Indicators */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-          {modelsData.map((_, index) => (
+          {modelsDataMob.map((_, index) => (
             <button
               key={index}
               onClick={() => !isTransitioning && setCurrentIndex(index)}
