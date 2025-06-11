@@ -13,7 +13,7 @@ const Banner = (textColor: string) => {
                 imageSrc={SparkWeb.src}
                 mobileImageSrc={BannerMobile.src}                
                 price='145,000'
-                href='/brouchers/Crown_Benling_Roshni_X_Brochure.pdf'
+                href='/brouchers/Crown_Benling_Spark_Brochure.pdf'
                 textColor='text-black-30'
                 color='black-30'
             />

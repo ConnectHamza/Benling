@@ -463,7 +463,7 @@ const DealershipForm = () => {
                         <AppButton
                             size="medium"
                             variant="solid"
-                            label={loading ? "Submitting..." : "Send Message"}
+                            label={loading ? "Submitting..." : "Submit"}
                             iconName="ArrowUpRight"
                             iconPosition="right"
                             className="w-auto"
