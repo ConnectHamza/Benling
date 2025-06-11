@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://10.0.0.80:8040/api/v1/BenlingWeb/web",
+  baseURL: "https://api.crownelectricmobility.com/api/v1/BenlingWeb/web",
   headers: {
     "Content-Type": "application/json-patch+json",
   },
