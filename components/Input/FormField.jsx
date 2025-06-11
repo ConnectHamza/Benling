@@ -47,10 +47,10 @@ function FormField({
       />
     );
   }
- if (type === "select") {
+if (type === "select") {
   return (
     <div className="mb-4">
-      <label htmlFor={name} className="block mb-1 font-jakarta font-medium">
+      <label htmlFor={name} className="block mb-1 font-jakarta font-medium overflow-gray">
         {label}
       </label>
       <select
@@ -59,10 +59,10 @@ function FormField({
         value={value}
         onChange={onChange}
         onBlur={onBlur}
-        className={`${inputClass} bg-white`}
+        className={`${inputClass} bg-white overflow-gray`}
         {...restProps}
       >
-        <option className='font-jakarta font-normal' value="">
+        <option className='font-jakarta font-normal overflow-gray' value="">
           {restProps.placeholder || "Select..."}
         </option>
         {options.map(({ name: optName, value: optValue }, idx) => (
