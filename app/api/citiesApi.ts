@@ -11,7 +11,8 @@ export interface CitiesResponse {
   result: City[];
 }
 
-export async function getCities(): Promise<City[]> {
-  const response = await axiosInstance.get<CitiesResponse>("/cities");
+export async function getCities(stateId?: number): Promise<City[]> {
+  const url = stateId ? `/cities?stateId=${stateId}` : "/cities";
+  const response = await axiosInstance.get<CitiesResponse>(url);
   return response.data.result;
 }

@@ -60,7 +60,7 @@ export default function Home() {
         <BrandingSection />
       </div>
       
-        <section className="px-4 flex justify-center">
+        <section className="px-4 flex justify-center pb-20 md:pb-0">
           <div className="w-full max-w-[1250px] rounded-xl bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] px-4 md:px-6 py-12" data-aos="zoom-in" data-aos-delay="0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 items-center">
               {/* Left: Text Block */}

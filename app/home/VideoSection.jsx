@@ -20,7 +20,7 @@ const videos = [
 
 export default function VideoSection() {
   return (
-    <section className="relative w-full md:py-40 py-20 overflow-hidden">
+    <section className="md:block hidden relative w-full md:py-40 py-20 overflow-hidden">
       <div className="text-center">
         <Typography as="h2" variant="h2-medium-magistral" className="mb-2">
           Benling is Everywhere
