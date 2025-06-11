@@ -36,7 +36,7 @@ const DesignedSection = () => {
                 </div>
                 <div data-aos="zoom-out">
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
-                  50-60km/h
+                  55-60km/h
                 </Typography>
                 </div>
               </div>

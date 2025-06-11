@@ -28,7 +28,7 @@ export const featureHeader = {
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight (Without Battery)", value2: "124 kg" },
+    { title2: "Net Weight", value2: "124 kg" },
     { title2: "Angle", value2: "≤20°" },
     { title2: "Wheelbase", value2: "1300 mm" },
     { title2: "Ground Clearance", value2: "220 mm" },

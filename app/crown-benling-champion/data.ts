@@ -25,7 +25,7 @@ export const featureHeader = {
 
 export const aboutSpecificationsData2 = [
     { title2: "Charger", value2: "72V.8A" },
-    { title2: "Charging Time", value2: "5 to 6 hrs" },
+    { title2: "Charging Time", value2: "5 to 6 Hours" },
     { title2: "Net Weight", value2: "164 kg" },
     { title2: "Security", value2: "Remote Alarm System" },
     { title2: "NFC Unlock", value2: "Yes" },

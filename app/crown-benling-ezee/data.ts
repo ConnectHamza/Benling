@@ -25,7 +25,7 @@ export const aboutSpecificationsData2 = [
 export const faqsData = [
     {
         question: "What is the maximum range of Ezee on a single charge?",
-        answer: "Ezee offers a range of 35–40 km per charge, ensuring reliable travel for daily commutes and errands."
+        answer: "Ezee offers a range of 50–55 km per charge, ensuring reliable travel for daily commutes and errands."
     },
     {
         question: "Does Ezee have storage options for personal belongings?",

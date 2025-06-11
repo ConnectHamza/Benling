@@ -24,16 +24,9 @@ interface LoopMainProps {
 const LoopMain: React.FC<LoopMainProps> = ({ imageSrc, heading, colors }) => {
   return (
     <div className='w-full flex flex-col md:py-20 md:justify-center justify-center text-center'>
-      {/* <motion.div
-       variants={textVariants}
-       initial="hidden"
-       whileInView="visible"
-       viewport={{ once: false, amount: 0.2 }}
-      > */}
       <div data-aos="zoom-in">
         <GradientText heading={heading} colors={colors} />
         </div>
-      {/* </motion.div> */}
       <LoopCarousel src={imageSrc} />
     </div>
   );

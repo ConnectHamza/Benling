@@ -1,19 +1,19 @@
 export const aboutSpecificationsData = [
     { title: "Motor", value: "1200W Brushless" },
-    { title: "Battery", value: "60V.35Ah" },
+    { title: "Battery", value: "60V.36Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
     { title: "Charger", value: "60V.6A" },
-    { title: "Charging Time", value: "6 Hours" },
-    { title: "Dimensions", value: "1830 x 695 x 1075mm" },
+    { title: "Charging Time", value: "6-8 Hours" },
+    { title: "Dimensions", value: "1830 x 695 x 107 5mm" },
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "108KG" },
+    { title2: "Net Weight", value2: "108 kg" },
     { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "55-65km/h" },
-    { title2: "Wheelbase", value2: "1315mm" },
-    { title2: "Ground Clearance", value2: "120mm" },
+    { title2: "Speed", value2: "55-65 km/h" },
+    { title2: "Wheelbase", value2: "1315 mm" },
+    { title2: "Ground Clearance", value2: "120 mm" },
     { title2: "Loading Capacity", value2: "200 Kg" },
     { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
 ];
@@ -21,7 +21,7 @@ export const aboutSpecificationsData2 = [
 export const faqsData = [
     {
         question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "The Firefly can travel up to 105 km on a single charge, making it ideal for daily commutes and longer trips."
+        answer: "The Firefly can travel up to 100 km on a single charge, making it ideal for daily commutes and longer trips."
     },
     {
         question: "Does Firefly offer multiple speed options?",

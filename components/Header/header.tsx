@@ -34,7 +34,7 @@ import { ArrowRight, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import AppButton from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
 import MobileModelsCarousel from "./mobileModelsCarousel";
-import { useRouter, usePathname } from "next/navigation"; 
+import { useRouter, usePathname } from "next/navigation";
 
 
 // --- Model Data ---
@@ -47,12 +47,12 @@ export const modelsData = [
     { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/crown-benling-ezee" },
     { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/crown-benling-mini-scooty" },
     { logo: Logo_Fairy, img: Image_Fairy, range: "80km Range", speed: "55km/h Top Speed", href: "/crown-benling-fairy" },
-    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark", disc: "Discontinued"}
+    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark", disc: "Discontinued" }
 ];
 
 export const modelsDataMob = [
     { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/crown-benling-flash" },
-    { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion"},
+    { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "70km/h Top Speed", href: "/crown-benling-champion" },
     { logo: Logo_Knight_Rider, img: Image_KnightRider, range: "100km Range", speed: "60km/h Top Speed", href: "/crown-benling-knight-rider" },
     { logo: Logo_Roshnix, img: Image_Roshnix, range: "110km Range", speed: "60km/h Top Speed", href: "/crown-benling-roshni-x" },
     { logo: Logo_Firefly, img: Image_Firefly, range: "100km Range", speed: "60km/h Top Speed", href: "/crown-benling-firefly" },
@@ -60,22 +60,22 @@ export const modelsDataMob = [
     { logo: Logo_Ezze, img: Image_Ezee, range: "55km Range", speed: "40km/h Top Speed", href: "/crown-benling-ezee" },
     { logo: Logo_Mini_Scooty, img: Image_Miniscooter, range: "35km Range", speed: "35km/h Top Speed", href: "/crown-benling-mini-scooty" },
     { logo: Logo_Fairy, img: Image_Fairy, range: "80km Range", speed: "55km/h Top Speed", href: "/crown-benling-fairy" },
-    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark", disc: "Discontinued"}    
+    { logo: Logo_Spark, img: Image_Spark, range: "40km Range", speed: "40km/h Top Speed", href: "/crown-benling-spark", disc: "Discontinued" }
 ];
 
 export const modelsData2 = [
-    { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion"},
+    { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion" },
     { logo: Logo_Markhor, img: Image_Markhor, range: "100km Range", speed: "100km/h Top Speed", href: "/", disc: "Coming Soon" },
     { logo: Logo_Cherry, img: Image_Cherry, range: "130km Range", speed: "90km/h Top Speed", href: "/", disc: "Coming Soon" },
     { logo: Logo_Raftaar, img: Image_Raftaar, range: "160km Range", speed: "95km/h Top Speed", href: "/", disc: "Coming Soon" },
     { logo: Logo_Victory, img: Image_Victory, range: "120km Range", speed: "5km/h Top Speed", href: "/", disc: "Coming Soon" },
-    
+
 ];
 // --- Mobile Models Panel (define ONCE only) ---
 
-function MobileModelsPanel(onBack : any) {
+function MobileModelsPanel(onBack: any) {
 
-    
+
     return (
         <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
             {/* Black header with back button and centered logo */}
@@ -156,108 +156,99 @@ const Header = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
         setIsMegaMenuOpen(false);
     };
-    
-    
+
+
     // Desktop Mega Menu
-const DesktopModelsMegaMenu = () => {
-    const dataToRender = activeSeries === "legacy" ? modelsData : modelsData2;
+    const DesktopModelsMegaMenu = () => {
+        const dataToRender = activeSeries === "legacy" ? modelsData : modelsData2;
 
-    return (
-        <div
-            className={`fixed overflow-gray md:px-20 left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg`}
-            style={{ zIndex: '9999' }}
-        >
-            <div className="max-w-full mx-auto px-10 py-8 h-full flex flex-col">
-                {/* Tabs */}
-                <div className="flex gap-4 mb-6">
-                    <button
-                        onClick={() => setActiveSeries("legacy")}
-                        className={`py-2 px-4 font-jakarta font-medium text-sm border-b-2 transition-all duration-200 ${
-                            activeSeries === "legacy"
-                                ? "border-[#F15C2A] text-[#F15C2A]"
-                                : "border-transparent text-gray-500"
-                        }`}
-                    >
-                        Legacy Series
-                    </button>
-                    <button
-                        onClick={() => setActiveSeries("performance")}
-                        className={`py-2 px-4 font-jakarta font-medium text-sm border-b-2 transition-all duration-200 ${
-                            activeSeries === "performance"
-                                ? "border-[#F15C2A] text-[#F15C2A]"
-                                : "border-transparent text-gray-500"
-                        }`}
-                    >
-                        Performance Series
-                    </button>
-                </div>
+        return (
+            <div
+                className={`fixed overflow-gray md:px-20 left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg`}
+                style={{ zIndex: '9999' }}
+            >
+                <div className="max-w-full mx-auto px-10 py-8 h-full flex flex-col">
+                    {/* Tabs */}
+                    <div className="flex gap-4 mb-6">
+                        <button
+                            onClick={() => setActiveSeries("legacy")}
+                            className={`py-2 px-4 font-jakarta font-medium text-sm border-b-2 transition-all duration-200 ${activeSeries === "legacy"
+                                    ? "border-[#F15C2A] text-[#F15C2A]"
+                                    : "border-transparent text-gray-500"
+                                }`}
+                        >
+                            Legacy Series
+                        </button>
+                        <button
+                            onClick={() => setActiveSeries("performance")}
+                            className={`py-2 px-4 font-jakarta font-medium text-sm border-b-2 transition-all duration-200 ${activeSeries === "performance"
+                                    ? "border-[#F15C2A] text-[#F15C2A]"
+                                    : "border-transparent text-gray-500"
+                                }`}
+                        >
+                            Performance Series
+                        </button>
+                    </div>
 
-                {/* Scrollable content */}
-                <div className="pr-2 overflow-y-auto h-[70vh]" onWheel={(e) => e.stopPropagation()}>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-                        {dataToRender.map((model) => (
-                            <a
-                                href={model.href}
-                                key={model.href}
-                                className="flex flex-col items-center group hover:scale-105 transition"
-                            >
-                                <div className="relative">
-                                    <div className="flex items-center justify-center h-[120px] w-full">
-                                        <Image
-                                            data-aos="zoom-in"
-                                            data-aos-delay="0"
-                                            src={model.img}
-                                            alt={model.href}
-                                            width={200}
-                                            height={100}
-                                            className="object-contain max-h-full"
-                                        />
-                                    </div>
-                                    <div className="my-4 h-[20px] flex items-center justify-center">
-                                        <Image
-                                            data-aos="zoom-out"
-                                            data-aos-delay="300"
-                                            src={model.logo}
-                                            alt={model.href}
-                                            className="mx-auto w-full h-[24px] mb-4"
-                                        />
-                                    </div>
-                                    <div
-                                        className="text-[16px] text-gray-600 text-center h-[20px] font-jakarta"
-                                        data-aos="fade-in"
-                                        data-aos-delay="600"
-                                    >
-                                        {model.range} | {model.speed}
-                                    </div>
-                                    {model.disc && (
-                                        <div
-                                            className="bg-[#FFE1DE] absolute top-0 left-0 p-1 rounded-md"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="1000"
-                                        >
-                                            <span className="text-xs text-[#8D190F] font-medium">{model.disc}</span>
+                    {/* Scrollable content */}
+                    <div className="pr-2 overflow-y-auto h-[70vh]" onWheel={(e) => e.stopPropagation()}>
+                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+                            {dataToRender.map((model) => (
+                                <a
+                                    href={model.href}
+                                    key={model.href}
+                                    className="flex flex-col items-center group hover:scale-105 transition"
+                                >
+                                    <div className="relative">
+                                        <div className="flex items-center justify-center h-[120px] w-full">
+                                            <Image
+                                                src={model.img}
+                                                alt={model.href}
+                                                width={200}
+                                                height={100}
+                                                className="object-contain max-h-full"
+                                            />
                                         </div>
-                                    )}
-                                </div>
-                            </a>
-                        ))}
+                                        <div className="my-4 flex items-center justify-center">
+                                            <Image
+                                                src={model.logo}
+                                                alt={model.href}
+                                                className="mx-auto w-full h-[24px]"
+                                            />
+                                        </div>
+                                        <div
+                                            className="text-[14px] text-gray-600 text-center font-jakarta"
+
+                                        >
+                                            {model.range} | {model.speed}
+                                        </div>
+                                        {model.disc && (
+                                            <div
+                                                className="bg-[#FFE1DE] absolute top-0 left-0 p-1 rounded-md"
+                                            >
+                                                <span className="text-xs text-[#8D190F] font-medium">{model.disc}</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
+        );
+    };
 
 
 
     const navLink =
-        "relative font-jakarta py-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";        
+        "relative font-jakarta py-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
 
     return (
         <header className={`w-full z-50 ${isFixed ? 'fixed' : 'relative'} top-0 left-0 bg-black-200 text-white h-[75px] flex items-center`}>
             <div className="max-w-full md:px-20 mx-auto flex items-center justify-between w-full px-6 py-2">
                 {/* Left nav - vertically centered */}
-                <nav className="hidden md:flex items-center gap-8 text-sm h-full font-jakarta">
+                <nav className="hidden md2:flex items-center gap-8 text-sm h-full font-jakarta">
                     <div
                         className="relative group h-full flex items-center py-10"
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
@@ -284,11 +275,11 @@ const DesktopModelsMegaMenu = () => {
 
                 {/* Logo with black background */}
                 {!isMobileMenuOpen && <a href="/" className="flex items-center justify-center bg-black px-4 py-1 rounded">
-                    <Image src="/assets/Header-Footer/Benling-Logo.svg" alt="Logo"  width={120}
+                    <Image src="/assets/Header-Footer/Benling-Logo.svg" alt="Logo" width={120}
                         height={80} priority />
                 </a>}
                 {/* Right nav - vertically centered */}
-                <nav className="hidden md:flex items-center gap-6 text-sm h-full font-jakarta">
+                <nav className="hidden md2:flex items-center gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
                     <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
                         <Typography variant="subtext-regular-jakarta">
@@ -320,7 +311,7 @@ const DesktopModelsMegaMenu = () => {
                 {/* Hamburger - black background, hidden when menu open */}
                 {!isMobileMenuOpen && (
                     <button
-                        className="md:hidden bg-black p-2 rounded focus:outline-none"
+                        className="md2:hidden bg-black p-2 rounded focus:outline-none"
                         onClick={() => setIsMobileMenuOpen(true)}
                         aria-label="Open menu"
                     >
@@ -354,10 +345,10 @@ const DesktopModelsMegaMenu = () => {
                                 height={80}
                                 priority
                             />
-                            <div className="w-8" /> {/* empty space to center logo */}
+                            <div className="w-8" />
                         </div>
 
-                        <div className="flex flex-col gap-2 px-6 py-6 text-white bg-white min-h-[80vh] font-jakarta z-60 ">
+                        <div className="flex flex-col gap-2 px-6 py-6 text-white bg-white md:min-h-[80vh] min-h-[90vh] font-jakarta z-60 ">
                             <button
                                 onClick={() => setIsModelsOpen(true)}
                                 className="flex justify-between items-center w-full text-lg py-4 border-b text-black-200 border-gray-700"
@@ -378,7 +369,7 @@ const DesktopModelsMegaMenu = () => {
 
                                 <Typography variant="subtext-regular-jakarta">
                                     About Us
-                                </Typography>                                
+                                </Typography>
                             </Link>
 
 
@@ -392,11 +383,11 @@ const DesktopModelsMegaMenu = () => {
 
                                 <Typography variant="subtext-regular-jakarta">
                                     Performance Series
-                                </Typography>                                
+                                </Typography>
                             </Link>
 
-                            
- <Link href="/find-a-dealer" onClick={(e) => {
+
+                            <Link href="/find-a-dealer" onClick={(e) => {
                                 e.preventDefault();
                                 setIsModelsOpen(false);
                                 setTimeout(() => {

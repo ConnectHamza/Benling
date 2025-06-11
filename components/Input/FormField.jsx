@@ -12,7 +12,7 @@ function FormField({
 }) {
   const inputClass = `w-full p-3 rounded-md border font-jakarta focus:outline-none focus:ring-2 ${error
     ? "border-red-500 focus:border-red-500"
-    : "border-gray-300"
+    : "border-gray-400"
     }`;
 
   if (type === "textarea") {
@@ -47,28 +47,34 @@ function FormField({
       />
     );
   }
-  if (type === "select") {
-    return (
-      <div className="mb-4">
-        <select
-          name={name}
-          value={value}
-          onChange={onChange}
-          onBlur={onBlur}
-          className={`${inputClass} bg-white`}
-          {...restProps}
-        >
-          <option className='font-jakarta font-normal' value="">{label}</option>
-          {options.map(({ name: optName, value: optValue }, idx) => (
-            <option key={idx} value={optValue}>
-              {optName}
-            </option>
-          ))}
-        </select>
-        {error && <p className="text-red-500 text-sm mt-1 font-jakarta">{error}</p>}
-      </div>
-    );
-  }
+ if (type === "select") {
+  return (
+    <div className="mb-4">
+      <label htmlFor={name} className="block mb-1 font-jakarta font-medium">
+        {label}
+      </label>
+      <select
+        id={name}
+        name={name}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
+        className={`${inputClass} bg-white`}
+        {...restProps}
+      >
+        <option className='font-jakarta font-normal' value="">
+          {restProps.placeholder || "Select..."}
+        </option>
+        {options.map(({ name: optName, value: optValue }, idx) => (
+          <option key={idx} value={optValue}>
+            {optName}
+          </option>
+        ))}
+      </select>
+      {error && <p className="text-red-500 text-sm mt-1 font-jakarta">{error}</p>}
+    </div>
+  );
+}
   if (type === "radio") {
     return (
       <div className="mb-4">

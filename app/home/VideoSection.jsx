@@ -1,8 +1,6 @@
 'use client';
 import { ArrowRightCircle } from 'lucide-react';
 import Typography from '@/components/GradientText/Typography';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Link from 'next/link';
 
 const videos = [
@@ -23,20 +21,15 @@ const videos = [
 export default function VideoSection() {
   return (
     <section className="relative w-full md:py-40 py-20 overflow-hidden">
-      <div className="m-w-auto text-center">
-        <div data-aos="fade-up" data-aos-delay="0">
+      <div className="text-center">
         <Typography as="h2" variant="h2-medium-magistral" className="mb-2">
           Benling is Everywhere
         </Typography>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="500">
         <Typography as="p" variant="subtext-regular-jakarta" className="text-[#0A0A0A]">
           Watch real riders, influencers, and EV enthusiasts showcase Crown Benling in action across Pakistan.
         </Typography>
-        </div>
       </div>
 
-      {/* Scrollable area */}
       <div
         className="mt-10 overflow-x-auto scrollbar-none"
         style={{
@@ -50,31 +43,29 @@ export default function VideoSection() {
             pl-4 sm:pl-6 md:pl-8
             pr-4 sm:pr-6 lg:pr-8
             xl:pl-[calc((100vw-1300px)/2+1rem)]
+            animate-fade-in-up
           `}
           style={{ height: 'calc(100vh - 220px)' }}
         >
           {videos.map((video, idx) => (
             <div
               key={idx}
-              className="shrink-0 w-full md:w-[15%] aspect-[3/12] flex items-center justify-center snap-start"
+              className="shrink-0 w-full md:w-[15%] aspect-[3/12] flex items-center justify-center snap-start transition-opacity duration-700 delay-100"
             >
               <div className="relative w-full h-full bg-white/20 rounded-2xl overflow-hidden">
                 <video
                   src={video.video}
                   className="w-full h-full object-cover"
-                  autoPlay
                   muted
-                  loop
-                  controls
-                  playsInline
                   preload="metadata"
+                  playsInline
+                  controls
                   style={{ borderRadius: '1rem' }}
                 />
               </div>
             </div>
           ))}
 
-          {/* Explore More card */}
           <div className="shrink-0 w-full sm:w-full md:w-[20%] aspect-[9/16] flex items-center justify-center snap-start">
             <div className="p-4 bg-white/20 rounded-2xl w-full h-full flex flex-col items-center justify-center text-center space-y-6">
               <div>
@@ -85,15 +76,31 @@ export default function VideoSection() {
                   Check out our YouTube channel for more exciting content!
                 </p>
               </div>
-              <Link href="https://www.youtube.com/@benlingpk" target='_blank'>
-              <button href className="bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10">
-                <ArrowRightCircle size={30} />
-              </button>
+              <Link href="https://www.youtube.com/@benlingpk" target="_blank">
+                <button className="bg-gray-200 text-white rounded-full p-3 hover:scale-110 transition z-10">
+                  <ArrowRightCircle size={30} />
+                </button>
               </Link>
             </div>
           </div>
         </div>
       </div>
+      {/* Tailwind custom animation */}
+      <style jsx global>{`
+        @keyframes fade-in-up {
+          0% {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 1.1s cubic-bezier(.4,0,.2,1);
+        }
+      `}</style>
     </section>
   );
 }

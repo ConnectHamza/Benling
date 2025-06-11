@@ -37,7 +37,7 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
                 <div>
                 <Typography as='span' variant='subtext-semibold-jakarta' className=' transform transition-all duration-100 ease-in-out hover:-translate-y-1'>{faq.question}</Typography>
                 </div>
-                <FontAwesomeIcon icon={activeIndex === index ? faChevronRight : faChevronDown} />
+                <FontAwesomeIcon icon={activeIndex === index ? faChevronUp : faChevronDown} />
               </div>
               <div
                 className={`overflow-hidden transition-max-height duration-500 ease-in-out ${activeIndex === index ? 'max-h-96' : 'max-h-0'}`}

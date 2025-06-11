@@ -31,7 +31,7 @@ export const performanceData = [
     logo: CherryLogo,
     PKR: "380,000",
     range: "110-130 km",
-    speed: "85-90 km/h",
+    speed: "75-80 km/h",
     motor: "3000W",
     battery: "72V 40AH"
   },
@@ -40,7 +40,7 @@ export const performanceData = [
     logo: ChampionLogo,
     PKR: "325,000",
     range: "200-220 km",
-    speed: "80-90 km/h",
+    speed: "65-70 km/h",
     motor: "1200W",
     battery: "72V 60AH"
   },
@@ -49,7 +49,7 @@ export const performanceData = [
     logo: RaftaarLogo,
     PKR: "299,000",
     range: "140-160 km",
-    speed: "90-95 km/h",
+    speed: "85-90 km/h",
     motor: "2000W",
     battery: "72V 40AH"
   },
@@ -57,7 +57,7 @@ export const performanceData = [
     img: Victory,
     logo: VictoryLogo,
     PKR: "265,000",
-    range: "110-120 km",
+    range: "100-120 km",
     speed: "50-55 km/h",
     motor: "1000W",
     battery: "72V 30AH"

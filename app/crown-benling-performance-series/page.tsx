@@ -29,7 +29,7 @@ const PerformanceSeries = () => {
                     <Image className='absolute top-0' alt='Performance Series Bikes' src={BikesImg}/>
             </div>
             {/* Mobile */}
-            <div className='h-[65vh] bg-cover bg-center bg-no-repeat flex flex-col md:hidden justify-start items-center py-20' style={{ backgroundImage: `url(${PerformanceBannermob.src})` }}>
+            <div className='h-[65vh] bg-cover bg-center bg-no-repeat flex flex-col md:hidden justify-start items-center py-20 z-40' style={{ backgroundImage: `url(${PerformanceBannermob.src})` }}>
                 <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>
                 <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4'>
                     <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO<span className='text-xs'>4</span></h3>

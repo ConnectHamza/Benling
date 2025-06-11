@@ -15,7 +15,7 @@ const Banner = () => {
                 buttonText="Explore More"
                 imageSrc={ChampionWeb.src}
                 mobileImageSrc={ChampionMob.src}                
-                price='235,000'
+                price='325,000'
                 href='/brouchers/Crown_Benling_Champion_Brochure.pdf'
             />
         </div>

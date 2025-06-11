@@ -41,7 +41,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
           {showButton && ( // Conditionally render the AppButton
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" className="md:block hidden">
               <AppButton
                 size="medium"
                 variant="solid"

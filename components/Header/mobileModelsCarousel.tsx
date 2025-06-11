@@ -44,7 +44,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
   }, [currentIndex]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-white overflow-y-auto ">
       {/* Black header with back button and centered logo */}
       <div className="flex items-center justify-between bg-black-200 px-6 py-4" style={{ minHeight: "64px" }}>
         <button onClick={onBack} className="text-white text-2xl" aria-label="Back">
@@ -93,7 +93,7 @@ function MobileModelsCarousel({ onBack, setIsMegaMenuOpen }: { onBack: () => voi
                   <Image
                     src={model.img}
                     alt={model.href}
-                    width={400}
+                    width={300}
                     height={200}
                     className="object-contain max-h-[40vh]"
                   />

@@ -27,7 +27,7 @@ const features = [
     imageSrc: RangeBg.src,
     backgroundImage: RangeBg.src,
     heading: "Extended Range",
-    description: "Travel 100-220 km on a single charge with reliable Lithium-LiFePO4 technology.",
+    description: "Travel 100-220 km on a single charge with reliable Lithium-LiFePO₄ technology.",
   },
   {
     imageSrc: RemoteBg.src,

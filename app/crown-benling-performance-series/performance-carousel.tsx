@@ -73,7 +73,7 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
               slidesPerView: 1.2,
             },
             1024: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.6,
             },
           }}
           className="w-full"

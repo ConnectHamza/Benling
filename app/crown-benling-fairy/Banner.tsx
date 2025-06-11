@@ -8,11 +8,11 @@ const Banner = (textColor?: any) => {
         <div className='pt-[0px]'>
             <HeroSection
                 title="Crown Benling Fairy - Crafted for Roads, Styled for You"
-                subtitle="Bold performance meets sleek design. Ride confidently with advanced tech, smart safety, and effortless style."
+                subtitle="The Crown Benling Fairy delivers bold performance wrapped in sleek, modern design. Ride with confidence on Pakistan’s roads, powered by advanced electric technology, enhanced safety features, and effortless style."
                 imageSrc={FairyWeb.src}
                 mobileImageSrc={BannerMobile.src}                
                 textColor='text-black'
-                price='250,000'
+                price='165,000'
                 href='/brouchers/Crown_Benling_Fairy_Brochure.pdf'
                 color='black'
             />

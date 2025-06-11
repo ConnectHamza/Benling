@@ -9,15 +9,15 @@ import Link from 'next/link';
 import Typography from '../GradientText/Typography';
 
 const items = [
-    { label: 'Fairy', href: 'crown-benling-fairy' },
     { label: 'Champion', href: 'crown-benling-champion' },
-    { label: 'Flash', href: 'crown-benling-flash' },
-    { label: 'Knight Rider', href: 'crown-benling-knight-rider' },
-    { label: 'Roshni X', href: 'crown-benling-roshni-x' },
-    { label: 'Firefly', href: 'crown-benling-firefly' },
-    { label: 'Roshni', href: 'crown-benling-roshni' },
     { label: 'Ezee', href: 'crown-benling-ezee' },
+    { label: 'Fairy', href: 'crown-benling-fairy' },
+    { label: 'Flash', href: 'crown-benling-flash' },
+    { label: 'Firefly', href: 'crown-benling-firefly' },
+    { label: 'Knight Rider', href: 'crown-benling-knight-rider' },
     { label: 'Mini Scooty', href: 'crown-benling-mini-scooty' },
+    { label: 'Roshni X', href: 'crown-benling-roshni-x' },
+    { label: 'Roshni', href: 'crown-benling-roshni' },
     { label: 'Spark', href: 'crown-benling-spark' },
 
 ];
@@ -38,16 +38,16 @@ const Footer = () => {
 
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
-                            <li className="mb-2 flex items-center gap-4">                                
-                                <MailIcon size={18} className='text-red-200'/>
-                                <Link href='mailto:info@benling.pk'><Typography variant='subtext-regular-jakarta'>info@benling.pk</ Typography></Link>
+                            <li className="mb-2 flex items-center gap-4">
+                                <MailIcon size={18} className='text-red-200' />
+                                <Link href='mailto:info@crownelectricmobility.com'><Typography variant='subtext-regular-jakarta'>info@crownelectricmobility.com</ Typography></Link>
                             </li>
                             <li className="mb-2 flex items-center gap-4">
-                            <Phone size={18} className='text-red-200'/>
-                            <Link href='tell:021-111000348'><Typography variant='subtext-regular-jakarta'>021-111000348</ Typography></Link>
+                                <Phone size={18} className='text-red-200' />
+                                <Link href='tell:021-111000348'><Typography variant='subtext-regular-jakarta'>021-111000348</ Typography></Link>
                             </li>
                             <li className="mb-2 flex items-start gap-4">
-                                <MapPin size={24} className='text-red-200'/>
+                                <MapPin size={24} className='text-red-200' />
                                 <Link href='https://maps.app.goo.gl/R1KkNJcL3yy26wdk6'><Typography variant='subtext-regular-jakarta'>Plot No. 672-673, Deh Joreji Taluka, Bin Qasim Town Karachi, 75600</ Typography></Link>
 
                             </li>
@@ -96,32 +96,40 @@ const Footer = () => {
                                     <Typography variant='subtext-regular-jakarta'>Store Locator</ Typography>
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/become-a-dealer">
+                                    <Typography variant='subtext-regular-jakarta'>Become a Dealer</ Typography>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className='w-full md:w-2/6 ' data-aos="fade-up">
                         <div className='mb-2'><Typography variant='body-bold-jakarta'>Product Links</ Typography>
                         </div>
                         <ul className='flex justify-start gap-3 flex-wrap md:text-[15px] text-[13px]'>
-                            {items.map((item, index) => (
-                                <li key={index} className="mb-2">
-                                    <Link
-                                        href={item.href}
-                                        className="flex items-center justify-between hover:bg-white hover:text-black-50 bg-black-50 px-5 py-3 rounded-30 transition duration-300 ease-in-out"
-                                    >
-                                        <span className="mr-2">{item.label}</span>
-                                        <ArrowUpRight className="w-4 h-4" />
-                                    </Link>
-                                </li>
-                            ))}
+                            {items
+                                .slice() // to avoid mutating original array
+                                .sort((a, b) => a.label.localeCompare(b.label))
+                                .map((item, index) => (
+                                    <li key={index} className="mb-2">
+                                        <Link
+                                            href={item.href}
+                                            className="flex items-center justify-between hover:bg-white hover:text-black-50 bg-black-50 px-5 py-3 rounded-30 transition duration-300 ease-in-out"
+                                        >
+                                            <span className="mr-2">{item.label}</span>
+                                            <ArrowUpRight className="w-4 h-4" />
+                                        </Link>
+                                    </li>
+                                ))}
                         </ul>
                     </div>
                 </div>
                 <div className='mt-10 mb-10'>
-                    <Image src={FooterLogo} alt='Benling-Pakistan' data-aos="zoom-in"/>
+                    <Image src={FooterLogo} alt='Benling-Pakistan' data-aos="zoom-in" />
                 </div>
                 <div className='flex md:flex-row flex-col justify-between md:w-[82%] md:mt-[-5vh] mt-10 md:py-5 gap-3'>
-                    <div>
-                        <p data-aos="fade-up">© {currentYear} Crown Benling Electric Mobility Pakistan</p>
+                    <div className='mt-4'>
+                        <p>© {currentYear} Crown Benling Electric Mobility Pakistan</p>
                     </div>
                     {/* <div className='text-[13px] md:text-[15px] flex gap-4'>
                         <a href="">Privacy Policy</a>

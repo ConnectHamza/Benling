@@ -21,7 +21,7 @@ export const aboutSpecificationsData = [
     { title: "Battery", value: "48V.30AH" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "48V.4A" },
+    { title: "Charger", value: "48V.4Ah" },
     { title: "Charging Time", value: "5 to 6 Hours" },
     { title: "Dimensions", value: "1650 x 640 x 1050 mm" },
 ];

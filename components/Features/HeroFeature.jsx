@@ -9,6 +9,7 @@ const StatCard = ({
   bgColor = 'bg-white/40',
   titleVariant,
   subtitleVariant,
+  imageAlt,
 }) => {
   return (
     <div
@@ -31,6 +32,7 @@ const Featured = ({
   titleVariant,
   subtitleVariant,
   itemsPosition,
+  imageAlt,
 }) => {
   return (
     <>

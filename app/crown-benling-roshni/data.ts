@@ -20,17 +20,18 @@ export const featureHeader = {
     { title: "Dimensions", value: "1810 x 650 x 1100 mm" },
     { title: "Speed Mode", value: "4 Modes" },
     { title: "Security", value: "Remote Alarm System" },
+    { title: "Net Weight", value: "124 kg" },
 ];
 
 export const aboutSpecificationsData2 = [
     { title2: "Charger", value2: "72V.5A" },
     { title2: "Wheelbase", value2: "1330 mm" },
-    { title: "Charging Time", value: "6 to 8 Hours" },
+    { title2: "Charging Time", value2: "6 to 8 Hours" },
     { title2: "Loading Capacity", value2: "160 kg" },
     { title2: "Climbing Angle", value2: "≤20°" },
     { title2: "Braking System", value2: "Fr.Disc / Re.Drum" },
     { title2: "Tubeless Tyre Size", value2: "F & R 90/80/12" },
-    { title: "Security", value: "Remote Alarm System" },
+
 ];
 
 

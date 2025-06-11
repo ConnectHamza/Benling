@@ -60,7 +60,7 @@ export const aboutSpecificationsData2: Specification2[] = [
   { title2: 'Climbing Angle', value2: '≤13°' },
   { title2: 'Braking System', value2: 'F & R: Disc' },
   { title2: 'Tubeless Tyre Size', value2: 'F & R: 90/90-12' },
-  { title2: 'Net Weight', value2: '124 kg' },
+  { title2: 'Net Weight', value2: '130 kg' },
   { title2: 'Security', value2: 'Remote Alarm System' },
 ];
 
@@ -110,11 +110,11 @@ export const faqsData: FAQ[] = [
   },
   {
     question: 'What is the range of the Benling Knight Rider on a single charge?',
-    answer: 'The Benling Knight Rider delivers an impressive range of 105km on a single charge, ensuring extended rides without worrying about battery life.',
+    answer: 'The Benling Knight Rider delivers an impressive range of 100km on a single charge, ensuring extended rides without worrying about battery life.',
   },
   {
     question: 'How powerful is the motor of the Benling Knight Rider?',
-    answer: 'The Benling Knight Rider boasts a robust 1200W motor that delivers exceptional performance, offering smooth acceleration and responsive handling on various terrains.',
+    answer: 'The Benling Knight Rider boasts a robust 1500W motor that delivers exceptional performance, offering smooth acceleration and responsive handling on various terrains.',
   },
   {
     question: 'What type of battery powers the Benling Knight Rider?',

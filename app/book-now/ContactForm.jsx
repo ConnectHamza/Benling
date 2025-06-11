@@ -1,11 +1,14 @@
 'use client'
 
 import FormField from "../../components/Input/FormField";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { validateField } from "../../utils/helper";
-import AppButton from "../../components/Button/AppButton"
+import AppButton from "../../components/Button/AppButton";
+import { bookNowApi } from '../api/bookNowApi';
+import { getCities } from "../api/citiesApi";
+
 function ContactForm() {
-    const [formData, setFormData] = useState({
+    const initialFormData = {
         fullName: "",
         email: "",
         phone: "",
@@ -13,9 +16,37 @@ function ContactForm() {
         model: "",
         payment: "",
         agree: false,
-    });
+    };
 
+    const [formData, setFormData] = useState(initialFormData);
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [apiError, setApiError] = useState("");
+    const [success, setSuccess] = useState(false);
+    const [cityOptions, setCityOptions] = useState([]);
+    const [cityLoading, setCityLoading] = useState(true);
+
+     useEffect(() => {
+        let isMounted = true;
+        setCityLoading(true);
+        getCities()
+            .then(cities => {
+                if (isMounted) {
+                    // Map to options format expected by FormField
+                    setCityOptions(cities.map(city => ({
+                        name: city.name,
+                        value: city.name
+                    })));
+                }
+            })
+            .catch(() => {
+                if (isMounted) setCityOptions([]);
+            })
+            .finally(() => {
+                if (isMounted) setCityLoading(false);
+            });
+        return () => { isMounted = false; };
+    }, []);
 
     const getFieldType = (key) => {
         switch (key) {
@@ -63,9 +94,16 @@ function ContactForm() {
         }
     };
 
+    const resetForm = () => {
+        setFormData(initialFormData);
+        setErrors({});
+    };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setApiError("");
+        setSuccess(false);
+
         const newErrors = {};
         Object.entries(formData).forEach(([key, val]) => {
             const fieldType = getFieldType(key);
@@ -76,9 +114,31 @@ function ContactForm() {
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
-            alert("Form submitted successfully!");
-            // Reset form if needed
-            // setFormData({ fullName: "", email: "", phone: "", city: "", model: "", payment: "", agree: false });
+            setLoading(true);
+            try {
+                // Prepare data for API
+                const payload = {
+                    fullName: formData.fullName,
+                    email: formData.email,
+                    phoneNumber: formData.phone,
+                    selectedModel: formData.model,
+                    selectedCity: formData.city,
+                    message: "",
+                    paymentType: formData.payment,
+                    isAgreedToUpdates: formData.agree,
+                };
+                await bookNowApi(payload);
+                setSuccess(true);
+                resetForm(); // Reset fields after successful submission
+            } catch (err) {
+                setApiError(
+                    err?.response?.data?.message ||
+                    err?.message ||
+                    "Something went wrong. Please try again."
+                );
+            } finally {
+                setLoading(false);
+            }
         }
     };
 
@@ -119,7 +179,7 @@ function ContactForm() {
                 required
             />
 
-            <FormField
+                <FormField
                 type="select"
                 label="Select City"
                 name="city"
@@ -128,13 +188,10 @@ function ContactForm() {
                 onBlur={handleBlur}
                 onFocus={handleFocus}
                 error={errors.city}
-                options={[
-                    { name: "Karachi", value: "karachi" },
-                    { name: "Lahore", value: "lahore" },
-                    { name: "Multan", value: "multan" },
-
-                ]}
+                options={cityOptions}
                 required
+                disabled={cityLoading}
+                placeholder={cityLoading ? "Loading cities..." : "Select a city"}
             />
 
             <FormField
@@ -157,7 +214,6 @@ function ContactForm() {
                     { name: "Mini Scooter", value: "mini-scooter" },
                     { name: "Fairy", value: "fairy" },
                     { name: "Performance Series", value: "performance-series" },
-
                 ]}
                 required
             />
@@ -189,20 +245,23 @@ function ContactForm() {
                 onBlur={handleBlur}
                 onFocus={handleFocus}
                 error={errors.agree}
-                required
             />
+            {apiError && <div className="text-red-500 my-2">{apiError}</div>}
+            {success && <div className="text-green-500 my-2">Form submitted successfully!</div>}
 
             <AppButton
                 size="medium"
                 variant="solid"
-                label="Submit"
+                label={loading ? "Submitting..." : "Submit"}
                 iconName="ArrowUpRight"
                 iconPosition="right"
                 className="w-full"
                 textColor='text-[#000]'
                 type="submit"
+                disabled={loading}
             />
         </form>
     );
-};
+}
+
 export default ContactForm;

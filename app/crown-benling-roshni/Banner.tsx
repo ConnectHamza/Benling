@@ -13,7 +13,7 @@ const Banner = () => {
                 buttonText="Explore More"
                 imageSrc={RoshnixWeb.src}
                 mobileImageSrc={RoshniMobile.src}
-                price='230,000'
+                price='215,000'
                 href='/brouchers/Crown_Benling_Roshni_Brochure.pdf'
             />
         </div>

@@ -42,7 +42,7 @@ export default function ShopSlider() {
     }, []);
 
     return (
-        <section className="w-full bg-white pt-[0px]">
+        <section className="w-full bg-white md:pt-[0px] pt-10">
             <div
                 className="relative w-full bg-no-repeat bg-top bg-cover md:py-40 py-20"
                 style={{ backgroundImage: `url(${crownImage.src})` }}
