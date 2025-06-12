@@ -161,6 +161,14 @@ const DealershipForm = () => {
         }
     };
 
+    const handleCnicChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  let value = e.target.value.replace(/\D/g, ''); // Remove non-digits
+  if (value.length > 5) value = value.slice(0, 5) + '-' + value.slice(5);
+  if (value.length > 13) value = value.slice(0, 13) + '-' + value.slice(13, 14);
+  value = value.slice(0, 15);
+  setFormData(prev => ({ ...prev, cnic: value }));
+};
+
     return (
         <form onSubmit={handleSubmit}>
             <div className="md:w-lg mx-auto px-4 pb-20 font-sans bg-white rounded-lg shadow-sm">
@@ -177,7 +185,7 @@ const DealershipForm = () => {
                                 name="showroomState"
                                 value={formData.showroomState}
                                 onChange={handleChange}
-                                className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 disabled={stateLoading}
                                 required
                             >
@@ -197,7 +205,7 @@ const DealershipForm = () => {
                                 value={formData.city}
                                 onChange={handleChange}
                                 onClick={handleCityClick}
-                                className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 disabled={!formData.showroomState || cityLoading}
                                 required
                             >
@@ -232,19 +240,21 @@ const DealershipForm = () => {
                                     value={formData.fullName}
                                     onChange={handleChange}
                                     placeholder="Full Name"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">CNIC</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="cnic"
                                     value={formData.cnic}
-                                    onChange={handleChange}
+                                    onChange={handleCnicChange}
                                     placeholder="CNIC"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    maxLength={15}
+                                    pattern="\d{5}-\d{7}-\d{1}"
                                     required
                                 />
                             </div>
@@ -256,7 +266,7 @@ const DealershipForm = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                     placeholder="Email Address"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -271,19 +281,19 @@ const DealershipForm = () => {
                                     value={formData.fathersName}
                                     onChange={handleChange}
                                     placeholder="Father's Name"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">NTN</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="ntn"
                                     value={formData.ntn}
                                     onChange={handleChange}
                                     placeholder="NTN"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 />
                             </div>
                             <div>
@@ -293,8 +303,11 @@ const DealershipForm = () => {
                                     name="mobileNumber"
                                     value={formData.mobileNumber}
                                     onChange={handleChange}
+                                    maxLength={13}
+                                    pattern="[0-9]*"
+                                    inputMode="numeric"
                                     placeholder="Mobile Number"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -307,19 +320,19 @@ const DealershipForm = () => {
                                     name="dob"
                                     value={formData.dob}
                                     onChange={handleChange}
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">STRN</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="strn"
                                     value={formData.strn}
                                     onChange={handleChange}
                                     placeholder="STRN"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 />
                             </div>
                             <div>
@@ -329,8 +342,11 @@ const DealershipForm = () => {
                                     name="whatsappNumber"
                                     value={formData.whatsappNumber}
                                     onChange={handleChange}
+                                    maxLength={13}
+                                    pattern="[0-9]*"
+                                    inputMode="numeric"
                                     placeholder="WhatsApp Number"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 />
                             </div>
                         </div>
@@ -345,7 +361,7 @@ const DealershipForm = () => {
                                 name="applicantState"
                                 value={formData.applicantState}
                                 onChange={handleChange}
-                                className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 disabled={stateLoading}
                                 required
                             >
@@ -365,7 +381,7 @@ const DealershipForm = () => {
                                 value={formData.applicantCity}
                                 onChange={handleChange}
                                 onClick={handleApplicantCityClick}
-                                className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 disabled={!formData.applicantState || applicantCityLoading}
                                 required
                             >
@@ -397,7 +413,7 @@ const DealershipForm = () => {
                                     value={formData.residentialAddress}
                                     onChange={handleChange}
                                     placeholder="Residential Address"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -411,7 +427,7 @@ const DealershipForm = () => {
                                     value={formData.presentBusiness}
                                     onChange={handleChange}
                                     placeholder="Present Business / Occupation"
-                                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -432,7 +448,7 @@ const DealershipForm = () => {
                                 value="rental-space"
                                 checked={formData.ownershipStatus === 'rental-space'}
                                 onChange={handleChange}
-                                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300"
+                                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-400"
                                 required
                             />
                             <label htmlFor="rental-space" className="ml-2 block text-sm text-gray-700">
@@ -448,7 +464,7 @@ const DealershipForm = () => {
                                     value="pre-owned"
                                     checked={formData.ownershipStatus === 'pre-owned'}
                                     onChange={handleChange}
-                                    className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300"
+                                    className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-400"
                                     required
                                 />
                                 <label htmlFor="pre-owned-space" className="ml-2 block text-sm text-gray-700">
@@ -469,7 +485,7 @@ const DealershipForm = () => {
                             className="w-auto"
                             textColor='text-[#000]'
                             type="submit"
-                            disabled={loading}
+
                         />
                     </div>
                 </section>

@@ -21,22 +21,21 @@ export const aboutSpecificationsData = [
     { title: "Battery", value: "48V.23Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: "3 Mode" },
-    { title: "Charger", value: "48V-1.8A & 3A" },
+    { title: "Charger", value: "48V-1.8A & 48V-3A" },
     { title: "Charging Time", value: "6 to 8 Hours" },
-    { title: "Dimension", value: "1470 x 660 x 1060mm" },
+    { title: "Dimension", value: "1470 x 660 x 1060 mm" },
 
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "63 Kg" },
+    { title2: "Net Weight", value2: "63 kg" },
         { title2: "Security", value2: "Remote Alarm System" },
-
     { title2: "Angle", value2: "≤15°" },
-    { title2: "Wheelbase", value2: "1055mm" },
-    { title2: "Ground Clearance", value2: "170mm" },
+    { title2: "Wheelbase", value2: "1055 mm" },
+    { title2: "Ground Clearance", value2: "170 mm" },
     { title2: "Tyre Size", value2: "F: 14/2.5 R:14/2.5" },
     { title2: "Braking System (F/R)", value2: "Drum" },
-    { title2: "Loading Capacity", value2: "98 Kg" },
+    { title2: "Loading Capacity", value2: "98 kg" },
 
 ];
 

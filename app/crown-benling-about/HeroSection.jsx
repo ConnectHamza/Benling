@@ -5,8 +5,8 @@ export default function Herosection() {
     return (
         <div className="w-full bg-white md:py-20 py-20">
             {/* Banner Section */}
-            <div className="w-full max-w-[1300px] mx-auto px-4">
-                <div className="relative w-full rounded-lg overflow-hidden">
+            <div className="w-full max-w-[1300px] mx-auto px-4 mt-4 md:mt-10">
+                <div className="relative w-full rounded-lg overflow-hidden ">
                     <Image
                         src={Banner}
                         alt="About Us Banner"

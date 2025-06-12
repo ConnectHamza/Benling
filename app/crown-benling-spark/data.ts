@@ -18,10 +18,10 @@ export const aboutSpecificationsData = [
     { title: "Motor", value: "600W Brushless" },
     { title: "Top Speed", value: "35-40 km/h" },
     { title: "Range", value: "35-40 km" },
-    { title: "Battery", value: "48V.30AH" },
+    { title: "Battery", value: "48V.30Ah" },
     { title: "Battery Type", value: "Graphene" },
     { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "48V.4Ah" },
+    { title: "Charger", value: "48V.4A" },
     { title: "Charging Time", value: "5 to 6 Hours" },
     { title: "Dimensions", value: "1650 x 640 x 1050 mm" },
 ];

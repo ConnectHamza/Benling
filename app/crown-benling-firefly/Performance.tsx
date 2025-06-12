@@ -39,7 +39,7 @@ const Performance = () => {
                     <div className='bg-gray-10 md:py-5 py-3 md:px-8 px-5 rounded-10 md:w-[45%] hover:shadow-xl shadow-md' data-aos="fade-up">
                            <div className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><Typography variant='body-regular-jakarta' style={{ color: "#32CFB8" }}>Charger Time</Typography>
                             <Typography style={{ color: "#052E2C" }} as="span" variant='h5-semibold-jakarta'>
-                                6-8 hours
+                                6-8 Hours
                             </Typography>
                         </div>
                     </div>

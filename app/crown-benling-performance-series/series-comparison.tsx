@@ -6,7 +6,7 @@ import { performanceData } from './data'
 const SeriesComparison = () => {
   return (
     <div className='w-full bg-white flex flex-col items-center justify-center md:py-40 py-20 px-5 md:px-6'>
-        <div className="md:w-lg">
+        <div className="lg:w-lg">
                   <div className="mb-2" data-aos="zoom-out">
                     <Typography color='text-black' variant='h2-medium-magistral'>
                     Performance Series Comparison

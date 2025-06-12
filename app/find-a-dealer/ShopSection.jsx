@@ -6,6 +6,7 @@ import shopIcon from '../../public/assets/Home/shops/Store.png';
 import crownImage from '../../public/assets/Home/shops/crownshop.png';
 import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { cities } from './data';
+import Link from 'next/link';
 
 export default function ShopSlider() {
     const scrollRef = useRef(null);
@@ -72,21 +73,21 @@ export default function ShopSlider() {
                         </div>
                         {/* City Select Dropdown */}
                         <div className="mt-6 max-w-xs relative">
-                          <select
-                            value={selectedCity}
-                            onChange={e => setSelectedCity(e.target.value)}
-                            className="w-full border border-[#E5E7EB] rounded px-4 py-2 font-jakarta text-base outline-none appearance-none pr-10 bg-white"
-                          >
-                            {cityNames.map(city => (
-                              <option key={city} value={city} className="font-jakarta">{city}</option>
-                            ))}
-                          </select>
-                          {/* Chevron Down SVG absolutely positioned */}
-                          <span className="pointer-events-none absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400">
-                            <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
-                              <path d="M6 8l4 4 4-4" stroke="#A3A3A3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                          </span>
+                            <select
+                                value={selectedCity}
+                                onChange={e => setSelectedCity(e.target.value)}
+                                className="w-full border border-[#E5E7EB] rounded px-4 py-2 font-jakarta text-base outline-none appearance-none pr-10 bg-white"
+                            >
+                                {cityNames.map(city => (
+                                    <option key={city} value={city} className="font-jakarta">{city}</option>
+                                ))}
+                            </select>
+                            {/* Chevron Down SVG absolutely positioned */}
+                            <span className="pointer-events-none absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400">
+                                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="#A3A3A3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -124,19 +125,21 @@ export default function ShopSlider() {
                                             </p>
                                         </div>
                                     </div>
-                                            <div className="text-sm text-gray-600 flex flex-wrap">
-                                                {shop.phone.map((number, index) => (
-                                                    <span key={index} className="text-[#575BFF] text-[12px]">
-                                                        {number}
-                                                        {index !== shop.phone.length - 1 && (
-                                                            <span className="mx-2 text-gray-400">-</span>
-                                                        )}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                    <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
-                                        Get Direction
-                                    </button>
+                                    <div className="text-sm text-gray-600 flex flex-wrap">
+                                        {shop.phone.map((number, index) => (
+                                            <span key={index} className="text-[#575BFF] text-[12px]">
+                                                {number}
+                                                {index !== shop.phone.length - 1 && (
+                                                    <span className="mx-2 text-gray-400">-</span>
+                                                )}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <Link href={shop.location} target='_blank'>
+                                        <button className="text-[14px] mt-2 h-[40px] text-black px-4 py-2 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition">
+                                            Get Direction
+                                        </button>
+                                    </Link>
                                 </div>
                             ))}
                         </div>

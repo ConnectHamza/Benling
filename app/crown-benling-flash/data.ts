@@ -24,11 +24,11 @@ export const aboutSpecificationsData = [
     { title: "Charger", value: "72V.5A" },
     { title: "Charging Time", value: "9 to 11 Hours" },
     { title: "Dimension", value: "1900 x 770 x 1655 mm" },
+    { title: "Net Weight", value: "150 kg" },
 
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "150 kg" },
     { title2: "Angle", value2: "≤20°" },
     { title2: "Wheelbase", value2: "1390 mm" },
     { title2: "Ground Clearance", value2: "160 mm" },
@@ -37,7 +37,7 @@ export const aboutSpecificationsData2 = [
     { title2: "USB Port", value2: "Mobile Charging" },
     { title2: "Loading Capacity", value2: "250 kg" },
     { title2: "Sensor", value2: "Side Stand Sensor" },
-    { title2: "TNFC Unlock", value2: "Yes" },
+    { title2: "NFC Unlock", value2: "Yes" },
 
 ];
 
