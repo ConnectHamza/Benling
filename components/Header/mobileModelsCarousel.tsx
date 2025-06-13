@@ -25,8 +25,6 @@ function MobileModelsCarousel({
   const currentTab = TABS.find((tab) => tab.key === activeSeries)!;
   const models = currentTab.data;
 
-
-  
   // Reset index when switching tabs
   useEffect(() => {
     setCurrentIndex(0);
@@ -114,7 +112,7 @@ function MobileModelsCarousel({
         >
           {models.map((model) => (
             <div
-              key={model.href}
+              key={`${activeSeries}-${model.href}`} // FIX: unique key per tab
               className="w-full flex-shrink-0 px-2"
               style={{ flex: "0 0 100%" }}
             >

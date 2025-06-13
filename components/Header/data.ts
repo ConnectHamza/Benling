@@ -42,9 +42,9 @@ export const modelsData = [
 
 export const modelsData2 = [
     { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion" },
+    { logo: Logo_Victory, img: Image_Victory, range: "120km Range", speed: "5km/h Top Speed", href: "/crown-benling-victory" },
+    { logo: Logo_Raftaar, img: Image_Raftaar, range: "160km Range", speed: "95km/h Top Speed", href: "/crown-benling-raftaar" },
     { logo: Logo_Markhor, img: Image_Markhor, range: "100km Range", speed: "100km/h Top Speed", href: "/", disc: "Coming Soon" },
     { logo: Logo_Cherry, img: Image_Cherry, range: "130km Range", speed: "90km/h Top Speed", href: "/", disc: "Coming Soon" },
-    { logo: Logo_Raftaar, img: Image_Raftaar, range: "160km Range", speed: "95km/h Top Speed", href: "/", disc: "Coming Soon" },
-    { logo: Logo_Victory, img: Image_Victory, range: "120km Range", speed: "5km/h Top Speed", href: "/", disc: "Coming Soon" },
 
 ];

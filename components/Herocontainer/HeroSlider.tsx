@@ -194,10 +194,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 50 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className={`md:space-y-6 ${currentSlideData.textAlign ?? 'text-left'} w-full md:${currentSlideData.conWidth ?? 'w-[40%]'} text-${currentSlideData.color || 'white'}`}
+                className={`md:space-y-6 ${currentSlideData.textAlign ?? 'text-left'} w-full md:${currentSlideData.conWidth ?? 'w-[50%]'} text-${currentSlideData.color || 'white'}`}
               >
                 <div className="mb-4">
-                  <Typography as="h2" variant="h2-medium-magistral">
+                  <Typography as="h1" variant="h2-medium-magistral">
                     {currentSlideData.title}
                   </Typography>
                 </div>

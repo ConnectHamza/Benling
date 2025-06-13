@@ -10,27 +10,27 @@ export default function RoshniColorShowcase() {
         {
             imageSrc: RubyRed.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #940F1A 60.23%)",
-            title: "Ruby Red",
+            title: "Red",
         },
         {
             imageSrc: SlateGrey.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #6A7590 60.23%)",
-            title: "Slate Grey",
+            title: "Grey",
         },
         {
             imageSrc: MintLightGreeb.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #B8D7D4 60.23%)",
-            title: "Mint Light Green",
+            title: "Green",
         },
         {
             imageSrc: SapphireBlue.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #678CDC 60.23%)",
-            title: "Sapphire Blue",
+            title: "Blue",
         },
         {
             imageSrc: OnyxBlack.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #86868A 60.23%)",
-            title: "Onyx Black",
+            title: "Black",
         },
     ];
 

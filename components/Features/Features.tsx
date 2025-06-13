@@ -28,7 +28,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
         <div className={`w-full ${bgColor} ${textColor} md:py-40 py-20 px-5 flex justify-center`}>
             <div className='w-lg'>
                 <div className='heading2 text-center font-magistral font-[500px]'  data-aos="zoom-out">
-                    <Typography as='p' variant='h2-medium-magistral'>
+                    <Typography as='h2' variant='h2-medium-magistral'>
                         {featureTitle}
                     </Typography>
                 </div>
@@ -43,7 +43,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
                         <div key={index} className='md:w-[48%] reveal-block md:mb-10 mb-5'>
                             <Image className='rounded-10 overflow-hidden mb-5' src={feature.img} alt={feature.alt} data-aos="zoom-in-up"/>
                             <div data-aos="fade-up"> 
-                            <Typography as='p' variant='h3-medium-magistral' className='mb-3'>
+                            <Typography as='h3' variant='h3-medium-magistral' className='mb-3'>
                                 {feature.title}
                             </Typography>
                             </div>

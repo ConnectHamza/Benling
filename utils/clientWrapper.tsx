@@ -14,7 +14,7 @@ const ClientWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     setAOSAnimation();
 
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: true,
     });
 

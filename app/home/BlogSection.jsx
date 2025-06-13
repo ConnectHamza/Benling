@@ -19,7 +19,7 @@ export default function RecentBlogsCarousel() {
   };
   return (
     <section className="bg-white text-black py-20">
-      <div className="md:w-lg md:pl-[calc((100vw-1300px)/2+1rem)] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="md:w-lg  mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div data-aos="zoom-in-right" data-aos-delay="0">
         <Typography as="h2" variant="h3-medium-magistral">
@@ -54,7 +54,7 @@ export default function RecentBlogsCarousel() {
                     {blog.date}
                   </Typography>
                   <Link href={`/blogs/${blog.slug}`} target="_blank">
-                  <Typography as="h6" variant="h6-medium-jakarta" className="mb-2 leading-tight line-clamp-2 blog-heading">
+                  <Typography as="h3" variant="h6-medium-jakarta" className="mb-2 leading-tight line-clamp-2 blog-heading">
                     {blog.title}
                   </Typography>                    
                   </Link>

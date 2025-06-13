@@ -238,7 +238,7 @@ const Header = () => {
                     <AppButton
                         size="medium"
                         variant="solid"
-                        label="Book now"
+                        label="Book Now"
                         iconName="ArrowUpRight"
                         iconPosition="right"
                         href={"/book-now"}

@@ -61,7 +61,7 @@ const HeroSection = ({
         >
           {/* Title */}
           <div className="mb-4" data-aos="fade-right" data-aos-delay="0">
-            <Typography as="h2" variant="h2-medium-magistral">
+            <Typography as="h1" variant="h2-medium-magistral">
               {title}
             </Typography>
           </div>

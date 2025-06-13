@@ -8,6 +8,8 @@ import Roshnix from "../../public/assets/Home/Header/mobile/roshnix.webp"
 import Spark from "../../public/assets/Home/Header/mobile/spark.webp"
 import Fairy from "../../public/assets/Home/Header/mobile/fairy.webp"
 import Champion from "../../public/assets/Home/Header/mobile/champion.webp"
+import Victory from "../../public/assets/Home/Header/mobile/velocity.webp"
+import Raftaar from "../../public/assets/Home/Header/mobile/raftaar.webp"
 //website
 import EzeeWeb from "../../public/assets/Home/Header/web/ezee.webp";
 import FireflyWeb from "../../public/assets/Home/Header/web/firefly.webp"
@@ -19,6 +21,8 @@ import RoshnixWeb from "../../public/assets/Home/Header/web/roshnix.webp"
 import SparkWeb from "../../public/assets/Home/Header/web/spark.webp"
 import FairyWeb from "../../public/assets/Home/Header/web/fairy.webp"
 import ChampionWeb from "../../public/assets/Home/Header/web/champion.webp"
+import VictoryWeb from "../../public/assets/Home/Header/web/velocity.webp"
+import RaftaarWeb from "../../public/assets/Home/Header/web/raftaar.webp"
 import PerformanceBgWeb from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes.webp'
 //Carousel
 import HeroImageSub from '../../public/assets/Home/Header/heroimagesub.png';
@@ -238,6 +242,28 @@ export const faqsData = [
 
 
 export const Slides = [
+                {
+        title: 'Crown Benling Raftaar Sleek, Smart, & Ready for the Fast Lane',
+        subtitle: 'Conquer the city in style with the Crown Benling Raftaar—built for go-getters with speed, efficiency, and bold looks. Perfect for weaving through traffic or cruising open roads with smooth performance and urban agility.',
+        buttonText: 'Book Now',
+        imageSrc: RaftaarWeb,
+        mobileImageSrc: Raftaar,
+        href: "/crown-benling-raftaar",
+        color: "white",
+        price: "299,000"      
+
+    },
+              {
+        title: 'Powerful, Sleek, and Built for Urban Thrills',
+        subtitle: 'Bold and dynamic, the Crown Benling Victory redefines commuting with power and style. Perfect for thrill-seekers, it offers smooth acceleration and a striking presence, delivering efficiency and freedom on every ride.',
+        buttonText: 'Book Now',
+        imageSrc: VictoryWeb,
+        mobileImageSrc: Victory,
+        href: "/crown-benling-victory",
+        color: "black",
+        price: "265,000"      
+
+    },
             {
         title: 'Powerful, Stylish, and Built for the Urban Explorer',
         subtitle: 'Turn heads with the Crown Benling Champion—built for thrill-seekers and commuters with bold style, durability, and performance for city streets and long routes.',

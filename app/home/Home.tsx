@@ -67,7 +67,7 @@ export default function Home() {
               <div className="text-white flex flex-col space-y-6">
                 <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} data-aos="zoom-out" data-aos-delay="500" />
                 <div data-aos="fade-right" data-aos-delay="800">
-                <Typography as="h3" variant='h3-medium-magistral' >
+                <Typography as="h2" variant='h3-medium-magistral' >
                   Pakistan Largest EV Scooter Growing Network
                 </Typography>
                 </div>

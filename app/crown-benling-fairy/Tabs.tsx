@@ -18,11 +18,11 @@ const Tabs = () => {
   };
 
   const colorOptions = [
-    { id: '1', label: 'Crimson Red', image: CrimsonCream, alt: 'Fairy Crimson Red' },
-    { id: '2', label: 'Ivory Frost', image: IvoryFrost, alt: 'Fairy Ivory Frost' },
-    { id: '3', label: 'Sapphire Blue', image: SapphireBeige, alt: 'Fairy Sapphire Blue' },
-    { id: '4', label: 'Stone Grey', image: StoneMist, alt: 'Fairy Stone Grey' },
-    { id: '5', label: 'Vanilla Shadow', image: VanillaShodow, alt: 'Fairy Vanilla Shadow' },
+    { id: '1', label: 'Red', image: CrimsonCream, alt: 'Fairy Crimson Red' },
+    { id: '2', label: 'White', image: IvoryFrost, alt: 'Fairy Ivory Frost' },
+    { id: '3', label: 'Blue', image: SapphireBeige, alt: 'Fairy Sapphire Blue' },
+    { id: '4', label: 'Grey', image: StoneMist, alt: 'Fairy Stone Grey' },
+    { id: '5', label: 'Black', image: VanillaShodow, alt: 'Fairy Vanilla Shadow' },
   ];
 
   return (

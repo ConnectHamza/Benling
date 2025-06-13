@@ -17,9 +17,11 @@ const Tabs = () => {
 
   const tabItems = [
     { label: 'Emerald Green', image: FireflyGreen, alt: 'Firefly Emerald Green' },
-    { label: 'Charcoal Grey', image: FireflyCharcoal, alt: 'Firefly Charcoal Grey' },
-    { label: 'Ivory White', image: FireflyWhite, alt: 'Firefly Ivory White' },
-    { label: 'Mint Green', image: FireflyMint, alt: 'Firefly Mint Green' },
+    { label: 'Grey', image: FireflyCharcoal, alt: 'Firefly Charcoal Grey' },
+    { label: 'White', image: FireflyWhite, alt: 'Firefly Ivory White' },
+    { label: 'Light Green', image: FireflyMint, alt: 'Firefly Mint Green' },
+    // { label: 'Blue', image: FireflyMint, alt: 'Firefly Mint Green' },
+    // { label: 'Black', image: FireflyMint, alt: 'Firefly Mint Green' },
   ];
 
   return (

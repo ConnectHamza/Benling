@@ -28,10 +28,10 @@ const Tabs = () => {
           </div>
           <div className="mt-5 flex flex-wrap md:flex-col justify-center md:justify-start gap-x-4 gap-y-2">
   {[
-    { id: '1', label: 'Shadow Jet' },
-    { id: '2', label: 'Bubble Blue' },
-    { id: '3', label: 'Cherry Zoom' },
-    { id: '4', label: 'Vanilla Pop' },
+    { id: '1', label: 'Black' },
+    { id: '2', label: 'Blue' },
+    { id: '3', label: 'Red' },
+    { id: '4', label: 'Grey' },
   ].map((tab) => (
     <div data-aos="zoom-out">
     <h3

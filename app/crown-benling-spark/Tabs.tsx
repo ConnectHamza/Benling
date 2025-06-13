@@ -15,9 +15,9 @@ const Tabs = () => {
   };
 
   const colorOptions = [
-    { id: '1', label: 'Charcoal Grey', image: Grey, alt: 'Spark Charcoal Grey' },
-    { id: '2', label: 'Oasis Blue', image: Blue, alt: 'Spark Oasis Blue' },
-    { id: '3', label: 'Crimson Red', image: Red, alt: 'Spark Crimson Red' },
+    { id: '1', label: 'Grey', image: Grey, alt: 'Spark Charcoal Grey' },
+    { id: '2', label: 'Blue', image: Blue, alt: 'Spark Oasis Blue' },
+    { id: '3', label: 'Red', image: Red, alt: 'Spark Crimson Red' },
   ];
 
   return (

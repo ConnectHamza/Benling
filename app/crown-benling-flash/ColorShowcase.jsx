@@ -13,27 +13,27 @@ export default function RoshniColorShowcase() {
         {
             imageSrc: Bikeblue.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #DDE6F0 60.23%)",
-            title: "Arctic Blaze",
+            title: "Grey",
         },
         {
             imageSrc: Bikesilver.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #77D227 60.23%)",
-            title: "Neon Volt",
-        },
-        {
-            imageSrc: BikeArmygreen.src,
-            gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #1B1B1C 60.23%)",
-            title: "Midnight Storm",
+            title: "Green",
         },
         {
             imageSrc: BikeMattblack.src,
+            gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #1B1B1C 60.23%)",
+            title: "Black",
+        },
+        {
+            imageSrc: BikeArmygreen.src ,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #E53F4C 60.23%)",
-            title: "Crimson Charge",
+            title: "Red",
         },
         {
             imageSrc: BikeRed.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #A86FE8 60.23%)",
-            title: "Plasma Purple",
+            title: "Purple",
         },
     ];
 
@@ -41,7 +41,7 @@ export default function RoshniColorShowcase() {
         <section className="bg-black md:py-40 py-20 px-4 text-white bg-black-30">
             <div className="text-center text-4xl md:text-4xl mb-10 font-magistral">
                 <div className="mb-4" data-aos="zoom-out">
-                <Typography variant="h2-medium-magistral">
+                <Typography as="h2" variant="h2-medium-magistral">
                     Color your World With Flash
                 </Typography>
                     </div>

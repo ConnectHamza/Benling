@@ -23,7 +23,7 @@ const GradientText: React.FC<GradientTextProps> = ({ heading, colors }) => {
     display: "inline-block",
   };
 
-  return <Typography variant="h3-bold-magistral" style={gradientStyle}>{heading}</Typography>;
+  return <Typography as="h2" variant="h2-bold-magistral" style={gradientStyle}>{heading}</Typography>;
 };
 
 export default GradientText;

@@ -8,7 +8,7 @@ const SeriesComparison = () => {
     <div className='w-full bg-white flex flex-col items-center justify-center md:py-40 py-20 px-5 md:px-6'>
         <div className="lg:w-lg">
                   <div className="mb-2" data-aos="zoom-out">
-                    <Typography color='text-black' variant='h2-medium-magistral'>
+                    <Typography as="h2" color='text-black' variant='h2-bold-magistral'>
                     Performance Series Comparison
                     </Typography>
                   </div>

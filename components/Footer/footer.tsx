@@ -7,6 +7,7 @@ import Mail from '../../public/assets/Header-Footer/mail.svg'
 import { ArrowUpRight, MailIcon, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 import Typography from '../GradientText/Typography';
+import { h3 } from 'framer-motion/client';
 
 const items = [
     { label: 'Champion', href: 'crown-benling-champion' },
@@ -32,7 +33,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row md:space-x-8 justify-between text-left items-start space-y-6 md:space-y-0">
                     <div className='w-full md:w-2/6' data-aos="fade-up">
                         <div className='mb-2'>
-                            <Typography variant='body-bold-jakarta'>
+                            <Typography as="h3" variant='body-bold-jakarta'>
                                 Contact
                             </Typography>
 
@@ -44,7 +45,7 @@ const Footer = () => {
                             </li>
                             <li className="mb-2 flex items-center gap-4">
                                 <Phone size={18} className='text-red-200' />
-                                <Link href='tell:021-111000348'><Typography variant='subtext-regular-jakarta'>021-111000348</ Typography></Link>
+                                <Link href='tel:021-111000348'><Typography variant='subtext-regular-jakarta'>021-111000348</ Typography></Link>
                             </li>
                             <li className="mb-2 flex items-start gap-4">
                                 <MapPin size={24} className='text-red-200' />
@@ -55,7 +56,7 @@ const Footer = () => {
                     </div>
                     <div className='w-full md:w-1/6' data-aos="fade-up">
                         <div className='mb-2'>
-                            <Typography variant='body-bold-jakarta'>Quick Links</ Typography>
+                            <Typography as="h3" variant='body-bold-jakarta'>Quick Links</ Typography>
 
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
@@ -79,7 +80,7 @@ const Footer = () => {
                     </div>
 
                     <div className='w-full md:w-1/6' data-aos="fade-up">
-                        <div className='mb-2'><Typography variant='body-bold-jakarta'>More</ Typography>
+                        <div className='mb-2'><Typography as="h3" variant='body-bold-jakarta'>More</ Typography>
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
                             {/* <li className="mb-2">
@@ -104,7 +105,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='w-full md:w-2/6 ' data-aos="fade-up">
-                        <div className='mb-2'><Typography variant='body-bold-jakarta'>Product Links</ Typography>
+                        <div className='mb-2'><Typography as="h3" variant='body-bold-jakarta'>Product Links</ Typography>
                         </div>
                         <ul className='flex justify-start gap-3 flex-wrap md:text-[15px] text-[13px]'>
                             {items

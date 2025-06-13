@@ -36,16 +36,19 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
   return (
     <div className="relative">
-      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
- >
+      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30/70 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
+    style={{
+      backdropFilter: "blur(50px)"
+    }}
+ >      
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
-          <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
+          <h2 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h2>
           {showButton && ( // Conditionally render the AppButton
             <div data-aos="fade-left" className="md:block hidden">
               <AppButton
                 size="medium"
                 variant="solid"
-                label="Book now"
+                label="Book Now"
                 iconName="ArrowUpRight"
                 iconPosition="right"
                 href={"/book-now"}
@@ -57,7 +60,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
       </div>
             <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-gray-90" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
-          <h3 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h3>
+          <h2 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h2>
           {showButton && ( // Conditionally render the AppButton
             <div data-aos="fade-left">
               <AppButton

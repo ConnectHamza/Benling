@@ -16,7 +16,7 @@ const Banner = () => {
                 imageSrc={VelocityWeb.src}
                 mobileImageSrc={VelocityMob.src}                
                 price='265,000'
-                // href='/brouchers/Crown_Benling_Champion_Brochure.pdf'
+                href='/brouchers/Crown_Benling_Victory_Brochure.pdf'
                 textColor='text-black-30'
                 color='text-black-30'
             />

@@ -27,7 +27,7 @@ const BikeColorCard = ({ imageSrc, gradient, title }) => {
 
       {/* Title */}
       <h4 className="mt-6 text-center" data-aos="zoom-out">
-        <Typography variant="h4-medium-magistral">
+        <Typography as="h3" variant="h4-medium-magistral">
         {title}
 
         </Typography>

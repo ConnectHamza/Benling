@@ -73,12 +73,12 @@ export const typographyVariants = {
 
   // Body (16px)
   "body-light-magistral": "font-magistral font-light text-base sm:text-base md:text-lg",
-  "body-regular-magistral": "font-magistral font-normal text-base sm:text-base md:text-lg",
+  "body-regular-magistral": "font-magistral font-normal text-base sm:text-base md:text-md",
   "body-medium-magistral": "font-magistral font-medium text-base sm:text-base md:text-lg",
   "body-bold-magistral": "font-magistral font-bold text-base sm:text-base md:text-lg",
 
   "body-light-jakarta": "font-jakarta font-light text-base sm:text-base md:text-lg",
-  "body-regular-jakarta": "font-jakarta font-normal text-base sm:text-base md:text-lg",
+  "body-regular-jakarta": "font-jakarta font-normal text-sm md:text-base",
   "body-medium-jakarta": "font-jakarta font-medium text-base sm:text-base md:text-lg",
   "body-semibold-jakarta": "font-jakarta font-semibold text-base sm:text-base md:text-lg",
   "body-bold-jakarta": "font-jakarta font-bold text-base sm:text-base md:text-lg",

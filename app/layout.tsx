@@ -6,6 +6,7 @@ import ClientWrapper from "@/utils/clientWrapper";
 import SmoothScroll from "@/utils/smoothScroll";
 import Script from "next/script";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import ScrollToTop from "@/components/scrollToTop";
 
 export const metadata = {
   title: "Crown Benling Electric Mobility - Electrifying Dreams",
@@ -37,7 +38,9 @@ export default function RootLayout({
       <body>      
         <Header />
         <SmoothScroll>
-          <ClientWrapper>{children}</ClientWrapper>
+          <ClientWrapper>{children}
+            <ScrollToTop />
+          </ClientWrapper>
         </SmoothScroll>
         <Footer />
       </body>

@@ -48,7 +48,7 @@ const FeatureSection = () => (
     <div className="max-w-[1300px] mx-auto ">
       <div className="mb-2">
         <div data-aos="zoom-out">
-        <Typography color='text-white' variant='h3-medium-magistral'>
+        <Typography as="h2" color='text-white' variant='h2-medium-magistral'>
         Engineered for Peak Performance
         </Typography>
         </div>

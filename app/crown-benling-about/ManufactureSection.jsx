@@ -7,9 +7,9 @@ export default function ManufacturerDetails() {
     <div className="w-full bg-white py-10">
       <div className="w-full max-w-[1300px] mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold font-magistral mb-2 text-center md:text-left">
+        <h3 className="text-2xl md:text-3xl font-semibold font-magistral mb-2 text-center md:text-left">
           Manufacturer Details
-        </h2>
+        </h3>
 
         {/* Subheading */}
         <p className="text-gray-700 text-base md:text-lg mb-8 text-center md:text-left font-jakarta font-normal">

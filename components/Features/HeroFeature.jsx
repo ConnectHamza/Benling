@@ -17,7 +17,7 @@ const StatCard = ({
       className={`rounded-xl px-4 py-3 w-full ${bgColor} ${textColor} text-center shadow-md`}
       style={{ backdropFilter: 'blur(10px)' }}
     >
-      <Typography variant={titleVariant}>{value}</Typography>
+      <Typography as="h3" variant={titleVariant}>{value}</Typography>
       <Typography variant={subtitleVariant}>{label}</Typography>
     </div>
   );

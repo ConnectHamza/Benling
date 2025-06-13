@@ -485,7 +485,6 @@ const DealershipForm = () => {
                             className="w-auto"
                             textColor='text-[#000]'
                             type="submit"
-
                         />
                     </div>
                 </section>

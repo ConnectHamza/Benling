@@ -51,7 +51,6 @@ const page = () => {
       />
       <Featured stats={statsData} imageAlt={"Flash Feature Image"} mblImage={RoshniFeatuedMbl} imageSrc={RoshniFeatuedIMG} mobileImageSrc={RoshniFeatuedMbl} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />
-
       <ColorShowcase />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
       <LoopMain imageSrc={RoshniLoopIMG} heading={heading} colors={colors} />

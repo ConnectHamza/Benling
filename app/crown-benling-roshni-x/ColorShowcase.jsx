@@ -9,27 +9,27 @@ export default function RoshniColorShowcase() {
         {
             imageSrc: Bikeblue.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #3250BE 60.23%)",
-            title: "Electric Blue & Yellow",
+            title: "Blue",
         },
         {
             imageSrc: Bikesilver.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #A2A2A2 60.23%)",
-            title: "Steel Silver & Yellow",
+            title: "Grey",
         },
         {
             imageSrc: BikeArmygreen.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #659C9C 60.23%)",
-            title: "Army Green & Yellow",
+            title: "Green",
         },
         {
             imageSrc: BikeMattblack.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #556479 60.23%)",
-            title: "Matte Black & Yellow",
+            title: "Black",
         },
         {
             imageSrc: BikeRed.src,
             gradient: "linear-gradient(180deg, #FFFFFF -29.05%, #C12A57 60.23%)",
-            title: "Crimson Red & Silver",
+            title: "Red",
         },
     ];
 

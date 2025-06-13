@@ -16,7 +16,7 @@ export default function Herosection() {
                     {/* Vertically Centered Overlay Text */}
                     <div className="absolute inset-0 flex items-center px-4 sm:px-6">
                         <div className="bg-black bg-opacity-50 px-4 py-2 rounded">
-                            <h1 className="text-white text-4xl font-[500] font-magistral">
+                            <h1 className="text-white text-5xl font-[500] font-magistral">
                                 About Us
                             </h1>
                         </div>

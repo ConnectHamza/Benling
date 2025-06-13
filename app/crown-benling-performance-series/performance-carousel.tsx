@@ -41,7 +41,7 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
     <div className="w-full h-full bg-white-500 relative overflow-hidden">
       <div className="w-full flex flex-col items-center justify-center mb-8">
         <div data-aos="fade-up">
-          <Typography variant="h2-medium-magistral" className="mb-2 text-center">
+          <Typography as="h2" variant="h2-medium-magistral" className="mb-2 text-center">
             {heading}
           </Typography>
           <Typography variant="subtext-regular-jakarta" className="text-[#0A0A0A] text-center">

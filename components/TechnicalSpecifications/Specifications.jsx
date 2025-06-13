@@ -12,7 +12,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
     <div className='w-full flex justify-center md:py-40 px-5 py-20 '>
       <div className="md:w-lg">
         <div data-aos="zoom-in">
-        <Typography variant='h2-bold-magistral'>
+        <Typography as="h2" variant='h2-bold-magistral'>
           Technical Specifications
         </Typography>
         </div>
