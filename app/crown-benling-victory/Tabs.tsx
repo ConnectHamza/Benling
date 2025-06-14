@@ -31,7 +31,7 @@ const colorOptions = [
         {/* Text and Tab Section */}
         <div className="md:w-[40%] w-full">
           <h2 className="text-[24px] md:text-[30px] font-semibold font-magistral mb-4 text-center md:text-left" data-aos="fade-up">
-            Colors to Match Your Vibe
+            Color Your Ride, Define Your Victory
           </h2>
           <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-x-4 gap-y-2">
             {colorOptions.map((option) => (

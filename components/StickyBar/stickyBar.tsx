@@ -36,7 +36,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
   return (
     <div className="relative">
-      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30/70 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
+      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30/90 flex justify-center items-center px-5 py-5 border-b border-gray-90`}
     style={{
       backdropFilter: "blur(50px)"
     }}

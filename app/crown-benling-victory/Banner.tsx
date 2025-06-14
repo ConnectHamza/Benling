@@ -10,8 +10,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Powerful, Sleek, and Built for Urban Thrills"
-                subtitle="Bold and dynamic, the Crown Benling Victory redefines commuting with power and style. Perfect for thrill-seekers, it offers smooth acceleration and a striking presence, delivering efficiency and freedom on every ride."
+                title="Crown Victory - Unleash Urban Power"
+                subtitle="The Crown Victory offers strong performance, modern design, and affordability. Built with a 1000W motor and 72V 30Ah Lithium Iron Phosphate battery , it delivers up to 120 km range and 55 km/h speed —ideal for city rides. Stylish, lightweight, and built to impress."
                 buttonText="Explore More"
                 imageSrc={VelocityWeb.src}
                 mobileImageSrc={VelocityMob.src}                

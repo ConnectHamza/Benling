@@ -24,8 +24,9 @@ import Image_Fairy from "../../public/assets/Home/Carousel/Fairy_Image.png";
 import Image_Markhor from "../../public/assets/PerformanceSeries/Markhor.webp";
 import Image_Cherry from "../../public/assets/PerformanceSeries/Cherry.webp";
 import Image_Champion from "../../public/assets/PerformanceSeries/Champion.webp";
-import Image_Raftaar from "../../public/assets/PerformanceSeries/Raftaar.webp";
 import Image_Victory from "../../public/assets/PerformanceSeries/Victory.webp";
+import Image_Raftaar from "../../public/assets/PerformanceSeries/Raftaar.webp";
+
 
 export const modelsData = [
     { logo: Logo_Flash, img: Image_Flash, range: "150km Range", speed: "70km/h Top Speed", href: "/crown-benling-flash" },
@@ -44,7 +45,7 @@ export const modelsData2 = [
     { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-benling-champion" },
     { logo: Logo_Victory, img: Image_Victory, range: "120km Range", speed: "5km/h Top Speed", href: "/crown-benling-victory" },
     { logo: Logo_Raftaar, img: Image_Raftaar, range: "160km Range", speed: "95km/h Top Speed", href: "/crown-benling-raftaar" },
+    { logo: Logo_Cherry, img: Image_Cherry, range: "130km Range", speed: "90km/h Top Speed", href: "/crown-benling-cherry" },
     { logo: Logo_Markhor, img: Image_Markhor, range: "100km Range", speed: "100km/h Top Speed", href: "/", disc: "Coming Soon" },
-    { logo: Logo_Cherry, img: Image_Cherry, range: "130km Range", speed: "90km/h Top Speed", href: "/", disc: "Coming Soon" },
 
 ];

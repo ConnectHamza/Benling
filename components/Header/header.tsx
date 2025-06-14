@@ -219,9 +219,14 @@ const Header = () => {
                 {/* Right nav - vertically centered */}
                 <nav className="hidden md2:flex items-center gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
-                    <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                     <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
                         <Typography variant="subtext-regular-jakarta">
                             Find a Dealer
+                        </Typography>
+                    </Link>
+                    <Link href="/become-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                        <Typography variant="subtext-regular-jakarta">
+                            Become a Dealer
                         </Typography>
                     </Link>
                     <Link href="/contact" className={`${navLink} flex items-center h-full`}>
@@ -333,6 +338,17 @@ const Header = () => {
                                 }, 0);
                             }} className="py-4 border-b text-black-200 border-gray-700 text-lg">                                <Typography variant="subtext-regular-jakarta">
                                     Find a Dealer
+                                </Typography>
+                            </Link>
+
+                              <Link href="/find-a-dealer" onClick={(e) => {
+                                e.preventDefault();
+                                setIsModelsOpen(false);
+                                setTimeout(() => {
+                                    window.location.href = "/become-a-dealer";
+                                }, 0);
+                            }} className="py-4 border-b text-black-200 border-gray-700 text-lg">                                <Typography variant="subtext-regular-jakarta">
+                                    Become a Dealer
                                 </Typography>
                             </Link>
                             {/* <Link href="/distributor" className="py-4 border-b text-black-200 border-gray-700 text-lg">Become a Dealer</Link> */}

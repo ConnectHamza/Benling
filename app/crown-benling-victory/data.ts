@@ -1,7 +1,7 @@
 
 export const featureHeader = {
-    featureTitle: 'Compact, Agile, and Effortless',
-    featureText: `Perfect for quick trips and city cruising, Crown Benling Mini Scooty is built for easy handling, efficient mobility, and everyday reliability in a compact design.`,
+    featureTitle: 'Vintage Style, Modern Comfort',
+    featureText: `For riders who love a classic look with everyday practicality, the Crown Victory is the perfect match. Its timeless design turns heads, while the 1000W motor and 72V 30Ah battery deliver a smooth ride with up to 120 km range and a steady 55 km/h top speed —ideal for relaxed commuting and weekend adventures.`,
       bgColor: '',
     textColor: 'text-black-30',
   };
@@ -31,40 +31,40 @@ export const aboutSpecificationsData2 = [
 export const featuresData = [
     {
         img: '/assets/Victory/Featured/Velocity-Featured1.webp',
-        alt: 'Built to Grip. Engineered for Stability.',
-        title: 'Built to Grip. Engineered for Stability.',
-        description: `Whether gliding on city streets or tackling uneven paths, the Victory Scooter’s all-terrain tires provide unmatched confidence and control. Crafted with durable rubber and deep tread, they offer superior grip and longevity. Paired with high-performance disc brakes and robust suspension, every ride is safe and smooth.`,
+        alt: 'Powerful Brakes for Confident Control',
+        title: 'Powerful Brakes for Confident Control',
+        description: `The Crown Victory features high-performance disc brakes that deliver quick, responsive stopping power. Combined with its smooth suspension, this ensures a safe, controlled ride—giving you full confidence on every journey.`,
         
     },
     {
         img: "/assets/Victory/Featured/Velocity-Featured2.webp",
-        alt: 'LED Headlight with Integrated DRL',
-        title: 'LED Headlight with Integrated DRL',
-        description: 'The Victory Scooter’s bold LED headlamp doesn’t just light the way — it defines your presence on the road. Engineered for clarity and efficiency, the headlight provides a powerful, wide-angle beam that enhances visibility during night rides and low-light conditions.'
+        alt: 'See and Be Seen: Brilliant LED Lighting',
+        title: 'See and Be Seen: Brilliant LED Lighting',
+        description: 'The Crown Victory lights up the road ahead with its sharp, high-intensity LED headlight. Designed for clear visibility in all conditions, it ensures you’re always seen—making every ride safer and more confident.'
     },
     {
         img: '/assets/Victory/Featured/Velocity-Featured3.webp',
         alt: 'Smart Digital Display',
         title: 'Smart Digital Display',
-        description: `Stay informed with the Victory Scooter’s intelligent digital dashboard. The high-contrast display shows real-time speed, battery level, and essential indicators — all in a clean, easy-to-read layout. Designed for visibility in all lighting conditions, it keeps you connected to your ride without distractions.`
+        description: `The Crown Victory’s smart digital display keeps you informed with real-time speed, battery level, and essential indicators—always clear, always visible. Stay connected, stay focused, ride confidently!`
     },
     {
         img: '/assets/Victory/Featured/Velocity-Featured4.webp',
         alt: 'Sleek Rear Design with Ergonomic Comfort',
         title: 'Sleek Rear Design with Ergonomic Comfort',
-        description: `The Victory Scooter's rear design is not just visually appealing — it’s thoughtfully engineered. The aerodynamic tail section, sleek grab rail, and dual-tone styling offer a refined look while enhancing comfort and practicality for both rider and passenger. From the bold graphics to the integrated tail lamp, every detail is crafted to turn heads and support everyday use.`
+        description: `The Crown Victory’s rear design blends smooth curves and modern lines to offer both style and practicality. Perfect for daily commutes or weekend rides, it ensures comfort for rider and passenger alike—without compromising on looks.`
     },
     {
         img: '/assets/Victory/Featured/Velocity-Featured5.webp',
         alt: 'LED Tail Light Cluster',
         title: 'LED Tail Light Cluster',
-        description: `The Crown Benling Victory Scooter’s rear features a striking LED tail light cluster that ensures you're always seen from behind — day or night. The setup includes high-visibility brake lights and integrated turn indicators, designed to improve safety while enhancing the scooter’s sleek rear profile.`
+        description: `The Crown Victory’s rear features a striking LED tail light cluster that ensures you're always seen from behind — day or night. The setup includes high-visibility brake lights and integrated turn indicators, designed to improve safety while enhancing the scooter’s sleek rear profile.`
     },
     {
         img: '/assets/Victory/Featured/Velocity-Featured6.webp',
-        alt: 'Timeless Front Styling with a Modern Twist',
-        title: 'Timeless Front Styling with a Modern Twist',
-        description: 'The Victory Scooter features a gracefully contoured front profile, combining vintage aesthetics with modern electric innovation. With its sculpted body lines, chrome detailing, and refined curves, it captures a classic look while embracing the tomorrow of urban mobility.'
+        alt: 'Vintage With A Twist',
+        title: 'Vintage With A Twist',
+        description: 'The Crown Victory’s features a gracefully contoured front profile, combining vintage aesthetics with modern electric innovation. With its sculpted body lines, chrome detailing, and refined curves, it captures a classic look while embracing the tomorrow of urban mobility.'
     },
 
 ];

@@ -9,8 +9,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Crown Benling Raftaar Sleek, Smart, & Ready for the Fast Lane"
-                subtitle="Conquer the city in style with the Crown Benling Raftaar—built for go-getters with speed, efficiency, and bold looks. Perfect for weaving through traffic or cruising open roads with smooth performance and urban agility."
+                title="Crown Raftaar: Big Power, Bigger Thrill"
+                subtitle="Massive torque for instant acceleration. Powered by a high-capacity 72V40Ah Lithium Iron Phosphate battery for lasting performance."
                 buttonText="Explore More"
                 imageSrc={RaftaarWeb.src}
                 mobileImageSrc={RaftaarMob.src}

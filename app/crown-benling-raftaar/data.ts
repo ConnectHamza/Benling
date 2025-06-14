@@ -7,8 +7,8 @@ import Feature6IMG from '../../public/assets/Raftaar/Features/Feature6.webp';
 
 
 export const featureHeader = {
-    featureTitle: 'Compact, Agile, and Effortless',
-    featureText: `Perfect for quick trips and city cruising, Crown Benling Mini Scooty is built for easy handling, efficient mobility, and everyday reliability in a compact design.`,
+    featureTitle: 'Fierce, Fast, and Engineered to Lead',
+    featureText: `Crown Raftaar is a high-performance electric ride that combines aggressive styling, advanced engineering, and exceptional speed. Built for riders who crave thrill and precision, it delivers powerful acceleration, bold aesthetics, and long-range reliability—perfect for those who lead, not follow.`,
       bgColor: 'bg-gradient-to-t from-[#914C02] via-[#371700] to-[#371700]',
     textColor: 'text-white',
   };
@@ -38,28 +38,28 @@ export const aboutSpecificationsData2 = [
 export const featuresData = [
     {
         img: Feature1IMG,
-        alt: 'Rugged Front Profile',
-        title: 'Rugged Front Profile',
-        description: `Engineered for the modern commuter, the Crown Benling's robust front body exudes power and purpose. The dual square LED headlamps ensure brilliant illumination, enhancing safety for day and night rides. Its sleek front panel, boldly marked with the Crown Group branding, reflects cutting-edge innovation and dependable engineering.`,
+        alt: 'Power Meets Style',
+        title: 'Power Meets Style',
+        description: `The Crown Raftaar’s bold front design blends muscular aesthetics with modern LED lighting, making every ride stand out with confidence and class.`,
         
     },
     {
         img: Feature2IMG,
-        alt: 'Durable Alloy Wheels',
-        title: 'Durable Alloy Wheels',
-        description: 'Get unmatched control and road grip with high-performance alloy wheels. Paired with heavy-duty front suspension, the wheels offer a smooth, shock-absorbent ride—even on uneven terrain. Built for durability, they are designed to tackle urban challenges with ease and style.'
+        alt: 'Controlled Braking System',
+        title: 'Controlled Braking System',
+        description: 'The Crown Raftaar’s braking system delivers unmatched control and reliability. With its advanced design, you can stop smoothly and confidently in any situation, ensuring a safe and enjoyable ride every time.'
     },
     {
         img: Feature3IMG,
-        alt: 'Heavy-Duty Side Stand',
-        title: 'Heavy-Duty Side Stand',
-        description: `The Crown Benling features a reinforced side stand that ensures maximum stability and balance when parked. Built with durable, rust-resistant metal, the stand is engineered to withstand daily use—offering secure support on varied surfaces, from city pavements to uneven roads.`
+        alt: 'Metal Safety Frame',
+        title: 'Metal Safety Frame',
+        description: `Crown Raftaar is equipped with a high grade metal safety frame which gives you extra confidence in avoiding minor dents and protects the build quality of body parts.`
     },
     {
         img: Feature4IMG,
-        alt: 'STech That Moves With You',
-        title: 'STech That Moves With You',
-        description: `Experience modern mobility with the Crown Benling’s advanced digital dashboard. The crystal-clear LED display provides all essential riding information in one place—speed, battery level, gear mode, and range—ensuring you stay informed and in control throughout your journey.`
+        alt: 'High Quality Display',
+        title: 'High Quality Display',
+        description: `Crown Raftaar’s high quality display gives you clear view of the HUD for quick glance of the vitals in your electric scooter such as speed, range, battery health and NFC information.`
     },
     {
         img: Feature5IMG,

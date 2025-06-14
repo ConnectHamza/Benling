@@ -104,6 +104,7 @@ function MobileModelsCarousel({
 
         {/* Carousel Slides */}
         <div
+        key={activeSeries}
           className="flex transition-transform duration-300 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,

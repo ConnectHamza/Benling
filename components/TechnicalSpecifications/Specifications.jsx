@@ -2,6 +2,8 @@ import React from 'react';
 
 import Image from 'next/image';
 import Typography from '../GradientText/Typography';
+import WarrantyImage from '../../public/assets/Home/Thumbnail/Warranty-Specs-Image.svg'
+
 const Specifications = ({ data, data2, bottomImageTag = '' }) => {
 
   // const half = Math.ceil(data.length / 2);
@@ -45,6 +47,21 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
           </div>
 
         </div>
+              <div className='flex justify-center items-center mt-20'>
+                  <div className='md:w-[60%] flex md:gap-10 flex-wrap md:flex-nowrap gap-4 items-center'>
+                      <div className='flex justify-center w-[100%]'>
+                        <Image src={WarrantyImage} alt='Warranty Badge' height={200} width={200} className='md:w-[100%] w-[150px]'/>
+                      </div>
+                      <div className='flex flex-col gap-2 text-center md:text-start'>
+                          <Typography variant='h3-bold-magistral' as='h3' className='text-nowrap'>WARRANTY</Typography>
+                          <Typography variant='h2-bold-magistral' as='h2' className='text-nowrap'>4 YEARS/48,000KM</Typography>
+                          <Typography variant='h5-bold-jakarta' as='h5' className='text-nowrap'>Battery, Motor & Controller</Typography>
+                          <Typography variant='body-bold-jakarta' as='p' className='text-nowrap'>Body Parts 12 Months/12,000KM</Typography>
+                          
+                      </div>
+                  </div>
+              </div>
+
         {bottomImageTag && (
           <div className="mt-10 w-full" data-aos="zoom-out">
             <Image

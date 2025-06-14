@@ -56,14 +56,14 @@ export default function Home() {
       <div>
         <FeaturesSection />
       </div>
-      <div>
+      {/* <div>
         <BrandingSection />
-      </div>
+      </div> */}
       
-        <section className="px-4 flex justify-center pb-20 md:pb-0">
+        {/* <section className="px-4 flex justify-center pb-20 md:pb-0">
           <div className="w-full max-w-[1250px] rounded-xl bg-gradient-to-l from-[rgba(11,5,45,1)] to-[rgba(30,20,60,1)] px-4 md:px-6 py-12" data-aos="zoom-in" data-aos-delay="0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 items-center">
-              {/* Left: Text Block */}
+
               <div className="text-white flex flex-col space-y-6">
                 <Image src={CrownLogo.src} alt="Crown Logo" width={150} height={150} data-aos="zoom-out" data-aos-delay="500" />
                 <div data-aos="fade-right" data-aos-delay="800">
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right: Map */}
+
               <div className="flex justify-center items-start">
                 <Image
                   src={Pak.src}
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>        
+        </section>         */}
 
         <div>
           <VideoSection />

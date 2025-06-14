@@ -4,7 +4,6 @@ import Header from "@/components/Header/header";
 import Footer from "@/components/Footer/footer";
 import ClientWrapper from "@/utils/clientWrapper";
 import SmoothScroll from "@/utils/smoothScroll";
-import Script from "next/script";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import ScrollToTop from "@/components/scrollToTop";
 

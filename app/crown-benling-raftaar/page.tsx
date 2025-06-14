@@ -44,7 +44,7 @@ const page = () => {
       <Banner />
       <StickyBar
         title="Crown Benling Raftaar"
-        description='The Crown Benling Raftaar offers speed, style, and efficiency with a 2000W motor and 72V 40Ah battery, reaching 85–90 km/h and 140–160 km range. Featuring fast 72V 8A charging, sleek design, and zero emissions, it’s ideal for modern urban riders.'
+        description='Crown Raftaar offers speed, style, and efficiency with a 2000W motor and 72V 40Ah Lithium Iron Phosphate battery, reaching 85–90 km/h and 140–160 km range. Featuring fast 72V 8A charging, sleek design, and zero emissions, it’s ideal for modern urban riders.'
         gradient1="#AA2300"
         gradient2="#371700"
         textColor="text-white"

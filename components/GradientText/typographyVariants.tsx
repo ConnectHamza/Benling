@@ -90,7 +90,7 @@ export const typographyVariants = {
   "subtext-bold-magistral": "font-magistral font-bold text-sm sm:text-base md:text-base",
 
   "subtext-light-jakarta": "font-jakarta font-light text-sm sm:text-base md:text-base",
-  "subtext-regular-jakarta": "font-jakarta font-normal text-sm sm:text-base md:text-base",
+  "subtext-regular-jakarta": "font-jakarta font-normal text-sm sm:text-base md:text-[15px]",
   "subtext-medium-jakarta": "font-jakarta font-medium text-sm sm:text-base md:text-base",
   "subtext-semibold-jakarta": "font-jakarta font-semibold text-sm sm:text-base md:text-base",
   "subtext-bold-jakarta": "font-jakarta font-bold text-sm sm:text-base md:text-base",

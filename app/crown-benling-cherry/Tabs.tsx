@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import White from '../../public/assets/Raftaar/Colors/White.webp';
-import Silver from '../../public/assets/Raftaar/Colors/Silver.webp';
-import Red from '../../public/assets/Raftaar/Colors/Red.webp';
-import Blue from '../../public/assets/Raftaar/Colors/Blue.webp';
-import Black from '../../public/assets/Raftaar/Colors/Black.webp';
+import Red from '../../public/assets/Cherry/Colors/Cherry-Red.webp';
+import White from '../../public/assets/Cherry/Colors/Cherry-White.webp';
+import Black from '../../public/assets/Cherry/Colors/Cherry-Black.webp';
+import Silver from '../../public/assets/Cherry/Colors/Cherry-Silver.webp';
+import Blue from '../../public/assets/Cherry/Colors/Cherry-Blue.webp';
 
 
 const Tabs = () => {
@@ -17,15 +17,15 @@ const Tabs = () => {
   };
 
   const colorOptions = [
-    { id: '1', label: 'White', image: White, alt: 'Raftaar White' },
-    { id: '2', label: 'Silver', image: Silver, alt: 'Raftaar Silver' },
-    { id: '3', label: 'Red', image: Red, alt: 'Raftaar Red' },
-    { id: '4', label: 'Blue', image: Blue, alt: 'Raftaar Blue' },
-    { id: '5', label: 'Black', image: Black, alt: 'Raftaar Black' },
+    { id: '1', label: 'Red', image: Red, alt: 'Cherry Red' },
+    { id: '2', label: 'White', image: White, alt: 'Cherry White' },
+    { id: '3', label: 'Black', image: Black, alt: 'Cherry Black' },
+    { id: '4', label: 'Silver', image: Silver, alt: 'Cherry Silver' },
+    { id: '5', label: 'Blue', image: Blue, alt: 'Cherry Blue' },
   ];
 
   return (
-    <div className="w-full flex justify-center md:px-10 px-5 md:py-40 py-20 bg-[#FFFEE6]">
+    <div className="w-full flex justify-center md:px-10 px-5 md:py-40 py-20 bg-[#F2F6FC]">
       <div className="w-lg flex flex-col-reverse md:flex-row justify-between items-center md:ml-20 gap-8">
         
         {/* Text and Tab Section */}
