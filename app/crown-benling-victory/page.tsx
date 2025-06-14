@@ -11,8 +11,8 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
-import VictoryFeatuedIMG from '../../public/assets/Victory/Benling-Velocity-Banner.webp'
-import VictoryMobile from '../../public/assets/Victory/Velocity-Banner-mobile.webp'
+import VictoryFeatuedIMG from '../../public/assets/Victory/Benling-Victory-Banner.webp'
+import VictoryMobile from '../../public/assets/Victory/Victory-Banner-mobile.webp'
 import Tabs from './Tabs'
 
 
@@ -52,8 +52,8 @@ const page = () => {
       <Featured
         stats={statsData}
         imageAlt={"Champion Feature Image"}
-        mobileImageSrc={VictoryMobile}
-        imageSrc={VictoryFeatuedIMG}
+        mobileImageSrc='/assets/Victory/Victory-Banner-mobile.webp'
+        imageSrc='/assets/Victory/Benling-Victory-Banner.webp'
         textColor="text-black"
         cardBgColor="bg-white/40"
         titleVariant='h5-bold-jakarta'
