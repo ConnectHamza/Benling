@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import SkyVoltBlue from '../../public/assets/Victory/Clors/Victory-Sky-Volt-Blue.webp';
-import SteelGrey from '../../public/assets/Victory/Clors/Victory-Street-Grey.webp';
-import FlameRed from '../../public/assets/Victory/Clors/Victory-Flame-Red.webp';
-import PearlWhite from '../../public/assets/Victory/Clors/Victory-Pearl-White.webp';
-import PhantomBlack from '../../public/assets/Victory/Clors/Victory-Phantom-Black.webp';
+// import SkyVoltBlue from '../../public/assets/Victory/Colors/Victory-Sky-Volt-Blue.webp';
+// import SteelGrey from '../../public/assets/Victory/Colors/Victory-Street-Grey.webp';
+// import FlameRed from '../../public/assets/Victory/Colors/Victory-Flame-Red.webp';
+// import PearlWhite from '../../public/assets/Victory/Colors/Victory-Pearl-White.webp';
+// import PhantomBlack from '../../public/assets/Victory/Colors/Victory-Phantom-Black.webp';
 
 
 const Tabs = () => {
@@ -16,13 +16,13 @@ const Tabs = () => {
     setActiveTab(tab);
   };
 
-  const colorOptions = [
-    { id: '1', label: 'Blue', image: SkyVoltBlue, alt: 'Victory Sky Volt Blue' },
-    { id: '2', label: 'Grey', image: SteelGrey, alt: 'Victory Steel Grey' },
-    { id: '3', label: 'Red', image: FlameRed, alt: 'Victory Flame Red' },
-    { id: '4', label: 'White', image: PearlWhite, alt: 'Victory Pearl White' },
-    { id: '5', label: 'Black', image: PhantomBlack, alt: 'Victory Phantom Black' },
-  ];
+const colorOptions = [
+  { id: '1', label: 'Blue', image: '/assets/Victory/Colors/Victory-Sky-Volt-Blue.webp', alt: 'Victory Sky Volt Blue' },
+  { id: '2', label: 'Grey', image: '/assets/Victory/Colors/Victory-Street-Grey.webp', alt: 'Victory Steel Grey' },
+  { id: '3', label: 'Red', image: '/assets/Victory/Colors/Victory-Flame-Red.webp', alt: 'Victory Flame Red' },
+  { id: '4', label: 'White', image: '/assets/Victory/Colors/Victory-Pearl-White.webp', alt: 'Victory Pearl White' },
+  { id: '5', label: 'Black', image: '/assets/Victory/Colors/Victory-Phantom-Black.webp', alt: 'Victory Phantom Black' },
+];
 
   return (
     <div className="w-full flex justify-center md:px-10 px-5 md:py-40 py-20 bg-gray-50">
@@ -57,6 +57,8 @@ const Tabs = () => {
             src={colorOptions.find((opt) => opt.id === activeTab)?.image!}
             alt={colorOptions.find((opt) => opt.id === activeTab)?.alt || 'Color Variant'}
             className="w-full h-auto object-contain"
+            width={1000}
+            height={1000}
           />
         </div>
       </div>

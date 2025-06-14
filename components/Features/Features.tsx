@@ -41,7 +41,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
                 <div className='flex gap-5 flex-wrap md:mt-10 mt-5'>
                     {featureItems.map((feature, index) => (
                         <div key={index} className='md:w-[48%] reveal-block md:mb-10 mb-5'>
-                            <Image className='rounded-10 overflow-hidden mb-5' src={feature.img} alt={feature.alt} data-aos="zoom-in-up"/>
+                            <Image className='rounded-10 overflow-hidden mb-5' src={feature.img} alt={feature.alt} height={1000} width={1000} data-aos="zoom-in-up"/>
                             <div data-aos="fade-up"> 
                             <Typography as='h3' variant='h3-medium-magistral' className='mb-3'>
                                 {feature.title}
