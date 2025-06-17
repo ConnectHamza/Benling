@@ -36,7 +36,7 @@ export default function Page() {
       maxSpeed: "70 km/h Top Speed",
       motorPower: "1500 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
-      exploreLink: "/crown-benling-flash",
+      exploreLink: "/crown-electric-flash",
       logo: Logo_Flash.src
     },
     {
@@ -46,7 +46,7 @@ export default function Page() {
       maxSpeed: "60 km/h Top Speed",
       motorPower: "1500 Motor Power",
       brochureLink: "brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-      exploreLink: "/crown-benling-knight-rider",
+      exploreLink: "/crown-electric-knight-rider",
       logo: Logo_Knight_Rider.src
 
     },
@@ -57,7 +57,7 @@ export default function Page() {
       maxSpeed: "60 km/h Top Speed",
       motorPower: "1500 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-      exploreLink: "/crown-benling-roshni-x",
+      exploreLink: "/crown-electric-roshni-x",
       logo: Logo_Roshnix.src
     },
     {
@@ -67,7 +67,7 @@ export default function Page() {
       maxSpeed: "40 km/h Top Speed",
       motorPower: "650 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
-      exploreLink: "/crown-benling-ezee",
+      exploreLink: "/crown-electric-ezee",
       logo: Logo_Ezze.src
     }, {
       name: "Bike 3",
@@ -76,7 +76,7 @@ export default function Page() {
       maxSpeed: "60 km/h Top Speed",
       motorPower: "1200 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
-      exploreLink: "/crown-benling-roshni",
+      exploreLink: "/crown-electric-roshni",
       logo: Logo_Roshni.src
     }, {
       name: "Bike 3",
@@ -85,7 +85,7 @@ export default function Page() {
       maxSpeed: "60 km/h Top Speed",
       motorPower: "1200 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Firefly_Brochure.pdf',
-      exploreLink: "/crown-benling-firefly",
+      exploreLink: "/crown-electric-firefly",
       logo: Logo_Firefly.src
     }, {
       name: "Bike 3",
@@ -94,7 +94,7 @@ export default function Page() {
       maxSpeed: "40 km/h Top Speed",
       motorPower: "600 Motor Power",
       brochureLink: '/brouchers/Crown_Benling_Spark_Brochure.pdf',
-      exploreLink: "/crown-benling-spark",
+      exploreLink: "/crown-electric-spark",
       logo: Logo_Spark.src
     }, {
       name: "Bike 3",
@@ -103,7 +103,7 @@ export default function Page() {
       maxSpeed: "35 km/h Top Speed",
       motorPower: "450 Motor Power",
       brochureLink: "/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
-      exploreLink: "/crown-benling-mini-scooty",
+      exploreLink: "/crown-electric-mini-scooty",
       logo: Logo_Mini_Scooty.src
     },{
       name: "Bike 3",
@@ -112,7 +112,7 @@ export default function Page() {
       maxSpeed: "55 km/h Top Speed",
       motorPower: "1000 Motor Power",
       brochureLink: "/brouchers/Crown_Benling_Fairy_Brochure.pdf",
-      exploreLink: "/crown-benling-fairy",
+      exploreLink: "/crown-electric-fairy",
       logo: Logo_Fairy.src
     }
   ];

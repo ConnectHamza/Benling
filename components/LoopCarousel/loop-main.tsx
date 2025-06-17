@@ -4,6 +4,7 @@ import GradientText from '../GradientText/gradientHeading';
 import { motion } from 'framer-motion'; // Uncommented this import
 import LoopCarousel from './loop-carousel';
 import Typography from '../GradientText/Typography';
+import AutoSwiper from './auto-swiper';
 
 const textVariants = {
   hidden: { opacity: 0, y: -100 },
@@ -28,6 +29,9 @@ const LoopMain: React.FC<LoopMainProps> = ({ imageSrc, heading, colors }) => {
         <GradientText heading={heading} colors={colors} />
         </div>
       <LoopCarousel src={imageSrc} />
+      <div className='mt-10'>
+        <AutoSwiper />
+      </div>      
     </div>
   );
 };

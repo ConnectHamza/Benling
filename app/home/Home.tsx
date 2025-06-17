@@ -37,8 +37,8 @@ export default function Home() {
 
       <div className='relative'>
       <StickyBar      
-        title="About Crown Benling Electric Mobility"
-        description="Crown Benling Electric Mobility, proudly operated by Crown Group, leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
+        title="About Crown Electric Mobility"
+        description="Crown Electric Mobility, proudly operated by Crown Group, leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
         bgImage={CrownAboutIMG.src}
         gradient1="transparent"
         gradient2="transparent"
@@ -46,6 +46,7 @@ export default function Home() {
         href='/crown-benling-about'
         color="white"
         showButton={false}
+        showPrice={false}
         isFixed={false}
       />
       </div>

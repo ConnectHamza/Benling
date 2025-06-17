@@ -52,7 +52,7 @@ export default function ShopSlider() {
     <section className="w-full bg-white z-40 ">
 
 
-      {/* Don't remove it */}
+      {/* Don't remove it Please! */}
       <div
         className="relative w-full bg-no-repeat bg-top bg-cover py-20 md:hidden hidden"
         style={{ backgroundImage: `url(${crownImage.src})`,
@@ -202,11 +202,11 @@ export default function ShopSlider() {
           </div>
         </div>
       </div>
-      {/* Don't remove it */}
+      {/* Don't remove it Please!*/}
 
 
       <div
-        className="relative w-full bg-no-repeat bg-top bg-cover md:py-20 py-10"
+        className="relative w-full bg-no-repeat bg-top bg-cover md:py-20 py-10 pt-40 md:pt-20"
         style={{ backgroundImage: `url(${crownImage.src})`,
         backgroundSize: 'contain', 
         backgroundPosition: 'top right',  

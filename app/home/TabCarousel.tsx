@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import HomeCarousel from "@/components/LoopCarousel/home-carousel";
-import PerformanceCarousel from "../crown-benling-performance-series/performance-carousel";
+import PerformanceCarousel from "../crown-electric-performance-series/performance-carousel";
 import { bikes, performanceBikes } from "./data";
 import Typography from "@/components/GradientText/Typography";
 

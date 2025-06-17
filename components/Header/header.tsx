@@ -22,7 +22,7 @@ function MobileModelsPanel(onBack: any) {
                     ←
                 </button>
                 <Image
-                    src="/assets/Header-Footer/Benling-Logo.svg"
+                    src="/assets/Header-Footer/Crown-Electric-Mobility-Logo.svg"
                     alt="Logo"
                     width={100}
                     height={80}
@@ -183,9 +183,10 @@ const Header = () => {
         "relative font-jakarta py-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F15C2A] hover:after:w-full after:transition-all after:duration-300";
 
     return (
-        <header className={`w-full z-50 ${isFixed ? 'fixed' : 'relative'} top-0 left-0 bg-black-200 text-white h-[75px] flex items-center`}>
+        <header className={`w-full z-50 ${isFixed ? 'fixed' : 'relative'} top-0 left-0 bg-black-200 text-white md:h-[85px] h-[75px] flex items-center`}>
             <div className="max-w-full md:px-20 mx-auto flex items-center justify-between w-full px-6 py-2">
                 {/* Left nav - vertically centered */}
+                <div className="md:w-[40%] hidden md:block">
                 <nav className="hidden md2:flex items-center gap-8 text-sm h-full font-jakarta">
                     <div
                         className="relative group h-full flex items-center py-10"
@@ -210,14 +211,19 @@ const Header = () => {
                     {/* <Link href="/news" className={`${navLink} flex items-center h-full font-jakarta`}>News</Link> */}
 
                 </nav>
+</div>
 
                 {/* Logo with black background */}
+                <div className="md:w-[20%]">
                 {!isMobileMenuOpen && <a href="/" className="flex items-center justify-center bg-black px-4 py-1 rounded">
-                    <Image src="/assets/Header-Footer/Benling-Logo.svg" alt="Logo" width={120}
+                    <Image src="/assets/Header-Footer/Crown-Electric-Mobility-Pakistan.svg" alt="Logo" width={140}
                         height={80} priority />
                 </a>}
+                </div>
+
                 {/* Right nav - vertically centered */}
-                <nav className="hidden md2:flex items-center gap-6 text-sm h-full font-jakarta">
+                <div className="md:w-[40%]">
+                <nav className="hidden md2:flex items-center md:justify-end gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
                      <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
                         <Typography variant="subtext-regular-jakarta">
@@ -250,6 +256,7 @@ const Header = () => {
                         textColor='text-[#000]'
                     />
                 </nav>
+                </div>
 
                 {/* Hamburger - black background, hidden when menu open */}
                 {!isMobileMenuOpen && (

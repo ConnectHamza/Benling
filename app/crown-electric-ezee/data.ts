@@ -1,0 +1,63 @@
+import Loop1 from "../../public/assets/Ezee/Loop/Grid-01.webp";
+import Loop2 from "../../public/assets/Ezee/Loop/Grid-02.webp";
+import Loop3 from "../../public/assets/Ezee/Loop/Grid-03.webp";
+import Loop4 from "../../public/assets/Ezee/Loop/Grid-04.webp";
+import Loop5 from "../../public/assets/Ezee/Loop/Grid-05.webp";
+import Loop6 from "../../public/assets/Ezee/Loop/Grid-06.webp";
+
+
+export const slides = [
+  { image: Loop1, width: 640, alt: "Side view" },
+  { image: Loop2, width: 620, alt: "Front view" },
+  { image: Loop3, width: 620, alt: "Dashboard" },
+  { image: Loop4, width: 320, alt: "Logo vertical" },
+  { image: Loop6, width: 1300, alt: "Full scooter" },
+  { image: Loop5, width: 320, alt: "Logo vertical" },
+];
+
+export const aboutSpecificationsData = [
+    { title: "Motor", value: "650W Brushless" },
+    { title: "Battery", value: "60V.30Ah" },
+    { title: "Battery Type", value: "Graphene" },
+    { title: "Speed Mode", value: "3 Mode" },
+    { title: "Charger", value: "60V.4A" },
+    { title: "Charging Time", value: "6 to 8 Hours" },
+    { title: "Dimensions", value: "1800 x 690 x 1250 mm" },
+    { title: "Security", value: "Remote Alarm System" },
+
+];
+
+
+export const aboutSpecificationsData2 = [   
+    { title2: "Net Weight", value2: "116 kg" },
+    { title2: "Angle", value2: "≤15°" },
+    { title2: "Speed", value2: "35-40 km/h" },
+    { title2: "Wheelbase", value2: "1300 mm" },
+    { title2: "Ground Clearance", value2: "110 mm" },
+    { title2: "Loading Capacity", value2: "140 kg" },
+    { title2: "Braking System", value2: "Front Disc/Rear Drum" }
+];
+
+
+export const faqsData = [
+    {
+        question: "What is the maximum range of Ezee on a single charge?",
+        answer: "Ezee offers a range of 50–55 km per charge, ensuring reliable travel for daily commutes and errands."
+    },
+    {
+        question: "Does Ezee have storage options for personal belongings?",
+        answer: "Yes, Ezee provides multiple storage options. It features a spacious inside storage compartment with a cup holder for your personal items and beverages. Additionally, it includes a large external storage box, perfect for carrying groceries, luggage, or other bulky items securely and conveniently. These storage solutions make Ezee practical for all kinds of trips."
+    },
+    {
+        question: "What makes Ezee eco-friendly?",
+        answer: "Ezee is powered by a graphene battery and operates on clean electric energy, producing zero emissions and promoting sustainability."
+    },
+    {
+        question: "How much weight can Ezee carry?",
+        answer: "Ezee has a loading capacity of up to 140 kg, making it ideal for carrying groceries, luggage, or other essentials."
+    },
+    {
+        question: "What safety features does Ezee include?",
+        answer: "Ezee is equipped with advanced alloy disc brakes and a stable design to ensure a secure and confident ride on urban roads."
+    },
+];

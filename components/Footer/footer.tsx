@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import FooterLogo from '../../public/assets/Header-Footer/Benling-Footer-Logo.svg'
+import FooterLogo from '../../public/assets/Header-Footer/Crown-Electric-Mobility-Footer.svg'
 import Call from '../../public/assets/Header-Footer/call.svg'
 import Location from '../../public/assets/Header-Footer/location.svg'
 import Mail from '../../public/assets/Header-Footer/mail.svg'
@@ -10,16 +10,19 @@ import Typography from '../GradientText/Typography';
 import { h3 } from 'framer-motion/client';
 
 const items = [
-    { label: 'Champion', href: 'crown-benling-champion' },
-    { label: 'Ezee', href: 'crown-benling-ezee' },
-    { label: 'Fairy', href: 'crown-benling-fairy' },
-    { label: 'Flash', href: 'crown-benling-flash' },
-    { label: 'Firefly', href: 'crown-benling-firefly' },
-    { label: 'Knight Rider', href: 'crown-benling-knight-rider' },
-    { label: 'Mini Scooty', href: 'crown-benling-mini-scooty' },
-    { label: 'Roshni X', href: 'crown-benling-roshni-x' },
-    { label: 'Roshni', href: 'crown-benling-roshni' },
-    { label: 'Spark', href: 'crown-benling-spark' },
+    { label: 'Champion', href: 'crown-electric-champion' },
+    { label: 'Cherry', href: 'crown-electric-cherry' },
+    { label: 'Ezee', href: 'crown-electric-ezee' },
+    { label: 'Fairy', href: 'crown-electric-fairy' },
+    { label: 'Flash', href: 'crown-electric-flash' },
+    { label: 'Firefly', href: 'crown-electric-firefly' },
+    { label: 'Knight Rider', href: 'crown-electric-knight-rider' },
+    { label: 'Mini Scooty', href: 'crown-electric-mini-scooty' },
+    { label: 'Raftaar', href: 'crown-electric-raftaar' },
+    { label: 'Roshni', href: 'crown-electric-roshni' },
+    { label: 'Roshni X', href: 'crown-electric-roshni-x' },
+    { label: 'Spark', href: 'crown-electric-spark' },
+    { label: 'Victory', href: 'crown-electric-victory' },
 
 ];
 
@@ -70,6 +73,16 @@ const Footer = () => {
                                     <Typography variant='subtext-regular-jakarta'>Contact us</ Typography>
                                 </Link>
                             </li>
+                            <li className="mb-2">
+                                <Link href="/book-now">
+                                    <Typography variant='subtext-regular-jakarta'>Book Now</ Typography>
+                                </Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/crown-electric-performance-series">
+                                    <Typography variant='subtext-regular-jakarta'>Performance Series</ Typography>
+                                </Link>
+                            </li>
                             {/* <li className="mb-2">
                                 <Link href="/faqs">FAQs</Link>
                             </li> */}
@@ -94,7 +107,7 @@ const Footer = () => {
                             </li> */}
                             <li className="mb-2">
                                 <Link href="/find-a-dealer">
-                                    <Typography variant='subtext-regular-jakarta'>Store Locator</ Typography>
+                                    <Typography variant='subtext-regular-jakarta'>Find a Dealer</ Typography>
                                 </Link>
                             </li>
                             <li>
@@ -126,11 +139,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='mt-10 mb-10'>
-                    <Image src={FooterLogo} alt='Benling-Pakistan' data-aos="zoom-in" />
+                    <Image src={FooterLogo} alt='Crown Electric Mobility Pakistan' data-aos="zoom-in" />
                 </div>
                 <div className='flex md:flex-row flex-col justify-between md:w-[82%] md:mt-[-5vh] mt-10 md:py-5 gap-3'>
                     <div className='mt-4'>
-                        <p>© {currentYear} Crown Benling Electric Mobility Pakistan</p>
+                        <p>© {currentYear} Crown Electric Mobility Pakistan</p>
                     </div>
                     {/* <div className='text-[13px] md:text-[15px] flex gap-4'>
                         <a href="">Privacy Policy</a>

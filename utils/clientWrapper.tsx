@@ -1,36 +1,41 @@
-"use client";
-
+'use client';
 import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Clarity from '@microsoft/clarity';
+import Script from 'next/script';
 import { setAOSAnimation } from './setOsAnimation';
 
 const ClientWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const projectId = "rxt1ms0m8i"
   useEffect(() => {
-    Clarity.init(projectId);
-
-    setAOSAnimation();
-
-    AOS.init({
-      duration: 500,
-      once: true,
-    });
-
-    const handleResize = () => {
+    (async () => {
+      const AOS = (await import('aos')).default;
+      await import('aos/dist/aos.css');   
       setAOSAnimation();
-      AOS.refresh();
-    };
+      AOS.init({ duration: 500, once: true });
 
-    window.addEventListener('resize', handleResize);
+      const Clarity = (await import('@microsoft/clarity')).default;
+      Clarity.init('rxt1ms0m8i');
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      const ReactPixel = (await import('react-facebook-pixel')).default;
+      ReactPixel.init('842886247572469');
+      ReactPixel.pageView();
+
+      const handleResize = () => {
+        setAOSAnimation();
+        AOS.refresh();
+      };
+      window.addEventListener('resize', handleResize);      
+      return () => window.removeEventListener('resize', handleResize);
+    })();
   }, []);
 
-  return <>{children}</>;
+  return (
+    <>
+      <Script id="tiktok-pixel" strategy="afterInteractive">
+        {`!function(w,d,t){ /* …same code… */ }(window,document,'ttq');`}
+      </Script>
+
+      {children}
+    </>
+  );
 };
 
 export default ClientWrapper;

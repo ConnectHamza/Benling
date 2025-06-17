@@ -67,7 +67,7 @@ export const faqsData = [
   },
   {
     question: "Are your scooters water-resistant?",
-    answer: "Yes, all Crown Benling scooters are designed with splash and water resistance for safe riding in light rain and wet conditions."
+    answer: "Yes, all Crown Electric scooters are designed with splash and water resistance for safe riding in light rain and wet conditions."
   },
   {
     question: "What warranty do you offer??",
@@ -94,7 +94,7 @@ export const faqsData = [
     answer: "Yes, a valid driving license is required to operate our high-speed models on public roads."
   },
   {
-    question: "Where can I buy or test ride a Crown Benling scooter??",
+    question: "Where can I buy or test ride a Crown Electric scooter??",
     answer: "Visit any of our authorized dealerships across Pakistan or use our Store Locator to find the nearest one."
   },
 ];
@@ -107,7 +107,7 @@ export const bikes = [
     maxSpeed: "70 km/h Top Speed",
     motorPower: "1500 Motor Power",
     brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
-    exploreLink: "/crown-benling-flash",
+    exploreLink: "/crown-electric-flash",
     logo: Logo_Flash.src
   },
   {
@@ -117,7 +117,7 @@ export const bikes = [
     maxSpeed: "60 km/h Top Speed",
     motorPower: "1500 Motor Power",
     brochureLink: "brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-    exploreLink: "/crown-benling-knight-rider",
+    exploreLink: "/crown-electric-knight-rider",
     logo: Logo_Knight_Rider.src
 
   },
@@ -128,7 +128,7 @@ export const bikes = [
     maxSpeed: "60 km/h Top Speed",
     motorPower: "1500 Motor Power",
     brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-    exploreLink: "/crown-benling-roshni-x",
+    exploreLink: "/crown-electric-roshni-x",
     logo: Logo_Roshnix.src
   },
   {
@@ -138,7 +138,7 @@ export const bikes = [
     maxSpeed: "40 km/h Top Speed",
     motorPower: "650 Motor Power",
     brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
-    exploreLink: "/crown-benling-ezee",
+    exploreLink: "/crown-electric-ezee",
     logo: Logo_Ezze.src
   }, {
     name: "Bike 3",
@@ -147,7 +147,7 @@ export const bikes = [
     maxSpeed: "60 km/h Top Speed",
     motorPower: "1200 Motor Power",
     brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
-    exploreLink: "/crown-benling-roshni",
+    exploreLink: "/crown-electric-roshni",
     logo: Logo_Roshni.src
   }, {
     name: "Bike 3",
@@ -156,7 +156,7 @@ export const bikes = [
     maxSpeed: "60 km/h Top Speed",
     motorPower: "1200 Motor Power",
     brochureLink: '/brouchers/Crown_Benling_Firefly_Brochure.pdf',
-    exploreLink: "/crown-benling-firefly",
+    exploreLink: "/crown-electric-firefly",
     logo: Logo_Firefly.src
   }, {
     name: "Bike 3",
@@ -165,7 +165,7 @@ export const bikes = [
     maxSpeed: "40 km/h Top Speed",
     motorPower: "600 Motor Power",
     brochureLink: '/brouchers/Crown_Benling_Spark_Brochure.pdf',
-    exploreLink: "/crown-benling-spark",
+    exploreLink: "/crown-electric-spark",
     logo: Logo_Spark.src
   }, {
     name: "Bike 3",
@@ -174,7 +174,7 @@ export const bikes = [
     maxSpeed: "35 km/h Top Speed",
     motorPower: "450 Motor Power",
     brochureLink: "/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
-    exploreLink: "/crown-benling-mini-scooty",
+    exploreLink: "/crown-electric-mini-scooty",
     logo: Logo_Mini_Scooty.src
   }, {
     name: "Bike 3",
@@ -183,7 +183,7 @@ export const bikes = [
     maxSpeed: "55 km/h Top Speed",
     motorPower: "1000 Motor Power",
     brochureLink: "/brouchers/Crown_Benling_Fairy_Brochure.pdf",
-    exploreLink: "/crown-benling-fairy",
+    exploreLink: "/crown-electric-fairy",
     logo: Logo_Fairy.src
   }
 ];
@@ -245,34 +245,34 @@ export const performanceBikes = [
 
 export const Slides = [
     {
-    title: 'Crown Benling Raftaar Sleek, Smart, & Ready for the Fast Lane',
-    subtitle: 'Conquer the city in style with the Crown Benling Raftaar—built for go-getters with speed, efficiency, and bold looks. Perfect for weaving through traffic or cruising open roads with smooth performance and urban agility.',
+    title: 'Crown Raftaar: Big Power, Bigger Thrill',
+    subtitle: 'Massive torque for instant acceleration. Powered by a high-capacity 72V40Ah Lithium Iron Phosphate battery for lasting performance.',
     buttonText: 'Book Now',
     imageSrc: RaftaarWeb,
     mobileImageSrc: Raftaar,
-    href: "/crown-benling-raftaar",
+    href: "/crown-electric-raftaar",
     color: "white",
     price: "299,000"
 
   },
     {
-    title: 'Powerful, Sleek, and Built for Urban Thrills',
-    subtitle: 'Bold and dynamic, the Crown Benling Victory redefines commuting with power and style. Perfect for thrill-seekers, it offers smooth acceleration and a striking presence, delivering efficiency and freedom on every ride.',
+    title: 'Crown Victory - Unleash Urban Power',
+    subtitle: 'The Crown Victory offers strong performance, modern design, and affordability. Built with a 1000W motor and 72V 30Ah Lithium Iron Phosphate battery , it delivers up to 120 km range and 55 km/h speed —ideal for city rides. Stylish, lightweight, and built to impress.',
     buttonText: 'Book Now',
     imageSrc: VictoryWeb,
     mobileImageSrc: Victory,
-    href: "/crown-benling-victory",
+    href: "/crown-electric-victory",
     color: "black",
     price: "265,000"
 
   },
   {
-    title: 'Crown Cherry The Vintage Way                                               ',
-    subtitle: 'Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters.',
+    title: 'Crown Cherry - The Vintage Way',
+    subtitle: 'Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters . ',
     buttonText: 'Book Now',
     imageSrc: CherryWeb,
     mobileImageSrc: Cherry,
-    href: "/crown-benling-cherry",
+    href: "/crown-electric-cherry",
     color: "black",
     price: "380,000"
 
@@ -283,7 +283,7 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: ChampionWeb,
     mobileImageSrc: Champion,
-    href: "/crown-benling-champion",
+    href: "/crown-electric-champion",
     color: "white",
     price: "325,000"
 
@@ -294,7 +294,7 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: FairyWeb,
     mobileImageSrc: Fairy,
-    href: "/crown-benling-fairy",
+    href: "/crown-electric-fairy",
     color: "black-200",
     price: "165,000"
 
@@ -305,18 +305,18 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: FlashWeb,
     mobileImageSrc: Flash,
-    href: "/crown-benling-flash",
+    href: "/crown-electric-flash",
     color: "white",
     price: "250,000"
 
   },
   {
-    title: 'Rule the Roads with Electric Power',
-    subtitle: 'Experience unmatched strength and control with Knight Rider, a rugged electric scooter built for power rides, high-speed performance, and reliable travel on Pakistan’s diverse roads.',
+    title: 'Crown Knight Rider',
+    subtitle: 'Experience unmatched strength and control with Crown Knight Rider, a 1500W rugged electric motorcycle  built for power rides, high-speed performance, and reliable travel with 72V36Ah Graphene Battery on Pakistan’s diverse roads.',
     buttonText: 'Book Now',
     imageSrc: KnightWeb,
     mobileImageSrc: Knight,
-    href: "/crown-benling-knight-rider",
+    href: "/crown-electric-knight-rider",
     color: "white",
     price: "240,000"
 
@@ -328,7 +328,7 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: RoshnixWeb,
     mobileImageSrc: Roshnix,
-    href: "/crown-benling-roshni-x",
+    href: "/crown-electric-roshni-x",
     color: "black-200",
     price: "235,000"
 
@@ -339,7 +339,7 @@ export const Slides = [
     buttonText: 'Learn More',
     imageSrc: FireflyWeb,
     mobileImageSrc: Firefly,
-    href: "/crown-benling-firefly",
+    href: "/crown-electric-firefly",
     color: "white",
     price: "195,000"
 
@@ -350,17 +350,17 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: RoshniWeb,
     mobileImageSrc: Roshni,
-    href: "/crown-benling-roshni",
+    href: "/crown-electric-roshni",
     color: "white",
     price: "215,000"
   },
   {
-    title: 'Ezee – Your Everyday Electric Companion',
-    subtitle: 'Designed for comfort and practicality, Ezee is the perfect electric scooter for daily rides. Enjoy easy handling, long range, and zero emissions across Pakistan.',
+    title: 'Crown Ezee – Three Wheeler',
+    subtitle: 'Designed for comfort and practicality, Crown Ezee is the perfect electric scooter for daily easy rides. Enjoy seamless handling, control and zero emissions across Pakistan.',
     buttonText: 'Explore Now',
     imageSrc: EzeeWeb,
     mobileImageSrc: Ezee,
-    href: "/crown-benling-ezee",
+    href: "/crown-electric-ezee",
     color: "white",
     price: "230,000"
   },
@@ -370,9 +370,9 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: MiniWeb,
     mobileImageSrc: Mini,
-    href: "/crown-benling-mini-scooty",
+    href: "/crown-electric-mini-scooty",
     color: "white",
-    price: "99,999"
+    price: "120,000"
   },
 
   {
@@ -381,7 +381,7 @@ export const Slides = [
     buttonText: 'Book Now',
     imageSrc: SparkWeb,
     mobileImageSrc: Spark,
-    href: "/crown-benling-spark",
+    href: "/crown-electric-spark",
     color: "black-200",
     price: "145,000"
   },
@@ -391,7 +391,7 @@ export const Slides = [
   //     buttonText: 'Book Now',
   //     imageSrc: PerformanceBgWeb,
   //     mobileImageSrc: Mini,
-  //     href: "/crown-benling-mini-performance-series",
+  //     href: "/crown-electric-mini-performance-series",
   //     color: "black",
   //     conWidth: "md:w-full"
   // },

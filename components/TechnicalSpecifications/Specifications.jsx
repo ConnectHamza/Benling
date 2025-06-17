@@ -9,6 +9,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
   // const half = Math.ceil(data.length / 2);
   const firstColumn = data;
   const secondColumn = data2;
+  bottomImageTag
 
   return (
     <div className='w-full flex justify-center md:py-40 px-5 py-20 '>
@@ -65,7 +66,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
         {bottomImageTag && (
           <div className="mt-10 w-full" data-aos="zoom-out">
             <Image
-              src={bottomImageTag?.src}
+              src={bottomImageTag}
               alt="Complimentary Banner"
               width={800} // adjust to your actual image width
               height={100} // adjust to your actual image height
