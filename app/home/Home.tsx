@@ -22,6 +22,7 @@ import Typography from '@/components/GradientText/Typography';
 import StickyBar from '@/components/StickyBar/stickyBar';
 import ShopSlider from './ShopSectoin';
 import TabbedCarousel from './TabCarousel';
+import HeroSectionWrapper from '@/components/Herocontainer/HeroSliderWrapper';
 
 
 export default function Home() {
@@ -30,9 +31,14 @@ export default function Home() {
   return (
     <div className='relative'>
       <div className='pt-[0px]'>
-        <HeroImageSlide
+        {/* <HeroImageSlide
           slides={Slides}
-        />
+        /> */}
+        <HeroSectionWrapper
+  slides={Slides}
+  autoplay={true}
+  autoplayInterval={5000}
+/>
       </div>
 
       <div className='relative'>
@@ -43,7 +49,7 @@ export default function Home() {
         gradient1="transparent"
         gradient2="transparent"
         textColor="text-white"
-        href='/crown-benling-about'
+        href='/about-us'
         color="white"
         showButton={false}
         showPrice={false}

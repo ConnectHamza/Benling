@@ -57,7 +57,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
             <div data-aos="fade-left" className="md:block hidden">
               <AppButton
                 size="medium"
-                variant="solid"
+                variant="glow"
                 label="Book Now"
                 iconName="ArrowUpRight"
                 iconPosition="right"
@@ -85,7 +85,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
             <div data-aos="fade-left">
               <AppButton
                 size="medium"
-                variant="solid"
+                variant="glow"
                 label="Book now"
                 iconName="ArrowUpRight"
                 iconPosition="right"

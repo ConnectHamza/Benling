@@ -184,9 +184,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       )}
 
       {/* Slide Content */}
-      <div className="relative z-10 w-full">
+       <div className="relative z-10 w-full">
         <div className="container px-6 sm:px-6 mx-auto flex flex-col md:items-center items-start justify-center h-full">
-          <div className="max-w-[1400px] md:px-20">
+          <div className="md:w-[1400px] md:px-20">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
@@ -194,7 +194,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 50 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className={`md:space-y-6 ${currentSlideData.textAlign ?? 'text-left'} w-full md:${currentSlideData.conWidth ?? 'w-[50%]'} text-${currentSlideData.color || 'white'}`}
+                className={`
+                  md:space-y-6 
+                   text-left
+                  w-full
+                  md:w-[50%]
+                  text-${currentSlideData.color || 'white'}
+                `}
               >
                 <div className="mb-4">
                   <Typography as="h1" variant="h2-medium-magistral">

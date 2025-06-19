@@ -5,6 +5,7 @@ import Feature4IMG from '../../public/assets/flash/Features/Feature4.png';
 import Feature5IMG from '../../public/assets/flash/Features/Feature5.png';
 import Feature6IMG from '../../public/assets/flash/Features/Feature6.png';
 
+
 // import Loop1 from "../../public/assets/Flash/Loop/Grid-01.webp";
 // import Loop2 from "../../public/assets/Flash/Loop/Grid-02.webp";
 // import Loop3 from "../../public/assets/Flash/Loop/Grid-03.webp";
@@ -13,11 +14,11 @@ import Feature6IMG from '../../public/assets/flash/Features/Feature6.png';
 
 
 export const slides = [
-  { image: "/assets/Flash/Loop/Grid-01.webp", width: 640, alt: "Side view" },
-  { image: "/assets/Flash/Loop/Grid-02.webp", width: 620, alt: "Front view" },
-  { image: "/assets/Flash/Loop/Grid-03.webp", width: 620, alt: "Dashboard" },
-  { image: "/assets/Flash/Loop/Grid-04.webp", width: 320, alt: "Logo vertical" },
-  { image: "/assets/Flash/Loop/Grid-05.webp", width: 1300, alt: "Full scooter" },
+  { image: "/assets/flash/Loop/Grid-01.webp", width: 640, alt: "Side view" },
+  { image: "/assets/flash/Loop/Grid-02.webp", width: 620, alt: "Front view" },
+  { image: "/assets/flash/Loop/Grid-03.webp", width: 620, alt: "Dashboard" },
+  { image: "/assets/flash/Loop/Grid-04.webp", width: 320, alt: "Logo vertical" },
+  { image: "/assets/flash/Loop/Grid-05.webp", width: 1300, alt: "Full scooter" },
 ];
 
 

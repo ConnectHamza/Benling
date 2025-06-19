@@ -13,19 +13,18 @@ import LoopMain from '@/components/LoopCarousel/loop-main';
 import Banner from './Banner';
 import AutoSwiper from '@/components/LoopCarousel/auto-swiper';
 
-export const metadata = {
-  title: 'Crown Benling - Ezee',
-//   description: '',
-  metadataBase: new URL('https://crownelectricmobility.com'), 
+
+  export const metadata = {
+  title: "Crown Electric Ezee – 650W Three Wheeler Electric Scooter in Pakistan",
+  description: "Crown Electric Ezee is a 650W three-wheeler electric scooter in Pakistan, offering a 50–55 km range, ample storage, and a smooth, eco-friendly ride for daily commutes.",
   alternates: {
-    canonical: '/crown-benling-ezee',
+    canonical: "/crown-electric-ezee",
   },
   openGraph: {
-    title: 'Crown Benling - Ezee',
-    // description: '',
-    url: 'https://crownelectricmobility.com/crown-benling-ezee',
-    siteName: 'Crown Electric Mobility',
-    type: 'website',
+    title: "Crown Electric Ezee – 650W Three Wheeler Electric Scooter in Pakistan",
+    description: "Crown Electric Ezee is a 650W three-wheeler electric scooter in Pakistan, offering a 50–55 km range, ample storage, and a smooth, eco-friendly ride for daily commutes.",
+    url: "https://crownelectricmobility.com/crown-electric-ezee",
+    type: "website",
   },
 };
 

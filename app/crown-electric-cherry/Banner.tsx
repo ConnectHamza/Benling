@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
                 <HeroSection
-                    title="Crown Cherry The Vintage Way"
+                    title="Crown Electric Cherry The Vintage Way"
                     subtitle="Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters."
                     buttonText="Explore More"
                     imageSrc={CherryWeb.src}

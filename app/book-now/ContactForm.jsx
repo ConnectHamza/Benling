@@ -204,16 +204,19 @@ function ContactForm() {
                 onFocus={handleFocus}
                 error={errors.model}
                 options={[
-                    { name: "Ezee", value: "ezee" },
-                    { name: "Firefly", value: "firefly" },
-                    { name: "Flash", value: "firefly" },
-                    { name: "Knight Rider", value: "knight-rider" },
-                    { name: "Roshni", value: "roshni" },
-                    { name: "RoshniX", value: "roshnix" },
-                    { name: "Spark", value: "spark" },
-                    { name: "Mini Scooter", value: "mini-scooter" },
-                    { name: "Fairy", value: "fairy" },
-                    { name: "Performance Series", value: "performance-series" },
+                    { name: "Crown Electric Champion", value: "champion" },
+                    { name: "Crown Electric Cherry", value: "cherry" },
+                    { name: "Crown Electric Ezee", value: "ezee" },
+                    { name: "Crown Electric Fairy", value: "fairy" },
+                    { name: "Crown Electric Firefly", value: "firefly" },
+                    { name: "Crown Electric Flash", value: "firefly" },
+                    { name: "Crown Electric Knight Rider", value: "knight-rider" },
+                    { name: "Crown Electric Mini Scooter", value: "mini-scooter" },
+                    { name: "Crown Electric Raftaar", value: "raftaar" },
+                    { name: "Crown Electric Roshni", value: "roshni" },
+                    { name: "Crown Electric RoshniX", value: "roshnix" },
+                    { name: "Crown Electric Spark", value: "spark" },
+                    { name: "Crown Electric Victory", value: "victory" },
                 ]}
                 required
             />

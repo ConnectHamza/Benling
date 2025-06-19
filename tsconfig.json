@@ -39,7 +39,7 @@
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-, "components/LoopCarousel/home-carousel.tsx", "app/flash/page.jsx", "app/blogs/[slug]/page.jsx", "utils/helper.jsx", "app/book-now/ContactForm.jsx"  ],
+, "components/LoopCarousel/home-carousel.tsx", "app/flash/page.jsx", "app/blogs/[slug]/page.jsx", "utils/helper.jsx", "app/book-now/ContactForm.jsx", "app/crown-electric-spark/sparkClient.jsx"  ],
   "exclude": [
     "node_modules"
   ]

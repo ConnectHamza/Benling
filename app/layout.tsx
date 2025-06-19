@@ -6,17 +6,19 @@ import ClientWrapper from "@/utils/clientWrapper";
 import SmoothScroll from "@/utils/smoothScroll";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import ScrollToTop from "@/components/scrollToTop";
+import { getMetadata } from "@/utils/metaData";
+
 
 export const metadata = {
-  title: "Crown Benling Electric Mobility - Electrifying Dreams",
-  description: "Leading the future of electric mobility with Crown Benling.",
+  title: "Crown Electric Mobility | Affordable & Stylish Electric Bikes",
+  description: "Discover the best electric bikes at Crown Electric Mobility. Affordable, reliable, and eco-friendly bikes designed for a smarter, greener way to travel. Start your ride today!",
   metadataBase: new URL("https://crownelectricmobility.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Crown Benling Electric Mobility - Electrifying Dreams",
-    description: "Leading the future of electric mobility with Crown Benling.",
+    title: "Crown Electric Mobility | Affordable & Stylish Electric Bikes",
+    description: "Discover the best electric bikes at Crown Electric Mobility. Affordable, reliable, and eco-friendly bikes designed for a smarter, greener way to travel. Start your ride today!",
     url: "https://crownelectricmobility.com/",
     siteName: "Crown Electric Mobility",
     type: "website",

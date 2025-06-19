@@ -8,7 +8,7 @@ export default function BlogHeader({ coverImage }) {
         src={coverImage}
         alt="Blog Header"
         className="w-full rounded-lg shadow"
-        width={1000}
+        width={10000}
         height={1000}
       />
     </div>

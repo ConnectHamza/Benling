@@ -13,6 +13,21 @@ import Faqs from '@/components/Faqs/Faqs'
 import AutoSwiper from '@/components/LoopCarousel/auto-swiper'
 
 
+  export const metadata = {
+  title: "Crown Electric Firefly – 1200W Electric Scooter in Pakistan",
+  description: "Ride in style with the Crown Electric Firefly, featuring a 1200W motor, 105 km range, and advanced graphene battery technology. Ideal for daily commuting in Pakistan.",
+  alternates: {
+    canonical: "/crown-electric-firefly",
+  },
+  openGraph: {
+    title: "Crown Electric Firefly – 1200W Electric Scooter in Pakistan",
+    description: "Ride in style with the Crown Electric Firefly, featuring a 1200W motor, 105 km range, and advanced graphene battery technology. Ideal for daily commuting in Pakistan.",
+    url: "https://crownelectricmobility.com/crown-electric-firefly",
+    type: "website",
+  },
+};
+
+
 const Firefly = () => {
 
   const heading = 'Light Up Your Journey with Firefly';
@@ -24,9 +39,6 @@ const Firefly = () => {
 
   return (
     <>
-      <head>
-        <title>Crown Electric - Firefly</title>
-      </head>
       <Banner />
       <StickyBar
         title="Crown Firefly"

@@ -7,13 +7,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      inter: ['Inter', 'sans-serif'], // Add your custom font here
+      inter: ['Inter', 'sans-serif'],
       jakarta: ["Plus Jakarta Sans", 'sans-serif'],
       magistral: ['Magistral', 'sans-serif'],
 
     },
     extend: {
-
+  backgroundSize: {
+    '300-y': '100% 300%',
+  },
       keyframes: {
         "loop-scroll": {
           "0%": { transform: "translateX(0%)" },
@@ -21,17 +23,37 @@ module.exports = {
         },
         scrollImage: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-120vw)" }, // full viewport width
+          "100%": { transform: "translateX(-120vw)" },
         },
         underline: {
           "0%": { width: "0" },
           "100%": { width: "100%" },
         },
+         glow: {
+          '0%, 100%': { borderColor: '#FF9900', boxShadow: '0 0 8px #FF9900' },
+          '50%': { borderColor: '#FF6600', boxShadow: '0 0 20px #FF6600' },
+        },       
+        'gradient-y': {
+      '0%, 100%': {
+        backgroundPosition: '50% 0%',
+      },
+      '50%': {
+        backgroundPosition: '50% 100%',
+      },
+    }, 
       },
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
         underline: "underline 0.5s ease-in-out forwards",
+        glow: 'glow 2s ease-in-out infinite',
+        'gradient-y': 'gradient-y 4s ease infinite',
       },
+        backgroundImage: {
+    'rainbow-glow': 'linear-gradient(to top, #f5ce62, #e43603, #fa7199, #e85a19)',
+  },
+  backgroundPosition: {
+    'animated': '0% 50%',
+  },
 
 
       colors: {

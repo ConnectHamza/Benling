@@ -26,8 +26,8 @@ const Faqs: React.FC<FaqsProps> = ({ data }) => {
   };
 
   // Determine which FAQs to display
-  const displayFaqs = showAll ? data : data.slice(0, 5);
-  const shouldShowButton = data.length > 5;
+  const displayFaqs = showAll ? data : data.slice(0, 15);
+  const shouldShowButton = data.length > 15;
 
   return (
     <div className='w-full bg-gray-100 flex justify-center px-5 py-10 md:py-20'>

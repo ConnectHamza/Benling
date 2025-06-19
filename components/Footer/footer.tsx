@@ -1,5 +1,6 @@
+"use client"
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import FooterLogo from '../../public/assets/Header-Footer/Crown-Electric-Mobility-Footer.svg'
 import Call from '../../public/assets/Header-Footer/call.svg'
 import Location from '../../public/assets/Header-Footer/location.svg'
@@ -8,6 +9,7 @@ import { ArrowUpRight, MailIcon, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 import Typography from '../GradientText/Typography';
 import { h3 } from 'framer-motion/client';
+import { usePathname } from 'next/navigation';
 
 const items = [
     { label: 'Champion', href: 'crown-electric-champion' },
@@ -27,11 +29,22 @@ const items = [
 ];
 
 const Footer = () => {
+
+    const pathname = usePathname()
+const [isHidden, setIsHidden] = useState(false);
+
+useEffect(() => {
+    if (pathname === "/book-now"){
+        setIsHidden(false);
+    } else {
+        setIsHidden(true)
+    }
+})
     const currentYear = new Date().getFullYear();
 
 
     return (
-        <div className="relative flex justify-center bg-black-70 text-white md:pb-0 pb-5 md:py-40 py-20">
+        <div className={`${isHidden ? 'flex' : 'hidden'} relative justify-center bg-black-70 text-white md:pb-0 pb-5 md:py-40 py-20`}>
             <div className="w-lg px-5">
                 <div className="flex flex-col md:flex-row md:space-x-8 justify-between text-left items-start space-y-6 md:space-y-0">
                     <div className='w-full md:w-2/6' data-aos="fade-up">
@@ -64,7 +77,7 @@ const Footer = () => {
                         </div>
                         <ul className='md:text-[15px] text-[13px]'>
                             <li className="mb-2">
-                                <Link href="/crown-benling-about">
+                                <Link href="/about-us">
                                     <Typography variant='subtext-regular-jakarta'>About us</ Typography>
                                 </Link>
                             </li>

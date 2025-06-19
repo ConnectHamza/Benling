@@ -206,9 +206,8 @@ export default function ShopSlider() {
 
 
       <div
-        className="relative w-full bg-no-repeat bg-top bg-cover md:py-20 py-10 pt-40 md:pt-20"
+        className="relative w-full bg-no-repeat bg-top md:bg-cover bg-contain md:py-20 py-10 pt-40 md:pt-20"
         style={{ backgroundImage: `url(${crownImage.src})`,
-        backgroundSize: 'contain', 
         backgroundPosition: 'top right',  
       }}
       >

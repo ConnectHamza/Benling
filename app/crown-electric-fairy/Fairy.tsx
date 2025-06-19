@@ -38,22 +38,6 @@ const statsData = [
   { value: 'Up to 12°', label: 'Climbing Angle' },
 ];
 
-export const metadata = {
-  title: 'Crown Electric - Fairy',
-  description: 'Explore the Crown Benling Fairy — built for modern urban life with speed, range, and style.',
-  metadataBase: new URL('https://crownelectricmobility.com'),
-  alternates: {
-    canonical: '/crown-benling-fairy',
-  },
-  openGraph: {
-    title: 'Crown Benling - Fairy',
-    description: 'Explore the Crown Benling Fairy — built for modern urban life with speed, range, and style.',
-    url: 'https://crownelectricmobility.com/crown-electric-fairy',
-    siteName: 'Crown Electric Mobility',
-    type: 'website',
-  },
-};
-
 const Fairy = () => {
   useEffect(() => {
     initFixOverflow();

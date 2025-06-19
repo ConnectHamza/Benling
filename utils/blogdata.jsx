@@ -1,13 +1,48 @@
 // home/data.js
 import BlogHeader from "../public/assets/Blogs/BlogHeader.png";
+import ElectricHeader from "../public/assets/Blogs/Crown-Electric-Mobility-Blog.webp"
 import GraphineBattery from "../components/Blog/BlogContent/GraphineBattery";
 import LaunchImage from "../public/assets/Blogs/Blogheader2.jpg"
+import IronPhospateIMG from "../public/assets/Blogs/Crown-Electric-Mobility-Lithium-Iron-Phosphate-(LiFePO₄).webp"
 import LaunchCeremony from "../components/Blog/BlogContent/LaunchCeremony";
 import CrownBlog from "../components/Blog/BlogContent/CrownBlogs";
 import BlogHeaderImage from "../public/assets/Blogs/Blog3.jpeg"
 import MultanBlogImage from "../public/assets/Blogs/blog4.webp";
 import MultanLaunchBlog from "@/components/Blog/BlogContent/MultanLaunchBlog";
+import LiFePO4Blog from "@/components/Blog/BlogContent/ElectricMobility";
+import IronPhospate from "@/components/Blog/BlogContent/IronPhospate";
+
+
 export const blogs = [
+        {
+    slug: "why-lithium-iron-phosphate-batteries-are-revolutionizing-pakistans-electric-mobility-sector",
+    title: "Why Lithium Iron Phosphate (LiFePO₄) Batteries Are Revolutionizing Pakistan’s Electric Mobility Sector",
+    subtitle: "Lithium Iron Phosphate (LiFePO₄) batteries are a type of lithium-ion battery known for their exceptional safety, longevity, and thermal stability. Unlike conventional lead-acid or Nickel Manganese Cobalt (NMC) batteries, LiFePO₄ chemistry resists overheating and degradation, making it ideal for Pakistan’s extreme heat .",
+    coverImage: IronPhospateIMG.src,
+    date: "June 19th 2025",
+    readTime: 7,
+    headings: [
+      { id: "lifepo4", text: "What is LiFePO₄?" },
+      { id: "performance-series", text: "Crown Electric Performance Series" },
+      { id: "future-of-ev", text: "Future of EVs in Pakistan" },
+    ],
+    renderContent: () => <IronPhospate />
+  },
+      {
+    slug: "why-crown-electric-mobility-performance-series-trusts-lithium-lifepo4-batteries-for-exceptional-ev-performance",
+    title: "Lithium Batteries for Exceptional EV Performance",
+    subtitle: "In the fast-paced evolution of electric mobility, reliable battery technology lies at the heart of every high‑performing electric vehicle.",
+    coverImage: ElectricHeader.src,
+    date: "June 18th 2025",
+    readTime: 7,
+    headings: [
+      { id: "what-is-liFePO₄", text: "What is LiFePO₄?" },
+      { id: "advantages", text: "Advantages of LiFePO₄" },
+      { id: "comparison", text: "LiFePO₄ vs. Other Batteries" },
+      { id: "performance-series", text: "Crown Benling Performance Series" }
+    ],
+    renderContent: () => <LiFePO4Blog />
+  },
   {
     slug: "crown-electric-mobility-lights-up-the-multan-launch-event",
     title: " A Grand Debut: Crown Electric Mobility Lights Up the Multan Launch Event with the Revolutionary Performance Series",
@@ -68,7 +103,4 @@ export const blogs = [
     ],
     renderContent: () => <GraphineBattery />
   },
-
-
-
 ];

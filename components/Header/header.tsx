@@ -77,16 +77,22 @@ const Header = () => {
     const [isModelsOpen, setIsModelsOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
     const [isFixed, setIsFixed] = useState(false);
+    const [isHidden, setIsHidden] = useState(false);
     const [activeSeries, setActiveSeries] = useState<"legacy" | "performance">("legacy");
 
     const router = useRouter();
     const pathname = usePathname();
 
     useEffect(() => {
-        if (pathname === "/" || pathname === "/find-a-dealer" || pathname === "/contact" || pathname === "/book-now" || pathname === "/crown-benling-about") {
+        if (pathname === "/" || pathname === "/find-a-dealer" || pathname === "/contact" || pathname === "/book-now" || pathname === "/about-us") {
             setIsFixed(true);
         } else {
             setIsFixed(false);
+        }
+        if(pathname === "/book-now"){
+            setIsHidden(false);            
+        } else {
+            setIsHidden(true);
         }
     }, [pathname]);
 
@@ -102,7 +108,7 @@ const Header = () => {
 
         return (
             <div
-                className={`fixed overflow-gray md:px-20 left-0 top-[75px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg`}
+                className={`fixed overflow-gray md:px-20 left-0 top-[85px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg`}
                 style={{ zIndex: '9999' }}
             >
                 <div className="max-w-full mx-auto px-10 py-8 h-full flex flex-col">
@@ -185,8 +191,20 @@ const Header = () => {
     return (
         <header className={`w-full z-50 ${isFixed ? 'fixed' : 'relative'} top-0 left-0 bg-black-200 text-white md:h-[85px] h-[75px] flex items-center`}>
             <div className="max-w-full md:px-20 mx-auto flex items-center justify-between w-full px-6 py-2">
+
+
+                {/* Logo with black background */}
+                <div className="md:w-[20%]">
+                {!isMobileMenuOpen && <a href="/" className="flex items-center justify-start bg-black px-4 py-1 rounded">
+                    <Image src="/assets/Header-Footer/Crown-Electric-Mobility-Pakistan.svg" alt="Logo" width={140}
+                        height={80} priority />
+                </a>}
+                </div>
+
+
                 {/* Left nav - vertically centered */}
-                <div className="md:w-[40%] hidden md:block">
+                <div className={`${isHidden ? 'flex' : 'hidden'} w-[80%] justify-end gap-8`}>
+                <div className=" hidden md:block">
                 <nav className="hidden md2:flex items-center gap-8 text-sm h-full font-jakarta">
                     <div
                         className="relative group h-full flex items-center py-10"
@@ -198,12 +216,12 @@ const Header = () => {
                         </Typography>
                         {isMegaMenuOpen && <DesktopModelsMegaMenu />}
                     </div>
-                    <Link href="/crown-benling-about" className={`${navLink} flex items-center h-full`}>
+                    <Link href="/about-us" className={`${navLink} flex items-center h-[30px]`}>
                         <Typography variant="subtext-regular-jakarta">
                             About Us
                         </Typography>
                     </Link>
-                    <Link href="/crown-benling-performance-series" className={`${navLink} flex items-center h-full`}>
+                    <Link href="/crown-electric-performance-series" className={`${navLink} flex items-center h-[30px]`}>
                         <Typography variant="subtext-regular-jakarta">
                             Performance Series
                         </Typography>
@@ -213,29 +231,22 @@ const Header = () => {
                 </nav>
 </div>
 
-                {/* Logo with black background */}
-                <div className="md:w-[20%]">
-                {!isMobileMenuOpen && <a href="/" className="flex items-center justify-center bg-black px-4 py-1 rounded">
-                    <Image src="/assets/Header-Footer/Crown-Electric-Mobility-Pakistan.svg" alt="Logo" width={140}
-                        height={80} priority />
-                </a>}
-                </div>
 
                 {/* Right nav - vertically centered */}
-                <div className="md:w-[40%]">
+                <div className="">
                 <nav className="hidden md2:flex items-center md:justify-end gap-6 text-sm h-full font-jakarta">
                     {/* <Link href="/distributor" className={`${navLink} flex items-center h-full `}>Become a Dealer</Link> */}
-                     <Link href="/find-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                     <Link href="/find-a-dealer" className={`${navLink} flex items-center h-[30px] font-jakarta`}>
                         <Typography variant="subtext-regular-jakarta">
                             Find a Dealer
                         </Typography>
                     </Link>
-                    <Link href="/become-a-dealer" className={`${navLink} flex items-center h-full font-jakarta`}>
+                    <Link href="/become-a-dealer" className={`${navLink} flex items-center h-[30px] font-jakarta`}>
                         <Typography variant="subtext-regular-jakarta">
                             Become a Dealer
                         </Typography>
                     </Link>
-                    <Link href="/contact" className={`${navLink} flex items-center h-full`}>
+                    <Link href="/contact" className={`${navLink} flex items-center h-[30px]`}>
                         <Typography variant="subtext-regular-jakarta">
                             Contact Us
                         </Typography>
@@ -248,7 +259,7 @@ const Header = () => {
 
                     <AppButton
                         size="medium"
-                        variant="solid"
+                        variant="glow"
                         label="Book Now"
                         iconName="ArrowUpRight"
                         iconPosition="right"
@@ -256,6 +267,7 @@ const Header = () => {
                         textColor='text-[#000]'
                     />
                 </nav>
+                </div>
                 </div>
 
                 {/* Hamburger - black background, hidden when menu open */}
@@ -309,11 +321,11 @@ const Header = () => {
                                 <span><ChevronRight /></span>
                             </button>
 
-                            <Link href="/crown-benling-about" onClick={(e) => {
+                            <Link href="/about-us" onClick={(e) => {
                                 e.preventDefault();
                                 setIsModelsOpen(false);
                                 setTimeout(() => {
-                                    window.location.href = "/crown-benling-about";
+                                    window.location.href = "/about-us";
                                 }, 0);
                             }} className="py-4 border-b text-black-200 border-gray-700 text-lg">
 
@@ -323,11 +335,11 @@ const Header = () => {
                             </Link>
 
 
-                            <Link href="/crown-benling-performance-series" onClick={(e) => {
+                            <Link href="/crown-electric-performance-series" onClick={(e) => {
                                 e.preventDefault();
                                 setIsModelsOpen(false);
                                 setTimeout(() => {
-                                    window.location.href = "/crown-benling-performance-series";
+                                    window.location.href = "/crown-electric-performance-series";
                                 }, 0);
                             }} className="py-4 border-b text-black-200 border-gray-700 text-lg">
 

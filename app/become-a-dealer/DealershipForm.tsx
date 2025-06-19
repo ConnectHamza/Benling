@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from 'react';
 import AppButton from '../../components/Button/AppButton'
 import { getCities, City } from '../api/citiesApi';
@@ -239,7 +240,7 @@ const DealershipForm = () => {
                                     name="fullName"
                                     value={formData.fullName}
                                     onChange={handleChange}
-                                    placeholder="Full Name"
+                                    placeholder="eg. Muhammad Ali Khan"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
@@ -251,7 +252,7 @@ const DealershipForm = () => {
                                     name="cnic"
                                     value={formData.cnic}
                                     onChange={handleCnicChange}
-                                    placeholder="CNIC"
+                                    placeholder="e.g. 12345-6789789-5"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     maxLength={15}
                                     pattern="\d{5}-\d{7}-\d{1}"
@@ -265,7 +266,7 @@ const DealershipForm = () => {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    placeholder="Email Address"
+                                    placeholder="e.g. yourname@example.com"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
@@ -280,7 +281,7 @@ const DealershipForm = () => {
                                     name="fathersName"
                                     value={formData.fathersName}
                                     onChange={handleChange}
-                                    placeholder="Father's Name"
+                                    placeholder="e.g. Ahmed Raza Khan"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
@@ -292,7 +293,7 @@ const DealershipForm = () => {
                                     name="ntn"
                                     value={formData.ntn}
                                     onChange={handleChange}
-                                    placeholder="NTN"
+                                    placeholder="e.g. PK-NTN-4174941-3"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 />
                             </div>
@@ -306,7 +307,7 @@ const DealershipForm = () => {
                                     maxLength={13}
                                     pattern="[0-9]*"
                                     inputMode="numeric"
-                                    placeholder="Mobile Number"
+                                    placeholder="e.g. 0312-1234567"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
@@ -331,7 +332,7 @@ const DealershipForm = () => {
                                     name="strn"
                                     value={formData.strn}
                                     onChange={handleChange}
-                                    placeholder="STRN"
+                                    placeholder="e.g. 1234567-8"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 />
                             </div>
@@ -345,7 +346,7 @@ const DealershipForm = () => {
                                     maxLength={13}
                                     pattern="[0-9]*"
                                     inputMode="numeric"
-                                    placeholder="WhatsApp Number"
+                                    placeholder="e.g. 0312-1234567"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 />
                             </div>
@@ -412,7 +413,7 @@ const DealershipForm = () => {
                                     name="residentialAddress"
                                     value={formData.residentialAddress}
                                     onChange={handleChange}
-                                    placeholder="Residential Address"
+                                    placeholder="e.g. House 123, Street 4, Sector F-10/2, Islamabad"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
@@ -426,7 +427,7 @@ const DealershipForm = () => {
                                     name="presentBusiness"
                                     value={formData.presentBusiness}
                                     onChange={handleChange}
-                                    placeholder="Present Business / Occupation"
+                                    placeholder="e.g. Retail Business – Grocery Store"
                                     className="w-full p-2 border border-gray-400 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />

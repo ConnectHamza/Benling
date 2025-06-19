@@ -6,18 +6,16 @@ import BrandingSection from "../home/BrandingSection";
 import BlogSection from "../home/BlogSection";
 
 export const metadata = {
-  title: 'Crown Benling Electric Mobility - About Us',
-  description: '',
-  metadataBase: new URL('https://crownelectricmobility.com'), 
+  title: "About Us - Leading Pakistan’s EV Revolution",
+  description: "Explore the innovative electric bike models offered by Crown Electric Mobility. We are committed to transforming Pakistan's transportation with innovative and eco-friendly electric scooters.",
   alternates: {
-    canonical: '/crown-benling-about',
+    canonical: "/about-us",
   },
   openGraph: {
-    title: 'Crown Benling Electric Mobility - About Us',
-    description: '',
-    url: 'https://crownelectricmobility.com/crown-benling-about',
-    siteName: 'Crown Electric Mobility',
-    type: 'website',
+    title: "About Us - Leading Pakistan’s EV Revolution",
+    description: "Explore the innovative electric bike models offered by Crown Electric Mobility. We are committed to transforming Pakistan's transportation with innovative and eco-friendly electric scooters.",
+    url: "https://crownelectricmobility.com/about-us",
+    type: "website",
   },
 };
 

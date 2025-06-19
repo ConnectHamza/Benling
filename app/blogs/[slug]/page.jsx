@@ -11,14 +11,14 @@ export function generateStaticParams() {
 }
 
 export default function BlogPostPage({ params }) {
-    const post = blogs.find((p) => p.slug === params.slug);
+    const post = blogs.find((p, h1) => p.slug === params.slug);
     if (!post) return <div className="p-8 text-center">Blog post not found.</div>;
     const headings = post.headings
     const recentArticles = blogs.filter((b) => b.slug !== params.slug).slice(0, 5);
 
     return (
         <div className=" py-8 ">
-            <div className="md:w-lg mx-auto bg-white px-4 sm:px-6 lg:px-8 pb-12">
+            <div className="md:w-[1400px] mx-auto bg-white px-4 sm:px-6 lg:px-8 pb-12">
                 {/* Header */}
                 <BlogHeader coverImage={post.coverImage} />
 
@@ -40,13 +40,13 @@ export default function BlogPostPage({ params }) {
 
                 {/* Main Content Flex Layout */}
                 <div className="md:flex gap-8">
-                    <div className="md:w-1/5">
+                    <div className="md:w-[20%]">
                         <LeftSidebar headings={headings} readTime={post.readTime} />
                     </div>
-                    <main className="md:w-2/3 prose prose-lg max-w-none">
+                    <main className="md:w-[60%] prose prose-lg max-w-none">
                         {post.renderContent()}
                     </main>
-                    <div className="md:w-1/6">
+                    <div className="md:w-[20%]">
                         <RightSidebar recentArticles={recentArticles} />
                     </div>
                 </div>

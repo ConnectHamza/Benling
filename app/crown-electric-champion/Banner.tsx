@@ -10,8 +10,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Powerful, Stylish, and Built for the Urban Explorer"
-                subtitle="Turn heads with the Crown Benling Champion—built for thrill-seekers and commuters with bold style, durability, and performance for city streets and long routes."
+                title="Crown Electric Champion - The Range Star"
+                subtitle="Built with immense range of more than 220KM in single charge, Crown Champion is the ultimate choice with speed and durability with 72V60Ah Lithium Iron Phosphate Battery."
                 buttonText="Explore More"
                 imageSrc={ChampionWeb.src}
                 mobileImageSrc={ChampionMob.src}                

@@ -15,6 +15,22 @@ import Banner from './Banner'
 import AutoSwiper from '@/components/LoopCarousel/auto-swiper'
 
 
+export const metadata = {
+  title: "Crown Electric Knight Rider – 1500W Electric Motorcycle in Pakistan",
+  description: "Ride the future with the Crown Electric Knight Rider. Equipped with a 1500W brushless motor, 72V graphene battery, and a range of up to 105 km. Ideal for urban commuting in Pakistan.",
+  alternates: {
+    canonical: "/crown-electric-knight-rider",
+  },
+  openGraph: {
+    title: "Crown Electric Knight Rider – 1500W Electric Motorcycle in Pakistan",
+    description: "Ride the future with the Crown Electric Knight Rider. Equipped with a 1500W brushless motor, 72V graphene battery, and a range of up to 105 km. Ideal for urban commuting in Pakistan.",
+    url: "https://crownelectricmobility.com/crown-electric-knight-rider",
+    siteName: "Crown Electric Mobility",
+    type: "website",
+  },
+};
+
+
 const KnightRider = () => {
     return (
         <main>

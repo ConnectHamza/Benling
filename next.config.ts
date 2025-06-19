@@ -11,7 +11,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/crown-benling-about',
-        destination: '/about',
+        destination: '/about-us',
+        permanent: true,
+      },
+            {
+        source: '/about',
+        destination: '/about-us',
         permanent: true,
       },
       {
