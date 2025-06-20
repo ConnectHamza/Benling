@@ -161,13 +161,6 @@ export default function LiFePO4Blog() {
         <li><b>Q:</b> How do LiFePO₄ batteries handle monsoons?<br /><b>A:</b> Crown’s IP67-rated LiFePO₄ packs are waterproof, ensuring reliability even in Islamabad’s heavy rains.</li>
         <li><b>Q:</b> Is LiFePO₄ eco-friendly?<br /><b>A:</b> Absolutely! Recyclable materials and zero toxic emissions align with Pakistan’s green goals.</li>
       </ul>
-
-      <Typography as="h2" variant="h4-medium-magistral" className="mb-2">
-        SEO & Engagement Strategy
-      </Typography>
-      <p className="font-jakarta">
-        - Meta Description: Why LiFePO₄ batteries are perfect for Pakistan’s heat. Compare battery types and see how Crown Benling’s Performance Series outperforms in Lahore, Karachi, and more.
-      </p>
     </div>
   );
 }

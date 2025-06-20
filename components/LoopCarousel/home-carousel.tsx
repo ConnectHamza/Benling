@@ -13,6 +13,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Link from "next/link";
 
 interface HomeCarouselProps {
   items: Array<any>;
@@ -80,6 +81,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
                 <div className="w-full relative">
                   {/* Main Slide */}
                   <div className="flex items-center justify-center">
+                    <Link href={item.exploreLink}>
                     <Image
                       src={item.image}
                       alt={item.name}
@@ -88,6 +90,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
                       className="object-contain mx-auto"
                       data-aos="fade-up"
                     />
+                    </Link>
                   </div>
 
                   {isActive && (

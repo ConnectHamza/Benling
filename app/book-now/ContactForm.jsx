@@ -155,6 +155,7 @@ function ContactForm() {
                 required
             />
 
+            <div className="md:grid grid-cols-2 gap-4">
             <FormField
                 type="email"
                 label="Email Address"
@@ -178,6 +179,7 @@ function ContactForm() {
                 error={errors.phone}
                 required
             />
+            </div>
 
                 <FormField
                 type="select"
@@ -211,6 +213,7 @@ function ContactForm() {
                     { name: "Crown Electric Firefly", value: "firefly" },
                     { name: "Crown Electric Flash", value: "firefly" },
                     { name: "Crown Electric Knight Rider", value: "knight-rider" },
+                    { name: "Crown Electric Markhor", value: "markhor" },
                     { name: "Crown Electric Mini Scooter", value: "mini-scooter" },
                     { name: "Crown Electric Raftaar", value: "raftaar" },
                     { name: "Crown Electric Roshni", value: "roshni" },

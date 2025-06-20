@@ -15,8 +15,8 @@ import Feature6IMG from '../../public/assets/flash/Features/Feature6.png';
 
 export const slides = [
   { image: "/assets/flash/Loop/Grid-01.webp", width: 640, alt: "Side view" },
-  { image: "/assets/flash/Loop/Grid-02.webp", width: 620, alt: "Front view" },
-  { image: "/assets/flash/Loop/Grid-03.webp", width: 620, alt: "Dashboard" },
+  { image: "/assets/flash/Loop/Grid-02.webp", width: 640, alt: "Front view" },
+  { image: "/assets/flash/Loop/Grid-03.webp", width: 640, alt: "Dashboard" },
   { image: "/assets/flash/Loop/Grid-04.webp", width: 320, alt: "Logo vertical" },
   { image: "/assets/flash/Loop/Grid-05.webp", width: 1300, alt: "Full scooter" },
 ];

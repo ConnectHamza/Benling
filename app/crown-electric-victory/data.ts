@@ -7,8 +7,8 @@ import Loop5 from "../../public/assets/Victory/Loop/Grid 05.webp";
 
 export const slides = [
   { image: Loop1, width: 640, alt: "Side view" },
-  { image: Loop2, width: 620, alt: "Front view" },
-  { image: Loop3, width: 620, alt: "Dashboard" },
+  { image: Loop2, width: 640, alt: "Front view" },
+  { image: Loop3, width: 640, alt: "Dashboard" },
   { image: Loop4, width: 320, alt: "Logo vertical" },
   { image: Loop5, width: 1300, alt: "Full scooter" },
 ];

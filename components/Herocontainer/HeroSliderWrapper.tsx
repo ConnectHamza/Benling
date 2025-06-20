@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
-import HeroSectionSkeleton from './HeroSectionSkeleton';
+import DotLoader from '../Loader/Loader';
 
 interface HeroSectionWrapperProps {
   slides: any[];
@@ -12,7 +12,7 @@ interface HeroSectionWrapperProps {
 }
 
 const HeroSection = dynamic(() => import('./HeroSlider'), {
-  loading: () => <HeroSectionSkeleton />,
+  loading: () => <DotLoader />,
   ssr: false
 });
 
@@ -56,7 +56,7 @@ export default function HeroSectionWrapper({
           autoplayInterval={autoplayInterval} 
         />
       ) : (
-        <HeroSectionSkeleton />
+        <DotLoader />
       )}
     </div>
   );

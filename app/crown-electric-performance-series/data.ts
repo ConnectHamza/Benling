@@ -24,7 +24,7 @@ export const performanceData = [
     range: "90-100 km",
     speed: "90-100 km/h",
     motor: "3000W",
-    battery: "72V 40AH"
+    battery: "72V 40AH",
   },
   {
     img: Cherry,
@@ -33,7 +33,8 @@ export const performanceData = [
     range: "110-130 km",
     speed: "75-80 km/h",
     motor: "3000W",
-    battery: "72V 40AH"
+    battery: "72V 40AH",
+    exploreLink: "/crown-electric-cherry"
   },
   {
     img: Champion,
@@ -42,7 +43,8 @@ export const performanceData = [
     range: "200-220 km",
     speed: "65-70 km/h",
     motor: "1200W",
-    battery: "72V 60AH"
+    battery: "72V 60AH",
+    exploreLink: "/crown-electric-champion"
   },
   {
     img: Raftaar,
@@ -51,7 +53,9 @@ export const performanceData = [
     range: "140-160 km",
     speed: "85-90 km/h",
     motor: "2000W",
-    battery: "72V 40AH"
+    battery: "72V 40AH",
+    exploreLink: "/crown-electric-raftaar"
+
   },
   {
     img: Victory,
@@ -60,7 +64,8 @@ export const performanceData = [
     range: "100-120 km",
     speed: "50-55 km/h",
     motor: "1000W",
-    battery: "72V 30AH"
+    battery: "72V 30AH",
+    exploreLink: "/crown-electric-victory"
   },
 ]
 

@@ -48,7 +48,6 @@ const VictoryClient = () => {
         gradient2="#FFFFFF"
         textColor="text-[#536478]"
         price='265,000'
-        isFixed={false}
       />
       <Featured
         stats={statsData}

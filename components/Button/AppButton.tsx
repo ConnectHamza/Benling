@@ -35,8 +35,8 @@ glow: `
   transition-all duration-400 ease-in-out
   bg-gradient-to-b from-[#FFCC6D] via-[#FF7700] to-[#FF7700]
   bg-[length:100%_300%]
-  animate-gradient-y
-  shadow-[0_0_16px_2px_rgba(255,153,0,0.5)]
+  animate-gradient-y  
+  shadow-[0_0_16px_2px_rgba(255,153,0,0.5) hover:shadow-[0_0_20px_4px_rgba(255,153,0,0.5)]
   border-2 border-[#FFCC6D]`
 }
 

@@ -40,7 +40,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
   return (
     <div className="relative">
-      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30/100 flex justify-center items-center px-5 md:py-4 py-2 border-b border-gray-90`}
+      <div className={`w-full ${isFixed ? "fixed" : "hidden"} z-30 top-0 bg-black-30 flex justify-center items-center px-5 md:py-4 py-2 border-b border-[#e8e8e8]`}
     style={{
       backdropFilter: "blur(50px)"
     }}
@@ -69,7 +69,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
           </div>
         </div>
       </div>
-            <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-gray-90" >
+            <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-[#e8e8e8]" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <div>
           <h2 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h2>

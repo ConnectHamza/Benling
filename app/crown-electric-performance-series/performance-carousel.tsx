@@ -13,6 +13,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Link from 'next/link';
 
 interface PerformanceCarouselProps {
   items: Array<any>;
@@ -83,6 +84,7 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
               {({ isActive }) => (
                 <div className="w-full relative">
                   <div className="flex items-center justify-center">
+                    <Link href={item.exploreLink}>
                     <Image
                       src={item.image}
                       alt={item.name}
@@ -91,6 +93,7 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
                       className="object-contain mx-auto"
                       data-aos="fade-up"
                     />
+                    </Link>
                   </div>
 
                   {isActive && (

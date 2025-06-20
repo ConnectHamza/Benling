@@ -28,6 +28,7 @@ const SeriesComparison = () => {
           speed={item.speed}
           motor={item.motor}
           battery={item.battery}
+          exploreLink={item.exploreLink} // Pass the explore
         />
       ))}
     </div>
