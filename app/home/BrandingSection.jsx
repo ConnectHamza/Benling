@@ -55,7 +55,7 @@ const BrandingSection = () => {
                 </div>
                 <div data-aos="fade-up">
                 <Typography variant='subtext-regular-jakarta' className='text-[#0A0A0A]'>
-                    Crown Benling Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
+                    Crown Electric Mobility is committed to sustainability, innovation, and impact-driven growth.
                 </Typography>
                 </div>
                 {/* Card Grid */}

@@ -23,7 +23,7 @@ export const slides = [
 
 export const featureHeader = {
     featureTitle: 'Compact, Agile, and Effortless',
-    featureText: `Perfect for quick trips and city cruising, Crown Benling Mini Scooty is built for easy handling, efficient mobility, and everyday reliability in a compact design.`,
+    featureText: `Perfect for quick trips and city cruising, Crown Electric Mini Scooty is built for easy handling, efficient mobility, and everyday reliability in a compact design.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
 };
@@ -98,8 +98,8 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What type of motor does the Crown Benling Mini Scooty have?",
-        answer: "The Crown Benling Mini Scooty is equipped with a 450W brushless motor, providing efficient and reliable performance."
+        question: "What type of motor does the Crown Electric Mini Scooty have?",
+        answer: "The Crown Electric Mini Scooty is equipped with a 450W brushless motor, providing efficient and reliable performance."
     },
     {
         question: "How long does it take to charge the battery?",

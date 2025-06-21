@@ -39,7 +39,7 @@ export const blogs = [
       { id: "what-is-liFePO₄", text: "What is LiFePO₄?" },
       { id: "advantages", text: "Advantages of LiFePO₄" },
       { id: "comparison", text: "LiFePO₄ vs. Other Batteries" },
-      { id: "performance-series", text: "Crown Benling Performance Series" }
+      { id: "performance-series", text: "Crown Electric Performance Series" }
     ],
     renderContent: () => <LiFePO4Blog />
   },
@@ -60,8 +60,8 @@ export const blogs = [
   },
   {
     slug: "crown-dealership-visit",
-    title: " Crown Benling Electric Mobility's Director Business Development Engages with Karachi Dealerships",
-    subtitle: `In line with Crown Benling Electric Mobility’s mission to promote accessible, sustainable transportation across Pakistan, Director – Business Development, Mr. Zohaib Farhan, recently visited Crown Benling Electric Mobility’s dealerships in Karachi. Accompanied by Regional Sales Manager Sindh, Mr. Mubashir Awam, and Area Sales Manager, Mr. Yaseen Pinjara, the visit reinforced the company’s commitment to building strong, on-ground relationships with its dealer partners.`,
+    title: " Crown Electric Mobility's Director Business Development Engages with Karachi Dealerships",
+    subtitle: `In line with Crown Electric Mobility’s mission to promote accessible, sustainable transportation across Pakistan, Director – Business Development, Mr. Zohaib Farhan, recently visited Crown Electric Mobility’s dealerships in Karachi. Accompanied by Regional Sales Manager Sindh, Mr. Mubashir Awam, and Area Sales Manager, Mr. Yaseen Pinjara, the visit reinforced the company’s commitment to building strong, on-ground relationships with its dealer partners.`,
     coverImage: BlogHeaderImage.src,
     date: "May 23rd 2025",
     readTime: 3,

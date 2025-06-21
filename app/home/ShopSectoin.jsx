@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import shopIcon from '../../public/assets/Home/shops/Store.svg';
-import crownImage from '../../public/assets/Home/shops/crownshop.webp';
+import crownImage from '../../public/assets/Home/shops/crownShopNew.webp';
 import crownImageMbl from '../../public/assets/Home/shops/crownshop-mobile.webp';
 import { ChevronLeft, ChevronRight, ArrowUpRight, X, ChevronDown, ChevronUp } from 'lucide-react';
 import Typography from '@/components/GradientText/Typography';
@@ -121,7 +121,7 @@ export default function ShopSlider() {
                   className="inline-flex items-center gap-1 text-black hover:underline transition"
                 >
                   <Typography variant='extra-subtext-regular-jakarta'>
-                    Learn More About Crown Benling Dealer
+                    Learn More About Crown Electric Dealer
                   </Typography>
                   <ArrowUpRight size={14} />
                 </a>
@@ -272,7 +272,7 @@ export default function ShopSlider() {
                   className="inline-flex items-center gap-1 text-black hover:underline transition"
                 >
                   <Typography variant='extra-subtext-regular-jakarta'>
-                    Learn More About Crown Benling Dealer
+                    Learn More About Crown Electric Dealer
                   </Typography>
                   <ArrowUpRight size={14} />
                 </a>

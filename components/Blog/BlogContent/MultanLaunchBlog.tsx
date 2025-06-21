@@ -8,7 +8,7 @@ import Blog5con from "../../../public/assets/Blogs/MultanWebp/097A2186.webp"
 export default function MultanLaunchBlog() {
     return (
         <div>
-            {/* <Typography variant="h4-medium-magistral" className="mb-2" id="what-is-graphene">Strengthening Market Ties: Crown Benling Electric Mobility's Director Business Development Engages with Karachi Dealerships</Typography> */}
+            {/* <Typography variant="h4-medium-magistral" className="mb-2" id="what-is-graphene">Strengthening Market Ties: Crown Electric Mobility's Director Business Development Engages with Karachi Dealerships</Typography> */}
             <Typography variant="subtext-regular-jakarta">
             The event was further elevated by the presence of Crown Group’s top leadership, including Chairman Mr. Farhan Hanif, Managing Director Mr. Kashif Qaseem, Director Business Development Mr. Zohaib Farhan, and Director Operations Mr. Omair Farhan. Their attendance underscored the strategic importance of the Multan market and highlighted Crown Electric Mobility’s strong commitment to advancing electric mobility in Pakistan. The gathering brought together more than 800 guests, primarily comprising trusted dealers and members of the Crown family, creating an atmosphere of celebration, collaboration, and forward looking vision.
 
@@ -23,11 +23,11 @@ export default function MultanLaunchBlog() {
             <br />
            <Typography id="launch-innovation" variant="h4-medium-magistral" className="mb-2">Here’s a closer look at the showstoppers:</Typography>
             <ul className="list-disc pl-5 font-jakarta">
-                <li><b>Crown Benling Markhor:</b> 3000W Brushless Motor, 72V40Ah battery, range 110-130km, speed up to 90 km/h</li>
-                <li><b>Crown Benling Cherry:</b> 3000W Brushless Motor, 72V40Ah battery, range 110-130km, speed 90 km/h</li>
-                <li><b>Crown Benling Champion:</b> 1200W Brushless Motor, 72V60Ah battery, extended range of 200-220km, speed 70 km/h</li>
-                <li><b>Crown Benling Raftaar:</b> 2000W Brushless Motor, 72V40Ah battery, range 140-160km, top speed 95 km/h</li>
-                <li><b>Crown Benling Victory:</b> 1000W Brushless Motor, 72V30Ah battery, range 100-120km, speed 55 km/h</li>
+                <li><b>Crown Electric Markhor:</b> 3000W Brushless Motor, 72V40Ah battery, range 110-130km, speed up to 90 km/h</li>
+                <li><b>Crown Electric Cherry:</b> 3000W Brushless Motor, 72V40Ah battery, range 110-130km, speed 90 km/h</li>
+                <li><b>Crown Electric Champion:</b> 1200W Brushless Motor, 72V60Ah battery, extended range of 200-220km, speed 70 km/h</li>
+                <li><b>Crown Electric Raftaar:</b> 2000W Brushless Motor, 72V40Ah battery, range 140-160km, top speed 95 km/h</li>
+                <li><b>Crown Electric Victory:</b> 1000W Brushless Motor, 72V30Ah battery, range 100-120km, speed 55 km/h</li>
             </ul><br />
             <p className="font-jakarta">Each model within the Performance Series is equipped with LiFePO4 (Lithium Iron Phosphate) batteries, ensuring long life, rapid charging, and superior safety.</p>
             <br />

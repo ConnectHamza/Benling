@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { modelsData, modelsData2 } from "./data";
 
 const TABS = [
-  { key: 'legacy', label: 'Legacy Series', data: modelsData },
+  { key: 'legacy', label: 'Graphene Series', data: modelsData },
   { key: 'performance', label: 'Performance Series', data: modelsData2 },
 ];
 

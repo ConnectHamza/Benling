@@ -10,16 +10,16 @@ export default function LiFePO4Blog() {
     <div className="space-y-6">
       {/* ── Intro ─────────────────────────────────── */}
       <Typography variant="h4-medium-magistral" className="mb-2">
-        Why Crown Benling Electric Mobility Performance Series Trusts Lithium&nbsp;LiFePO₄ Batteries for Exceptional EV Performance
+        Why Crown Electric Mobility Performance Series Trusts Lithium&nbsp;LiFePO₄ Batteries for Exceptional EV Performance
       </Typography>
 
       <Typography variant="subtext-regular-jakarta">
-        In the fast-paced evolution of electric mobility, reliable battery technology lies at the heart of every high‑performing electric vehicle. The Crown Benling Performance Series—featuring models like Markhor, Cherry, Champion, Raftaar, and Victory—leads the pack by integrating&nbsp;LiFePO₄ batteries, one of the safest and most efficient power solutions available today.
+        In the fast-paced evolution of electric mobility, reliable battery technology lies at the heart of every high‑performing electric vehicle. The Crown Electric Performance Series—featuring models like Markhor, Cherry, Champion, Raftaar, and Victory—leads the pack by integrating&nbsp;LiFePO₄ batteries, one of the safest and most efficient power solutions available today.
       </Typography>
 
       <img
         src={HeroIMG.src}
-        alt="Crown Benling Performance Series"
+        alt="Crown Electric Performance Series"
         className="w-100 mx-auto my-4 block rounded-lg shadow-md"
       />
 
@@ -74,7 +74,7 @@ export default function LiFePO4Blog() {
 
       {/* ── Performance Series Line‑up ─────────────── */}
       <Typography id="performance-series" variant="h4-medium-magistral" className="mb-2">
-        Crown Benling Performance Series&nbsp;— At a Glance
+        Crown Electric Performance Series&nbsp;— At a Glance
       </Typography>
 
       <ul className="list-disc pl-5 font-jakarta space-y-2">
@@ -90,7 +90,7 @@ export default function LiFePO4Blog() {
         Discover Smarter Mobility
       </Typography>
       <p className="font-jakarta">
-        By standardising on LiFePO₄, Crown Benling delivers unmatched efficiency, safety, and sustainability across its Performance Series. Whether you’re eyeing the rugged Markhor or the value‑packed Victory, every ride is powered by chemistry engineered for the road ahead.
+        By standardising on LiFePO₄, Crown Electric delivers unmatched efficiency, safety, and sustainability across its Performance Series. Whether you’re eyeing the rugged Markhor or the value‑packed Victory, every ride is powered by chemistry engineered for the road ahead.
       </p>
     </div>
   );

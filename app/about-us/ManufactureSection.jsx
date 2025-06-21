@@ -13,7 +13,7 @@ export default function ManufacturerDetails() {
 
         {/* Subheading */}
         <p className="text-gray-700 text-base md:text-lg mb-8 text-center md:text-left font-jakarta font-normal">
-          All Crown Benling EVs are proudly manufactured at our advanced Port Qasim production facility in Pakistan. Our locally assembled scooters are built with graphene battery technology, undergo rigorous safety and performance testing, and are crafted by a skilled Pakistani workforce.
+          All Crown Electric EVs are proudly manufactured at our advanced Port Qasim production facility in Pakistan. Our locally assembled scooters are built with graphene battery technology, undergo rigorous safety and performance testing, and are crafted by a skilled Pakistani workforce.
         </p>
 
         {/* Images Grid */}

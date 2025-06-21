@@ -81,15 +81,15 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What type of motor powers the Crown Benling Roshni?",
-        answer: "The Crown Benling Roshni is equipped with a 1200W brushless motor for efficient and powerful performance."
+        question: "What type of motor powers the Crown Electric Roshni?",
+        answer: "The Crown Electric Roshni is equipped with a 1200W brushless motor for efficient and powerful performance."
     },
     {
         question: "How long does it take to fully charge the Roshni?",
         answer: "The battery charges fully in 6 to 8 hours using a 72V 5A charger."
     },
     {
-        question: "What is the maximum range of the Crown Benling Roshni on a single charge?",
+        question: "What is the maximum range of the Crown Electric Roshni on a single charge?",
         answer: "The Roshni offers a range of 115-120 km on a single charge, depending on riding conditions."
     },
     {
@@ -97,7 +97,7 @@ export const faqsData = [
         answer: "The Roshni has a loading capacity of up to 160 kg, suitable for a rider with additional cargo."
     },
     {
-        question: "What type of braking system does the Crown Benling Roshni feature?",
+        question: "What type of braking system does the Crown Electric Roshni feature?",
         answer: "The Roshni is equipped with a front disc and rear disc braking system for enhanced safety and control."
     },
 ];

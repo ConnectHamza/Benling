@@ -67,57 +67,59 @@ export const performanceData = [
     battery: "72V 30AH",
     exploreLink: "/crown-electric-victory"
   },
+
+  
 ]
 
  export const bikes = [
     {
       name: "Bike 1",
       image: MarkhorIMG.src,
-      range: "100 km Range",
-      maxSpeed: "100 km/h Top Speed",
-      motorPower: "3000W Motor Power",
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Flash_Brochure.pdf',
-      exploreLink: "/ezee",
+      range: "100 km",
+      maxSpeed: "100 km/h",
+      motorPower: "3000W",
+      brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
+      exploreLink: "/",
       logo: MarkhorLogo.src
     },
     {
       name: "Bike 2",
       image: CherryIMG.src,
-      range: "130 km Range ",
-      maxSpeed: "80 km/h Top Speed",
-      motorPower: "3000W Motor Power ",
-      brochureLink: "../../public/assets/Brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-      exploreLink: "/ezee",
+      range: "130 km ",
+      maxSpeed: "80 km/h",
+      motorPower: "3000W ",
+      brochureLink: "/brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
+      exploreLink: "/crown-electric-cherry",
       logo: CherryLogo.src
 
     },
     {
       name: "Bike 3",
       image: ChampionIMG.src,
-      range: "220 km Range",
-      maxSpeed: "70 km/h Top Speed",
-      motorPower: "1200W Motor Power",
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-      exploreLink: "/ezee",
+      range: "220 km",
+      maxSpeed: "70 km/h",
+      motorPower: "1200W",
+      brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
+      exploreLink: "/crown-electric-champion",
       logo: ChampionLogo.src
     },
     {
       name: "Bike 4",
       image: RaftaarIMG.src,
-      range: "160 km Range ",
-      maxSpeed: "90 km/h Top Speed",
-      motorPower: "2000W Motor Power",
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Ezee_Brochure.pdf',
-      exploreLink: "/ezee",
+      range: "160 km ",
+      maxSpeed: "90 km/h",
+      motorPower: "2000W",
+      brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
+      exploreLink: "/crown-electric-raftaar",
       logo: RaftaarLogo.src
     }, {
       name: "Bike 5",
       image: VictoryIMG.src,
-      range: "120 km Range ",
-      maxSpeed: "55 km/h Top Speed",
-      motorPower: "1000W Motor Power",
-      brochureLink: '../../public/assets/Brouchers/Crown_Benling_Roshni_Brochure.pdf',
-      exploreLink: "/ezee",
+      range: "120 km ",
+      maxSpeed: "55 km/h",
+      motorPower: "1000W",
+      brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
+      exploreLink: "/crown-electric-victory",
       logo: VictoryLogo.src
     },
   ];

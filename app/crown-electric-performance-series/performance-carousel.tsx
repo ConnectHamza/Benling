@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Button from '@/components/Button/Button';
+import Button from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import AOS from 'aos';
@@ -103,23 +103,23 @@ const PerformanceCarousel: React.FC<PerformanceCarouselProps> = ({
                         <Image
                           src={item.logo}
                           alt={`${item.name} Logo`}
-                          width={150}
+                          width={300}
                           height={20}
-                          className="mx-auto h-10"
+                          className="mx-auto md:h-[70px] h-[50px] md:w-[350px] w-[200px] object-contain"
                         />
                       </div>
 
                       {/* Details */}
                       <div className="mt-4 text-center" data-aos="fade-up">
-                        <div className="flex flex-wrap justify-center md:gap-x-8 gap-x-4 text-xs md:text-base text-[#0A0A0A] font-magistral font-normal">
-                          <Typography variant="body-regular-magistral">
-                            <Typography as="span">{item.range}</Typography>
+                        <div className="flex flex-wrap justify-center  text-xs md:text-base text-[#0A0A0A] font-magistral font-normal">
+                          <Typography variant="body-regular-magistral" className='border-r-2 border-gray-100 md:px-4 px-2'>
+                            <Typography as="span"><b className='md:text-xl text-lg'>Range</b><br></br>{item.range}</Typography>
                           </Typography>
-                          <Typography variant="body-regular-magistral">
-                            <Typography as="span">{item.maxSpeed}</Typography>
+                          <Typography variant="body-regular-magistral" className='border-r-2 border-gray-100 md:px-4 px-2'>
+                            <Typography as="span"><b className='md:text-xl text-lg'>Top Speed</b><br></br>{item.maxSpeed}</Typography>
                           </Typography>
-                          <Typography variant="body-regular-magistral">
-                            <Typography as="span">{item.motorPower}</Typography>
+                          <Typography variant="body-regular-magistral" className=' md:px-4 px-2'>
+                            <Typography as="span"><b className='md:text-xl text-lg'>Motor Power</b><br></br>{item.motorPower}</Typography>
                           </Typography>
                         </div>
                       </div>

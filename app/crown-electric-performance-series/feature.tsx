@@ -55,7 +55,7 @@ const FeatureSection = () => (
       </div>
         <div data-aos="zoom-in">
       <Typography variant='subtext-regular-jakarta' className="mb-6 text-white">
-      Crown Benling’s Performance Series offers adaptable speed modes and intelligent engineering, crafted for riders who demand precision, power, and control on every road.
+      Crown Electric's Performance Series offers adaptable speed modes and intelligent engineering, crafted for riders who demand precision, power, and control on every road.
       </Typography>
       </div>
         <div

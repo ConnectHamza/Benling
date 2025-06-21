@@ -44,6 +44,7 @@ const CherryClient = () => {
         gradient2="#F2F6FC"
         textColor="text-black-30"
         price='380,000'
+        isLithium={true}
       />
       <Featured
         stats={statsData}

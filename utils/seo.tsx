@@ -18,7 +18,7 @@ export default function Seo({ title, description, canonical }: SeoProps) {
         title,
         description,
         url: canonical,
-        site_name: 'Crown Benling',
+        site_name: 'Crown Electric Mobility',
       }}
       twitter={{
         handle: '@crownbenling',

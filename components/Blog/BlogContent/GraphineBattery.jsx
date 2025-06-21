@@ -46,10 +46,10 @@ export default function GrapheneBatteryContent() {
                 Graphene batteries are poised to play a pivotal role in shaping a greener future, particularly evident in the realm of electric vehicles (EVs) such as electric bikes.
             </Typography>
             <Typography variant="subtext-regular-jakarta" className="mb-5" >
-                The utilization of graphene batteries in EVs, including electric bikes, showcases their potential to revolutionize the automotive industry. Notably, in response to this transformative technology, Crown Benling Electric Mobility has recently launched its electric bikes, exclusively powered by graphene batteries.
+                The utilization of graphene batteries in EVs, including electric bikes, showcases their potential to revolutionize the automotive industry. Notably, in response to this transformative technology, Crown Electric Mobility has recently launched its electric bikes, exclusively powered by graphene batteries.
             </Typography>
             <Typography variant="subtext-regular-jakarta" className="mb-5" >
-                This strategic move by Crown Benling Electric Mobility highlights the growing recognition of graphene batteries as a key enabler for sustainable and eco-friendly transportation solutions. As the automotive landscape continues to embrace graphene-powered innovations, it signals a promising shift towards a more environmentally conscious and energy-efficient future.
+                This strategic move by Crown Electric Mobility highlights the growing recognition of graphene batteries as a key enabler for sustainable and eco-friendly transportation solutions. As the automotive landscape continues to embrace graphene-powered innovations, it signals a promising shift towards a more environmentally conscious and energy-efficient future.
             </Typography>
         </div>
     );

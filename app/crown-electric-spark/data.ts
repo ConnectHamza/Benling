@@ -23,7 +23,7 @@ export const slides = [
 
 export const featureHeader = {
     featureTitle: 'Built for Utility. Designed for Simplicity.',
-    featureText: `Whether it’s errands or short commutes, Crown Benling Spark combines basic functionality with practical design to power your daily tasks with ease.`,
+    featureText: `Whether it’s errands or short commutes, Crown Electric Spark combines basic functionality with practical design to power your daily tasks with ease.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
 };
@@ -58,14 +58,14 @@ export const featuresData = [
         img: Feature1IMG,
         alt: 'Illuminator LED Headlight',
         title: 'Illuminator LED Headlight',
-        description: 'The Benling Spark features a high-performance LED headlight that provides brilliant illumination, ensuring optimal visibility for safer rides during nighttime or in low-light conditions. The sleek design enhances the overall aesthetic while offering reliable performance to light your way.',
+        description: 'The Crown Electric Spark features a high-performance LED headlight that provides brilliant illumination, ensuring optimal visibility for safer rides during nighttime or in low-light conditions. The sleek design enhances the overall aesthetic while offering reliable performance to light your way.',
 
     },
     {
         img: Feature2IMG,
         alt: '4-Speed Modes',
         title: '4-Speed Modes',
-        description: 'The Benling Spark offers four distinct speed modes, allowing riders to customize their experience based on the journey’s demands. Whether you prefer energy-efficient cruising or a more dynamic ride, the Spark adapts effortlessly to your needs, providing versatility for every situation.'
+        description: 'The Crown Electric Spark offers four distinct speed modes, allowing riders to customize their experience based on the journey’s demands. Whether you prefer energy-efficient cruising or a more dynamic ride, the Spark adapts effortlessly to your needs, providing versatility for every situation.'
     },
     {
         img: Feature3IMG,
@@ -96,23 +96,23 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the top speed of the Benling Spark?",
-        answer: "The Benling Spark has a top speed of 35–40 km/h, making it ideal for city commuting."
+        question: "What is the top speed of the Crown Electric Spark?",
+        answer: "Crown Electric Spark has a top speed of 35–40 km/h, making it ideal for city commuting."
     },
     {
-        question: "How far can the Benling Spark go on a full charge?",
-        answer: "On a full charge, the Benling Spark can cover approximately 40 kilometers, depending on riding conditions and usage."
+        question: "How far can the Crown Electric Spark go on a full charge?",
+        answer: "On a full charge, the Crown Electric Spark can cover approximately 40 kilometers, depending on riding conditions and usage."
     },
     {
         question: "How long does it take to fully charge the battery?",
         answer: "The Spark's battery typically takes 5–6 hours to fully charge using a standard home outlet."
     },
     {
-        question: "Is the Benling Spark eco-friendly?",
+        question: "Is the Crown Electric Spark eco-friendly?",
         answer: "Yes, the Spark is fully electric, producing zero emissions and operating quietly, contributing to a cleaner environment."
     },
     {
-        question: "Can I charge the Benling Spark at home?",
+        question: "Can I charge the Crown Electric Spark at home?",
         answer: "Yes! The Spark’s battery can be easily charged using a regular home socket no special setup needed."
     },
 ];

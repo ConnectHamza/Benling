@@ -80,13 +80,13 @@ export const featuresData = [
         img: Feature5IMG,
         alt: 'Bold Rear Design with LED Lights',
         title: 'Bold Rear Design with LED Lights',
-        description: `The rear of the Crown Benling is crafted to impress. Its bold silhouette and powerful frame make a strong visual statement, while the high-visibility rear LED tail light enhances nighttime safety. Whether you're riding or parked, the back end of the Crown Benling is unmistakably modern and confident.`
+        description: `The rear of the Crown Electric is crafted to impress. Its bold silhouette and powerful frame make a strong visual statement, while the high-visibility rear LED tail light enhances nighttime safety. Whether you're riding or parked, the back end of the Crown Electric is unmistakably modern and confident.`
     },
     {
         img: Feature6IMG,
         alt: 'Striking Front Look with Square LED Lights',
         title: 'Striking Front Look with Square LED Lights',
-        description: 'Make a powerful first impression with the Crown Benling’s aggressive front profile. The standout feature? Its uniquely square-shaped dual LED headlights, designed to maximize road visibility while giving the bike a futuristic, distinctive edge. Combined with sharp body lines and sporty orange detailing, the front look is both functional and head-turning.'
+        description: 'Make a powerful first impression with the Crown Electric’s aggressive front profile. The standout feature? Its uniquely square-shaped dual LED headlights, designed to maximize road visibility while giving the bike a futuristic, distinctive edge. Combined with sharp body lines and sporty orange detailing, the front look is both functional and head-turning.'
     },
 
 ];

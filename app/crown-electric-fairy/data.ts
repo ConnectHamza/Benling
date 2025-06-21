@@ -23,7 +23,7 @@ export const slides = [
 
 export const featureHeader = {
     featureTitle: 'Lightweight Comfort, Everyday Freedom',
-    featureText: `Crown Benling Fairy delivers a smooth and gentle ride with its nimble frame and comfortable seating, ideal for daily use with a touch of elegance.`,
+    featureText: `Crown Electric Fairy delivers a smooth and gentle ride with its nimble frame and comfortable seating, ideal for daily use with a touch of elegance.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
 };
@@ -62,7 +62,7 @@ export const featuresData = [
         img: Feature2IMG,
         alt: 'NFC Unlock – Smart & Secure Access',
         title: 'NFC Unlock – Smart & Secure Access',
-        description: 'Say goodbye to keys! The Crown Benling fairy features advanced NFC Unlock technology, allowing you to unlock your scooter instantly with just a tap of your NFC card or device. Enjoy convenience and enhanced security every time you ride.'
+        description: 'Say goodbye to keys! The Crown Electric fairy features advanced NFC Unlock technology, allowing you to unlock your scooter instantly with just a tap of your NFC card or device. Enjoy convenience and enhanced security every time you ride.'
     },
     {
         img: Feature3IMG,

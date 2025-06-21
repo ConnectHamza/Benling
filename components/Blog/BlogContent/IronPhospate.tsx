@@ -16,7 +16,7 @@ export default function LiFePO4Blog() {
 
       <img
         src={HeroIMG.src}
-        alt="Crown Benling Performance Series"
+        alt="Crown Electric Performance Series"
         className="w-100 mx-auto my-4 block rounded-lg shadow-md"
       />
 
@@ -92,7 +92,7 @@ export default function LiFePO4Blog() {
       </p>
 
       <Typography id="performance-series" as="h2" variant="h4-medium-magistral" className="mb-2">
-        Crown Benling’s Edge: Performance Series with LiFePO₄
+        Crown Electric’s Edge: Performance Series with LiFePO₄
       </Typography>
       <ul className="list-disc pl-5 font-jakarta space-y-2">
         <li>Enhanced Acceleration: 0–40 km/h in 5 seconds (ideal for Islamabad’s hills).</li>
@@ -150,7 +150,7 @@ export default function LiFePO4Blog() {
         Convert 30% of vehicles to electric by 2030.<br />
         Offer tax exemptions for LiFePO₄ battery imports.<br />
         <br />
-        Crown Benling is leading this shift, with its Multan showroom selling 500+ units/month—proving Pakistanis are ready for smarter, safer mobility.
+        Crown Electric is leading this shift, with its Multan showroom selling 500+ units/month—proving Pakistanis are ready for smarter, safer mobility.
       </p>
 
       <Typography as="h2" variant="h4-medium-magistral" className="mb-2">

@@ -244,7 +244,7 @@ function ContactForm() {
 
             <FormField
                 type="checkbox"
-                label="I agree to receive information, offers, and updates from Crown Benling to help me choose the right electric scooter."
+                label="I agree to receive information, offers, and updates from Crown Electric to help me choose the right electric scooter."
                 name="agree"
                 value={formData.agree}
                 onChange={handleChange}

@@ -23,10 +23,10 @@ export default function VideoSection() {
     <section className="md:block hidden relative w-full md:py-40 py-20 overflow-hidden">
       <div className="text-center">
         <Typography as="h2" variant="h2-medium-magistral" className="mb-2">
-          Benling is Everywhere
+          Crown Electric is Everywhere
         </Typography>
         <Typography as="p" variant="subtext-regular-jakarta" className="text-[#0A0A0A]">
-          Watch real riders, influencers, and EV enthusiasts showcase Crown Benling in action across Pakistan.
+          Watch real riders, influencers, and EV enthusiasts showcase Crown Electric in action across Pakistan.
         </Typography>
       </div>
 

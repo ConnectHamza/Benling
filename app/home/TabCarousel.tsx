@@ -16,8 +16,8 @@ const TabbedCarousel = () => {
 
   const subText =
     activeTab === "performance"
-      ? "Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs."
-      : "Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.";
+      ? "Explore Crown Electric’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs."
+      : "Explore Crown Electric’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.";
 
   return (
     <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">
@@ -41,18 +41,18 @@ const TabbedCarousel = () => {
           Performance Series
         </button>
         <button
-          onClick={() => setActiveTab("legacy")}
+          onClick={() => setActiveTab("graphene")}
           className={`px-6 py-2 md:text-lg text-sm font-bold rounded-md transition ${
-            activeTab === "legacy" ? "bg-[#FFF9EC] text-[#FF7700]" : "text-[#989898]"
+            activeTab === "graphene" ? "bg-[#FFF9EC] text-[#FF7700]" : "text-[#989898]"
           }`}
         >
-          Legacy Series
+          Graphene Series
         </button>      
       </div>
 
       {/* Carousel Content */}
       <div className="mt-0">
-        {activeTab === "legacy" ? (
+        {activeTab === "graphene" ? (
           <HomeCarousel  items={bikes} autoplay={true} />
         ) : (
           <PerformanceCarousel  items={performanceBikes} autoplay={true}/>

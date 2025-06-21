@@ -38,16 +38,17 @@ const PerformanceSeries = () => {
             <div className='relative'>
                 <StickyBar
                     title="About Performance Series"
-                    description="Crown Benling Performance Series features next-gen electric scooters coming with Lithium-LiFePO₄ batteries, built for high performance, faster charging, and longer life. Designed for riders who demand strength, speed, and reliability on every ride."
+                    description="Crown Electric Performance Series features next-gen electric scooters coming with Lithium-LiFePO₄ batteries, built for high performance, faster charging, and longer life. Designed for riders who demand strength, speed, and reliability on every ride."
                     gradient1="#185A72"
                     gradient2="#06202C"
                     textColor="text-white"
                     color="white"
                     showPrice={false}
+                    isLithium={true}
                 />
             </div>
             <div className='md:py-40 py-20'>
-                <PerformanceCarousel heading='Choose Your Perfect Ride' subText='Explore Crown Benling’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.'
+                <PerformanceCarousel heading='Choose Your Perfect Ride' subText='Explore Crown Electric scooter lineup, each model built with key features to suit your ride style and everyday needs.'
                  items={bikes} autoplay={true} />
             </div>
             <div>

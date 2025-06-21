@@ -13,7 +13,7 @@ const Blog = () => {
                         Blog, News, Insights & More
                     </Typography>
                     <Typography as="p" variant={"body-regular-jakarta"} className="text-left mt-4">
-                        Explore updates from Crown Benling from product launches and EV tips to company news and innovations in electric mobility.
+                        Explore updates from Crown Electric from product launches and EV tips to company news and innovations in electric mobility.
                     </Typography>
                 </div>
                 <div className="mt-10">

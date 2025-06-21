@@ -42,7 +42,7 @@ export default function RoshniColorShowcase() {
             <div className="w-lg">
             <h2 className="text-center text-4xl md:text-4xl mb-10 font-magistral">
                 Bold colors. Unmatched style.
-Crown Benling Champion.
+Crown Electric Champion.
             </h2>
             <div className="flex flex-wrap justify-center">
                 {bikes.map((bike, index) => (

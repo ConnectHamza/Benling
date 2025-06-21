@@ -121,7 +121,7 @@ const Header = () => {
                                     : "border-transparent text-gray-500"
                                 }`}
                         >
-                            Legacy Series
+                            Graphene Series
                         </button>
                         <button
                             onClick={() => setActiveSeries("performance")}

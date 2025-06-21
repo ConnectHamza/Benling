@@ -47,6 +47,7 @@ const RaftaarClient = () => {
         gradient2="#371700"
         textColor="text-white"
         price='299,000'
+        isLithium={true}
       />
       <Featured
         stats={statsData}

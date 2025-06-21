@@ -5,7 +5,7 @@ import Faqs from '@/components/Faqs/Faqs';
 import DealersSection from "./DealersSection";
 import SaleSection from "./SaleSection"
 import { faqsData } from './data';
-import MotorcycleCarousel from '@/components/LoopCarousel/home-carousel';
+import TabbedCarousel from '../home/TabCarousel'
 import Logo_Ezze from "../../public/assets/Home/Carousel/Ezee_Logo.svg"
 import Logo_Flash from "../../public/assets/Home/Carousel/Flash_Logo.svg"
 import Logo_Knight_Rider from "../../public/assets/Home/Carousel/Knightrider_Logo.svg"
@@ -130,7 +130,8 @@ export default function DealerClient() {
         <SaleSection />
       </div>
       <div className="md:pb-40 pb-20">
-        <MotorcycleCarousel items={bikes} autoplay={true} />
+        {/* <MotorcycleCarousel items={bikes} autoplay={true} /> */}
+        <TabbedCarousel />
       </div>
       <Faqs data={faqsData} />
     </>

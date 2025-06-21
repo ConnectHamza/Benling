@@ -59,7 +59,7 @@ const FeatureSection = () => {
         </div>
         <div data-aos="fade-right" data-aos-delay="100">
           <Typography as="p" variant='subtext-regular-jakarta' className="mb-6 text-white">
-            Experience the convenience and tech that power every Crown Benling scooter, engineered for performance, safety, and sustainability.
+            Experience the convenience and tech that power every Crown Electric scooter, engineered for performance, safety, and sustainability.
           </Typography>
         </div>
         <div

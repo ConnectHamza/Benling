@@ -80,7 +80,7 @@ export default function Home() {
                 </div>
                 <div data-aos="fade-right" data-aos-delay="1000">
                 <Typography variant="subtext-regular-jakarta">
-                  Crown Benling is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
+                  Crown Electric is driving the EV revolution with a fast-growing network, making electric mobility accessible, reliable, and future-ready across Pakistan.
                 </Typography>
                 </div>
               </div>

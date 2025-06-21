@@ -56,7 +56,7 @@ export default function ShopSlider() {
                     <div className="mb-10">
                         <div className="font-magistral max-w-full md:max-w-[50%]">
                             <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight font-magistral">
-                                Find Your Nearest Crown Benling Dealer
+                                Find Your Nearest Crown Electric Dealer
                             </h2>
                             <p className="mt-2 text-sm sm:text-base text-black-200 font-jakarta">
                                 Find your Crown partners - a trusted dealer network offering electric mobility near you.
@@ -66,7 +66,7 @@ export default function ShopSlider() {
                                     href="#"
                                     className="inline-flex items-center gap-1 text-black hover:underline transition"
                                 >
-                                    Learn More About Crown Benling Dealer
+                                    Learn More About Crown Electric Dealer
                                     <ArrowUpRight size={14} />
                                 </a>
                             </div>

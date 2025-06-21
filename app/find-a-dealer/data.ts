@@ -78,20 +78,20 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What services do Benling dealers offer?",
-        answer: "You can use our city dropdown menu to search for authorized Benling dealers in your area. The map and contact details will help you connect easily."
+        question: "What services do Crown Electric Mobility dealers offer?",
+        answer: "You can use our city dropdown menu to search for authorized Crown Electric Mobility dealers in your area. The map and contact details will help you connect easily."
     },
     {
         question: "Can I book a test ride through a dealer?",
         answer: "Yes, many of our dealers offer test ride bookings. Please contact your nearest dealer directly or visit their showroom."
     },
     {
-        question: "Do Benling dealers offer financing or installment plans?",
-        answer: "Benling dealers do not directly provide financing options. However, you can independently apply for installment plans through our trusted partners like Alfa Mall (online), Meezan Bank, and MCB (offline). Once approved, you can complete your purchase through the nearest authorized dealer."
+        question: "Do Crown Electric Mobility dealers offer financing or installment plans?",
+        answer: "Crown Electric Mobility dealers do not directly provide financing options. However, you can independently apply for installment plans through our trusted partners like Alfa Mall (online), Meezan Bank, and MCB (offline). Once approved, you can complete your purchase through the nearest authorized dealer."
     },
     {
-        question: "Are all listed dealers authorized by Crown Benling Pakistan?",
-        answer: "Yes, every dealer listed on our website is officially authorized and trained by Benling Pakistan to ensure quality service and genuine products."
+        question: "Are all listed dealers authorized by Crown Electric Pakistan?",
+        answer: "Yes, every dealer listed on our website is officially authorized and trained by Crown Electric Pakistan to ensure quality service and genuine products."
     },
 ];
 

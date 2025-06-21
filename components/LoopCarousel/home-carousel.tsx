@@ -100,23 +100,23 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
                         <Image
                           src={item.logo}
                           alt={`${item.name} Logo`}
-                          width={150}
+                          width={300}
                           height={20}
-                          className="mx-auto h-10"
+                          className="mx-auto md:h-[70px] h-[50px] md:w-[350px] w-[200px] object-contain"
                         />
                       </div>
 
                       {/* Motorcycle Details */}
                       <div className="mt-4 text-center" data-aos="fade-up">
-                        <div className="flex flex-wrap justify-center md:gap-x-8 gap-x-4 text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
-                          <Typography variant="body-regular-magistral">
-                            <Typography as="span" variant="body-regular-magistral">{item.range}</Typography>
+                        <div className="flex flex-wrap justify-center text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
+                          <Typography variant="body-regular-magistral" className='border-r-2 border-gray-100 md:px-4 px-2'>
+                            <Typography as="span" variant="body-regular-magistral"><b className='md:text-xl text-lg'>Range</b><br></br>{item.range}</Typography>
                           </Typography>
-                          <Typography variant="body-regular-magistral">
-                            <Typography variant="body-regular-magistral" as="span">{item.maxSpeed}</Typography>
+                          <Typography variant="body-regular-magistral" className='border-r-2 border-gray-100 md:px-4 px-2'>
+                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg'>Top Speed</b><br></br>{item.maxSpeed}</Typography>
                           </Typography>
-                          <Typography variant="body-regular-magistral">
-                            <Typography variant="body-regular-magistral" as="span">{item.motorPower}</Typography>
+                          <Typography variant="body-regular-magistral" className='md:px-4 px-2'>
+                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg'>Motor Power</b><br></br>{item.motorPower}</Typography>
                           </Typography>
                         </div>
                       </div>

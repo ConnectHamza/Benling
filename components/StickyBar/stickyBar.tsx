@@ -20,6 +20,7 @@ interface StickyBarProps {
   isFixed?: boolean; 
   price?: string;
   showPrice?: boolean;
+  isLithium?: boolean;
 }
 
 const StickyBar: React.FC<StickyBarProps> = ({
@@ -34,7 +35,9 @@ const StickyBar: React.FC<StickyBarProps> = ({
   color,
   showButton = true,
   showPrice = true,
-  isFixed = true 
+  isFixed = true,
+  isLithium = false,
+
 }) => {
   const container = useRef(null);
 
@@ -46,14 +49,19 @@ const StickyBar: React.FC<StickyBarProps> = ({
     }}
  >      
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
+          <div className="flex gap-4 items-center">
           <h2 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h2>
+          {isLithium && (
+          <h2 className="font-semibold font-magistral md:text-[20px] text-[14px] text-[#47D1EB] border-[#47D1EB] border-2 rounded-lg px-2 py-1 md:flex hidden">Lithium-LiFePO₄</h2>
+          )}
+          </div>
                     <div className="flex justify-between items-center gap-10">
                       {showPrice && (
             <div>
               <span className="md:text-sm text-xs font-jakarta">Priced at</span>
               <h4 className="md:text-2xl text-base font-semibold font-jakarta">PKR {price}</h4>
             </div>)}
-          {showButton && ( // Conditionally render the AppButton
+          {showButton && (
             <div data-aos="fade-left" className="md:block hidden">
               <AppButton
                 size="medium"
@@ -72,7 +80,12 @@ const StickyBar: React.FC<StickyBarProps> = ({
             <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-[#e8e8e8]" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <div>
+          <div className="flex gap-4 items-center">
           <h2 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h2>
+          {isLithium && (
+          <h2 className="font-semibold font-magistral md:text-[20px] text-[14px] text-[#47D1EB] border-[#47D1EB] border-2 rounded-lg px-2 py-1 md:flex hidden">Lithium-LiFePO₄</h2>
+          )}
+          </div>
           </div>
           <div className="flex justify-between items-center gap-10">
             {showPrice && (

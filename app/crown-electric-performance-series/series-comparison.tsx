@@ -14,7 +14,7 @@ const SeriesComparison = () => {
                   </div>
                   <div data-aos="zoom-in">
                   <Typography variant='subtext-regular-jakarta' className="mb-6 text-black">
-                  Compare top models from the Crown Benling Performance Series side by side. Explore Price, Battery info, range, speed, and motor coming with Lithium-LiFePO₄ technology.
+                  Compare top models from the Crown Electric Performance Series side by side. Explore Price, Battery info, range, speed, and motor coming with Lithium-LiFePO₄ technology.
                   </Typography>
                   </div>
                   <div className='grid grid-cols-2 md:grid-cols-5 gap-6 mt-10'>

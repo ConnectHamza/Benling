@@ -101,8 +101,8 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the maximum speed of the Crown Benling Flash?",
-        answer: "The Crown Benling Flash can reach a top speed of 65–70 km/h, making it one of the fastest in its category—ideal for swift and smooth commutes."
+        question: "What is the maximum speed of the Crown Electric Flash?",
+        answer: "The Crown Electric Flash can reach a top speed of 65–70 km/h, making it one of the fastest in its category—ideal for swift and smooth commutes."
     },
     {
         question: "What is the riding range of the Flash on a full charge?",
@@ -113,11 +113,11 @@ export const faqsData = [
         answer: "The 72V 47Ah Graphene battery takes approximately 9 to 11 hours to fully charge using the provided 72V 5A charger."
     },
     {
-        question: "What colors are available for the Crown Benling Flash?",
-        answer: "The Crown Benling Flash is available in five stylish color options: Arctic Blaze, Neon Volt, Midnight Storm, Crimson Charge, and Plasma Purple."
+        question: "What colors are available for the Crown Electric Flash?",
+        answer: "The Crown Electric Flash is available in five stylish color options: Arctic Blaze, Neon Volt, Midnight Storm, Crimson Charge, and Plasma Purple."
     },
     {
-        question: "Does the Crown Benling Flash have multiple riding modes?",
+        question: "Does the Crown Electric Flash have multiple riding modes?",
         answer: "Yes, it comes with 4 speed modes, allowing riders to choose between economy, standard, and performance settings depending on their preference and route."
     },
     {
@@ -125,7 +125,7 @@ export const faqsData = [
         answer: "The Flash includes a Combined Braking System (CBS), side stand sensor, anti-theft alarm, and complimentary safeguard guards provided by the company, offering enhanced rider protection and peace of mind."
     },
     {
-        question: "Does the Crown Benling Flash come with modern tech features?",
+        question: "Does the Crown Electric Flash come with modern tech features?",
         answer: "Absolutely. It includes an NFC Unlock System, USB port for mobile charging, and a digital dashboard to keep your ride smart and connected."
     },
     {

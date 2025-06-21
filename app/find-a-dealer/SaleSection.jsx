@@ -14,7 +14,7 @@ export default function SalesAfterSalesSection() {
                         Sales & After-Sales Service
                     </h2>
                     <p className="text-gray-700 leading-relaxed font-jakarta text-base md:mx-0 mx-auto">
-                        We’re With You Every Step of the Ride At Crown Benling, our commitment doesn’t end after purchase—it begins there.
+                        We’re With You Every Step of the Ride At Crown Electric, our commitment doesn’t end after purchase—it begins there.
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@ export default function SalesAfterSalesSection() {
 
                 {/* Bottom Text */}
                 <p className="text-xl font-bold text-gray-900 leading-relaxed font-jakarta w-full md:text-left text-center md:mx-0 mx-auto">
-                    Crown Benling is committed to making your electric journey smooth, reliable,
+                    Crown Electric is committed to making your electric journey smooth, reliable,
                     and empowering from day one and every day after.
                 </p>
             </div>
