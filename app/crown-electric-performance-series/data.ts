@@ -15,6 +15,79 @@ import Cherry from '../../public/assets/PerformanceSeries/comparison/Cherry.webp
 import Champion from '../../public/assets/PerformanceSeries/comparison/Champion.webp'
 import Raftaar from '../../public/assets/PerformanceSeries/comparison/Raftaar.webp'
 import Victory from '../../public/assets/PerformanceSeries/comparison/Victory.webp'
+// Slides
+import ChampionWeb from "../../public/assets/Home/Header/web/champion.webp"
+import VictoryWeb from "../../public/assets/Home/Header/web/velocity.webp"
+import RaftaarWeb from "../../public/assets/Home/Header/web/raftaar.webp"
+import MarkhorWeb from "../../public/assets/Home/Header/web/markhor.webp"
+import CherryWeb from "../../public/assets/Home/Header/web/cherry.webp"
+// Slides Mob
+import ChampionMob from "../../public/assets/Home/Header/mobile/champion.webp"
+import VictoryMob from "../../public/assets/Home/Header/mobile/velocity.webp"
+import RaftaarMob from "../../public/assets/Home/Header/mobile/raftaar.webp"
+import CherryMob from "../../public/assets/Home/Header/mobile/cherry.webp"
+import MarkhorMob from "../../public/assets/Home/Header/mobile/markhor.webp"
+
+
+export const Slides = [
+      {
+    title: 'Crown Markhor Power. Performance. Precision.',
+    subtitle: 'Crown Markhor is a powerful, smart, and secure electric bike built for high performance, heavy-duty use, and bold, sustainable mobility.',
+    buttonText: 'Book Now',
+    imageSrc: MarkhorWeb,
+    mobileImageSrc: MarkhorMob,
+    href: "/crown-electric-markhor",
+    color: "black-30",
+    price: "380,000"
+
+  },
+    {
+    title: 'Crown Electric Cherry - The Vintage Way',
+    subtitle: 'Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters . ',
+    buttonText: 'Book Now',
+    imageSrc: CherryWeb,
+    mobileImageSrc: CherryMob,
+    href: "/crown-electric-cherry",
+    color: "black",
+    price: "380,000"
+
+  },
+  {
+    title: 'Crown Electric Champion - The Range Star',
+    subtitle: 'Built with immense range of more than 220KM in single charge, Crown Champion is the ultimate choice with speed and durability with 72V60Ah Lithium Iron Phosphate Battery.',
+    buttonText: 'Book Now',
+    imageSrc: ChampionWeb,
+    mobileImageSrc: ChampionMob,
+    href: "/crown-electric-champion",
+    color: "white",
+    price: "325,000"
+
+  },
+    {
+    title: 'Crown Electric Raftaar: Big Power, Bigger Thrill',
+    subtitle: 'Massive torque for instant acceleration. Powered by a high-capacity 72V40Ah Lithium Iron Phosphate battery for lasting performance.',
+    buttonText: 'Book Now',
+    imageSrc: RaftaarWeb,
+    mobileImageSrc: RaftaarMob,
+    href: "/crown-electric-raftaar",
+    color: "white",
+    price: "299,000"
+
+  },
+    {
+    title: 'Crown Electric Victory - Unleash Urban Power',
+    subtitle: 'The Crown Victory offers strong performance, modern design, and affordability. Built with a 1000W motor and 72V 30Ah Lithium Iron Phosphate battery , it delivers up to 120 km range and 55 km/h speed —ideal for city rides. Stylish, lightweight, and built to impress.',
+    buttonText: 'Book Now',
+    imageSrc: VictoryWeb,
+    mobileImageSrc: VictoryMob,
+    href: "/crown-electric-victory",
+    color: "black",
+    price: "265,000"
+
+  },
+  
+]
+
 
 export const performanceData = [
   {
@@ -78,7 +151,7 @@ export const performanceData = [
       range: "100 km",
       maxSpeed: "100 km/h",
       motorPower: "3000W",
-      brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Markhor_Brochure.pdf',
       exploreLink: "/",
       logo: MarkhorLogo.src
     },
@@ -88,7 +161,7 @@ export const performanceData = [
       range: "130 km ",
       maxSpeed: "80 km/h",
       motorPower: "3000W ",
-      brochureLink: "/brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
+      brochureLink: "/brouchers/Crown_Benling_Cherry_Rider_Brochure.pdf",
       exploreLink: "/crown-electric-cherry",
       logo: CherryLogo.src
 
@@ -99,7 +172,7 @@ export const performanceData = [
       range: "220 km",
       maxSpeed: "70 km/h",
       motorPower: "1200W",
-      brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Champion_Brochure.pdf',
       exploreLink: "/crown-electric-champion",
       logo: ChampionLogo.src
     },
@@ -109,7 +182,7 @@ export const performanceData = [
       range: "160 km ",
       maxSpeed: "90 km/h",
       motorPower: "2000W",
-      brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Raftaar_Brochure.pdf',
       exploreLink: "/crown-electric-raftaar",
       logo: RaftaarLogo.src
     }, {
@@ -118,7 +191,7 @@ export const performanceData = [
       range: "120 km ",
       maxSpeed: "55 km/h",
       motorPower: "1000W",
-      brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
+      brochureLink: '/brouchers/Crown_Benling_Victory_Brochure.pdf',
       exploreLink: "/crown-electric-victory",
       logo: VictoryLogo.src
     },

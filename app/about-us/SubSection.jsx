@@ -12,7 +12,7 @@ export default function Subsection() {
 
                     {/* Left Image Container */}
                     <div className="flex justify-center lg:justify-start w-full lg:w-1/2 min-w-0">
-                        <div className="w-full max-w-[600px]">
+                        <div className="w-full max-w-[600px]" data-aos="fade-right">
                             <Image
                                 src={Logo}
                                 alt="Crown Group Logo"
@@ -25,7 +25,7 @@ export default function Subsection() {
                     </div>
 
                     {/* Right Text Content */}
-                    <div className="flex flex-col justify-start text-left w-full lg:w-1/2 min-w-0">
+                    <div className="flex flex-col justify-start text-left w-full lg:w-1/2 min-w-0" data-aos="fade-left">
                         <h2 className="text-2xl md:text-3xl font-semibold font-magistral mb-4">
                             About Crown Group
                         </h2>

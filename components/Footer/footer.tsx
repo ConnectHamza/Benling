@@ -10,22 +10,22 @@ import { div } from 'framer-motion/client';
 import Aos from 'aos';
 
 const performanceItems = [
-    { label: 'Champion', href: 'crown-electric-champion' },
+    { label: 'Markhor', href: 'crown-electric-markhor' } ,
     { label: 'Cherry', href: 'crown-electric-cherry' },
-    // { label: 'Markhor', href: 'crown-electric-markhor' },
+    { label: 'Champion', href: 'crown-electric-champion' },
     { label: 'Raftaar', href: 'crown-electric-raftaar' },
     { label: 'Victory', href: 'crown-electric-victory' },
 ];
 
 const grapheneItems = [
-    { label: 'Ezee', href: 'crown-electric-ezee' },
-    { label: 'Fairy', href: 'crown-electric-fairy' },
     { label: 'Flash', href: 'crown-electric-flash' },
-    { label: 'Firefly', href: 'crown-electric-firefly' },
     { label: 'Knight Rider', href: 'crown-electric-knight-rider' },
-    { label: 'Mini Scooty', href: 'crown-electric-mini-scooty' },
-    { label: 'Roshni', href: 'crown-electric-roshni' },
     { label: 'Roshni X', href: 'crown-electric-roshni-x' },
+    { label: 'Ezee', href: 'crown-electric-ezee' },
+    { label: 'Roshni', href: 'crown-electric-roshni' },
+    { label: 'Firefly', href: 'crown-electric-firefly' },
+    { label: 'Fairy', href: 'crown-electric-fairy' },
+    { label: 'Mini Scooty', href: 'crown-electric-mini-scooty' },
     { label: 'Spark', href: 'crown-electric-spark' },
 ];
 
@@ -53,7 +53,7 @@ const Footer = () => {
     // Get items for the currently selected tab and sort A-Z
     const productLinks = (activeTab === 'performance' ? performanceItems : grapheneItems)
         .slice()
-        .sort((a, b) => a.label.localeCompare(b.label));
+        // .sort((a, b) => a.label.localeCompare(b.label));
 
     return (
         <div className={`${isHidden ? 'flex' : 'hidden'} relative justify-center bg-black-70 text-white md:pb-0 pb-5 md:py-40 py-20`}>

@@ -41,7 +41,7 @@ const MiniClient = () => {
         gradient1="#1DADB5"
         gradient2="#05080C"
         textColor="text-white"
-        price="120,000"
+        price="99,999"
       />
       <Featured stats={statsData} imageAlt={"Mini Scooty Feature Image"} mobileImageSrc={MiniFeatuedIMG} imageSrc={MiniFeatuedIMG} textColor="text-black"
         cardBgColor="bg-white/40" titleVariant='h5-bold-jakarta' subtitleVariant='body-regular-jakarta' />

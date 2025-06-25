@@ -12,7 +12,7 @@ const Banner = () => {
                 buttonText="Explore More"
                 imageSrc={MiniWeb.src}
                 mobileImageSrc={MiniBannerMobile.src}
-                price='120,000'
+                price='99,999'
                 href='/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf'
             />
         </div>

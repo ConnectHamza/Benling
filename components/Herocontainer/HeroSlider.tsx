@@ -6,6 +6,39 @@ import Typography from '../GradientText/Typography';
 import { ArrowLeft, ArrowRight, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import DotLoader from '../Loader/Loader';
+
+
+const SlideImage = ({
+  src,
+  alt,
+  priority = false,
+  isMobile = false,
+  onLoad,
+  hidden = false,
+}: {
+  src: string;
+  alt: string;
+  priority?: boolean;
+  isMobile?: boolean;
+  onLoad?: () => void;
+  hidden?: boolean;
+}) => (
+  <div
+    className={`${isMobile ? 'block md:hidden' : 'hidden md:block'} w-full h-full ${hidden ? 'opacity-0 absolute' : ''}`}
+  >
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      className="object-cover object-center"
+      priority={priority}
+      onLoadingComplete={onLoad}
+      sizes={isMobile ? '100vw' : '(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw'}
+    />
+  </div>
+);
+
 
 type Slide = {
   title?: string;
@@ -124,64 +157,42 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       onTouchEnd={resumeAutoplay}
     >
       {/* Background Images */}
-      <div className="absolute inset-0 w-full h-full">
-        {/* Current slide image */}
-        <div className="hidden md:block w-full h-full">
-          <Image
-            src={currentSlideData.imageSrc}
-            alt={currentSlideData.imageAlt || 'Hero Image'}
-            fill
-            className="object-cover object-center"
-            priority={currentSlide === 0}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-          />
-        </div>
-        <div className="block md:hidden w-full h-full">
-          <Image
-            src={currentSlideData.mobileImageSrc || currentSlideData.imageSrc}
-            alt={currentSlideData.imageAlt || 'Hero Image'}
-            fill
-            className="object-cover object-center"
-            priority={currentSlide === 0}
-            sizes="100vw"
-          />
-        </div>
-        
-        {/* Next slide image (preloading) */}
-        {nextSlide !== null && (
-          <>
-            <div className="hidden md:block w-full h-full opacity-0 absolute">
-              <Image
-                src={slides[nextSlide].imageSrc}
-                alt={slides[nextSlide].imageAlt || 'Hero Image'}
-                fill
-                className="object-cover object-center"
-                onLoadingComplete={handleImageLoad}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-              />
-            </div>
-            <div className="block md:hidden w-full h-full opacity-0 absolute">
-              <Image
-                src={slides[nextSlide].mobileImageSrc || slides[nextSlide].imageSrc}
-                alt={slides[nextSlide].imageAlt || 'Hero Image'}
-                fill
-                className="object-cover object-center"
-                onLoadingComplete={handleImageLoad}
-                sizes="100vw"
-              />
-            </div>
-          </>
-        )}
-        
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+     <div className="absolute inset-0 w-full h-full">
+  <SlideImage
+    src={currentSlideData.imageSrc}
+    alt={currentSlideData.imageAlt || 'Hero Image'}
+    priority={currentSlide === 0}
+  />
+  <SlideImage
+    src={currentSlideData.mobileImageSrc || currentSlideData.imageSrc}
+    alt={currentSlideData.imageAlt || 'Hero Image'}
+    priority={currentSlide === 0}
+    isMobile
+  />
+  {nextSlide !== null && (
+    <>
+      <SlideImage
+        src={slides[nextSlide].imageSrc}
+        alt={slides[nextSlide].imageAlt || 'Hero Image'}
+        hidden
+        onLoad={handleImageLoad}
+      />
+      <SlideImage
+        src={slides[nextSlide].mobileImageSrc || slides[nextSlide].imageSrc}
+        alt={slides[nextSlide].imageAlt || 'Hero Image'}
+        hidden
+        onLoad={handleImageLoad}
+        isMobile
+      />
+    </>
+  )}
+  <div className="absolute inset-0 bg-black/40" />
+</div>
+
 
       {/* Loading indicator */}
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center z-30">
-          <Loader2 className="animate-spin text-white h-12 w-12" />
-        </div>
-      )}
+{isLoading && <DotLoader />}
+
 
       {/* Slide Content */}
        <div className="relative z-10 w-full">

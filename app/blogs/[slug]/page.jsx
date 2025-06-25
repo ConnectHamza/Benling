@@ -27,7 +27,7 @@ export default function BlogPostPage({ params }) {
 
                 {/* Title + Subtitle */}
                 <div className="text-center mt-4 p-2 bg-white">
-                    <Typography variant={"h2-medium-magistral"}>
+                    <Typography as="h1" variant={"h2-medium-magistral"}>
                         {post.title}
                     </Typography>
                 </div>

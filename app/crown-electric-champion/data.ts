@@ -22,8 +22,8 @@ export const slides = [
 
 
 export const featureHeader = {
-    featureTitle: 'Designed for Your Comfort and Control',
-    featureText: `Experience a blend of thoughtful design and advanced technology. RoshniX's features are tailored to enhance your safety, convenience, and riding pleasure.`,
+    featureTitle: 'Commanding, Dynamic, and Built to Perform',
+    featureText: `The Crown Benling Champion delivers bold performance with striking design, powerful engineering, and unmatched reliability—perfect for riders who demand power, style, and endurance.`,
       bgColor: 'bg-gradient-to-t from-[#122737] via-[#081118] to-[#081118]',
     textColor: 'text-white',
   };

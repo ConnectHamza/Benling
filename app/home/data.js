@@ -11,6 +11,7 @@ import Champion from "../../public/assets/Home/Header/mobile/champion.webp"
 import Victory from "../../public/assets/Home/Header/mobile/velocity.webp"
 import Raftaar from "../../public/assets/Home/Header/mobile/raftaar.webp"
 import Cherry from "../../public/assets/Home/Header/mobile/cherry.webp"
+import Markhor from "../../public/assets/Home/Header/mobile/markhor.webp"
 //website
 import EzeeWeb from "../../public/assets/Home/Header/web/ezee.webp";
 import FireflyWeb from "../../public/assets/Home/Header/web/firefly.webp"
@@ -24,6 +25,7 @@ import FairyWeb from "../../public/assets/Home/Header/web/fairy.webp"
 import ChampionWeb from "../../public/assets/Home/Header/web/champion.webp"
 import VictoryWeb from "../../public/assets/Home/Header/web/velocity.webp"
 import RaftaarWeb from "../../public/assets/Home/Header/web/raftaar.webp"
+import MarkhorWeb from "../../public/assets/Home/Header/web/markhor.webp"
 import CherryWeb from "../../public/assets/Home/Header/web/cherry.webp"
 import PerformanceBgWeb from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes.webp'
 //Carousel
@@ -60,189 +62,40 @@ import VictoryLogo from '../../public/assets/PerformanceSeries/logos/VictoryLogo
 
 
 
-export const faqsData = [
-  {
-    question: "How long does it take to fully charge the battery?",
-    answer: "Charging typically takes 2 to 6 hours, based on battery capacity and charger type."
-  },
-  {
-    question: "Are your scooters water-resistant?",
-    answer: "Yes, all Crown Electric scooters are designed with splash and water resistance for safe riding in light rain and wet conditions."
-  },
-  {
-    question: "What warranty do you offer??",
-    answer: `
-        <div>
-            <h3><strong>Graphene Series:</strong></h3>
-            <ul>
-                <li>36 months / 36,000 km coverage for Controller & Motor</li>
-                <li>18 months / 20,000 km coverage for Graphene Battery</li>
-                <li>12 months / 12,000 km coverage for Body Parts</li>
-            </ul></br>
-            <h3><b>Performance Series:</b></h3>
-            <ul>
-                <li>4 years / 48,000 km coverage for Controller & Motor</li>
-                <li>4 years / 48,000 km coverage for Lithium-LiFePO₄ Battery</li>
-                <li>12 months / 12,000 km coverage for Body Parts</li>
-            </ul>
-            <p>Enjoy your journey with the confidence of extended protection.</p>
-        </div>
-        `
-  },
-  {
-    question: "Do I need a license to ride?",
-    answer: "Yes, a valid driving license is required to operate our high-speed models on public roads."
-  },
-  {
-    question: "Where can I buy or test ride a Crown Electric scooter??",
-    answer: "Visit any of our authorized dealerships across Pakistan or use our Store Locator to find the nearest one."
-  },
-];
-
-export const bikes = [
-  {
-    name: "Bike 1",
-    image: Image_Flash.src,
-    range: "150 km",
-    maxSpeed: "70 km/h",
-    motorPower: "1500",
-    brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
-    exploreLink: "/crown-electric-flash",
-    logo: Logo_Flash.src
-  },
-  {
-    name: "Bike 2",
-    image: Image_KnightRider.src,
-    range: "100 km",
-    maxSpeed: "60 km/h",
-    motorPower: "1500",
-    brochureLink: "brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-    exploreLink: "/crown-electric-knight-rider",
-    logo: Logo_Knight_Rider.src
-
-  },
-  {
-    name: "Bike 3",
-    image: Image_Roshnix.src,
-    range: "110 km",
-    maxSpeed: "60 km/h",
-    motorPower: "1500",
-    brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-    exploreLink: "/crown-electric-roshni-x",
-    logo: Logo_Roshnix.src
-  },
-  {
-    name: "Bike 3",
-    image: Image_Ezee.src,
-    range: "55 km",
-    maxSpeed: "40 km/h",
-    motorPower: "650",
-    brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
-    exploreLink: "/crown-electric-ezee",
-    logo: Logo_Ezze.src
-  }, {
-    name: "Bike 3",
-    image: Image_Roshni.src,
-    range: "120 km",
-    maxSpeed: "60 km/h",
-    motorPower: "1200",
-    brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
-    exploreLink: "/crown-electric-roshni",
-    logo: Logo_Roshni.src
-  }, {
-    name: "Bike 3",
-    image: Image_Firefly.src,
-    range: "100 km",
-    maxSpeed: "60 km/h",
-    motorPower: "1200",
-    brochureLink: '/brouchers/Crown_Benling_Firefly_Brochure.pdf',
-    exploreLink: "/crown-electric-firefly",
-    logo: Logo_Firefly.src
-  }, {
-    name: "Bike 3",
-    image: Image_Spark.src,
-    range: "40 km",
-    maxSpeed: "40 km/h",
-    motorPower: "600",
-    brochureLink: '/brouchers/Crown_Benling_Spark_Brochure.pdf',
-    exploreLink: "/crown-electric-spark",
-    logo: Logo_Spark.src
-  }, {
-    name: "Bike 3",
-    image: Image_Miniscooter.src,
-    range: "35 km",
-    maxSpeed: "35 km/h",
-    motorPower: "450",
-    brochureLink: "/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
-    exploreLink: "/crown-electric-mini-scooty",
-    logo: Logo_Mini_Scooty.src
-  }, {
-    name: "Bike 3",
-    image: Image_Fairy.src,
-    range: "80 km",
-    maxSpeed: "55 km/h",
-    motorPower: "1000",
-    brochureLink: "/brouchers/Crown_Benling_Fairy_Brochure.pdf",
-    exploreLink: "/crown-electric-fairy",
-    logo: Logo_Fairy.src
-  }
-];
-
-export const performanceBikes = [
-  {
-    name: "Bike 1",
-    image: MarkhorIMG.src,
-    range: "100 km",
-    maxSpeed: "100 km/h",
-    motorPower: "3000W",
-    brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
-    exploreLink: "/",
-    logo: MarkhorLogo.src
-  },
-  {
-    name: "Bike 2",
-    image: CherryIMG.src,
-    range: "130 km ",
-    maxSpeed: "90 km/h",
-    motorPower: "3000W",
-    brochureLink: "/brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
-    exploreLink: "/crown-electric-cherry",
-    logo: CherryLogo.src
-  },
-  {
-    name: "Bike 3",
-    image: ChampionIMG.src,
-    range: "220 km",
-    maxSpeed: "90 km/h",
-    motorPower: "1200W",
-    brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
-    exploreLink: "/crown-electric-champion",
-    logo: ChampionLogo.src
-  },
-  {
-    name: "Bike 4",
-    image: RaftaarIMG.src,
-    range: "160 km",
-    maxSpeed: "95 km/h",
-    motorPower: "2000W",
-    brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
-    exploreLink: "/crown-electric-raftaar",
-    logo: RaftaarLogo.src
-  }, {
-    name: "Bike 5",
-    image: VictoryIMG.src,
-    range: "120 km",
-    maxSpeed: "55 km/h",
-    motorPower: "1000W",
-    brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
-    exploreLink: "/crown-electric-victory",
-    logo: VictoryLogo.src
-  },
-];
-
-
-
 export const Slides = [
+      {
+    title: 'Crown Markhor Power. Performance. Precision.',
+    subtitle: 'Crown Markhor is a powerful, smart, and secure electric bike built for high performance, heavy-duty use, and bold, sustainable mobility.',
+    buttonText: 'Book Now',
+    imageSrc: MarkhorWeb,
+    mobileImageSrc: Markhor,
+    href: "/crown-electric-markhor",
+    color: "black-30",
+    price: "380,000"
+
+  },
+    {
+    title: 'Crown Electric Cherry - The Vintage Way',
+    subtitle: 'Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters . ',
+    buttonText: 'Book Now',
+    imageSrc: CherryWeb,
+    mobileImageSrc: Cherry,
+    href: "/crown-electric-cherry",
+    color: "black",
+    price: "380,000"
+
+  },
+  {
+    title: 'Crown Electric Champion - The Range Star',
+    subtitle: 'Built with immense range of more than 220KM in single charge, Crown Champion is the ultimate choice with speed and durability with 72V60Ah Lithium Iron Phosphate Battery.',
+    buttonText: 'Book Now',
+    imageSrc: ChampionWeb,
+    mobileImageSrc: Champion,
+    href: "/crown-electric-champion",
+    color: "white",
+    price: "325,000"
+
+  },
     {
     title: 'Crown Electric Raftaar: Big Power, Bigger Thrill',
     subtitle: 'Massive torque for instant acceleration. Powered by a high-capacity 72V40Ah Lithium Iron Phosphate battery for lasting performance.',
@@ -263,28 +116,6 @@ export const Slides = [
     href: "/crown-electric-victory",
     color: "black",
     price: "265,000"
-
-  },
-  {
-    title: 'Crown Electric Cherry - The Vintage Way',
-    subtitle: 'Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters . ',
-    buttonText: 'Book Now',
-    imageSrc: CherryWeb,
-    mobileImageSrc: Cherry,
-    href: "/crown-electric-cherry",
-    color: "black",
-    price: "380,000"
-
-  },
-  {
-    title: 'Crown Electric Champion - The Range Star',
-    subtitle: 'Built with immense range of more than 220KM in single charge, Crown Champion is the ultimate choice with speed and durability with 72V60Ah Lithium Iron Phosphate Battery.',
-    buttonText: 'Book Now',
-    imageSrc: ChampionWeb,
-    mobileImageSrc: Champion,
-    href: "/crown-electric-champion",
-    color: "white",
-    price: "325,000"
 
   },
   {
@@ -371,7 +202,7 @@ export const Slides = [
     mobileImageSrc: Mini,
     href: "/crown-electric-mini-scooty",
     color: "white",
-    price: "120,000"
+    price: "99,999"
   },
 
   {
@@ -396,6 +227,188 @@ export const Slides = [
   // },
 
 ]
+
+
+export const faqsData = [
+  {
+    question: "How long does it take to fully charge the battery?",
+    answer: "Charging typically takes 2 to 6 hours, based on battery capacity and charger type."
+  },
+  {
+    question: "Are your scooters water-resistant?",
+    answer: "Yes, all Crown Electric scooters are designed with splash and water resistance for safe riding in light rain and wet conditions."
+  },
+  {
+    question: "What warranty do you offer??",
+    answer: `
+        <div>
+            <h3><strong>Graphene Series:</strong></h3>
+            <ul>
+                <li>36 months / 36,000 km coverage for Controller & Motor</li>
+                <li>18 months / 20,000 km coverage for Graphene Battery</li>
+                <li>12 months / 12,000 km coverage for Body Parts</li>
+            </ul></br>
+            <h3><b>Performance Series:</b></h3>
+            <ul>
+                <li>4 years / 48,000 km coverage for Controller & Motor</li>
+                <li>4 years / 48,000 km coverage for Lithium-LiFePO₄ Battery</li>
+                <li>12 months / 12,000 km coverage for Body Parts</li>
+            </ul>
+            <p>Enjoy your journey with the confidence of extended protection.</p>
+        </div>
+        `
+  },
+  {
+    question: "Do I need a license to ride?",
+    answer: "Yes, a valid driving license is required to operate our high-speed models on public roads."
+  },
+  {
+    question: "Where can I buy or test ride a Crown Electric scooter??",
+    answer: "Visit any of our authorized dealerships across Pakistan or use our Store Locator to find the nearest one."
+  },
+];
+
+export const bikes = [
+  {
+    name: "Bike 1",
+    image: Image_Flash.src,
+    range: "150 km",
+    maxSpeed: "70 km/h",
+    motorPower: "1500W",
+    brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
+    exploreLink: "/crown-electric-flash",
+    logo: Logo_Flash.src
+  },
+  {
+    name: "Bike 2",
+    image: Image_KnightRider.src,
+    range: "100 km",
+    maxSpeed: "60 km/h",
+    motorPower: "1500W",
+    brochureLink: "brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
+    exploreLink: "/crown-electric-knight-rider",
+    logo: Logo_Knight_Rider.src
+
+  },
+  {
+    name: "Bike 3",
+    image: Image_Roshnix.src,
+    range: "110 km",
+    maxSpeed: "60 km/h",
+    motorPower: "1500W",
+    brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
+    exploreLink: "/crown-electric-roshni-x",
+    logo: Logo_Roshnix.src
+  },
+  {
+    name: "Bike 3",
+    image: Image_Ezee.src,
+    range: "55 km",
+    maxSpeed: "40 km/h",
+    motorPower: "650W",
+    brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
+    exploreLink: "/crown-electric-ezee",
+    logo: Logo_Ezze.src
+  }, {
+    name: "Bike 3",
+    image: Image_Roshni.src,
+    range: "120 km",
+    maxSpeed: "60 km/h",
+    motorPower: "1200W",
+    brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
+    exploreLink: "/crown-electric-roshni",
+    logo: Logo_Roshni.src
+  }, {
+    name: "Bike 3",
+    image: Image_Firefly.src,
+    range: "100 km",
+    maxSpeed: "60 km/h",
+    motorPower: "1200W",
+    brochureLink: '/brouchers/Crown_Benling_Firefly_Brochure.pdf',
+    exploreLink: "/crown-electric-firefly",
+    logo: Logo_Firefly.src
+  }, {
+    name: "Bike 3",
+    image: Image_Spark.src,
+    range: "40 km",
+    maxSpeed: "40 km/h",
+    motorPower: "600W",
+    brochureLink: '/brouchers/Crown_Benling_Spark_Brochure.pdf',
+    exploreLink: "/crown-electric-spark",
+    logo: Logo_Spark.src
+  }, {
+    name: "Bike 3",
+    image: Image_Miniscooter.src,
+    range: "35 km",
+    maxSpeed: "35 km/h",
+    motorPower: "450W",
+    brochureLink: "/brouchers/Crown_Benling_Mini_Scooty_Brochure.pdf",
+    exploreLink: "/crown-electric-mini-scooty",
+    logo: Logo_Mini_Scooty.src
+  }, {
+    name: "Bike 3",
+    image: Image_Fairy.src,
+    range: "80 km",
+    maxSpeed: "55 km/h",
+    motorPower: "1000W",
+    brochureLink: "/brouchers/Crown_Benling_Fairy_Brochure.pdf",
+    exploreLink: "/crown-electric-fairy",
+    logo: Logo_Fairy.src
+  }
+];
+
+export const performanceBikes = [
+  {
+    name: "Bike 1",
+    image: MarkhorIMG.src,
+    range: "100 km",
+    maxSpeed: "100 km/h",
+    motorPower: "3000W",
+    brochureLink: '/brouchers/Crown_Benling_Flash_Brochure.pdf',
+    exploreLink: "/crown-electric-markhor",
+    logo: MarkhorLogo.src
+  },
+  {
+    name: "Bike 2",
+    image: CherryIMG.src,
+    range: "130 km ",
+    maxSpeed: "90 km/h",
+    motorPower: "3000W",
+    brochureLink: "/brouchers/Crown_Benling_Knight_Rider_Brochure.pdf",
+    exploreLink: "/crown-electric-cherry",
+    logo: CherryLogo.src
+  },
+  {
+    name: "Bike 3",
+    image: ChampionIMG.src,
+    range: "220 km",
+    maxSpeed: "90 km/h",
+    motorPower: "1200W",
+    brochureLink: '/brouchers/Crown_Benling_Roshni_X_Brochure.pdf',
+    exploreLink: "/crown-electric-champion",
+    logo: ChampionLogo.src
+  },
+  {
+    name: "Bike 4",
+    image: RaftaarIMG.src,
+    range: "160 km",
+    maxSpeed: "95 km/h",
+    motorPower: "2000W",
+    brochureLink: '/brouchers/Crown_Benling_Ezee_Brochure.pdf',
+    exploreLink: "/crown-electric-raftaar",
+    logo: RaftaarLogo.src
+  }, {
+    name: "Bike 5",
+    image: VictoryIMG.src,
+    range: "120 km",
+    maxSpeed: "55 km/h",
+    motorPower: "1000W",
+    brochureLink: '/brouchers/Crown_Benling_Roshni_Brochure.pdf',
+    exploreLink: "/crown-electric-victory",
+    logo: VictoryLogo.src
+  },
+];
+
 
 
 export const cities =

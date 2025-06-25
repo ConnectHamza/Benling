@@ -58,7 +58,7 @@ const ChampionClient = () => {
         cardBgColor="bg-white/40"
         titleVariant='h5-bold-jakarta'
         subtitleVariant='body-regular-jakarta'
-        itemsPosition="left"
+        itemsPosition=""
       />
       {/* <Featured /> */}
       <ColorShowcase />
@@ -68,7 +68,7 @@ const ChampionClient = () => {
       <div className='bg-[#081118] py-20'>
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
       </div>
-      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} isLithium={true}/>
       <Faqs data={faqsData} />
     </>
   )

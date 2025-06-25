@@ -3,7 +3,7 @@ import PerformanceBanner from '../../public/assets/PerformanceSeries/Performance
 import PerformanceBannermob from '../../public/assets/PerformanceSeries/Banner-mob.webp'
 import StickyBar from '@/components/StickyBar/stickyBar'
 import PerformanceCarousel from './performance-carousel'
-import { bikes } from './data'
+import { bikes, Slides } from './data'
 import FeatureSection from './feature'
 import SeriesComparison from './series-comparison'
 import ShopSlider from '../home/ShopSectoin'
@@ -13,27 +13,13 @@ import { faqsData } from '../home/data'
 import Image from 'next/image'
 import BikesImg from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes.webp'
 import BikesBg from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes-bg.webp'
+import HeroSection from '@/components/Herocontainer/HeroSlider'
 
 const PerformanceSeries = () => {
     return (
         <div>
-            <head>
-                <title>Crown Electric - Performance Series</title>
-            </head>
-            {/* Desktop */}
-            <div className='relative h-[100vh] bg-cover bg-center bg-no-repeat hidden md:flex flex-col justify-start items-center py-20 z-40' style={{ backgroundImage: `url(${BikesBg.src})` }}>
-                <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center' data-aos="zoom-out">Performance Series</h1>
-                <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4' data-aos="zoom-in">
-                    <h3 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO<span className='text-sm'>4</span></h3>
-                </div>
-                    <Image className='absolute top-0' alt='Performance Series Bikes' src={BikesImg}/>
-            </div>
-            {/* Mobile */}
-            <div className='h-[65vh] bg-cover bg-center bg-no-repeat flex flex-col md:hidden justify-start items-center py-20 z-40' style={{ backgroundImage: `url(${PerformanceBannermob.src})` }}>
-                <h1 className='text-black font-magistral md:text-7xl text-xl font-bold text-center'>Performance Series</h1>
-                <div className='bg-black-30 flex items-end justify-center p-2 rounded-md mt-4'>
-                    <h2 className='text-white font-magistral md:text-3xl text-lg font-bold text-center'>Lithium-LiFePO<span className='text-xs'>4</span></h2>
-                </div>
+            <div className='md:mt-[-50px]'>
+                <HeroSection slides={Slides} />
             </div>
             <div className='relative'>
                 <StickyBar
@@ -49,7 +35,7 @@ const PerformanceSeries = () => {
             </div>
             <div className='md:py-40 py-20'>
                 <PerformanceCarousel heading='Choose Your Perfect Ride' subText='Explore Crown Electric scooter lineup, each model built with key features to suit your ride style and everyday needs.'
-                 items={bikes} autoplay={true} />
+                    items={bikes} autoplay={true} />
             </div>
             <div>
                 <FeatureSection />

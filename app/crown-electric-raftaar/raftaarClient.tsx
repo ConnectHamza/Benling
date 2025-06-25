@@ -65,7 +65,7 @@ const RaftaarClient = () => {
       <div className='bg-[#371700] py-20'>
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
       </div>
-      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} isLithium={true}/>
       <Faqs data={faqsData} />
     </div>
   )

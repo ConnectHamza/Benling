@@ -9,7 +9,7 @@ export default function MissionVisionCards() {
         {/* Add items-stretch to make children equal height */}
         <div className="flex flex-col md:flex-row gap-8 items-stretch">
           {/* Mission Card */}
-          <div className="relative flex-1 rounded-xl overflow-hidden border border-[#ececec] flex flex-col min-h-[320px]">
+          <div className="relative flex-1 rounded-xl overflow-hidden border border-[#ececec] flex flex-col min-h-[320px]" data-aos="fade-right">
             {/* Gaussian Blur Background */}
             <div
               className="absolute inset-0 pointer-events-none"
@@ -36,7 +36,7 @@ export default function MissionVisionCards() {
           </div>
 
           {/* Vision Card */}
-          <div className="relative flex-1 rounded-xl overflow-hidden border border-[#ececec] flex flex-col min-h-[320px]">
+          <div className="relative flex-1 rounded-xl overflow-hidden border border-[#ececec] flex flex-col min-h-[320px]" data-aos="fade-left">
             {/* Gaussian Blur Background */}
             <div
               className="absolute inset-0 pointer-events-none"

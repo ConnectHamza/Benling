@@ -1,9 +1,9 @@
-import Feature1IMG from '../../public/assets/RoshniX/Features/Feature1.png';
-import Feature2IMG from '../../public/assets/RoshniX/Features/Feature2.png';
-import Feature3IMG from '../../public/assets/RoshniX/Features/Feature3.png';
-import Feature4IMG from '../../public/assets/RoshniX/Features/Feature4.png';
-import Feature5IMG from '../../public/assets/RoshniX/Features/Feature5.png';
-import Feature6IMG from '../../public/assets/RoshniX/Features/Feature6.png';
+import Feature1IMG from '../../public/assets/RoshniX/Features/Feature1.webp';
+import Feature2IMG from '../../public/assets/RoshniX/Features/Feature2.webp';
+import Feature3IMG from '../../public/assets/RoshniX/Features/Feature3.webp';
+import Feature4IMG from '../../public/assets/RoshniX/Features/Feature4.webp';
+import Feature5IMG from '../../public/assets/RoshniX/Features/Feature5.webp';
+import Feature6IMG from '../../public/assets/RoshniX/Features/Feature6.webp';
 
 import Loop1 from "../../public/assets/Roshni/Loop/Grid-01.webp";
 import Loop2 from "../../public/assets/Roshni/Loop/Grid-02.webp";

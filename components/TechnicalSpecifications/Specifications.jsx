@@ -4,12 +4,13 @@ import Image from 'next/image';
 import Typography from '../GradientText/Typography';
 import WarrantyImage from '../../public/assets/Home/Thumbnail/Warranty-Specs-Image.svg'
 
-const Specifications = ({ data, data2, bottomImageTag = '' }) => {
+const Specifications = ({ data, data2, bottomImageTag = '', isLithium }) => {
 
   // const half = Math.ceil(data.length / 2);
   const firstColumn = data;
   const secondColumn = data2;
   bottomImageTag
+
 
   return (
     <div className='w-full flex justify-center md:py-40 px-5 py-20 '>
@@ -48,6 +49,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
           </div>
 
         </div>
+        {isLithium && (
               <div className='flex justify-center items-center mt-20'>
                   <div className='md:w-[60%] flex md:gap-10 flex-wrap md:flex-nowrap gap-4 items-center'>
                       <div className='flex justify-center w-[100%]'>
@@ -62,6 +64,7 @@ const Specifications = ({ data, data2, bottomImageTag = '' }) => {
                       </div>
                   </div>
               </div>
+              )}
 
         {bottomImageTag && (
           <div className="mt-10 w-full" data-aos="zoom-out">

@@ -1,6 +1,7 @@
 // home/data.js
 import BlogHeader from "../public/assets/Blogs/BlogHeader.png";
 import ElectricHeader from "../public/assets/Blogs/Crown-Electric-Mobility-Blog.webp"
+import ElectricVSPetrolIMG from "../public/assets/Blogs/Electric-Bike-VS-Petrol-Bike.webp"
 import GraphineBattery from "../components/Blog/BlogContent/GraphineBattery";
 import LaunchImage from "../public/assets/Blogs/Blogheader2.jpg"
 import IronPhospateIMG from "../public/assets/Blogs/Crown-Electric-Mobility-Lithium-Iron-Phosphate-(LiFePO₄).webp"
@@ -11,9 +12,24 @@ import MultanBlogImage from "../public/assets/Blogs/blog4.webp";
 import MultanLaunchBlog from "@/components/Blog/BlogContent/MultanLaunchBlog";
 import LiFePO4Blog from "@/components/Blog/BlogContent/ElectricMobility";
 import IronPhospate from "@/components/Blog/BlogContent/IronPhospate";
+import ElectricVSPetrol from "@/components/Blog/BlogContent/ElectricVSPetrol";
 
 
 export const blogs = [
+          {
+    slug: "electric-bikes-vs-petrol-bikes-whats-the-real-difference",
+    title: "Electric Bikes vs Petrol Bikes: What’s the Real Difference?",
+    subtitle: "These days, everyone’s talking about cleaner and smarter ways to get around—and bikes are no exception. For years, gasoline-powered sports bikes have dominated the roads, but now electric bikes are stepping in and grabbing attention.",
+    coverImage: ElectricVSPetrolIMG.src,
+    date: "June 23rd 2025",
+    readTime: 7,
+    headings: [
+      { id: "lifepo4", text: "What is LiFePO₄?" },
+      { id: "performance-series", text: "Crown Electric Performance Series" },
+      { id: "future-of-ev", text: "Future of EVs in Pakistan" },
+    ],
+    renderContent: () => <ElectricVSPetrol />
+  },
         {
     slug: "why-lithium-iron-phosphate-batteries-are-revolutionizing-pakistans-electric-mobility-sector",
     title: "Why Lithium Iron Phosphate (LiFePO₄) Batteries Are Revolutionizing Pakistan’s Electric Mobility Sector",

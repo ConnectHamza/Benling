@@ -16,8 +16,8 @@ const TabbedCarousel = () => {
 
   const subText =
     activeTab === "performance"
-      ? "Explore Crown Electric’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs."
-      : "Explore Crown Electric’s electric scooter lineup, each model built with key features to suit your ride style and everyday needs.";
+      ? "Explore Crown Electric Mobility’s scooter lineup, each model built with key features to suit your ride style and everyday needs."
+      : "Explore Crown Electric Mobility’s scooter lineup, each model built with key features to suit your ride style and everyday needs.";
 
   return (
     <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">

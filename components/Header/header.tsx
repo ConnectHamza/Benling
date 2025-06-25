@@ -8,69 +8,70 @@ import AppButton from '@/components/Button/AppButton';
 import Typography from '@/components/GradientText/Typography';
 import MobileModelsCarousel from "./mobileModelsCarousel";
 import { useRouter, usePathname } from "next/navigation";
+import { div } from "framer-motion/client";
 
 
 
-function MobileModelsPanel(onBack: any) {
+// function MobileModelsPanel(onBack: any) {
 
 
-    return (
-        <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
-            {/* Black header with back button and centered logo */}
-            <div className="flex items-center justify-between bg-black-200 px-6 py-4" style={{ minHeight: "64px" }}>
-                <button onClick={onBack} className="text-white text-2xl" aria-label="Back">
-                    ←
-                </button>
-                <Image
-                    src="/assets/Header-Footer/Crown-Electric-Mobility-Logo.svg"
-                    alt="Logo"
-                    width={100}
-                    height={80}
-                    priority
-                />
-                <div className="w-8" /> {/* empty space to center logo */}
-            </div>
-            <div className="flex flex-col px-6 py-6 gap-6">
-                <div className="text-lg mb-6 font-magistral font-regular text-black-200 text-center">
-                    View our Models
-                </div>
-                {modelsData.map((model) => (
-                    <a
-                        href={model.href}
-                        key={model.href}
-                        className="flex flex-col items-center group hover:scale-105 transition"
-                    >
-                        {/* Image Container with fixed height */}
-                        <div className="flex items-center justify-center w-full">
-                            <Image
-                                src={model.img}
-                                alt={model.href}
-                                className="object-contain max-h-full"
-                            />
-                        </div>
+//     return (
+//         <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
+//             {/* Black header with back button and centered logo */}
+//             <div className="flex items-center justify-between bg-black-200 px-6 py-4" style={{ minHeight: "64px" }}>
+//                 <button onClick={onBack} className="text-white text-2xl" aria-label="Back">
+//                     ←
+//                 </button>
+//                 <Image
+//                     src="/assets/Header-Footer/Crown-Electric-Mobility-Logo.svg"
+//                     alt="Logo"
+//                     width={100}
+//                     height={80}
+//                     priority
+//                 />
+//                 <div className="w-8" /> {/* empty space to center logo */}
+//             </div>
+//             <div className="flex flex-col px-6 py-6 gap-6">
+//                 <div className="text-lg mb-6 font-magistral font-regular text-black-200 text-center">
+//                     View our Models
+//                 </div>
+//                 {modelsData.map((model) => (
+//                     <a
+//                         href={model.href}
+//                         key={model.href}
+//                         className="flex flex-col items-center group hover:scale-105 transition"
+//                     >
+//                         {/* Image Container with fixed height */}
+//                         <div className="flex items-center justify-center w-full">
+//                             <Image
+//                                 src={model.img}
+//                                 alt={model.href}
+//                                 className="object-contain max-h-full"
+//                             />
+//                         </div>
 
-                        {/* Logo Container with fixed height */}
-                        <div className="mt-6 h-[40px] flex items-center justify-center">
-                            <Image
-                                src={model.logo}
-                                alt={model.href}
-                                width={150}
-                                height={20}
-                                className="mx-auto"
-                            />
-                        </div>
+//                         {/* Logo Container with fixed height */}
+//                         <div className="mt-6 h-[40px] flex items-center justify-center">
+//                             <Image
+//                                 src={model.logo}
+//                                 alt={model.href}
+//                                 width={150}
+//                                 height={20}
+//                                 className="mx-auto"
+//                             />
+//                         </div>
 
-                        {/* Text Info with fixed height */}
-                        <div className="text-xs text-gray-600 text-center mt-2 h-[20px] font-jakarta">
-                            {model.range} | {model.speed}
-                        </div>
-                    </a>
+//                         {/* Text Info with fixed height */}
+//                         <div className="text-xs text-gray-600 text-center mt-2 h-[20px] font-jakarta">
+//                             {model.range} | {model.speed}
+//                         </div>
+//                     </a>
 
-                ))}
-            </div>
-        </div>
-    );
-}
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// }
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -84,7 +85,7 @@ const Header = () => {
     const pathname = usePathname();
 
     useEffect(() => {
-        if (pathname === "/" || pathname === "/find-a-dealer" || pathname === "/contact" || pathname === "/book-now" || pathname === "/about-us") {
+        if (pathname === "/" || pathname === "/find-a-dealer" || pathname === "/contact" || pathname === "/book-now" || pathname === "/about-us" || pathname === "/blogs" || pathname === "/crown-electric-performance-series" ){
             setIsFixed(true);
         } else {
             setIsFixed(false);
@@ -101,15 +102,27 @@ const Header = () => {
         setIsMegaMenuOpen(false);
     };
 
+    
+    useEffect(() => {
+  if (isMegaMenuOpen && window.innerWidth >= 768) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "hidden";
+  }
+  return () => {
+    document.body.style.overflow = "hidden";
+  };
+}, [isMegaMenuOpen]);
 
     // Desktop Mega Menu
     const DesktopModelsMegaMenu = () => {
         const dataToRender = activeSeries === "legacy" ? modelsData : modelsData2;
 
         return (
+  
             <div
-                className={`fixed overflow-gray md:px-20 left-0 top-[85px] w-full min-h-[70vh] bg-white text-black z-60 border-b shadow-lg`}
-                style={{ zIndex: '9999' }}
+                className={`fixed overflow-gray md:px-20 left-0 top-[85px] w-full min-h-[70vh] bg-white text-black z-[999999] border-b shadow-lg`}
+                style={{ zIndex: '99999999' }}
             >
                 <div className="max-w-full mx-auto px-10 py-8 h-full flex flex-col">
                     {/* Tabs */}
@@ -135,7 +148,11 @@ const Header = () => {
                     </div>
 
                     {/* Scrollable content */}
-                    <div className="pr-2 overflow-y-auto h-[70vh]" onWheel={(e) => e.stopPropagation()}>
+<div
+  className="pr-2 overflow-y-auto h-[70vh] megamenu-scroll"
+  style={{ overscrollBehavior: "contain" }}
+  onWheel={(e) => e.stopPropagation()}
+>
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
                             {dataToRender.map((model) => (
                                 <a
@@ -160,11 +177,15 @@ const Header = () => {
                                                 className="mx-auto w-full h-[24px]"
                                             />
                                         </div>
-                                        <div
+                                        {/* <div
                                             className="text-[14px] text-gray-600 text-center font-jakarta"
 
                                         >
                                             {model.range} | {model.speed}
+                                        </div> */}
+                                        <div className="text-[14px] text-gray-600 text-center font-jakarta flex">
+                                            <div className="border-r px-3">{model.range}</div>
+                                            <div className="px-3">{model.speed}</div>
                                         </div>
                                         {model.disc && (
                                             <div
@@ -180,6 +201,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            
         );
     };
 

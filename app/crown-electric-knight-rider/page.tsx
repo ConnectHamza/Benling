@@ -34,9 +34,6 @@ export const metadata = {
 const KnightRider = () => {
     return (
         <main>
-            <head>
-                <title>Crown Electric - Knight Rider</title>
-            </head>
             <Banner />
             <StickyBar
                 title="Crown Knight Rider"
@@ -52,7 +49,6 @@ const KnightRider = () => {
             <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
             <div className='pt-20 pb-10 md:pb-0'>
                 <AutoSwiper slideData={slides} heading={heading} colors={colors} />
-
             </div>
             <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
             <Faqs data={faqsData} />

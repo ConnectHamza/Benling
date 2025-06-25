@@ -107,16 +107,19 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
                       </div>
 
                       {/* Motorcycle Details */}
-                      <div className="mt-4 text-center" data-aos="fade-up">
-                        <div className="flex flex-wrap justify-center text-xs md:text-base text=[#0A0A0A] font-magistral font-normal">
+                      <div className="mt-4 text-center flex justify-center" data-aos="fade-up">
+ <div className="grid grid-cols-2 gap-10 md:gap-0 md:flex w-[70%] md:w-full flex-wrap justify-center  text-xs md:text-base text-[#0A0A0A] font-magistral font-normal">
                           <Typography variant="body-regular-magistral" className='border-r-2 border-gray-100 md:px-4 px-2'>
-                            <Typography as="span" variant="body-regular-magistral"><b className='md:text-xl text-lg'>Range</b><br></br>{item.range}</Typography>
+                            <Typography as="span" variant="body-regular-magistral"><b className='md:text-xl text-lg md:bg-transparent bg-[#fff8ea] sm:rounded-xl sm:px-2 sm:py-1'>{item.range}</b><br></br>Range</Typography>
+                          </Typography>
+                          <Typography variant="body-regular-magistral" className='md:border-r-2 border-gray-100 md:px-4 px-2'>
+                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg md:bg-transparent bg-[#fff8ea] sm:rounded-xl sm:px-2 sm:py-1'>{item.maxSpeed}</b><br></br>Speed</Typography>
                           </Typography>
                           <Typography variant="body-regular-magistral" className='border-r-2 border-gray-100 md:px-4 px-2'>
-                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg'>Top Speed</b><br></br>{item.maxSpeed}</Typography>
+                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg md:bg-transparent bg-[#fff8ea] sm:rounded-xl sm:px-2 sm:py-1'>{item.motorPower}</b><br></br>Motor</Typography>
                           </Typography>
-                          <Typography variant="body-regular-magistral" className='md:px-4 px-2'>
-                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg'>Motor Power</b><br></br>{item.motorPower}</Typography>
+                          <Typography variant="body-regular-magistral" className=' md:px-4 px-2'>
+                            <Typography variant="body-regular-magistral" as="span"><b className='md:text-xl text-lg md:bg-transparent bg-[#fff8ea] sm:rounded-xl sm:px-2 sm:py-1'>LiFePO4</b><br></br>Battery</Typography>
                           </Typography>
                         </div>
                       </div>

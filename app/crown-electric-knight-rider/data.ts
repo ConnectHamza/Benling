@@ -5,11 +5,12 @@ import Feature4IMG from '../../public/assets/Knight-Rider/FeaturesIMG/Features4.
 import Feature5IMG from '../../public/assets/Knight-Rider/FeaturesIMG/Features5.webp';
 import Feature6IMG from '../../public/assets/Knight-Rider/FeaturesIMG/Features6.webp';
 
-import Loop1 from "../../public/assets/Firefly/Loop/Grid-01.webp";
-import Loop2 from "../../public/assets/Firefly/Loop/Grid-02.webp";
-import Loop3 from "../../public/assets/Firefly/Loop/Grid-03.webp";
-import Loop4 from "../../public/assets/Firefly/Loop/Grid-04.webp";
-import Loop5 from "../../public/assets/Firefly/Loop/Grid-05.webp";
+import Loop1 from "../../public/assets/Knight-Rider/Loop/Grid-01.webp";
+import Loop2 from "../../public/assets/Knight-Rider/Loop/Grid-02.webp";
+import Loop3 from "../../public/assets/Knight-Rider/Loop/Grid-03.webp";
+import Loop4 from "../../public/assets/Knight-Rider/Loop/Grid-04.webp";
+import Loop5 from "../../public/assets/Knight-Rider/Loop/Grid-05.webp";
+import Loop6 from "../../public/assets/Knight-Rider/Loop/Grid-06.webp";
 
 
 export const slides = [
@@ -17,7 +18,8 @@ export const slides = [
   { image: Loop2, width: 640, alt: "Front view" },
   { image: Loop3, width: 640, alt: "Dashboard" },
   { image: Loop4, width: 320, alt: "Logo vertical" },
-  { image: Loop5, width: 1300, alt: "Full scooter" },
+  { image: Loop5, width: 320, alt: "Logo vertical" },
+  { image: Loop6, width: 1300, alt: "Full scooter" },
 ];
 
 export interface FeatureHeader {

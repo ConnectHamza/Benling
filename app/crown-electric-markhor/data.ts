@@ -1,15 +1,15 @@
-import Feature1IMG from '../../public/assets/Champion/Features/ChampionFeature1.webp';
-import Feature2IMG from '../../public/assets/Champion/Features/ChampionFeature2.webp';
-import Feature3IMG from '../../public/assets/Champion/Features/ChampionFeature3.webp';
-import Feature4IMG from '../../public/assets/Champion/Features/ChampionFeature4.webp';
-import Feature5IMG from '../../public/assets/Champion/Features/ChampionFeature5.webp';
-import Feature6IMG from '../../public/assets/Champion/Features/ChampionFeature6.webp';
+import Feature1IMG from '../../public/assets/Markhor/Features/Crown-Electric-Mobility-Markhor-Feature-1.webp';
+import Feature2IMG from '../../public/assets/Markhor/Features/Crown-Electric-Mobility-Markhor-Feature-2.webp';
+import Feature3IMG from '../../public/assets/Markhor/Features/Crown-Electric-Mobility-Markhor-Feature-3.webp';
+import Feature4IMG from '../../public/assets/Markhor/Features/Crown-Electric-Mobility-Markhor-Feature-4.webp';
+import Feature5IMG from '../../public/assets/Markhor/Features/Crown-Electric-Mobility-Markhor-Feature-5.webp';
+import Feature6IMG from '../../public/assets/Markhor/Features/Crown-Electric-Mobility-Markhor-Feature-6.webp';
 
-import Loop1 from "../../public/assets/Champion/loop/Grid-01.webp";
-import Loop2 from "../../public/assets/Champion/loop/Grid-02.webp";
-import Loop3 from "../../public/assets/Champion/loop/Grid-03.webp";
-import Loop4 from "../../public/assets/Champion/loop/Grid-04.webp";
-import Loop5 from "../../public/assets/Champion/loop/Grid-05.webp";
+import Loop1 from "../../public/assets/Markhor/Loop/Markhor-Grid-1.png";
+import Loop2 from "../../public/assets/Markhor/Loop/Markhor-Grid-2.webp";
+import Loop3 from "../../public/assets/Markhor/Loop/Markhor-Grid-3.webp";
+import Loop4 from "../../public/assets/Markhor/Loop/Markhor-Grid-4.webp";
+import Loop5 from "../../public/assets/Markhor/Loop/Markhor-Grid-5.webp";
 
 
 export const slides = [
@@ -17,33 +17,33 @@ export const slides = [
   { image: Loop2, width: 640, alt: "Front view" },
   { image: Loop3, width: 640, alt: "Dashboard" },
   { image: Loop4, width: 320, alt: "Logo vertical" },
-  { image: Loop5, width: 1300, alt: "Full scooter" },
+  { image: Loop5, width: 1300, alt: "Full scooter" }, 
 ];
 
 
 export const featureHeader = {
-    featureTitle: 'Designed for Your Comfort and Control',
-    featureText: `Experience a blend of thoughtful design and advanced technology. RoshniX's features are tailored to enhance your safety, convenience, and riding pleasure.`,
-      bgColor: 'bg-gradient-to-t from-[#122737] via-[#081118] to-[#081118]',
-    textColor: 'text-white',
+    featureTitle: 'Speed Meets Style, Ride with Attitude',
+    featureText: `Crown Markhor is a high-performance electric bike built for power, speed, and smart mobility, featuring a 3000W motor and 72V 60Ah LiFePO₄ battery.`,
+      bgColor: '',
+    textColor: 'text-black-30',
   };
 
 
   export const aboutSpecificationsData = [
-    { title: "Motor", value: "1200W Brushless" },
-    { title: "Top Speed", value: "65-70 km/h" },
-    { title: "Range", value: "200-220 km" },
-    { title: "Battery", value: "72V.60Ah" },
+    { title: "Motor", value: "3000W Brushless" },
+    { title: "Top Speed", value: "90-100 km/h" },
+    { title: "Range", value: "90-100 km" },
+    { title: "Battery", value: "72V.40Ah" },
     { title: "Battery Type", value: "Lithium-LiFePO₄" },
-    { title: "Speed Mode", value: "4 Mode" },   
+    { title: "Charger", value: "72V.8A" },   
 ];
 
-export const aboutSpecificationsData2 = [
-    { title2: "Charger", value2: "72V.8A" },
-    { title2: "Charging Time", value2: "5 to 6 Hours" },
-    { title2: "Net Weight", value2: "164 kg" },
+export const aboutSpecificationsData2 = [    
+    { title2: "Charging Time", value2: "4 to 5 Hours" },
+    { title2: "Speed Mode", value2: "3 Mode" },
+    { title2: "Net Weight", value2: "164 Kg" },
+    { title2: "Loading Capacity", value2: "2000 Kg" },
     { title2: "Security", value2: "Remote Alarm System" },
-    { title2: "NFC Unlock", value2: "Yes" },
     { title2: "Braking System (F/R)", value2: "(CBS)" },
 ];
 
@@ -51,40 +51,40 @@ export const aboutSpecificationsData2 = [
 export const featuresData = [
     {
         img: Feature1IMG,
-        alt: 'Smart Headlight with Signature LED Ring',
-        title: 'Smart Headlight with Signature LED Ring',
-        description: 'Ride confidently day or night with a high-intensity headlamp featuring a unique circular LED signature. Engineered for visibility and style, it not only lights your path but also turns heads. The bold grille adds rugged protection and an eye-catching aesthetic.',
+        alt: 'Dual CBS Safety Braking: ',
+        title: 'Dual CBS Safety Braking: ',
+        description: 'Crown Markhor is equipped with a Front and Rear CBS (Combined Braking System) for enhanced safety and balanced braking.',
         
     },
     {
         img: Feature2IMG,
-        alt: 'CBS System (Combined Braking System)',
-        title: 'CBS System (Combined Braking System)',
-        description: 'Safety is non-negotiable. CBS ensures synchronized braking for shorter stops and better stability, while dual front disc brakes deliver responsive stopping power.'
+        alt: 'Bold LED Headlight Design:',
+        title: 'Bold LED Headlight Design:',
+        description: 'Crown Markhor features sleek, angular LED headlights that enhance visibility and add a bold, modern edge to its design. Designed for both style and safety, these headlights ensure a clear ride in all lighting conditions. '
     },
     {
         img: Feature3IMG,
-        alt: 'Side Stand Sensor',
-        title: 'Side Stand Sensor',
-        description: `Smart safety starts from the ground up. The side stand sensor ensures your scooter won't accidentally accelerate when the stand is deployed. A key element in preventing unexpected movement, especially in urban environments—ride smarter and safer with this integrated safeguard.`
+        alt: 'Bold Rear Road Presence',
+        title: 'Bold Rear Road Presence',
+        description: `The rear of the Crown Markhor features sharp LED taillights and stylish indicators for a bold, modern look. Its sturdy suspension and wide tyre ensure stability, comfort, and confident control on every ride.`
     },
     {
         img: Feature4IMG,
-        alt: 'NFC Unlock System',
-        title: 'NFC Unlock System',
-        description: `Step into the future of mobility with the NFC unlock system—a secure, contactless way to power up your ride. Simply tap your NFC card on the digital display to unlock and start the scooter. No traditional keys, no hassle—just fast, convenient, and tech-forward access that keeps you moving effortlessly.`
+        alt: 'Smart Digital Ride Display',
+        title: 'Smart Digital Ride Display',
+        description: `The Crown Markhor features a sleek digital display that provides real-time speed, battery level, and ride data at a glance. Its bright, easy-to-read screen ensures clear visibility both day and night for a smarter riding experience.`
     },
     {
         img: Feature5IMG,
-        alt: 'Comfort-Tuned Handlebar & Intelligent Digital Dashboard',
-        title: 'Comfort-Tuned Handlebar & Intelligent Digital Dashboard',
-        description: `Ride in comfort with our fatigue-reducing handlebar and stay informed with a smart digital dashboard showing real-time speed, battery, and trip data—clear, bright, and easy to read.`
+        alt: 'Sharp LED Rear Lighting ',
+        title: 'Sharp LED Rear Lighting ',
+        description: `The Crown Markhor’s sharp LED taillight enhances rear visibility while adding a bold, modern touch to its design.`
     },
     {
         img: Feature6IMG,
-        alt: 'Robust Rear Suspension & Protection Guard',
-        title: 'Robust Rear Suspension & Protection Guard',
-        description: 'Engineered for durability, the rear suspension system handles bumps and terrain changes effortlessly. Meanwhile, reinforced side and rear protection bars guard against scratches and impacts—perfect for urban environments and tight parking spaces.'
+        alt: 'Striking Design, Unmatched Style ',
+        title: 'Striking Design, Unmatched Style ',
+        description: 'The Crown Markhor’s front and side profile boast an aggressive, aerodynamic design with sleek LED headlights and bold graphics. Its sharp contours and modern styling make it a true head-turner on every road.'
     },
 
 ];

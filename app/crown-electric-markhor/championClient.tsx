@@ -12,22 +12,22 @@ import Specifications from '@/components/TechnicalSpecifications/Specifications'
 import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
-import ChampionFeatuedIMG from '../../public/assets/Champion/Benling-Champion-Banner.webp'
+import MarkhorFeatuedIMG from '../../public/assets/Markhor/Crown-Electric-Mobility-Markhor-Banner.webp'
 import CHampionMobile from '../../public/assets/Champion/Benling-Champion-Banner-Mobile.webp'
 import AutoSwiper from '@/components/LoopCarousel/auto-swiper'
 
 
-const heading = 'Champion Your Commute.';
+const heading = 'Crown Markhor — Strength is the New Style';
 const colors = [
-  { color: '#fff', percentage: 50 },
-  { color: '#dedede', percentage: 80 },
-  { color: '#b1b1b1', percentage: 100 },
+  { color: '#0A0A0A', percentage: 50 },
+  { color: '#0A0A0A', percentage: 80 },
+  { color: '#0A0A0A', percentage: 100 },
 ];
 const statsData = [
-  { value: "65-70 km/h", label: "Top Speed" },
-  { value: "200-220 km", label: "Range" },
-  { value: "5-6 Hours", label: "Charging Time" },
-  { value: "Yes", label: "NFC Unlock" },
+  { value: "90-100 km/h", label: "Top Speed" },
+  { value: "90-100 km", label: "Range" },
+  { value: "4-5 Hours ", label: "Charging Time" },
+  { value: "3000W", label: "Brushless Motor" },
 ];
 
 
@@ -41,19 +41,19 @@ const ChampionClient = () => {
     <>
       <Banner />
       <StickyBar
-        title="Crown Electric Champion"
-        description='Powered by a 1200W brushless motor and a 72V 60Ah Lithium-LiFePO₄ battery, the Crown Benling Champion offers a range of 200–220 km and speeds up to 70 km/h. Its sturdy frame and eco-friendly design make it ideal for both bold adventures and daily rides.'
-        gradient1="#BC3747"
-        gradient2="#081118"
-        textColor="text-white"
-        price='325,000'
+        title="Crown Electric Markhor"
+        description='Crown Markhor, a true beast on the road, engineered for power, performance, and next-gen mobility. Equipped with a robust 3000W motor and advanced 72V 60Ah Lithium Iron Phosphate (LiFePO₄) battery, it delivers an impressive range of 90–100 km and a top speed of 90–100 km/h, with a quick charging time of just 4–5 hours.'
+        gradient1="#F7E2B1"
+        gradient2="#FEFAEE"
+        textColor="text-black-30"
+        price='380,000'
         isLithium={true}
       />
       <Featured
         stats={statsData}
-        imageAlt={"Champion Feature Image"}
+        imageAlt={"Markhor Feature Image"}
         mobileImageSrc={CHampionMobile}
-        imageSrc={ChampionFeatuedIMG}
+        imageSrc={MarkhorFeatuedIMG}
         textColor="text-black"
         cardBgColor="bg-white/40"
         titleVariant='h5-bold-jakarta'
@@ -62,14 +62,13 @@ const ChampionClient = () => {
       />
       {/* <Featured /> */}
       <ColorShowcase />
-      <div className='bg-[#081118]'>
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
-      </div>
-      <div className='bg-[#081118] py-20'>
+
+      <div className='md:pb-0 pt-20 py-20'>
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
       </div>
-      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
-      <Faqs data={faqsData} />
+      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} isLithium={true}/>
+      {/* <Faqs data={faqsData} /> */}
     </>
   )
 }

@@ -11,10 +11,12 @@ const Banner = () => {
         <div className='pt-[0px]'>
             <HeroSection
                 title="Crown Markhor The Vintage Way"
-                subtitle="Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters."
+                subtitle="Crown Markhor is a powerful, smart, and secure electric bike built for high performance, heavy-duty use, and bold, sustainable mobility."
                 buttonText="Explore More"
                 imageSrc={MarkhorWeb.src}
                 mobileImageSrc={MarkhorMob.src}                
+                textColor='text-black-30'
+                color='black-30'
                 price='380,000'
                 href='/brouchers/Crown_Benling_Markhor_Brochure.pdf'
             />

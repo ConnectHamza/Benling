@@ -65,7 +65,7 @@ const VictoryClient = () => {
       
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />      
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
-      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} isLithium={true}/>
       <Faqs data={faqsData} />
     </div>
   )

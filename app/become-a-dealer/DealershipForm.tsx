@@ -173,7 +173,7 @@ const DealershipForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div className="md:w-lg mx-auto px-4 pb-20 font-sans bg-white rounded-lg shadow-sm">
-                <h1 className="text-4xl font-magistral font-bold text-gray-800 mb-2">Dealership Form</h1>
+                <h2 className="text-4xl font-magistral font-bold text-gray-800 mb-2">Dealership Form</h2>
                 <p className="text-gray-600 mb-8">Get started with our dealership application. Join us in electrifying Pakistan.</p>
 
                 {/* Showroom Location Details */}
@@ -181,7 +181,7 @@ const DealershipForm = () => {
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">Showroom Location Details</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Province</label>
                             <select
                                 name="showroomState"
                                 value={formData.showroomState}
@@ -190,7 +190,7 @@ const DealershipForm = () => {
                                 disabled={stateLoading}
                                 required
                             >
-                                <option value="">{stateLoading ? "Loading states..." : "Select State"}</option>
+                                <option value="">{stateLoading ? "Loading states..." : "Select Province"}</option>
                                 {stateOptions.map(state => (
                                     <option key={state.id} value={state.id}>
                                         {state.name}

@@ -23,6 +23,7 @@ import StickyBar from '@/components/StickyBar/stickyBar';
 import ShopSlider from './ShopSectoin';
 import TabbedCarousel from './TabCarousel';
 import HeroSectionWrapper from '@/components/Herocontainer/HeroSliderWrapper';
+import HeroSection from '@/components/Herocontainer/HeroSlider';
 
 
 export default function Home() {
@@ -31,19 +32,12 @@ export default function Home() {
   return (
     <div className='relative'>
       <div className='pt-[0px]'>
-        {/* <HeroImageSlide
-          slides={Slides}
-        /> */}
-        <HeroSectionWrapper
-  slides={Slides}
-  autoplay={true}
-  autoplayInterval={5000}
-/>
+        <HeroSection slides={Slides}/>
       </div>
 
       <div className='relative'>
       <StickyBar      
-        title="About Crown Electric Mobility"
+        title="Crown Electric Mobility – Pakistan's No. 1 Choice for Electric Bikes."
         description="Crown Electric Mobility, proudly operated by Crown Group, leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
         bgImage={CrownAboutIMG.src}
         gradient1="transparent"
