@@ -23,7 +23,7 @@ export const slides = [
 
 export const featureHeader = {
     featureTitle: 'Speed Meets Style, Ride with Attitude',
-    featureText: `Crown Markhor is a high-performance electric bike built for power, speed, and smart mobility, featuring a 3000W motor and 72V 60Ah LiFePO₄ battery.`,
+    featureText: `Crown Markhor is a high-performance electric bike built for power, speed, and smart mobility, featuring a 3000W motor and 72V 40Ah LiFePO₄ battery.`,
       bgColor: '',
     textColor: 'text-black-30',
   };
@@ -42,7 +42,7 @@ export const aboutSpecificationsData2 = [
     { title2: "Charging Time", value2: "4 to 5 Hours" },
     { title2: "Speed Mode", value2: "3 Mode" },
     { title2: "Net Weight", value2: "164 Kg" },
-    { title2: "Loading Capacity", value2: "2000 Kg" },
+    { title2: "Loading Capacity", value2: "200 Kg" },
     { title2: "Security", value2: "Remote Alarm System" },
     { title2: "Braking System (F/R)", value2: "(CBS)" },
 ];

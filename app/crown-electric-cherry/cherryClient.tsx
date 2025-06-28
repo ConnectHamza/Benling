@@ -37,6 +37,7 @@ const CherryClient = () => {
   return (
     <div>
       <Banner />
+      <div className='relative h-full'>
       <StickyBar
         title="Crown Electric Cherry"
         description='Crown Cherry delivers unmatched speed, style, and efficiency with a 3000W motor and a 72V 40Ah Lithium Iron Phosphate battery , offering a range of up to 130 km and a top speed of 80 km/h . Equipped with fast charging capabilities, this eco-friendly scooter combines sleek design, zero emissions, and superior performance—making it the perfect choice for modern urban riders.'
@@ -64,6 +65,7 @@ const CherryClient = () => {
 
       <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} isLithium={true}/>
       <Faqs data={faqsData} />
+    </div>
     </div>
   )
 }

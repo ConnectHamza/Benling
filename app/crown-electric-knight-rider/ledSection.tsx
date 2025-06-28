@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import KnightRiderLedIMG1 from '../../public/assets/Knight-Rider/Knight-Rider-LED-1.webp';
-import KnightRiderLedIMG2 from '../../public/assets/Knight-Rider/Knight-Rider-LED-2.webp';
+import KnightRiderLedIMG1 from '../../public/assets/Knight-Rider/Knight-Rider-LED-1-1.webp';
+import KnightRiderLedIMG2 from '../../public/assets/Knight-Rider/Knight-Rider-LED-2-1.webp';
 import Typography from '@/components/GradientText/Typography';
 import Image from 'next/image';
 
@@ -21,11 +21,11 @@ const LedSection = () => {
     <div className='w-full bg-white flex pr-5 py-10 md:py-0 md:h-[100vh] h-[65vh] md:items-center items-start justify-center'>
       <div className="w-full justify-center items-center flex flex-col gap-10 md:gap-0 md:flex-row">
         <div className='md:w-[55%]'>
-          <Image width={1000} alt='Knight Rider Image' src={images[currentIndex]} />
+          <Image width={700} alt='Knight Rider Image' src={images[currentIndex]} />
         </div>
         <div className='md:w-[45%] order-first md:order-last'>
           <div data-aos="fade-up">
-            <Typography as='span' variant='h2-medium-magistral' color='text-black'>
+            <Typography as='span' variant='h2-medium-magistral' color='text-black'>            
               Powerful LED
             </Typography>
             <br />

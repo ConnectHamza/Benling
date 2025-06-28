@@ -4,6 +4,7 @@ import MissionVisionCards from "./MissionSection";
 import Subsection from "./SubSection";
 import BrandingSection from "../home/BrandingSection";
 import BlogSection from "../home/BlogSection";
+import RecentBlogsSection from "../home/RecentBlogs/BlogSection";
 
 export const metadata = {
   title: "About Us - Leading Pakistan’s EV Revolution",
@@ -38,7 +39,7 @@ export default function About() {
         <BrandingSection />
       </div>
       <div>
-        <BlogSection />
+        <RecentBlogsSection />
       </div>
     </>
   );

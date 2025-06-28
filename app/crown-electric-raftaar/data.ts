@@ -134,11 +134,11 @@ export const faqsData = [
   },
   {
     "question": "How long does it take to fully charge the Crown Raftaar battery?",
-    "answer": "The battery takes approximately 6–8 hours to fully charge using the standard charger, depending on ambient temperature and usage."
+    "answer": "The battery takes approximately 4-5 hours to fully charge using the standard charger, depending on ambient temperature and usage."
   },
   {
     "question": "Is the battery safe in extreme weather conditions?",
-    "answer": "Yes, the LiFePO₄ battery used in Crown Raftaar is highly stable and resistant to overheating, ensuring reliable performance even in high temperatures or humid climates."
+    "answer": "Yes, the Lithium LiFePO₄ battery used in Crown Raftaar is highly stable and resistant to overheating, ensuring reliable performance even in high temperatures or humid climates."
   },
   {
     "question": "What safety features does Crown Raftaar have?",

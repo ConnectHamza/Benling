@@ -14,6 +14,7 @@ import Image from 'next/image'
 import BikesImg from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes.webp'
 import BikesBg from '../../public/assets/PerformanceSeries/Crown-Electric-Mobility-Performance-Series-Bikes-bg.webp'
 import HeroSection from '@/components/Herocontainer/HeroSlider'
+import RecentBlogsSection from '../home/RecentBlogs/BlogSection'
 
 const PerformanceSeries = () => {
     return (
@@ -47,7 +48,7 @@ const PerformanceSeries = () => {
                 <ShopSlider />
             </div>
             <div>
-                <BlogSection />
+                <RecentBlogsSection />
             </div>
             <div>
                 <Faqs data={faqsData} />

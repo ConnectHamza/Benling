@@ -18,7 +18,7 @@ const SmartFeature = () => {
     </div>
    
     <div className='flex justify-center '>
-        <Image src={SmartFeatureIMG} alt='Smart Feature IMG' className='w-[70%] z-40' data-aos="fade-up"/>
+        <Image src={SmartFeatureIMG} alt='Smart Feature IMG' className='w-[70%] z-20' data-aos="fade-up"/>
     </div>
     <FeatureBar/>
     </div>

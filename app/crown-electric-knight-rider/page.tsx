@@ -36,7 +36,7 @@ const KnightRider = () => {
         <main>
             <Banner />
             <StickyBar
-                title="Crown Knight Rider"
+                title="Crown Electric Knight Rider"
                 description='Discover the Crown Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge 72V36Ah Graphene Battery Technology and a robust 1500W Brushless Motor, Knight Rider ensures your rides are smooth, powerful, and sustainable.'
                 gradient1="#4C4442"
                 gradient2="#121212"

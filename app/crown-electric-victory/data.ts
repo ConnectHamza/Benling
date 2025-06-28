@@ -36,8 +36,8 @@ export const aboutSpecificationsData2 = [
     { title2: "Net Weight", value2: "150 kg" },
     { title2: "Loading Capacity", value2: "200 kg" },
     { title2: "Security", value2: "Remote Alarm System" },
-    { title2: "Tyre Size", value2: "F: 14/2.5 R:14/2.5" },
-    { title2: "Braking System (F/R)", value2: "CBS" },
+    { title2: "Tyre Size", value2: "F=3.00-10 | R=3.00-10" },
+    { title2: "Braking System (F/R)", value2: "CBS" },    
     
 ];
 

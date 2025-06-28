@@ -41,7 +41,7 @@ const Firefly = () => {
     <>
       <Banner />
       <StickyBar
-        title="Crown Firefly"
+        title="Crown Electric Firefly"
         description='Experience the Firefly, a modern marvel combining sleek design with eco-friendly technology. Equipped with advanced Graphene Battery Technology and a powerful 1200W Brushless Motor, Firefly ensures unmatched performance, efficiency, and sustainable mobility for every journey.'
         gradient1="#dedede"
         gradient2="#f3f3f3"

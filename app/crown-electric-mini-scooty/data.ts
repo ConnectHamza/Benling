@@ -111,7 +111,7 @@ export const faqsData = [
     },
     {
         question: "What are the available color options for the Mini Scooty?",
-        answer: "The Mini Scooty is available in four colors: Bubble Blue, Cherry Zoom, Shadow Jet and Vanilla Pop."
+        answer: "The Mini Scooty is available in four colors: Black, Blue, Red and Grey."
     },
     {
         question: "What is the loading capacity of the Mini Scooty?",

@@ -11,6 +11,7 @@ import Mail from "../../public/assets/Contact/mail.svg";
 import Whatsapp from "../../public/assets/Contact/Whatsapp.svg";
 import Facebook from "../../public/assets/Contact/Facebook.svg";
 import Linkedin from "../../public/assets/Contact/Linkedin.svg";
+import Tiktok from "../../public/assets/Contact/Tiktok.svg";
 import Instagram from "../../public/assets/Contact/Instagram.svg";
 import {contactApi} from '../api/contactApi'
 
@@ -174,14 +175,17 @@ export default function ContactClient() {
                                         <div className="w-full md:w-1/2">
                                             <h3 className="font-semibold mb-1">Social Network</h3>
                                             <div className="flex gap-3">
-                                                <a href="https://www.facebook.com/benlingpk" className="text-blue-600" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                                <a href="https://www.facebook.com/crownelectricmobility" className="text-blue-600" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                                     <Image src={Facebook} alt="Facebook Icon" width={24} height={24} />
                                                 </a>
                                                 <a href="https://www.instagram.com/crownelectricmobility/" className="text-pink-600" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                                     <Image src={Instagram} alt="Instagram Icon" width={24} height={24} />
                                                 </a>
-                                                <a href="https://www.linkedin.com/company/crownelectricmobility/" className="text-blue-700" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                                <a href="https://www.linkedin.com/company/crownelectricmobility" className="text-blue-700" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                                     <Image src={Linkedin} alt="LinkedIn Icon" width={24} height={24} />
+                                                </a>
+                                                <a href="https://www.tiktok.com/@crownelectricmobility" className="text-blue-700" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                                    <Image src={Tiktok} alt="LinkedIn Icon" width={24} height={24} />
                                                 </a>
                                             </div>
                                         </div>

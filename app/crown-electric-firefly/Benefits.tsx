@@ -45,7 +45,7 @@ const Benefits = () => {
                         Graphene Battery
                     </Typography>
                     <Typography variant='subtext-regular-jakarta' as='p'>
-                        Experience superior efficiency and durability with the 60V, 35Ah graphene lithium battery, offering up to 105 km range on a single charge.
+                        Experience superior efficiency and durability with the 60V, 36Ah graphene battery, offering up to 105 km range on a single charge.
                     </Typography>
                 </div>
                 <div data-aos="slide-left"

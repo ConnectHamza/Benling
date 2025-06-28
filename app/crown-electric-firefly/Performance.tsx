@@ -32,7 +32,7 @@ const Performance = () => {
                     <div className='bg-gray-10 md:py-5 py-3 md:px-8 px-5 rounded-10 md:w-[50%] hover:shadow-xl shadow-md' data-aos="fade-up">
                          <div className='md:text-[20px] text-[16] font-normal font-jakarta text-black-50'><Typography variant='body-regular-jakarta' style={{ color: "#32CFB8" }}>Full Charge Range</Typography>
                             <Typography style={{ color: "#052E2C" }} as="span" variant='h5-semibold-jakarta'>
-                                Up to 100KM
+                                95-100 Km
                             </Typography>
                         </div>
                     </div>

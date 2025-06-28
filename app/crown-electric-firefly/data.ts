@@ -20,7 +20,7 @@ export const aboutSpecificationsData = [
     { title: "Speed Mode", value: " 4 Mode" },
     { title: "Charger", value: "60V.6A" },
     { title: "Charging Time", value: "6-8 Hours" },
-    { title: "Dimensions", value: "1830 x 695 x 107 5mm" },
+    { title: "Dimensions", value: "1830 x 695 x 1075 mm" },
 ];
 
 export const aboutSpecificationsData2 = [

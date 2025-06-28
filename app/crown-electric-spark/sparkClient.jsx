@@ -35,12 +35,12 @@ const SparkClient = () => {
 
   return (
     <div>
-      <head>
+      {/* <head>
         <title>Crown Electric - Spark</title>
-      </head>
+      </head> */}
       <Banner />
       <StickyBar
-        title="Crown Spark"
+        title="Crown Electric Spark"
         description="Lightweight and practical, Spark is powered by a 600W Motor and a 48V 30AH battery, offering a smooth and economical ride. With its sleek design and eco-friendly performance, Spark is the perfect choice for effortless city mobility."
         gradient1="#C7E4F0"
         gradient2="#5EB3D2"

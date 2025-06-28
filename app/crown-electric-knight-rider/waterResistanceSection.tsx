@@ -1,5 +1,5 @@
 import React from 'react'
-import KnightWaaterIMG from '../../public/assets/Knight-Rider/Knight-Rider-Water.webp'
+import KnightWaaterIMG from '../../public/assets/Knight-Rider/Reliable-Water-Resistance.webp'
 import Image from 'next/image'
 import Typography from '@/components/GradientText/Typography'
 

@@ -35,12 +35,11 @@ export default function RoshniColorShowcase() {
     ];
 
     return (
-        <section className="bg-[#F9F5ED] md:py-40 py-20 px-4 text-black-30 w-full flex flex-col items-center"
->
+        <section className="bg-[#F9F5ED] md:py-40 py-20 px-4 text-black-30 w-full flex flex-col items-center">
             <div className="w-lg">
             <h2 className="text-center text-4xl md:text-6xl font-magistral font-[500]">
-                Vibrant Shades, Fearless Rides.<br></br>
-Crown Benling Markhor.
+                Vibrant Shades, Fearless Rides.<br className="md:block hidden"></br>
+                Crown Benling Markhor.
             </h2>
             <div className="flex flex-wrap justify-center">
                 {bikes.map((bike, index) => (

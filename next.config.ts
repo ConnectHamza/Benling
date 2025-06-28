@@ -6,9 +6,13 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-    images: {
-    domains: ["localhost"],
+images: {
+    domains: [
+      "delightful-health-e9807e9626.media.strapiapp.com",
+      "delightful-health-e9807e9626.strapiapp.com"
+    ],
   },
+
 
   async redirects() {
     return [

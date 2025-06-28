@@ -1,67 +1,89 @@
 'use client'
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { blogs } from "../../utils/blogdata"
+import { blogs } from "../../utils/blogdata";
 import Image from "next/image";
 import Typography from "@/components/GradientText/Typography";
 
-
-
 export default function RecentBlogsCarousel() {
   const scrollRef = useRef(null);
+  const [atStart, setAtStart] = useState(true);
+  const [atEnd, setAtEnd] = useState(false);
+  const scrollAmount = 320;
 
   const scroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = direction === "left" ? -300 : 300;
-      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
+    if (!scrollRef.current) return;
+    const scrollLeft = scrollRef.current.scrollLeft;
+    const newScrollLeft = direction === "right" ? scrollLeft + scrollAmount : scrollLeft - scrollAmount;
+    scrollRef.current.scrollTo({ left: newScrollLeft, behavior: "smooth" });
   };
+
+  const checkScrollPosition = () => {
+    if (!scrollRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+    setAtStart(scrollLeft <= 10);
+    setAtEnd(scrollLeft + clientWidth >= scrollWidth - 10);
+  };
+
+  useEffect(() => {
+    checkScrollPosition();
+    const ref = scrollRef.current;
+    if (ref) {
+      ref.addEventListener("scroll", checkScrollPosition);
+      return () => ref.removeEventListener("scroll", checkScrollPosition);
+    }
+  }, []);
+
   return (
-    <section className="bg-white text-black py-20">
-      <div className="md:w-lg  mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-white text-black py-20 pl-4 md:pl-0">
+      <div className="md:w-full mx-auto">
         {/* Heading */}
-        <div data-aos="zoom-in-right" data-aos-delay="0">
-        <Typography as="h2" variant="h3-medium-magistral">
-          Recent Blog/News
-        </Typography>
+        <div data-aos="zoom-in-right" data-aos-delay="0" className="md:pl-[calc((100vw-1300px)/2+0rem)]">
+          <Typography as="h2" variant="h3-medium-magistral">
+            Recent Blog/News
+          </Typography>
         </div>
+
         {/* Scrollable Blog Cards */}
-        <div className="relative">
+        <div className="relative mt-6">
           <div
             ref={scrollRef}
-            className="flex gap-4 overflow-x-auto scroll-smooth pb-4 no-scrollbar"
+            className="flex gap-4 overflow-x-auto scroll-smooth pb-4 no-scrollbar md:pl-[calc((100vw-1300px)/2+0rem)]"
           >
             {blogs.map((blog) => (
               <div
-              data-aos="fade-up"
+                data-aos="fade-up"
                 key={blog.slug}
                 className="flex-shrink-0 w-[85vw] sm:w-[300px] md:w-[350px] lg:w-[400px] py-4 flex flex-col justify-between"
               >
                 <div>
                   <div className="w-full h-[200px] sm:h-[250px] relative rounded-lg overflow-hidden mb-4">
                     <Link href={`/blogs/${blog.slug}`} target="_blank">
-                    <Image
-                      src={blog.coverImage}
-                      alt={blog.title}
-                      fill
-                      className="object-cover w-full h-[200px] sm:h-[250px]"
-                    />
+                      <Image
+                        src={blog.coverImage}
+                        alt={blog.title}
+                        fill
+                        className="object-cover w-full h-[200px] sm:h-[250px]"
+                      />
                     </Link>
                   </div>
-                  
                   <Typography as="span" variant="extra-subtext-regular-jakarta" className="text-[#989898] mb-4">
                     {blog.date}
                   </Typography>
                   <Link href={`/blogs/${blog.slug}`} target="_blank">
-                  <Typography as="h3" variant="h6-medium-jakarta" className="mb-2 leading-tight line-clamp-2 blog-heading">
-                    {blog.title}
-                  </Typography>                    
+                    <Typography
+                      as="h3"
+                      variant="h6-medium-jakarta"
+                      className="mb-2 leading-tight line-clamp-2 blog-heading"
+                    >
+                      {blog.title}
+                    </Typography>
                   </Link>
                   <Link href={`/blogs/${blog.slug}`} target="_blank">
-                  <Typography as="p" variant="subtext-regular-jakarta" className=" text-[#000] leading-snug line-clamp-3">
-                    {blog.subtitle}
-                  </Typography>
+                    <Typography as="p" variant="subtext-regular-jakarta" className="text-[#000] leading-snug line-clamp-3">
+                      {blog.subtitle}
+                    </Typography>
                   </Link>
                 </div>
                 <div className="mt-4">
@@ -79,34 +101,26 @@ export default function RecentBlogsCarousel() {
               </div>
             ))}
           </div>
-          {/* Controls */}
-          {/* <div className="mt-6 flex justify-between items-center flex-wrap gap-4">
-            <button className="text-[14px] h-[35px] text-black px-4 rounded bg-white hover:bg-black-30 hover:text-white border border-black transition flex flex-row items-center">
-              <Typography variant="extra-subset-regular-jakarta">
-                View All Blog/News
-              </Typography>
-              <div className="mx-3">
-                <ArrowUpRight size={14} />
-              </div>
+
+          {/* Scroll Buttons */}
+          <div className="mt-4 flex gap-2 md:pl-[calc((100vw-1300px)/2+0rem)]">
+            <button
+              onClick={() => scroll('left')}
+              className="w-10 h-10 rounded-full border bg-white shadow-md disabled:opacity-30 flex items-center justify-center"
+              disabled={atStart}
+            >
+              <ChevronLeft size={20} />
             </button>
-            <div className="flex gap-3 ml-auto">
-              <button
-                onClick={() => scroll('left')}
-                className="bg-gray-100 p-2 rounded-full hover:bg-gray-200"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                onClick={() => scroll('right')}
-                className="bg-gray-100 p-2 rounded-full hover:bg-gray-200"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          </div> */}
+            <button
+              onClick={() => scroll('right')}
+              className="w-10 h-10 rounded-full border bg-white shadow-md disabled:opacity-30 flex items-center justify-center"
+              disabled={atEnd}
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
         </div>
       </div>
     </section>
   );
-
 }

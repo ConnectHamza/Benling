@@ -25,7 +25,7 @@ const Tabs = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center md:px-10 px-5 py-40 bg-gray-50 ">
+    <div className="w-full flex justify-center md:px-10 px-5 md:py-40 py-20 bg-gray-50 ">
       <div className="w-lg flex flex-col-reverse md:flex-row justify-between items-center gap-8">
 
         {/* Text and Tabs */}
@@ -46,7 +46,7 @@ const Tabs = () => {
                 `}
               >
                 <div data-aos="zoom-out">
-                <Typography variant='h2-bold-magistral' className='font-bold text-5xl'>
+                <Typography variant='h2-bold-magistral' className='font-bold md:text-5xl text-xs'>
                   {item.label}
                 </Typography>
                 </div>

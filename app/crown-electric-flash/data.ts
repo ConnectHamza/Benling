@@ -39,7 +39,7 @@ export const aboutSpecificationsData = [
     { title: "Speed Mode", value: "4 Mode" },
     { title: "Charger", value: "72V.5A" },
     { title: "Charging Time", value: "9 to 11 Hours" },
-    { title: "Dimension", value: "1900 x 770 x 1655 mm" },
+    { title: "Dimension", value: "1900 x 770 x 1665 mm" },
     { title: "Net Weight", value: "150 kg" },
 
 ];
@@ -114,7 +114,7 @@ export const faqsData = [
     },
     {
         question: "What colors are available for the Crown Electric Flash?",
-        answer: "The Crown Electric Flash is available in five stylish color options: Arctic Blaze, Neon Volt, Midnight Storm, Crimson Charge, and Plasma Purple."
+        answer: "The Crown Electric Flash is available in five stylish color options: Grey, Green, Black, Red and Purple."
     },
     {
         question: "Does the Crown Electric Flash have multiple riding modes?",

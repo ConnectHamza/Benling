@@ -1,5 +1,3 @@
-'use client';
-
 import HeroImageSlide from '@/components/Herocontainer/HeroSlider';
 import HeroSubSection from '@/components/Herocontainer/HeroSub';
 import VideoSection from './VideoSection';
@@ -13,7 +11,6 @@ import Pak from '../../public/assets/Home/Branding/pakistanmap.png';
 import Image from 'next/image';
 import CrownAboutIMG from '../../public/assets/Home/Header/heroimagesub.webp'
 import Faqs from '@/components/Faqs/Faqs'
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,10 +21,11 @@ import ShopSlider from './ShopSectoin';
 import TabbedCarousel from './TabCarousel';
 import HeroSectionWrapper from '@/components/Herocontainer/HeroSliderWrapper';
 import HeroSection from '@/components/Herocontainer/HeroSlider';
+import RecentBlogsSection from './RecentBlogs/BlogSection';
 
 
 export default function Home() {
- 
+
 
   return (
     <div className='relative'>
@@ -102,7 +100,7 @@ export default function Home() {
         </div>
 
         <div>
-          <BlogSection />                    
+          <RecentBlogsSection />                 
         </div>
         <div>
         <Faqs data={faqsData} />        

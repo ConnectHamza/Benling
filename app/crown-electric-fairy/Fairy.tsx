@@ -47,7 +47,7 @@ const Fairy = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Crown Fairy"
+        title="Crown Electric Fairy"
         description="Powerful and Practical, the Fairy is built for modern urban life. Equipped with a robust 1000W motor and a 72V 23Ah Graphene battery, Fairy delivers a smooth, high-performance ride with impressive range and speed. Its sleek design, eco-friendly technology, and spacious utility make it the perfect companion for effortless, everyday commuting."
         gradient1="#FFFEEF"
         gradient2="#ADACA2"

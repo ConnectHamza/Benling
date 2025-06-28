@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import AppButton from "@/components/Button/AppButton";
 
+
 interface StickyBarProps {
   title: string;
   description: string;
@@ -40,6 +41,8 @@ const StickyBar: React.FC<StickyBarProps> = ({
 
 }) => {
   const container = useRef(null);
+  const { scrollY } = useScroll()
+const showHeader = useTransform(scrollY, [100, 150], [0, 1])
 
   return (
     <div className="relative">
@@ -50,7 +53,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
  >      
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <div className="flex gap-4 items-center">
-          <h2 className="font-semibold md:text-[28px] text-[20px]" data-aos="fade-right">{title}</h2>
+          <h2 className="font-semibold md:text-[28px] text-[16px]" data-aos="fade-right">{title}</h2>
           {isLithium && (
           <h2 className="font-semibold font-magistral md:text-[20px] text-[14px] text-[#47D1EB] border-[#47D1EB] border-2 rounded-lg px-2 py-1 md:flex hidden">Lithium-LiFePO₄</h2>
           )}
@@ -77,6 +80,10 @@ const StickyBar: React.FC<StickyBarProps> = ({
           </div>
         </div>
       </div>
+  <motion.div 
+    className="sticky top-0 w-full z-20"
+    style={{ opacity: showHeader }}
+  >
             <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-[#e8e8e8]" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">
           <div>
@@ -110,6 +117,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
           </div>
         </div>
       </div>
+      </motion.div>
       <div
         ref={container}
         className="w-full px-5 py-20 flex justify-center"

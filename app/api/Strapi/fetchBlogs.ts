@@ -1,20 +1,24 @@
 import { strapiApi } from "./strapiApi";
 
-// fetchBlogs.ts
+
+console.log("BASE_URL:", process.env.NEXT_PUBLIC_STRAPI_URL);
+console.log("TOKEN:", process.env.STRAPI_API_TOKEN);
+
 export async function fetchBlogs() {
   try {
     const res = await strapiApi.get("/blogs", {
       params: {
-        populate: "*", // <-- populate everything for debug!
+        populate: "*",
         sort: "createdAt:desc"
       }
     });
-    return res.data.data;
+    return res.data.data || [];
   } catch (err: any) {
     console.error("Strapi fetch error:", err.response?.data || err.message);
-    throw err;
+    return [];
   }
 }
+
 
 export async function fetchBlogBySlug(slug: string) {
   try {
@@ -36,12 +40,13 @@ export async function fetchRecentBlogs() {
   try {
     const res = await strapiApi.get("/blogs", {
       params: {
-        populate: "*",       // Get all fields (including images, categories, etc)
+        populate: "*", 
         sort: "updatedAt:desc",
         pagination: { limit: 2 }
+        
       }
     });
-    // Map Strapi's response to your blog card format
+
     return res.data.data.map((item: any) => {
       const attrs = item.attributes || item;
       return {

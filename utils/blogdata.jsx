@@ -13,11 +13,27 @@ import MultanLaunchBlog from "@/components/Blog/BlogContent/MultanLaunchBlog";
 import LiFePO4Blog from "@/components/Blog/BlogContent/ElectricMobility";
 import IronPhospate from "@/components/Blog/BlogContent/IronPhospate";
 import ElectricVSPetrol from "@/components/Blog/BlogContent/ElectricVSPetrol";
+import EvVsPetrol from "@/components/Blog/BlogContent/EvVsPetrol";
+import EvVsPetrolImage from "../public/assets/Blogs/EV-Vs-Petrol-Monthly-Budgeting.webp"
 
 
 export const blogs = [
+   {
+    slug: "ev-vs-petrol-monthly-budgeting-how-crown-electric-mobility-helps-you-save-big",
+    title: "EV vs Petrol Monthly Budgeting: How Crown Electric Mobility Helps You Save Big",
+    subtitle: "Fuel prices in Pakistan are hitting new highs, and motorcyclists are feeling the pinch every day. Whether you commute for work or leisure, owning a petrol bike means a consistent monthly spend. Enter electric bikes – especially those by Crown Electric Mobility, offering a smarter, cost-effective alternative. In this blog, we break down the monthly budgeting differences between petrol and electric motorcycles, showing how much you can save over time.",
+    coverImage: EvVsPetrolImage.src,
+    date: "June 23rd 2025",
+    readTime: 7,
+    headings: [
+      { id: "lifepo4", text: "What is LiFePO₄?" },
+      { id: "performance-series", text: "Crown Electric Performance Series" },
+      { id: "future-of-ev", text: "Future of EVs in Pakistan" },
+    ],
+    renderContent: () => <EvVsPetrol />
+  },
           {
-    slug: "electric-bikes-vs-petrol-bikes-whats-the-real-difference",
+    slug: "electric-bikes-vs-petrol-bikes-whats-the-real-differences",
     title: "Electric Bikes vs Petrol Bikes: What’s the Real Difference?",
     subtitle: "These days, everyone’s talking about cleaner and smarter ways to get around—and bikes are no exception. For years, gasoline-powered sports bikes have dominated the roads, but now electric bikes are stepping in and grabbing attention.",
     coverImage: ElectricVSPetrolIMG.src,

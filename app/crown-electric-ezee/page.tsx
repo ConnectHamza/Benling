@@ -42,7 +42,7 @@ export default function Ezee() {
             <main>
                 <Banner />
                 <StickyBar
-                    title="Crown Ezee - Three Wheeler"
+                    title="Crown Electric Ezee"
                     description='Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level.'
                     gradient1="#410D09"
                     gradient2="#121212"

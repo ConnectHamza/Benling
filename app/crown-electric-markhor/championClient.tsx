@@ -13,7 +13,7 @@ import Faqs from '@/components/Faqs/Faqs'
 import { initFixOverflow } from '../fixOverflow'
 import Featured from '@/components/Features/HeroFeature'
 import MarkhorFeatuedIMG from '../../public/assets/Markhor/Crown-Electric-Mobility-Markhor-Banner.webp'
-import CHampionMobile from '../../public/assets/Champion/Benling-Champion-Banner-Mobile.webp'
+import MarkhorMobile from '../../public/assets/Markhor/Crown-Electric-Mobility-Markhor-Banner-mobile.webp'
 import AutoSwiper from '@/components/LoopCarousel/auto-swiper'
 
 
@@ -42,7 +42,7 @@ const ChampionClient = () => {
       <Banner />
       <StickyBar
         title="Crown Electric Markhor"
-        description='Crown Markhor, a true beast on the road, engineered for power, performance, and next-gen mobility. Equipped with a robust 3000W motor and advanced 72V 60Ah Lithium Iron Phosphate (LiFePO₄) battery, it delivers an impressive range of 90–100 km and a top speed of 90–100 km/h, with a quick charging time of just 4–5 hours.'
+        description='Crown Markhor, a true beast on the road, engineered for power, performance, and next-gen mobility. Equipped with a robust 3000W motor and advanced 72V 40Ah Lithium Iron Phosphate (LiFePO₄) battery, it delivers an impressive range of 90–100 km and a top speed of 90–100 km/h, with a quick charging time of just 4–5 hours.'
         gradient1="#F7E2B1"
         gradient2="#FEFAEE"
         textColor="text-black-30"
@@ -52,13 +52,13 @@ const ChampionClient = () => {
       <Featured
         stats={statsData}
         imageAlt={"Markhor Feature Image"}
-        mobileImageSrc={CHampionMobile}
+        mobileImageSrc={MarkhorMobile}
         imageSrc={MarkhorFeatuedIMG}
         textColor="text-black"
         cardBgColor="bg-white/40"
         titleVariant='h5-bold-jakarta'
         subtitleVariant='body-regular-jakarta'
-        itemsPosition="left"
+        itemsPosition=""
       />
       {/* <Featured /> */}
       <ColorShowcase />

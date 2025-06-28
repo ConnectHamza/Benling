@@ -36,7 +36,7 @@ const MiniClient = () => {
     <div>
       <Banner />
       <StickyBar
-        title="Crown Mini Scooty"
+        title="Crown Electric Mini Scooty"
         description="Perfect for short city rides, the Mini Scooty features a 450W Motor and a reliable 48V 23AH battery. Its lightweight design, easy handling, and zero-emission drive make it ideal for everyday convenience with a touch of timeless charm."
         gradient1="#1DADB5"
         gradient2="#05080C"
