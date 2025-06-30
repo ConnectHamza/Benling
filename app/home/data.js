@@ -230,10 +230,15 @@ export const Slides = [
 
 
 export const faqsData = [
-  {
-    question: "How long does it take to fully charge the battery?",
-    answer: "Charging typically takes 2 to 6 hours, based on battery capacity and charger type."
-  },
+{
+  question: "How long does it take to fully charge the battery?",
+  answer: [`
+        <ul style="list-style-type: disc; padding-left: 20px;">
+      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
+      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
+    </ul>`
+  ]
+},
   {
     question: "Are your scooters water-resistant?",
     answer: "Yes, all Crown Electric scooters are designed with splash and water resistance for safe riding in light rain and wet conditions."

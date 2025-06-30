@@ -68,7 +68,7 @@ const ChampionClient = () => {
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
       </div>
       <Specifications  data={aboutSpecificationsData} data2={aboutSpecificationsData2} isLithium={true}/>
-      {/* <Faqs data={faqsData} /> */}
+      <Faqs data={faqsData} />
     </>
   )
 }

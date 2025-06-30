@@ -108,8 +108,13 @@ export const faqsData = [
         question: "What is the range of the Fairy on a full charge?",
         answer: "You can travel up to 75–80 km on a single charge depending on conditions."
     },
-    {
-        question: "How long does it take to fully charge the battery?",
-        answer: "Charging time is approximately 5–6 hours using the supplied 72V 4A charger."
-    },
+{
+  question: "How long does it take to fully charge the battery?",
+  answer: [`
+        <ul style="list-style-type: disc; padding-left: 20px;">
+      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
+      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
+    </ul>`
+  ]
+}
 ];

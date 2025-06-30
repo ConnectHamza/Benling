@@ -103,10 +103,15 @@ export const faqsData = [
         question: "How far can the Crown Electric Spark go on a full charge?",
         answer: "On a full charge, the Crown Electric Spark can cover approximately 40 kilometers, depending on riding conditions and usage."
     },
-    {
-        question: "How long does it take to fully charge the battery?",
-        answer: "The Spark's battery typically takes 5–6 hours to fully charge using a standard home outlet."
-    },
+{
+  question: "How long does it take to fully charge the battery?",
+  answer: [`
+        <ul style="list-style-type: disc; padding-left: 20px;">
+      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
+      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
+    </ul>`
+  ]
+},
     {
         question: "Is the Crown Electric Spark eco-friendly?",
         answer: "Yes, the Spark is fully electric, producing zero emissions and operating quietly, contributing to a cleaner environment."

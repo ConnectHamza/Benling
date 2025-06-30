@@ -108,10 +108,15 @@ export const faqsData = [
         question: "What is the riding range of the Flash on a full charge?",
         answer: "On a full charge, the Flash can travel up to 150 km  in Eco Mode, making it perfect for both daily commutes and extended rides."
     },
-    {
-        question: "How long does it take to fully charge the battery?",
-        answer: "The 72V 47Ah Graphene battery takes approximately 9 to 11 hours to fully charge using the provided 72V 5A charger."
-    },
+{
+  question: "How long does it take to fully charge the battery?",
+  answer: [`
+        <ul style="list-style-type: disc; padding-left: 20px;">
+      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
+      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
+    </ul>`
+  ]
+},
     {
         question: "What colors are available for the Crown Electric Flash?",
         answer: "The Crown Electric Flash is available in five stylish color options: Grey, Green, Black, Red and Purple."

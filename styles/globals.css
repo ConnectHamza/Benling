@@ -135,6 +135,11 @@ p {
   padding: 30px;
 }
 
+/* .tawk-icon-right{
+  display: none !important;
+  visibility: hidden !important;
+} */
+
 
 @keyframes appear {
   from {

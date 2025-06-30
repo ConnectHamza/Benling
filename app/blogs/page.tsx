@@ -38,7 +38,7 @@ export default function BlogsPage() {
                       variant="extra-subtext-regular-jakarta"
                       className="text-black-30 bg-orange-100 w-fit px-3 py-1.5 rounded-lg"
                     >
-                      General
+                      {blog.category ? blog.category : "General"}
                     </Typography>
                     <Typography
                       variant="extra-subtext-regular-jakarta"

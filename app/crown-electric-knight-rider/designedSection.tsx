@@ -6,14 +6,14 @@ import Typography from '@/components/GradientText/Typography'
 
 const DesignedSection = () => {
   return (
-    <div className="relative w-full bg-black-200 h-[75vh] md:h-[100vh] overflow-hidden">
+    <div className="relative w-full bg-black-200 h-[100vh] overflow-hidden">
 
       {/* Background Image using Next.js Image */}
       <Image
         src={KnightRiderDesignIMG}
         alt="Knight Rider Design"
         fill
-        className="object-contain object-[top_right] z-0"
+        className="object-contain h-full w-full object-[top_right] z-0"
         priority
       />
 
@@ -64,7 +64,7 @@ const DesignedSection = () => {
                 </div>
                 <div data-aos="zoom-out">
                 <Typography className='text-[#776D57]' as='span' variant='h4-bold-jakarta'>
-                  Up to 100KM
+                  95-100 Km
                 </Typography>
                </div>
               </div>

@@ -91,59 +91,47 @@ export const featuresData = [
 
 export const faqsData = [
    {
-    "question": "What is the motor power of Crown Champion?",
-    "answer": "The Crown Champion features a 2000W motor, offering balanced performance between energy efficiency and strong acceleration."
+    "question": "What makes Markhor the flagship performance model?",
+    "answer": "It offers a motorcycle-style frame, aggressive styling, and 100 km/h top speed for high-speed commuters."
   },
   {
-    "question": "Which battery does Crown Champion use?",
-    "answer": "It runs on a 72V 40Ah Lithium Iron Phosphate (LiFePO₄) battery — known for its safety, long life, and fast charging capabilities."
+    "question": "How far can I go on a full charge?",
+    "answer": "Up to 100 km under standard conditions."
   },
   {
-    "question": "How much range can I expect from Crown Champion?",
-    "answer": "Crown Champion delivers an impressive range of 200–220 km per full charge — the highest among all Crown models — making it ideal for long-distance travel."
+    "question": "Is it suitable for highways or fast traffic lanes?",
+    "answer": "es, its top speed and build make it ideal for main roads and fast lanes."
   },
   {
-    "question": "What is the top speed of Crown Champion?",
-    "answer": "Crown Champion has a maximum speed of 65–70 km/h, perfect for riders who prioritize range over high-speed performance."
+    "question": "What battery type is used?",
+    "answer": "Lithium Iron Phosphate (LiFePO₄), known for safety, stability, and 3000+ charge cycles."
   },
   {
-    "question": "Is Crown Champion good for daily commuting?",
-    "answer": "Yes! With its long range, smooth ride, and comfortable seating, Crown Champion is excellent for daily urban commutes as well as weekend adventures."
+    "question": "How long does charging take?",
+    "answer": "Around 4–5 hours with a standard 220V socket."
   },
   {
-    "question": "Where can I buy or test ride Crown Champion?",
-    "answer": "You can purchase or test ride Crown Champion at authorized dealerships located in Multan, Karachi, Lahore, Rawalpindi, and Mardan."
+    "question": "Is there a reverse gear?",
+    "answer": "Yes, for convenient maneuvering."
   },
   {
-    "question": "Does Crown offer warranty on Champion?",
-    "answer": "Yes, Crown offers one of the best warranties in the industry:\n- Battery, Motor & Controller: 4 years or 48,000 km\n- Body Parts: 12 months\n\nThis warranty applies whether you pay upfront or choose installment financing."
+    "question": "What kind of brakes are equipped?",
+    "answer": "Front and rear disc brakes with regenerative braking."
   },
   {
-    "question": "Can I buy Crown Champion on installments?",
-    "answer": "Yes, flexible EMI options are available through:\n- Meezan Bank\n- Bank Alfalah (available at Alfa Mall)\n- MCB Bank\n\nContact your local Crown dealer for assistance with documentation and approval."
+    "question": "What’s the riding comfort like?",
+    "answer": "Telescopic suspension and wide seating for long-distance comfort."
   },
   {
-    "question": "Are there any special installment offers for Crown Champion?",
-    "answer": "Yes! You can opt for the 0% markup plan on 12-month installments, allowing you to pay in manageable EMIs without extra cost."
+    "question": "Does it require license and registration?",
+    "answer": "Yes, this is a high-speed model and must be registered."
   },
   {
-    "question": "Can I stretch my installment plan beyond 12 months?",
-    "answer": "Absolutely! Installment tenures can be extended up to 24 months, giving you more flexibility based on your financial planning."
+    "question": "Is it water-resistant?",
+    "answer": "Yes, IP-rated electrical components ensure safe usage in light rain."
   },
   {
-    "question": "How long does it take to fully charge the Crown Champion battery?",
-    "answer": "The battery takes approximately 6–8 hours to fully charge using the standard charger, depending on ambient conditions."
-  },
-  {
-    "question": "Is the battery safe for long-term use?",
-    "answer": "Yes, the LiFePO₄ battery used in Crown Champion is highly durable and resistant to overheating, ensuring safe and reliable performance over time."
-  },
-  {
-    "question": "What safety features does Crown Champion have?",
-    "answer": "Crown Champion comes equipped with:\n- Front and rear disc brakes\n- Bright LED lighting\n- Smart digital display with real-time data\n\nThese features ensure a secure and confident ride in all conditions."
-  },
-  {
-    "question": "Is Crown Champion suitable for two riders?",
-    "answer": "Yes, it features a wide, ergonomic dual-seat design that provides comfort for both rider and passenger, even during long-distance rides."
-  }
+    "question": "Does it come with alloy wheels and a digital meter?",
+    "answer": "Yes, standard with all Performance Series models."
+  },  
 ];
