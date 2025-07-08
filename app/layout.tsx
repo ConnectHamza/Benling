@@ -10,15 +10,15 @@ import { getMetadata } from "@/utils/metaData";
 
 
 export const metadata = {
-  title: "Crown Electric Mobility | Affordable & Stylish Electric Bikes",
-  description: "Discover the best electric bikes at Crown Electric Mobility. Affordable, reliable, and eco-friendly bikes designed for a smarter, greener way to travel. Start your ride today!",
+  title: "Crown Electric Mobility | Stylish Electric Bikes in Pakistan",
+  description: "Explore top stylish electric bikes in Pakistan with Crown Electric Mobility. Eco-friendly and budget-friendly options available in Karachi, Lahore, Multan, Hyderabad & more. Ride smart today!",
   metadataBase: new URL("https://crownelectricmobility.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Crown Electric Mobility | Affordable & Stylish Electric Bikes",
-    description: "Discover the best electric bikes at Crown Electric Mobility. Affordable, reliable, and eco-friendly bikes designed for a smarter, greener way to travel. Start your ride today!",
+    title: "Crown Electric Mobility | Stylish Electric Bikes in Pakistan",
+    description: "Explore top stylish electric bikes in Pakistan with Crown Electric Mobility. Eco-friendly and budget-friendly options available in Karachi, Lahore, Multan, Hyderabad & more. Ride smart today!",
     url: "https://crownelectricmobility.com/",
     siteName: "Crown Electric Mobility",
     type: "website",

@@ -100,7 +100,7 @@ export const faqsData = [
   },
   {
     "question": "Is it suitable for highways or fast traffic lanes?",
-    "answer": "es, its top speed and build make it ideal for main roads and fast lanes."
+    "answer": "Yes, its top speed and build make it ideal for main roads and fast lanes."
   },
   {
     "question": "What battery type is used?",

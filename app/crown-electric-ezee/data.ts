@@ -7,12 +7,12 @@ import Loop6 from "../../public/assets/Ezee/Loop/Grid-06.webp";
 
 
 export const slides = [
-  { image: Loop1, width: 640, alt: "Side view" },
-  { image: Loop2, width: 640, alt: "Front view" },
-  { image: Loop3, width: 640, alt: "Dashboard" },
-  { image: Loop4, width: 320, alt: "Logo vertical" },
-  { image: Loop6, width: 1300, alt: "Full scooter" },
-  { image: Loop5, width: 320, alt: "Logo vertical" },
+    { image: Loop1, width: 640, alt: "Side view" },
+    { image: Loop2, width: 640, alt: "Front view" },
+    { image: Loop3, width: 640, alt: "Dashboard" },
+    { image: Loop4, width: 320, alt: "Logo vertical" },
+    { image: Loop6, width: 1300, alt: "Full scooter" },
+    { image: Loop5, width: 320, alt: "Logo vertical" },
 ];
 
 export const aboutSpecificationsData = [
@@ -28,7 +28,7 @@ export const aboutSpecificationsData = [
 ];
 
 
-export const aboutSpecificationsData2 = [   
+export const aboutSpecificationsData2 = [
     { title2: "Net Weight", value2: "116 kg" },
     { title2: "Angle", value2: "≤15°" },
     { title2: "Speed", value2: "35-40 km/h" },
@@ -41,23 +41,51 @@ export const aboutSpecificationsData2 = [
 
 export const faqsData = [
     {
-        question: "What is the maximum range of Ezee on a single charge?",
-        answer: "Ezee offers a range of 50–55 km per charge, ensuring reliable travel for daily commutes and errands."
+        question: "What is the speed and range of Crown Ezee?",
+        answer: "Ezee delivers 35–40 km/h speed with a range of up to 50-55 km per charge."
     },
     {
-        question: "Does Ezee have storage options for personal belongings?",
-        answer: "Yes, Ezee provides multiple storage options. It features a spacious inside storage compartment with a cup holder for your personal items and beverages. Additionally, it includes a large external storage box, perfect for carrying groceries, luggage, or other bulky items securely and conveniently. These storage solutions make Ezee practical for all kinds of trips."
+        question: "What makes Ezee ideal for daily use?",
+        answer: "Compact design, ease of use, and affordability make it a great commuter option."
     },
     {
-        question: "What makes Ezee eco-friendly?",
-        answer: "Ezee is powered by a graphene battery and operates on clean electric energy, producing zero emissions and promoting sustainability."
+        question: "What is the battery type and how long does it last?",
+        answer: " It uses a graphene battery with an 18-month warranty or 18,000 km."
     },
     {
-        question: "How much weight can Ezee carry?",
-        answer: "Ezee has a loading capacity of up to 140 kg, making it ideal for carrying groceries, luggage, or other essentials."
+        question: "What are the overall warranty terms?",
+        answer: `<ul>
+        <li>Battery: 18 months or 18,000 km</li>
+        <li>Motor & Controller: 3 years</li>
+        <li>Body: 12 months or 12,000 km</li>
+        </ul`
     },
     {
-        question: "What safety features does Ezee include?",
-        answer: "Ezee is equipped with advanced alloy disc brakes and a stable design to ensure a secure and confident ride on urban roads."
+        question: "Does Ezee include reverse gear?",
+        answer: "Yes, it offers a reverse mode for easy back maneuvering."
+    },
+    {
+        question: "Can I use it on inclined roads?",
+        answer: " Suitable for minor inclines, but best for flat urban routes."
+    },
+    {
+        question: "What safety features does Ezee have?",
+        answer: "LED lighting, speed limiter, and anti-slip tires."
+    },
+        {
+        question: "What is the charging time?",
+        answer: "Full charging time is around 6-8 hours."
+    },
+        {
+        question: "Is there a color selection?",
+        answer: "Yes, available in youthful pastel and metallic tones (variant-specific)."
+    },
+        {
+        question: "Does it have a mobile charging port?",
+        answer: "Some versions come equipped with USB ports—check variant specs."
+    },
+        {
+        question: "Can two adults ride it comfortably?",
+        answer: "Yes, it supports two riders with a total weight capacity of ~140 kg."
     },
 ];

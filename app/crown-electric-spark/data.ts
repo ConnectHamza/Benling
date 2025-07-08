@@ -58,7 +58,7 @@ export const featuresData = [
         img: Feature1IMG,
         alt: 'Illuminator LED Headlight',
         title: 'Illuminator LED Headlight',
-        description: 'The Crown Electric Spark features a high-performance LED headlight that provides brilliant illumination, ensuring optimal visibility for safer rides during nighttime or in low-light conditions. The sleek design enhances the overall aesthetic while offering reliable performance to light your way.',
+        description: 'The Crown Electric Spark electric scooter is equipped with a high-performance LED headlight that delivers brilliant illumination for safer rides at night or in low-light conditions. This sleek, functional feature not only enhances visibility but also adds to the modern aesthetic of your <a href="https://crownelectricmobility.com/">electric scooter</a>, making every ride stylish and secure.',
 
     },
     {
@@ -96,28 +96,53 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the top speed of the Crown Electric Spark?",
-        answer: "Crown Electric Spark has a top speed of 35–40 km/h, making it ideal for city commuting."
+        question: "What is the max speed and range?",
+        answer: "40 km/h top speed and about 40 km range per charge."
     },
     {
-        question: "How far can the Crown Electric Spark go on a full charge?",
-        answer: "On a full charge, the Crown Electric Spark can cover approximately 40 kilometers, depending on riding conditions and usage."
+        question: "What battery does Spark use?",
+        answer: "A graphene battery with high efficiency and low maintenance."
+    },
+        {
+        question: "How long does charging take?",
+        answer: "Around 5 to 6 hours depending on power input."
     },
 {
-  question: "How long does it take to fully charge the battery?",
+  question: "What is the warranty for Spark?",
   answer: [`
         <ul style="list-style-type: disc; padding-left: 20px;">
-      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
-      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
+      <li>Battery: 18 months or 18,000 km</li>
+      <li>Motor & Controller: 3 years</li>
+      <li>Body: 12 months or 12,000 km</li>
     </ul>`
   ]
 },
     {
-        question: "Is the Crown Electric Spark eco-friendly?",
-        answer: "Yes, the Spark is fully electric, producing zero emissions and operating quietly, contributing to a cleaner environment."
+        question: "Is the Spark suitable for both genders?",
+        answer: "Yes, its design is unisex and functional for daily travel."
     },
     {
-        question: "Can I charge the Crown Electric Spark at home?",
-        answer: "Yes! The Spark’s battery can be easily charged using a regular home socket no special setup needed."
+        question: "What type of lights are included?",
+        answer: "LED headlights, taillights, and indicators."
+    },
+        {
+        question: "Does it offer regenerative braking?",
+        answer: "Yes, to conserve energy while braking."
+    },
+            {
+        question: "Can it be used for short delivery work?",
+        answer: "Yes, with its durable frame and battery range, it’s useful for light logistics."
+    },
+                {
+        question: "Is a digital meter cluster included?",
+        answer: "Yes, for easy readability and smart navigation (variant dependent)."
+    },
+                    {
+        question: "Does it support fast charging?",
+        answer: " No fast charging—standard home socket charging only."
+    },
+                        {
+        question: "Does it come with mobile charging support?",
+        answer: "Some models offer a USB port."
     },
 ];

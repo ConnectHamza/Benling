@@ -53,7 +53,7 @@ export interface FAQ {
 
 export const featureHeader: FeatureHeader = {
   featureTitle: 'Advanced Features for a Superior Ride',
-  featureText: `Enhance every journey with cutting-edge features designed for safety, comfort, and performance. From smart security to smooth suspensions, ride with confidence on any terrain.`,
+  featureText: `Enhance every journey with a feature-packed <a href="https://crownelectricmobility.com/">electric motorcycle</a> designed for safety, comfort, and top-tier performance. From smart security systems to smooth suspensions, ride with confidence and control on any terrain.`,
   bgColor: 'bg-black-30',
   textColor: 'text-white',
 };

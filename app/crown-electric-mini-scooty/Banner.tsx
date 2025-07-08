@@ -7,8 +7,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Compact, Stylish, and Made for City Life"
-                subtitle="Turn heads with Mini Scooty, the perfect electric scooter for young and urban riders. Lightweight, efficient, and designed for effortless short-distance commutes across Pakistan."
+                title="Crown Electric Mini Scooty"
+                subtitle="Turn heads with the Crown Electric Mini Scooty — a sleek 450W electric scooter in Pakistan designed for young, urban riders. Lightweight, efficient, and perfect for effortless short-distance commutes, it's the smart choice for navigating city streets with ease."
                 buttonText="Explore More"
                 imageSrc={MiniWeb.src}
                 mobileImageSrc={MiniBannerMobile.src}

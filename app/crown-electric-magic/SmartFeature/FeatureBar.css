@@ -1,0 +1,65 @@
+/* FeatureBar.css */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.FeatureBar {
+  overflow: hidden !important;
+  white-space: nowrap;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.FeatureBar span{
+  background: linear-gradient(to top, rgba(134, 135, 165, 0.1) 10%, rgba(134, 135, 165, 0.3) 100%);
+  padding: 10px 15px !important;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.FeatureBar-content {
+  display: inline-flex;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  gap: 10px;
+
+}
+
+.FeatureBar-left {
+  animation: scrollLeft 50s linear infinite; 
+}
+
+.FeatureBar-right {
+  animation: scrollRight 50s linear infinite; 
+}
+
+.FeatureBar-content span {
+  display: inline-flex;  
+}
+
+
+@media screen and (max-width: 768px){
+  .FeatureBar span{
+    font-size: 12px;
+    padding: 5px 10px !important;
+  }
+
+  
+
+}

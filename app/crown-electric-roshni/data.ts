@@ -11,23 +11,23 @@ import Loop5 from "../../public/assets/Roshni/Loop/Grid-05.webp";
 
 
 export const slides = [
-  { image: Loop1, width: 640, alt: "Side view" },
-  { image: Loop2, width: 640, alt: "Front view" },
-  { image: Loop3, width: 640, alt: "Dashboard" },
-  { image: Loop4, width: 320, alt: "Logo vertical" },
-  { image: Loop5, width: 1300, alt: "Full scooter" },
+    { image: Loop1, width: 640, alt: "Side view" },
+    { image: Loop2, width: 640, alt: "Front view" },
+    { image: Loop3, width: 640, alt: "Dashboard" },
+    { image: Loop4, width: 320, alt: "Logo vertical" },
+    { image: Loop5, width: 1300, alt: "Full scooter" },
 ];
 
 
 export const featureHeader = {
     featureTitle: 'Designed for Your Comfort and Control',
-    featureText: `Experience a blend of thoughtful design and advanced technology. Roshni's features are tailored to enhance your safety, convenience, and riding pleasure.`,
+    featureText: `Experience a blend of thoughtful design and advanced technology with the Roshni electric scooter. Its features are carefully crafted to enhance your safety, convenience, and overall riding pleasure on every trip.`,
     bgColor: 'bg-white',
     textColor: 'text-black-30',
-  };
+};
 
 
-  export const aboutSpecificationsData = [
+export const aboutSpecificationsData = [
     { title: "Motor", value: "1200W Brushless" },
     { title: "Maximum Speed", value: "55-60 km/h" },
     { title: "Battery", value: "72V.36Ah" },
@@ -56,7 +56,7 @@ export const featuresData = [
         alt: 'Dual Braking System',
         title: 'Dual Braking System',
         description: 'Front disc and rear drum brakes ensure precise and reliable stopping power.',
-        
+
     },
     {
         img: Feature2IMG,
@@ -81,23 +81,53 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What type of motor powers the Crown Electric Roshni?",
-        answer: "The Crown Electric Roshni is equipped with a 1200W brushless motor for efficient and powerful performance."
+        question: "What is the maximum range and speed of Roshni?",
+        answer: " It offers a 115-120 km range and max speed of 50–60 km/h."
     },
     {
-        question: "How long does it take to fully charge the Roshni?",
-        answer: "The battery charges fully in 6 to 8 hours using a 72V 5A charger."
+        question: "How does it compare to Roshni X?",
+        answer: "Roshni is a basic model without digital upgrades found in Roshni X."
     },
     {
-        question: "What is the maximum range of the Crown Electric Roshni on a single charge?",
-        answer: "The Roshni offers a range of 115-120 km on a single charge, depending on riding conditions."
+        question: "Battery details and charging time?",
+        answer: "Graphene battery; charges in 6-8 hours."
     },
     {
-        question: "What is the loading capacity of the Roshni?",
-        answer: "The Roshni has a loading capacity of up to 160 kg, suitable for a rider with additional cargo."
+        question: "Warranty coverage?",
+        answer: `
+        <ul>
+            <li>Battery: 18 months or 18,000 km</li>
+            <li>Motor & Controller: 3 years</li>
+            <li>Body: 12 months or 12,000 km</li>    
+        </ul>
+        `
     },
     {
-        question: "What type of braking system does the Crown Electric Roshni feature?",
-        answer: "The Roshni is equipped with a front disc and rear disc braking system for enhanced safety and control."
+        question: "Does it come with reverse gear?",
+        answer: " Yes, to assist with parking."
+    },
+    {
+        question: "Is the design compact?",
+        answer: "Yes, ideal for short-distance rides and compact city areas."
+    },
+    {
+        question: "Are colors customizable?",
+        answer: "Available in bright and standard shades."
+    },
+    {
+        question: "What kind of brakes does it have?",
+        answer: "Disc brakes, regenerative braking (variant-specific)."
+    },
+        {
+        question: "Is it safe for beginner riders?",
+        answer: "Yes, perfect for new riders due to its balanced frame and speed limits."
+    },
+            {
+        question: "Can it be used for delivery or daily errands?",
+        answer: "Yes, it offers a decent cargo capacity and under-seat storage."
+    },
+                {
+        question: "Can I get alloy wheels with this model?",
+        answer: "Depending on the trim—confirm with the dealer."
     },
 ];

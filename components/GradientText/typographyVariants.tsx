@@ -2,7 +2,7 @@ export const typographyVariants = {
   // H1 (58px)
   "h1-light-magistral": "font-magistral font-light text-4xl sm:text-5xl md:text-6xl",
   "h1-regular-magistral": "font-magistral font-normal text-4xl sm:text-5xl md:text-6xl",
-  "h1-medium-magistral": "font-magistral font-medium text-4xl sm:text-5xl md:text-6xl",
+  "h1-medium-magistral": "font-magistral font-bold text-4xl sm:text-5xl md:text-6xl",
   "h1-bold-magistral": "font-magistral font-bold text-4xl sm:text-5xl md:text-6xl",
 
   "h1-light-jakarta": "font-jakarta font-light text-4xl sm:text-5xl md:text-6xl",
@@ -14,7 +14,7 @@ export const typographyVariants = {
   // H2 (47px)
   "h2-light-magistral": "font-magistral font-light text-3xl sm:text-4xl md:text-5xl",
   "h2-regular-magistral": "font-magistral font-normal text-3xl sm:text-4xl md:text-5xl",
-  "h2-medium-magistral": "font-magistral font-medium text-3xl sm:text-4xl md:text-5xl",
+  "h2-medium-magistral": "font-magistral font-bold text-3xl sm:text-4xl md:text-5xl",
   "h2-bold-magistral": "font-magistral font-bold text-3xl sm:text-4xl md:text-5xl",
 
   "h2-light-jakarta": "font-jakarta font-light text-3xl sm:text-4xl md:text-5xl",
@@ -26,7 +26,7 @@ export const typographyVariants = {
   // H3 (38px)
   "h3-light-magistral": "font-magistral font-light text-2xl sm:text-3xl md:text-4xl",
   "h3-regular-magistral": "font-magistral font-normal text-2xl sm:text-3xl md:text-4xl",
-  "h3-medium-magistral": "font-magistral font-medium text-2xl sm:text-3xl md:text-4xl",
+  "h3-medium-magistral": "font-magistral font-bold text-2xl sm:text-3xl md:text-4xl",
   "h3-bold-magistral": "font-magistral font-bold text-2xl sm:text-3xl md:text-4xl",
 
   "h3-light-jakarta": "font-jakarta font-light text-2xl sm:text-3xl md:text-4xl",
@@ -38,7 +38,7 @@ export const typographyVariants = {
   // H4 (30px)
   "h4-light-magistral": "font-magistral font-light text-xl sm:text-2xl md:text-3xl",
   "h4-regular-magistral": "font-magistral font-normal text-xl sm:text-2xl md:text-3xl",
-  "h4-medium-magistral": "font-magistral font-medium text-xl sm:text-2xl md:text-3xl",
+  "h4-medium-magistral": "font-magistral font-bold text-xl sm:text-2xl md:text-3xl",
   "h4-bold-magistral": "font-magistral font-bold text-xl sm:text-2xl md:text-3xl",
 
   "h4-light-jakarta": "font-jakarta font-light text-xl sm:text-2xl md:text-3xl",
@@ -50,7 +50,7 @@ export const typographyVariants = {
   // H5 (25px)
   "h5-light-magistral": "font-magistral font-light text-lg sm:text-xl md:text-2xl",
   "h5-regular-magistral": "font-magistral font-normal text-lg sm:text-xl md:text-2xl",
-  "h5-medium-magistral": "font-magistral font-medium text-lg sm:text-xl md:text-2xl",
+  "h5-medium-magistral": "font-magistral font-bold text-lg sm:text-xl md:text-2xl",
   "h5-bold-magistral": "font-magistral font-bold text-lg sm:text-xl md:text-2xl",
 
   "h5-light-jakarta": "font-jakarta font-light text-lg sm:text-xl md:text-2xl",

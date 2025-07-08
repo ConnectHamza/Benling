@@ -1,8 +1,8 @@
 import { strapiApi } from "./strapiApi";
 
 
-console.log("BASE_URL:", process.env.NEXT_PUBLIC_STRAPI_URL);
-console.log("TOKEN:", process.env.STRAPI_API_TOKEN);
+
+
 
 export async function fetchBlogs() {
   try {
@@ -14,7 +14,7 @@ export async function fetchBlogs() {
     });
     return res.data.data || [];
   } catch (err: any) {
-    console.error("Strapi fetch error:", err.response?.data || err.message);
+    
     return [];
   }
 }
@@ -30,7 +30,7 @@ export async function fetchBlogBySlug(slug: string) {
     });
     return res.data.data[0] || null;
   } catch (err: any) {
-    console.error("Strapi fetch error:", err.response?.data || err.message);
+    
     return null;
   }
 }
@@ -63,7 +63,7 @@ export async function fetchRecentBlogs() {
       };
     });
   } catch (err: any) {
-    console.error("Strapi fetch error:", err.response?.data || err.message);
+    
     return [];
   }
 }

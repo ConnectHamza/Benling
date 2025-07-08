@@ -44,7 +44,7 @@ const RoshniClient = () => {
       <Banner />
       <StickyBar
         title="Crown Electric Roshni"
-        description='Experience the Roshni, a blend of innovative design and eco-friendly technology. Powered by advanced Graphene Battery Technology and a reliable 1200W Brushless Motor. Roshni promises smooth, efficient, and sustainable mobility tailored for every journey.'
+        description='Experience the Crown Electric Roshni, a perfect fusion of innovative design and eco-friendly technology. As a leading 1200W electric scooter in Pakistan, it’s powered by advanced graphene battery technology and a reliable 1200W brushless motor — delivering smooth, efficient, and sustainable mobility for every journey.'
         gradient1="#B9B5B0"
         gradient2="#F8F8F8"
         textColor="text-black-30"
@@ -69,7 +69,7 @@ const RoshniClient = () => {
       <SmartFeature />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
-      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true}/>
       <Faqs data={faqsData} />
     </div>
   )

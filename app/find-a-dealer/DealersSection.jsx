@@ -5,7 +5,7 @@ import Menu from "../../public/assets/Dealer/menu_book.svg"
 
 export default function AuthorizedDealersSection() {
   return (
-    <section className="w-full px-4 pb-10 md:pb-20 bg-white">
+    <section className="w-full px-4 py-10 md:py-20 bg-white z-40">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left: Heading */}

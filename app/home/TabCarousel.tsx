@@ -1,12 +1,13 @@
 'use client';
 
 import React, { useState } from "react";
+import { useRef } from "react";
 import HomeCarousel from "@/components/LoopCarousel/home-carousel";
 import PerformanceCarousel from "../crown-electric-performance-series/performance-carousel";
 import { bikes, performanceBikes } from "./data";
 import Typography from "@/components/GradientText/Typography";
 
-const TabbedCarousel = () => {
+const TabbedCarousel = (ref: any) => {
   const [activeTab, setActiveTab] = useState("performance"); 
 
    const heading =
@@ -21,7 +22,6 @@ const TabbedCarousel = () => {
 
   return (
     <div className="w-full h-full bg-white-500 relative overflow-hidden md:py-40 py-20">
-
          <div data-aos="fade-up" className="px-2">
                   <Typography as="h2" variant='h2-medium-magistral' className="mb-2 text-center">
                     {heading}
@@ -51,7 +51,7 @@ const TabbedCarousel = () => {
       </div>
 
       {/* Carousel Content */}
-      <div className="mt-0">
+      <div className="mt-0" ref={ref} id="our-models">
         {activeTab === "graphene" ? (
           <HomeCarousel  items={bikes} autoplay={true} />
         ) : (

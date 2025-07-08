@@ -8,8 +8,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="The Era of Smart Electric Commuting"
-                subtitle="Upgrade to Roshni X, a next-generation electric scooter with ergonomic design, and high battery range built for tomorrow’s urban riders in Pakistan."
+                title="Crown Electric Roshni X"
+                subtitle="Upgrade to the Crown Electric Roshni X — a next-generation 1500W electric scooter in Pakistan featuring an ergonomic design and high battery range. Built for tomorrow’s urban riders, it delivers power, comfort, and smart commuting for modern city life."
                 buttonText="Explore More"
                 imageSrc={RoshnixWeb.src}
                 mobileImageSrc={RoshniBannerMbl.src}

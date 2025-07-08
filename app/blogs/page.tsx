@@ -24,41 +24,61 @@ export default function BlogsPage() {
             {blogs.map((blog) => (
               <div key={blog.slug} className="md:flex gap-6">
                 <div className="md:w-[40%]">
+                  <Link href={`/blogs/${blog.slug}`}>
                   <Image
                     src={blog.coverImage}
                     alt={blog.title}
                     width={600}
                     height={400}
-                    className="w-full rounded-xl min-h-[40vh] object-cover"
+                    className="w-full rounded-xl min-h-[30vh] object-cover"
                   />
+                  </Link>
                 </div>
                 <div className="md:w-[60%] flex flex-col justify-center">
                   <div className="flex gap-4 items-center">
                     <Typography
                       variant="extra-subtext-regular-jakarta"
-                      className="text-black-30 bg-orange-100 w-fit px-3 py-1.5 rounded-lg"
+                      className="text-black-30 bg-orange-100 w-fit px-3 py-1.5 rounded-lg mt-4 md:mt-0"
                     >
                       {blog.category ? blog.category : "General"}
                     </Typography>
-                    <Typography
+                   
+                  </div>
+                  <div className="flex flex-col gap-2 mt-4">
+                    <Link href={`/blogs/${blog.slug}`}>
+                    <Typography as="h3" variant="h4-semibold-jakarta">
+                      {blog.title}
+                    </Typography>
+                    </Link>
+                    <Link href={`/blogs/${blog.slug}`}>
+                    <Typography as="p" variant="subtext-regular-jakarta">
+                      {blog.subtitle?.slice(0, 200)}
+                    </Typography>
+                    </Link>
+                    <Link href={`/blogs/${blog.slug}`}>
+                      <button className="flex items-center gap-2 font-semibold ">
+                        Read More
+                      </button>
+                    </Link>
+                    <div className="flex gap-2 items-center mt-4">
+                      <div>
+                      <Image width={40} height={40} src={blog.authorImage} alt={blog.author}/>
+                     </div>
+                     <div>
+                      <Typography
+                      variant="body-semibold-jakarta"
+                      className="text-black-30 w-fit"
+                    >
+                      {blog.author}
+                    </Typography>
+                     <Typography
                       variant="extra-subtext-regular-jakarta"
                       className="text-[#989898] w-fit"
                     >
                       {blog.date}
                     </Typography>
-                  </div>
-                  <div className="flex flex-col gap-2 mt-4">
-                    <Typography as="h3" variant="h4-semibold-jakarta">
-                      {blog.title}
-                    </Typography>
-                    <Typography as="p" variant="subtext-regular-jakarta">
-                      {blog.subtitle?.slice(0, 200)}
-                    </Typography>
-                    <Link href={`/blogs/${blog.slug}`}>
-                      <button className="flex items-center gap-2 font-semibold mt-2">
-                        Read More
-                      </button>
-                    </Link>
+                    </div>
+                    </div>
                   </div>
                 </div>
               </div>

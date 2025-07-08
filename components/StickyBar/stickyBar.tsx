@@ -42,7 +42,7 @@ const StickyBar: React.FC<StickyBarProps> = ({
 }) => {
   const container = useRef(null);
   const { scrollY } = useScroll()
-const showHeader = useTransform(scrollY, [100, 150], [0, 1])
+// const showHeader = useTransform(scrollY, [100, 100], [0, 1])
 
   return (
     <div className="relative">
@@ -82,7 +82,7 @@ const showHeader = useTransform(scrollY, [100, 150], [0, 1])
       </div>
   <motion.div 
     className="sticky top-0 w-full z-20"
-    style={{ opacity: showHeader }}
+    // style={{ opacity: showHeader }}
   >
             <div className="w-full z-20 bg-black-30 top-0 flex justify-center items-center px-5 py-5 border-b border-[#e8e8e8]" >
         <div className="w-lg text-white md:px-5 flex justify-between items-center gap-4">

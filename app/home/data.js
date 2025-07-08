@@ -63,7 +63,7 @@ import VictoryLogo from '../../public/assets/PerformanceSeries/logos/VictoryLogo
 
 
 export const Slides = [
-      {
+  {
     title: 'Crown Markhor Power. Performance. Precision.',
     subtitle: 'Crown Markhor is a powerful, smart, and secure electric bike built for high performance, heavy-duty use, and bold, sustainable mobility.',
     buttonText: 'Book Now',
@@ -74,7 +74,7 @@ export const Slides = [
     price: "380,000"
 
   },
-    {
+  {
     title: 'Crown Electric Cherry - The Vintage Way',
     subtitle: 'Crown Cherry combines bold style with powerful performance, offering a smooth and efficient ride for urban commuters . ',
     buttonText: 'Book Now',
@@ -96,7 +96,7 @@ export const Slides = [
     price: "325,000"
 
   },
-    {
+  {
     title: 'Crown Electric Raftaar: Big Power, Bigger Thrill',
     subtitle: 'Massive torque for instant acceleration. Powered by a high-capacity 72V40Ah Lithium Iron Phosphate battery for lasting performance.',
     buttonText: 'Book Now',
@@ -107,7 +107,7 @@ export const Slides = [
     price: "299,000"
 
   },
-    {
+  {
     title: 'Crown Electric Victory - Unleash Urban Power',
     subtitle: 'The Crown Victory offers strong performance, modern design, and affordability. Built with a 1000W motor and 72V 30Ah Lithium Iron Phosphate battery , it delivers up to 120 km range and 55 km/h speed —ideal for city rides. Stylish, lightweight, and built to impress.',
     buttonText: 'Book Now',
@@ -230,46 +230,55 @@ export const Slides = [
 
 
 export const faqsData = [
-{
-  question: "How long does it take to fully charge the battery?",
-  answer: [`
-        <ul style="list-style-type: disc; padding-left: 20px;">
-      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
-      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
-    </ul>`
-  ]
-},
   {
-    question: "Are your scooters water-resistant?",
-    answer: "Yes, all Crown Electric scooters are designed with splash and water resistance for safe riding in light rain and wet conditions."
+    question: "What is Crown Electric Mobility all about?",
+    answer: [`
+        Crown Electric is a Pakistani EV brand offering smart, sustainable electric scooters and bikes suited to modern-day commuting.`
+    ]
   },
   {
-    question: "What warranty do you offer??",
-    answer: `
-        <div>
-            <h3><strong>Graphene Series:</strong></h3>
-            <ul>
-                <li>36 months / 36,000 km coverage for Controller & Motor</li>
-                <li>18 months / 20,000 km coverage for Graphene Battery</li>
-                <li>12 months / 12,000 km coverage for Body Parts</li>
-            </ul></br>
-            <h3><b>Performance Series:</b></h3>
-            <ul>
-                <li>4 years / 48,000 km coverage for Controller & Motor</li>
-                <li>4 years / 48,000 km coverage for Lithium-LiFePO₄ Battery</li>
-                <li>12 months / 12,000 km coverage for Body Parts</li>
-            </ul>
-            <p>Enjoy your journey with the confidence of extended protection.</p>
-        </div>
-        `
+    question: "Are all your vehicles fully electric?",
+    answer: "Yes, every Crown model runs purely on electricity with zero emissions."
   },
   {
-    question: "Do I need a license to ride?",
-    answer: "Yes, a valid driving license is required to operate our high-speed models on public roads."
+    question: "What battery technologies do you offer?",
+    answer: `We use high-performance Lithium-ion and LiFePO₄ (Lithium Iron Phosphate) batteries for better lifespan and charging safety.`
   },
   {
-    question: "Where can I buy or test ride a Crown Electric scooter??",
-    answer: "Visit any of our authorized dealerships across Pakistan or use our Store Locator to find the nearest one."
+    question: "How long do your batteries last?",
+    answer: "LiFePO₄ batteries offer up to 3000+ charging cycles, translating to several years of use with minimal degradation."
+  },
+  {
+    question: "What is the average range per charge?",
+    answer: "Depending on the model, the range can vary from 60 km to 220 km per full charge."
+  },
+  {
+    question: "Do your scooters support fast charging?",
+    answer: "Select models support faster charging options with advanced battery management systems."
+  },
+  {
+    question: "Is maintenance required like petrol bikes?",
+    answer: " Electric bikes have far fewer moving parts, so they require much less maintenance than traditional petrol bikes."
+  },
+  {
+    question: "Are electric scooters safe in the rain?",
+    answer: " Electric bikes have far fewer moving parts, so they require much less maintenance than traditional petrol bikes."
+  },
+  {
+    question: "Where can I test ride a model?",
+    answer: "You can schedule a test ride at any of our registered dealers. Use the “Find a Dealer” page to locate the nearest one."
+  },
+  {
+    question: "Do you offer financing or installment options?",
+    answer: "Financing is available via selected dealerships and bank partners. Visit your nearest dealer for customized plans."
+  },
+  {
+    question: "Can I buy accessories like helmets, baskets, or covers?",
+    answer: "Yes, Crown dealers offer compatible accessories for most models."
+  },
+  {
+    question: "Is registration mandatory for your scooters?",
+    answer: " For low-speed models (under 50cc equivalent), registration may not be mandatory. High-speed variants typically require registration."
   },
 ];
 
@@ -682,6 +691,17 @@ export const cities =
         "address": "House # 64, Talha Residency, Near Qenci Pull, Nawabshah.",
         "phone": ["0335-3226900"],
         "location": "https://www.google.com/maps/place/24%C2%B051'36.7%22N+67%C2%B020'02.2%22E/@24.8601894,67.3313561,17z/data=!3m1!4b1!4m4!3m3!8m2!3d24.8601894!4d67.333931?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  "Hyderabad": {
+    "data": [
+      {
+        "id": 27,
+        "name": "COMPANY OUTLET",
+        "address": "Unit No. 07, Near American Hospital, Latifabad, Hyderabad",
+        "phone": ["0333-2705150"],
+        "location": "https://www.google.com/maps/place/25%C2%B022'19.4%22N+68%C2%B021'21.9%22E/@25.3721503,68.3554451,18.5z/data=!4m4!3m3!8m2!3d25.3720479!4d68.3560884?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
       }
     ]
   }

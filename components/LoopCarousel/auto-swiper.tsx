@@ -85,11 +85,13 @@ export default function AutoSwiper({
                 <Image
                   src={slide.image}
                   alt={slide.alt}
-                  fill
-                  priority={index < 2}
-                  style={{
-                    objectFit: "cover",
-                  }}
+                  className="mob-height"
+                  // priority={index < 2}
+                  // style={{
+                  //   objectFit: "cover",
+                  //   height: "auto",
+                  //   width: "auto"
+                  // }}
                 />
               </div>
             </SwiperSlide>

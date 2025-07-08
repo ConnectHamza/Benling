@@ -33,8 +33,8 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
                     </Typography>
                 </div>
                 <div className='text-center my-4' data-aos="zoom-in">
-                    <Typography variant='subtext-regular-jakarta'>
-                        {featureText}
+                    <Typography as='p' variant='subtext-regular-jakarta'>
+                        <span dangerouslySetInnerHTML={{ __html: featureText }} />
                     </Typography>
                 </div>
 
@@ -48,8 +48,8 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ featureItems, Feature
                             </Typography>
                             </div>
                             <div data-aos="fade-up">
-                            <Typography variant='subtext-regular-jakarta'>
-                                {feature.description}
+                            <Typography variant='subtext-regular-jakarta'>                                
+                                 <span dangerouslySetInnerHTML={{ __html: feature.description }} />
                             </Typography>
                             </div>
                         </div>

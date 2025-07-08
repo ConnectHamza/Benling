@@ -111,7 +111,7 @@ export const cities =
         "id": 2,
         "name": "ST TRADERS BAHRIA TOWN",
         "address": "Shop # 01, B-142, Midway Commercial, Bahria Town, Karachi.",
-        "phone": ["0339-8888991","0321-8777941"],
+        "phone": ["0339-8888991", "0321-8777941"],
         "location": "https://www.google.com/maps/place/25%C2%B001'51.5%22N+67%C2%B018'33.2%22E/@25.0307483,67.3092503,17z/data=!4m4!3m3!8m2!3d25.0309722!4d67.3092222?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
       },
       {
@@ -362,6 +362,17 @@ export const cities =
         "address": "House # 64, Talha Residency, Near Qenci Pull, Nawabshah.",
         "phone": ["0335-3226900"],
         "location": "https://www.google.com/maps/place/24%C2%B051'36.7%22N+67%C2%B020'02.2%22E/@24.8601894,67.3313561,17z/data=!3m1!4b1!4m4!3m3!8m2!3d24.8601894!4d67.333931?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  "Hyderabad": {
+    "data": [
+      {
+        "id": 34,
+        "name": "COMPANY OUTLET",
+        "address": "Unit No. 07, Near American Hospital, Latifabad, Hyderabad",
+        "phone": ["0333-2705150"],
+        "location": "https://www.google.com/maps/place/25%C2%B022'19.4%22N+68%C2%B021'21.9%22E/@25.3721503,68.3554451,18.5z/data=!4m4!3m3!8m2!3d25.3720479!4d68.3560884?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
       }
     ]
   }

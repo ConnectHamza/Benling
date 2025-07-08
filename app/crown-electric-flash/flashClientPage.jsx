@@ -30,7 +30,7 @@ const statsData = [
 ];
 
 
-const page = () => {
+const FlashClient = () => {
 
   useEffect(() => {
     initFixOverflow();
@@ -54,10 +54,10 @@ const page = () => {
       <ColorShowcase />
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
       <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
-      <Specifications bottomImageTag={Complimentary} data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications bottomImageTag={Complimentary} data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true}/>
       <Faqs data={faqsData} />
     </div>
   )
 }
 
-export default page
+export default FlashClient

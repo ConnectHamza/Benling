@@ -48,7 +48,7 @@ const Fairy = () => {
       <Banner />
       <StickyBar
         title="Crown Electric Fairy"
-        description="Powerful and Practical, the Fairy is built for modern urban life. Equipped with a robust 1000W motor and a 72V 23Ah Graphene battery, Fairy delivers a smooth, high-performance ride with impressive range and speed. Its sleek design, eco-friendly technology, and spacious utility make it the perfect companion for effortless, everyday commuting."
+        description="Powerful and practical, the Crown Electric Fairy is built for modern urban life. As a reliable 1000W electric scooter in Pakistan, it features a robust 1000W motor and a 72V 23AH graphene battery, delivering a smooth, high-performance ride with excellent range and speed. With its sleek design, eco-friendly technology, and spacious utility, the Fairy is the perfect companion for effortless, everyday commuting."
         gradient1="#FFFEEF"
         gradient2="#ADACA2"
         textColor="text-[#424233]"
@@ -69,7 +69,7 @@ const Fairy = () => {
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
             <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
       
-      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true}/>
       <Faqs data={faqsData} />
     </div>
   );

@@ -40,14 +40,16 @@ const RoshniXClient = () => {
   return (
     <div>
       <Banner />
+      <div>
       <StickyBar
         title="Crown Electric Roshni X"
-        description='Experience next-gen mobility with the Roshni X. Powered by a 1500W Brushless Motor and a durable 72V 36AH Graphene Battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers, Roshni X offers efficiency, style, and zero emissions in one sleek package.'
+        description='Experience next-gen mobility with the Crown Electric Roshni X, a cutting-edge 1500W electric scooter in Pakistan. Powered by a 1500W brushless motor and a durable 72V 36AH graphene battery, it delivers smooth, powerful, and eco-friendly rides. Designed for urban explorers, the Roshni X combines efficiency, bold style, and zero emissions in one sleek, modern package.'
         gradient1="#534C2A"
         gradient2="#0F0C02"
         textColor="text-[#FDCF0A]"
         price='235,000'
       />
+      </div>
       <Featured
         stats={statsData}
         imageAlt={"RoshniX Feature Image"}
@@ -64,7 +66,7 @@ const RoshniXClient = () => {
       <FeaturesSection featureItems={featuresData} FeatureHeader={featureHeader} />
             <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
     
-      <Specifications bottomImageTag={Complimentary.src} data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications bottomImageTag={Complimentary.src} data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true} />
       <Faqs data={faqsData} />
     </div>
   )

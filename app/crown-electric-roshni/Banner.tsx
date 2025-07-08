@@ -8,8 +8,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Roshni – Bright, Bold, and Electric"
-                subtitle="Discover Roshni, the stylish electric scooter made for vibrant city living. With modern design and efficient performance, it’s your perfect ride for a greener Pakistan."
+                title="Crown Electric Roshni"
+                subtitle="Discover the Crown Electric Roshni, a stylish 1200W electric scooter in Pakistan built for vibrant city living. With its modern design and efficient performance, it’s the ideal ride for urban commuters seeking a smarter, greener way to move across Pakistan."
                 buttonText="Explore More"
                 imageSrc={RoshnixWeb.src}
                 mobileImageSrc={RoshniMobile.src}

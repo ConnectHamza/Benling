@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import FlashClientPage from "./flashClientPage";
+import FlashClient from "./flashClientPage";
 
 
 export const metadata = {
@@ -17,5 +18,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <FlashClientPage />;
+  return <FlashClient />;
 }

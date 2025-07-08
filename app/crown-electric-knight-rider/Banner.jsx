@@ -7,8 +7,8 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Crown Knight Rider"
-                subtitle="Experience unmatched strength and control with Knight Rider, a rugged electric scooter built for power rides, high-speed performance, and reliable travel on Pakistan’s diverse roads."
+                title="Crown Electric Knight Rider"
+                subtitle="Experience unmatched strength and control with the Crown Electric Knight Rider, a rugged 1500W electric motorcycle in Pakistan. Built for power rides and high-speed performance, it delivers reliable travel across Pakistan’s diverse road conditions with confidence and style."
                 imageSrc={KnightWeb.src}
                 mobileImageSrc={FlashBannerMobile.src}
                 textColor='md:text-white text-black'

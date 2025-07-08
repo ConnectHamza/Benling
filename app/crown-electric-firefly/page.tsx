@@ -55,7 +55,7 @@ const Firefly = () => {
       <Benefits />
             <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
 
-      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+      <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true}/>
       <Faqs data={faqsData} />
     </>
   )

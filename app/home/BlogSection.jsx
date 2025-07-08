@@ -58,8 +58,8 @@ export default function RecentBlogsCarousel() {
                 className="flex-shrink-0 w-[85vw] sm:w-[300px] md:w-[350px] lg:w-[400px] py-4 flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-full h-[200px] sm:h-[250px] relative rounded-lg overflow-hidden mb-4">
-                    <Link href={`/blogs/${blog.slug}`} target="_blank">
+                  <div className="w-full md:h-[230px] h-[160px] relative rounded-lg overflow-hidden mb-4">
+                    <Link href={`/blogs/${blog.slug}`}>
                       <Image
                         src={blog.coverImage}
                         alt={blog.title}
@@ -71,7 +71,7 @@ export default function RecentBlogsCarousel() {
                   <Typography as="span" variant="extra-subtext-regular-jakarta" className="text-[#989898] mb-4">
                     {blog.date}
                   </Typography>
-                  <Link href={`/blogs/${blog.slug}`} target="_blank">
+                  <Link href={`/blogs/${blog.slug}`}>
                     <Typography
                       as="h3"
                       variant="h6-medium-jakarta"
@@ -80,14 +80,14 @@ export default function RecentBlogsCarousel() {
                       {blog.title}
                     </Typography>
                   </Link>
-                  <Link href={`/blogs/${blog.slug}`} target="_blank">
+                  <Link href={`/blogs/${blog.slug}`}>
                     <Typography as="p" variant="subtext-regular-jakarta" className="text-[#000] leading-snug line-clamp-3">
                       {blog.subtitle}
                     </Typography>
                   </Link>
                 </div>
                 <div className="mt-4">
-                  <Link href={`/blogs/${blog.slug}`} target="_blank">
+                  <Link href={`/blogs/${blog.slug}`}>
                     <div className="text-[#000] hover:underline text-sm font-semibold font-jakarta flex flex-row items-center">
                       <Typography variant="extra-subset-bold-jakarta">
                         Read More

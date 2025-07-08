@@ -30,10 +30,11 @@ const SlideImage = ({
     <Image
       src={src}
       alt={alt}
-      fill
-      className="object-cover object-center"
+      height={10000}
+      width={10000}    
+      className="object-cover object-center h-full w-full"
       priority={priority}
-      onLoadingComplete={onLoad}
+      onLoad={onLoad}
       sizes={isMobile ? '100vw' : '(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw'}
     />
   </div>
@@ -214,7 +215,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 `}
               >
                 <div className="mb-4">
-                  <Typography as="h1" variant="h2-medium-magistral">
+                  <Typography as="h1" variant="h2-bold-magistral">
                     {currentSlideData.title}
                   </Typography>
                 </div>

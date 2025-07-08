@@ -93,59 +93,47 @@ export const featuresData = [
 
 export const faqsData = [
    {
-    "question": "What is the motor power of Crown Cherry?",
-    "answer": "The Crown Cherry is powered by a robust 3000W motor, delivering strong acceleration and smooth performance ideal for both city commutes and highway rides."
+    "question": "What makes Crown Cherry unique?",
+    "answer": "A blend of vintage Vespa aesthetics with advanced battery tech and top-tier range."
   },
   {
-    "question": "Which battery does Crown Cherry use?",
-    "answer": "It uses a 72V 40Ah Lithium Iron Phosphate (LiFePO₄) battery — known for its safety, durability, fast charging, and long cycle life."
+    "question": "Is it suitable for women riders?",
+    "answer": "Yes, its design, balance, and comfort make it a great unisex option."
   },
   {
-    "question": "How much range can I expect from Crown Cherry on a single charge?",
-    "answer": "Crown Cherry offers an impressive range of 110–130 km on a full charge, depending on riding conditions such as terrain, rider weight, and speed."
+    "question": "What kind of battery does it use?",
+    "answer": "LiFePO₄ with 4-year or 48,000 km warranty."
   },
   {
-    "question": "What is the top speed of Crown Cherry?",
-    "answer": "Crown Cherry delivers a top speed of 75–80 km/h, making it one of the fastest electric scooters in its class."
+    "question": "What’s the average charging time?",
+    "answer": "Around 5 hours using a home socket."
   },
   {
-    "question": "Is Crown Cherry suitable for long-distance travel?",
-    "answer": "Yes, with its high-capacity battery and powerful motor, Crown Cherry is excellent for daily commuting as well as long-distance weekend trips."
+    "question": "Does it support dual riders?",
+    "answer": "Yes, it can comfortably seat two adults."
   },
   {
-    "question": "Where can I buy or test ride Crown Cherry?",
-    "answer": "You can purchase or test ride Crown Cherry at authorized dealerships located in Multan, Karachi, Lahore, Rawalpindi, and Mardan."
+    "question": "How efficient is the battery?",
+    "answer": "Up to 130 km per charge, one of the highest in the series."
   },
   {
-    "question": "Does Crown offer warranty on Cherry?",
-    "answer": "Yes, Crown provides an extended warranty:\n- Battery, Motor & Controller: 4 years or 48,000 km\n- Body Parts: 12 months\n\nThis warranty applies whether you buy outright or opt for installment financing."
+    "question": "Does it include a USB port?",
+    "answer": "Yes, for mobile charging."
   },
   {
-    "question": "Can I buy Crown Cherry on installments?",
-    "answer": "Yes, flexible EMI options are available through:\n- Meezan Bank\n- Bank Alfalah (available at Alfa Mall)\n- MCB Bank\n\nContact your local Crown dealer to start the application process."
+    "question": "Does it have a digital speedometer?",
+    "answer": "Yes, with battery and trip info display."
   },
   {
-    "question": "Are there any special installment offers for Crown Cherry?",
-    "answer": "Yes! You can take advantage of the 0% markup offer on 12-month installment plans, helping you spread payments without additional cost."
+    "question": "Is it suitable for hilly areas?",
+    "answer": "Yes, the motor provides good torque for moderate inclines."
   },
   {
-    "question": "Can I extend my installment plan beyond 12 months?",
-    "answer": "Absolutely! Installment tenures can be stretched up to 24 months, giving you greater flexibility based on your budget."
+    "question": "What kind of brakes and suspension does it have?",
+    "answer": "Disc brakes and telescopic shocks."
   },
   {
-    "question": "How long does it take to fully charge the Crown Cherry battery?",
-    "answer": "The battery takes approximately 6–8 hours to fully charge using the standard charger, depending on ambient temperature."
+    "question": "Can it be used for commercial purposes?",
+    "answer": "Yes, delivery and fleet usage is possible."
   },
-  {
-    "question": "Is the battery safe in extreme weather?",
-    "answer": "Yes, the LiFePO₄ battery used in Crown Cherry is highly stable and resistant to overheating, ensuring reliable performance even in extreme heat or humidity."
-  },
-  {
-    "question": "What safety features does Crown Cherry have?",
-    "answer": "Crown Cherry includes:\n- Front and rear disc brakes\n- Bright LED headlights and indicators\n- Smart digital display with real-time data\n\nThese features ensure a secure and confident riding experience."
-  },
-  {
-    "question": "Is Crown Cherry comfortable for two riders?",
-    "answer": "Yes, it features an ergonomic dual-seat design that ensures comfort for both rider and passenger, even during longer rides."
-  }
 ];

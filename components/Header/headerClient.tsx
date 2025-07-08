@@ -12,67 +12,6 @@ import { div } from "framer-motion/client";
 
 
 
-// function MobileModelsPanel(onBack: any) {
-
-
-//     return (
-//         <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
-//             {/* Black header with back button and centered logo */}
-//             <div className="flex items-center justify-between bg-black-200 px-6 py-4" style={{ minHeight: "64px" }}>
-//                 <button onClick={onBack} className="text-white text-2xl" aria-label="Back">
-//                     ←
-//                 </button>
-//                 <Image
-//                     src="/assets/Header-Footer/Crown-Electric-Mobility-Logo.svg"
-//                     alt="Logo"
-//                     width={100}
-//                     height={80}
-//                     priority
-//                 />
-//                 <div className="w-8" /> {/* empty space to center logo */}
-//             </div>
-//             <div className="flex flex-col px-6 py-6 gap-6">
-//                 <div className="text-lg mb-6 font-magistral font-regular text-black-200 text-center">
-//                     View our Models
-//                 </div>
-//                 {modelsData.map((model) => (
-//                     <a
-//                         href={model.href}
-//                         key={model.href}
-//                         className="flex flex-col items-center group hover:scale-105 transition"
-//                     >
-//                         {/* Image Container with fixed height */}
-//                         <div className="flex items-center justify-center w-full">
-//                             <Image
-//                                 src={model.img}
-//                                 alt={model.href}
-//                                 className="object-contain max-h-full"
-//                             />
-//                         </div>
-
-//                         {/* Logo Container with fixed height */}
-//                         <div className="mt-6 h-[40px] flex items-center justify-center">
-//                             <Image
-//                                 src={model.logo}
-//                                 alt={model.href}
-//                                 width={150}
-//                                 height={20}
-//                                 className="mx-auto"
-//                             />
-//                         </div>
-
-//                         {/* Text Info with fixed height */}
-//                         <div className="text-xs text-gray-600 text-center mt-2 h-[20px] font-jakarta">
-//                             {model.range} | {model.speed}
-//                         </div>
-//                     </a>
-
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
-
 let HeaderClient = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isModelsOpen, setIsModelsOpen] = useState(false);
@@ -175,6 +114,8 @@ let HeaderClient = () => {
                                                 src={model.logo}
                                                 alt={model.href}
                                                 className="mx-auto w-full h-[24px]"
+                                                height={1000}
+                                                width={1000}
                                             />
                                         </div>
                                         {/* <div
@@ -218,8 +159,17 @@ let HeaderClient = () => {
                 {/* Logo with black background */}
                 <div className="md:w-[20%]">
                     {!isMobileMenuOpen && <a href="/" className="flex items-center justify-start bg-black px-4 py-1 rounded">
-                        <Image src="/assets/Header-Footer/Crown-Electric-Mobility-Pakistan.svg" alt="Logo" width={140}
-                            height={80} priority />
+<Image
+  src="/assets/Header-Footer/Crown-Electric-Mobility-Pakistan.svg"
+  alt="Logo"
+  width={140}
+  height={140}
+  style={{
+    height: 140,
+    width: 140
+  }}
+/>
+
                     </a>}
                 </div>
 
@@ -360,7 +310,6 @@ let HeaderClient = () => {
                                     About Us
                                 </Typography>
                             </Link>
-
 
                             <Link href="/crown-electric-performance-series" onClick={(e) => {
                                 e.preventDefault();

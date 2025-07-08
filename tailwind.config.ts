@@ -9,7 +9,7 @@ module.exports = {
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
       jakarta: ["Plus Jakarta Sans", 'sans-serif'],
-      magistral: ['Magistral', 'sans-serif'],
+      magistral: ['Red Hat Display', 'sans-serif'],
 
     },
     extend: {

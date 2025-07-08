@@ -9,7 +9,6 @@ import InnovationMain from './InnovationSection/Main';
 import Specifications from '@/components/TechnicalSpecifications/Specifications';
 import Faqs from '@/components/Faqs/Faqs';
 import { faqsData, aboutSpecificationsData, aboutSpecificationsData2, slides } from './data';
-import LoopMain from '@/components/LoopCarousel/loop-main';
 import Banner from './Banner';
 import AutoSwiper from '@/components/LoopCarousel/auto-swiper';
 
@@ -40,21 +39,21 @@ export default function Ezee() {
     return (
         <>
             <main>
-                <Banner />
-                <StickyBar
+               <Banner />
+               <StickyBar
                     title="Crown Electric Ezee"
-                    description='Experience a revolutionary blend of performance and control that redefines your everyday ride. With unmatched precision and effortless handling, the Ezee takes your journey to the next level.'
+                    description='Experience a revolutionary blend of performance and control with the Crown Electric Ezee, a game-changing 650W three wheeler electric scooter in Pakistan. With unmatched precision, smooth stability, and effortless handling, the Ezee elevates your everyday ride to a whole new level.'
                     gradient1="#410D09"
                     gradient2="#121212"
                     textColor="text-red-300"
                     price='230,000'
-                />
+               />
                 <Carousel />
                 <Flawless />
                 <PowerfulSection />
                 <InnovationMain />
                 <AutoSwiper slideData={slides} heading={heading} colors={colors}/>
-                <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+                <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true}/>
                 <Faqs data={faqsData} />
             </main>
         </>

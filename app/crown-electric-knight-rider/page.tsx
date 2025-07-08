@@ -37,7 +37,7 @@ const KnightRider = () => {
             <Banner />
             <StickyBar
                 title="Crown Electric Knight Rider"
-                description='Discover the Crown Knight Rider, a revolutionary electric bike crafted to deliver superior performance, unmatched style, and eco-friendly mobility. Built with cutting-edge 72V36Ah Graphene Battery Technology and a robust 1500W Brushless Motor, Knight Rider ensures your rides are smooth, powerful, and sustainable.'
+                description='Discover the Crown Electric Knight Rider, a revolutionary 1500W electric motorcycle in Pakistan designed for superior performance, bold style, and eco-friendly mobility. Equipped with advanced 72V 36AH graphene battery technology and a powerful 1500W brushless motor, the Knight Rider delivers smooth, powerful, and sustainable rides across every terrain.'
                 gradient1="#4C4442"
                 gradient2="#121212"
                 textColor='text-white'
@@ -50,7 +50,7 @@ const KnightRider = () => {
             <div className='pt-20 pb-10 md:pb-0'>
                 <AutoSwiper slideData={slides} heading={heading} colors={colors} />
             </div>
-            <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} />
+            <Specifications data={aboutSpecificationsData} data2={aboutSpecificationsData2} isGraphene={true}/>
             <Faqs data={faqsData} />
         </main>
     )

@@ -102,23 +102,23 @@ export default function DealerClient() {
 
   return (
     <>
-    {/* <div>
+    <div>
     <StoreLocator />
-    </div> */}
-      <div>
+    </div>
+      {/* <div>
         <ShopSection />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <DealersSection />
       </div>
       <div>
         <SaleSection />
       </div>
-      <div className="md:pb-40 pb-20">
+      <div className="md:pb-40 pb-20"> */}
         {/* <MotorcycleCarousel items={bikes} autoplay={true} /> */}
-        <TabbedCarousel />
-      </div>
-      <Faqs data={faqsData} />
+        {/* <TabbedCarousel /> */}
+      {/* </div>
+      <Faqs data={faqsData} /> */}
     </>
 
   );

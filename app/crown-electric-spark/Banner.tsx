@@ -7,8 +7,8 @@ const Banner = (textColor: string) => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Engineered for Confidence, Designed for Style"
-                subtitle="The Spark electric scooter offers a powerful ride with modern styling. Ride confidently with advanced safety and electric performance, made for Pakistan's roads."
+                title="Crown Electric Spark"
+                subtitle="The Crown Electric Spark delivers a bold and powerful ride as a top-tier 600W electric scooter in Pakistan. With sleek modern styling, advanced safety features, and reliable electric performance, it's built to handle Pakistan’s roads with confidence and style."
                 buttonText="Explore More"
                 imageSrc={SparkWeb.src}
                 mobileImageSrc={BannerMobile.src}                

@@ -1,4 +1,5 @@
 import React, { CSSProperties, ReactNode } from 'react';
+import type { JSX } from 'react';
 import { typographyVariants } from './typographyVariants';
 
 interface TypographyProps {

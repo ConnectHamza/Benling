@@ -93,59 +93,47 @@ export const featuresData = [
 
 export const faqsData = [
    {
-    "question": "What is the motor power of Crown Raftaar?",
-    "answer": "The Crown Raftaar features a powerful 2000W motor, delivering strong torque and smooth acceleration ideal for city riding and highway cruising."
+    "question": "Who is the Raftaar designed for?",
+    "answer": "Speed enthusiasts and long-distance commuters."
   },
   {
-    "question": "Which battery does Crown Raftaar use?",
-    "answer": "It uses a 72V 40Ah Lithium Iron Phosphate (LiFePO₄) battery — known for its safety, fast charging, long life, and thermal stability."
+    "question": "What is its top range and speed?",
+    "answer": "160 km range and 90 km/h top speed."
   },
   {
-    "question": "How much range can I expect from Crown Raftaar on a single charge?",
-    "answer": "Crown Raftaar offers a range of 140–160 km per full charge, making it one of the best options for daily commuting and weekend adventures."
+    "question": "Is the motor brushless?",
+    "answer": "Yes, BLDC for efficient and quiet performance."
   },
   {
-    "question": "What is the top speed of Crown Raftaar?",
-    "answer": "Crown Raftaar delivers a maximum speed of 85–90 km/h, offering a sporty feel while maintaining efficiency."
+    "question": "Does it support regenerative braking?",
+    "answer": "Yes, to recharge the battery while slowing down."
   },
   {
-    "question": "Is Crown Raftaar suitable for long rides?",
-    "answer": "Yes! With its long range, comfortable seating, and responsive handling, Crown Raftaar is perfect for both short commutes and longer trips."
+    "question": "What’s the battery chemistry?",
+    "answer": "LiFePO₄ with 3000+ charge cycles."
   },
   {
-    "question": "Where can I buy or test ride Crown Raftaar?",
-    "answer": "You can purchase or test ride Crown Raftaar at authorized dealerships located in Multan, Karachi, Lahore, Rawalpindi, and Mardan."
+    "question": "What is its frame type?",
+    "answer": "Reinforced metal body with motorcycle chassis"
   },
   {
-    "question": "Does Crown offer warranty on Raftaar?",
-    "answer": "Yes, Crown provides an extended warranty:\n- Battery, Motor & Controller: 4 years or 48,000 km\n- Body Parts: 12 months\n\nThis warranty applies whether you pay upfront or opt for installment financing."
+    "question": "Can it carry a second rider comfortably?",
+    "answer": "Yes, full-length seat and heavy-duty suspension."
   },
   {
-    "question": "Can I buy Crown Raftaar on installments?",
-    "answer": "Yes, flexible EMI options are available through:\n- Meezan Bank\n- Bank Alfalah (available at Alfa Mall)\n- MCB Bank\n\nContact your local Crown dealer for assistance with application and approval."
+    "question": "CIs it road-legal nationwide?",
+    "answer": "Yes, with proper registration."
   },
   {
-    "question": "Are there any special installment offers for Crown Raftaar?",
-    "answer": "Yes! You can take advantage of the 0% markup plan on 12-month installments, helping you manage payments without extra cost."
+    "question": "Is it suitable for rainy weather?",
+    "answer": "IP-rated parts ensure water resistance."
   },
   {
-    "question": "Can I extend my installment plan beyond 12 months?",
-    "answer": "Absolutely! Installment tenures can be stretched up to 24 months, giving you more flexibility based on your financial needs."
+    "question": "What is the handlebar design like?",
+    "answer": "Sporty, wide handlebar for enhanced control."
   },
   {
-    "question": "How long does it take to fully charge the Crown Raftaar battery?",
-    "answer": "The battery takes approximately 4-5 hours to fully charge using the standard charger, depending on ambient temperature and usage."
+    "question": "How long does the battery last overall?",
+    "answer": "Typically 4–5 years with routine charging."
   },
-  {
-    "question": "Is the battery safe in extreme weather conditions?",
-    "answer": "Yes, the Lithium LiFePO₄ battery used in Crown Raftaar is highly stable and resistant to overheating, ensuring reliable performance even in high temperatures or humid climates."
-  },
-  {
-    "question": "What safety features does Crown Raftaar have?",
-    "answer": "Crown Raftaar includes:\n- Front and rear disc brakes\n- Bright LED headlights and indicators\n- Smart digital display with real-time data\n\nThese ensure a secure and confident ride in all conditions."
-  },
-  {
-    "question": "Is Crown Raftaar comfortable for two riders?",
-    "answer": "Yes, it features a wide, ergonomic dual-seat design that ensures comfort for both rider and passenger, even during longer journeys."
-  }
 ];

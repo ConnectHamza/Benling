@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;800&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -189,14 +191,22 @@ p {
   }
 
   .swiper-button-prev {
-
     display: none;
-
   }
 
   .swiper-button-next {
     display: none;
   }
+
+  .mob-height  {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+   .mob-height img{
+    width: 100%;
+   }
 }
 
 
@@ -346,6 +356,22 @@ p {
   position: sticky !important;
 }
 
+.vintage-gradient {
+  background: radial-gradient(ellipse at 50% 40%, #232323 60%, #141414 80%, #000 100%);
+  position: relative;
+}
+
+/* Optional: Vintage noise overlay for extra authenticity */
+.vintage-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url('/noise-texture.png');
+  opacity: 0.07;
+  z-index: 2;
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
   -ms-overflow-style: none;
@@ -354,82 +380,19 @@ p {
   /* Firefox */
 }
 
-@font-face {
+ @font-face {
   font-family: 'Magistral';
-  src: url('/fonts/Magistral-Light.ttf') format('truetype');
-  font-weight: 300;
+  src: local('Red Hat Display'), local('RedHatDisplay-Regular'),
+       url('https://fonts.gstatic.com/s/redhatdisplay/v17/pxiDyp8kv8JHgFVrJJLucHtAOvWDSHFF.woff2') format('woff2');
+  font-weight: 300 800;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Magistral';
-  src: url('/fonts/Magistral-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-Book.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-BookItalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Magistral';
-  src: url('/fonts/Magistral-ExtraBoldItalic.ttf') format('truetype');
-  font-weight: 800;
+  src: local('Red Hat Display'), local('RedHatDisplay-Italic'),
+       url('https://fonts.gstatic.com/s/redhatdisplay/v17/pxiAyp8kv8JHgFVrJJLufntAOvWDSHFF.woff2') format('woff2');
+  font-weight: 300 800;
   font-style: italic;
   font-display: swap;
 }

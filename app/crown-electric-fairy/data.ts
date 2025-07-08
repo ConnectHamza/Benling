@@ -93,16 +93,16 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the motor power of the Fairy?",
-        answer: "The Fairy is powered by a strong 1000W brushless motor for smooth and efficient performance."
+        question: "What is the top speed and range of the Fairy?",
+        answer: " It can reach speeds of up to 55 km/h and travel around 80 km on a full charge."
     },
     {
-        question: "What type and capacity of battery does the Fairy use?",
-        answer: "It features a high-performance 72V 23Ah Graphene battery, offering longer life and faster charging."
+        question: "What kind of battery does it have?",
+        answer: " A graphene-based battery that balances range, cost, and life cycle."
     },
     {
-        question: "How fast can the Fairy go?",
-        answer: "The scooter reaches a top speed of 50–55 km/h, perfect for urban commuting."
+        question: "How long does it take to fully charge?",
+        answer: " Around 5 to 6 hours."
     },
     {
         question: "What is the range of the Fairy on a full charge?",

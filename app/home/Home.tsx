@@ -22,6 +22,8 @@ import TabbedCarousel from './TabCarousel';
 import HeroSectionWrapper from '@/components/Herocontainer/HeroSliderWrapper';
 import HeroSection from '@/components/Herocontainer/HeroSlider';
 import RecentBlogsSection from './RecentBlogs/BlogSection';
+import Herosection from '../about-us/HeroSection';
+import Hero from './Hero';
 
 
 export default function Home() {
@@ -30,13 +32,13 @@ export default function Home() {
   return (
     <div className='relative'>
       <div className='pt-[0px]'>
-        <HeroSection slides={Slides}/>
+        <Hero />
       </div>
 
       <div className='relative'>
       <StickyBar      
-        title="Crown Electric Mobility – Pakistan's No. 1 Choice for Electric Bikes."
-        description="Crown Electric Mobility, proudly operated by Crown Group, leads the EV revolution with sustainable, high-performance scooters designed for efficiency, reliability, and innovation."
+        title="Crown Electric Mobility – Pakistan’s No. 1 Brand for Electric Bikes"
+        description="Proudly operated by Crown Group, we’re leading the EV movement with next-generation electric bikes designed for efficiency, innovation, and real-world reliability."
         bgImage={CrownAboutIMG.src}
         gradient1="transparent"
         gradient2="transparent"
@@ -47,7 +49,7 @@ export default function Home() {
         showPrice={false}
         isFixed={false}
       />
-      </div>
+      </div>  
 
       <div>
         <TabbedCarousel />

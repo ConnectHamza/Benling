@@ -46,6 +46,6 @@ export const modelsData2 = [
     { logo: Logo_Cherry, img: Image_Cherry, range: "130km Range", speed: "90km/h Top Speed", href: "/crown-electric-cherry" },
     { logo: Logo_Champion, img: Image_Champion, range: "220km Range", speed: "90km/h Top Speed", href: "/crown-electric-champion" },
     { logo: Logo_Raftaar, img: Image_Raftaar, range: "160km Range", speed: "95km/h Top Speed", href: "/crown-electric-raftaar" },
-    { logo: Logo_Victory, img: Image_Victory, range: "120km Range", speed: "5km/h Top Speed", href: "/crown-electric-victory" },
+    { logo: Logo_Victory, img: Image_Victory, range: "120km Range", speed: "55km/h Top Speed", href: "/crown-electric-victory" },
 
 ];

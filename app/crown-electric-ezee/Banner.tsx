@@ -7,8 +7,8 @@ const Banner = () => {
   return (
     <div className='pt-[0px]'>
       <HeroSection
-        title="Crown Ezee – Three Wheeler"
-        subtitle="Designed for comfort and practicality, Crown Ezee is the perfect electric scooter for daily easy rides. Enjoy seamless handling, control and zero emissions across Pakistan."
+        title="Crown Electric Ezee – Three Wheeler"
+        subtitle="Designed for comfort and practicality, the Crown Electric Ezee is a reliable 650W three wheeler electric scooter in Pakistan, perfect for easy daily rides. Enjoy smooth handling, enhanced control, and zero-emission travel — all tailored for convenient urban mobility across the country."
         buttonText="Explore More"
         imageSrc={EzeeWeb.src}
         mobileImageSrc={FireflyIMGMobile.src}

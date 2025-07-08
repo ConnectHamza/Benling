@@ -54,12 +54,12 @@ const FeatureSection = () => {
       <div className="max-w-[1300px] mx-auto">
         <div className="mb-2" data-aos="fade-right">
           <Typography as="h2" color='text-white' variant='h3-medium-magistral'>
-            Explore Our Smart Features
+            Smart Features That Set Us Apart
           </Typography>
         </div>
         <div data-aos="fade-right" data-aos-delay="100">
           <Typography as="p" variant='subtext-regular-jakarta' className="mb-6 text-white">
-            Experience the convenience and tech that power every Crown Electric scooter, engineered for performance, safety, and sustainability.
+            Crown’s electric bikes are built with advanced technology for smoother rides and smarter control.
           </Typography>
         </div>
         <div

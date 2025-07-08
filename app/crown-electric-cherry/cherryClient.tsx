@@ -24,7 +24,7 @@ const statsData = [
   { value: "75-80 km/h", label: "Top Speed" },
   { value: "110-130 km", label: "Range" },
   { value: "4-5 Hours", label: "Charging Time" },
-  { value: "3000W", label: "NFC Unlock" },
+  { value: "3000W", label: "Brushless Motor" },
 ];
 
 
