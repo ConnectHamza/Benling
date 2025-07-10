@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <div className='pt-[0px]'>
             <HeroSection
-                title="Crown Markhor The Vintage Way"
+                title="Crown Electric Markhor - Power. Performance. Precision."
                 subtitle="Crown Markhor is a powerful, smart, and secure electric bike built for high performance, heavy-duty use, and bold, sustainable mobility."
                 buttonText="Explore More"
                 imageSrc={MarkhorWeb.src}

@@ -125,7 +125,7 @@ const HomeCarousel: React.FC<HomeCarouselProps> = ({
                       </div>
 
                       {/* Buttons */}
-                      <div className="mt-8 flex justify-center gap-4 flex-wrap px-4" data-aos="fade-up">
+                      <div className="mt-8 flex justify-center gap-4 flex-wrap px-4">
                         <Button
                           variant="outline"
                           label="Download Brochure"

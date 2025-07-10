@@ -23,9 +23,9 @@ const Hero = () => {
                   background: 'radial-gradient(ellipse at 50% 40%, rgba(20, 20, 20, 0.6) 60%, rgb(20, 20, 20, 0.8) 80%, rgb(0, 0, 0, 0.8) 100%'
             }}>
                 <div className="text-center space-y-4 max-w-full">
-                    <Typography as='h1' variant='h1-bold-magistral'>Advanced Electric Bikes Built for Speed & Reliability</Typography>
+                    <Typography as='h1' variant='h1-bold-magistral'>Crown Electric Mobility - Pakistan’s #1 Choice for Electric Bikes</Typography>
                     <p className="text-lg md:text-xl">
-                       Experience the future of urban commuting with Crown’s high-performance electric bikes — built for Pakistani roads and ready for every ride.
+                       From the house of Crown Group, Crown Electric Mobility—available in 26+ cities including Karachi, Lahore, and Multan. We offer trusted after-sales service through certified centres. Backed by skilled technicians and prompt customer support, we ensure a smooth ownership journey from the first ride onward.
                     </p>
                     <AppButton
                         size="medium"

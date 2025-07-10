@@ -7,10 +7,10 @@ import Link from 'next/link';
 import Typography from '../GradientText/Typography';
 import { usePathname } from 'next/navigation';
 import { div } from 'framer-motion/client';
-import Facebook from "../../public/assets/Contact/Facebook.svg";
-import Linkedin from "../../public/assets/Contact/Linkedin.svg";
-import Tiktok from "../../public/assets/Contact/Tiktok.svg";
-import Instagram from "../../public/assets/Contact/Instagram.svg";
+import Facebook from "../../public/assets/Header-Footer/Facebook.svg";
+import Linkedin from "../../public/assets/Header-Footer/LinkedIn.svg";
+import Tiktok from "../../public/assets/Header-Footer/Tiktok.svg";
+import Instagram from "../../public/assets/Header-Footer/Instagram.svg";
 
 import Aos from 'aos';
 
@@ -84,7 +84,7 @@ const FooterClient = () => {
                                 <Link href='https://maps.app.goo.gl/R1KkNJcL3yy26wdk6'><Typography variant='subtext-regular-jakarta'>Plot No. 672-673, Deh Joreji Taluka, Bin Qasim Town Karachi, 75600</Typography></Link>
                             </li>
                         </ul>
-                        {/* <div className="flex gap-3">
+                        <div className="flex gap-3 mt-4">
                             <a href="https://www.facebook.com/crownelectricmobility" className="text-blue-600" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <Image src={Facebook} alt="Facebook Icon" width={24} height={24} />
                             </a>
@@ -97,7 +97,7 @@ const FooterClient = () => {
                             <a href="https://www.tiktok.com/@crownelectricmobility" className="text-blue-700" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <Image src={Tiktok} alt="LinkedIn Icon" width={24} height={24} />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
                     <div className='w-full md:w-1/6' data-aos="fade-up">
                         <div className='mb-2'>

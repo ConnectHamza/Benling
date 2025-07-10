@@ -3,9 +3,9 @@ import Banner from "../../public/assets/About/banner.png"
 
 export default function Herosection() {
     return (
-        <div className="w-full bg-white py-20">
+        <div className="w-full bg-white">
             {/* Banner Section */}
-            <div className="w-full  mx-auto px-4 mt-4 md:mt-10">
+            <div className="w-full mx-auto mt-10">
                 <div className="relative w-full rounded-lg overflow-hidden">
                     {/* Replace Image with Video */}
                     <video
@@ -14,15 +14,14 @@ export default function Herosection() {
                         loop
                         muted
                         playsInline
-                        controls
-                        className="w-full md:h-[90vh] object-cover bg-center"
+                        className="w-full md:h-[100vh] object-cover bg-center"
                         poster={Banner.src}
                     />
                 </div>
             </div>
 
             {/* Content Section */}
-            <div className="w-full max-w-[1300px] mx-auto px-4 mt-8 md:text-left">
+            <div className="w-full max-w-[1300px] mx-auto px-4 md:mt-20 mt-10 md:text-left">
                 <h1 className="text-black md:text-4xl text-2xl font-bold font-jakarta" data-aos="fade-up">
                     About Us
                 </h1>

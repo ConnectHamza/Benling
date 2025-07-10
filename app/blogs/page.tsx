@@ -35,7 +35,7 @@ export default function BlogsPage() {
                   </Link>
                 </div>
                 <div className="md:w-[60%] flex flex-col justify-center">
-                  <div className="flex gap-4 items-center">
+                  <div className="flex gap-4 items-center"> 
                     <Typography
                       variant="extra-subtext-regular-jakarta"
                       className="text-black-30 bg-orange-100 w-fit px-3 py-1.5 rounded-lg mt-4 md:mt-0"

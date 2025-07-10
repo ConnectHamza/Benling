@@ -85,59 +85,47 @@ export const featuresData = [
 
 export const faqsData = [
     {
-    "question": "What is the motor power of Crown Victory?",
-    "answer": "The Crown Victory features a 1000W motor, offering smooth and efficient performance ideal for daily city commuting."
+    "question": "What’s the design inspiration for Victory?",
+    "answer": "Retro-modern scooter aesthetic with futuristic lighting."
   },
   {
-    "question": "Which battery does Crown Victory use?",
-    "answer": "It uses a 72V 30Ah Lithium Iron Phosphate (LiFePO₄) battery — known for its safety, long life, and fast charging capabilities."
+    "question": "What battery type is installed?",
+    "answer": "Lithium Iron Phosphate (LiFePO₄), known for safety and longevity."
   },
   {
-    "question": "How much range can I expect from Crown Victory on a single charge?",
-    "answer": "Crown Victory offers a range of 100–120 km per full charge, making it one of the most efficient budget-friendly electric scooters available."
+    "question": "How fast and how far can it go?",
+    "answer": "55 km/h top speed and 120 km range."
   },
   {
-    "question": "What is the top speed of Crown Victory?",
-    "answer": "Crown Victory delivers a maximum speed of 50–55 km/h, perfect for riders who prioritize fuel efficiency and ease of handling over high-speed performance."
+    "question": "Is it ideal for beginner riders?",
+    "answer": "Yes, stable handling and limited top speed make it safe for new users."
   },
   {
-    "question": "Is Crown Victory suitable for daily commuting?",
-    "answer": "Yes! With its lightweight design, long range, and comfortable seating, Crown Victory is ideal for daily urban rides and short trips around town."
+    "question": "How long does it take to charge fully?",
+    "answer": "5 hours with standard 220V charger."
   },
   {
-    "question": "Where can I buy or test ride Crown Victory?",
-    "answer": "You can purchase or test ride Crown Victory at authorized dealerships located in Multan, Karachi, Lahore, Rawalpindi, and Mardan."
+    "question": "Does it have cruise control or modes?",
+    "answer": "Yes, it comes with speed modes and economy settings."
   },
   {
-    "question": "Does Crown offer warranty on Victory?",
-    "answer": "Yes, Crown provides an extended warranty:\n- Battery, Motor & Controller: 4 years or 48,000 km\n- Body Parts: 12 months\n\nThis warranty applies whether you pay upfront or choose installment financing."
+    "question": "Is the scooter noise-free?",
+    "answer": "Virtually silent due to the electric motor."
   },
   {
-    "question": "Can I buy Crown Victory on installments?",
-    "answer": "Yes, flexible EMI options are available through:\n- Meezan Bank\n- Bank Alfalah (available at Alfa Mall)\n- MCB Bank\n\nContact your local Crown dealer to apply for installment financing."
+    "question": "What is the tire size?",
+    "answer": "Tubeless 10–12 inch tires (variant-specific)."
   },
   {
-    "question": "Are there any special installment offers for Crown Victory?",
-    "answer": "Yes! You can opt for the 0% markup plan on 12-month installments, allowing you to spread payments without extra cost."
+    "question": "Are spare parts easily available?",
+    "answer": "Yes, via authorized Crown Electric dealerships."
   },
   {
-    "question": "Can I stretch my installment plan beyond 12 months?",
-    "answer": "Absolutely! Installment tenures can be extended up to 24 months, giving you more flexibility based on your monthly budgeting needs."
+    "question": "Can it handle slight off-road paths?",
+    "answer": "It’s best suited for paved roads; occasional rough patches are manageable."
   },
   {
-    "question": "How long does it take to fully charge the Crown Victory battery?",
-    "answer": "The battery takes approximately 6–8 hours to fully charge using the standard charger, depending on ambient conditions."
+    "question": "What is the warranty?",
+    "answer": "4 years / 48,000 km on battery, motor, controller; 1 year / 12,000 km on body parts."
   },
-  {
-    "question": "Is the battery safe for regular use?",
-    "answer": "Yes, the LiFePO₄ battery used in Crown Victory is highly stable and resistant to overheating, ensuring safe and reliable performance over time."
-  },
-  {
-    "question": "What safety features does Crown Victory have?",
-    "answer": "Crown Victory comes equipped with:\n- Front and rear disc brakes\n- Bright LED headlights and indicators\n- Smart digital display showing key metrics\n\nThese ensure a secure and confident riding experience in all conditions."
-  },
-  {
-    "question": "Is Crown Victory comfortable for two riders?",
-    "answer": "Yes, it features a dual-seat design that ensures comfort for both rider and passenger during short commutes and relaxed weekend rides."
-  }
 ];

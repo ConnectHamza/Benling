@@ -39,6 +39,7 @@ import Logo_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Logo.svg"
 import Logo_Spark from "../../public/assets/Home/Carousel/Spark_Logo.svg"
 import Logo_Firefly from "../../public/assets/Home/Carousel/Firefly_Logo.svg"
 import Logo_Fairy from "../../public/assets/Home/Carousel/Fairy_Logo.svg"
+import Logo_Magic from "../../public/assets/Home/Carousel/Magic_Logo.svg"
 import Image_Ezee from "../../public/assets/Home/Carousel/Ezee_Image.webp";
 import Image_Firefly from "../../public/assets/Home/Carousel/Firefly_Image.webp";
 import Image_Flash from "../../public/assets/Home/Carousel/Flash.webp";
@@ -48,6 +49,7 @@ import Image_Roshni from "../../public/assets/Home/Carousel/Roshni_Image.webp";
 import Image_Roshnix from "../../public/assets/Home/Carousel/Roshnix_Image.webp";
 import Image_Spark from "../../public/assets/Home/Carousel/Spark_Image.webp";
 import Image_Fairy from "../../public/assets/Home/Carousel/Fairy_Image.webp";
+import Image_Magic from "../../public/assets/Home/Carousel/Magic_Image.webp";
 // Performance Carousel
 import MarkhorIMG from '../../public/assets/PerformanceSeries/Markhor.webp'
 import CherryIMG from '../../public/assets/PerformanceSeries/Cherry.webp'
@@ -324,7 +326,7 @@ export const bikes = [
     exploreLink: "/crown-electric-ezee",
     logo: Logo_Ezze.src
   }, {
-    name: "Bike 3",
+    name: "Bike 4",
     image: Image_Roshni.src,
     range: "115-120 km",
     maxSpeed: "55-60 km/h",
@@ -333,7 +335,7 @@ export const bikes = [
     exploreLink: "/crown-electric-roshni",
     logo: Logo_Roshni.src
   }, {
-    name: "Bike 3",
+    name: "Bike 5",
     image: Image_Firefly.src,
     range: "95-100 km",
     maxSpeed: "55-60 km/h",
@@ -342,7 +344,7 @@ export const bikes = [
     exploreLink: "/crown-electric-firefly",
     logo: Logo_Firefly.src
   }, {
-    name: "Bike 3",
+    name: "Bike 6",
     image: Image_Spark.src,
     range: "35-40 km",
     maxSpeed: "35-40 km/h",
@@ -351,7 +353,7 @@ export const bikes = [
     exploreLink: "/crown-electric-spark",
     logo: Logo_Spark.src
   }, {
-    name: "Bike 3",
+    name: "Bike 7",
     image: Image_Miniscooter.src,
     range: "30-35 km",
     maxSpeed: "30-35 km/h",
@@ -360,7 +362,16 @@ export const bikes = [
     exploreLink: "/crown-electric-mini-scooty",
     logo: Logo_Mini_Scooty.src
   }, {
-    name: "Bike 3",
+    name: "Bike 8",
+    image: Image_Magic.src,
+    range: "30-35 km",
+    maxSpeed: "30-35 km/h",
+    motorPower: "450W",
+    brochureLink: "/brouchers/Crown_Benling_Magic_Brochure.pdf",
+    exploreLink: "/crown-electric-magic",
+    logo: Logo_Magic.src
+  }, {
+    name: "Bike 9",
     image: Image_Fairy.src,
     range: "75-80 km",
     maxSpeed: "50-55 km/h",

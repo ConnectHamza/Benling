@@ -11,7 +11,6 @@ import { useRouter, usePathname } from "next/navigation";
 import { div } from "framer-motion/client";
 
 
-
 let HeaderClient = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isModelsOpen, setIsModelsOpen] = useState(false);

@@ -13,11 +13,11 @@ import Loop5 from "../../public/assets/Magic/Loop/Grid-05.webp";
 
 
 export const slides = [
-  { image: Loop1, width: 640, alt: "Side view" },
-  { image: Loop2, width: 640, alt: "Front view" },
-  { image: Loop3, width: 640, alt: "Dashboard" },
-  { image: Loop4, width: 320, alt: "Logo vertical" },
-  { image: Loop5, width: 1300, alt: "Full scooter" },
+    { image: Loop1, width: 640, alt: "Side view" },
+    { image: Loop2, width: 640, alt: "Front view" },
+    { image: Loop3, width: 640, alt: "Dashboard" },
+    { image: Loop4, width: 320, alt: "Logo vertical" },
+    { image: Loop5, width: 1300, alt: "Full scooter" },
 ];
 
 
@@ -97,28 +97,53 @@ export const featuresData = [
 
 export const faqsData = [
     {
-        question: "What is the top speed of the Crown Electric Spark?",
-        answer: "Crown Electric Spark has a top speed of 35–40 km/h, making it ideal for city commuting."
+        question: "What is the maximum speed and range of Magic?",
+        answer: "It goes up to 35 km/h and covers 30–35 km on a full charge."
     },
     {
-        question: "How far can the Crown Electric Spark go on a full charge?",
-        answer: "On a full charge, the Crown Electric Spark can cover approximately 40 kilometers, depending on riding conditions and usage."
+        question: "Who is this product designed for?",
+        answer: "Perfect for teenagers (above 14 years old) and light local commuting."
     },
-{
-  question: "How long does it take to fully charge the battery?",
-  answer: [`
+    {
+        question: "Does it require a driving license?",
+        answer: "Usually not, but always confirm with local traffic laws."
+    },
+    {
+        question: "How long does it take to charge?",
+        answer: "Full charge in about 4 to 5 hours."
+    },
+    {
+        question: "What battery does it use?",
+        answer: "A graphene battery, suitable for short trips and lighter daily use."
+    },
+    {
+        question: "What is the warranty coverage?",
+        answer: [`
         <ul style="list-style-type: disc; padding-left: 20px;">
-      <li>Graphene battery charging time typically ranges from 6 to 11 hours, depending on the bike model and battery capacity.</li>
-      <li>Performance Series bikes with Lithium Iron Phosphate (LiFePO4) batteries typically charge within 4 to 6 hours, depending on the model and battery capacity.</li>
+      <li>Battery: 18 Months or 18,000 km</li>
+      <li>Motor & Controller: 36 Months or 36,000 km</li>
+      <li>Body Parts: 12 Months or 12,000 km</li>
     </ul>`
-  ]
-},
-    {
-        question: "Is the Crown Electric Spark eco-friendly?",
-        answer: "Yes, the Spark is fully electric, producing zero emissions and operating quietly, contributing to a cleaner environment."
+        ]
     },
     {
-        question: "Can I charge the Crown Electric Spark at home?",
-        answer: "Yes! The Spark’s battery can be easily charged using a regular home socket no special setup needed."
+        question: "Is the Magic waterproof?",
+        answer: "It’s water-resistant, but avoids driving in heavy rain or submerged areas."
+    },
+    {
+        question: "What safety features does it include?",
+        answer: "LED lights, rear brake lights, and speed limitations for added safety."
+    },
+    {
+        question: "Does it have any storage space?",
+        answer: "Lightweight Alloy Basket, suitable for small items or chargers."
+    },
+    {
+        question: "Is it easy to park and carry?",
+        answer: "Yes, it’s lightweight and compact for narrow streets and small parking spots."
+    },
+    {
+        question: "Is the reverse function available?",
+        answer: "Reverse function is not available, but the compact design ensures easy handling."
     },
 ];
