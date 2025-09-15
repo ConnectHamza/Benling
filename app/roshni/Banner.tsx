@@ -1,42 +1,26 @@
 import React from 'react'
+<<<<<<< HEAD
+import RoshnixWeb from "../../public/assets/Home/Header/web/roshni.webp"
+import RoshniMobile from '../../public/assets/Roshni/Roshni-mobile.webp'
+=======
 import RoshniBanner from '../../public/assets/Roshni/Roshni-Banner.webp'
 import Button from '@/app/components/Button/button'
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
 
+import Button from '@/components/Button/Button'
+import HeroSection from '@/components/Herocontainer/Herocontainer'
 const Banner = () => {
     return (
-        <div className='w-full md:h-[90vh]  items-center flex justify-center px-5 py-10'
-            style={{
-                backgroundImage: `url(${RoshniBanner.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center'
-            }}
-        >
-            <div className="w-lg">
-                <div className="md:w-[50%] w-[65%] text-white">
-                    <h2 className='heading2'>
-                        Ride the Future
-                        Today with Firefly
-                    </h2>
-                    <p>Experience the future of urban mobility with the Firefly electric scooter.
-                        Sleek, powerful, and eco-friendly, it’s designed for effortless rides and
-                        standout style.
-                        </p>
-                        <div className='mt-5'>
-                        <Button 
-                         iconName="chevron-right"
-                         iconColor="black"
-                         buttonText="Shop Now"
-                         bgColor="#ff7700"
-                         hoverBgColor="#ff7700"
-                         textColor="black"
-                         order='order-last'
-                         link='#'
-                        />
-                        </div>
-                        
-                </div>
-            </div>
+        <div className='pt-[75px]'>
+            <HeroSection
+                title="Roshni Brighten Every Journey"
+                subtitle="Experience the future of urban mobility with the Roshni electric scooter. Stylish, efficient, and eco-friendly, it’s crafted for smooth rides and a distinctive, modern look."
+                buttonText="Explore More"
+                imageSrc={RoshnixWeb.src}
+                mobileImageSrc={RoshniMobile.src}
+            />
         </div>
+
     )
 }
 

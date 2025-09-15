@@ -21,22 +21,22 @@ export const aboutSpecificationsData2 = [
 export const faqsData = [
     {
         question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        answer: "The Firefly can travel up to 105 km on a single charge, making it ideal for daily commutes and longer trips."
     },
     {
         question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        answer: "Yes, Firefly comes with four-speed modes to adjust to different riding conditions, whether you need efficiency or power."
     },
     {
         question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        answer: "The Firefly is equipped with dual disc brakes (front and rear) for enhanced safety and precise stopping power."
     },
     {
-        question: "WWhat colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What colors are available for the Firefly?",
+        answer: "Firefly is available in four stylish colors: Emerald Green, Mint Green, Ivory White, and Charcoal Grey."
     },
     {
         question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        answer: "The Firefly is equipped with LED lighting, a high-beam headlight for visibility, front and rear disc brakes, and durable tubeless tyres, ensuring safety in all conditions."
     },
 ];

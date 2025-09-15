@@ -14,73 +14,73 @@ export const featureHeader = {
 
   export const aboutSpecificationsData = [
     { title: "Motor", value: "1200W Brushless" },
-    { title: "Battery", value: "60V.35Ah" },
-    { title: "Battery Type", value: "Graphene" },
-    { title: "Speed Mode", value: " 4 Mode" },
-    { title: "Charger", value: "60V.6A" },
-    { title: "Charger Time", value: "6hrs" },
-    { title: "Dimensions", value: "1830 x 695 x 1075mm" },
+    { title: "Maximum Speed", value: "55-60 Km/h" },
+    { title: "Charging Time", value: "6 to 8 hrs" },
+    { title: "USB Port", value: "Mobile Charging" },
+    { title: "Dimensions", value: "1810 x 650 x 1100mm" },
+    { title: "Speed Mode", value: "4 Modes" },
+    { title: "Security", value: "Remote Alarm System" },
 ];
 
 export const aboutSpecificationsData2 = [
-    { title2: "Net Weight", value2: "108KG" },
-    { title2: "Angle", value2: "≤15°" },
-    { title2: "Speed", value2: "55-65km/h" },
-    { title2: "Wheelbase", value2: "1315mm" },
-    { title2: "Ground Clearance", value2: "120mm" },
-    { title2: "Loading Capacity", value2: "200kg" },
-    { title2: "Braking System", value2: "Fr.Disc/Re.Disc" },
+    { title2: "Wheelbase", value2: "1330mm" },
+    { title2: "Ground Clearance", value2: "220mm" },
+    { title2: "Loading Capacity", value2: "160 Kgs" },
+    { title2: "Climbing Angle", value2: "≤20°" },
+    { title2: "Braking System", value2: "Fr.Disc / Re.Drum" },
+    { title2: "Tubeless Tyre Size", value2: "F & R 90/80/12" },
+    { title2: "Available Colors", value2: "Blue, Black, Gray, Red & White" },
 ];
 
 
 export const featuresData = [
     {
         img: Feature1IMG,
-        alt: 'Disc Brakes (Front & Rear)',
-        title: 'Disc Brakes (Front & Rear)',
-        description: 'Safety at its finest with efficient stopping power.',
+        alt: 'Dual Braking System',
+        title: 'Dual Braking System',
+        description: 'Front disc and rear drum brakes ensure precise and reliable stopping power.',
         
     },
     {
         img: Feature2IMG,
-        alt: 'Four Speed Modes',
-        title: 'Four Speed Modes',
-        description: 'Customize your riding experience based on terrain, battery use, or speed requirements.'
+        alt: 'Intuitive Digital Dashboard',
+        title: 'Intuitive Digital Dashboard',
+        description: 'Real-time updates on speed, battery status, and more at a glance.'
     },
     {
         img: Feature3IMG,
-        alt: 'LED Headlights',
-        title: 'LED Headlights',
-        description: 'Bright, energy-efficient lighting for enhanced visibility.'
+        alt: 'Swingarm Cover',
+        title: 'Swingarm Cover',
+        description: 'Durable protection against debris, impacts, and corrosion for a clean, finished look.'
     },
     {
         img: Feature4IMG,
-        alt: 'Robust Frame Technology',
-        title: 'Robust Frame Technology',
-        description: `The Knight Rider's strong, light frame provides a smooth, comfortable ride.`
+        alt: 'Spacious Storage',
+        title: 'Spacious Storage',
+        description: `Carry everything you need with ease and convenience.`
     },
 
 ];
 
 export const faqsData = [
     {
-        question: "What is the maximum range of the Firefly on a single charge?",
-        answer: "You can return any item within 30 days of purchase. The item must be in its original condition and packaging."
+        question: "What type of motor powers the Crown Benling Roshni?",
+        answer: "The Crown Benling Roshni is equipped with a 1200W brushless motor for efficient and powerful performance."
     },
     {
-        question: "Does Firefly offer multiple speed options?",
-        answer: "Shipping typically takes between 5-7 business days within the continental US. International shipping times may vary."
+        question: "How long does it take to fully charge the Roshni?",
+        answer: "The battery charges fully in 6 to 8 hours using a 72V 5A charger."
     },
     {
-        question: "What kind of braking system does Firefly have?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What is the maximum range of the Crown Benling Roshni on a single charge?",
+        answer: "The Roshni offers a range of 115-120 km on a single charge, depending on riding conditions."
     },
     {
-        question: "WWhat colors are available for the Firefly?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What is the loading capacity of the Roshni?",
+        answer: "The Roshni has a loading capacity of up to 160 kg, suitable for a rider with additional cargo."
     },
     {
-        question: "What features enhance the Firefly’s safety?",
-        answer: "Yes, we offer 24/7 customer support. You can contact us via email, phone, or live chat."
+        question: "What type of braking system does the Crown Benling Roshni feature?",
+        answer: "The Roshni is equipped with a front disc and rear disc braking system for enhanced safety and control."
     },
 ];

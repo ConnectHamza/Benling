@@ -39,7 +39,7 @@ const ImageCarousel: React.FC = () => {
               objectPosition="center"
               className={styles.sliderImage}
             />
-            <h2 className={`${styles.heading} heading2 text-white text-center`}>
+            <h2 className={`${styles.heading} heading2 text-white text-center font-magistral`}>
               Operations Button
             </h2>
           </div>
@@ -54,8 +54,8 @@ const ImageCarousel: React.FC = () => {
               objectPosition="center"
               className={styles.sliderImage}
             />
-            <h2 className={`${styles.heading} heading2 text-white text-center`}>
-              Slide 2 Title
+            <h2 className={`${styles.heading} heading2 text-white text-center font-magistral`}>
+            Operations Button
             </h2>
           </div>
         </SwiperSlide>

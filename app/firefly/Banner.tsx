@@ -1,41 +1,25 @@
 import React from 'react'
+<<<<<<< HEAD
+import FireflyWeb from "../../public/assets/Home/Header/web/firefly.webp"
+import FireflyIMGMobile from '../../public/assets/Firefly/Firefly-Banner-mobile.webp'
+
+import HeroSection from '@/components/Herocontainer/Herocontainer'
+=======
 import FireflyIMG from '../../public/assets/Firefly/Firefly-Banner.webp'
 import Button from '@/app/components/Button/button'
+>>>>>>> b84ec308e73fba63be65a98e8e496780b38e4002
 const Banner = () => {
     return (
-        <div className='w-full md:h-[90vh]  items-center flex justify-center px-5 py-10'
-            style={{
-                backgroundImage: `url(${FireflyIMG.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            }}
-        >
-            <div className="w-lg">
-                <div className="md:w-[50%] w-[65%] text-white">
-                    <h2 className='heading2'>
-                        Ride the Future
-                        Today with Firefly
-                    </h2>
-                    <p>Experience the future of urban mobility with the Firefly electric scooter.
-                        Sleek, powerful, and eco-friendly, it’s designed for effortless rides and
-                        standout style.
-                        </p>
-                        <div className='mt-5'>
-                        <Button 
-                         iconName="chevron-right"
-                         iconColor="black"
-                         buttonText="Shop Now"
-                         bgColor="#ff7700"
-                         hoverBgColor="#ff7700"
-                         textColor="black"
-                         order='order-last'
-                         link='#'
-                        />
-                        </div>
-                        
-                </div>
-            </div>
+        <div className='pt-[75px]'>
+            <HeroSection
+                title="Ride the Future Today with Firefly"
+                subtitle="Experience the future of urban mobility with the Firefly electric scooter. Sleek, powerful, and eco-friendly, it’s designed for effortless rides and standout style."
+                buttonText="Explore More"
+                imageSrc={FireflyWeb.src}
+                mobileImageSrc={FireflyIMGMobile.src}
+            />
         </div>
+
     )
 }
 

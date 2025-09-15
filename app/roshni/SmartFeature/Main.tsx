@@ -14,7 +14,7 @@ const SmartFeature = () => {
     }}
     >        
     <div>
-    <h2 className='heading2 text-white text-center'>Smart Features for Every Ride</h2>
+    <h2 className='heading2 text-white text-center font-magistral'>Smart Features for Every Ride</h2>
     </div>
    
     <div className='flex justify-center '>

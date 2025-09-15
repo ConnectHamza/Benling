@@ -9,20 +9,20 @@ const Featured = () => {
             <div className="md:w-lg absolute md:bottom-20 bottom-[8vh]">
             <div className=" flex flex-wrap md:flex-nowrap  justify-between gap-8 text-center mx-5 md:mx-0 self-center">
                 <div className='text-white'>
-                    <h4 className='heading4'>115-120 km</h4>
-                    <p>Range Per Charge</p>
+                    <h4 className='heading4 font-magistral'>115-120 km</h4>
+                    <p  className='font-jakarta font-normal'>Range Per Charge</p>
                 </div>
                 <div className='text-white '>
-                    <h4 className='heading4'>70-80 km/h</h4>
-                    <p>Top Speed</p>
+                    <h4 className='heading4 font-magistral'>70-80 km/h</h4>
+                    <p  className='font-jakarta font-normal'>Top Speed</p>
                 </div>
                 <div className='text-white '>
-                    <h4 className='heading4'>6-8 Hours</h4>
-                    <p>Charging Time</p>
+                    <h4 className='heading4 font-magistral'>6-8 Hours</h4>
+                    <p  className='font-jakarta font-normal'>Charging Time</p>
                 </div>
                 <div className='text-white '>
-                    <h4 className='heading4'>≤20°</h4>
-                    <p>Climbing Angle</p>
+                    <h4 className='heading4 font-magistral'>≤20°</h4>
+                    <p className='font-jakarta font-normal'>Climbing Angle</p>
                 </div>
             </div>
             </div>
